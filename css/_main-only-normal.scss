@@ -1583,14 +1583,13 @@ table {
 		color: #05408f;
 		background-color: #eee;
 	}
-
-	@include break(mobile){
-		margin: -25px 5px 45px 0;
-	}
 }
 .more_description_dw {
 	line-height: 27px;
 
+	@include break(mobile){
+		margin: -25px 5px 45px 0;
+	}
 }
 .morecommentquotes {
 	line-height: 23px;
