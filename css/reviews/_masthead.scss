@@ -1,5 +1,5 @@
-.reviews.reviews-home,
-.features.features-home {
+.reviews.big-grid,
+.features.big-grid {
 	@if $isAMP != 'true' {
 		#grid-posts {
 			#masthead {
