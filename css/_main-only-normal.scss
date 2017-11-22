@@ -552,8 +552,13 @@ img.responsive {
 	z-index: 5;
 	transition: .25s ease-out .1s;
 
+	span {
+		color: #94e694;
+	}
+
 	&:hover {
-		background: #e67200;
+		//background: #e67200;
+		background: #a51a1a; //xmas red
 		text-decoration: none !important;
 	}
 
@@ -577,6 +582,7 @@ img.responsive {
 
 	&.homepage {
 		line-height: 44px;
+		font-size: 0.8em;
 
 		img {
 			width: 95px; margin-left: -110px; margin-top: -8px;
