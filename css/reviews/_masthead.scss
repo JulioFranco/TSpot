@@ -4,6 +4,10 @@
 		#grid-posts {
 			#masthead {
 				min-height: 440px;
+
+				@include break(mobile){
+					min-height: 270px;
+				}
 			}
 		}
 	}
@@ -145,7 +149,9 @@
 		min-height: 465px;
 
 		@include break(mobile) {
-			min-height: 270px;
+			height: 350px;
+			min-height: 350px;
+			overflow-y: scroll;
 		}
 	}	
 
