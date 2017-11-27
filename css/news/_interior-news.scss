@@ -187,8 +187,8 @@ body.interior {
 		#mobComBut {
 			display: none;
 			text-align: center;
-			padding-top: 20px;
-			padding-bottom: 60px;
+			padding-top: 40px;
+			padding-bottom: 65px;
 			background-color: $light-grey;
 			@include break(mobile){
 				display: block;
