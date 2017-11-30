@@ -10,6 +10,7 @@ body.interior.download {
 				p {
 					line-height: 1.45;
 					padding: 0 0 18px;
+				    font-size: 0.9em;
 				}
 				ol {
 					margin: 0px 0px 25px 18px;
@@ -22,10 +23,10 @@ body.interior.download {
 				}
 				ul {
 					margin-bottom: 25px;
-					font-size: 15px;
+					font-size: 16px;
 
 					li {
-					margin-bottom: 5px;
+						margin-bottom: 5px;
 					}
 				}
 			}
@@ -275,6 +276,10 @@ body.interior.download {
 				border-left: 2px solid #dddddd;
 				font-size: 1.1em;
 				margin-bottom: 0px;
+
+				&.drivers {
+					font-size: 1em;
+				}
 
 				@include break(v-tablet){
 					@include col(1,2,0);
