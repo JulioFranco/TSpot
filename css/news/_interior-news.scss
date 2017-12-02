@@ -249,9 +249,18 @@ body.interior {
 			margin: 0 0 35px 0;
 			
 			li {
-				list-style-type: none;
-				font-size: 1em;
-				letter-spacing: -0.25px;
+
+				@if $isAMP == 'true' {
+					list-style-type: none;
+					font-size: 0.9em;
+					padding: 0 0 6px;
+					letter-spacing: -0.25px;
+				} @else {
+					list-style-type: none;
+					font-size: 1em;
+					letter-spacing: -0.25px;
+				}
+
 			}
 		}
 	}
