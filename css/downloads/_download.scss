@@ -316,6 +316,13 @@ body.interior.download {
 
 			.google-ads {
 				margin: 5px 0 0 0;
+
+				&.single {
+					margin: 10px 6px 0 0;
+					padding: 15px 0 0 0;
+					border-top: 2px dotted #ccc;
+				}
+
 				@include break(mobile){
 					margin: 15px 0 0 0;
 					text-align: center;
