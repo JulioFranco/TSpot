@@ -181,7 +181,7 @@ body.interior.download {
 		
 	#product_info {
 		@if $isAMP == 'true' {
-			margin: 5px 0 20px;
+			margin: -16px 0 20px;
 			font-size: .7em;
 
 			.dw-desc {
@@ -201,61 +201,63 @@ body.interior.download {
 		.product-details, .specs {
 			div {
 				line-height: 180%;
+
 				@if $isAMP == 'true' {
 					padding-left: 8px;
-				}
+				} @else {
 
-				.items {
-					float: left;
-					font-weight: 500;
-					margin-right: 10px;
-					text-align: left;
-					width: 105px;
-				}
-
-				.item {
-					display: inline-block;
-
-					img {
-						padding: 8px 0 10px;
-					}
-
-					b {
+					.items {
+						float: left;
 						font-weight: 500;
+						margin-right: 10px;
+						text-align: left;
+						width: 105px;
 					}
 
-					.outof {
-						font-size: .85em;
-						letter-spacing: 2px;
-						padding-left: 2px;
-					}
+					.item {
+						display: inline-block;
 
-					.votecount {
-						font-size: 0.85em;
-						padding-left: 5px;
-					}
+						img {
+							padding: 8px 0 10px;
+						}
 
-					&.toolarge {
-						width: 170px;
-						white-space: nowrap;
-						overflow: hidden;
-						text-overflow: ellipsis;
-						line-height: 10px;
-						height: 12px;
-						margin-bottom: -2px;
+						b {
+							font-weight: 500;
+						}
 
-						@if $isAMP != 'true' {
-							&:hover {
-								text-overflow: inherit;
-								overflow: visible;
-								width: 210px;
-								white-space: pre-line;
-								line-height: 1.4;
-								margin-top: 4px;
+						.outof {
+							font-size: .85em;
+							letter-spacing: 2px;
+							padding-left: 2px;
+						}
+
+						.votecount {
+							font-size: 0.85em;
+							padding-left: 5px;
+						}
+
+						&.toolarge {
+							width: 170px;
+							white-space: nowrap;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							line-height: 10px;
+							height: 12px;
+							margin-bottom: -2px;
+
+							@if $isAMP != 'true' {
+								&:hover {
+									text-overflow: inherit;
+									overflow: visible;
+									width: 210px;
+									white-space: pre-line;
+									line-height: 1.4;
+									margin-top: 4px;
+								}
 							}
 						}
 					}
-				}
+				} 
 			}
 			&.drivers {
 				div {
@@ -611,38 +613,9 @@ body.interior.download {
 					}
 				}
 
-				.facebook-like {
-					margin-right: 0%;
-					display: block;
-					float: left;
-					list-style-type: none;
-					position: relative;
-					-webkit-box-sizing: border-box;
-					-moz-box-sizing: border-box;
-					box-sizing: border-box;
-					
-
-					@if $isAMP == 'true' {
-						padding: 0 0 0 15px;
-						width: 35%;
-					} @else {
-						padding: 8px 0 0 15px;
-						@include break(mobile){
-							width: 35%;
-						}
-					}
-
-					a {
-						display: block;
-						width: 77px;
-						height: 20px;
-						/* background: url('/images/tmp/facebook-link.png') no-repeat scroll 0 0 transparent; */
-					}
-				}
-
 				.editors_pick {
 					@if $isAMP == 'true' {
-						margin: 20px 0 20px 0;
+						margin: 12px 0;
 
 						amp-img {
 							width: 260px;
@@ -661,12 +634,6 @@ body.interior.download {
 							text-align: center;
 						}
 					}
-
-					
-				}
-
-				#dw_vote {
-					font-size: 11px;
 				}
 
 			}
@@ -674,8 +641,38 @@ body.interior.download {
 	}
 }
 
-//NOT AMP
+//-------------------------------------------------------------------
+//	NOT AMP
+//-------------------------------------------------------------------
+
 @if $isAMP != 'true' {
+
+	.facebook-like {
+		margin-right: 0%;
+		display: block;
+		float: left;
+		list-style-type: none;
+		position: relative;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 8px 0 0 15px;
+			
+		@include break(mobile){
+			width: 35%;
+		}
+
+		a {
+			display: block;
+			width: 77px;
+			height: 20px;
+		}
+	}
+
+	#dw_vote {
+		font-size: 11px;
+	}
+
 	.tabs.similars {
 		padding: 25px 0 20px;
 	}
