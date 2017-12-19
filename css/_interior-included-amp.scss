@@ -12,7 +12,9 @@ body.interior {
   	.articleBody {
 		font-weight: 400;
 		font-family: $f-paragraph;
+		font-size: 18px;
 
+		/*
 		@if $isAMP == 'true' {
 			font-size: 0.95em;
 
@@ -23,6 +25,7 @@ body.interior {
 				font-size: 0.95em;
 			}
 		}
+		*/
 
 		b, strong {
 			font-family: $f-primary;
@@ -61,12 +64,10 @@ body.interior {
 		ul {
 			margin-left: 5%;
 			margin-bottom: 25px;
-			font-size: 0.95em;
 			line-height: 1.5em;
 			li {
 				list-style-type: square;
 				margin-bottom: 10px;
-				font-size: 0.95em;
 			}
 		}
 		

@@ -664,7 +664,7 @@ h3.longtype {
 	ul.teaser-list {
 		padding: 0 0 28px;
 		li {
-			padding: 22px 0 0;
+			padding: 26px 0 0;
 
 			&:first-child {
 				padding: 16px 0 0;
@@ -709,16 +709,14 @@ h3.longtype {
 				}
 
 				h3 {
-					font-size: .78em;
+					font-size: .75em;
 					font-weight: 500;
 					width: 90%;
 					display: block;
 					list-style-type: none;
 					position: relative;
-					letter-spacing: -.333px;
 					padding-top: 5px;
 					margin: 0 auto 5px;
-					//@include col-last(6,11,5);
 				}
 			}
 		}

@@ -7,8 +7,8 @@ $f-helvetica-roboto: 'Helvetica Neue', 'Roboto', sans-serif;
 
 // !GLOBAL RESPONSIVE VARIABLES
 $big-desk: 1250px;
-$desk: 1150px;
-$tablet: 1150px; // This number needs to be the same as $desk to prevent a "no-mans-land" in breakpoints
+$desk: 1108px;
+$tablet: 1108px; // This number needs to be the same as $desk to prevent a "no-mans-land" in breakpoints
 $v-tablet: 960px;
 $mobile: 760px;
 $v-mobile: 500px;
@@ -79,8 +79,8 @@ $isAMP: 'false';
 // !MASTHEAD
 $tile-height: 205px;
 $tall-tile-height: ($tile-height * 2) + 1;
-$tile-width: 381px;
-$tile-width-sec: 380px;
+$tile-width: 371px;
+$tile-width-sec: 370px;
 
 $tall-tile-font-size: 1.4em;
 $tile-font-size: 1.05em;

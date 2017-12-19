@@ -94,9 +94,9 @@
 							line-height: 1.5;
 							padding-right: 10px;
 							display: inline;
-							padding: 4px 4px 6px 0px;
-							background: rgba(40,51,60,0.6);
-							box-shadow: 0.45em 0 0 0 rgba(40,51,60,0.6), -20px 0 0 0 rgba(40,51,60,0.6);
+							padding: 4px 4px 7px 0px;
+							background: rgba(40,51,60,0.7);
+							box-shadow: 0.45em 0 0 0 rgba(40,51,60,0.7), -20px 0 0 0 rgba(40,51,60,0.7);
 
 							@include break(tablet) {
 								font-size: 0.95em;
@@ -163,7 +163,9 @@
 
 		ul.variation-5a {
 			li {
-				&.tall { height: $tile-height - $tile-padding; a { height: $tile-height - 30px; hgroup { h2 { font-size: 1em; } } } }
+				&.tall {
+					height: $tile-height - $tile-padding;
+					a { height: $tile-height - 30px; hgroup { h2 { font-size: 1em; } } } }
 				&:nth-child(1) {
 					top: 0; left: 0;
 					height: $tall-tile-height - $tile-padding;
