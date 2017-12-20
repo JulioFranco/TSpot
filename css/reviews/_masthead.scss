@@ -3,7 +3,7 @@
 	@if $isAMP != 'true' {
 		#grid-posts {
 			#masthead {
-				min-height: 440px;
+				min-height: ($tile-height-sec * 2) + 105px;
 
 				@include break(mobile){
 					min-height: 270px;

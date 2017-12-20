@@ -29,6 +29,7 @@
 				
 				&.tall {
 					height: $tall-tile-height - $tile-padding;
+
 					a {
 						height: $tall-tile-height - 30px;
 						hgroup {
@@ -53,9 +54,6 @@
 
 					//top text, gradient black/blue
 					background: linear-gradient(205deg, rgba(21,76,143,0.2) 40%, rgba(30,41,51,0.75) 85%);
-
-					// mas azul
-					//background: linear-gradient(345deg, rgba(21, 76, 143, 0.35) 25%, rgba(30, 41, 51, 0.75) 85%);
 
 					//default bottom text, gris TS
 					//@include gradient-trans-percent($start_color:#13191F,$start_cent:40%,$start_alpha:0.0,$end_color:#13191F,$end_cent:70%,$end_alpha:.75);
@@ -110,7 +108,7 @@
 					}	
 				}
 
-/*
+			/*
 				&.bgc-dark {
 					a {
 						background: linear-gradient(335deg, rgba(21,76,143,0.45) 30%, rgba(30,41,51,0.85) 85%);
@@ -120,7 +118,7 @@
 						}
 					}
 				}
-*/
+			*/
 
 			}
 
