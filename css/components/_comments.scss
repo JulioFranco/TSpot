@@ -23,7 +23,6 @@
 			*/
 		}
 		.col-2-3 {
-			width: 69%;
 			@include break(v-tablet) {
 				width: 100%;
 			}

@@ -198,7 +198,7 @@ body.interior {
 						padding: 12px 15px 12px 210px;
 					
 					} @else {
-						padding: 20px 30px 20px 230px; 
+						padding: 25px 30px 25px 230px; 
 
 						@include break(v-mobile) {
 							padding: 12px 15px 12px 210px;
@@ -219,7 +219,7 @@ body.interior {
 						padding: 12px 15px 12px 210px;
 					
 					} @else {
-						padding: 20px 30px 20px 230px; 
+						padding: 25px 30px 25px 230px; 
 
 						@include break(v-mobile) {
 							padding: 12px 15px 12px 210px;
@@ -698,12 +698,9 @@ body.interior {
 
 			.col-2-3-last{
 				float: left !important;
-				width: 68%;
+				width: 65%;
 				padding-bottom: 20px;
 
-				@include break(big-desk){
-					width: 68%;
-				}
 				@include break(tablet) {
 					width: 64%;
 				}

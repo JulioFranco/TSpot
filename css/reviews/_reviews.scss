@@ -75,21 +75,23 @@
 // PAGE NAV
 .article nav.page-nav {
 	text-align: right;
-	float: left;
+	//float: left;
 
 	@if $isAMP == 'true' {
 		width: 94%;
 		margin: 0;
-		
 		padding-bottom: 10px;
+	}
+	@else {
+		margin: 20px 0 0 0 !important;
 
-	} @else {
+		/*
 		width: 94% !important;
-		margin: 0 !important;
 
 		@include break(big-desk) {
 			width: 100% !important;
 		}
+		*/
 
 		@include break(mobile) {
 			padding-bottom: 10px !important;
