@@ -42,9 +42,11 @@
 				margin-left: -6px;
 			}
 		}
+		/*
 		#main-menu #dk_menu > li {
 			margin-right: -4px;
 		}
+		*/
 	}
 
 
@@ -744,20 +746,23 @@
 				background: #777D82; 
 				text-align: center;
 				box-shadow: inset 0px 3px 0px 0px rgba(0,0,0,0.15);
+
 				li {
 					text-align: center;
-					margin: 0px 15px;
+					margin: 0px 12px;
 					padding-bottom: 0 !important;
 					display: inline-block;
 					text-transform: none;
 					color: white;
 					line-height: 20px;
+
 					a:after {
 						left: 0;
 						top: 7px !important;
 					}
+
 					a {
-						padding: 0 0 0 15px !important;
+						padding: 0 !important;
 						font-weight: 400 !important;
     					font-size: .95em;
 					}
@@ -765,6 +770,8 @@
 				li:hover {
 					border-bottom: 1px solid white;
 				}
+
+				/*
 				.DefArrow{
 					a:after {
 						@include triangle(right,#bbb,5,5);
@@ -802,21 +809,27 @@
 					a:after {
 						border: 0 !important;
 					}
-				}	
+				}
+				*/
 			}
 			#trending {
 				li:first-child {
-					margin-left: -400px;
+					margin-left: -520px;
 				}
 			}
 			#reviews {
 				li:first-child {
-					margin-left: -430px;
+					margin-left: -585px;
+				}
+			}
+			#features {
+				li:first-child {
+					margin-left: -450px;
 				}
 			}
 			#bestof {
 				li:first-child {
-					margin-left: -150px;
+					margin-left: -430px;
 				}
 			}
 			/*
@@ -826,19 +839,19 @@
 				}
 			}
 			*/
-			#features, #downloads {
+			#downloads {
 				li:first-child {
-					margin-left: -205px;
+					margin-left: -260px;
 				}
 			}
 			#forums {
 				li:first-child {
-					margin-left: 380px;
+					margin-left: 200px;
 					@include break(tablet){
-						margin-left: 515px;
+						margin-left: 325px;
 					}
 					@include break(v-tablet){
-						margin-left: 370px;
+						margin-left: 190px;
 					}
 				}
 				@include break (tablet){
@@ -876,13 +889,17 @@
 							font-weight: 500;
 							position: relative;
 							display: block;
-							padding: 0 27px 0 14px;
+							//padding: 0 27px 0 14px;
+							padding: 0 16px 0 14px;
 							margin-top: 0px;
 							
+							/*
 							@include break(v-tablet){
 								padding: 0 25px 0 12px;
 							}
+							*/
 							
+							/*
 							&:after {
 								content:"";
 								position: absolute;
@@ -893,6 +910,7 @@
 								@include triangle(down,white,4,4);
 								opacity: 0.4;
 							}
+							*/
 							
 							&.active {
 								background: #777D82;
