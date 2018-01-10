@@ -37,34 +37,36 @@ body.interior {
 
 				figure {
 					@if $isAMP == 'true' {
+							float: right;
+							margin: 0 10px 0 10px;
+
+							amp-img {
+								width: 65px;
+							}
+					}
+					@else {
 						width: 100px;
 						float: left;
-					} @else {
-						width: 100px !important;
-						float: left !important;
 						margin: 0 10px 0 -10px;
+						padding-right: 10px;
 
 						@include break(tablet){
 							margin: 0 25px 0 -10px;
 						}
-					}
 
-					@include break(mobile){
-						margin: 0 15px 0 -10px;
-					}
-
-					@include break(v-mobile){
-						@if $isAMP != 'true' {
-							float: right !important;
-						} @else {
-							float: right;
+						@include break(mobile){
+							margin: 0 15px 0 -10px;
 						}
-						margin: 0 0 0 10px;
-					}
 
-					img {
-						max-width: 100%;
-						max-height: 110px;
+						@include break(v-mobile){
+							float: right;
+							margin: 0 0 0 10px;
+						}
+
+						img {
+							max-width: 100%;
+							max-height: 110px;
+						}
 					}
 				}
 				
@@ -560,19 +562,12 @@ body.interior {
 		}
 
 		@if $isAMP == 'true' {
-			#content {
-				background-color: white;
 
-				amp-accordion {
-					margin-bottom: 20px;
-					
-					h4 {
-						font-size: 1.2em;
-						margin: 25px 0 0 0;
-						padding: 5px;
-					}
-				}
-			}
+			.title {
+		    	font-weight: 500;
+		    	padding: 4px 8px;
+		    }
+
 		}
 	}
 }

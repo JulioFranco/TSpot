@@ -1,4 +1,5 @@
 body.interior {
+	/*
 	#header-ts .menu .wrapper > ul > li a.active {
 		height: 47px !important;
 		line-height: 42px;
@@ -13,6 +14,7 @@ body.interior {
 			margin-top: -1px;
 		}
 	}
+	*/
 	
 	.score {
 		font-family: $f-helvetica-roboto !important;
@@ -117,11 +119,13 @@ body.interior {
 	&.download,
 	&.trivia, &.trivias {
 		.col-2-3{
-			width: 69%;
+			width: 68%;
 
+			/*
 			@include break(big-desk) {
 				width: 70%;
 			}
+			*/
 
 			@include break(v-tablet) {
 				width: 100%;
