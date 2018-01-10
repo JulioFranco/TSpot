@@ -235,30 +235,30 @@ body.interior {
 		margin: -10px 0 20px;
 
 		h3 {
+			font-weight: 400;
+			padding: 10px 0 15px;
+			
 			@if $isAMP == 'true' {
 				font-size: 1.1em;
 			} @else {
 				font-size: 1.1em !important;
 			}
-
-			font-weight: 400;
-			padding: 10px 0 15px;
 		}
 
 		ul {
 			margin: 0 0 35px 0;
 			
 			li {
+				margin-bottom: 10px;
+				list-style-type: none;
+				letter-spacing: -0.25px;
 
 				@if $isAMP == 'true' {
-					list-style-type: none;
 					font-size: 0.9em;
 					padding: 0 0 10px;
-					letter-spacing: -0.25px;
 				} @else {
-					list-style-type: none;
 					font-size: 1em;
-					letter-spacing: -0.25px;
+					
 				}
 
 			}

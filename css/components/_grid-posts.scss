@@ -18,6 +18,8 @@
 	#masthead {
 		min-height: 336px;
 		position: relative;
+		height: auto;
+		background: none;
 
 		@if $isAMP == 'true' {
 			min-height: 270px;
@@ -29,10 +31,7 @@
 
 		.wrapper {
 			position: relative;
-
-			@if $isAMP == 'true' {
-				padding: 0;
-			}
+			padding: 0;
 		}
 		ul.featured-posts {
 			position: absolute;
