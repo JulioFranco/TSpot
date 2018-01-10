@@ -12,7 +12,6 @@
 	@if $isAMP != 'true' {
 		@include break(mobile) {
 			height: 58px;
-			-webkit-transition: left 0.3s ease-in-out 0s;
 			transition: left 0.3s ease-in-out 0s;
 		}
 	
@@ -32,27 +31,27 @@
 				}
 			}
 		}
+
+		/*
 		.withHeader {
 			background-color: #8B9296 !important;	
 		}
+		*/
+
 		#dk_menu {
 			height: 42px;
 			margin-left: -8px;
-			@include break(tablet){
-				margin-left: -6px;
+
+			& > li {
+				margin-right: -4px;
 			}
 		}
-		/*
-		#main-menu #dk_menu > li {
-			margin-right: -4px;
-		}
-		*/
 	}
 
 
 	/**** HEADER-TOP ****/
 	.header-top {
-		//Amp and Normal
+		//AMP and Normal
 		background: $dark-blue;
 		position: relative;
 		z-index: 2;
@@ -73,7 +72,7 @@
 			line-height: $header-top-line-height;
 		}
 
-		//Only Normal (Not Amp)
+		// Only Normal
 		@if $isAMP != 'true' {
 			.right-links {
 				float: right;
@@ -143,7 +142,6 @@
 								color: #fff;
 								text-shadow: 0 1px 0 #900;
 								-webkit-animation: count_appear 0.35s linear;
-								-moz-animation: count_appear 0.35s linear;
 								@include border-radius(20);
 								border-radius: 20px;
 								box-shadow: 0 1px 0 #900;
@@ -294,10 +292,6 @@
 													margin: -1px 5px 0 0;
 													padding: 0;
 													border: 1px solid #fff;
-													-webkit-border-radius: 0;
-													-moz-border-radius: 0;
-													-ms-border-radius: 0;
-													-o-border-radius: 0;
 													border-radius: 0;
 												}
 												&:hover {
@@ -735,7 +729,6 @@
 			line-height: 50px;
 			position: relative;
 			z-index: 1;
-			//box-shadow: 0 2px 3px rgba(34, 25, 25, 0.4);
 			box-shadow: 0 4px 0px rgba(34,25,25,0.1);
 			font-size: .70em;
 			line-height: 38px;
@@ -743,28 +736,32 @@
 				display: none;
 			}
 			.SubHeader {
-				background: #777D82; 
+				background: #777D82;
 				text-align: center;
-				box-shadow: inset 0px 3px 0px 0px rgba(0,0,0,0.15);
+				box-shadow: inset 0px 4px 0px 0px rgba(0,0,0,0.10);
+				height: 40px;
+				padding-top: 1px;
 
 				li {
 					text-align: center;
 					margin: 0px 12px;
-					padding-bottom: 0 !important;
 					display: inline-block;
 					text-transform: none;
 					color: white;
 					line-height: 20px;
 
+					/*
 					a:after {
 						left: 0;
 						top: 7px !important;
 					}
+					*/
 
 					a {
-						padding: 0 !important;
-						font-weight: 400 !important;
     					font-size: .95em;
+    					color: #fff;
+						position: relative;
+						display: block;
 					}
 				}
 				li:hover {
@@ -884,20 +881,12 @@
 							margin-right: 0px;
 						}
 						
-						a {
+						& > a {
 							color: rgba(255, 255, 255, 0.96);
 							font-weight: 500;
 							position: relative;
 							display: block;
-							//padding: 0 27px 0 14px;
 							padding: 0 16px 0 14px;
-							margin-top: 0px;
-							
-							/*
-							@include break(v-tablet){
-								padding: 0 25px 0 12px;
-							}
-							*/
 							
 							/*
 							&:after {
@@ -912,6 +901,10 @@
 							}
 							*/
 							
+							&.active {
+								background: #6D7075;
+							}
+							/*
 							&.active {
 								background: #777D82;
 								height: 43px;
@@ -929,11 +922,12 @@
 									margin-top: -2px;
 								}
 							}
+							*/
 							
 						}
 						
 						&:hover {
-							background-color: #777D82;
+							background-color: #6D7075;
 							transition: 0.1s ease-in-out;
 						}
 
@@ -953,9 +947,13 @@
 							width: 110%;
 							margin-left: -5%;
 							
-							background: #777D82;
+							background: #888d91;
 							height: 260px;
 							box-shadow: 0 3px 0px rgba(34,25,25,0.10),inset 0px 3px 0px 0px rgba(0,0,0,0.15);
+
+							@include break(tablet){
+								display: none !important;
+							}
 							
 							.wrapper {
 								padding: 17px 0;
@@ -1278,11 +1276,9 @@
 	//left: -250px;
 
 	@if $isAMP == 'true' { //Only Amp
-		-webkit-transition: left 0.3s ease-in-out 0s;
 		transition: left 0.3s ease-in-out 0s;
 	} @else { //Only Normal (Not Amp)
 		@include break(mobile) {
-			-webkit-transition: left 0.3s ease-in-out 0s;
 			transition: left 0.3s ease-in-out 0s;
 		}
 	} 
