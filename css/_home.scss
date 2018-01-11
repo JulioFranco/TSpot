@@ -43,8 +43,13 @@ body.home {
 
 			#grid-posts {
 				&.secondary {
-					margin: -32px 0 8px;
+					margin: 0 0 3px;
 					padding: 10px 0;
+
+					@include break(mobile) {
+						background: none;
+						margin: 0 0 15px;
+					}
 				}
 			}
 		
