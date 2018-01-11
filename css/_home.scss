@@ -40,9 +40,21 @@ body.home {
 					}
 				}
 			}
+
+			#grid-posts {
+				&.secondary {
+					margin: -32px 0 8px;
+					padding: 10px 0;
+				}
+			}
 		
 			#sidebar {
 				padding-top: 50px;
+
+				&.secondary {
+					padding-top: 20px;
+				}
+
 				@include break(tablet) {
 					width: 32%;
 					@media screen and (orientation:portrait) { 
