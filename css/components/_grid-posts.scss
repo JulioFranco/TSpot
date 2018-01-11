@@ -24,7 +24,9 @@
 	}
 
 	&.grid-section2 #masthead {
-		min-height: ($tile-height-sec * 2) - 4;
+		@include break(tablet) {
+			min-height: ($tile-height-sec * 2) - 4;
+		}
 	}
 
 	#masthead {
