@@ -2,12 +2,15 @@
 	#masthead {
 		//0.5 grey, 1 dark
 		background: rgba(30, 41, 51, 0.95);
-		height: ($tile-height * 3) + 2;
 		position: relative;
 		left: 0;
 		width: 100%;
 		margin: 0 auto;
 		padding: 0;
+
+		&.BigHead {
+			height: ($tile-height * 3) + 2;
+		}
 
 		.FGheadCom {
 			display: none;
