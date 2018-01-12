@@ -5,14 +5,6 @@
 		@if $isAMP != 'true' {
 			padding: 25px 0 25px;
 		}
-
-		&.secundary {
-			background: #ddd;
-
-			@if $isAMP != 'true' {
-				padding: 0;
-			}
-		}
 	}
 
 	@if $isAMP == 'true' {
