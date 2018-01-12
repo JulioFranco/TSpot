@@ -5,13 +5,13 @@
 		@if $isAMP != 'true' {
 			padding: 25px 0 25px;
 		}
-	}
 
-	&.grid-section2 {
-		background: #ddd;
+		&.secundary {
+			background: #ddd;
 
-		@if $isAMP != 'true' {
-			padding: 0;
+			@if $isAMP != 'true' {
+				padding: 0;
+			}
 		}
 	}
 
@@ -21,12 +21,6 @@
 		@include break(mobile){
 			padding: 1px 0 !important;
 		}	
-	}
-
-	&.grid-section2 #masthead {
-		@include break(tablet) {
-			min-height: ($tile-height-sec * 2) - 4;
-		}
 	}
 
 	#masthead {
