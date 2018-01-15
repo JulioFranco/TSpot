@@ -16,7 +16,7 @@
 	}
 
 	#masthead {
-		min-height: ($tile-height-sec * 2) + 1;
+		min-height: ($tile-height-sec * 2) - 1;
 		position: relative;
 		//height: auto;
 		//background: none;

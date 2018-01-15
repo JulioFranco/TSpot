@@ -43,12 +43,29 @@ body.home {
 
 			#grid-posts {
 				&.secondary {
-					margin: 0 0 3px;
-					padding: 10px 0;
 
-					@include break(mobile) {
-						background: none;
-						margin: 0 0 15px;
+				    padding: 0;
+
+					#masthead {
+						background: #ddd;
+						padding: 10px 0;
+
+						@include break(mobile) {
+							background: none;
+							margin: 0 0 15px;
+						}
+
+						ul.featured-posts li a hgroup h3 {
+							display: none;
+						}
+
+						ul.featured-posts li a hgroup h2 {
+							font-size: 0.95em;
+						}
+
+						ul.featured-posts li.tall a hgroup h2 {
+							font-size: 1.25em;
+						}					
 					}
 				}
 			}
