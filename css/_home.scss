@@ -43,8 +43,11 @@ body.home {
 
 			#grid-posts {
 				&.secondary {
-
 				    padding: 0;
+
+					@include break(mobile) {
+						background: none;
+					}
 
 					#masthead {
 						background: #ddd;
