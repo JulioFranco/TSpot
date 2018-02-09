@@ -675,18 +675,14 @@
 			}
 
 			@if $isAMP == 'true' { //Only Amp
-				background-size: 165px;
-				margin-left: 32px;
+				background-size: 175px;
+				margin-left: 30px;
 				height: 49px;
 
 			} @else {
 				@include break(mobile) {
-					background-size: 165px;
-					margin-left: 32px;
-					height: 49px !important;
-				}
-
-				@include break(v-mobile) {
+					background-size: 175px;
+					margin-left: 30px;
 					height: 49px;
 				}
 			}
@@ -710,9 +706,6 @@
 			}
 
 			@include break(mobile){
-				line-height: 48px;
-			}
-			@include break(v-mobile){
 				line-height: 48px;
 			}
 		}
@@ -1217,10 +1210,10 @@
 		line-height: $header-top-line-height;
 
 		@if $isAMP == 'true' { //Only Amp
-			margin-left: 32px;
-			width: 160px;
+			background-size: 185px;
+			margin-left: 28px;
+			width: 175px;
 			height: 52px;
-			background-size: 170px;
 		
 		} @else {
 			width: 198px;
@@ -1236,21 +1229,16 @@
 			}
 
 			@include break(mobile){
-				margin-left: 32px;
-				width: 160px;
+				background-size: 185px;
+				margin-left: 28px;
+				width: 175px;
 				height: 52px;
-				background-size: 170px;
 
 				&:hover{
 					padding: 0 4px 0px 0px;
 					margin-left: 26px;
 					border-left: 6px solid #0c468d;
 				}
-			}
-
-			@include break(v-mobile){
-				width: 160px;
-				height: 52px;
 			}
 		}
 

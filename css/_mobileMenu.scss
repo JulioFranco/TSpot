@@ -40,44 +40,58 @@
 				}
 			}
 
-			/*&:hover {
+			/*
+			&:hover {
 				fill: $orange;
-			}*/
+			}
+			*/
 		}
 	}
 
 	&.interior{
 		#MobileMenu a {
+			/*
 			padding-left:15px;
 			padding-right: 15px;
 			margin-left: -15px;
 			position: relative;
 			float: left;
 			cursor: pointer;
+			@include transitions (0.1s);
+			width: 13px;
+			*/
+
 			svg {
+				/*
 				text-decoration: none;
 				fill: white;
 				float: left;
-				
-				line-height:$header-interior-line-height; 
+				*/
+
+				line-height: $header-interior-line-height; 
 				margin-top:3px;
-				width: 13px;
 				height: 30px;
-				@include transitions (0.1s);
 
 				@if $isAMP == 'true' {
+					/*
 					display: block;
-					height: 49px;
 					@include opacity(1);
+					*/
+					height: 49px;
 				
 				} @else {
+					/*
 					@include opacity(0);
 					display: none;
+					*/
+
 					height: $header-interior-line-height;
 					
 					@include break(mobile){
+						/*
 						@include opacity(1);
 						display: block;
+						*/
 						height: 49px;
 					}	
 				}
@@ -93,12 +107,6 @@
 	.c-menu {
 		position: fixed;
 		z-index: 1100002;
-		
-
-		-webkit-transition: -webkit-transform 0.3s;
-		-moz-transition: transform 0.3s;
-		-ms-transition: transform 0.3s; /* IE 9 -- does not exists? */
-		-o-transition: transform 0.3s;
 		transition: transform 0.3s;
 	}
 	.c-menu__close {
@@ -141,28 +149,14 @@
 		height: 100%;
 		top: 0;
 		left: 0;
-
-		-webkit-transform: translateX(-100%); /* Chrome, Safari, Opera */
-		-moz-transform: translateX(-100%);
-		-ms-transform: translateX(-100%); /* IE 9 */
-		-o-transform: translateX(-100%);
 		transform: translateX(-100%);
 
 		&.is-active {
-			-webkit-transform: translateX(0); /* Chrome, Safari, Opera */
-			-moz-transform: translateX(0);
-			-ms-transform: translateX(0); /* IE 9 */
-			-o-transform: translateX(0);
 			transform: translateX(0);
 		}
 
 		@media all and (min-width: 270px) {
 			width: 250px;
-
-			-webkit-transform: translateX(-250px); /* Chrome, Safari, Opera */
-			-moz-transform: translateX(-250px);
-			-ms-transform: translateX(-250px); /* IE 9 */
-			-o-transform: translateX(-250px);
 			transform: translateX(-250px);
 		}
 
