@@ -34,7 +34,7 @@
 		
 		.article-img {
 			@include col(2,5,0);
-			width: 27%;
+			width: 30%;
 			margin-top: 3px;
 
 			/*			
@@ -73,7 +73,7 @@
 		
 		.article-content {
 			@include col-last(3,5,2);
-			width: 69.2%;
+			width: 67.2%;
 
 			@if $isAMP == 'true' {
 				padding-left: 5px;
@@ -101,7 +101,7 @@
 					@if $isAMP == 'true' {
 						font-size: 100%;
 					} @else {
-						font-size: 105%;
+						font-size: 110%;
 						@include break(v-mobile) {
 							font-size: 100%;
 						}

@@ -33,6 +33,11 @@
 
 			&.subtitle {
 				padding: 0 0 20px;
+
+				@if $isAMP == 'true' {
+				    color: #555;
+				    font-size: 1.3em;
+				}
 			}
 
 			@if $isAMP == 'true' {

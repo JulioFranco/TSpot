@@ -222,20 +222,18 @@ body.interior {
 					}
 				}
 
-				@if $isAMP != 'true' {
-					h2 {
-						color: #888;
-						font-size: 1.1em;
-						font-weight: 400;
-						font-family: Roboto;
-						letter-spacing: -.333px;
-						padding: 5px 0px 5px 0px;
-					}
+				h2 {
+					color: #888;
+					font-size: 1.1em;
+					font-weight: 400;
+					font-family: Roboto;
+					letter-spacing: -.333px;
+					padding: 5px 0px 5px 0px;
+				}
 
-					.subver {
-						font-size: 0.75em;
-						color: #777;
-					}
+				.subver {
+					font-size: 0.75em;
+					color: #777;
 				}
 
 				em {

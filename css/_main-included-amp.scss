@@ -376,6 +376,39 @@ h1 {
 		margin-top: 60px;
 	}
 
+
+	table {
+		&.article-table {
+			font-size: 0.9em;
+			
+			td, th {
+				padding: inherit;
+			}
+
+			tr {
+				padding: 6px 0 6px 10px;
+
+				&.title {
+					background-color: #105ab2;
+					color: #ffffff;
+					a {
+						color: #ffffff;
+					}
+				}
+				&.alt {
+					background-color: white;
+				}
+			}
+			&.alt {
+				tr {
+					&:nth-child(even) {
+						background: white;
+					}
+				}
+			}
+		}
+	}
+
 	/**** SIDEBAR ****/
 	amp-sidebar {
 		width: 250px;
