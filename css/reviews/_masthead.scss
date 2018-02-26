@@ -99,15 +99,15 @@
 				}
 			}
 			li {
-				height: 266px !important;
+				height: 266px;
 
 				a {
-					height: 226px !important;
+					height: 226px;
 				}
 
 				&:nth-child(3) {
-					left: $tile-width*2 !important;
-					top: 0 !important;
+					left: $tile-width*2;
+					top: 0;
 
 				}
 				&:nth-child(4) {
@@ -126,14 +126,14 @@
 					&:nth-child(2) {
 					}
 					&:nth-child(3) {
-						left: 2/3*100% !important;
-						top: 0 !important;
+						left: 2/3*100%;
+						top: 0;
 					}
 				}
 				@include break(mobile){
 					&:nth-child(3) {
-						left: 160% !important;
-						top: 0 !important;
+						left: 160%;
+						top: 0;
 					}
 
 				}
