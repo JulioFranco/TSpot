@@ -2,15 +2,13 @@ ul.category-chicklets {
 	
 	@if $isAMP == 'true' {
 		margin: 20px 0 10px;
-	} @else {
+	}
+	@else {
 		@include break(mobile){
-			margin: 20px 0 10px;
+			margin: 15px 0 10px;
 		}
 	}
 
-	@include break(v-mobile){
-		margin: 20px 0 10px;
-	}
 	li {
 		display: inline-block;
 		a {

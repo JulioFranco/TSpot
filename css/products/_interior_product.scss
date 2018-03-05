@@ -727,17 +727,6 @@ body.interior {
 	}
 
 	&.product {
-		@if $isAMP != 'true' {
-			#content-header {
-				.wrapper {
-					padding: 20px 0 10px;
-				}
-
-				h1.large {
-					margin: 15px 0 !important;
-				}
-			}
-		}
 
 		#content {
 			@if $isAMP == 'true' {

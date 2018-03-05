@@ -230,57 +230,6 @@ body.interior {
 					letter-spacing: -.333px;
 					padding: 5px 0px 5px 0px;
 				}
-
-				.subver {
-					font-size: 0.75em;
-					color: #777;
-				}
-
-				em {
-					font-style: normal;
-					font-size: .7em;
-					line-height: 30px;
-					color: black;
-
-					@include break(v-mobile) {
-						font-size: .65em;
-					}
-
-					a {
-						color: black;
-						font-weight: 500;
-						border-bottom: 1px solid #ccc;
-						padding-bottom: 3px;	
-
-						@if $isAMP != 'true' {
-							&:hover {
-								border-bottom: 1px solid #ff7f00;
-							}
-						}
-					}
-
-					@if $isAMP != 'true' {
-						span.numCom {
-							padding-left: 12px;
-							margin-left: 10px;
-							border-left: 2px solid #ccc;
-
-							a {
-								font-weight: 400;
-								color: #5a6169;
-							}
-						}
-
-						span.sponsored {
-							background-color: #495693;
-							margin: 0 4px 0 0;
-							padding: 4px 10px;
-							text-align: center;
-							color: white;
-							font-weight: 600 !important;
-						}
-					}
-				}
 			}
 		}
 

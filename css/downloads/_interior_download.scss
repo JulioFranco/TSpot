@@ -1,33 +1,24 @@
 body.interior {
 	&.download {
 		#content-header {
-			@if $isAMP != 'true' {
-				.wrapper {
-					padding: 25px 0;
-
-					@include break(mobile){
-						padding: 20px 0 10px;
-					}
-				}
-			}
-
 			.title-group {
+				.subver {
+					font-size: 0.75em;
+					color: #777;
+				}
+
 				@if $isAMP == 'true' {
-					.subver { //Same to subver in _interior.scss
-						font-size: 0.75em;
-						color: #777;
-					}
 				
 				} @else {
 
-					margin-top: 25px;
+					margin: 25px 0 5px;
 
 					@include break(tablet){
 						margin-right: 0;
 					}
 
 					@include break(mobile){
-						margin-top: 15px;
+						margin: 15px 0 10px;
 					}
 
 					.wrapper {
