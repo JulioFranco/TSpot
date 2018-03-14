@@ -849,7 +849,7 @@ h3.section-header {
 		margin: 15px 0 30px;
 		display: block !important;
 
-		@include break(mobile){
+		@include break(v-tablet){
 			margin: 0;
 		}
 
@@ -1897,7 +1897,6 @@ table {
 	margin: 0 auto 15px;
 	text-align: center;
 	display: block;
-	min-height: 250px;
 }
 
 .adContainerLeader2 {

@@ -674,17 +674,9 @@
 
 			} @else {
 
-				&:hover{
-					padding-bottom: 3px;
-				}
-
 				@include break(mobile) {
 					margin-left: 30px;
 					height: 49px;
-
-					&:hover{
-						margin-left: 30px;
-					}
 				}
 
 			}
@@ -1223,23 +1215,12 @@
 			margin-left: 4px;
 			background-size: 215px;
 
-			&:hover{
-				background-color: #0c468d;
-				padding: 0 11px;
-				margin-left: -8px;
-			}
-
 			@include break(mobile){
 				background-size: 185px;
 				margin-left: 26px;
 				width: 175px;
 				height: 52px;
 				padding: 0;
-
-				&:hover{
-					margin-left: 26px;
-					padding: 0;
-				}
 			}
 		}
 
