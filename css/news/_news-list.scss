@@ -31,6 +31,14 @@
 		margin-bottom: 17px;
 		border-bottom: 2px solid #e7e9ee;
 		z-index: 1;
+
+		// Fix native ads, ziff/str vale verg
+		@if $isAMP != 'true' {
+			&.str-adunit {
+				padding-bottom: 20px !important;
+				margin-bottom: 17px !important;
+			}
+		}
 		
 		.article-img {
 			@include col(2,5,0);
