@@ -139,7 +139,7 @@
 			&.fullview {
 				h2 {
 					a {
-						font-size: 1.3em;
+						font-size: 1.4em;
 					}
 				}
 			}
@@ -392,79 +392,69 @@
 		margin-bottom: 5px;
 	}
 
-	&.fullview {
-		max-width: 98%;
-		h2 {
-		}
-		time {
-			@if $isAMP == 'true' {
+	@if $isAMP != 'true' {
+		&.fullview {
+			max-width: 98%;
+			h2 {
+			}
+			time {
 				font-size: 13px;
-			} @else {
-				font-size: 13px !important;
 			}
-		}
-		p {
-			@if $isAMP == 'true' {
-				font-size: 16px;
-			} @else {
-				font-size: 16px !important;
+			p {
+				font-size: 17px;
+				font-weight: 400;
+				line-height: 1.45;
 			}
-			font-weight: 400;
-			line-height: 1.45;
-		}
-		img {
-			@if $isAMP == 'true' {
-				max-width: 100%;
-			} @else {
+			img {
 				max-width: 100% !important;
 				height: auto!important;
+				padding-top: 20px;
 			}
-			padding-top: 20px;
-		}
 
-		ul {
-			margin-left: 5%;
-			margin: 25px;
-			font-size: 0.85em;
-			font-family: $f-paragraph;
-			line-height: 1.5;
+			ul {
+				margin-left: 5%;
+				margin: 25px;
+				font-size: 0.85em;
+				font-family: $f-paragraph;
+				line-height: 1.5;
 
-			li {
-				list-style-type: square;
-				margin-bottom: 10px;
+				li {
+					list-style-type: square;
+					margin-bottom: 10px;
+				}
 			}
-		}
 
-		.video-container {
-			clear: both;
-			margin-top: 15px;
-		}
-
-		blockquote {
-			background: white;
-			margin: 5px 20px 25px 0px;
-			padding: 15px 10px 0px 15px;
-			border-left: 3px solid #ccc;
-		}
-
-		blockquote.twitter-tweet, twitterwidget.twitter-tweet {
-			@if $isAMP == 'true' {
-				margin: 7px auto;
-				margin-bottom: 25px;
-			} @else {
-				margin: 7px auto !important;
-				margin-bottom: 25px !important;
+			.video-container {
+				clear: both;
+				margin-top: 15px;
 			}
-		}
 
-		iframe {
-			&.twitter-tweet {
+			blockquote {
+				background: white;
+				margin: 5px 20px 25px 0px;
+				padding: 15px 10px 0px 15px;
+				border-left: 3px solid #ccc;
+			}
+
+			blockquote.twitter-tweet, twitterwidget.twitter-tweet {
 				@if $isAMP == 'true' {
 					margin: 7px auto;
 					margin-bottom: 25px;
 				} @else {
 					margin: 7px auto !important;
 					margin-bottom: 25px !important;
+				}
+			}
+
+			iframe {
+				&.twitter-tweet {
+					@if $isAMP == 'true' {
+						margin: 7px auto;
+						margin-bottom: 25px;
+					} @else {
+						margin: 7px auto !important;
+						margin-bottom: 25px !important;
+					}
 				}
 			}
 		}
