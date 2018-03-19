@@ -1236,22 +1236,21 @@
 #Mobileheader {
 	width: 250px;
 	height: 100%;
-	//overflow: hidden;
 	overflow-y: auto;
 	overflow-x: hidden;
 	background: #263340;
 	position: fixed;
 	z-index: 10;
 	top: 0;
-	//left: -250px;
 
-	@if $isAMP == 'true' { //Only Amp
+	@if $isAMP == 'true' {
 		transition: left 0.3s ease-in-out 0s;
-	} @else { //Only Normal (Not Amp)
+	}
+	@else {
 		@include break(mobile) {
 			transition: left 0.3s ease-in-out 0s;
 		}
-	} 
+	}
 
 	#flyout-main-menu {
 		padding: 0px 0px;
@@ -1285,10 +1284,13 @@
 				color: white;
 				text-transform: uppercase;
 				font-size: 0.85em;
-				font-family: Roboto Condensed;
 				width: 100%;
 				display: block;
 				padding-left: 15px;
+
+				@if $isAMP != 'true' {
+					font-family: $f-condensed;
+				}
 
 				/*
 				&.blue {
