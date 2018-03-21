@@ -9,6 +9,12 @@ body.home {
 
 	} @else {
 
+		// Fixed header home
+		padding-top: 82px;
+		@include break(mobile){
+			padding-top: 55px;
+		}
+
 		#dk_menu {
 			height: 38px !important;
 		}

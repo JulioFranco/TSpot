@@ -1363,19 +1363,4 @@
 		height: 10000px !important;
 		width: 100%;
 	}
-
-	@include break(mobile){
-		@media screen and (orientation:landscape) {
-			#header-ts {
-				position: static !important;
-			}
-			.menuSpacerHome {
-				margin-top: -85px;
-			}
-			.menuSpacerFeat, .menuSpacerNormal {
-				height: 1px !important;
-				margin-top: -28px;
-			}
-		}
-	}
 }
