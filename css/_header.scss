@@ -12,10 +12,6 @@
 	@if $isAMP != 'true' {
 		@include break(mobile) {
 			height: 58px;
-<<<<<<< HEAD
-=======
-			transition: left 0.3s ease-in-out 0s;
->>>>>>> 670722d924acab38427f54b9d07aa6dca3d6db2e
 		}
 
 		.withHeader {
@@ -34,24 +30,6 @@
 				}
 			}
 		}
-<<<<<<< HEAD
-=======
-
-		/*
-		.withHeader {
-			background-color: #8B9296 !important;	
-		}
-		*/
-
-		#dk_menu {
-			height: 42px;
-			margin-left: -8px;
-
-			& > li {
-				margin-right: -4px;
-			}
-		}
->>>>>>> 670722d924acab38427f54b9d07aa6dca3d6db2e
 	}
 
 
@@ -655,24 +633,10 @@
 				line-height: $header-interior-line-height;
 			}
 
-<<<<<<< HEAD
 			@include break(mobile) {
 				background-size: 165px;
 				margin-left: 2px;
 				height: 45px;
-=======
-			@if $isAMP == 'true' { //Only Amp
-				margin-left: 30px;
-				height: 49px;
-
-			} @else {
-
-				@include break(mobile) {
-					margin-left: 30px;
-					height: 49px;
-				}
-
->>>>>>> 670722d924acab38427f54b9d07aa6dca3d6db2e
 			}
 		}
 
@@ -691,13 +655,6 @@
 					}
 				}
 			}
-<<<<<<< HEAD
-=======
-
-			@include break(mobile){
-				line-height: 48px;
-			}
->>>>>>> 670722d924acab38427f54b9d07aa6dca3d6db2e
 		}
 	}
 	/**** END INTERIOR ****/
@@ -714,48 +671,10 @@
 			box-shadow: 0 4px 0px rgba(34,25,25,0.1);
 			font-size: .70em;
 			line-height: 38px;
-<<<<<<< HEAD
 
 			#dk_menu {
 				height: 42px;
 				margin-left: -8px;
-=======
-			@include break(mobile) {
-				display: none;
-			}
-			.SubHeader {
-				background: #777D82;
-				text-align: center;
-				box-shadow: inset 0px 4px 0px 0px rgba(0,0,0,0.10);
-				height: 40px;
-				padding-top: 1px;
-
-				li {
-					text-align: center;
-					margin: 0px 12px;
-					display: inline-block;
-					text-transform: none;
-					color: white;
-					line-height: 20px;
-
-					/*
-					a:after {
-						left: 0;
-						top: 7px !important;
-					}
-					*/
-
-					a {
-    					font-size: .95em;
-    					color: #fff;
-						position: relative;
-						display: block;
-					}
-				}
-				li:hover {
-					border-bottom: 1px solid white;
-				}
->>>>>>> 670722d924acab38427f54b9d07aa6dca3d6db2e
 
 				@include break(tablet){
 					margin-left: -6px;
@@ -794,10 +713,7 @@
 							position: relative;
 							display: block;
 							padding: 0 16px 0 14px;
-<<<<<<< HEAD
 							margin-top: 0px;
-=======
->>>>>>> 670722d924acab38427f54b9d07aa6dca3d6db2e
 							
 							/*
 							&:after {
@@ -1214,33 +1130,11 @@
 		margin-left: 5px;
 		background-size: 215px;
 
-<<<<<<< HEAD
 		@include break(mobile){
 			margin-left: 2px;
 			width: 160px;
 			height: $header-top-line-height-mobile;
 			background-size: 170px;
-=======
-		@if $isAMP == 'true' { //Only Amp
-			background-size: 185px;
-			margin-left: 26px;
-			width: 175px;
-			height: 52px;
-		
-		} @else {
-			width: 198px;
-			height: $header-top-line-height;
-			margin-left: 4px;
-			background-size: 215px;
-
-			@include break(mobile){
-				background-size: 185px;
-				margin-left: 26px;
-				width: 175px;
-				height: 52px;
-				padding: 0;
-			}
->>>>>>> 670722d924acab38427f54b9d07aa6dca3d6db2e
 		}
 
 		a {
@@ -1307,31 +1201,10 @@
 				width: 100%;
 				display: block;
 				padding-left: 15px;
-<<<<<<< HEAD
-=======
 
 				@if $isAMP != 'true' {
 					font-family: $f-condensed;
 				}
-
-				/*
-				&.blue {
-					border-left: 4px solid $blue;
-				}
-				&.orange {
-					border-left: 4px solid $orange;
-				}
-				&.red {
-					border-left: 4px solid $red;
-				}
-				&.green {
-					border-left: 4px solid $green;
-				}
-				&.purple {
-					border-left: 4px solid $purple;
-				}
-				*/
->>>>>>> 670722d924acab38427f54b9d07aa6dca3d6db2e
 			}
 		}
 
@@ -1380,14 +1253,3 @@
 		}
 	}
 }
-<<<<<<< HEAD
-*/
-=======
-
-@if $isAMP != 'true' { //Only Normal (Not Amp)
-	.CoverEntirePage {
-		height: 10000px !important;
-		width: 100%;
-	}
-}
->>>>>>> 670722d924acab38427f54b9d07aa6dca3d6db2e
