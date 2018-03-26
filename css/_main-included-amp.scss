@@ -5,10 +5,13 @@ body {
 	background-color: $light-grey;
 	font-family: $f-primary;
 	font-size: 120%; 
-	-webkit-backface-visibility: hidden;
 	-webkit-font-smoothing: antialiased;
-	-webkit-transition: none;
-	transition: none;
+
+	// Fixed header home
+	padding-top: 76px;
+	@include break(mobile){
+		padding-top: 30px;
+	}
 }
 
 article, aside, section {
@@ -157,41 +160,6 @@ h1 {
 		visibility: hidden !important;
 	}
 }
-
-
-/**** Menu Spacer ****/
-@if $isAMP == 'true' { //Only Amp
-	.menuSpacerNormal {
-		height: 30px;
-	}
-
-} @else { //Only Normal (Not Amp)
-	.menuSpacerNormal {
-		height: 76px;
-		@include break(mobile){
-			height: 30px;
-		}
-	}
-
-	.menuSpacerHome {
-		height: 82px;
-		display:block;
-		
-		@include break(mobile){
-			height: 55px;
-		}
-	}
-
-	.menuSpacerFeat {
-		height: 76px;
-		@include break(mobile){
-			height: 55px;
-		}
-	}
-}
-/**** End Menu Spacer ****/
-
-
 
 /**** CONTENT ****/
 #content {
@@ -374,6 +342,39 @@ h1 {
 
 	footer {
 		margin-top: 60px;
+	}
+
+
+	table {
+		&.article-table {
+			font-size: 0.9em;
+			
+			td, th {
+				padding: inherit;
+			}
+
+			tr {
+				padding: 6px 0 6px 10px;
+
+				&.title {
+					background-color: #105ab2;
+					color: #ffffff;
+					a {
+						color: #ffffff;
+					}
+				}
+				&.alt {
+					background-color: white;
+				}
+			}
+			&.alt {
+				tr {
+					&:nth-child(even) {
+						background: white;
+					}
+				}
+			}
+		}
 	}
 
 	/**** SIDEBAR ****/

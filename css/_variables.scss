@@ -8,7 +8,7 @@ $f-helvetica-roboto: 'Helvetica Neue', 'Roboto', sans-serif;
 // !GLOBAL RESPONSIVE VARIABLES
 $big-desk: 1250px;
 $desk: 1108px;
-$tablet: 1108px; // This number needs to be the same as $desk to prevent a "no-mans-land" in breakpoints
+$tablet: 1108px; // This needs to be the same as $desk to prevent a "no-mans-land" in breakpoints
 $v-tablet: 960px;
 $mobile: 760px;
 $v-mobile: 500px;
@@ -93,4 +93,6 @@ $tile-padding: 5;
 
 $mast-border-width: 1px;
 $mast-border-col: #fff;
+
+$tile-height-mobile: 300px;
 // !END MASTHEAD

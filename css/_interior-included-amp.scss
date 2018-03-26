@@ -222,6 +222,7 @@ body.interior {
 					}
 				}
 
+<<<<<<< HEAD
 				@if $isAMP != 'true' {
 					h2 {
 						color: #888;
@@ -282,6 +283,15 @@ body.interior {
 							font-weight: 600 !important;
 						}
 					}
+=======
+				h2 {
+					color: #888;
+					font-size: 1.1em;
+					font-weight: 400;
+					font-family: Roboto;
+					letter-spacing: -.333px;
+					padding: 5px 0px 5px 0px;
+>>>>>>> 670722d924acab38427f54b9d07aa6dca3d6db2e
 				}
 			}
 		}
