@@ -183,16 +183,16 @@
 				&.feat {
 					@if $isAMP == 'true' {
 						display: inline;
-						font-size: 0;
 						p {
 							padding: 7px 0;
+							font-size: 0;
 						}
 					} @else {
 						@include break(mobile){
 							display: inline;
-							font-size: 0;
 							p {
 								padding: 7px 0 !important;
+								font-size: 0;
 							}
 						}
 					}
