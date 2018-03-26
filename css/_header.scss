@@ -626,6 +626,7 @@
 			@include break(mobile) {
 				margin-left: 2px;
 				height: 45px;
+				background-position: -7px -1px;
 			}
 		}
 
@@ -672,13 +673,17 @@
 
 				@include break(mobile){
 				    height: 35px;
-				    margin-left: -10px;
+				    margin-left: -8px;
 
 					overflow-x: auto;
 					overflow-y: hidden;
 					-webkit-overflow-scrolling: touch;
 					-ms-overflow-style: -ms-autohiding-scrollbar;
 					white-space: nowrap;
+
+					&::-webkit-scrollbar {
+					    display: none;
+					}
 				}
 
 			}
@@ -1112,8 +1117,8 @@
 		@include break(mobile){
 			margin-left: 2px;
 		    width: 172px;
-		    padding-bottom: 8px;
 		    background-size: 185px;
+		    background-position: -7px -3px;
 			height: $header-top-line-height-mobile;
 		}
 
