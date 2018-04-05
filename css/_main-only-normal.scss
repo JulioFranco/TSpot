@@ -46,10 +46,12 @@
 	background-color: $light-grey;
 }
 
+/*
 .flyout {
 	-webkit-transition: left 0.3s ease-in-out 0s;
 	transition: left 0.3s ease-in-out 0s;
 }
+*/
 
 .activebar {
 	@include break(mobile){
@@ -708,7 +710,7 @@ h3.longtype {
 					margin: 0 auto;
 				}
 
-				h3 {
+				.trend {
 					font-size: .75em;
 					font-weight: 500;
 					width: 90%;
@@ -870,7 +872,7 @@ h3.section-header {
 				}
 				*/
 
-				h3 {
+				.feat {
 					position: relative;
 					top: 10px;
 					font-size: 1.4em;
@@ -1047,7 +1049,7 @@ h3.section-header {
 				}
 			}
 
-			h3 {
+			.feat {
 				font-size: 1.25em;
 				font-weight: 500;
 				letter-spacing: -0.25px;

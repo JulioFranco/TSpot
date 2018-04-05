@@ -1,7 +1,6 @@
 #content-header.featured-image {
 	display: block;
-	min-height: 90vh;
-	max-height: 600px;
+	min-height: 650px;
 	position: relative;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -10,17 +9,14 @@
 	@if $isAMP == 'true' {
 		@include break(mobile){
 			min-height: 260px;
-			max-height: 260px;
 		}
 		@include break(v-mobile){
 			min-height: 350px;
-			max-height: 350px;
 		}
 		
 		.wrapper {
 			position: relative;
-			min-height: 80vh;
-			max-height: 600px;
+			min-height: 600px;
 
 			@include break(mobile){
 				width: 100%;
@@ -33,30 +29,27 @@
 	}
 	@else {
 		@include break(tablet){
-			min-height: 600px;
+			min-height: 650px;
 		}
 		@include break(v-tablet){
 			min-height: 700px;
 		}
 		@include break(mobile){
 			min-height: 260px;
-			max-height: 260px;
 		}
 		@include break(v-mobile){
 			min-height: 355px;
-			max-height: 355px;
 		}
 		
 		.wrapper {
 			position: relative;
-			min-height: 80vh;
-			max-height: 600px;
+			min-height: 600px;
 
 			@include break(tablet){
 				min-height: 600px;
 			}
 			@include break(v-tablet){
-				min-height: 700px;
+				min-height: 660px;
 			}
 			@include break(mobile){
 				width: 100%;
@@ -67,6 +60,8 @@
 			}
 		}
 
+	// portrait??
+	/*
 		@media screen and (min-height: 950px) {
 			min-height: 75vh;
 
@@ -74,6 +69,8 @@
 				min-height: 70vh;
 			}
 		}
+	*/
+
 	}
 	
 	&:before {
