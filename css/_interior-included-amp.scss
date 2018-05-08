@@ -280,7 +280,7 @@ body.interior {
 					width: 96%;
 				}
 				@else {
-					padding: 25px 0 10px !important;
+					padding: 5px 0 15px !important;
 
 					@include break(mobile) {
 						width: 96%;
