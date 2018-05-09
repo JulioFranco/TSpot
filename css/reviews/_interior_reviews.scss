@@ -914,6 +914,18 @@ body.interior {
 
 					margin: 10px 0;
 
+					/*
+					visibility: visible;
+					opacity: 1;
+
+					&.notvis {
+						visibility: hidden;
+						opacity: 0;
+						transition: visibility 0s, opacity 0.5s linear;
+						transition-delay: 4s;
+					}
+					*/
+
 					> div {
 						width: 50%;
 						float: right;
@@ -1000,6 +1012,7 @@ body.interior {
 					}
 
 					.content {
+					    margin-bottom: -30px;
 
 						img {
 							float: right;

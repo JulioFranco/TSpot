@@ -271,64 +271,66 @@ body.interior {
 	}
 
 	&.trivia {
-		#content-header {
-			background-color: rgba(30,41,51,0.95);
-			
-			.wrapper {
-
-				@if $isAMP == 'true' {
-					width: 96%;
-				}
-				@else {
-					padding: 5px 0 15px !important;
-
-					@include break(mobile) {
-						width: 96%;
-					}
-				}
-			}
-			
-			.title-group {
-				h1 {
-				    padding: 22px 10px 22px 21px;
-				    margin: 20px 300px 10px -5px;
-				    color: white;
-				    font-size: 1.5em;
-				    font-weight: 500;
-				    line-height: 1.5;
-				    letter-spacing: -0.333px;
-				    border-radius: 8px;
-
-					@if $isAMP == 'true' {
-						margin: 0 0 5px 0;
-						font-size: 1.25em;
-						padding: 10px 10px 12px 12px;
-						width: 95%;
-						line-height: 1.4;
-					}
-					@else {
-						@include break(v-tablet) {
-							width: 95%;
-						}
-						@include break(mobile) {
-							margin: 0 0 5px 0;
-							font-size: 1.25em;
-							padding: 10px 10px 12px 12px;
-							width: 95%;
-							line-height: 1.4;
-						}
-					}
-
-				}
-			}
-		}
 		#content {
 			.wrapper {
 				@include break(mobile) {
 					padding: 10px 0px 0px 0px;
 				}
 			}
-		}
+			
+			#content-header {
+				background-color: rgba(30,41,51,0.95);
+				
+				.wrapper {
+
+					@if $isAMP == 'true' {
+						width: 96%;
+					}
+					@else {
+						padding: 5px 0 15px;
+
+						@include break(mobile) {
+							width: 96%;
+							padding: 25px 0px 15px;
+						}
+					}
+				}
+				
+				.title-group {
+					h1 {
+					    padding: 22px 10px 22px 21px;
+					    margin: 20px 300px 10px -5px;
+					    color: white;
+					    font-size: 1.5em;
+					    font-weight: 500;
+					    line-height: 1.5;
+					    letter-spacing: -0.333px;
+					    border-radius: 8px;
+
+						@if $isAMP == 'true' {
+							margin: 0 0 5px 0;
+							font-size: 1.25em;
+							padding: 10px 10px 12px 12px;
+							width: 95%;
+							line-height: 1.4;
+						}
+						@else {
+							@include break(v-tablet) {
+								width: 95%;
+							}
+							@include break(mobile) {
+								margin: 0 0 5px 0;
+								font-size: 1.25em;
+								padding: 10px 10px 12px 12px;
+								width: 95%;
+								line-height: 1.4;
+							}
+						}
+
+					}
+				}
+			}
+		}	
 	}
 
 	&.white {
