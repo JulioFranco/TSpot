@@ -313,10 +313,10 @@ body.interior {
 
 				@if $isAMP == 'true' {
 					font-size: 0.9em;
-					padding: 0 0 10px;
+					padding: 0 0 5px;
+					line-height: 1.4em;
 				} @else {
 					font-size: 1em;
-					
 				}
 
 			}
