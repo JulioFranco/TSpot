@@ -14,19 +14,6 @@ body.interior {
 		font-family: $f-paragraph;
 		font-size: 18px;
 
-		/*
-		@if $isAMP == 'true' {
-			font-size: 0.95em;
-
-		} @else {
-			font-size: 0.95em;
-
-			@include break(mobile) {
-				font-size: 0.95em;
-			}
-		}
-		*/
-
 		b, strong {
 			font-family: $f-primary;
 			font-weight: 500;
@@ -51,6 +38,18 @@ body.interior {
 			font-weight: 500;
 			font-size: 1.25em;
 			line-height: 1.4;
+		}
+
+		h5 {
+			font-family: $f-primary;
+			font-weight: 500;
+			line-height: 1.5;
+			padding: 0 0 20px;
+			color: #333;
+
+			strong {
+				color: #075bc0;
+			}
 		}
 
 		.blue {
