@@ -321,8 +321,33 @@ h1 {
 				width: 130px;
 			}
 		}
-		
 	}
+
+	// For "why it matters" (global: home & story templates)
+	h5 {
+		font-family: $f-primary;
+		font-weight: 500;
+		line-height: 1.5;
+		padding: 0 0 20px;
+		color: #333;
+
+		strong {
+			color: #075bc0;
+		}
+
+		a {
+			color: inherit;
+			box-shadow: inset 0 -2px 0 #5e9cea;
+			padding-bottom: 2px;
+			transition: all .15s ease-in-out;
+
+			&:hover {
+				color: #075bc0;
+				box-shadow: none;
+			}
+		}
+	}
+
 }
 /**** END CONTENT ****/
 

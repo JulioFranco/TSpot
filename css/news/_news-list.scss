@@ -394,8 +394,17 @@
 
 	@if $isAMP != 'true' {
 		&.fullview {
+
 			max-width: 98%;
-			h2 {
+
+			h5 {
+				font-weight: 400 !important;
+				padding: 7px 0 0 0 !important;
+				font-size: 17px;
+
+				strong {
+					font-weight: 500;
+				}
 			}
 			time {
 				font-size: 13px;

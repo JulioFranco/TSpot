@@ -40,18 +40,6 @@ body.interior {
 			line-height: 1.4;
 		}
 
-		h5 {
-			font-family: $f-primary;
-			font-weight: 500;
-			line-height: 1.5;
-			padding: 0 0 20px;
-			color: #333;
-
-			strong {
-				color: #075bc0;
-			}
-		}
-
 		.blue {
 			@if $isAMP == 'true' {
 				color: $blue;
