@@ -221,6 +221,12 @@ body.interior {
 		}
 
 		#content {
+			@if $isAMP == 'true' {
+				.intro-video {
+					margin-top: -72px;
+					margin-bottom: 25px;
+				}
+			}
 			.intro-image {
 				margin-top: -52px;
 				width: 100%;
