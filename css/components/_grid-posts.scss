@@ -43,24 +43,27 @@
 				position: absolute;
 				background-size: cover;
 				background-position: center center;
-				
-				&.tall {
-					height: ($tile-height-sec * 2) - $tile-padding + 1;
-					
-					a {
-						height: ($tile-height-sec * 2) - 40px - $tile-padding + 1;
-						hgroup {
-							h2 {
-								font-size: $tall-tile-font-size;
 
-								@include break(v-tablet) {
-									font-size: 1.1em;
+				@if $isAMP != 'true' {
+					&.tall {
+						height: ($tile-height-sec * 2) - $tile-padding + 1;
+
+						a {
+							height: ($tile-height-sec * 2) - 40px - $tile-padding + 1;
+							hgroup {
+								h2 {
+									font-size: $tall-tile-font-size;
+
+									@include break(v-tablet) {
+										font-size: 1.1em;
+									}
 								}
 							}
 						}
+
 					}
-					
 				}
+
 				a {
 					position: relative;
 					display: block;
@@ -116,101 +119,105 @@
 			}
 		}
 
-		ul.variation-5a {
-			li {
-				&:nth-child(1) {
-					top: 0;
-					left: 0;
+		@if $isAMP != 'true' {
+			ul.variation-5a {
+				li {
+					&:nth-child(1) {
+						top: 0;
+						left: 0;
+					}
+
+					&:nth-child(2) {
+						left: $tile-width;
+					}
+
+					&:nth-child(3) {
+						top: ($tile-height-sec + 1);
+						left: $tile-width;
+
+					}
+
+					&:nth-child(4) {
+						top: 0;
+						left: $tile-width*2;
+
+					}
+
+					&:nth-child(5) {
+						left: $tile-width*2;
+						top: ($tile-height-sec + 1);
+					}
 				}
+				//li
+			}
+			//variation-5a
 
-				&:nth-child(2) {
-					left: $tile-width;
-				}
+			ul.variation-5c {
+				li {
+					/*&.tall {
+						height: $tile-height - $tile-padding;
+					}*/
 
-				&:nth-child(3) {
-					top: ($tile-height-sec + 1);
-					left: $tile-width;
+					&:nth-child(1) {
+						top: 0;
+						left: 0;
+					}
 
-				}
+					&:nth-child(2) {
+						top: ($tile-height-sec + 1);
+						left: 0;
+					}
 
-				&:nth-child(4) {
-					top: 0;
-					left: $tile-width*2;
+					&:nth-child(3) {
+						left: $tile-width;
 
-				}
+					}
 
-				&:nth-child(5) {
-					left: $tile-width*2;
-					top: ($tile-height-sec + 1);
-				}
-			}//li
-		}//variation-5a
+					&:nth-child(4) {
+						top: 0;
+						left: $tile-width*2;
 
-		ul.variation-5c {
-			li {
-				/*&.tall {
-					height: $tile-height - $tile-padding;
-				}*/
+					}
 
-				&:nth-child(1) {
-					top: 0;
-					left: 0;
-				}
-
-				&:nth-child(2) {
-					top: ($tile-height-sec + 1);
-					left: 0;
-				}
-				
-				&:nth-child(3) {
-					left: $tile-width;
-
-				}
-				
-				&:nth-child(4) {
-					top: 0;
-					left: $tile-width*2;
-
-				}
-				
-				&:nth-child(5) {
-					left: $tile-width*2;
-					top: ($tile-height-sec + 1);
+					&:nth-child(5) {
+						left: $tile-width*2;
+						top: ($tile-height-sec + 1);
+					}
 				}
 			}
-		}
 
-		ul.variation-6c {
-			li {
-				&:nth-child(1) {
-					top: 0;
-					left: 0;
-				}
+			ul.variation-6c {
+				li {
+					&:nth-child(1) {
+						top: 0;
+						left: 0;
+					}
 
-				&:nth-child(2) {
-					top: ($tile-height-sec + 1);
-					left: 0;
-				}
-				
-				&:nth-child(3) {
-					left: $tile-width;
+					&:nth-child(2) {
+						top: ($tile-height-sec + 1);
+						left: 0;
+					}
 
-				}
-				
-				&:nth-child(4) {
-					left: $tile-width;
-					top: ($tile-height-sec + 1);
+					&:nth-child(3) {
+						left: $tile-width;
 
-				}
-				
-				&:nth-child(5) {
-					top: 0;
-					left: $tile-width*2;
-				}
-				
-				&:nth-child(6) {
-					left: $tile-width*2;
-					top: ($tile-height-sec + 1);
+					}
+
+					&:nth-child(4) {
+						left: $tile-width;
+						top: ($tile-height-sec + 1);
+
+					}
+
+					&:nth-child(5) {
+						top: 0;
+						left: $tile-width*2;
+					}
+
+					&:nth-child(6) {
+						left: $tile-width*2;
+						top: ($tile-height-sec + 1);
+					}
 				}
 			}
 		}
@@ -280,7 +287,6 @@
 		*/
 
 		//For both: AMP & Desktop
-
 		@include break(v-tablet){
 			.wrapper {
 				position: relative;
@@ -298,26 +304,33 @@
 					position: absolute;
 					background-size: cover;
 					background-position: center center;
-						
-					&.tall {
-						height: 270px;
-						
-						a {
-							height: 270px - 30px;
-							hgroup {
-								h2 {
-									font-size: 1.1em;
+
+					@if $isAMP != 'true' {
+						&.tall {
+							height: 270px;
+
+							a {
+								height: 270px - 30px;
+								hgroup {
+									h2 {
+										font-size: 1.1em;
+									}
 								}
 							}
+
 						}
-						
-					}			
+					}
+
 					a {
 						position: relative;
 						display: block;
 						padding: 15px 10px;
 						color: white;
-						height: 270px - 30px !important;
+						@if $isAMP == 'true' {
+							height: 270px - 30px;
+						} @else {
+							height: 270px - 30px !important;
+						}
 						hgroup {
 							width: 80%;
 							position: absolute;
