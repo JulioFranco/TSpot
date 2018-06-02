@@ -15,12 +15,9 @@
 		}
 
 		#main-menu #dk_menu{
-			#SpecialHeightF {
+			#SpecialHeight {
 				.nav-submenu {
-					height: 290px;
-					@include break(tablet) {
-						height: 435px;
-					}
+					height: 285px;
 				}
 			}
 		}
@@ -865,45 +862,78 @@
 
 							li {
 								line-height: 240%;
-								font-weight: 500;	
+								font-weight: 500;
 								width: 90px;
 								height: 110px;
 								float: left;
 								text-align: center;
-								display: inline-block;	
+								display: inline-block;
 								padding: 5px 10px 0px 5px;
 								margin-left: 10px;
 
-								&:hover {
-									background-color: rgba(0, 0, 0, 0);
+								a {
+									color: rgba(255,255,255,0.96);
+								    font-weight: 500;
+								    position: relative;
+								    display: block;
+									padding: 0;
+									text-transform: none;
+									
+									&:after {
+										display: none;
+									}
+
+									span {
+										display: block;
+									    @include border-radius(4px);
+										width: 90px;
+										height: 66px;
+										background: linear-gradient(45deg, #efb813 0%,#ffd65e 51%,#efb813 100%);
+
+										&.purple {
+											background: linear-gradient(45deg, #401286 0%,#6528C0 51%,#401286 100%);
+										}
+										&.orange {
+											background: linear-gradient(45deg, #F18533 0%, #f5a626 51%, #F18533 100%)
+										}
+										&.blue {
+											background: linear-gradient(30deg, #2963AF 0%, #4c86ca 51%, #2963AF 100%)
+										}
+										&.green {
+											background: linear-gradient(45deg, #3c9831 0%, #37a761 51%, #53c146 100%)
+										}
+										&.grey {
+											background: linear-gradient(55deg, #4d4f50 0%, #343c44 51%, #576573 100%)
+										}
+									}
+
 									img {
-										border: $orange solid 3px;
-										margin-top: -3px;
-										margin-left: -3px;
-										margin-bottom: -3px;
+									    max-width: 87px;
+									    max-height: 63px;
+									    padding: 2px 3px 6px 3px;
+									}
+									
+									h3 {
+									    display: block;
+									    font-family: $f-condensed;
+									    line-height: 1.15em;
+									    margin-top: 6px;
+									    font-weight: 500;
+									    font-size: .95em;
 									}
 								}
-								img {
-									@include border-radius(4px);
+
+								&:hover {
+								    background-color: transparent;
+
+									span {
+									    border: #ff7f00 solid 3px;
+									    margin-top: -3px;
+									    margin-left: -3px;
+									    margin-bottom: -3px;
+									}
 								}
-								h3 {
-									display: block;
-									font-family: $f-condensed;
-									line-height: 15px;
-									margin-top: 6px;
-									font-weight: 500;
-									font-size: .95em;
-								}
-							}
-							
-							a {
-								padding: 0;
-								text-transform: none;
-								&:after {
-									display: none;
-								}
-							}
-						
+							}						
 						}
 
 						.submenu {
@@ -918,14 +948,6 @@
 								@include break(v-tablet){
 									display: none;
 								}
-
-								//position: relative;
-
-								/*
-								&:first-child a {
-									padding: 0 30px 0 15px;
-								}
-								*/
 
 								a {
 									text-transform: none;
