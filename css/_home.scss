@@ -10,7 +10,7 @@ body.home {
 	} @else {
 
 		// Fixed header home
-		padding-top: 82px;
+		padding-top: 85px;
 		@include break(mobile){
 			padding-top: 72px;
 		}
