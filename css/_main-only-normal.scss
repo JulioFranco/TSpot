@@ -1590,6 +1590,7 @@ table {
 	text-align: center;
 	font-weight: 400;
 	color: #888;
+	background-color: #fff;
 
 	&:hover{
 		color: #05408f;
@@ -1600,7 +1601,8 @@ table {
 	line-height: 27px;
 
 	@include break(mobile){
-		margin: -25px 5px 45px 0;
+		margin: 0px 5px 25px 0;
+		color: #105ab2;
 	}
 }
 .morecommentquotes {

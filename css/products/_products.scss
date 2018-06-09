@@ -947,6 +947,10 @@
 
 					img {
 						max-height: 225px;
+
+						@include break(mobile) {
+							max-width: 95%;
+						}
 					}
 				}
 
