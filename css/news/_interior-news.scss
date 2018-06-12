@@ -284,6 +284,23 @@ body.interior {
 							font-weight: 600 !important;
 						}
 					}
+					@else {
+						span.numCom {
+							padding-left: 12px;
+							margin-left: 10px;
+							border-left: 2px solid #ccc;
+
+							a {
+								font-weight: 400;
+								color: #5a6169;
+								background-image: url(/images/btnShare.svg?v=#{$social-icons-version});
+								background-position: -18px -148px;
+								padding-left: 27px;
+								background-blend-mode: luminosity;
+								border: none;
+							}
+						}
+					}
 				}
 			}
 		}
