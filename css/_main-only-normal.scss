@@ -1894,3 +1894,83 @@ table {
 	padding: 20px 0 35px;
 	text-align: center;
 }
+
+.dark_mode {
+	padding-top: 5px !important;
+
+	.switcher {
+		z-index: 50;
+		cursor: pointer;
+		display: inline-block;
+		height: 17px;
+		width: 40px;
+		padding: 0;
+		background: #718AA7;
+		position: relative;
+		border-radius: 4px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset, 0 0 0 2px rgba(255, 255, 255, 0.9);
+		user-select: none;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 2px;
+			left: 2px;
+			height: 13px;
+			width: 12px;
+			border-radius: 4px;
+			background: #f0f0f0;
+			box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.75) inset;
+			background-image: linear-gradient(top, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+		}
+
+		&.on {
+			background: #3371BA;
+
+			&:after {
+				left: auto;
+				right: 3px;
+			}
+
+			.off {
+				display: none;
+			}
+
+			.on {
+				display: block;
+				padding: 0px 12px 0px 0px;
+			}
+		}
+
+		span {
+			display: inline-block;
+			font-family: Roboto;
+			text-transform: lowercase;
+			font-size: 11px;
+			width: 24px;
+			height: 18px;
+			line-height: 18px;
+			font-weight: 500;
+			padding: 0 0 0 15px;
+			text-align: center;
+			color: #fff;
+			text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+
+			&.off {
+				display: block;
+			}
+		}
+
+		input {
+			display: none;
+		}
+
+		.on {
+			display: none;
+		}
+	}
+
+	label {
+		color: #105ab2;
+	}
+}
