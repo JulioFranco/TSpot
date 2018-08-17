@@ -57,6 +57,16 @@ body.interior {
 				margin-bottom: 10px;
 			}
 		}
+
+		ol {
+			margin-left: 5%;
+			margin-bottom: 25px;
+			line-height: 1.5em;
+			li {
+				list-style-type: decimal-leading-zero;
+				margin-bottom: 10px;
+			}
+		}
 		
 		img {
 			max-width: 100%;
