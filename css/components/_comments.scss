@@ -58,7 +58,7 @@
 		.comment {
 			font-size: .7em;
 			border-top: 1px solid #eee !important;
-			padding: 0 5px 15px 5px;
+			padding: 3px 5px 15px 5px;
 
 			cite {
 				display: block;
@@ -129,16 +129,22 @@
 
 				img {
 					max-width: 100%;
-					padding: 10px 0;
+					padding: 14px 0;
+				}
+
+				b {
+					font-family: Roboto;
+					font-weight: 500;
 				}
 
 				.quote, blockquote {
 					color: #666;
-					padding: 6px 10px 6px;
-					margin-bottom: 10px;
-					border-left: 5px solid #eee;
 					font-size: 13px;
 					line-height: 1.5;
+					border-left: 5px solid #eee;
+					padding: 6px 10px;
+					background: #fafafa;
+					margin: 10px 0 15px;
 
 					p {
 						font-size: 13px;
@@ -147,6 +153,12 @@
 
 					img {
 						max-height: 100px;
+						display: block;
+
+						.mceSmilieSprite {
+							display: inline !important;
+							height: 15px;
+						}
 					}
 				}
 
@@ -155,11 +167,28 @@
 					font-size: 0.9em;
 					font-family: Roboto;
 				}
+
+				.morecommentquotes {
+					line-height: 23px;
+					font-size: 0.85em;
+					margin: -15px 0 10px 0;
+					display: block;
+					text-align: center;
+					font-weight: 400;
+					color: #888;
+					background-color: #fafafa;
+
+					&:hover{
+						color: #05408f;
+						background-color: #eee;
+					}
+				}
+
 			}
 
 			ul.action-links {
 				text-align: right;
-				margin: 0px 0 3px;
+				margin: 15px 0 0px;
 
 				li {
 					display: inline-block;
