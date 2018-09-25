@@ -1583,7 +1583,7 @@ table {
 }
 
 //Button for show more
-.more_description_dw, .morecommentquotes {
+.more_description_dw {
 	margin: 10px 5px 0 0;
 	display: block;
 	border: 1px solid #eee;
@@ -1604,10 +1604,6 @@ table {
 		margin: 0px 5px 25px 0;
 		color: #105ab2;
 	}
-}
-.morecommentquotes {
-	line-height: 23px;
-	font-size: 0.85em
 }
 
 //Extras
