@@ -117,8 +117,7 @@
 				font-family: $f-paragraph;
 				font-size: 15px;
 				line-height: 1.5;
-				margin-top: 5px;
-				padding-right: 100px;
+				margin: 5px 5px 5px 0;
 
 				@include break(mobile){
 					padding-right: 0;
@@ -133,7 +132,7 @@
 					padding: 10px 0;
 				}
 
-				.quote {
+				.quote, blockquote {
 					color: #666;
 					padding: 6px 10px 6px;
 					margin-bottom: 10px;
@@ -149,6 +148,12 @@
 					img {
 						max-height: 100px;
 					}
+				}
+
+				blockquote div:first-child {
+					font-weight: 500;
+					font-size: 0.9em;
+					font-family: Roboto;
 				}
 			}
 
