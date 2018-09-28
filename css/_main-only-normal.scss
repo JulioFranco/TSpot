@@ -511,6 +511,10 @@ img.responsive {
 		background-position: 5% 10%;
 		background-repeat: no-repeat;
 
+		& > a {
+			letter-spacing: -0.333px;
+		}
+
 		span {
 			a {
 				font-size: 1.05em;
@@ -527,6 +531,12 @@ img.responsive {
 		background-repeat: no-repeat;
 		background-size: 26px;
 		min-height: 45px;
+
+		& > a {
+			font-family: Arial;
+    		font-size: 0.9em;
+    		padding: 3px 0 2px;
+		}
 
 		span {
 			a {
