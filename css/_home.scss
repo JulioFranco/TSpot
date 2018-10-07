@@ -30,7 +30,10 @@ body.home {
 				}
 
 				.col-2-3 {
-					width: 70%;
+					@include break(big-desk){
+						width: 70%;
+					}
+
 					@include break(tablet) {
 						@include col(2,3,2);
 						@media screen and (orientation:portrait) { 
