@@ -1174,9 +1174,7 @@ span._bar {
 		}
 		
 		&.social {
-			//background-image: url(/images/social-widget-bg.svg?v=#{$social-icons-version});
-			//background-position: center top;
-
+		
 			background-image: url(/images/btnShare.svg?v=#{$social-icons-version});
 			background-repeat: no-repeat;
 			background-color: white;
@@ -1213,7 +1211,8 @@ span._bar {
 					background-position: right -35px;
 				}
 			}
-			
+
+/*			
 			&.google_plus {
 				background-position: left -70px;
 
@@ -1222,6 +1221,7 @@ span._bar {
 					background-position: right -70px;
 				}
 			}
+*/
 
 			&.reddit {
 				background-position: left -175px;
@@ -1251,6 +1251,7 @@ span._bar {
 			
 			&.comments {
 				background-position: left -140px;
+
 				&:hover {
 					background-color: #4b75b7;
 					background-position: right -140px;
@@ -1291,6 +1292,9 @@ span._bar {
 
 				&:hover {
 					background: none;
+					border-radius: 40px;
+					height: 25px;
+					width: 26px !important;
 				}
 
 				&.facebook {
@@ -1298,17 +1302,20 @@ span._bar {
 					margin-left: 30%;
 					background-position: 0px 1px;
 				}
+
 				&.twitter {
 					width: 32px;
 					margin-left: 30%+13.5*1;
 					background-position: -32px 1px;
 				}
 				
+/*
 				&.google_plus {
 					width: 32px;
 					margin-left: 30%+13.5*2;
 					background-position: -65px 1px;
 				}
+*/
 
 				&.reddit {
 					width: 32px;

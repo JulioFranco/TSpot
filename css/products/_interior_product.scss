@@ -780,22 +780,9 @@ body.interior {
 				h3.section-header {
 					font-family: $f-condensed;
 					font-weight: 600;
-					line-height: 140%;
 					text-transform: none;
-
-					@if $isAMP == 'true' {
-						font-size: 1.8em;
-					
-					} @else {
-						font-size: 2.0em;
-
-						@include break(mobile){
-							font-size: 1.8em;
-						}
-					}
-					@include break(v-mobile){
-						font-size: 1.5em;
-					}
+					line-height: 1.7;
+					font-size: 1.6em;
 				}
 				
 				ul.pros,
