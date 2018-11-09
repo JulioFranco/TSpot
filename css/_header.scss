@@ -648,6 +648,7 @@
 			
 				@include break(mobile) {
 					line-height: 35px;
+					height: 35px;
 				}
 				
 			}
@@ -666,6 +667,7 @@
 			z-index: 1;
 			box-shadow: 0 4px 0px rgba(34,25,25,0.1);
 			font-size: .70em;
+			height: 38px;
 			line-height: 38px;
 
 			#dk_menu {
@@ -674,7 +676,6 @@
 
 				@include break(mobile){
 				    height: 35px;
-				    //margin-left: -5px;	//same as desktop
 
 					overflow-x: auto;
 					overflow-y: hidden;
@@ -1146,7 +1147,7 @@
 		    width: 172px;
 		    background-size: 185px;
 		    background-position: -7px -3px;
-			height: $header-top-line-height-mobile;
+			/* height: $header-top-line-height-mobile; */
 		}
 
 		a {
