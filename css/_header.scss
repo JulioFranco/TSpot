@@ -634,7 +634,8 @@
 		// Only Normal (Not Amp)
 		// @if $isAMP != 'true' {			
 			.menu {
-				line-height: $header-top-line-height-mobile;
+				line-height: $header-top-line-height-mobile + 1;
+				height: $header-top-line-height-mobile;
 
 				.wrapper {
 					& > ul {
