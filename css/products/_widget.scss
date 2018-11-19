@@ -126,6 +126,10 @@
 				line-height: 1.6em;
 				a {
 					color: white;
+
+					span.onamazon {
+						display: none;
+					}
 				}
 			}
 			.meta .score {
