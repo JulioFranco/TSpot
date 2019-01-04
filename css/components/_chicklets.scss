@@ -34,7 +34,7 @@ ul.category-chicklets {
 
 		&.green, &.hardware, &.drivers																						{ background-color: $green;		@if $isAMP != 'true' { &:hover { background-color: lighten($green,4%); } } }	
 		&.green2, &.science																									{ background-color: $dark-green;@if $isAMP != 'true' { &:hover { background-color: lighten($dark-green,8%); } } }
-		&.green3, &.features, &.google																						{ background-color: #237A3C;	@if $isAMP != 'true' { &:hover { background-color: lighten(#237A3C,6%); } } }
+		&.green3, &.features, &.monitors, &.google																						{ background-color: #237A3C;	@if $isAMP != 'true' { &:hover { background-color: lighten(#237A3C,6%); } } }
 		&.green4, &.mobile, &.smartphones																					{ background-color: #24a887;	@if $isAMP != 'true' { &:hover { background-color: lighten(#24a887,6%); } } }
 
 		&.purple, &.software, &.culture, &.tech-culture																		{ background-color: $purple;	@if $isAMP != 'true' { &:hover { background-color: lighten($purple,6%); } } }
