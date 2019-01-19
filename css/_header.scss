@@ -1144,8 +1144,8 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		width: 200px;
-		height: $header-top-line-height;
-		line-height: $header-top-line-height;
+		height: $header-top-line-height + 2;
+		line-height: $header-top-line-height + 2;
 		margin-left: 5px;
 		background-size: 218px;
 
