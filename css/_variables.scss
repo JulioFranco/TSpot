@@ -1,9 +1,21 @@
+// !GLOBAL FONTS
+
 $f-primary: 'Roboto', sans-serif;
 $f-condensed: 'Roboto Condensed', sans-serif;
 $f-paragraph: Arial, Helvetica, sans-serif;
 $f-arial: Arial, Helvetica, sans-serif;
 $f-helvetica: 'Helvetica Neue', Arial, Helvetica;
 $f-helvetica-roboto: 'Helvetica Neue', 'Roboto', sans-serif;
+
+// !GLOBAL PATH
+$social-icons-version: 4;
+$isAMP: 'false';
+
+@if $isAMP == 'true' {
+	$cdnpath: 'https://static.techspot.com';
+} @else {
+	$cdnpath: '';
+}
 
 // !GLOBAL RESPONSIVE VARIABLES
 $big-desk: 1250px;
@@ -20,7 +32,6 @@ $gut-no: 0;
 $gut-sm: .1;
 $gut-med: 3;
 $gut-lg: 20;
-
 
 // !GLOBAL COLORS
 $cream: #fffbf8;
@@ -73,14 +84,10 @@ $header-menu-line-height: 37px;
 $header-interior-height: 76px;
 $header-interior-line-height: 36px;
 
-//mobile
+// Mobile
 $header-mobile-height: 87px;
 $header-top-line-height-mobile: 42px;
 $header-interior-line-height-mobile: 45px;
-
-
-$social-icons-version: 4;
-$isAMP: 'false';
 
 
 // !MASTHEAD

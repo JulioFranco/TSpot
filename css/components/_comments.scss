@@ -9,7 +9,7 @@
 			/*
 			&:before {
 				position: absolute;
-				background-image: url(/images/icon-comments-lg.svg);
+				background-image: url('$cdnpath/images/icon-comments-lg.svg');
 				background-size: contain;
 				background-repeat: no-repeat;
 				content:"";
@@ -46,7 +46,7 @@
 		a.post-new-comment {
 			display: inline-block;
 			font-family: $f-condensed;
-			background-image: url(/images/glyph-orange.svg);
+			background-image: url('$cdnpath/images/glyph-orange.svg');
 			background-position: left 10px;
 			background-repeat: no-repeat;
 			font-size: .80em;
@@ -312,7 +312,7 @@
 
 			.signin_icon {
 				display: block;
-				background-image: url('/images/signin_icon2.png');
+				background-image: url('$cdnpath/images/signin_icon2.png');
 				background-size: 60px 60px;
 				width: 60px;
 				height: 60px;
@@ -367,7 +367,7 @@
 			zoom: 1;
 			vertical-align: middle;
 			margin-right: 10px;
-			background: url(/images/staff_badge.png) no-repeat;
+			background: url('$cdnpath/images/staff_badge.png') no-repeat;
 			width: 59px;
 			height: 22px;
 			overflow: hidden;
@@ -516,7 +516,7 @@
 
 body.interior {
 	.comment-count-block {
-		background-image: url(/images/icon-comments-lg.svg);
+		background-image: url('$cdnpath/images/icon-comments-lg.svg');
 		background-repeat: no-repeat;
 		background-position: left 5px;
 		height: 42px;

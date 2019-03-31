@@ -366,7 +366,7 @@
 					text-indent: -9999px;
 					position: absolute;
 					display: block;
-					background: url(/images/photoarrow.svg) no-repeat right center;
+					background: url('$cdnpath/images/photoarrow.svg') no-repeat right center;
 					background-size: 30px;
 					height: 100%;
 					
@@ -653,7 +653,7 @@
 				}
 			}
 			.social {
-				background-image: url(/images/social-widget-bg-90.svg?v=#{$social-icons-version});
+				background-image: url('$cdnpath/images/social-widget-bg-90.svg?v=#{$social-icons-version}');
 				position: relative;
 				left: 50%;
 				margin-left: -16px;

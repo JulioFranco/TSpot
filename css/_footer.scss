@@ -180,19 +180,19 @@ footer {
 						}
 					}
 					&.facebook {
-						background-image: url('/images/social/06-facebook.svg');
+						background-image: url('$cdnpath/images/social/06-facebook.svg');
 						background-color: #39559F;
 					}
 					&.twitter {
-						background-image: url('/images/social/03-twitter.svg');
+						background-image: url('$cdnpath/images/social/03-twitter.svg');
 						background-color: #1DA0D7;
 					}
 					&.google-plus {
-						background-image: url('/images/social/40-google-plus.svg');
+						background-image: url('$cdnpath/images/social/40-google-plus.svg');
 						background-color: #E63D28;
 					}
 					&.youtube {
-						background-image: url('/images/social/18-youtube.svg');
+						background-image: url('$cdnpath/images/social/18-youtube.svg');
 						background-color: #E63D28;
 						background-size: 28px 28px;
 						@if $isAMP != 'true' {
@@ -202,35 +202,35 @@ footer {
 						}
 					}
 					&.rss {
-						background-image: url('/images/social/20-rss.svg');
+						background-image: url('$cdnpath/images/social/20-rss.svg');
 						background-color: #FF7F00;
 					}
 					&.instagram {
-						background-image: url('/images/social/38-instagram.svg');
+						background-image: url('$cdnpath/images/social/38-instagram.svg');
 						background-color: #f56040;
 					}
 
 					/*
 					&.steam {
-						background-image: url('/images/social/steam.svg');
+						background-image: url('$cdnpath/images/social/steam.svg');
 						background-color: #444444;
 					}
 					&.windows {
-						background-image: url('/images/social/32-windows8.svg');
+						background-image: url('$cdnpath/images/social/32-windows8.svg');
 						background-color: #01C5F3;
 					}
 					&.android {
-						background-image: url('/images/social/36-android.svg');
+						background-image: url('$cdnpath/images/social/36-android.svg');
 						background-color: #97CD00;
 					}
 					&.tumblr {
-						background-image: url('/images/social/15-tumblr.svg');
+						background-image: url('$cdnpath/images/social/15-tumblr.svg');
 					}
 					&.pinterest {
-						background-image: url('/images/social/33-pinterest.svg');
+						background-image: url('$cdnpath/images/social/33-pinterest.svg');
 					}
 					&.linkedin {
-						background-image: url('/images/social/11-linkedin.svg');
+						background-image: url('$cdnpath/images/social/11-linkedin.svg');
 					}
 					*/
 					
@@ -311,7 +311,7 @@ footer {
 		width: 50px;
 		height: 50px;
 		margin-left: -25px;
-		background-image: url(/images/glyph-back-to-top.svg);
+		background-image: url('$cdnpath/images/glyph-back-to-top.svg');
 		background-repeat: no-repeat;
 		z-index: 5;
 		

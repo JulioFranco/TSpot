@@ -52,7 +52,7 @@ body.interior.download {
 
 			@if $isAMP != 'true' {
 				span.number {
-					background: url('/images/blue-ellipse.svg') no-repeat scroll 0 0 transparent;
+					background: url('$cdnpath/images/blue-ellipse.svg') no-repeat scroll 0 0 transparent;
 					text-align: center;
 					line-height: 26px;
 					color: #fff;
@@ -430,7 +430,7 @@ body.interior.download {
 					}
 
 					span {
-						background: url(/images/download-arrow-mirror.svg) no-repeat center center;
+						background: url('$cdnpath/images/download-arrow-mirror.svg') no-repeat center center;
 						position: absolute;
 						display: block;
 						width: 10px;
@@ -490,7 +490,7 @@ body.interior.download {
 					display: inline-block;
 					width: 170px;
 					height: 35px;
-					background: url(/images/download_button_3h.png) no-repeat;
+					background: url('$cdnpath/images/download_button_3h.png') no-repeat;
 					position: relative;
 					background-size: 170px 70px;
 					span {
@@ -500,7 +500,7 @@ body.interior.download {
 						width: 32px;
 						left: 8px;
 						height: 35px;
-						background: url(/images/download_button_arrow3.png) 0 0;
+						background: url('$cdnpath/images/download_button_arrow3.png') 0 0;
 						background-size: contain;
 						-webkit-transition: all 0.15s linear;
 						-moz-transition: all 0.15s linear;
