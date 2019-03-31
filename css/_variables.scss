@@ -11,12 +11,6 @@ $f-helvetica-roboto: 'Helvetica Neue', 'Roboto', sans-serif;
 $social-icons-version: 4;
 $isAMP: 'false';
 
-@if $isAMP == 'true' {
-	$cdnpath: 'https://static.techspot.com';
-} @else {
-	$cdnpath: '';
-}
-
 // !GLOBAL RESPONSIVE VARIABLES
 $big-desk: 1250px;
 $desk: 1108px;

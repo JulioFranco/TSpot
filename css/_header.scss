@@ -56,7 +56,7 @@
 						}
 						
 						&.login {
-							background-image: url('$cdnpath/images/user-account.svg');
+							background-image: url('https://static.techspot.com/images/user-account.svg');
 							background-repeat: no-repeat;
 							background-position: 8px center;
 							background-size: 26px;
@@ -237,7 +237,7 @@
 												margin: 9px 0 0;
 												width: 16px;
 												height: 16px;
-												background: url('$cdnpath/images/loading_blue_small.gif');
+												background: url('https://static.techspot.com/images/loading_blue_small.gif');
 											}
 										}
 
@@ -350,7 +350,7 @@
 						}
 						
 						&.social {
-							background-image: url('$cdnpath/images/social-sprite.svg');
+							background-image: url('https://static.techspot.com/images/social-sprite.svg');
 							background-repeat: no-repeat;
 							background-position: left center;
 							text-indent: -9999px;
@@ -437,7 +437,7 @@
 										background-color: #EEEEEE;
 										border-top: 1px solid #e8e8e8;								
 										a {
-											background-image: url('$cdnpath/images/rss-icon.svg');
+											background-image: url('https://static.techspot.com/images/rss-icon.svg');
 											background-repeat: no-repeat;
 											background-position: 5px center;
 											background-size: 23px;
@@ -472,7 +472,7 @@
 							}
 							
 							&.search {
-								background-image: url('$cdnpath/images/search-icon.svg');
+								background-image: url('https://static.techspot.com/images/search-icon.svg');
 								background-position: center center;
 								width: 32px;
 								background-color: black;
@@ -1046,15 +1046,15 @@
 											border-radius: 3px;
 
 											&.back1 {
-												background-image: url('$cdnpath/images/menu/back1.png');
+												background-image: url('https://static.techspot.com/images/menu/back1.png');
 												background-size: auto 100%;
 											}
 											&.back2 {
-												background-image: url('$cdnpath/images/menu/back2.png');
+												background-image: url('https://static.techspot.com/images/menu/back2.png');
 												background-size: auto 100%;
 											}
 											&.back3 {
-												background-image: url('$cdnpath/images/menu/back3.png');
+												background-image: url('https://static.techspot.com/images/menu/back3.png');
 												background-size: auto 100%;
 											}
 
@@ -1140,7 +1140,7 @@
 	/**** LOGO ****/
 	#logo {
 		text-indent: -9999px;
-		background-image: url('$cdnpath/images/logo-techspot.svg');
+		background-image: url('https://static.techspot.com/images/logo-techspot.svg');
 		background-repeat: no-repeat;
 		background-position: center;
 		width: 200px;
@@ -1190,7 +1190,7 @@
 		padding: 0px 0px;
 		#logo {
 			text-indent: -9999px;
-			background-image: url('$cdnpath/images/logo-techspot.svg');
+			background-image: url('https://static.techspot.com/images/logo-techspot.svg');
 			background-repeat: no-repeat;
 			background-position: left center;
 			width: 189px; height: auto;
@@ -1247,19 +1247,19 @@
 						opacity: 0.85;
 
 						&.facebook {
-							background-image: url('$cdnpath/images/social/06-facebook.svg');
+							background-image: url('https://static.techspot.com/images/social/06-facebook.svg');
 							background-color: #39559F;
 						}
 						&.instagram {
-							background-image: url('$cdnpath/images/social/38-instagram.svg');
+							background-image: url('https://static.techspot.com/images/social/38-instagram.svg');
 							background-color: #f56040;
 						}
 						&.twitter {
-							background-image: url('$cdnpath/images/social/03-twitter.svg');
+							background-image: url('https://static.techspot.com/images/social/03-twitter.svg');
 							background-color: #1DA0D7;
 						}
 						&.rss {
-							background-image: url('$cdnpath/images/social/20-rss.svg');
+							background-image: url('https://static.techspot.com/images/social/20-rss.svg');
 							background-color: #FF7F00;
 						}
 						a {
