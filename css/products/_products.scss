@@ -239,10 +239,39 @@
 	background: white;
 
 	@if $isAMP != 'true' {
+		.product_description {
+			font-size: 0.8em;
+		    line-height: 1.5;
+		    margin: 0 250px 30px 0;
+		    float: left;
+
+		    p {
+			    padding: 0;
+		    }
+
+		    @include break(mobile){
+		    	margin: 40px 0 12px;
+		    }
+		}
+
+		.reviewed_by {
+			float: right;
+		    text-align: left;
+		    font-size: 0.7em;
+		    width: 250px;
+		    color: #555;
+		    margin: -45px 0 0 0;
+
+		    @include break(mobile){
+		    	margin: 0;
+		    	float: none;
+		    }
+		}
+
 		figure {
 			max-height: 435px;
 			background: white;
-			@include col(6,10,5);
+			@include col(6.3,10,5);
 
 			@include break(tablet) {
 				margin-right: 2%;
@@ -395,7 +424,7 @@
 	}
 
 	.product-desc {
-		@include col-last(4,10,5);
+		@include col-last(3.7,10,5);
 		margin-top: 15px;
 		
 		@if $isAMP == 'true' {
@@ -522,7 +551,7 @@
 				
 				} @else {
 					height: 50px;
-					width: 75%;
+					width: 71%;
 
 					@include break(mobile) {
 						height: 33px;
@@ -574,6 +603,8 @@
 				}
 			}
 		}
+
+/*
 		.social-widget {
 			width: 100%;
 			margin: 20px 0px;
@@ -715,12 +746,16 @@
 				}
 			}
 		}
+*/	
+
+
 		.last-updated {
 			margin: 15px 10px 0 15px;
 			text-align: right;
 			color: #666;
 			font-size: .65em;
 		}
+
 		nav {
 			font-family: $f-condensed;
 			font-size: .9em;
@@ -733,11 +768,17 @@
 			} @else {
 				text-align: left;
 				padding: 10px 0;
+			    margin-left: 110px;
+
+			    &.left {
+			    	margin: 0;
+			    }
 
 				@include break(mobile) {
 					width: 100%;
 					text-align: center;
 					padding: 18px 0px;
+					margin: 0;
 				}
 			}
 
