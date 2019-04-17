@@ -260,7 +260,7 @@
 		    font-size: 0.7em;
 		    width: 250px;
 		    color: #555;
-		    margin: -45px 0 0 0;
+		    margin: -45px -5px 0 0;
 
 		    @include break(mobile){
 		    	margin: 0;
@@ -516,16 +516,16 @@
 				font-size: .7em;
 				line-height: 34px;
 				padding: 8px 0;
-				font-weight: 600;
 				float: left;
 				text-align: center;
+				text-transform: uppercase;
 
 				@if $isAMP == 'true' {
 					width: 30%;
 					height: 17px;
 				
 				} @else {
-					width: 23%;
+					width: 24%;
 					height: 34px;
 					@include break(mobile) {
 						width: 30%;
@@ -565,7 +565,7 @@
 				}
 
 				a {
-					padding-left: 15px;
+					padding-left: 18px;
 					font-size: 1.4em;
 					color: #075BC0;
 
@@ -839,9 +839,9 @@
 				height: 78px;
 
 			} @else {
-				width: 82px;
-				line-height: 80px;
-				height: 80px;
+				width: 80px;
+				line-height: 76px;
+				height: 76px;
 
 				@include break(mobile) {
 					width: 86px;
@@ -1083,10 +1083,10 @@
 			text-align: center;
 			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 			letter-spacing: -1px;
-			width: 80px;
-			height: 80px;
-			line-height: 79px;
-			@include border-radius(70px);
+			width: 75px;
+			height: 75px;
+			line-height: 75px;
+			border-radius: 10px;
 
 			@include break(v-mobile) {
 				margin: 0 0 0 4px;
