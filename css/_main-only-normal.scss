@@ -68,7 +68,7 @@ img.responsive {
 	}
 }
 
-.b-lazy {
+img.b-lazy {
 	-webkit-transition: ease .4s;
 	-moz-transition: ease .4s;
 	-o-transition: ease .4s;
@@ -76,10 +76,10 @@ img.responsive {
 	max-width: 100%;
 	opacity: 0;
 }
-.b-lazy {
+img.b-lazy {
 	will-change: opacity;
 }
-.b-lazy.b-loaded {
+img.b-lazy.b-loaded {
 	opacity: 1;
 }
 
