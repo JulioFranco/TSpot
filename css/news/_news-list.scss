@@ -127,7 +127,7 @@
 			&.featured {
 				.post-meta {
 					@if $isAMP == 'true' {
-						margin-top: -5px;
+						margin-top: -30px;
 					} @else {
 						@include break(mobile){
 							margin-top: -5px;

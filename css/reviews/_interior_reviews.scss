@@ -425,6 +425,12 @@ body.interior {
 				}
 			}
 
+			@if $isAMP == 'true' {
+				.articleBody {
+					margin: 0 2%;
+				}
+			}
+
 			@if $isAMP != 'true' {
 				position: relative;
 

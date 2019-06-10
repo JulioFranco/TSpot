@@ -82,6 +82,27 @@
 
 @if $isAMP == 'true' {
 
+	ul.best-categories.haslogo {
+		margin: -12px 0 65px 0;
+	}
+
+	.best-categories li {
+		display: inline-block;
+		list-style: none;
+		background-color: #f5f5f5;
+		border: 1px solid #105ab2;
+		margin-right: 3px;
+		
+		a {
+			display: block;
+			padding: 6px 14px;
+			color: #105ab2;
+			text-decoration: none;
+			font-size: .95em;
+			font-weight: 400;
+		}
+	}
+
 	.bestof_product {
 		h2 {
 			margin-top: -50px;
@@ -105,7 +126,8 @@
 			margin: 20px 0 30px;
 			font-size: .75em;
 			background-color: white;
-			font-family: Roboto Condensed;
+			font-family: $f-paragraph;
+			letter-spacing: -0.4px;
 			border-bottom: none;
 			a.withTooltip {
 				color: #333;
