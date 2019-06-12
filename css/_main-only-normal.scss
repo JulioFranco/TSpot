@@ -162,7 +162,7 @@ img.b-lazy.b-loaded {
 					@include break(mobile){
 						display: none;
 					}//mobile
-					.category{font-weight: bold; text-transform: uppercase; font-size: 85%;}
+					.category {font-weight: bold; text-transform: uppercase; font-size: 85%;}
 					.comment-count{
 						display: block; float: right; font-size: 80%;
 						span {
@@ -687,7 +687,7 @@ h3.longtype {
 				padding: 4px 6px;
 				position: relative;
 				font-size: .7em;
-				font-weight: 600;
+				font-weight: 500;
 				z-index: 1;
 				float: right;
 				margin: 146px 26px 0px 0px;

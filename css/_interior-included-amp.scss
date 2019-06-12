@@ -2,7 +2,7 @@ body.interior {
 	.ListHeader {
 		background: $dark-blue;
 		padding: 0px 2%;
-		h3{
+		h3 {
 			color: white;
 			line-height: 35px;
 		}
@@ -21,7 +21,6 @@ body.interior {
 
 		h2 {
 			font-family: $f-primary;
-			font-weight: 500;
 			line-height: 1.4;
 
 			@if $isAMP == 'true' {
@@ -38,7 +37,6 @@ body.interior {
 	
 		h3 {
 			font-family: $f-primary;
-			font-weight: 500;
 			line-height: 1.4;
 
 			@if $isAMP == 'true' {
@@ -51,7 +49,6 @@ body.interior {
 		
 		h4 {
 			font-family: $f-primary;
-			font-weight: 500;
 
 			@if $isAMP == 'true' {
 				font-size: 1.1em;
@@ -113,7 +110,6 @@ body.interior {
 
 		#news, #feature {
 			h3 {
-				font-weight: 500;
 				font-size: 1.5em;
 				line-height: 1.4;
 				color: #222;
