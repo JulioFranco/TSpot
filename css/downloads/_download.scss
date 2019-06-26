@@ -350,6 +350,7 @@ body.interior.download {
 			font-weight: 400;
 			margin: 10px 0 0px;
 
+			/*
 			@if $isAMP != 'true' {
 				&.report-link {
 					margin: 20px 0 0px;
@@ -358,6 +359,7 @@ body.interior.download {
 					}
 				}
 			}
+			*/
 		}
 		.mirror-wrapper {
 			margin: 0 0 15px;
