@@ -240,15 +240,16 @@
 
 	@if $isAMP != 'true' {
 		.product_description {
-			font-size: 1.25em;
+			font-size: 1.15em;
+			line-height: 1.4;
 			color: #777;
-		    line-height: 1.5;
 		    margin: 0 150px 30px 0;
 		    float: left;
 		    font-family: $f-paragraph;
 
 	    	&.smaller {
 	    		font-size: 1.05em;
+	    		line-height: 1.5;
 	    	}
 
 		    p {
