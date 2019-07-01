@@ -1,8 +1,8 @@
 .reviews.big-grid,
 .features.big-grid {
 	@if $isAMP != 'true' {
-		#grid-posts {
-			#masthead {
+		.grid-posts {
+			.masthead {
 				min-height: ($tile-height-sec * 2) + 105px;
 
 				@include break(mobile){
@@ -77,8 +77,8 @@
 
 
 @if $isAMP != 'true' {
-	.reviews-cat #grid-posts, .features-cat #grid-posts {
-		#masthead {
+	.reviews-cat .grid-posts, .features-cat .grid-posts {
+		.masthead {
 			min-height: 365px;
 
 			@include break(tablet){
@@ -144,7 +144,7 @@
 
 @if $isAMP != 'true' {
 
-	.trivias #masthead {
+	.trivias .masthead {
 		min-height: 465px;
 
 		@include break(mobile) {

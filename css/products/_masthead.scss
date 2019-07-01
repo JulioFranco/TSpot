@@ -73,7 +73,7 @@
 		}
 	}
 
-	#masthead {
+	.masthead {
 		position: relative;
 		background: #707c8a;
 
@@ -474,7 +474,7 @@
 }
 
 @if $isAMP != 'true' {
-	.products-cat #masthead {
+	.products-cat .masthead {
 		@include break(tablet) {
 			.wrapper {
 				position: relative;

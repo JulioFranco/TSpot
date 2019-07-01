@@ -571,7 +571,7 @@ body.interior {
 		}
 
 		@if $isAMP != 'true' {
-			#sidebar {
+			.sidebar {
 				//@include col-last(1,3,0);
 				//width: 27%;
 
@@ -743,7 +743,7 @@ body.interior {
 					margin-top: 0px !important;
 				}
 
-				#sidebar {
+				.sidebar {
 					margin-top: 15px !important;
 
 					@include break(v-tablet) {

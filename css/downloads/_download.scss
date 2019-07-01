@@ -705,7 +705,7 @@ body.interior.download {
 		padding: 45px 0 0;
 	}
 
-	body.interior.download #sidebar {
+	body.interior.download .sidebar {
 		@include break(v-tablet){
 			display: none;
 		}

@@ -92,7 +92,7 @@ body.interior {
 			padding-top: 40px;
 		}
 
-		#sidebar ul.teaser-list li a h3 {
+		.sidebar ul.teaser-list li a h3 {
 			color: #ccc;
 		}
 	}
@@ -172,7 +172,7 @@ body.interior {
 			
 		}
 		
-		#sidebar {
+		.sidebar {
 			@include break(v-tablet) {
 				display: none !important;
 				@include col-last(1,3,3);

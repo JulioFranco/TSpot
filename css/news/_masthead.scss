@@ -1,5 +1,5 @@
 .home {
-	#masthead {
+	.masthead {
 		//0.5 grey, 1 dark
 		background: rgba(30, 41, 51, 0.95);
 		position: relative;
@@ -11,6 +11,7 @@
 		&.BigHead {
 			height: ($tile-height * 3) + 2;
 		}
+
 
 		.FGheadCom {
 			display: none;
@@ -904,23 +905,14 @@
 			}
 		}
 	}
+}
 
 /*
-	.BigHead {
-		height: ($tile-height * 3) + 2 !important;
-
-		@include break (mobile){
-			height: 270px !important;
+		&.SmallHead {
+			height: $tall-tile-height !important;
+	
+			@include break (mobile){
+				height: $tile-height-mobile !important;
+			}
 		}
-	}
 */
-
-	.SmallHead {
-		height: $tall-tile-height !important;
-		@include break (mobile){
-			height: $tile-height-mobile !important;
-		}
-
-	}
-
-}
