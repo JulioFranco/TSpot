@@ -77,7 +77,7 @@
 
 
 @if $isAMP != 'true' {
-	.reviews-cat .grid-posts, .features-cat .grid-posts {
+	.reviews-cat .grid-posts.catDef, .features-cat .grid-posts.catDef {
 		.masthead {
 			min-height: 365px;
 
@@ -88,6 +88,7 @@
 					height: 0;
 				}
 			}
+			
 			@include break(mobile){
 				min-height: 270px;
 
@@ -97,11 +98,18 @@
 					height: 270px;
 				}
 			}
+			
 			li {
 				height: 266px !important;
+				@include break(mobile){
+					height: 270px !important;
+				}
 
 				a {
 					height: 226px !important;
+					@include break(mobile){
+						height: 240px !important;
+					}
 				}
 
 				&:nth-child(3) {

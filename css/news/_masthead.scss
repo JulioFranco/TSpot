@@ -906,13 +906,14 @@
 		}
 	}
 }
-
 /*
-		&.SmallHead {
-			height: $tall-tile-height !important;
-	
-			@include break (mobile){
-				height: $tile-height-mobile !important;
-			}
+@if $isAMP != 'true' {
+	&.SmallHead {
+		height: $tall-tile-height !important;
+
+		@include break (mobile){
+			height: $tile-height-mobile !important;
 		}
+	}
+}
 */
