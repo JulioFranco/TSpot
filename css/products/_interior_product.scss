@@ -362,6 +362,7 @@ body.interior {
 			}
 		}
 
+/*
 		.browse_cats {
 			text-transform: uppercase;
 			font-family: $f-condensed;
@@ -370,6 +371,7 @@ body.interior {
 			padding-left: 10px;
 			padding-bottom: 2px;
 		}
+*/
 
 		#CategoryListMobile {
 			background: #304456;
@@ -402,7 +404,6 @@ body.interior {
 			
 			li, section { // section tag is used for AMP
 				padding: 0px 0px;
-				border: 1px solid #ddd;
 
 				@if $isAMP == 'true' {
 					line-height: 20px;
@@ -427,7 +428,7 @@ body.interior {
 			@if $isAMP != 'true' {
 				.SideTitle{
 					line-height: 31px;
-					background-color: $blue;
+					background-color: #7d8895;
 					padding: 0px 15px;
 					
 					@include break(v-tablet) {
