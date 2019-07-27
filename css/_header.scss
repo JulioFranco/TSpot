@@ -1010,7 +1010,6 @@
 											padding: 0px;
 											@include transitions();
 											font-size: 1.05em;
-											padding-bottom: 10px;
 											
 											h3 {
 												font-family: $f-paragraph;
@@ -1025,6 +1024,10 @@
 												overflow: hidden;
 												border-radius: 2px;
 												text-shadow: 1px 1px 1px rgba(30, 41, 51, 0.51);
+											}
+
+											&:hover {
+												background: rgba(30,41,51,0.2);
 											}
 										}
 
