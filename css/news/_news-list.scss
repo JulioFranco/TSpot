@@ -223,6 +223,12 @@
 						padding: 0;
 					}
 				} @else {
+					&.trendload {
+						img {
+							display: none;
+						}
+					}
+
 					p {
 						padding: 0 0 15px !important;
 						line-height: 1.5 !important;

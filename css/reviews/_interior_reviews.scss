@@ -241,7 +241,6 @@ body.interior {
 			@if $isAMP == 'true' {
 				width: 100%;
 				padding: 10px 3% 0px 3%;
-				//Default: "display: block" from multi-column (included in col)
 
 			} @else {
 				width: 16%;
