@@ -5,10 +5,10 @@ body.interior {
 			.col-2-3{
 				@include col-last(2,3,0);
 				width: 80%;
-				//padding: 0px 2% 0px 0px;
+				
 				@include break(mobile){
 					width: 100%;
-					padding: 0;		
+					padding: 0;
 					.wrapperMobileOnly {
 						@include break(mobile){
 							width: auto;
@@ -237,127 +237,14 @@ body.interior {
 			text-transform: uppercase;
 			font-family: $f-condensed;
 			font-size: 0.7em;
+			width: 16%;
 
-			@if $isAMP == 'true' {
+			@include break(mobile){
 				width: 100%;
 				padding: 10px 3% 0px 3%;
 
-			} @else {
-				width: 16%;
-
-				@include break(mobile){
-					width: 100%;
-					padding: 10px 3% 0px 3%;
+				@if $isAMP != 'true' {
 					display: block !important;
-				}
-			}
-
-			@if $isAMP != 'true' {
-				// Used in Mobile
-				// But not neccesary in AMP
-				.has_more{
-					.SideTitle{
-						.arrow{
-							@include triangle(left,white,4,6);
-							float: right;
-							margin-top: -19px;
-							display: none;
-							@include break(mobile){
-								display: block;
-							}
-						}
-					}
-					.sub{
-						@include break(mobile){
-							display: none;
-						}
-					}
-				}
-			}
-
-			@if $isAMP != 'true' {
-				.open{
-					.SideTitle{
-						.arrow{
-							@include triangle(down,white,4,6);
-							float: right;
-							margin-top: -18px;
-							display: none;
-							@include break(mobile){
-								display: block;
-							}
-						}
-					}
-					.sub{
-						display: block;
-					}
-				}
-			}
-
-			#CategoryList{
-				background: #304456;
-				li {
-					line-height: 40px;
-
-					@if $isAMP == 'true' {
-						padding: 0px 10px;
-					
-					} @else {
-						padding: 0px 15px;
-						@include break(v-tablet){
-							padding: 0px 10px;
-						}
-					}
-
-					a {
-						color: white;
-						display: block;
-						width: 100%;
-						text-decoration: none;
-					}
-					@if $isAMP != 'true' {
-						.arrow {
-							opacity: 0;
-						}
-
-						&:hover, &.active {
-							background: white;
-							a {
-								color: black;
-							}
-							.arrow{
-								@include triangle(right,$orange,4,6);
-								float: right;
-								margin-top: 15px;
-								opacity: 1;
-							}
-						}
-					}
-				}
-			}
-			.SideTitle{
-				color: white;
-
-				@if $isAMP == 'true' {
-					padding: 0px 10px;
-					width: 100%;
-					line-height: 31px;
-
-				} @else {
-					background-color: $blue;
-					margin-top: -5px;
-					line-height: 33px;
-					padding: 0px 15px;
-					@include break(v-tablet){
-						padding: 0px 10px;
-					}
-
-					.arrow {
-						@include triangle(down,white,4,6);
-						float: right;
-						margin-top: -18px;
-						opacity: 1;
-					}
 				}
 			}
 		}

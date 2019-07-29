@@ -363,16 +363,6 @@ body.interior {
 		}
 
 /*
-		.browse_cats {
-			text-transform: uppercase;
-			font-family: $f-condensed;
-			font-size: 0.7em;
-			color: #555;
-			padding-left: 10px;
-			padding-bottom: 2px;
-		}
-*/
-
 		#CategoryListMobile {
 			background: #304456;
 			margin-bottom: 20px;
@@ -557,6 +547,8 @@ body.interior {
 				}
 			}
 		}
+*/
+
 
 		@if $isAMP == 'true' {
 			.takeshortcut {
@@ -580,43 +572,10 @@ body.interior {
 					display: none;
 				}
 
-				.SideTitle{
-					line-height: 31px;
-					background-color: $blue;
-					padding: 0px 17px;
-					@include break(v-tablet){
-						padding: 0px 10px;
-					}
-				}
-
 				.tab_box {
 					margin-bottom: 21px;
 				}
 
-				.has_more{
-					.SideTitle{
-						.arrow{
-							@include triangle(left,white,4,6);
-							float: right;
-							margin-top: -18px;
-						}
-					}
-					.SideProdContent{
-						display: none;
-					}
-				}
-				.open{
-					.SideTitle{
-						.arrow{
-							@include triangle(down,white,4,6);
-							float: right;
-							margin-top: -18px;
-						}
-					}
-					.SideProdContent{
-						display: block;
-					}
-				}
 				.col-1-2 {
 					width: 45%;
 					@include break(v-tablet){
@@ -673,62 +632,8 @@ body.interior {
 					margin-bottom: 21px;
 					
 				}
-				#CategoryList {
-					margin-bottom: 21px;
-					text-transform: uppercase;
-					font-family: $f-condensed;
-					font-size: 0.7em;
-					@include break(v-tablet){
-						font-size: 0.6em;
-					}
-					a {
-						color: white;
-						text-decoration: none;
-					}
 
-				}
-				.SideProdContent {
-					padding: 17px;
-					background-color:#324455;
 
-					@include break(v-tablet){
-						padding: 10px 0px 10px 10px;
-					}
-
-					li {
-						line-height: 10px;
-						margin-bottom: 14px;
-						a {
-							.arrow {
-								margin: 0 !important;
-								opacity: 0;
-								position: absolute;
-								left: -10px;
-								width: 6px; height: 4px;
-								@include triangle(right,$orange,4,6);
-							}
-						}
-						a:hover,
-						a.active {
-							.arrow {
-							margin: 0 !important;
-							opacity: 1;
-							left: -10px;
-							width: 6px; height: 4px;
-							@include triangle(right,$orange,4,6);
-							}
-						}
-					}
-				}
-				.computer-hardware {
-					height: 160px;
-				}
-				.pcs-devices {
-					height: 40px;
-				}
-				.electronics {
-					height: 65px;
-				}
 			}
 		}
 	}
