@@ -117,10 +117,7 @@
 		@include break(mobile){
 			width: 90%;
 			margin-left: 5%;
-			bottom: 50px;
-		}
-		@include break(v-mobile){
-			bottom: 75px;
+			bottom: 55px;
 		}
 		
 		h1.large {
@@ -136,6 +133,7 @@
 				@include break(v-mobile){
 					font-size: 1.3em;
 				}
+				padding: 0 0 8px;
 			}
 			@else {
 				&.xlarge {
@@ -155,10 +153,9 @@
 		em {
 			color: white;
 			text-shadow: 1px 1px 5px black;
-			font-weight: 400;
 			font-size: .7em;
 			font-style: normal;
-			padding-left: 5px;
+			padding-left: 3px;
 
 			.author {
 				a {

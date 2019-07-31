@@ -1,9 +1,15 @@
-#grid-posts{
+.grid-posts{
 	&.grid-section {
-		background: #ccc;
+		background: #ddd;
 
 		@if $isAMP != 'true' {
 			padding: 25px 0 25px;
+		}
+	}
+
+	&.secondary {
+		.masthead {
+			background: transparent;
 		}
 	}
 
@@ -15,7 +21,7 @@
 		}	
 	}
 
-	#masthead {
+	.masthead {
 		min-height: ($tile-height-sec * 2) - 1;
 		position: relative;
 
@@ -37,19 +43,25 @@
 		
 			li {
 				width: $tile-width - 1 - $tile-padding;
-				height: $tile-height-sec - $tile-padding;
+				
 				top: 0;
 				left: 0;
 				position: absolute;
 				background-size: cover;
 				background-position: center center;
 
+				@if $isAMP == 'true' {
+					height: $tile-height-sec - $tile-padding;
+				} @else {
+					height: $tile-height-sec - $tile-padding !important;
+				}
+
 				@if $isAMP != 'true' {
 					&.tall {
-						height: ($tile-height-sec * 2) - $tile-padding + 1;
+						height: ($tile-height-sec * 2) - $tile-padding + 1 !important;
 
 						a {
-							height: ($tile-height-sec * 2) - 40px - $tile-padding + 1;
+							height: ($tile-height-sec * 2) - 40px - $tile-padding + 1 !important;
 							hgroup {
 								h2 {
 									font-size: $tall-tile-font-size;
@@ -65,13 +77,17 @@
 				}
 
 				a {
+					background: linear-gradient(205deg, rgba(21,76,143,0.2) 40%, rgba(30,41,51,0.75) 85%);
 					position: relative;
 					display: block;
 					padding: 20px;
 					color: white;
-					height: $tile-height-sec - 40px - $tile-padding;
 
-					background: linear-gradient(205deg, rgba(21,76,143,0.2) 40%, rgba(30,41,51,0.75) 85%);
+					@if $isAMP == 'true' {
+						height: $tile-height-sec - 40px - $tile-padding;
+					} @else {
+						height: $tile-height-sec - 40px - $tile-padding !important;
+					}
 
 					&:hover {
 						background: linear-gradient(205deg, rgba(21,76,143,0.4) 40%, rgba(30,41,51,0.75) 85%);
@@ -80,13 +96,16 @@
 					hgroup {
 						width: 90%;
 						position: absolute;
-						bottom: 18px;
 						display: block;
-						
+
+						@if $isAMP == 'true' {
+							bottom: 18px;
+						} @else {
+							bottom: 18px !important;
+						}
 						
 						h3 {
 							text-transform: uppercase;
-							font-weight: 600;
 							font-size: .60em;
 							text-shadow: 0px 0px 4px #000;
 							color: #FF9B37;
@@ -298,19 +317,25 @@
 			ul.featured-posts {
 				li {
 					width: 80%;
-					height: 270px;
 					top: 0;
 					left: 0;
 					position: absolute;
 					background-size: cover;
 					background-position: center center;
 
+					@if $isAMP == 'true' {
+						height: 270px;
+					} @else {
+						height: 270px !important;
+					}
+
 					@if $isAMP != 'true' {
 						&.tall {
-							height: 270px;
+							height: 270px !important;
 
 							a {
-								height: 270px - 30px;
+								height: 270px - 30px !important;
+
 								hgroup {
 									h2 {
 										font-size: 1.1em;
@@ -326,17 +351,23 @@
 						display: block;
 						padding: 15px 10px;
 						color: white;
+
 						@if $isAMP == 'true' {
 							height: 270px - 30px;
 						} @else {
 							height: 270px - 30px !important;
 						}
+
 						hgroup {
 							width: 80%;
 							position: absolute;
-							bottom: 15px;
 							display: block;
 							
+							@if $isAMP == 'true' {
+								bottom: 15px;
+							} @else {
+								bottom: 15px !important;
+							}
 						}	
 					}
 					

@@ -50,7 +50,7 @@ body.home {
 				}
 			}
 
-			#grid-posts {
+			.grid-posts {
 				&.secondary {
 				    padding: 0;
 
@@ -58,13 +58,17 @@ body.home {
 						background: none;
 					}
 
-					#masthead {
+					.masthead {
 						background: #ddd;
 						padding: 10px 0;
 
 						@include break(mobile) {
 							background: none;
 							margin: 0 0 15px;
+						}
+
+						.wrapper {
+							padding: 0;
 						}
 
 						ul.featured-posts li a hgroup h2 {
@@ -86,7 +90,7 @@ body.home {
 				}
 			}
 		
-			#sidebar {
+			.sidebar {
 				padding-top: 50px;
 
 				&.secondary {

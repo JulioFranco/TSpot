@@ -2,7 +2,7 @@ body.interior {
 	.ListHeader {
 		background: $dark-blue;
 		padding: 0px 2%;
-		h3{
+		h3 {
 			color: white;
 			line-height: 35px;
 		}
@@ -21,23 +21,41 @@ body.interior {
 
 		h2 {
 			font-family: $f-primary;
-			font-weight: 500;
-			font-size: 1.55em;
 			line-height: 1.4;
+
+			@if $isAMP == 'true' {
+				font-size: 1.3em;
+			} @else {
+				font-size: 1.55em;
+			}
+
+			&.subtitleMob {
+				color: #888;
+				font-weight: 400;
+			}
 		}
 	
 		h3 {
 			font-family: $f-primary;
-			font-weight: 500;
-			font-size: 1.4em;
 			line-height: 1.4;
+
+			@if $isAMP == 'true' {
+				font-size: 1.2em;
+			} @else {
+				font-size: 1.4em;
+			}
+
 		}
 		
 		h4 {
 			font-family: $f-primary;
-			font-weight: 500;
-			font-size: 1.25em;
-			line-height: 1.4;
+
+			@if $isAMP == 'true' {
+				font-size: 1.1em;
+			} @else {
+				font-size: 1.25em;
+			}
+
 		}
 
 		.blue {
@@ -92,7 +110,6 @@ body.interior {
 
 		#news, #feature {
 			h3 {
-				font-weight: 500;
 				font-size: 1.5em;
 				line-height: 1.4;
 				color: #222;
@@ -163,7 +180,6 @@ body.interior {
 
 				h1.large {
 					font-weight: 500;
-					line-height: 1.35;
 					letter-spacing: -0.333px;
 
 					@if $isAMP == 'true' {
@@ -175,6 +191,7 @@ body.interior {
 					@else {
 						margin: 15px 0 5px;
 						font-size: 2.2em;
+						line-height: 1.35;
 
 						@include break(mobile) {
 							margin: 0;
@@ -290,8 +307,7 @@ body.interior {
 						width: 96%;
 					}
 					@else {
-						padding: 5px 0 15px;
-
+					
 						@include break(mobile) {
 							width: 96%;
 							padding: 25px 0px 15px;

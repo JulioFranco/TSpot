@@ -162,7 +162,7 @@ img.b-lazy.b-loaded {
 					@include break(mobile){
 						display: none;
 					}//mobile
-					.category{font-weight: bold; text-transform: uppercase; font-size: 85%;}
+					.category {font-weight: bold; text-transform: uppercase; font-size: 85%;}
 					.comment-count{
 						display: block; float: right; font-size: 80%;
 						span {
@@ -652,7 +652,7 @@ h3.longtype {
 	}
 }
 
-#sidebar {
+.sidebar {
 	width: 305px;
 	float: right;
 	overflow: hidden;
@@ -687,7 +687,7 @@ h3.longtype {
 				padding: 4px 6px;
 				position: relative;
 				font-size: .7em;
-				font-weight: 600;
+				font-weight: 500;
 				z-index: 1;
 				float: right;
 				margin: 146px 26px 0px 0px;
@@ -1836,7 +1836,7 @@ table {
 	}
 }
 
-#billboard_placeholder {
+.billboard_placeholder {
 	padding: 17px 0 15px;
 	margin: auto; 
 	text-align: center;
@@ -1906,30 +1906,28 @@ table {
 		z-index: 50;
 		cursor: pointer;
 		display: inline-block;
-		height: 17px;
-		width: 40px;
+		height: 20px;
+		width: 43px;
 		padding: 0;
-		background: #718AA7;
+		background: #6f86a0;
 		position: relative;
 		border-radius: 4px;
-		box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset, 0 0 0 2px rgba(255, 255, 255, 0.9);
 		user-select: none;
 
 		&:after {
 			content: '';
 			position: absolute;
-			top: 2px;
-			left: 2px;
-			height: 13px;
-			width: 12px;
+			top: 3px;
+			left: 4px;
+			height: 14px;
+			width: 14px;
 			border-radius: 4px;
 			background: #f0f0f0;
-			box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.75) inset;
-			background-image: linear-gradient(top, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+			box-shadow: 0 0 1px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.75) inset;
 		}
 
 		&.on {
-			background: #3371BA;
+			background: #1b4577;
 
 			&:after {
 				left: auto;
@@ -1947,18 +1945,16 @@ table {
 		}
 
 		span {
-			display: inline-block;
-			font-family: Roboto;
+		    display: inline-block;
 			text-transform: lowercase;
-			font-size: 11px;
-			width: 24px;
-			height: 18px;
-			line-height: 18px;
+			font-size: 12px;
+			width: 27px;
+			height: 19px;
+			line-height: 19px;
 			font-weight: 500;
-			padding: 0 0 0 15px;
+			padding: 0px 0 0 16px;
 			text-align: center;
 			color: #fff;
-			text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 
 			&.off {
 				display: block;
@@ -1975,6 +1971,6 @@ table {
 	}
 
 	label {
-		color: #105ab2;
+		color: #1e2933;
 	}
 }

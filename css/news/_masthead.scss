@@ -1,5 +1,5 @@
 .home {
-	#masthead {
+	.masthead {
 		//0.5 grey, 1 dark
 		background: rgba(30, 41, 51, 0.95);
 		position: relative;
@@ -11,6 +11,7 @@
 		&.BigHead {
 			height: ($tile-height * 3) + 2;
 		}
+
 
 		.FGheadCom {
 			display: none;
@@ -78,13 +79,11 @@
 						
 						h3 {
 							text-transform: uppercase;
-							font-weight: 600;
 							font-size: .60em;
 							text-shadow: 0px 0px 4px #000;
 							color: #FF9B37;
 							padding-bottom: 5px;
 							letter-spacing: .25px;
-							/* -webkit-font-smoothing: subpixel-antialiased; */
 						}
 
 						h2 {
@@ -906,23 +905,15 @@
 			}
 		}
 	}
-
+}
 /*
-	.BigHead {
-		height: ($tile-height * 3) + 2 !important;
-
-		@include break (mobile){
-			height: 270px !important;
-		}
-	}
-*/
-
-	.SmallHead {
+@if $isAMP != 'true' {
+	&.SmallHead {
 		height: $tall-tile-height !important;
+
 		@include break (mobile){
 			height: $tile-height-mobile !important;
 		}
-
 	}
-
 }
+*/

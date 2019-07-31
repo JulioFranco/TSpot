@@ -382,7 +382,7 @@
 									width: 250px;
 									left: 50%;
 									margin-left: -125px;
-									background: white;
+									background: #f5f5f5;
 									text-indent: 0;
 									line-height: 25px;
 									z-index: 100;
@@ -391,7 +391,7 @@
 									
 									.pad {
 										display: block;
-										padding: 15px 20px;
+										padding: 12px 20px;
 									}
 									
 									.social {
@@ -401,7 +401,10 @@
 											display: inline-block;
 										}
 										a {
-											font-size: 0.9em;
+											font-size: 0.8em;
+											font-weight: 400;
+											font-family: $f-primary;
+											letter-spacing: -0.1px;
 										}
 										.WidgetArea{
 											width: 70px;
@@ -413,28 +416,22 @@
 									.fb a {
 										color: #0059B2;
 									}
-									.gp a {
-										color: #B21A00;
-									}
 									.tw a {
-										color: #00A3D8;
+										color: #4ca6c3;
 									}
 									.yt a {
-										color: #8C2200;
+										color: #c00;
 									}
 									.ig a{
 										color: #f56040;
 									}
-									.st a{
-										color: #326600;
-									}
 									.socialrow {
-										padding: 0px 0px 7px 20px;
-										font-family: "Roboto Condensed", sans-serif;
+										padding: 0px 0px 5px 20px;
+										font-family: $f-condensed;
 									}
 									
 									.rss {
-										background-color: #EEEEEE;
+										background-color: #eee;
 										border-top: 1px solid #e8e8e8;								
 										a {
 											background-image: url('https://static.techspot.com/images/rss-icon.svg');
@@ -448,19 +445,15 @@
 										
 									}
 									.newsletter {
-										background-color: #DDDDDD;
+										background-color: #ffffff;
 										text-align: center;
-										font-size: .7em;
+										font-size: .65em;
+										line-height: 1.6em;
+										border-bottom: 1px solid #e8e8e8;
 									}
 								}
 								
 							}
-
-							/*
-							&.google_plus {
-								background-position: -17px center;
-							}
-							*/
 							
 							&.twitter {
 								background-position: -40px center;
@@ -771,7 +764,7 @@
 							background: #777D82; 
 							text-align: center;
 							box-shadow: inset 0px 3px 0px 0px rgba(0,0,0,0.10);
-							height: 40px;
+							height: 37px;
 							padding-top: 1px;
 
 							li {
@@ -784,10 +777,11 @@
 								line-height: 20px;
 
 								a {
-			    					font-size: .95em;
 			    					color: #fff;
 									position: relative;
 									display: block;
+									letter-spacing: -0.1px;
+									font-size: 0.97em;
 								}
 							}
 							li:hover {
@@ -851,7 +845,7 @@
 							margin-left: -5%;
 							
 							background: #888d91;
-							height: 260px;
+							height: 275px;
 							box-shadow: 0 3px 0px rgba(34,25,25,0.10),inset 0px 3px 0px 0px rgba(0,0,0,0.15);
 
 							@include break(tablet){
@@ -931,7 +925,7 @@
 									    line-height: 1.15em;
 									    margin-top: 6px;
 									    font-weight: 500;
-									    font-size: .95em;
+									    font-size: 1.03em;
 									}
 								}
 
@@ -1016,34 +1010,32 @@
 											padding: 0px;
 											@include transitions();
 											font-size: 1.05em;
-											padding-bottom: 10px;
 											
 											h3 {
-												text-align: center;
-												max-height: 54px;
-												overflow: hidden;
-												margin-top: -55px;
-												position: absolute;
+												font-family: $f-paragraph;
 												font-weight: 400;
-												text-shadow: 1px 1px 3px #444;
-												letter-spacing: -0.25px;
-												font-size: .95em;
-												line-height: 1.4;
-												display: inline;
-												padding: 4px 10px 6px 8px;
-												background: rgba(51, 70, 95, 0.84);
+												font-size: 0.98em;
+												line-height: 1.45;
+												padding: 6px 8px 7px;
+												background: rgba(30, 41, 51, 0.1);
 												bottom: 20px;
-												width: 182px;
+												width: 183px;
+												height: 59px;
+												overflow: hidden;
+												border-radius: 2px;
+												text-shadow: 1px 1px 1px rgba(30, 41, 51, 0.51);
 											}
-											
+
+											&:hover {
+												background: rgba(30,41,51,0.2);
+											}
 										}
 
 										.img-wrap {
 											display: block;
-											padding-bottom: 175px;
-											margin-bottom: 10px;
+											padding-bottom: 130px;
+											margin-bottom: 0;
 											position: relative;
-											border-radius: 3px;
 
 											&.back1 {
 												background-image: url('https://static.techspot.com/images/menu/back1.png');
@@ -1061,38 +1053,20 @@
 											.image {
 												position: absolute;
 												width: 100%;
-												height: 175px;
+												height: 130px;
 												background-position: center center;
 												background-repeat: no-repeat;
 												overflow: hidden;
-												//background-size: 120% auto;
-												background-size: cover;
-												border-radius: 3px;
+												background-size: 110%;
 
 												&.icon {
 													background-size: 120px auto;
-												}
-
-												&:hover {
-													border: solid #FDA82A 3px;
-													margin-left: -3px;
-													margin-top: -3px;
-													margin-bottom: 7px;
 												}
 											}
 
 											img {
 												width: 100%;
 												height: auto;
-											}
-
-											&:hover {
-												img {
-													border: solid #FDA82A 3px;
-													margin-left: -3px;
-													margin-top: -3px;
-													margin-bottom: 7px;
-												}
 											}
 
 										}
@@ -1102,6 +1076,7 @@
 											height: auto;
 											margin-bottom: 10px;
 										}
+
 										&:hover {
 											img {
 												border: solid #FDA82A 3px;

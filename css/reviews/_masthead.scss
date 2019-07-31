@@ -1,8 +1,8 @@
 .reviews.big-grid,
 .features.big-grid {
 	@if $isAMP != 'true' {
-		#grid-posts {
-			#masthead {
+		.grid-posts {
+			.masthead {
 				min-height: ($tile-height-sec * 2) + 105px;
 
 				@include break(mobile){
@@ -77,8 +77,8 @@
 
 
 @if $isAMP != 'true' {
-	.reviews-cat #grid-posts, .features-cat #grid-posts {
-		#masthead {
+	.reviews-cat .grid-posts.catDef, .features-cat .grid-posts.catDef {
+		.masthead {
 			min-height: 365px;
 
 			@include break(tablet){
@@ -88,6 +88,7 @@
 					height: 0;
 				}
 			}
+			
 			@include break(mobile){
 				min-height: 270px;
 
@@ -97,11 +98,18 @@
 					height: 270px;
 				}
 			}
+			
 			li {
 				height: 266px !important;
+				@include break(mobile){
+					height: 270px !important;
+				}
 
 				a {
 					height: 226px !important;
+					@include break(mobile){
+						height: 240px !important;
+					}
 				}
 
 				&:nth-child(3) {
@@ -144,7 +152,7 @@
 
 @if $isAMP != 'true' {
 
-	.trivias #masthead {
+	.trivias .masthead {
 		min-height: 465px;
 
 		@include break(mobile) {

@@ -67,6 +67,10 @@ h1 {
 	}
 }
 
+h2, h3, h4, h5 {
+	font-weight: 500;
+}
+
 .mobile-hide {
 	@if $isAMP == 'true' {
 		display: none;
@@ -420,6 +424,14 @@ h1 {
 
 	.amp-mesg {
 		margin: 0 auto 35px;
+		background: #eee;
+		padding: 15px;
+
+		p.ad {
+			font-size: 0.6em;
+			text-align: center;
+			text-transform: uppercase;
+		}
 
 		p {
 			font-size: 0.85em;
@@ -428,9 +440,10 @@ h1 {
 		h4 {
 			font-weight: 500;
 			margin: 0 0 15px 0;
+			font-size: 1.1em;
 
 			a {
-				color: #5e9cea;
+				color: #fd2c54;
 			}
 		}
 	}

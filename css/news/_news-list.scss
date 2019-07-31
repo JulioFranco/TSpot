@@ -127,7 +127,7 @@
 			&.featured {
 				.post-meta {
 					@if $isAMP == 'true' {
-						margin-top: -5px;
+						margin-top: -30px;
 					} @else {
 						@include break(mobile){
 							margin-top: -5px;
@@ -223,6 +223,12 @@
 						padding: 0;
 					}
 				} @else {
+					&.trendload {
+						img {
+							display: none;
+						}
+					}
+
 					p {
 						padding: 0 0 15px !important;
 						line-height: 1.5 !important;
@@ -250,6 +256,13 @@
 
 				a.author {
 					color: inherit;
+				}
+
+				a.feat {
+					color: #c00;
+					text-decoration: none;
+					font-weight: 500;
+					padding: 0 8px 0 0;
 				}
 
 				em {
@@ -398,9 +411,8 @@
 			max-width: 98%;
 
 			h5 {
-				font-weight: 400 !important;
 				padding: 7px 0 0 0 !important;
-				font-size: 17px;
+				font-size: 17px !important;
 
 				strong {
 					font-weight: 500;
@@ -411,8 +423,8 @@
 			}
 			p {
 				font-size: 17px;
+				padding: 0 0 20px !important;
 				font-weight: 400;
-				line-height: 1.45;
 			}
 			img {
 				max-width: 100% !important;
@@ -439,7 +451,6 @@
 			}
 
 			blockquote {
-				background: white;
 				margin: 5px 20px 25px 0px;
 				padding: 15px 10px 0px 15px;
 				border-left: 3px solid #ccc;

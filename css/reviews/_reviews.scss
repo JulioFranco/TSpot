@@ -135,7 +135,7 @@
 
 // ! Special body styles ===========================================
 body.reviews {
-	#masthead{
+	.masthead{
 		background-color: rgba(30,41,51,0.95);
 		background-position: center 28px;
 		background-repeat: no-repeat;
@@ -165,7 +165,7 @@ body.reviews {
 }
 
 body.features {
-	#masthead {
+	.masthead {
 		background-color: #237A3C;
 		background-position: center 28px;
 		background-repeat: no-repeat;
@@ -187,7 +187,7 @@ body.features {
 }
 
 body.trivias {
-	#masthead {
+	.masthead {
 		background-color: rgba(30, 41, 51, 0.95);
 
 		.wrapper {
