@@ -227,7 +227,7 @@ h2, h3, h4, h5 {
 		}
 
 		&.small, &.byline {
-			font-size: 0.8em;
+			font-size: 0.7em;
 		}
 
 		sup {
@@ -235,12 +235,17 @@ h2, h3, h4, h5 {
 		}
 
 		&.grey {
-			font-size: 0.8em;
+			font-size: 0.7em;
 			color: #555;
 			a {
 				color: #555;
-				border-bottom: 1px solid #D0DCEB;
-				box-shadow: inset 0 -2px 0 #D0DCEB;
+				border-bottom: none;
+				box-shadow: none;
+
+				&:hover {
+					border-bottom: 1px solid #D0DCEB;
+					box-shadow: inset 0 -2px 0 #D0DCEB;
+				}
 			}
 		}
 
