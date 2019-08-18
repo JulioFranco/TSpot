@@ -246,6 +246,16 @@ body.interior {
 						@include break(mobile) {
 							margin-left: 80px;
 						}
+
+						&.news {
+							min-height: 0;
+
+							.title {
+								a {
+									font-size: 1.5em;
+								}
+							}
+						}
 					}
 
 					.title {

@@ -170,7 +170,6 @@ body.interior {
 						overflow: hidden;
 						white-space: nowrap;
 						text-overflow: ellipsis;
-						font-size: 0.6em;
 						padding: 0 4px;
 						
 						@if $isAMP == 'true' {
@@ -179,7 +178,7 @@ body.interior {
 							margin-bottom: 4px;
 
 						} @else {
-							font-size: 0.55em;
+							font-size: 0.6em;
 							margin-top: 2px;
 
 							@include break(v-tablet){
@@ -615,16 +614,7 @@ body.interior {
 						padding: 0px 15px;
 						color: #333;
 						
-						&::-webkit-input-placeholder { /* WebKit browsers */
-							color: #DFDFD0;
-						}
-						&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-							color: #DFDFD0;
-						}
-						&::-moz-placeholder { /* Mozilla Firefox 19+ */
-							color: #DFDFD0;
-						}
-						&:-ms-input-placeholder { /* Internet Explorer 10+ */
+						&::-webkit-input-placeholder {
 							color: #DFDFD0;
 						}
 						
