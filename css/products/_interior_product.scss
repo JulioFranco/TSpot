@@ -52,15 +52,15 @@ body.interior {
 			&.pfindex {
 				.ProdListInfo {
 					h4 {
-						margin-top: 14px;
-						margin-bottom: 3px;
+						margin-top: 15px;
+						margin-bottom: 5px;
 					}
 				}
 			}
 
 			li {
 				padding: 0px 2%;
-				height: 70px;
+				height: 75px;
 				font-size: 0.9em;
 				font-weight: normal;
 				border-bottom: 1px solid #F1F1F1;
@@ -127,11 +127,11 @@ body.interior {
 					letter-spacing: -0.333px;
 
 					@if $isAMP == 'true' {
-						font-size:1em;
+						font-size: 1em;
 						margin-top: 8px;
 
 					} @else {
-						font-size: 1em;
+						font-size: 1.1em;
 						margin-top: 16px;
 
 						@include break(mobile){
@@ -158,18 +158,20 @@ body.interior {
 
 					a {
 						text-transform: uppercase;
-						line-height: 17px;
-						background-color: #61798E;
-						width: 95px;
+						line-height: 19px;
+						background-color: #A2ADB8;
+						width: 75px;
 						text-align: center;
 						font-weight: 500;
 						color: white;
-						@include border-radius(2px);
+						border-radius: 2px 2px 2px 2px;
 						display: block;
-						margin-right: 10px;
+						margin: 2px 8px 0 0;
 						overflow: hidden;
 						white-space: nowrap;
 						text-overflow: ellipsis;
+						font-size: 0.6em;
+						padding: 0 4px;
 						
 						@if $isAMP == 'true' {
 							font-size: 0.5em;
@@ -192,7 +194,7 @@ body.interior {
 							}
 
 							&:hover {
-								background-color: darken(#61798E,10%);	
+								background-color: darken(#A2ADB8,10%);
 							}
 						}
 					}
@@ -291,19 +293,18 @@ body.interior {
 				}
 				.price {
 					font-weight: 500;
-					font-size: 0.75em;
+					font-size: 0.8em;
 					float: left;
 					line-height: 70px;
 					padding-right: 10px;
 					text-align: left;
-					width: 45px;
 
 					a {
-						color: $red;
+						color: #2c9e41;
 
 						@if $isAMP != 'true' {
 							&:hover {
-								color: $orange;
+								color: darken(#2c9e41,10%);
 							}
 						}
 					}
@@ -587,6 +588,8 @@ body.interior {
 					width: 45%;
 					
 				}
+
+				/*
 				#LookUp {
 					text-transform: uppercase;
 					font-family: $f-condensed;
@@ -632,6 +635,7 @@ body.interior {
 					margin-bottom: 21px;
 					
 				}
+				*/
 
 
 			}
