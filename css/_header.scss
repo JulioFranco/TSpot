@@ -246,6 +246,19 @@
 											    color: #969696;
 											}
 
+											.contentRow-figure {
+												a.avatar.avatar--xxs.avatar--default.avatar--default--dynamic {
+													text-align: center;
+													height: 40px;
+													width: 40px;
+													line-height: 40px;
+													display: block;
+													font-size: 30px;
+													border-radius: 50%;
+													padding: 2px;
+												}
+											}
+
 											.loading {
 												float: right;
 												margin: 9px 0 0;
