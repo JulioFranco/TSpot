@@ -471,18 +471,18 @@ body.interior.download {
 					float: left;
 					margin-bottom: 8px;
 					display: inline-block;
-					width: 170px;
-					height: 35px;
+					width: 185px;
+					height: 38px;
 					background: url('https://static.techspot.com/images/download_button_3h.png') no-repeat;
 					position: relative;
-					background-size: 170px 70px;
+					background-size: 185px 76px;
 					span {
 						text-indent: -1000px;
 						overflow: hidden;
 						position: absolute;
-						width: 32px;
+						width: 35px;
 						left: 8px;
-						height: 35px;
+						height: 37px;
 						background: url('https://static.techspot.com/images/download_button_arrow3.png') 0 0;
 						background-size: contain;
 						-webkit-transition: all 0.15s linear;
@@ -495,7 +495,7 @@ body.interior.download {
 						&:hover {
 							background-position: left bottom;
 							span {
-								background-position: 0 35px;
+								background-position: 0 38px;
 							}
 						}
 					}
