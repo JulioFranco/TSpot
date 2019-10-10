@@ -649,10 +649,10 @@ body.interior.download {
 @if $isAMP != 'true' {
 
 	.google-ads {
-		margin: 5px 0 0 0;
+		/* margin: 5px 0 0 0; */
 
 		&.single {
-			margin: 15px 6px 0 -10px;
+			margin: 5px 6px 0 -10px;
 
 			&:before {
 				display: block;
@@ -665,10 +665,12 @@ body.interior.download {
 			}
 		}
 
+		/*
 		@include break(mobile) {
 		    margin: -15px 0 35px 0;
 		    text-align: center;
 		}
+		*/
 	}
 
 	.facebook-like {
