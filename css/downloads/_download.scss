@@ -278,7 +278,7 @@ body.interior.download {
 		} @else {
 			.product-details {
 				@include col(1,2,0);
-				width: 57%;
+				width: 54%;
 				padding: 5px 0 0 30px;
 				border-left: 2px solid #dddddd;
 				font-size: 1.1em;
@@ -383,9 +383,9 @@ body.interior.download {
 					display: block;
 					font-weight: 500;
 					padding: 0px 10px 1px 5px;
-					height: 27px;
-					line-height: 28px;
-					font-size: 14px;
+					height: 30px;
+					line-height: 32px;
+					font-size: 15px;
 					text-decoration: none;
 					border: 1px solid #d3d3d3;
 					transition: all 0.1s linear;
@@ -427,7 +427,7 @@ body.interior.download {
 		.download-product {
 			@if $isAMP != 'true' {
 				@include col(1,2,0);
-				width: 43%;
+				width: 46%;
 				padding: 5px 10px 0 0;
 
 				@include break(v-tablet){
@@ -454,7 +454,7 @@ body.interior.download {
 				}
 			}
 			.download_options {
-				width: 90%;
+				width: 95%;
 			}
 
 			.download-wrapper {
@@ -649,10 +649,9 @@ body.interior.download {
 @if $isAMP != 'true' {
 
 	.google-ads {
-		/* margin: 5px 0 0 0; */
 
 		&.single {
-			margin: 5px 6px 0 -10px;
+			margin: 5px 6px 0 0;
 
 			&:before {
 				display: block;
