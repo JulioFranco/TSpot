@@ -168,6 +168,12 @@
 					}
 				}
 
+				.bbCodeBlock--unfurl  {
+					.contentRow-figure, .js-unfurl-desc, .contentRow-minor {
+						display: none;
+					}
+				}
+
 			}
 
 			ul.action-links {
