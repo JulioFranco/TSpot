@@ -197,7 +197,7 @@ body.interior {
 
 		.SideTitle{
 			line-height: 31px;
-			background-color: $blue;
+			background-color: #3e6696;
 			padding: 0px 17px;
 
 			@include break(v-tablet){
@@ -268,13 +268,13 @@ body.interior {
 			}
 		}
 		.computer-hardware {
-			height: 160px;
+			height: 135px;
 		}
 		.pcs-devices {
 			height: 40px;
 		}
 		.electronics {
-			height: 65px;
+			height: 85px;
 		}
 	}
 
