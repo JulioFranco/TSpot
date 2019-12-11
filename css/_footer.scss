@@ -63,6 +63,8 @@ footer {
 					border: 1px solid $grey;
 					padding: 0 4%;
 					font-size: 0.85em;
+					-webkit-appearance: none;
+					border-radius: 0;
 				}
 			}
 			.form-submit {
@@ -77,6 +79,8 @@ footer {
 					border: 1px solid #105ab2;
 					font-size: 0.8em;
 					cursor: pointer;
+					-webkit-appearance: none;
+					border-radius: 0;
 
 					&:hover {
 						background: lighten($blue,6%);
