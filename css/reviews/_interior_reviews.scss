@@ -36,7 +36,7 @@ body.interior {
 
 						a {
 							color: #333;
-							font-size: 1.05em;
+							font-size: 1.15em;
 							font-weight: 500;
 
 							&:hover {
@@ -326,6 +326,14 @@ body.interior {
 					@include break(mobile) {
 						width: 94%;
 						padding: 25px 0 5px;
+					}
+				}
+
+				.connatix {
+					margin: 5px 0 30px 0;
+
+					@include break(mobile) {
+						margin: 5px 0 35px 0;
 					}
 				}
 

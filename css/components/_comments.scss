@@ -114,6 +114,11 @@
 				img {
 					max-width: 100%;
 					padding: 14px 0;
+
+					&.smilie--emoji {
+						max-width: 21px;
+						padding: 0 2px;
+					}
 				}
 
 				b {
@@ -168,6 +173,12 @@
 					}
 				}
 
+				.bbCodeBlock--unfurl  {
+					.contentRow-figure, .js-unfurl-desc, .contentRow-minor {
+						display: none;
+					}
+				}
+
 			}
 
 			ul.action-links {
@@ -182,15 +193,11 @@
 					font-size: .8em;
 					font-weight: 500;
 
-					&:first-child {
-						/* border-right: 1px solid #ccc; */
-					}
-
 					a {
 						color: $blue;
 						
 						&:hover {
-							color: #c00;
+							color: $red;
 						}
 					}
 				}
@@ -513,6 +520,11 @@ body.interior {
 			margin: 0 0 30px 0;
 		} @else {
 			float: left;
+			-webkit-filter: grayscale(90%);
+
+			&:hover {
+				-webkit-filter: grayscale(40%);
+			}
 			
 			@include break(mobile) {
 				margin: 0 0 30px 0;
@@ -573,7 +585,7 @@ body.interior {
 			
 			span {
 				display: block;
-				font-size: 1.1em;
+				font-size: 1em;
 				
 				&.comment-count {
 					color: $red;
@@ -586,7 +598,7 @@ body.interior {
 				}
 				&.interactions-count {
 					color: #39579D;
-					font-size: .9em;
+					font-size: .86em;
 					line-height: 1.75;
 				}
 			}

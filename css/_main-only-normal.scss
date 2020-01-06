@@ -849,7 +849,7 @@ h3.section-header {
 	margin: -5px 0 35px;
 
 	&.related-stories {
-		margin: 15px 0 30px;
+		margin: 0 0 30px;
 		display: block !important;
 
 		@include break(v-tablet){
@@ -919,7 +919,7 @@ h3.section-header {
 			color: #1e2833;
 		}
 		strong {
-			font-weight: 600;
+			font-weight: 500;
 		}
 	}
 
@@ -1515,7 +1515,7 @@ table {
 		}
 
 		tr {
-			padding: 6px 0 6px 10px;
+			padding: 6px;
 
 			&.title {
 				background-color: #105ab2;
@@ -1894,9 +1894,10 @@ table {
 }
 
 .adContainerLeader2 {
-	//background-color: $light-grey;
 	padding: 20px 0 35px;
 	text-align: center;
+	margin: 0 auto;
+	width: 728px;
 }
 
 .dark_mode {
