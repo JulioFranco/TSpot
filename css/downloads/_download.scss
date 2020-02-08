@@ -207,6 +207,10 @@ body.interior.download {
 				}
 				@else {
 
+					&.alt {
+						background-color: #F2F4F8;
+					}
+
 					@include break(mobile){
 						line-height: 200%;
 					}
