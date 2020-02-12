@@ -554,7 +554,15 @@
 						
 					}
 				}
-			}	
+			}
+			.elite {
+				float: left;
+				color: #cccccc;
+				font-size: 0.6em;
+				left: 210px;
+				position: relative;
+				top: 10px;
+			}
 		}
 	}
 	/**** END HEADER-TOP ****/
@@ -627,6 +635,10 @@
 							}
 						}
 					}
+				}
+				.elite {
+					font-size: 0.55em;
+					left: 175px;
 				}
 			}
 		}
