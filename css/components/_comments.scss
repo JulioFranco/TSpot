@@ -355,16 +355,26 @@
 
 		.staff {
 			display: inline-block;
-			zoom: 1;
-			vertical-align: middle;
-			margin-right: 10px;
-			background: url('https://static.techspot.com/images/staff_badge.png') no-repeat;
-			width: 59px;
+			margin: 17px 10px 0 0;
+			background: url(https://static.techspot.com/images/staff_badge2x.png) no-repeat;
+			width: 44px;
+			height: 18px;
+			overflow: hidden;
+			text-indent: -1000px;
+			float: right;
+			background-size: contain;
+		}
+		.elite {
+			display: inline-block;
+			margin-right: 8px;
+			background: url(https://static.techspot.com/images/staff_elite2c.png) no-repeat;
+			width: 102px;
 			height: 22px;
 			overflow: hidden;
 			text-indent: -1000px;
 			float: right;
-			margin-top: 15px;
+			margin-top: 14px;
+			background-size: contain;
 		}
 	}
 }
