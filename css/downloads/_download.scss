@@ -432,7 +432,7 @@ body.interior.download {
 			@if $isAMP != 'true' {
 				@include col(1,2,0);
 				width: 46%;
-				padding: 5px 10px 0 0;
+				padding: 5px 10px 15px 0;
 
 				@include break(v-tablet){
 					padding: 5px 0 0 35px;
@@ -461,9 +461,32 @@ body.interior.download {
 				width: 95%;
 			}
 
+			.download_certified {
+				margin: 20px auto;
+			}
+
+			.editors_pick {
+				@if $isAMP == 'true' {
+					margin: 12px 0;
+
+					amp-img {
+						width: 260px;
+						height: 78px;
+					}
+				}
+				@else {
+					margin: 20px auto 10px;
+
+					@include break(mobile){
+						margin: 25px 0;
+						text-align: center;
+					}
+				}
+			}
+
 			.download-wrapper {
 				@if $isAMP != 'true' {
-					margin-bottom: 15px;
+					margin-bottom: 5px;
 					margin-top: 0px;
 
 					@include break(v-mobile){
@@ -473,33 +496,29 @@ body.interior.download {
 
 				.download_button {
 					float: left;
-					margin-bottom: 8px;
+					margin-bottom: 5px;
 					display: inline-block;
-					width: 185px;
-					height: 38px;
+					width: 208px;
+					height: 42px;
 					background: url('https://static.techspot.com/images/download_button_3h.png') no-repeat;
 					position: relative;
-					background-size: 185px 76px;
+					background-size: 208px 84px;
 					span {
 						text-indent: -1000px;
 						overflow: hidden;
 						position: absolute;
-						width: 35px;
-						left: 8px;
-						height: 37px;
+						width: 40px;
+						left: 10px;
+						height: 42px;
 						background: url('https://static.techspot.com/images/download_button_arrow3.png') 0 0;
 						background-size: contain;
-						-webkit-transition: all 0.15s linear;
-						-moz-transition: all 0.15s linear;
-						-ms-transition: all 0.15s linear;
-						-o-transition: all 0.15s linear;
 						transition: all 0.15s linear;
 					}
 					@if $isAMP != 'true' {
 						&:hover {
 							background-position: left bottom;
 							span {
-								background-position: 0 38px;
+								background-position: 0 42px;
 							}
 						}
 					}
@@ -618,29 +637,6 @@ body.interior.download {
 					}
 				}
 
-				.editors_pick {
-					@if $isAMP == 'true' {
-						margin: 12px 0;
-
-						amp-img {
-							width: 260px;
-							height: 78px;
-						}
-					} @else {
-						margin: 5px 0 20px;
-
-						img {
-							width:260px;
-							height:78px;
-						}
-
-						@include break(mobile){
-							margin: 25px 0;
-							text-align: center;
-						}
-					}
-				}
-
 			}
 		}
 	}
@@ -655,7 +651,7 @@ body.interior.download {
 	.google-ads {
 
 		&.single {
-			margin: 25px auto 10px;
+			margin: 25px 0 10px -6px;
 			text-align: center;
 
 			&:before {
@@ -668,13 +664,6 @@ body.interior.download {
 				text-align: center;
 			}
 		}
-
-		/*
-		@include break(mobile) {
-		    margin: -15px 0 35px 0;
-		    text-align: center;
-		}
-		*/
 	}
 
 	.facebook-like {

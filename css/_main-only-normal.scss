@@ -1592,21 +1592,19 @@ table {
 
 //Button for show more
 .more_description_dw {
-	margin: 10px 5px 0 0;
+	margin: 15px 5px 15px 0;
 	display: block;
 	border: 1px solid #eee;
 	text-align: center;
 	font-weight: 400;
 	color: #888;
 	background-color: #fff;
+	line-height: 27px;
 
 	&:hover{
 		color: #05408f;
 		background-color: #eee;
 	}
-}
-.more_description_dw {
-	line-height: 27px;
 
 	@include break(mobile){
 		margin: 0px 5px 25px 0;
