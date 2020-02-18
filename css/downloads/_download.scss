@@ -450,7 +450,7 @@ body.interior.download {
 			}
 
 			.download_options, .specs {
-				padding: 10px 10px 15px 10px;
+				padding: 10px;
 				border-radius: 3px;
 				
 				@if $isAMP != 'true' {
@@ -498,18 +498,18 @@ body.interior.download {
 					float: left;
 					margin-bottom: 5px;
 					display: inline-block;
-					width: 208px;
-					height: 42px;
+					width: 200px;
+					height: 41px;
 					background: url('https://static.techspot.com/images/download_button_3h.png') no-repeat;
 					position: relative;
-					background-size: 208px 84px;
+					background-size: 200px 82px;
 					span {
 						text-indent: -1000px;
 						overflow: hidden;
 						position: absolute;
-						width: 40px;
+						width: 38px;
 						left: 10px;
-						height: 42px;
+						height: 41px;
 						background: url('https://static.techspot.com/images/download_button_arrow3.png') 0 0;
 						background-size: contain;
 						transition: all 0.15s linear;
@@ -518,7 +518,7 @@ body.interior.download {
 						&:hover {
 							background-position: left bottom;
 							span {
-								background-position: 0 42px;
+								background-position: 0 41px;
 							}
 						}
 					}
@@ -691,7 +691,7 @@ body.interior.download {
 	}
 
 	.tabs.similars {
-		padding: 25px 0 20px;
+		padding: 25px 0 10px;
 	}
 	.tabs.recommended {
 		padding: 20px 0 30px;
