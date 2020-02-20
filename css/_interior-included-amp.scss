@@ -310,7 +310,7 @@ body.interior {
 			}
 			
 			#content-header {
-				background-color: rgba(30,41,51,0.95);
+				background-color: #bbb;
 				
 				.wrapper {
 
@@ -330,12 +330,16 @@ body.interior {
 					h1 {
 					    padding: 22px 10px 22px 21px;
 					    margin: 20px 300px 10px -5px;
-					    color: white;
+					    color: #fff;
 					    font-size: 1.5em;
 					    font-weight: 500;
 					    line-height: 1.5;
 					    letter-spacing: -0.333px;
-					    border-radius: 8px;
+					    border-radius: 0 0 9px 0;
+
+					    &.yellow {
+					    	color: #333;
+					    }
 
 						@if $isAMP == 'true' {
 							margin: 0 0 5px 0;
