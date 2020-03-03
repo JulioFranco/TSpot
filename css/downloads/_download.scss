@@ -202,14 +202,14 @@ body.interior.download {
 			div {
 				line-height: 180%;
 
+				&.alt {
+					background-color: #F2F4F8;
+				}
+
 				@if $isAMP == 'true' {
 					padding-left: 8px;
 				}
 				@else {
-
-					&.alt {
-						background-color: #F2F4F8;
-					}
 
 					@include break(mobile){
 						line-height: 200%;
@@ -448,13 +448,23 @@ body.interior.download {
 					float: none;
 				}
 			}
+			@else {
+				h2 {
+					font-size: 1.5em;
+				    color: #333;
+				    line-height: 2.5;
+				}
+			}
 
 			.download_options, .specs {
-				padding: 10px;
-				border-radius: 3px;
 				
 				@if $isAMP != 'true' {
+					padding: 10px;
+					border-radius: 3px;
 					margin: 0 0 0 -10px;
+				}
+				@else {
+					padding: 10px 0 30px;
 				}
 			}
 			.download_options {

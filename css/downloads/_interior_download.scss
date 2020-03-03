@@ -1,6 +1,13 @@
 body.interior {
 	&.download {
 		#content-header {
+
+			@if $isAMP == 'true' {
+				.wrapper {
+					padding: 20px 0 0;
+				}
+			}
+
 			.title-group {
 				.subver {
 					font-size: 0.75em;
