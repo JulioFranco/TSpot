@@ -188,48 +188,6 @@ body.interior {
 					display: none;
 				}
 			}
-			#mobComBut {
-				display: none;
-				text-align: center;
-				padding-top: 15px;
-				padding-bottom: 65px;
-				background-color: $light-grey;
-				@include break(mobile){
-					display: block;
-				}
-			}
-			.ComBut {
-				font-size: 0.9em;
-				display: block;
-				padding-top: 5px;
-				height: 35px;
-				line-height: 30px;
-				font-weight: 600;
-				border: solid 1px #aaa;
-				@include border-radius(3px);
-				@include gradient-trans($start_color:#1E2933,$start_alpha:0,$end_color:#1E2933,$end_alpha:0.1);
-		
-				span {
-					margin-top: -2px;
-					display: block;
-				}
-				
-				span.count {
-					background: #7393C8;
-					border-radius: 100px;
-					min-width: 15px;
-					display: inline-block;
-					color: white;
-					padding-left: 5px;
-					padding-right: 5px;
-					line-height: 24px;
-					margin-left: 5px;
-
-					&.many {
-						background: #c00;
-					}
-				}
-			}
 		}
 	}
 
@@ -347,4 +305,92 @@ body.interior {
 			}
 		}
 	}
+
+	@if $isAMP != 'true' {
+
+		#mobComBut {
+			display: none;
+			text-align: center;
+			padding-top: 15px;
+			padding-bottom: 65px;
+			background-color: $light-grey;
+			@include break(mobile){
+				display: block;
+			}
+		}
+		.ComBut {
+			font-size: 0.9em;
+			display: block;
+			padding-top: 5px;
+			height: 35px;
+			line-height: 30px;
+			font-weight: 600;
+			border: solid 1px #aaa;
+			@include border-radius(3px);
+			@include gradient-trans($start_color:#1E2933,$start_alpha:0,$end_color:#1E2933,$end_alpha:0.1);
+
+			span {
+				margin-top: -2px;
+				display: block;
+			}
+			
+			span.count {
+				background: #7393C8;
+				border-radius: 100px;
+				min-width: 15px;
+				display: inline-block;
+				color: white;
+				padding-left: 5px;
+				padding-right: 5px;
+				line-height: 24px;
+				margin-left: 5px;
+
+				&.many {
+					background: #c00;
+				}
+			}
+		}
+
+	} @else {
+
+		#mobComBut {
+			text-align: center;
+			padding: 40px 0;
+		}
+		.ComBut {
+			font-size: 0.9em;
+			display: block;
+			padding-top: 5px;
+			height: 35px;
+			line-height: 30px;
+			font-weight: 600;
+			border: solid 1px #aaa;
+			@include border-radius(3px);
+			@include gradient-trans($start_color:#1E2933,$start_alpha:0,$end_color:#1E2933,$end_alpha:0.1);
+
+			span {
+				margin-top: -2px;
+				display: block;
+			}
+			
+			span.count {
+				background: #7393C8;
+				border-radius: 100px;
+				min-width: 15px;
+				display: inline-block;
+				color: white;
+				padding-left: 5px;
+				padding-right: 5px;
+				line-height: 24px;
+				margin-left: 5px;
+
+				&.many {
+					background: #c00;
+				}
+			}
+		}
+
+	}
+
+
 }

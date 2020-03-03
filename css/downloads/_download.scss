@@ -333,7 +333,7 @@ body.interior.download {
 		.options {
 			font-size: 1em;
 			font-weight: 400;
-			margin: 10px 0 0px;
+			margin: 5px 0 0px;
 
 			/*
 			@if $isAMP != 'true' {
@@ -347,7 +347,7 @@ body.interior.download {
 			*/
 		}
 		.mirror-wrapper {
-			margin: 0 0 15px;
+			margin: 0 0 5px;
 			@if $isAMP != 'true' {
 				@include break(v-mobile){
 					margin: 0;
@@ -649,20 +649,21 @@ body.interior.download {
 @if $isAMP != 'true' {
 
 	.google-ads {
+		margin: 14px 0 10px -6px;
+		text-align: center;
+
+		&:before {
+			display: block;
+			content: 'Advertisement';
+			height: 15px;
+			line-height: 8px;
+			font-size: 12px;
+			color: #aaa;
+			text-align: center;
+		}
 
 		&.single {
-			margin: 25px 0 10px -6px;
-			text-align: center;
-
-			&:before {
-				display: block;
-				content: 'Advertisement';
-				height: 15px;
-				line-height: 5px;
-				font-size: 12px;
-				color: #aaa;
-				text-align: center;
-			}
+			margin: 24px 0 10px -6px;
 		}
 	}
 
