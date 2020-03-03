@@ -260,15 +260,15 @@ body.interior {
 				}
 			}
 			.intro-image {
-				margin-top: -52px;
-				width: 100%;
-				height: auto;
-
 				@if $isAMP == 'true' {
+					width: 110%;
+					height: auto;
 					border: none;
-					margin-bottom: 25px;
-
+					margin: -55px -5% 5px;
 				} @else {
+					margin-top: -52px;
+					width: 100%;
+					height: auto;
 					margin-bottom: 30px;
 
 					@include break(mobile){

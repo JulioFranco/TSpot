@@ -322,7 +322,7 @@ body.interior {
 			padding: 10px 0 15px;
 			
 			@if $isAMP == 'true' {
-				font-size: 1.1em;
+				font-size: 1em;
 			} @else {
 				font-size: 1.1em !important;
 			}
@@ -332,15 +332,16 @@ body.interior {
 			margin: 0 0 35px 0;
 			
 			li {
-				margin-bottom: 10px;
-				list-style-type: none;
-				letter-spacing: -0.25px;
-
 				@if $isAMP == 'true' {
+					font-family: $f-paragraph;
+					margin-bottom: 15px;
+					letter-spacing: -0.25px;
 					font-size: 0.9em;
-					padding: 0 0 5px;
 					line-height: 1.4em;
 				} @else {
+					margin-bottom: 10px;
+					list-style-type: none;
+					letter-spacing: -0.25px;
 					font-size: 0.95em;
 				}
 
