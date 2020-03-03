@@ -312,8 +312,7 @@ body.interior {
 		#mobComBut {
 			display: none;
 			text-align: center;
-			padding-top: 15px;
-			padding-bottom: 65px;
+			padding: 40px 0 60px;
 			background-color: $light-grey;
 			@include break(mobile){
 				display: block;
@@ -357,6 +356,10 @@ body.interior {
 		#mobComBut {
 			text-align: center;
 			padding: 40px 0;
+
+			&.solo {
+				padding: 15px 0;
+			}
 		}
 		.ComBut {
 			font-size: 0.9em;
