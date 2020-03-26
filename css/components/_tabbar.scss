@@ -3,6 +3,10 @@
 	line-height: 33px;
 	position: relative;
 
+	@if $isAMP == 'true' {
+		margin: 0 1% 10px;
+	}
+
 	.active {
 		bottom: 3px;
 		line-height: 33px;
@@ -84,21 +88,19 @@
 		}
 	}
 
-	@if $isAMP != 'true' {
-		&:after {
-			height: 28px;
-			width: 100%;
-			position: absolute;
-			bottom: -28px;
-			left: 0;
-			display: block;
-			content: '';
-			background-image: linear-gradient(to top, #fff, #e7e9ee);
-			width: 100%;
-			background-image: none;
-			bottom: -5px;
-			height: 5px;
-			background-color: #F2F4F8;
-		}
+	&:after {
+		height: 28px;
+		width: 100%;
+		position: absolute;
+		bottom: -28px;
+		left: 0;
+		display: block;
+		content: '';
+		background-image: linear-gradient(to top, #fff, #e7e9ee);
+		width: 100%;
+		background-image: none;
+		bottom: -5px;
+		height: 5px;
+		background-color: #F2F4F8;
 	}
 }

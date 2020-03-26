@@ -89,36 +89,37 @@
 
 	
 	.title-group {
-		position: absolute;
-		bottom: 80px;
-		width: 90%;
+		@if $isAMP != 'true' {
+			position: absolute;
+			bottom: 80px;
+			width: 90%;
 
-		&.centered {
-			text-align: center;
-			width: 100%;
-			bottom: 150px;
-
-			@if $isAMP != 'true' {
+			&.centered {
+				text-align: center;
+				width: 100%;
+				bottom: 150px;
+			
 				@include break(tablet){
 					width: 90%;
 					text-align: left;
 					bottom: 100px;
 				}
+			
+			}
+
+			@include break(mobile){
+				width: 90%;
+				margin-left: 5%;
+				bottom: 55px;
 			}
 		}
-
-		@if $isAMP == 'true' {
-			@include break(tablet){
-				bottom: 100px;
-				text-align: left;
-			}
-		}
-
-		@include break(mobile){
+		@else {
 			width: 90%;
 			margin-left: 5%;
-			bottom: 55px;
+			bottom: 25px;
+			position: absolute;
 		}
+
 		
 		h1.large {
 			color: white;
