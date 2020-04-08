@@ -42,7 +42,7 @@
 		.comment {
 			font-size: .7em;
 			border-top: 1px solid #eee !important;
-			padding: 3px 5px 15px 5px;
+			padding: 3px 5px 25px 5px;
 
 			cite {
 				display: block;
@@ -63,17 +63,13 @@
 			}
 
 			span.comment_likes {
-				float: right;
+				float: left;
 				display: inline-block;
 				font-size: 0.9em;
 				color: #888;
 				margin-right: 5px;
 
 				a { color:#888; }
-
-				@include break(mobile) {
-					float: left;
-				}
 			}
 
 			img.user-avatar {
@@ -368,14 +364,13 @@
 		}
 		.elite {
 			display: inline-block;
-			margin-right: 8px;
 			background: url(https://static.techspot.com/images/staff_elite2c.png) no-repeat;
-			width: 102px;
+			width: 95px;
 			height: 22px;
 			overflow: hidden;
 			text-indent: -1000px;
 			float: right;
-			margin-top: 14px;
+			margin: 14px 10px 0 0;
 			background-size: contain;
 		}
 	}
