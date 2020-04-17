@@ -717,7 +717,7 @@ body.interior {
 							position: absolute;
 							width: 15px; height: 15px;
 							left: -15px; top: 5px;
-							background-image: url('https://static.techspot.com/images/icons-pros-cons-hd.png');
+							background-image: url('https://#{$staticServer}.techspot.com/images/icons-pros-cons-hd.png');
 							background-position: center left;
 							background-size: 30px;
 						}

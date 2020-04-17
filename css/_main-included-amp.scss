@@ -71,7 +71,7 @@ h1 {
 	
 	&.badge {
 		line-height: 50px;
-		background-image: url('https://static.techspot.com/images/badge.svg');
+		background-image: url('https://#{$staticServer}.techspot.com/images/badge.svg');
 		background-repeat: no-repeat;
 		background-position: 25px top;
 		padding-left: 110px;

@@ -232,7 +232,7 @@ body.interior {
 								color: #5a6169;
 
 								@include break(mobile) {
-									background-image: url('https://static.techspot.com/images/btnShare.svg?v=#{$social-icons-version}');
+									background-image: url('https://#{$staticServer}.techspot.com/images/btnShare.svg?v=#{$social-icons-version}');
 									background-position: -18px -148px;
 									padding-left: 27px;
 									background-blend-mode: luminosity;
@@ -259,7 +259,7 @@ body.interior {
 							a {
 								font-weight: 400;
 								color: #5a6169;
-								background-image: url('https://static.techspot.com/images/btnShare.svg?v=#{$social-icons-version}');
+								background-image: url('https://#{$staticServer}.techspot.com/images/btnShare.svg?v=#{$social-icons-version}');
 								background-position: -18px -148px;
 								padding-left: 27px;
 								background-blend-mode: luminosity;
