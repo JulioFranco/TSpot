@@ -73,7 +73,7 @@
 			//Related products or Product.php
 			@include break(v-mobile){
 				@include col(1,1,0);
-				margin-bottom: 15px;
+				margin-bottom: 35px;
 			}
 			&:nth-child(4), &:nth-child(8){
 				@include break(v-mobile){
