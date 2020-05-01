@@ -741,23 +741,45 @@ body.interior {
 						margin-right: 350px;
 						height: 350px;
 						margin-bottom: 50px;
+
+						@include break(mobile){
+							margin-right: 0;
+							height: 350px;
+							margin-bottom: 0px;
+							width: 100%;
+						}
 					}
 
 					.sidePrice {
 						float: right;
 						padding-top: 15px;
 						width: 345px;
+
+						@include break(mobile){
+							float: none;
+							padding-top: 5px;
+							width: 100%;
+						}
 					}
 
 					h4 {
 						color: rgba(30, 41, 51, 0.95);
 						font-size: 1em;
+
+						@include break(mobile){
+							text-align: center;
+							font-size: 0.85em;
+						}
 					}
 
 					.stat {
 						color: #05408f;
 						font-size: 0.65em;
 						line-height: 2;
+
+						@include break(mobile){
+							text-align: center;
+						}
 					}
 
 					.priceTable {
@@ -813,31 +835,6 @@ body.interior {
 					padding: 3px 7px;
 					margin: 7px 0 2px;
 				}
-
-				@include break(mobile){
-					.priceGraph {
-						margin-right: 0;
-						height: 350px;
-						margin-bottom: 0px;
-						width: 100%;
-					}
-
-					.sidePrice {
-						float: none;
-						padding-top: 5px;
-						width: 100%;
-					}
-
-					h4 {
-						text-align: center;
-						font-size: 0.85em;
-					}
-
-					.stat {
-						text-align: center;
-					}
-				}
-
 			}
 		
 			@if $isAMP != 'true' {
