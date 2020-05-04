@@ -47,7 +47,7 @@ a.offset {
 	
 	@if $isAMP != 'true' {
 		@include break(mobile){
-			top: -75px;
+			top: -100px;
 		}
 	}
 }
