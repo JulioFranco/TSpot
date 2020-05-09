@@ -30,7 +30,7 @@
 		a.post-new-comment {
 			display: inline-block;
 			font-family: $f-condensed;
-			background-image: url('https://static.techspot.com/images/glyph-orange.svg');
+			background-image: url('https://#{$staticServer}.techspot.com/images/glyph-orange.svg');
 			background-position: left 10px;
 			background-repeat: no-repeat;
 			font-size: .80em;
@@ -42,7 +42,7 @@
 		.comment {
 			font-size: .7em;
 			border-top: 1px solid #eee !important;
-			padding: 3px 5px 15px 5px;
+			padding: 3px 5px 25px 5px;
 
 			cite {
 				display: block;
@@ -63,17 +63,13 @@
 			}
 
 			span.comment_likes {
-				float: right;
+				float: left;
 				display: inline-block;
 				font-size: 0.9em;
 				color: #888;
 				margin-right: 5px;
 
 				a { color:#888; }
-
-				@include break(mobile) {
-					float: left;
-				}
 			}
 
 			img.user-avatar {
@@ -303,7 +299,7 @@
 
 			.signin_icon {
 				display: block;
-				background-image: url('https://static.techspot.com/images/signin_icon2.png');
+				background-image: url('https://#{$staticServer}.techspot.com/images/signin_icon2.png');
 				background-size: 60px 60px;
 				width: 60px;
 				height: 60px;
@@ -358,7 +354,7 @@
 		.staff {
 			display: inline-block;
 			margin: 17px 10px 0 0;
-			background: url(https://static.techspot.com/images/staff_badge2x.png) no-repeat;
+			background: url('https://#{$staticServer}.techspot.com/images/staff_badge2x.png') no-repeat;
 			width: 44px;
 			height: 18px;
 			overflow: hidden;
@@ -368,14 +364,13 @@
 		}
 		.elite {
 			display: inline-block;
-			margin-right: 8px;
-			background: url(https://static.techspot.com/images/staff_elite2c.png) no-repeat;
-			width: 102px;
+			background: url('https://#{$staticServer}.techspot.com/images/staff_elite2c.png') no-repeat;
+			width: 95px;
 			height: 22px;
 			overflow: hidden;
 			text-indent: -1000px;
 			float: right;
-			margin-top: 14px;
+			margin: 14px 10px 0 0;
 			background-size: contain;
 		}
 	}
@@ -520,7 +515,7 @@
 
 body.interior {
 	.comment-count-block {
-		background-image: url('https://static.techspot.com/images/icon-comments-lg.svg');
+		background-image: url('https://#{$staticServer}.techspot.com/images/icon-comments-lg.svg');
 		background-repeat: no-repeat;
 		background-position: left 5px;
 		height: 42px;

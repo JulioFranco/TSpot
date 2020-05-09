@@ -52,7 +52,7 @@ body.interior.download {
 
 			@if $isAMP != 'true' {
 				span.number {
-					background: url('https://static.techspot.com/images/blue-ellipse.svg') no-repeat scroll 0 0 transparent;
+					background: url('https://#{$staticServer}.techspot.com/images/blue-ellipse.svg') no-repeat scroll 0 0 transparent;
 					text-align: center;
 					line-height: 26px;
 					color: #fff;
@@ -417,7 +417,7 @@ body.interior.download {
 					}
 
 					span {
-						background: url('https://static.techspot.com/images/download-arrow-mirror.svg') no-repeat center center;
+						background: url('https://#{$staticServer}.techspot.com/images/download-arrow-mirror.svg') no-repeat center center;
 						position: absolute;
 						display: block;
 						width: 10px;
@@ -510,7 +510,7 @@ body.interior.download {
 					display: inline-block;
 					width: 200px;
 					height: 41px;
-					background: url('https://static.techspot.com/images/download_button_3h.png') no-repeat;
+					background: url('https://#{$staticServer}.techspot.com/images/download_button_3h.png') no-repeat;
 					position: relative;
 					background-size: 200px 82px;
 					span {
@@ -520,7 +520,7 @@ body.interior.download {
 						width: 38px;
 						left: 10px;
 						height: 41px;
-						background: url('https://static.techspot.com/images/download_button_arrow3.png') 0 0;
+						background: url('https://#{$staticServer}.techspot.com/images/download_button_arrow3.png') 0 0;
 						background-size: contain;
 						transition: all 0.15s linear;
 					}

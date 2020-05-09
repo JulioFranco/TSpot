@@ -469,7 +469,7 @@ body.interior {
 				.arrow {
 					width: 10px;
 					height: 10px;
-					background: url('https://static.techspot.com/images/pf_show_sorter.png');
+					background: url('https://#{$staticServer}.techspot.com/images/pf_show_sorter.png');
 					display: inline-block;
 					zoom: 1;
 					*display: inline;
@@ -524,7 +524,6 @@ body.interior {
 					font-size: 1.25em;
 					color: #444;
 					text-align: center;
-					border-radius: 5px;
 					min-width: 100px;
 
 					@if $isAMP == 'true' {
