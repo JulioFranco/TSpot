@@ -392,9 +392,11 @@
 								width: 80px;
 								margin-right: 20px;
 								position: relative;
+
 								@include break(mobile){
 									display: none;
 								}
+
 								&.hover {
 									background-color: $orange;
 									.dropdown {
@@ -440,10 +442,10 @@
 											margin: 5px 80px 0 0;
 										}
 									}
-									.fb a {
+									.fb a, .in a {
 										color: #0059B2;
 									}
-									.tw a {
+									.tw a, .hub a {
 										color: #4ca6c3;
 									}
 									.yt a {
@@ -455,6 +457,23 @@
 									.socialrow {
 										padding: 0px 0px 5px 20px;
 										font-family: $f-condensed;
+
+										&.fb { padding-top: 10px; }
+
+										/*
+										&.tw {
+											#twFollowBtn {
+												width: 68px;
+												overflow: hidden;
+												float: left;
+											}
+										}
+										*/
+
+										&.yt, &.hub { padding: 0 0 3px 20px; }
+
+										&.in { padding: 0 0 12px 20px; }
+
 									}
 									
 									.rss {

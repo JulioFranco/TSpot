@@ -1556,6 +1556,10 @@ table {
 }
 
 /* Clases misc */
+.pointerHere {
+	cursor: pointer;
+}
+
 .repartner {
 	float:right;
 	margin: 10px 0px 0px 20px;
@@ -1919,6 +1923,7 @@ table {
 		position: relative;
 		border-radius: 4px;
 		user-select: none;
+		margin-left: 10px;
 
 		&:after {
 			content: '';
