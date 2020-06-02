@@ -407,3 +407,18 @@
 		}
 	}
 }
+
+.grid-posts-lineal {
+	
+	@if $isAMP != 'true' {
+	    margin: 15px 0 -30px;
+	}
+
+	h4 {
+		color: #333;
+		margin: 5px 2px 35px;
+		line-height: 1.5;
+		font-weight: 400;
+		font-size: 0.9em;
+	}
+}

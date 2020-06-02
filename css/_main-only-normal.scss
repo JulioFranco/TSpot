@@ -1593,11 +1593,12 @@ table {
 
 .form-email {
 	input {
-		width: 90%;
-		font-size: .95em;
-		margin-top: 3px;
-		line-height: 1.5;
-		padding: 3px 5px;
+	    width: 90%;
+	    font-size: 1em;
+	    margin-top: 6px;
+	    line-height: 1.7;
+	    padding: 4px 5px 2px;
+	    border: 2px solid #1e29332e;
 	}
 }
 
@@ -1907,6 +1908,11 @@ table {
 	text-align: center;
 	margin: 0 auto;
 	width: 728px;
+}
+
+.top-mobile-ad {
+	margin: -18px 0 45px 0;
+	height: 250px;
 }
 
 .dark_mode {

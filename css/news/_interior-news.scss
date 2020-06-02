@@ -275,6 +275,10 @@ body.interior {
 	.related-query {
 		margin: -10px 0 20px;
 
+		@include break(mobile) {
+			margin: -10px 0 0;
+		}
+
 		h3 {
 			font-weight: 400;
 			padding: 10px 0 15px;
@@ -282,13 +286,17 @@ body.interior {
 
 		ul {
 			margin: 0 0 35px 0;
+
+			@include break(mobile) {
+				margin: 0;
+			}
 			
 			li {
 				@if $isAMP == 'true' {
 					font-family: $f-paragraph;
-					margin-bottom: 15px;
+					margin-bottom: 14px;
 					letter-spacing: -0.25px;
-					font-size: 0.9em;
+					font-size: 0.85em;
 					line-height: 1.4em;
 				} @else {
 					margin-bottom: 14px;
@@ -349,7 +357,7 @@ body.interior {
 
 		#mobComBut {
 			text-align: center;
-			padding: 40px 0;
+			padding: 0 0 40px;
 
 			&.solo {
 				padding: 15px 0;
