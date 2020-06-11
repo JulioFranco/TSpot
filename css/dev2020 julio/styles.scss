@@ -1,0 +1,55 @@
+/* !!! Generated via SASS/SCSS, please do not modify !!! */
+@import
+"1structure/_reset.scss",
+"1structure/_variables.scss",
+"1structure/_mixin.scss",
+"1structure/_base-grid.scss";
+
+$isDesk: 'false';
+
+@import
+// components
+"2components/_articleBody-news-article.scss",
+"2components/_input-n-button.scss",
+"2components/_chicklets.scss",
+"2components/_comments.scss",
+"2components/_page-nav.scss",
+"2components/_grid-posts.scss",
+"2components/_search-box.scss",
+"2components/_slide-sort-selector.scss",
+"2components/_slider.scss",
+"2components/_tabbar.scss",
+
+
+// base
+"_home.scss",
+"_header.scss", // separar cosas que no hay en mobile
+"_footer.scss",
+
+"_main-included-amp.scss",
+"_main-only-normal.scss",
+"_interior-included-amp.scss",
+"_interior-only-normal.scss",
+
+
+// sections
+"news/_news-list.scss",
+"news/_interior-news.scss",
+
+// reviews
+"2components/_header-featured.scss", // also add to pages
+"reviews/_interior_reviews.scss",
+"reviews/_reviews.scss",
+"reviews/_review_box.scss",
+
+"products/_products.scss",
+"products/_interior_product.scss",
+"products/_widget.scss",
+
+"downloads/_interior_download.scss",
+"downloads/_download.scss",
+
+// masthead
+"news/_masthead.scss",
+"reviews/_masthead.scss",
+"products/_masthead.scss";

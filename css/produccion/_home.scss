@@ -1,0 +1,109 @@
+body.home {
+
+	@if $isAMP == 'true' {
+		#content {
+			.wrapper {
+					padding: 15px 0;			
+			}
+		}
+
+	} @else {
+
+		// Fixed header home
+		padding-top: 85px;
+		@include break(mobile){
+			padding-top: 72px;
+		}
+
+		#dk_menu {
+			height: 38px !important;
+		}
+		#header-ts .menu .SubHeader {
+			height: 38px !important;
+			padding-top: 3px !important;
+		}
+
+		#content {
+			.wrapper {
+				@include break(v-mobile) {
+					padding: 15px 0;
+				}
+
+				.col-2-3 {
+					@include break(big-desk){
+						width: 70%;
+					}
+
+					@include break(tablet) {
+						@include col(2,3,2);
+						@media screen and (orientation:portrait) { 
+							width: 100%;
+						}
+					}
+					@include break(mobile) {
+						width: 100%;
+						.wrapperMobileOnly {
+							width: 94%;
+							padding: 0 3%;
+						}
+					}
+				}
+			}
+
+			.grid-posts {
+				&.secondary {
+				    padding: 0;
+
+					@include break(mobile) {
+						background: none;
+					}
+
+					.masthead {
+						background: #ddd;
+						padding: 10px 0;
+
+						@include break(mobile) {
+							background: none;
+							margin: 0 0 15px;
+						}
+
+						.wrapper {
+							padding: 0;
+						}
+
+						ul.featured-posts li a hgroup h2 {
+							font-size: 1em;
+
+							@include break(mobile) {
+								font-size: 1.05em;
+							}
+						}
+
+						ul.featured-posts li.tall a hgroup h2 {
+							font-size: 1.2em;
+						
+							@include break(mobile) {
+								font-size: 1.05em;
+							}
+						}					
+					}
+				}
+			}
+		
+			.sidebar {
+				padding-top: 50px;
+
+				&.secondary {
+					padding-top: 20px;
+				}
+
+				@include break(tablet) {
+					width: 32%;
+					@media screen and (orientation:portrait) { 
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

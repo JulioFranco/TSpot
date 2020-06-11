@@ -1,0 +1,72 @@
+
+/********************************
+Note: This class is used for all carousels (home, reviews, PF)
+*********************************/
+
+.carousel {
+	margin: 16px 0 12px 0;
+
+	.slide {
+		img {
+			object-fit: cover;
+		}
+	}
+
+	.group-caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 15px;
+		color: #ddd;
+		top: 0;
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: linear-gradient(345deg, rgba(21,76,143,0.30) 40%, rgba(30,41,51,0.75) 85%);
+		}
+	}
+
+	.caption-on-top {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 15px;
+		color: #ddd;
+		top: 0;
+
+		&.home-title {
+			padding: 30px 15px;
+		}
+	}
+}
+
+.masthead amp-carousel.featured-posts .slide .caption-on-top {
+	h3{
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: .6em;
+		-webkit-font-smoothing: subpixel-antialiased;
+		text-shadow: 0px 0px 3px #333;
+		color: #FF9B37;
+		padding-bottom: 3px;
+		letter-spacing: .25px;
+	}
+
+	h2{
+		font-size: 1.2em;
+		font-weight: 500;
+		text-shadow: 1px 1px 3px #222;
+		letter-spacing: -.2px;
+		line-height: 1.4;
+		padding-right: 10px;
+		color: white;
+	}
+}
