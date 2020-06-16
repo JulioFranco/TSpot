@@ -411,8 +411,13 @@
 .grid-posts-lineal {
 	
 	@if $isAMP != 'true' {
-	    margin: 15px 0 -30px;
+	    margin: 15px 0 -10px;
 	}
+
+    img {
+    	height: 270px;
+		max-height: fit-content;
+    }
 
 	h4 {
 		color: #333;
