@@ -296,21 +296,6 @@ body.interior {
 				}
 			}
 
-			.page-nav{
-				@if $isAMP == 'true' {
-					a {
-						font-size: 1.4em;
-					}
-
-				} @else {
-					@include break(mobile){
-						a {
-							font-size: 1.4em;
-						}
-					}
-				}
-			}
-
 			@if $isAMP == 'true' {
 				.articleBody {
 					margin: 0 2%;
@@ -429,6 +414,142 @@ body.interior {
 						width: 250px;
 					}
 					*/
+				}
+			}
+		}
+
+		.article-index {
+			width: 60px;
+			border-top: 5px solid $orange;
+			background: white;
+			margin-bottom: 50px;
+			position: relative;
+			
+			strong {
+				display: block;
+				line-height: 35px;
+				text-align: center;
+				font-size: .7em;
+				cursor: pointer;
+			}
+			
+			section {
+				font-size: .7em;
+
+				@if $isAMP != 'true' {
+					display: none;
+					width: 300px;
+					position: absolute;
+					left: -300px; top: -5px;
+					background: white;
+					border-top: 5px solid $orange;
+					z-index: 10;
+				}
+				
+				.pad {
+					padding: 10px 20px 20px 20px;
+				}
+				
+				h3 {
+					font-size: 1.5em;
+					line-height: 180%;
+					font-weight: 400;
+				}
+				
+				ol {
+					margin: 10px 10px 0 12%;
+					line-height: 200%;
+					li {
+						list-style-type: decimal-leading-zero;
+						font-family: $f-paragraph;
+						font-weight: 400;
+						font-size: 1.1em;
+						line-height: 1.6;
+						padding-bottom: 5px;
+
+						@if $isAMP != 'true' {
+							a {
+								&:hover {
+									color: $red;
+								}
+							}
+						}
+					}
+				}
+			}
+			
+			@if $isAMP != 'true' {
+				&:hover {
+					strong {
+						color: white;
+						background: $orange;
+						transition: background 0.1s;
+					}
+					section {
+						display: block;
+					}
+				}
+			}
+		}
+
+		// PAGE NAV
+		nav.page-nav {
+			float:right;
+			padding-bottom: 10px;
+			text-align: right;
+
+			@if $isAMP == 'true' {
+				width: 94%;
+				margin: 0;
+			}
+			@else {
+				margin: 20px 0 0 0 !important;
+			}
+
+			a {
+				font-weight: 400;
+				font-size: 1.8em;
+				span {
+					display: block;
+					color: #333;
+					font-weight: 500;
+					position: relative;
+					text-transform: none;
+					padding-right: 20px;
+					font-size: 0.75em;
+
+					&:after {
+						content:"";
+						display: block;
+						position: absolute;
+						right: 0; top: 50%;
+						margin-top: -5px;
+						width: 10px; height: 7px;
+						@include triangle(right,black,8,10);
+					}
+
+				}
+				strong {
+					display: block;
+					color: $blue;
+					font-weight: 400;
+					font-size: 0.85em;
+				}
+			}
+
+			@if $isAMP != 'true' {
+				a:hover {
+					span {
+						&:after {
+							content:"";
+							display: block;
+							position: absolute;
+							right: 0; top: 50%;
+							margin-top: -5px;
+							width: 10px; height: 7px;
+							@include triangle(right,$orange,8,10);
+						}
+					}
 				}
 			}
 		}
