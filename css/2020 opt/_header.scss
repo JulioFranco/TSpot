@@ -1,0 +1,1155 @@
+#header-ts {
+	position: fixed;
+	width: 100%;
+	z-index: 1100001;
+	line-height: $header-height;
+	height: $header-height;
+	top: 0;
+	left: 0;
+
+	// Not AMP
+	@if $isAMP != 'true' {
+		@include break(mobile) {
+			height: 58px;
+		}
+
+		#main-menu #dk_menu{
+			.SpecialHeight {
+				.nav-submenu {
+					height: 285px;
+				}
+			}
+		}
+	}
+
+
+	/**** HEADER-TOP ****/
+	.header-top {
+		//AMP and Normal
+		background: $dark-blue;
+		position: relative;
+		z-index: 2;
+
+		.wrapper {
+			padding: 0;
+			line-height: $header-top-line-height;
+		}
+
+		// Only Normal
+		@if $isAMP != 'true' {
+			.right-links {
+				float: right;
+				line-height: $header-top-line-height;
+
+				ul {
+					li {
+						display: inline-block;
+						line-height: $header-top-line-height;
+						@include break(mobile){
+							line-height: $header-top-line-height-mobile;
+						}
+						a {
+							font-size: .7em;
+							font-weight: 300;
+							color: white;
+						}
+						
+						&.login {
+							background-image: url('https://#{$staticServer}.techspot.com/images/user-account.svg');
+							background-repeat: no-repeat;
+							background-position: 8px center;
+							background-size: 26px;
+							padding-right: 10px;
+							position: relative;
+							@include break(mobile) {
+									width: 40px;
+									padding-right: 0px;
+									background-position: center center;
+								}
+							
+							&.hover {
+								background-color: $orange;
+								.loginEspBlock {display: block;}
+							}
+
+							a {
+								display: block;
+								padding-left: 38px;
+								text-transform: uppercase;
+								font-weight: 400;
+								@include break(mobile) {
+									padding-left: 0px;
+									text-indent: -9999px;
+								}
+							}
+
+							.loggedin {
+								text-transform: none !important;
+							}
+
+							.count {
+								position: absolute;
+								right: -5px;
+								top: 1px;
+								padding: 1px 5px;
+								font-size: 12px;
+								font-weight: 600;
+								line-height: normal;
+								background: #c00;
+								color: #fff;
+								text-shadow: 0 1px 0 #900;
+								-webkit-animation: count_appear 0.35s linear;
+								border-radius: 20px;
+								box-shadow: 0 1px 0 #900;
+
+								@include break(mobile) {
+									text-indent: 0;
+								}
+							}
+
+							.login-dropdown {
+								display: none;
+								position: absolute;
+								width: 280px;
+								left: 50%;
+								margin-left: -140px;
+								background: white;
+								text-indent: 0;
+								line-height: 25px;
+								z-index: 100;
+								border-bottom: 4px solid #105AB2;
+								box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+
+								@include break(mobile){
+									right: 0%;
+									left: 0%;
+									margin-left: -175px;
+								}
+
+								@include break(v-mobile){
+									margin-left: -212px;
+									width: 250px;
+								}
+								
+								.pad {
+									display: block;
+									padding: 10px 15px;
+
+									&.header {
+										padding-right: 68px;
+
+										.image {
+											position: absolute;
+											background: #fff;
+											top: 10px;
+											right: 10px;
+											border: 1px solid #eee;
+											box-shadow: 3px 3px 0 #ddd;
+										}
+
+										h3 {
+											margin: 3px 0 0;
+											font-weight: 400;
+											font-size: 1em;
+											overflow: hidden;
+											text-overflow: ellipsis;
+											white-space: nowrap;
+										}
+
+										p {
+											color: #888;
+											margin: 4px 0 0px;
+											line-height: 1.5;
+											font-size: 0.62em;
+										}
+									}
+
+									.notice
+									{
+										font-weight: bold;
+										color: #c00 !important;
+									}
+
+									&.subcontent {
+										padding: 0 13px 5px;
+										font-size: 0.6em;
+										max-height: 250px;
+										overflow: auto;
+										background: #f5f5f5;
+
+										a {
+											&:hover {
+												color: #c00;
+											}
+										}
+
+										&.last {
+											padding-bottom: 6px;
+										}
+
+										ul {
+											padding: 5px 0 5px;
+											margin: 0;
+
+												li {
+												float: left;
+												width: 125px;
+												line-height: 2;
+												font-family: $f-helvetica;
+
+												@include break(v-mobile){
+													width: 110px;
+												}
+											}
+										}
+
+										&.alerts {
+
+											padding: 0 8px 5px 13px;
+
+											@include break(v-mobile){
+												max-height: 180px;
+											}
+
+											ul {
+												margin: 0;
+											}
+											li {
+												width: 240px;
+												padding: 10px 0px 3px;
+
+												.list_item {
+													border-bottom: 1px solid #e8e8e8;
+												}
+												&:last-child .list_item {
+													border-bottom: 0 !important;
+												}
+
+												@include break(v-mobile){
+													width: 210px;
+												}
+
+											}
+											
+											.contentRow {
+												display: flex;
+											}
+											.contentRow-main--close	{
+												line-height: 1.4;
+												padding-left: 6px;
+											}
+											.contentRow-minor.contentRow-minor--smaller {
+											    font-size: 11px;
+											    line-height: 2;
+											    color: #969696;
+											}
+
+											.contentRow-figure {
+												a.avatar.avatar--xxs.avatar--default.avatar--default--dynamic {
+													text-align: center;
+													height: 40px;
+													width: 40px;
+													line-height: 40px;
+													display: block;
+													font-size: 30px;
+													border-radius: 50%;
+													padding: 2px;
+												}
+											}
+
+											.loading {
+												float: right;
+												margin: 9px 0 0;
+												width: 16px;
+												height: 16px;
+												background: url('https://#{$staticServer}.techspot.com/images/loading_blue_small.gif');
+											}
+										}
+
+										.list_item {
+											margin: 0 -20px 0 -10px;
+											min-height: 32px;
+											overflow: hidden;
+											padding: 5px 10px 5px;
+											cursor: pointer;
+												.avatar img {
+													float: left;
+													height: 32px;
+													width: 32px;
+													margin: 2px 5px 0 0;
+													padding: 0;
+													border: 1px solid #fff;
+													border-radius: 0;
+												}
+												&:hover {
+													background: #fcfcfc;
+												}
+												h3 {
+													display: block;
+													margin: 2px 0;
+													font-size: 12px;
+													font-weight: normal;
+													white-space: normal;
+													line-height: 1.3;
+													color: #333;
+												}
+												abbr {
+													font-size: 11px;
+													color: #666;
+												}
+												.new {
+													color: #c00;
+													font-weight: bold;
+												}
+										}
+									}
+
+									p {
+										line-height: 1.5;
+										color: #666;
+										margin: 8px 0 0;
+									}
+
+									a {
+										img {
+											&:hover {
+												opacity: 0.9;
+											}
+										}
+									}
+								}
+
+								.separator {
+									height: 0;
+									font-size: 0;
+									line-height: 0;
+									border-top: 1px solid #e8e8e8;
+								}
+								
+								.top {
+									margin-top: 12px;
+								}
+								
+								.padtitle {
+									font-size: 0.95em;
+									font-weight: 400;
+									line-height: 12px;
+								}
+								
+								small {
+									font-size: .6em;
+									letter-spacing: -.2px;
+								}
+								
+								a {
+									color: $blue;
+									font-size: 1em;
+									line-height: normal;
+									padding: 0;
+									text-transform: none;
+									display: inline;
+								}
+								
+								.login {
+									background: #EAEAEA;
+									
+									form {
+										padding: 5px 0;
+										
+										label {
+											display: block;
+											margin-bottom: 5px;
+											margin-right: 15px;
+										}
+										.login_error {
+											color: #c00;
+											font-size: 12px;
+											padding: 15px 0px 0px;
+										}
+									}
+									
+								}
+								
+							}
+							
+						}
+
+						@if $isDesk == 'true' {
+						&.social {
+							background-image: url('https://#{$staticServer}.techspot.com/images/social-sprite.svg');
+							background-repeat: no-repeat;
+							background-position: left center;
+							text-indent: -9999px;
+							width: 17px;
+							
+							a {
+								display: block;
+							} 
+							
+							&.group {
+								background-position: center center;
+								width: 80px;
+								margin-right: 20px;
+								position: relative;
+
+								@include break(mobile){
+									display: none;
+								}
+
+								&.hover {
+									background-color: $orange;
+									.dropdown {
+										//display: block;
+									}
+									.loginEspBlock{display: block;}
+								}
+								
+								.social-dropdown {
+									display: none;
+									position: absolute;
+									width: 250px;
+									left: 50%;
+									margin-left: -125px;
+									background: #f5f5f5;
+									text-indent: 0;
+									line-height: 25px;
+									z-index: 100;
+									border-bottom: 4px solid #105AB2;
+									box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+									
+									.pad {
+										display: block;
+										padding: 12px 20px;
+									}
+									
+									.social {
+										.padtitle {
+											font-weight: 400;
+											font-size: .85em;
+											display: inline-block;
+										}
+										a {
+											font-size: 0.8em;
+											font-weight: 400;
+											font-family: $f-primary;
+											letter-spacing: -0.1px;
+										}
+										.WidgetArea{
+											width: 70px;
+											float: right;
+											display: inline;
+											margin: 5px 80px 0 0;
+										}
+									}
+									.fb a, .in a {
+										color: #0059B2;
+									}
+									.tw a, .hub a {
+										color: #4ca6c3;
+									}
+									.yt a {
+										color: #c00;
+									}
+									.ig a{
+										color: #f56040;
+									}
+									.socialrow {
+										padding: 0px 0px 5px 20px;
+										font-family: $f-condensed;
+
+										&.fb { padding-top: 10px; }
+
+										/*
+										&.tw {
+											#twFollowBtn {
+												width: 68px;
+												overflow: hidden;
+												float: left;
+											}
+										}
+										*/
+
+										&.yt, &.hub { padding: 0 0 3px 20px; }
+
+										&.in { padding: 0 0 12px 20px; }
+
+									}
+									
+									.rss {
+										background-color: #eee;
+										border-top: 1px solid #e8e8e8;								
+										a {
+											background-image: url('https://#{$staticServer}.techspot.com/images/rss-icon.svg');
+											background-repeat: no-repeat;
+											background-position: 5px center;
+											background-size: 23px;
+											padding-left: 35px;
+											color: $dark-grey;
+											font-weight: 400;
+										}
+										
+									}
+									.newsletter {
+										background-color: #ffffff;
+										text-align: center;
+										font-size: .65em;
+										line-height: 1.6em;
+										border-bottom: 1px solid #e8e8e8;
+									}
+								}
+								
+							}
+							
+							&.twitter {
+								background-position: -40px center;
+							}
+							
+							&.rss {
+								background-position: -83px center;
+								margin-right: 20px;
+							}
+							
+						}
+						} // close isDesk
+
+
+						&.search {
+							background-image: url('https://#{$staticServer}.techspot.com/images/search-icon.svg');
+							background-position: center center;
+							width: 32px;
+							background-color: black;
+							position: relative;
+							text-indent: -9999px;
+							background-repeat: no-repeat;
+							
+							&.active,
+							&.hover {
+								background-color: $orange;
+								
+								form {
+									display: block;
+								}
+								
+							}
+							
+							form {
+								display: none;
+								position: absolute;
+								right: 0;
+								top: $header-top-line-height;
+								width: 220px;
+								height: $header-top-line-height;
+								z-index: 90;
+								input {
+									display: block;
+									width: 100%;
+									height: 45px;
+									min-height: 45px;
+									background: white;
+									border: none;
+									color: #333;
+									padding: 0 15px;
+									font-size: .81em;
+									line-height: 25px;
+									
+									@include border-radius(0);
+									&::-webkit-input-placeholder { /* WebKit browsers */
+										color: #DFDFD0;
+									}
+									&:-ms-input-placeholder { /* Internet Explorer 10+ */
+										color: #DFDFD0;
+									}
+																		
+									&:focus {
+										outline: none;
+									}
+									
+								}
+								
+							}
+							
+						}
+						
+					}
+				}
+			}
+			.elite {
+				float: left;
+				color: #cccccc;
+				font-size: 0.6em;
+				left: 210px;
+				position: relative;
+				top: 10px;
+			}
+		}
+	}
+	/**** END HEADER-TOP ****/
+
+
+	/**** INTERIOR ****/
+	&.interior{
+		@if $isAMP == 'true' { //Only Amp
+			line-height: $header-mobile-height;
+			height: $header-mobile-height;
+		
+		} @else { //Only Normal (Not Amp)
+			line-height: $header-interior-height;
+			height: $header-interior-height;
+
+			@include break(mobile){
+				line-height: $header-mobile-height;
+				height: $header-mobile-height;
+			}
+		}
+		
+		.header-top {
+			.wrapper {
+				@if $isAMP == 'true' { //Only Amp
+					line-height: $header-interior-line-height-mobile;
+				
+				} @else { //Only Normal (Not Amp)
+					line-height: $header-interior-line-height;
+					@include break(mobile){
+						line-height: $header-interior-line-height-mobile;
+					}
+				}
+			}
+
+			//Only Normal (Not Amp)
+			@if $isAMP != 'true' {
+				.right-links {
+					line-height: $header-interior-line-height;
+					@include break(mobile){
+						line-height: $header-interior-line-height-mobile;
+					}
+					ul {
+						li {
+							line-height: $header-interior-line-height;
+							@include break(mobile){
+								line-height: $header-top-line-height-mobile;
+							}
+							&.login {
+								@include break(mobile) {
+									padding-right: 0px;
+									background-position: center center;
+									line-height: $header-top-line-height-mobile;
+									width: 40px;
+								}
+							}
+							&.social {
+								&.search {
+									@include break(mobile){
+										background-position: center center;
+										line-height: $header-top-line-height-mobile + 6;
+									}
+									form {
+										top: $header-interior-line-height;
+										@include break(mobile){
+											top: $header-interior-line-height-mobile;
+										}
+										
+									}
+								}
+							}
+						}
+					}
+				}
+				.elite {
+					font-size: 0.55em;
+					left: 175px;
+				}
+			}
+		}
+
+		// (.interior logo)
+		#logo {
+			background-size: 181px;
+			line-height: $header-interior-line-height;
+			height: $header-interior-line-height;
+			padding-bottom: 3px;
+			width: 166px;
+
+			a {
+				line-height: $header-interior-line-height;
+				height: $header-interior-line-height;
+			}
+
+			@include break(mobile) {
+				margin-left: 2px;
+				height: 45px;
+				background-position: -7px -1px;
+			}
+		}
+
+		// (.interior menu)
+		// @if $isAMP != 'true' {
+			.menu {
+
+				.wrapper {
+					& > ul {
+						& > li {
+							.nav-submenu {
+								top: $header-interior-line-height;
+							}
+						}
+					}
+				}
+			
+				@include break(mobile) {
+					line-height: 35px;
+					height: 35px;
+				}
+				
+			}
+		// }
+	}
+	/**** END INTERIOR ****/
+
+
+	/**** MENU ****/
+
+		.menu {
+			background: $blue;
+			line-height: 50px;
+			position: relative;
+			z-index: 1;
+			box-shadow: 0 4px 0px rgba(34,25,25,0.1);
+			font-size: .70em;
+			height: $header-menu-height;
+			line-height: $header-menu-line-height;
+
+			@include break(mobile){
+				font-size: .735em;
+			}
+
+			#dk_menu {
+				height: $header-menu-line-height;
+				margin-left: -5px;	//alinear con logo
+
+				@include break(mobile){
+				    height: 35px;
+
+					overflow-x: auto;
+					overflow-y: hidden;
+					-webkit-overflow-scrolling: touch;
+					-ms-overflow-style: -ms-autohiding-scrollbar;
+					white-space: nowrap;
+
+					&::-webkit-scrollbar {
+					    display: none;
+					}
+				}
+
+			}
+						
+			.wrapper {
+				@include break(v-tablet){
+					width: 94%;
+				}
+				& > ul {
+					& > li {
+						display: inline-block;
+						text-transform: uppercase;
+						font-weight: 400;
+						margin-left: -5px;	//make menus overlap for uninterrupted hover + drop down
+
+						@include break(v-tablet) {
+							margin-right: 0px;
+						}
+						
+						& > a {
+							color: rgba(255, 255, 255, 0.96);
+							font-weight: 500;
+							position: relative;
+							display: block;
+							padding: 0 16px 0 16px;
+
+							@include break(mobile) {
+								padding: 0 14px 0 14px;
+							}
+						}
+
+						// DESKTOP only submenu
+						@if $isDesk == 'true' {
+
+						&.active {
+							background: #6D7075;
+						}
+						
+						&:hover {
+							background-color: #6D7075;
+							transition: 0.1s ease-in-out;
+						}
+
+						.SubHeader {
+							background: #777D82; 
+							text-align: center;
+							box-shadow: inset 0px 3px 0px 0px rgba(0,0,0,0.10);
+							height: 37px;
+							padding-top: 1px;
+
+							li {
+								text-align: center;
+								margin: 0px 12px;
+								padding-bottom: 0 !important;
+								display: inline-block;
+								text-transform: none;
+								color: white;
+								line-height: 20px;
+
+								a {
+			    					color: #fff;
+									position: relative;
+									display: block;
+									letter-spacing: -0.1px;
+									font-size: 0.97em;
+								}
+							}
+							li:hover {
+								border-bottom: 1px solid white;
+							}
+
+						}
+
+						#trending {
+							li:first-child {
+								margin-left: -536px;
+							}
+						}
+						#features {
+							li:first-child {
+								margin-left: -470px;
+							}
+						}
+						#reviews {
+							li:first-child {
+								margin-left: -526px;
+							}
+						}
+						#bestof {
+							li:first-child {
+								margin-left: -430px;
+							}
+						}
+						#downloads {
+							li:first-child {
+								margin-left: -260px;
+							}
+						}
+						#forums {
+							li:first-child {
+								margin-left: 212px;
+								@include break(tablet){
+									margin-left: 325px;
+								}
+								@include break(v-tablet){
+									margin-left: 190px;
+								}
+							}
+							@include break (tablet){
+								text-align: left;
+							}
+						}
+						
+						.nav-submenu {
+							display: none;
+							position: absolute;
+							left: 0; top: $header-menu-height;
+							width: 110%;
+							margin-left: -5%;
+							
+							background: #888d91;
+							height: 275px;
+							box-shadow: 0 3px 0px rgba(34,25,25,0.10),inset 0px 3px 0px 0px rgba(0,0,0,0.15);
+
+							@include break(tablet){
+								display: none !important;
+							}
+							
+							.wrapper {
+								padding: 17px 0;
+
+								@include break(tablet){
+									width: 85%;
+								}
+							}
+						}
+
+						.submenu-mini{
+							position: relative;
+							margin-top: -10px;
+							margin-left: -10px;
+
+							li {
+								line-height: 240%;
+								font-weight: 500;
+								width: 90px;
+								height: 110px;
+								float: left;
+								text-align: center;
+								display: inline-block;
+								padding: 5px 10px 0px 5px;
+								margin-left: 10px;
+
+								a {
+									color: rgba(255,255,255,0.96);
+								    font-weight: 500;
+								    position: relative;
+								    display: block;
+									padding: 0;
+									text-transform: none;
+									
+									&:after {
+										display: none;
+									}
+
+									span {
+										display: block;
+									    @include border-radius(4px);
+										width: 90px;
+										height: 66px;
+										background: linear-gradient(45deg, #efb813 0%,#ffd65e 51%,#efb813 100%);
+
+										&.purple {
+											background: linear-gradient(45deg, #401286 0%,#6528C0 51%,#401286 100%);
+										}
+										&.orange {
+											background: linear-gradient(45deg, #F18533 0%, #f5a626 51%, #F18533 100%)
+										}
+										&.blue {
+											background: linear-gradient(30deg, #2963AF 0%, #4c86ca 51%, #2963AF 100%)
+										}
+										&.green {
+											background: linear-gradient(45deg, #3c9831 0%, #37a761 51%, #53c146 100%)
+										}
+										&.grey {
+											background: linear-gradient(55deg, #4d4f50 0%, #343c44 51%, #576573 100%)
+										}
+									}
+
+									img {
+									    max-width: 87px;
+									    max-height: 63px;
+									    padding: 2px 3px 6px 3px;
+									}
+									
+									h3 {
+									    display: block;
+									    font-family: $f-condensed;
+									    line-height: 1.15em;
+									    margin-top: 6px;
+									    font-weight: 500;
+									    font-size: 1.03em;
+									}
+								}
+
+								&:hover {
+								    background-color: transparent;
+
+									span {
+									    border: #ff7f00 solid 3px;
+									    margin-top: -3px;
+									    margin-left: -3px;
+									    margin-bottom: -3px;
+									}
+								}
+							}						
+						}
+
+						.submenu {
+							position: relative;
+							
+							li {
+								width: 17%;
+								line-height: 240%;
+								display: block;
+								font-weight: 500;
+
+								@include break(v-tablet){
+									display: none;
+								}
+
+								a {
+									text-transform: none;
+									padding: 0 12px 0 14px;
+
+									&:after {
+										display: none;
+									}
+								}
+								
+								&.active {
+									background-color: rgba(30,41,51,0.75);
+									transition: 0.1s linear;
+									& > a {
+										position: relative;
+										
+										&:after {
+											position: absolute;
+											content:"";
+											display: block;
+											width: 7px; height: 7px;
+											top: 50%; right: 5px;
+											margin-top: -5px;
+											@include triangle(right,$orange,5,7);
+											opacity: 0.85;
+										}
+
+									}
+									
+									ul.recent-items {
+										display: block;
+									}	
+								}
+								
+								ul.recent-items {
+									display: none;
+									position: absolute;
+									left: 17%;
+									top: 0;
+									width: 83%;
+
+									@include break(v-tablet){
+										left: 0;
+										width: 100%;
+									}
+									
+									li {
+										@include col(1,4,2);
+										
+										a {
+											display: block;
+											color: white;
+											line-height: 120%;
+											padding: 0px;
+											@include transitions();
+											font-size: 1.05em;
+											
+											h3 {
+												font-family: $f-paragraph;
+												font-weight: 400;
+												font-size: 0.98em;
+												line-height: 1.45;
+												padding: 6px 8px 7px;
+												background: rgba(30, 41, 51, 0.1);
+												bottom: 20px;
+												width: 183px;
+												height: 59px;
+												overflow: hidden;
+												border-radius: 2px;
+												text-shadow: 1px 1px 1px rgba(30, 41, 51, 0.4);
+											}
+
+											&:hover {
+												background: rgba(30,41,51,0.2);
+											}
+										}
+
+										.img-wrap {
+											display: block;
+											padding-bottom: 130px;
+											margin-bottom: 0;
+											position: relative;
+
+											&.back1 {
+												background-image: url('https://#{$staticServer}.techspot.com/images/menu/back1.png');
+												background-size: auto 100%;
+											}
+											&.back2 {
+												background-image: url('https://#{$staticServer}.techspot.com/images/menu/back2.png');
+												background-size: auto 100%;
+											}
+											&.back3 {
+												background-image: url('https://#{$staticServer}.techspot.com/images/menu/back3.png');
+												background-size: auto 100%;
+											}
+
+											.image {
+												position: absolute;
+												width: 100%;
+												height: 130px;
+												background-position: center center;
+												background-repeat: no-repeat;
+												overflow: hidden;
+												background-size: 110%;
+
+												&.icon {
+													background-size: 120px auto;
+												}
+											}
+
+											img {
+												width: 100%;
+												height: auto;
+											}
+
+										}
+
+										img {
+											width: 100%;
+											height: auto;
+											margin-bottom: 10px;
+										}
+
+										&:hover {
+											img {
+												border: solid #FDA82A 3px;
+												margin-left: -3px;
+												margin-top: -3px;
+												margin-bottom: 7px;
+											}
+										}
+										
+										&:nth-child(4) {
+											@include col-last(1,4,2);
+										}
+										
+									}
+
+									&.wide {
+										left: 0;
+										width: 100%;
+
+										li {
+											@include col(1,5,2);
+											width: 18% !important;
+										}
+									}
+								}
+							}
+						}
+						}// NO AMP submenu
+					}
+				}
+			}	
+		}
+	/**** END MENU ****/
+
+
+	/**** LOGO ****/
+	#logo {
+		text-indent: -9999px;
+		background-image: url('https://#{$staticServer}.techspot.com/images/logo-techspot.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 200px;
+		height: $header-top-line-height + 2;
+		line-height: $header-top-line-height + 2;
+		margin-left: 5px;
+		background-size: 218px;
+
+		@include break(mobile){
+			margin-left: 2px;
+		    width: 172px;
+		    background-size: 185px;
+		    background-position: -7px -2px;
+		}
+
+		a {
+			display: block;
+			width: 202px; height: $header-top-line-height;
+			line-height: $header-top-line-height;
+		}
+	}
+	/**** END LOGO ****/
+}

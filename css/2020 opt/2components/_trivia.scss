@@ -1,0 +1,469 @@
+.trivias .masthead {
+	min-height: 465px;
+
+	@include break(mobile) {
+		height: 350px;
+		min-height: 350px;
+		overflow-y: scroll;
+	}
+}	
+
+ul.featured-trivias {
+	li {
+		margin: 0px 0px 10px 0;
+
+		a {
+			color: white;
+			padding: 10px 17px;
+			line-height: 50px;
+			border-radius: 4px;
+		}
+	}
+
+	@include break(mobile){
+		margin-top: -10px;
+		
+		li {
+			margin: 15px 10px 0 5px;
+			font-size: 0.85em;
+			line-height: 1.5em;
+
+			a {
+				padding: 15px 15px 20px;
+				margin-bottom: -25px;
+				display: block;
+				line-height: 1.4;
+				border-radius: 0;
+			}
+		}
+	}
+}
+
+.trivias, .trivia {
+	$opacity1: 0.6;
+	$opacity2: 0.8;
+
+	.blue {
+		background-color: rgba(16, 90, 178, $opacity1);
+		border-bottom: 4px solid rgb(23, 82, 148);
+
+		&:hover { background-color: rgba(16, 90, 178, $opacity2); }
+	}
+
+	.red {
+		background-color: rgba(204, 0, 0, $opacity1);
+		border-bottom: 4px solid rgb(134, 29, 35);
+
+		&:hover { background-color: rgba(204, 0, 0, $opacity2); }
+	}
+
+	.yellow {
+		background-color: rgba(255, 193, 7, $opacity1);
+		border-bottom: 4px solid rgb(171, 144, 46);
+
+		&:hover { background-color: rgba(255, 193, 7, $opacity2); }
+	}
+
+	.purple {
+		background-color: rgba(103, 58, 183, $opacity1);
+		border-bottom: 4px solid rgb(84, 62, 158);
+
+		&:hover { background-color: rgba(103, 58, 183, $opacity2); }
+	}
+
+	.green {
+		background-color: rgba(76, 175, 80, $opacity1);
+		border-bottom: 4px solid rgb(61, 128, 78);
+
+		&:hover { background-color: rgba(76, 175, 80, $opacity2); }
+	}
+
+	.orange {
+		background-color: rgba(255, 127, 0, $opacity1);
+		border-bottom: 4px solid rgb(167, 100, 33);
+
+		&:hover { background-color: rgba(255, 127, 0, $opacity2); }
+	}
+}
+
+body.interior {
+	@if $isAMP != 'true' {
+		&.trivias {
+			#trivias-list {
+				ul {
+					li {
+						padding: 20px 30px 20px 17px;
+						border-bottom: 1px solid #E5E5E5;
+
+						&:nth-child(even) {
+							background: white;
+						}
+
+						h3 {
+							font-size: 0.9em;
+							font-weight: 400;
+							font-family: $f-paragraph;
+
+							span {
+								margin: 0px 12px 0px 0;
+								float: left;
+								width: 25px;
+								height: 21px;
+								font-size: 0.75em;
+								line-height: 1.7;
+								color: rgba(255,255,255,0.9);
+								text-align: center;
+								border-radius: 4px;
+								
+								&:hover {
+
+								}
+							}
+	
+							a {
+								color: #333;
+
+								&:hover {
+								    color: #105ab2;
+								    padding-bottom: 2px;
+								    border-bottom: 1px dotted #105ab2;
+								    text-decoration: none;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.ListHeader {
+				.page {
+					font-size: 0.7em;
+				}
+			}
+		}
+
+		&.trivia {
+			.articleBody {
+
+				h2 {
+					font-size: 1.35em;
+					color: #555;
+					line-height: 2em;
+					padding-top: 10px;
+				}
+
+				#trivia-options {
+					.option_box {
+						width: 49%;
+						float: left;
+						margin-bottom: 12px;
+
+						@include break(mobile){
+							width: 42%;
+							margin: 2% 3%;
+						}
+
+						.option {
+							width: 88%;
+							border: 2px solid #dedede;
+							border-radius: 2px;
+							min-height: 40px;
+							padding: 16px 15px 15px 15px;
+							background-color: #eee;
+							font-size: 0.95em;
+							cursor: pointer;
+
+							&:hover {
+								background-color: #dadada;
+								border: 2px solid #ccc;
+							}
+
+							&:active {
+								box-shadow: inset 0px 0px 15px #aaa;
+							}
+
+							&.incorrect {
+								background-color: #bb4040;
+								color: white;
+							}
+
+							&.correct {
+								background-color: #21A240;
+								color: white;
+							}
+
+							&.user-answer {
+								box-shadow: 4px 4px rgba(58, 76, 130, 0.39);
+								border: 2px solid rgba(76, 88, 125, 0.39);
+							}
+						}
+					}
+				}
+
+				#next_question {
+
+					margin: 10px 0;
+
+					> div {
+						width: 50%;
+						float: right;
+						margin-bottom: 10px;
+					}
+
+					@include break(mobile){
+
+					    margin: 20px 0;
+
+						> div.question {
+							width: 60%;
+						}
+						> div.next {
+							width: 40%;
+
+							div { width: 80%; }
+						}
+					}
+
+					.question > div {
+						width: 88%;
+						margin-left: -2%;
+						border-radius: 3px;
+						min-height: 30px;
+						padding: 12px;
+						background: #154c8f;
+						cursor: pointer;
+						font-family: Roboto;
+						letter-spacing: -.333px;
+						transition: linear 0.15s;
+
+						a {
+							color: white;
+							font-size: 1em;
+							cursor: pointer;
+						}
+
+						&:hover {
+							transition: linear 0.15s;
+							background: #105ab2;
+						}
+					}
+
+					.next > div {
+						width: 90%;
+						min-height: 30px;
+						padding: 10px;
+						text-align: right;
+						font-size: 2em;
+						font-weight: 700;
+						cursor: pointer;
+						color: #105ab2;
+						font-family: Roboto Condensed;
+					}
+				}
+
+				#explanation {
+
+					&.trans {
+   						transition: all 1.5s 0.6s;
+					}
+					&.rotate {
+						transform: rotate(180deg) scale(1);
+
+						.choosefirst {
+							display: block;
+							transform: rotate(180deg) scale(1);
+							margin: 100px 0 20px 0;
+							color: #555;
+							font-size: 0.9em;
+							line-height: 1.4;
+							opacity: 1;
+						}
+					}
+
+					.answer {
+						font-weight: 500;
+						font-family: Roboto;
+						margin-top: 10px;
+
+						span.label {
+							background: rgba(33, 162, 64, 0.8);
+							padding: 5px 9px;
+							color: white;
+						}
+
+						span.ans {
+							@include break(v-mobile){
+								display: block;
+								margin-top: 10px;
+							}
+						}
+					}
+
+					.content {
+					    margin-bottom: -30px;
+
+						img {
+							float: right;
+							max-width: 400px;
+							margin: 10px 0px 30px 30px;
+							border-radius: 6px;
+						}
+
+						p:first-child {
+							padding: 0 0 6px;
+						}
+					}
+
+					.choosefirst {
+						transition: all 1.5s 0.6s;
+						margin: 0;
+						opacity: 0;
+					}
+
+					@include break(mobile){
+						margin: 0 3%;
+
+						.content {
+							img {
+								margin: 10px 0px;
+								border-radius: 6px;
+								float: none;
+							}
+						}
+
+					}
+
+				}
+			}
+
+			.sidebar {
+				@include break(v-tablet){
+					display: block !important;
+					width: 100%;
+				}
+
+				.statistics_answers {
+					.percentage {
+						font-size: 2.5em;
+						padding: 15px 0px 0px 20px;
+					}
+					.answers {
+						font-size: .70em;
+						font-weight: 500;
+						padding: 0px 15px 20px 20px;
+					}
+					#answers_by_user {
+						background-color: #154c8f;
+						color: #fff;
+						margin-bottom: 15px;
+
+						@include break(v-tablet){
+							float: left;
+							width: 50%;
+						}
+
+						@include break(v-mobile){
+							float: none;
+							width: 100%;
+						}
+
+						.answers {
+							color: white;
+						}
+					}
+					#answers_all_users {
+						background-color: #dfdfd0;
+						color: #555;
+						margin-bottom: 15px;
+
+						@include break(v-tablet){
+							float: left;
+							width: 50%;
+						}
+
+						@include break(v-mobile){
+							float: none;
+							width: 100%;
+						}
+
+						.answers {
+							color: #777;
+						}
+					}
+
+					#hard_question {
+						background-color: #777;
+						color: #fff;
+						margin-bottom: 15px;
+					}
+				}
+			}
+		}
+	}
+
+	&.trivia {
+		#content {
+			.wrapper {
+				@include break(mobile) {
+					padding: 10px 0px 0px 0px;
+				}
+			}
+			
+			#content-header {
+				background-color: #bbb;
+				
+				.wrapper {
+
+					@if $isAMP == 'true' {
+						width: 96%;
+					}
+					@else {
+					
+						@include break(mobile) {
+							width: 96%;
+							padding: 25px 0px 15px;
+						}
+					}
+				}
+				
+				.title-group {
+					h1 {
+					    padding: 22px 10px 22px 21px;
+					    margin: 20px 300px 10px -5px;
+					    color: #fff;
+					    font-size: 1.5em;
+					    font-weight: 500;
+					    line-height: 1.5;
+					    letter-spacing: -0.333px;
+					    border-radius: 0 0 9px 0;
+
+					    &.yellow {
+					    	color: #333;
+					    }
+
+						@if $isAMP == 'true' {
+							margin: 0 0 5px 0;
+							font-size: 1.25em;
+							padding: 10px 10px 12px 12px;
+							width: 95%;
+							line-height: 1.4;
+						}
+						@else {
+							@include break(v-tablet) {
+								width: 95%;
+							}
+							@include break(mobile) {
+								margin: 0 0 5px 0;
+								font-size: 1.25em;
+								padding: 10px 10px 12px 12px;
+								width: 95%;
+								line-height: 1.4;
+							}
+						}
+
+					}
+				}
+			}
+		}	
+	}
+}
