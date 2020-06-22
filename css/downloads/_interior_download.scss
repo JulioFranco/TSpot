@@ -126,8 +126,18 @@ body.interior {
 				} @else {
 					font-size: 2em;
 					@include break(mobile) {
-						font-size: 1.5em;
+						font-size: 1.4em;
 					}
+				}
+			}
+
+			.subline {
+				opacity: 0.6;
+				font-weight: normal;
+				padding: 5px 0;
+
+				@include break(mobile) {
+					font-size: 0.9em;
 				}
 			}
 
@@ -274,6 +284,10 @@ body.interior {
 							color: #05408f;
 							font-weight: 500;
 							font-size: 1.65em;
+
+							@include break(mobile){
+								font-size: 1.6em;
+							}
 
 							@if $isDesk == 'true' {
 							@if $isAMP != 'true' {

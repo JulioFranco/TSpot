@@ -23,7 +23,6 @@
 	}
 
 
-	/**** HEADER-TOP ****/
 	.header-top {
 		//AMP and Normal
 		background: $dark-blue;
@@ -1123,10 +1122,8 @@
 				}
 			}	
 		}
-	/**** END MENU ****/
 
 
-	/**** LOGO ****/
 	#logo {
 		text-indent: -9999px;
 		background-image: url('https://#{$staticServer}.techspot.com/images/logo-techspot.svg');
@@ -1142,7 +1139,7 @@
 			margin-left: 2px;
 		    width: 172px;
 		    background-size: 185px;
-		    background-position: -7px -2px;
+		    background-position: -7px 0;
 		}
 
 		a {
@@ -1151,5 +1148,4 @@
 			line-height: $header-top-line-height;
 		}
 	}
-	/**** END LOGO ****/
 }

@@ -4,7 +4,7 @@
 "1structure/_base-grid.scss";
 
 $isAMP: 'false';
-$isDesk: 'false';
+$isDesk: 'true';
 
 @import
 // interior components
@@ -21,7 +21,7 @@ $isDesk: 'false';
 //"news/_interior-news.scss",
 
 // reviews
-//"reviews/_masthead.scss",
+"reviews/_masthead.scss",
 //"2components/_header-featured.scss", // also add to pages
 //"reviews/_interior_reviews.scss",
 //"reviews/_reviews.scss",
@@ -38,4 +38,6 @@ $isDesk: 'false';
 //"downloads/_download.scss",
 
 // trivia
-"2components/_trivia.scss";
+"2components/_trivia.scss",
+
+"2components/_vacio.scss";
