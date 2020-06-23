@@ -356,7 +356,6 @@ body.interior {
 			}
 		}
 
-		@if $isDesk == 'true' {
 		.article-index {
 			width: 60px;
 			border-top: 5px solid $orange;
@@ -417,6 +416,7 @@ body.interior {
 				}
 			}
 			
+			@if $isDesk == 'true' {
 			@if $isAMP != 'true' {
 				&:hover {
 					strong {
@@ -428,9 +428,8 @@ body.interior {
 						display: block;
 					}
 				}
-			}
+			}}//desk
 		}
-		}//desk
 
 
 		// PAGE NAV
