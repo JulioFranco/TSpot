@@ -411,12 +411,13 @@
 .grid-posts-lineal {
 	
 	@if $isAMP != 'true' {
-	    margin: 15px 0 -10px;
-	}
+	    margin: 25px 0 -10px;
 
-    img {
-    	height: 270px;
-    }
+	    .img-wrap {
+			height: 240px;
+			background-size: cover;
+	    }
+	}
 
 	h4 {
 		color: #333;

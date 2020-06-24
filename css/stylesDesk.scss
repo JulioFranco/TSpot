@@ -17,11 +17,10 @@ $isDesk: 'true';
 
 // interior components
 "2components/_chicklets.scss",
-"2components/_comments.scss",
-"2components/_page-nav.scss",
-"2components/_slider.scss",
-"2components/_tabbar.scss",
-
+//"2components/_slider.scss",
+//"2components/_comments.scss",
+//"2components/_page-nav.scss",
+//"2components/_tabbar.scss",
 
 // base + homepage
 "_header.scss",
@@ -32,28 +31,30 @@ $isDesk: 'true';
 
 "_main-included-amp.scss",
 "_main-only-normal.scss",
-"_interior-included-amp.scss",
-"_interior-only-normal.scss",
+//"_interior-included-amp.scss",
+//"_interior-only-normal.scss",
 
 // news
-"news/_interior-news.scss",
+//"news/_interior-news.scss",
 
 // reviews
-"reviews/_masthead.scss",
-"2components/_header-featured.scss", // also add to pages
-"reviews/_interior_reviews.scss",
-"reviews/_reviews.scss",
-"reviews/_review_box.scss",
+//"reviews/_masthead.scss",
+//"2components/_header-featured.scss", // also add to pages
+//"reviews/_interior_reviews.scss",
+//"reviews/_reviews.scss",
+//"reviews/_review_box.scss",
 
 // pf
-"products/_masthead.scss",
-"products/_products.scss",
-"products/_interior_product.scss",
-"products/_widget.scss",
+//"products/_masthead.scss",
+//"products/_products.scss",
+//"products/_interior_product.scss",
+//"products/_widget.scss",
 
 // downloads
-"downloads/_interior_download.scss",
-"downloads/_download.scss",
+//"downloads/_interior_download.scss",
+//"downloads/_download.scss",
 
 // trivia
-"2components/_trivia.scss";
+//"2components/_trivia.scss",
+
+"2components/_vacio.scss";
