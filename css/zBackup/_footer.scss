@@ -1,0 +1,330 @@
+footer {
+	background: #1e2933;
+	z-index: 2;
+	left: 0;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+
+	@include break(mobile) {
+		-webkit-transition: left 0.3s ease-in-out 0s;
+		transition: left 0.3s ease-in-out 0s;
+	}
+	
+	.wrapper {
+		padding: 50px 0 35px;
+		@include break(v-mobile){
+			padding: 30px 0px 10px 0px; 
+		}
+	}
+	@if $isAMP == 'true' {
+		.desktop {
+			display: block;
+			@include break(v-mobile){
+				display: none;
+			}
+		}
+		.mobile {
+			display: none;
+			@include break(v-mobile){
+				display: block;
+				margin-bottom: 20px;
+			}
+		}
+	} @else {
+		.desktop {
+			display: block!important;
+			@include break(v-mobile){
+				display: none!important;
+			}
+		}
+		.mobile {
+			display: none !important;
+			@include break(v-mobile){
+				display: block!important;
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	@if $isAMP != 'true' {
+		form {
+			font-size: .8em;
+			
+			.footitle {
+				margin: 30px 0 10px 0;
+			}
+			.form-email {
+				@include col(2,3,1);
+				input {
+					width: 90%;
+					line-height: 30px;
+					margin-top: 0;
+					border: 1px solid $grey;
+					padding: 0 4%;
+					font-size: 0.85em;
+					-webkit-appearance: none;
+					border-radius: 0;
+				}
+			}
+			.form-submit {
+				@include col-last(1,3,1);
+				input {
+					line-height: 30px;
+					display: block;
+					background: $blue;
+					color: white;
+					width: 100%;
+					padding: 0 5%;
+					border: 1px solid #105ab2;
+					font-size: 0.8em;
+					cursor: pointer;
+					-webkit-appearance: none;
+					border-radius: 0;
+
+					&:hover {
+						background: lighten($blue,6%);
+					}
+				}
+			}
+		}
+	}
+	
+	.footitle {
+		color: white;
+		font-weight: 200;
+
+		@if $isAMP == 'true' {
+			font-size: 0.8em;
+			padding-bottom: 10px;
+		}
+	}
+	
+	@if $isAMP != 'true' {
+		.menu {
+			@include col(2.2,14,5);
+			font-size: .8em;
+			ul {
+				margin-top: 10px;
+				font-size: .85em;
+				letter-spacing: -0.5px;
+				li {
+					line-height: 25px;
+					a {
+						font-weight: 400;
+						color: #eee;
+
+						&:hover {
+							color: $orange;
+							transition: ease 0.1s;
+						}
+					}
+				}
+			}
+		}
+
+		@include break(tablet){
+			#Comm {
+				display: none;
+			}
+			.menu {
+				@include col(3,14,5);	
+			}
+			
+		}
+		@include break(v-tablet){
+			#Usef {
+				display: none;
+			}
+			.menu{
+				@include col(3,14,5);	
+			}
+		}
+		
+		/*
+		@include break(mobile){
+			#Main {
+				display: none;
+			}
+			.menu{
+			@include col(1,3,0);	
+			}
+		}
+		@include break(v-mobile){
+			#Main {
+				display: none;
+			}
+			.menu{
+			@include col(1,1,0);	
+			}
+		}
+		*/
+	}
+
+	.follow-subscribe {
+		@include col-last(4.3,14,5);
+		.menu {
+			width: 100%;
+			float: none;
+			
+			ul {
+				li {
+
+				@if $isAMP != 'true' {
+					display: inline-block;
+					width: 40px; height: 40px;
+					margin: 0px 12.5px 12.5px 0px;
+				}
+				@else {
+					display: inline-block;
+					width: 35px;
+					height: 35px;
+					margin: 0px 10px 10px 0px;
+					padding: 7px 0px 0px 8px;
+				}
+
+					a {
+						display: block;
+						line-height: 40px;
+						border-bottom: none;
+					}
+
+					img {
+						width: 25px;
+						height: 25px;
+						padding-left: 8px;
+					}
+
+					&.facebook {
+						//background-image: url('https://#{$staticServer}.techspot.com/images/social/06-facebook.svg');
+						background-color: #39559F;
+					}
+					&.twitter {
+						//background-image: url('https://#{$staticServer}.techspot.com/images/social/03-twitter.svg');
+						background-color: #1DA0D7;
+					}
+					&.youtube {
+						//background-image: url('https://#{$staticServer}.techspot.com/images/social/18-youtube.svg');
+						background-color: #E63D28;
+						//background-size: 28px 28px;
+					}
+					&.rss {
+						//background-image: url('https://#{$staticServer}.techspot.com/images/social/20-rss.svg');
+						background-color: #FF7F00;
+					}
+					&.instagram {
+						//background-image: url('https://#{$staticServer}.techspot.com/images/social/38-instagram.svg');
+						background-color: #f56040;
+					}
+
+					/*
+					&.google-plus {
+						//background-image: url('https://#{$staticServer}.techspot.com/images/social/40-google-plus.svg');
+						background-color: #E63D28;
+					}
+					&.steam {
+						background-image: url('https://#{$staticServer}.techspot.com/images/social/steam.svg');
+						background-color: #444444;
+					}
+					&.windows {
+						background-image: url('https://#{$staticServer}.techspot.com/images/social/32-windows8.svg');
+						background-color: #01C5F3;
+					}
+					&.android {
+						background-image: url('https://#{$staticServer}.techspot.com/images/social/36-android.svg');
+						background-color: #97CD00;
+					}
+					&.tumblr {
+						background-image: url('https://#{$staticServer}.techspot.com/images/social/15-tumblr.svg');
+					}
+					&.pinterest {
+						background-image: url('https://#{$staticServer}.techspot.com/images/social/33-pinterest.svg');
+					}
+					&.linkedin {
+						background-image: url('https://#{$staticServer}.techspot.com/images/social/11-linkedin.svg');
+					}
+					*/
+					
+				}
+			}
+		}
+
+		@if $isAMP != 'true' {
+			@include break(tablet){
+				@include col-last(5,14,5);
+			}
+			@include break(v-tablet) {
+				@include col-last(6,14,5);
+			}
+			@include break(mobile) {
+				@include col-last(1,2,0);
+			}
+		}
+
+		@include break(v-mobile) {
+			@include col-last(1,1,0);
+			padding-top: 20px;
+		}
+		
+	}
+	
+	.copyright {
+		font-size: .66em;
+		font-weight: 300;
+		letter-spacing: -0.333px;
+		background: #d1d1d1;
+
+		@include break(v-mobile){
+			background: #e0e0e0;
+		}
+
+		.wrapper {
+			padding: 25px 0;
+			@include break(v-mobile){
+				padding: 10px 0;
+			}
+		}
+		
+		p {
+			margin: 10px 0;
+		}
+		a {
+			display: inline-block;
+			margin-left: 20px;
+			color: black;
+
+			@if $isAMP != 'true' {
+				&:hover {
+					border-bottom: 2px solid #AAA;
+					padding-bottom: 2px;
+					text-decoration: none;
+					margin-bottom: -4px;
+				}
+
+				&.pow img {
+					display: inline-block;
+					height: 17px;
+					margin: 0 0 4px 5px;
+				}
+			}
+		}
+	}
+	
+	a.back-to-top {
+		position: absolute;
+		margin-top: -22px;
+		left: 50%;
+		width: 50px;
+		height: 50px;
+		margin-left: -25px;
+		background-image: url('https://#{$staticServer}.techspot.com/images/glyph-back-to-top.svg');
+		background-repeat: no-repeat;
+		z-index: 5;
+		
+		@if $isAMP != 'true' {
+			&:hover {
+				background-position: right top;
+			}
+		}
+	}
+}

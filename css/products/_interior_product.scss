@@ -52,7 +52,7 @@ body.interior {
 			&.pfindex {
 				.ProdListInfo {
 					h4 {
-						margin-top: 15px;
+						margin-top: 12px;
 						margin-bottom: 5px;
 					}
 				}
@@ -65,10 +65,7 @@ body.interior {
 				font-weight: normal;
 				border-bottom: 1px solid #F1F1F1;
 				border-top: 1px solid #EAEAEA;
-
-				@if $isAMP == 'true' {
-					list-style-type: none;
-				}
+				list-style-type: none;
 
 				&:nth-child(even) {
 					background: white;
@@ -135,14 +132,9 @@ body.interior {
 						margin-top: 16px;
 
 						@include break(mobile){
-							font-size:1em;
-							margin-top: 8px;
+							font-size: 1em;
+							margin-top: 12px;
 						}
-					}
-
-					@include break(v-mobile){
-						font-size: 0.9em;
-						margin-top: 12px;
 					}
 
 					a {

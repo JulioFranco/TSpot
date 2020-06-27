@@ -8,7 +8,6 @@ body.interior {
 		}
 	}
 
-
   	.articleBody {
 		font-weight: 400;
 		font-family: $f-paragraph;
@@ -87,12 +86,14 @@ body.interior {
 		}
 		
 		img {
-			max-width: 100%;
+			width: 100%;
 			height: auto;
 			background: #f5f5f5;
 		}
 
 		@if $isAMP != 'true' {
+
+			@if $isDesk == 'true' {
 			img.big {
 				max-width: none;
 				width: 1020px;
@@ -104,9 +105,10 @@ body.interior {
 				@include break(v-tablet){
 					margin-left: 0 !important;
 					max-width: 100%;
-					width: 100% !important;
+					width: 100%;
 				}
 			}
+			}//desk
 
 			img.dark-image {
 				filter: invert(0.9) hue-rotate(180deg);
@@ -255,16 +257,15 @@ body.interior {
 		#content {
 			@if $isAMP == 'true' {
 				.intro-video {
-					margin-top: -72px;
-					margin-bottom: 25px;
+					margin-top: -50px;
+					margin-bottom: -20px;
 				}
 			}
 			.intro-image {
 				@if $isAMP == 'true' {
-					width: 110%;
 					height: auto;
 					border: none;
-					margin: -55px -5% 25px;
+					margin: -30px 0 0;
 				} @else {
 					margin-top: -52px;
 					width: 100%;
@@ -274,6 +275,7 @@ body.interior {
 					@include break(mobile){
 						border: none;
 						margin-bottom: 25px;
+						min-height: 180px;
 					}
 
 					&.modgrey {
@@ -299,72 +301,6 @@ body.interior {
 			font-size: 1.3em;
 		  }
 		}
-	}
-
-	&.trivia {
-		#content {
-			.wrapper {
-				@include break(mobile) {
-					padding: 10px 0px 0px 0px;
-				}
-			}
-			
-			#content-header {
-				background-color: #bbb;
-				
-				.wrapper {
-
-					@if $isAMP == 'true' {
-						width: 96%;
-					}
-					@else {
-					
-						@include break(mobile) {
-							width: 96%;
-							padding: 25px 0px 15px;
-						}
-					}
-				}
-				
-				.title-group {
-					h1 {
-					    padding: 22px 10px 22px 21px;
-					    margin: 20px 300px 10px -5px;
-					    color: #fff;
-					    font-size: 1.5em;
-					    font-weight: 500;
-					    line-height: 1.5;
-					    letter-spacing: -0.333px;
-					    border-radius: 0 0 9px 0;
-
-					    &.yellow {
-					    	color: #333;
-					    }
-
-						@if $isAMP == 'true' {
-							margin: 0 0 5px 0;
-							font-size: 1.25em;
-							padding: 10px 10px 12px 12px;
-							width: 95%;
-							line-height: 1.4;
-						}
-						@else {
-							@include break(v-tablet) {
-								width: 95%;
-							}
-							@include break(mobile) {
-								margin: 0 0 5px 0;
-								font-size: 1.25em;
-								padding: 10px 10px 12px 12px;
-								width: 95%;
-								line-height: 1.4;
-							}
-						}
-
-					}
-				}
-			}
-		}	
 	}
 
 	&.white {

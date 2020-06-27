@@ -28,101 +28,35 @@ body.interior {
 		}
 	}
 
-/*
-	&.dark {
-		.cta {
-			background-color: #333c46 !important;
-		}
-
-		#content {
-			background: #1e2933 !important;
-
-			#content-header {
-				background-color: #333c46;
-
-				h1 {
-					color: #fff !important;
-				}
-
-				h2, em, em a {
-					color: #eee !important;
-				}
-			}
-
-			p {
-				color: #eee !important;
-
-				a {
-					box-shadow: inset 0 -2px 0 #FBBB76;
-					padding-bottom: 1px;
-
-					&:hover {
-						box-shadow: inset 0 -2px 0 #FBBB76;
-						padding-bottom: 1px;
-						color: #FBBB76;
-					}
-				}
-			}
-
-			.comment-count-block a span.comment-count {
-				color: #629dca;
-			}
-			.comment-count-block a span.interactions-count {
-				color: rgba(98, 157, 202, 0.74);
-			}
-			.social-share-svg .social-share-text {
-				color: #ddd;
-			}
-			.adContainerNews {
-				background: #1e2933 !important;
-			}
-
-
-			.related-query, .related-products {
-				h3 {
-					color: #eee !important;
-				}
-				a {
-					color: #ccc !important;
-				}
-			}
-		}
-
-		#comments #add-new-comment {
-			background-color: !important;
-			padding-top: 40px;
-		}
-
-		.sidebar ul.teaser-list li a h3 {
-			color: #ccc;
-		}
-	}
-*/
-
 	&.news,
 	&.product,
 	&.download,
 	&.trivia, &.trivias {
 		.col-2-3{
-			width: 68%;
+			@if $isDesk == 'true' {
+				width: 68%;
 
-			/*
-			@include break(big-desk) {
-				width: 70%;
+				@include break(v-tablet) {
+					width: 100%;
+				}
+				
+				@include break(mobile) {
+					width: 100%;
+					.wrapperMobileOnly {
+						width: 94%;
+						padding: 0 3%;
+					}
+				}
 			}
-			*/
-
-			@include break(v-tablet) {
-				width: 100%;
-			}
-			
-			@include break(mobile) {
+			@else {
 				width: 100%;
 				.wrapperMobileOnly {
 					width: 94%;
 					padding: 0 3%;
 				}
 			}
+
+
 		}
 
 		#content {
@@ -145,7 +79,6 @@ body.interior {
 			}
 			
 			.articleBody {
-				//@include col-last(8.15,10,2);
 				margin-bottom: 30px;
 
 				@include break(mobile){
@@ -174,13 +107,15 @@ body.interior {
 			
 		}
 		
-		.sidebar {
-			@include break(v-tablet) {
-				display: none !important;
-				@include col-last(1,3,3);
-			}
-			@include break(mobile){
-				display: none;
+		@if $isDesk == 'true' {
+			.sidebar {
+				@include break(v-tablet) {
+					display: none !important;
+					@include col-last(1,3,3);
+				}
+				@include break(mobile){
+					display: none;
+				}
 			}
 		}
 	}
@@ -236,48 +171,6 @@ body.interior {
 			}
 		}
 
-		.SideProdContent {
-			padding: 17px;
-			background-color:#324455;
-
-			@include break(v-tablet){
-				padding: 10px 0px 10px 10px;
-			}
-
-			li {
-				line-height: 10px;
-				margin-bottom: 14px;
-				a {
-					.arrow {
-						margin: 0 !important;
-						opacity: 0;
-						position: absolute;
-						left: -10px;
-						width: 6px; height: 4px;
-						@include triangle(right,$orange,4,6);
-					}
-				}
-				a:hover,
-				a.active {
-					.arrow {
-					margin: 0 !important;
-					opacity: 1;
-					left: -10px;
-					width: 6px; height: 4px;
-					@include triangle(right,$orange,4,6);
-					}
-				}
-			}
-		}
-		.computer-hardware {
-			height: 135px;
-		}
-		.pcs-devices {
-			height: 40px;
-		}
-		.electronics {
-			height: 85px;
-		}
 	}
 
 	#CategoryListOne{
@@ -366,130 +259,6 @@ body.interior {
 		}
 		.sub{
 			display: block;
-		}
-	}
-
-
-	&.products-cat {
-		.filter_bar {
-			background: #fff;
-			padding: 8px 12px;
-			border: 1px solid #e5e5e5;
-			border-top: 0;
-			font-size: 11px;
-
-			.pills {
-				display: inline;
-				padding-left: 2px;
-			}
-
-			.sorter {
-				float: right;
-				font-size: 12px;
-				position: relative;
-				color: #555;
-				text-align: right;
-				z-index: 999;
-
-				@include break(v-mobile){
-					display: none !important;
-				}
-
-				#sorted_by {
-					font-weight: 500;
-					text-transform: lowercase;
-				}
-
-				ul {
-					position: absolute;
-					display: none;
-					right: 0;
-					top: 18px;
-					width: 120px;
-					background: #F4F5F7;
-					text-align: left;
-					border: 1px solid #ccc;
-					border-radius: 2px;
-					box-shadow: 0 1px 2px rgba(0,0,0,0.25);
-				}
-
-				a {
-					color: #333;
-					background: none !important;
-					padding: 0;
-					text-shadow: none !important;
-				}
-
-				li {
-					background: none;
-					display: block;
-					border: 0;
-					height: 25px;
-					line-height: 25px;
-					margin: 0;
-					padding: 0;
-
-					.smaller {
-						font-size: 11px;
-					}
-
-					a {
-						display: block;
-						padding: 0 5px;
-						transition: none;
-
-						&:hover {
-							background: #32404D !important;
-							color: #fff;
-							text-decoration: none;
-						}
-					}
-				}
-			}
-
-			.filter {
-				border-top: 1px solid #e5e5e5;
-				margin: 5px -10px -5px;
-				height: 30px;
-				padding: 0 10px;
-				line-height: 30px;
-				font-size: 12px;
-				background: #f0f0f0;
-				position: relative;
-				display: none;
-				background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.4), rgba(255,255,255,0));
-				background-image: linear-gradient(top, rgba(255,255,255,0.4), rgba(255,255,255,0));
-
-				.remove {
-					position: absolute;
-					right: 10px;
-					opacity: 0.75;
-
-					&:hover {
-						opacity: 1;
-					}
-				}
-
-				b {
-					color: #27333D;
-				}
-
-				input, select {
-					font-size: 12px;
-					font-family: Arial, Helvetica, sans-serif;
-				}
-
-				input[type="number"] {
-					width: 60px;
-					border: 1px solid #9f9fa1;
-					text-align: right;
-					border-radius: 2px;
-				}
-			}
-
-			div.active {
-				display: block !important;
-			}
 		}
 	}
 

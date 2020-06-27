@@ -14,6 +14,7 @@
 				width: 94%; 
 				padding: 0px 3%;
 			}
+
 			@include break(mobile){
 				margin-top: 25px;
 			}
@@ -26,7 +27,6 @@
 			@if $isAMP == 'true' {
 				font-size: 1.1em;
 				line-height: 60px;
-				
 				width: 320px;
 				white-space: nowrap;
 				overflow: hidden;
@@ -122,11 +122,12 @@
 					font-size: 1.8em;
 					border-radius: 4px 0 0 0;
 
+					@if $isDesk == 'true' {
 					@include break(tablet){
 						padding: 0 17px;
 						line-height: 60px;
 						font-size: $tall-tile-font-size;
-					}	
+					}}
 					
 					@include break(mobile){
 						padding: 0 18px;
@@ -181,12 +182,10 @@
 						
 						@include gradient-trans-percent($start_color:#1E2933,$start_cent:40%,$start_alpha:0.3,$end_color:#1E2933,$end_cent:90%,$end_alpha:0.95);
 						
+						@if $isDesk == 'true' {
 						&:hover {
 							@include gradient-trans-percent($start_color:#1E2933,$start_cent:40%,$start_alpha:0.15,$end_color:#1E2933,$end_cent:90%,$end_alpha:0.95);
-							hgroup {
-								//bottom: 25px;
-							}
-						}
+						}}
 						
 						hgroup {
 							width: 70%;
@@ -246,7 +245,7 @@
 		}
 
 
-
+		@if $isDesk == 'true' {
 		@if $isAMP != 'true' {
 			@include break(tablet) {
 				.wrapper {
@@ -277,9 +276,6 @@
 							
 							&:hover {
 								@include gradient-trans($start_color:#1E2933,$start_alpha:.2,$end_color:#1E2933,$end_alpha:.4);
-								hgroup {
-									//bottom: 25px;
-								}
 							}
 							
 							hgroup {
@@ -348,6 +344,7 @@
 				}	
 			}
 		}
+		}//desk
 
 
 		@if $isAMP != 'true' {
@@ -370,7 +367,7 @@
 					}
 
 					li {
-						width: 80%;
+						//width: 80%;
 						height: 200px;
 						top: 0;
 						left: 0;
@@ -404,54 +401,40 @@
 							}
 						}
 						
+						/*
 						&:nth-child(1) {
 							top: 0;
 							left: 0;
 							border-bottom: 0px;
 							border-left: 0px ;
-							/* border-top: 0px; */
 						}
 						
 						&:nth-child(2) {
 							top: 0;
 							left: 80%;
-							/* border-bottom: 0px ; */
-							/* border-left: 1px solid $dark-blue; */
-							/* border-top: 0px; */
 						}
 						
 						&:nth-child(3) {
 							top: 0;
 							left: 80%*2;
-							/* border-bottom: 0px ; */
-							/* border-left: 1px solid $dark-blue; */
-							/* border-top: 0px; */
 						}
 						
 						&:nth-child(4) {
 							left: 80%*3;
 							top: 0;
-							/* border-bottom: 0px ; */
-							/* border-left: 1px solid $dark-blue; */
-							/* border-top: 0px; */
 						}
 						
 						&:nth-child(5) {
 							left: 80%*4;
 							top: 0;
-							/* border-bottom: 0px ; */
-							/* border-left: 1px solid $dark-blue; */
-							/* border-top: 0px; */
 						}
 						
 						&:nth-child(6) {
 							left: 80%*5;
 							top: 0;
 							margin: 0;
-							/* border-bottom: 0px ; */
-							/* border-left: 1px solid $dark-blue; */
-							/* border-top: 0px; */
 						}
+						*/
 					}
 				}
 			}

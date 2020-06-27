@@ -153,7 +153,7 @@ body.interior.download {
 			@if $isAMP != 'true' {
 				h1 {
 					@include break(mobile){
-						font-size: 1.5em !important;
+						font-size: 1.4em !important;
 						line-height: 1.3;
 					}
 				}
@@ -254,6 +254,7 @@ body.interior.download {
 							height: 12px;
 							margin-bottom: -2px;
 
+							@if $isDesk == 'true' {
 							@if $isAMP != 'true' {
 								&:hover {
 									text-overflow: inherit;
@@ -263,7 +264,8 @@ body.interior.download {
 									line-height: 1.4;
 									margin-top: 4px;
 								}
-							}
+							}}
+
 						}
 					}
 				} 
@@ -292,9 +294,10 @@ body.interior.download {
 					font-size: 1em;
 				}
 
+				@if $isDesk == 'true' {
 				@include break(v-tablet){
 					@include col(1,2,0);
-				}
+				}}
 
 				@include break(mobile){
 					@include col(1,1,0);
@@ -308,25 +311,11 @@ body.interior.download {
 				.long_description {
 					max-height: 750px;
 						overflow: hidden;
-
-					/*
-					&:before {
-						content:'';
-						width:100%;
-						height:100%;
-						position:absolute;
-						left:0;
-						top:0;
-						background:linear-gradient(transparent 550px, white);
-					}
-					*/
 				}
 			}
 
 			.mobile-ad {
 				margin: 5px 10px 0 0;
-				// margin: 10px 6px 0 0;
-				// padding: 10px 0 0 0;
 			}
 		}
 
@@ -334,28 +323,12 @@ body.interior.download {
 			font-size: 1em;
 			font-weight: 400;
 			margin: 5px 0 0px;
-
-			/*
-			@if $isAMP != 'true' {
-				&.report-link {
-					margin: 20px 0 0px;
-					@include break(mobile){
-						display: none;
-					}
-				}
-			}
-			*/
 		}
 		.mirror-wrapper {
 			margin: 0 0 5px;
 			@if $isAMP != 'true' {
 				@include break(v-mobile){
 					margin: 0;
-				}
-
-				ul {
-					@include break(v-mobile){
-					}
 				}
 			}
 			.inline {
@@ -367,8 +340,8 @@ body.interior.download {
 
 				&.multi_line {
 					li {
-					max-width: 95%;
-					width: 100%;
+						max-width: 95%;
+						width: 100%;
 					}
 				}
 			}
@@ -396,6 +369,7 @@ body.interior.download {
 					background: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.05));
 					background-color: #fafafa;
 
+					@if $isDesk == 'true' {
 					@if $isAMP != 'true' {
 						&:hover {
 							text-decoration: none !important;
@@ -403,7 +377,7 @@ body.interior.download {
 							border-color: #bbb;
 							box-shadow: 0 1px 0 rgba(0,0,0,0.1);
 						}
-					}
+					}}
 
 					&:active {
 						@if $isAMP == 'true' {
@@ -434,10 +408,11 @@ body.interior.download {
 				width: 46%;
 				padding: 5px 10px 15px 0;
 
+				@if $isDesk == 'true' {
 				@include break(v-tablet){
 					padding: 5px 0 0 35px;
 					width: 43%;
-				}
+				}}
 
 				@include break(mobile){
 					@include col(1,1,0);
@@ -545,24 +520,20 @@ body.interior.download {
 					line-height: 1.4em;
 					letter-spacing: -.2px;
 
-					@if $isAMP != 'true' {
-						@include break(mobile){
-							width: 90%;
-						}
-					}
-
 					a {
 						color: #9f6000;
 						text-decoration: none;
 						border-bottom: 1px dotted #9f6000;
 
+						@if $isDesk == 'true' {
 						@if $isAMP != 'true' {
 							&:hover {
 								color: #105ab2;
 								border-bottom: 1px dotted #105ab2;
 								transition: linear .2s;
 							}
-						}
+						}}
+
 					}
 
 					span {
@@ -607,6 +578,7 @@ body.interior.download {
 								text-decoration: none;
 							}
 
+							@if $isDesk == 'true' {
 							@if $isAMP != 'true' {
 								&:hover {
 									color: #fff !important;
@@ -618,7 +590,8 @@ body.interior.download {
 									padding: 6px;
 									border-radius: 4px;
 								}
-							}
+							}}
+
 						}
 					}
 
@@ -677,6 +650,7 @@ body.interior.download {
 		}
 	}
 
+	/*
 	.facebook-like {
 		margin-right: 0%;
 		display: block;
@@ -696,6 +670,7 @@ body.interior.download {
 			height: 20px;
 		}
 	}
+	*/
 
 	#dw_vote {
 		font-size: 11px;
@@ -715,6 +690,8 @@ body.interior.download {
 		padding: 45px 0 0;
 	}
 
+
+	@if $isDesk == 'true' {
 	body.interior.download .sidebar {
 		@include break(v-tablet){
 			display: none;
@@ -722,15 +699,21 @@ body.interior.download {
 		@include break(mobile){
 			display: none;
 		}
-	}
+	}}
+
+
 	body.interior.download .col-2-3{
+
+		@if $isDesk == 'true' {
 		@include break(v-tablet){
 			@include col(3,3,0);
-		}
+		}}
+
 		@include break(mobile){
 			width: 100%;
 		}
 	}
+
 	body.interior.download #pub-description, #similar-soft {
 		@include break(v-mobile){
 			font-size: 14px;
@@ -789,11 +772,13 @@ body.interior.download {
 					margin-top: -150px;
 				}
 
+				@if $isDesk == 'true' {
 				@if $isAMP != 'true' {
 					&:hover {
 						background: linear-gradient(25deg, rgba(255, 127, 0, 0.55) 0%, rgba(21, 76, 143, 0.8) 75%);
 					}
-				}
+				}}
+				
 			}
 
 			&.title {
@@ -842,35 +827,29 @@ body.interior.download {
 }
 
 
-/* AMP */
-
-// Total of Alternatives
-span.number {
-	background: #0557B5;
-	border-radius: 19px;
-	text-align: center;
-	line-height: 19px;
-	color: #fff;
-	display: inline-block;
-	width: 19px;
-	height: 19px;
-	font-size: 0.85em;
-	margin-left: 2px;
-	font-weight: 500;
-	font-family: Roboto;
-}
-
-// Don't show rating Value, just for bots
-.ratingValue {
-	display: none;
-}
-/* END - AMP*/
-
-
-
-
 /**** Download index - Categories AMP (New) ****/
 @if $isAMP == 'true' {
+	// Total of Alternatives
+	span.number {
+		background: #0557B5;
+		border-radius: 19px;
+		text-align: center;
+		line-height: 19px;
+		color: #fff;
+		display: inline-block;
+		width: 19px;
+		height: 19px;
+		font-size: 0.85em;
+		margin-left: 2px;
+		font-weight: 500;
+		font-family: Roboto;
+	}
+
+	// Don't show rating Value, just for bots
+	.ratingValue {
+		display: none;
+	}
+
 	body.interior.download.dw-home {
 		.mobilecats {
 			color: white;

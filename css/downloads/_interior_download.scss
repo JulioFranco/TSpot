@@ -20,9 +20,10 @@ body.interior {
 
 					margin: 25px 0 5px;
 
+					@if $isDesk == 'true' {
 					@include break(tablet){
 						margin-right: 0;
-					}
+					}}
 
 					@include break(mobile){
 						margin: 15px 0 10px;
@@ -35,12 +36,12 @@ body.interior {
 
 				figure {
 					@if $isAMP == 'true' {
-							float: right;
-							margin: 0 10px 0 10px;
+						float: right;
+						margin: 0 10px 0 10px;
 
-							amp-img {
-								width: 65px;
-							}
+						amp-img {
+							width: 65px;
+						}
 					}
 					@else {
 						width: 100px;
@@ -48,9 +49,10 @@ body.interior {
 						margin: 0 10px 0 -10px;
 						padding-right: 10px;
 
+						@if $isDesk == 'true' {
 						@include break(tablet){
 							margin: 0 25px 0 -10px;
-						}
+						}}
 
 						@include break(mobile){
 							margin: 0 15px 0 -10px;
@@ -124,14 +126,23 @@ body.interior {
 				} @else {
 					font-size: 2em;
 					@include break(mobile) {
-						font-size: 1.5em;
+						font-size: 1.4em;
 					}
+				}
+			}
+
+			.subline {
+				opacity: 0.6;
+				font-weight: normal;
+				padding: 5px 0;
+
+				@include break(mobile) {
+					font-size: 0.9em;
 				}
 			}
 
 			.page-intro {
 				font-size: 0.8em;
-				//font-weight: 300;
 				margin: 10px 0;
 			}
 
@@ -164,13 +175,15 @@ body.interior {
 					a {
 						color: #05408f;
 
+						@if $isDesk == 'true' {
 						@if $isAMP != 'true' {
 							&:hover {
 								border-bottom: 1px dotted #075bc0;
 								padding-bottom: 1px;
 								color: #075bc0;
 							}
-						}
+						}}
+
 					}
 				}
 			}
@@ -180,6 +193,7 @@ body.interior {
 			font-size: 22px;
 			color: #c00;
 		}
+
 		//For Drivers
 		@if $isAMP != 'true' {
 			.subtitle a:hover {
@@ -271,13 +285,19 @@ body.interior {
 							font-weight: 500;
 							font-size: 1.65em;
 
+							@include break(mobile){
+								font-size: 1.6em;
+							}
+
+							@if $isDesk == 'true' {
 							@if $isAMP != 'true' {
 								&:hover {
 									border-bottom: 1px dotted #075bc0;
 									padding-bottom: 1px;
 									color: #075bc0;
 								}
-							}
+							}}
+
 						}
 
 						em {
@@ -290,33 +310,37 @@ body.interior {
 							color: white;
 							text-transform: lowercase;
 
+							@if $isDesk == 'true' {
 							@if $isAMP != 'true' {
 								&:hover {
 									text-decoration: none;
 									border: none !important;
 								}
-							}
+							}}
 
 							&.editors-pick {
 								background-color: #0088CC;
 
+								@if $isDesk == 'true' {
 								@if $isAMP != 'true' {
 									&:hover {
 										background-color: #00a0f0;
 										text-decoration: none;
 									}
-								}
+								}}
+
 							}
 							
 							&.popular {
 								background-color: #e67200;
 
+								@if $isDesk == 'true' {
 								@if $isAMP != 'true' {
 									&:hover {
 										background-color: #ff7f00;
 										text-decoration: none;
 									}
-								}
+								}}
 							}
 						}
 					}

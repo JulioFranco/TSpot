@@ -1,5 +1,8 @@
 /* Review box */
 .review_box {
+	display: none;
+
+	/*
 	margin: 20px 0 20px;
 	font-size: 0.9em;
 	background: #fff;
@@ -103,15 +106,6 @@
 				width: 250px;
 				margin: -75px 0 0 -75px;
 			}
-
-			/*
-				display: block;
-				height: 68px;
-				width: 300px;
-				margin: -105px 0 0;
-				background: url('https://#{$staticServer}.techspot.com/images/outstanding-reviewbox_big2.png');
-				background-size: cover;
-			*/
 		}
 	}
 
@@ -188,4 +182,5 @@
 			}
 		}
 	}
+	*/
 }

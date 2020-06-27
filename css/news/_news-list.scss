@@ -1,12 +1,7 @@
 .post-list {
 	@if $isAMP != 'true' {
-		/*.wrapper {
-			//padding: 50px 0;
-		}*/
-
 		.group-left {
 			margin: 50px 0 0 0;
-			//@include col(2,3,0);
 		}
 	}
 
@@ -33,29 +28,19 @@
 		z-index: 1;
 
 		// Fix native ads, ziff/str vale verg
+		/*
 		@if $isAMP != 'true' {
 			&.str-adunit {
 				padding-bottom: 20px !important;
 				margin-bottom: 17px !important;
 			}
 		}
+		*/
 		
 		.article-img {
 			@include col(2,5,0);
 			width: 30%;
 			margin-top: 3px;
-
-			/*			
-			// Homepage movil con imagenes grandes
-			@if $isAMP == 'true' {
-			} @else {
-				@include break (v-mobile){
-					width: 100%;
-					margin-bottom: 15px;
-					margin-top: 0px;
-				}
-			}
-			*/
 
 			img {
 				max-width: 100%;
@@ -66,16 +51,6 @@
 					min-height: initial;
 					margin: 0;
 				}
-
-				/*				
-				// Homepage movil con imagenes grandes
-				@if $isAMP == 'true' {
-				} @else {
-					@include break(v-mobile){
-						width: 100%;
-					}
-				}
-				*/
 			}
 		}
 		
@@ -91,13 +66,6 @@
 				}
 			}
 
-			/*				
-			// Homepage movil con imagenes grandes
-					@include break(v-mobile) {
-						width: 100%;
-					}
-			*/
-
 			h2 {
 				padding: 8px 0 2px;
 				a {
@@ -108,18 +76,20 @@
 
 					@if $isAMP == 'true' {
 						font-size: 100%;
-					} @else {
-						font-size: 110%;
-						@include break(v-mobile) {
+					}
+					@else {
+
+						@if $isDesk == 'true' {
+							font-size: 110%;
+								&:hover {
+									color: #105ab2;
+								}
+						}
+						@else {
 							font-size: 100%;
 						}
 					}
 
-					@if $isAMP != 'true' {
-						&:hover {
-							color: #105ab2;
-						}
-					}
 				}
 			}
 
@@ -136,10 +106,12 @@
 				}
 			}
 
-			&.fullview {
-				h2 {
-					a {
-						font-size: 1.4em;
+			@if $isDesk == 'true' {
+				&.fullview {
+					h2 {
+						a {
+							font-size: 1.4em;
+						}
 					}
 				}
 			}
@@ -164,7 +136,7 @@
 				}
 			}
 			
-			.intro{
+			.intro {
 				@if $isAMP == 'true' {
 					display: none;
 				} @else {
@@ -185,14 +157,14 @@
 						display: inline;
 						p {
 							padding: 7px 0;
-							font-size: 0;
+							//font-size: 0;
 						}
 					} @else {
 						@include break(mobile){
 							display: inline;
 							p {
 								padding: 7px 0 !important;
-								font-size: 0;
+								//font-size: 0;
 							}
 						}
 					}
@@ -278,18 +250,6 @@
 							padding-left: 10px;
 						}
 					}
-
-					/*
-					@include break(mobile){
-						display: block;
-						border-left: none;
-						padding-left: 0px;
-						margin: 0;
-					}
-					@include break(v-mobile){
-						display: none;
-					}
-					*/
 				}				
 			}
 			
@@ -321,22 +281,9 @@
 						}
 					}
 					
-					/*
-					&.read-more {
-						background-image: url('https://#{$staticServer}.techspot.com/images/read-more-arrow.svg');
-						@include break(mobile){
-							display: none;
-						}
-					}
-					*/
-					
 					&.comment-count {
 						background-image: url('https://#{$staticServer}.techspot.com/images/comment-icon.svg');
 						padding-left: 15px;
-
-						/*@include break(mobile){
-							padding-left: 15px; //is the same of parent
-						}*/
 						
 						span {
 							display: inline-block;
@@ -406,6 +353,7 @@
 	}
 
 	@if $isAMP != 'true' {
+	@if $isDesk == 'true' {
 		&.fullview {
 
 			max-width: 98%;
@@ -478,5 +426,6 @@
 				}
 			}
 		}
-	}
+	}//desk
+	}//amp
 }

@@ -1,0 +1,62 @@
+@import
+"_reset.scss",
+"_variables.scss",
+"_base-grid.scss",
+"_base-mixins.scss",
+"_mixin.scss";
+
+$isAMP: 'true';
+@import
+"_mobileMenu.scss",
+"_header.scss",
+"_footer.scss",
+"_main-included-amp.scss",
+"_interior-included-amp.scss",
+"components/_accordion-amp.scss",
+"components/_articleBody-news-article.scss",
+"components/_grid-posts.scss",
+
+//Home
+"components/_carousel-amp.scss",
+//"components/_slide-sort-selector.scss", //Not used
+"components/_comments.scss",
+"_home.scss",
+"news/_news-list.scss",
+"news/_interior-news.scss",
+
+//Home Reviews
+"reviews/_interior_reviews.scss",
+"reviews/_reviews.scss", //Included article index
+"reviews/_masthead.scss",
+
+//Story + Featured
+"_header-featured.scss",
+"components/_chicklets.scss",
+
+//Reviews Content
+"components/_page-nav.scss",
+"reviews/_review_box.scss",
+
+"components/_slide-sort-selector.scss",
+
+"products/_widget.scss";
+
+
+
+/**** GENERIC STYLES ****/
+body.interior {
+	&.news {
+		#content-header {
+			.wrapper {
+				padding: 20px 0 50px;
+			}
+		}
+	}
+
+	.nodraft-story{
+	  color: #c00;
+	  text-decoration: none;
+	  font-weight: 600;
+	  padding: 0 8px 0 0;
+	}
+}

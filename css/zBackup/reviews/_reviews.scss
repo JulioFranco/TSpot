@@ -1,0 +1,74 @@
+
+// ! Special body styles ===========================================
+
+body.reviews {
+	.masthead{
+		background-color: rgba(30,41,51,0.95);
+		background-position: center 28px;
+		background-repeat: no-repeat;
+
+		.wrapper {
+			@if $isAMP == 'true' {
+				padding: 0;
+
+			} @else {
+				padding: 0 !important;
+			}
+		}
+	}
+	#content {
+		.wrapper {
+			@if $isAMP == 'true' {
+				padding: 10px 0;
+			
+			} @else {
+				padding: 40px 0;
+				@include break(mobile) {
+					padding: 10px 0;
+				}
+			}
+		}
+	}
+}
+
+body.features {
+	.masthead {
+		background-color: #237A3C;
+		background-position: center 28px;
+		background-repeat: no-repeat;
+
+		.wrapper {
+			@if $isAMP == 'true' {
+				padding: 0;
+			
+			} @else {
+				padding: 0 !important;
+			}
+		}
+	}
+	#content {
+		.wrapper {
+			padding: 20px 0;
+		}
+	}
+}
+
+body.trivias {
+	.masthead {
+		background-color: rgba(30, 41, 51, 0.95);
+
+		.wrapper {
+			@if $isAMP == 'true' {
+				padding: 0;
+			
+			} @else {
+				padding: 0 !important;
+			}
+		}
+	}
+	#content {
+		.wrapper {
+			padding: 20px 0;
+		}
+	}
+}

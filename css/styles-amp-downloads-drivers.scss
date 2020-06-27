@@ -1,29 +1,29 @@
 @import
-"_reset.scss",
-"_variables.scss",
-"_base-grid.scss",
-"_base-mixins.scss",
-"_mixin.scss";
+"1structure/_reset.scss",
+"1structure/_variables.scss",
+"1structure/_mixin.scss",
+"1structure/_base-grid.scss";
 
 $isAMP: 'true';
+$isDesk: 'false';
+
 @import
-"_mobileMenu.scss",
 "_header.scss",
 "_footer.scss",
 "_main-included-amp.scss",
 "_interior-included-amp.scss",
-//"components/_grid-posts.scss",
+//"2components/_grid-posts.scss",
 
 //Downloads
-"components/_accordion-amp.scss",
-"components/_search-box.scss",
-"components/_tabbar.scss",
+"2components/_accordion-amp.scss",
+"2components/_search-box.scss",
+"2components/_tabbar.scss",
 "downloads/_download.scss",
 "downloads/_interior_download.scss",
 
-"components/_chicklets.scss",
-"components/_comments.scss",
-"components/_page-nav.scss";
+//"2components/_comments.scss",
+//"2components/_page-nav.scss",
+"2components/_chicklets.scss";
 
 
 

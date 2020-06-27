@@ -1,17 +1,4 @@
-.reviews.big-grid,
-.features.big-grid {
-	@if $isAMP != 'true' {
-		.grid-posts {
-			.masthead {
-				min-height: ($tile-height-sec * 2) + 105px;
 
-				@include break(mobile){
-					min-height: 270px;
-				}
-			}
-		}
-	}
-}
 
 .features, .reviews, .trivias, .slide-article {
 	.featured-posts-title {
@@ -77,10 +64,38 @@
 
 
 @if $isAMP != 'true' {
+
+	@if $isDesk == 'true' {
+		.reviews.big-grid,
+		.features.big-grid {
+			.grid-posts {
+				.masthead {
+					min-height: ($tile-height-sec * 2) + 105px;
+
+					@include break(mobile){
+						min-height: 270px;
+					}
+				}
+			}
+		}
+	}
+	@else {
+
+		.reviews.big-grid,
+		.features.big-grid {
+			.grid-posts {
+				.masthead {
+					min-height: 270px;
+				}
+			}
+		}
+	}
+
 	.reviews-cat .grid-posts.catDef, .features-cat .grid-posts.catDef {
 		.masthead {
 			min-height: 365px;
 
+			@if $isDesk == 'true' {
 			@include break(tablet){
 				.wrapper {
 					position: relative;
@@ -88,6 +103,7 @@
 					height: 0;
 				}
 			}
+			}//desk
 			
 			@include break(mobile){
 				min-height: 270px;
@@ -129,6 +145,7 @@
 						display: none;
 				}
 
+				@if $isDesk == 'true' {
 				@include break(tablet){
 					&:nth-child(2) {
 					}
@@ -137,6 +154,8 @@
 						top: 0 !important;
 					}
 				}
+				}//desk
+
 				@include break(mobile){
 					&:nth-child(3) {
 						left: 160% !important;
@@ -145,98 +164,6 @@
 
 				}
 			}
-		}
-	}
-}
-
-
-@if $isAMP != 'true' {
-
-	.trivias .masthead {
-		min-height: 465px;
-
-		@include break(mobile) {
-			height: 350px;
-			min-height: 350px;
-			overflow-y: scroll;
-		}
-	}	
-
-	ul.featured-trivias {
-		li {
-			margin: 0px 0px 10px 0;
-
-			a {
-				color: white;
-				padding: 10px 17px;
-				line-height: 50px;
-				border-radius: 4px;
-			}
-		}
-
-		@include break(mobile){
-			margin-top: -10px;
-			
-			li {
-				margin: 15px 10px 0 5px;
-				font-size: 0.85em;
-				line-height: 1.5em;
-
-				a {
-					padding: 15px 15px 20px;
-					margin-bottom: -25px;
-					display: block;
-					line-height: 1.4;
-					border-radius: 0;
-				}
-			}
-		}
-	}
-
-	.trivias, .trivia {
-		$opacity1: 0.6;
-		$opacity2: 0.8;
-
-		.blue {
-			background-color: rgba(16, 90, 178, $opacity1);
-			border-bottom: 4px solid rgb(23, 82, 148);
-
-			&:hover { background-color: rgba(16, 90, 178, $opacity2); }
-		}
-
-		.red {
-			background-color: rgba(204, 0, 0, $opacity1);
-			border-bottom: 4px solid rgb(134, 29, 35);
-
-			&:hover { background-color: rgba(204, 0, 0, $opacity2); }
-		}
-
-		.yellow {
-			background-color: rgba(255, 193, 7, $opacity1);
-			border-bottom: 4px solid rgb(171, 144, 46);
-
-			&:hover { background-color: rgba(255, 193, 7, $opacity2); }
-		}
-
-		.purple {
-			background-color: rgba(103, 58, 183, $opacity1);
-			border-bottom: 4px solid rgb(84, 62, 158);
-
-			&:hover { background-color: rgba(103, 58, 183, $opacity2); }
-		}
-
-		.green {
-			background-color: rgba(76, 175, 80, $opacity1);
-			border-bottom: 4px solid rgb(61, 128, 78);
-
-			&:hover { background-color: rgba(76, 175, 80, $opacity2); }
-		}
-
-		.orange {
-			background-color: rgba(255, 127, 0, $opacity1);
-			border-bottom: 4px solid rgb(167, 100, 33);
-
-			&:hover { background-color: rgba(255, 127, 0, $opacity2); }
 		}
 	}
 }
