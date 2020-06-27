@@ -18,7 +18,7 @@ img.responsive {
 img.b-lazy {
 	-webkit-transition: ease .4s;
 	transition: ease .4s;
-	max-width: 100%;
+	width: 100%;
 	opacity: 0;
 }
 img.b-lazy {
