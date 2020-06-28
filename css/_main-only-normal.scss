@@ -39,17 +39,6 @@ img.b-lazy.b-loaded {
 	font-family: $f-helvetica;
 }
 
-.dl-tabs {
-	margin: -30px 0 20px 0;
-
-	@include break(mobile){
-		margin: -15px 0 0px -5px;
-	}
-}
-
-.pf-tabs {
-	margin: 30px 0 20px 0;
-}
 
 // YouTube, video embeds
 .video-container {
@@ -1150,12 +1139,29 @@ table {
 		}
 	}
 
-	.billboard_placeholder {
+	.billboard_placeholder_home, .billboard_placeholder_min {
 		padding: 17px 0 15px;
-		margin: auto; 
+		margin: 0 auto;
 		text-align: center;
 		min-height: 90px;
 	}
+
+	.billboard_placeholder {
+		padding: 17px 0 15px;
+		margin: 0 auto;
+		text-align: center;
+		min-height: 250px;
+		position: relative;
+
+		#nsgpt-billboard-1 {
+			margin: 0;
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		}		
+	}
+
 }//desk
 @else {
 	.cta {
