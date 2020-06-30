@@ -1,7 +1,6 @@
 body.interior {
 	&.products {
 
-		// ! Special body styles ===========================================
 		@if $isAMP != 'true' {
 			#content {
 				.wrapper {
@@ -9,7 +8,6 @@ body.interior {
 				}
 			}
 		}
-		// ! END Special body styles ===========================================
 
 		.excellent {
 			background-color: #4eab3a;
@@ -29,12 +27,13 @@ body.interior {
 		.alternate {
 			background: white;
 		}
+
 		.col-2-3 {
 			@if $isAMP == 'true' {
 				width: 100%;
 			} @else {
 				width: 70%;
-				@include break (mobile){
+				@include break(mobile) {
 					width: 100%;
 				}
 			}		
