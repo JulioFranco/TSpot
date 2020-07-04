@@ -693,11 +693,6 @@
 						}
 					}
 				}
-			
-				@include break(mobile) {
-					line-height: 35px;
-					height: 35px;
-				}
 				
 			}
 		// }
@@ -719,6 +714,8 @@
 
 			@include break(mobile){
 				font-size: .735em;
+				line-height: 35px;
+				height: 35px;
 			}
 
 			#dk_menu {
@@ -1136,10 +1133,15 @@
 		background-size: 218px;
 
 		@include break(mobile){
+			background-size: 181px;
+			line-height: $header-interior-line-height;
+			height: $header-interior-line-height;
+			padding-bottom: 3px;
+			width: 166px;
+
 			margin-left: 2px;
-		    width: 172px;
-		    background-size: 185px;
-		    background-position: -7px 0;
+			height: 45px;
+			background-position: -7px -1px;
 		}
 
 		a {
