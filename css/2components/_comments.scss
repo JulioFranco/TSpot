@@ -75,7 +75,6 @@
 			img.user-avatar {
 				background: #eaeaea;
 				width: 28px; height: 28px;
-				//border: 1px solid #ddd;
 				@include box-shadow($x:2,$y:2,$blur:0,$color:#ddd);
 				margin: 0 10px 5px 0px;
 			}
@@ -375,7 +374,6 @@
 		}
 	}
 }
-
 
 
 body.interior {

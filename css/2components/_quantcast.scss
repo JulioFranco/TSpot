@@ -1,0 +1,221 @@
+@import
+"1structure/_variables.scss",
+"1structure/_mixin.scss",
+"1structure/_base-grid.scss";
+
+/* Quantcast */
+
+.qc-cmp-ui-content {
+  max-width: 70% !important;
+  margin: 0 !important;
+  align-self: auto !important;
+  padding: 20px 20px 0 20px !important;
+}
+
+div#qcCmpButtons {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  flex-direction: column-reverse;
+
+  button {
+    width: 220px;
+    min-width: unset !important;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+h1.qc-cmp-title {
+  font-size: 21px;
+  text-align: left;
+  padding-top: 5px;
+}
+
+p {
+  &.qc-cmp-main-messaging {
+    padding: 10px 0 0 0;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 50px;
+  }
+
+  &.qc-cmp-link-text {
+    margin: 5px 0px;
+  }
+}
+
+a.qc-cmp-qc-link {
+  padding-right: 10px;
+}
+
+.qc-cmp-ui-container.qc-cmp-showing {
+  top: unset !important;
+  overflow: hidden;
+  background: none !important;
+}
+
+body.qc-cmp-ui-showing {
+  overflow: inherit;
+}
+
+div#qcCmpUi {
+  max-width: 1150px;
+  border-radius: 0;
+}
+
+p.qc-cmp-title {
+  font-size: 30px;
+  text-align: left;
+}
+
+.qc-cmp-ui-container {
+  h4 {
+    font-size: 1.1em;
+  }
+
+  p.qc-cmp-purpose-description {
+    font-size: 14px;
+  }
+
+  .qc-cmp-alt-action, .qc-cmp-toggle-status, .qc-cmp-enabled-cell, .qc-cmp-link {
+    color: white !important;
+  }
+}
+
+.qc-cmp-link:visited {
+  color: white !important;
+}
+
+.qc-cmp-ui-container {
+  .qc-cmp-table, .qc-cmp-table-header {
+    color: white !important;
+  }
+}
+
+.qc-cmp-alt-buttons {
+  position: absolute;
+  right: 15px;
+  bottom: -45px;
+}
+
+.qc-cmp-ui-container {
+  p.qc-cmp-purpose-description {
+    font-size: 14px;
+  }
+
+  .qc-cmp-button.qc-cmp-secondary-button {
+    margin-right: 20px !important;
+  }
+
+  .qc-cmp-nav-bar.qc-cmp-top {
+    padding-right: 10px;
+  }
+
+  .qc-cmp-qc-link-container {
+    padding: 20px 20px 10px 0;
+    right: unset;
+    left: 20px;
+  }
+}
+
+.qc-cmp-alt-action {
+  font-size: 13px !important;
+
+  &:not([href]):not([tabindex]) {
+    font-size: 13px !important;
+  }
+}
+
+.qc-cmp-ui {
+  background-color: #7590a8 !important;
+}
+
+.qc-cmp-button {
+  background-color: #10498e !important;
+  border-color: #10498e !important;
+  color: #fff !important;
+
+  &:hover {
+    background-color: #075bc0 !important;
+    border-color: #075bc0 !important;
+  }
+}
+
+.qc-cmp-alt-action, .qc-cmp-link {
+  color: #075bc0 !important;
+}
+
+.qc-cmp-button {
+  &.qc-cmp-secondary-button {
+    color: #fff !important;
+  }
+
+  &.qc-cmp-button.qc-cmp-secondary-button:hover {
+    color: #ffffff !important;
+  }
+
+  &.qc-cmp-secondary-button {
+    border-color: #698197 !important;
+    background-color: transparent !important;
+
+    &:hover {
+      background-color: #698197 !important;
+    }
+  }
+}
+
+.qc-cmp-ui {
+  color: #f5f5f5 !important;
+
+  .qc-cmp-main-messaging, .qc-cmp-messaging, .qc-cmp-beta-messaging, .qc-cmp-title, .qc-cmp-sub-title, .qc-cmp-purpose-info, .qc-cmp-table, .qc-cmp-table-header, .qc-cmp-vendor-list, .qc-cmp-vendor-list-title {
+    color: #f5f5f5 !important;
+  }
+
+  a, .qc-cmp-alt-action {
+    color: #f9f9f9 !important;
+  }
+}
+
+@include break(mobile){
+  .qc-cmp-ui-content {
+    max-width: 55% !important;
+  }
+
+  p {
+    &.qc-cmp-title {
+      font-size: 20px;
+    }
+
+    &.qc-cmp-main-messaging {
+      font-size: 12px;
+      line-height: 1.3;
+      padding-bottom: 40px;
+    }
+  }
+
+  div#qcCmpButtons button {
+    width: 120px;
+    letter-spacing: 0px;
+    margin-right: 0 !important;
+  }
+
+  .qc-cmp-ui-container .qc-cmp-button.qc-cmp-secondary-button {
+    margin-right: 0 !important;
+  }
+
+  .qc-cmp-alt-buttons {
+    bottom: -35px;
+    right: 6px;
+  }
+
+  .qc-cmp-alt-action {
+    font-size: 11.5px !important;
+    padding: 0 6px;
+
+    &:not([href]):not([tabindex]) {
+      font-size: 11.5px !important;
+      padding: 0 6px;
+    }
+  }
+}

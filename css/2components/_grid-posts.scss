@@ -407,24 +407,3 @@
 		}
 	}
 }
-
-.grid-posts-lineal {
-	
-	@if $isAMP != 'true' {
-	    margin: 25px 0 -10px;
-
-	    .img-wrap {
-			height: 240px;
-			background-size: cover;
-	    }
-	}
-
-	h4 {
-		color: #333;
-		margin: 7px 2px 35px;
-		line-height: 1.35;
-		font-weight: 400;
-		font-size: 0.9em;
-		letter-spacing: -0.333px;
-	}
-}

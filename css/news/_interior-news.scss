@@ -1,5 +1,7 @@
 body.interior {
 	@if $isAMP != 'true' {
+	
+		/*
 		&.category {
 			article {
 				h2 {
@@ -61,6 +63,7 @@ body.interior {
 				}
 			}
 		}
+		*/
 		
 		&.news {
 			.sidebar {
@@ -400,5 +403,128 @@ body.interior {
 
 	}
 
-
 }
+
+.grid-posts-lineal {
+	
+	@if $isAMP != 'true' {
+	    margin: 25px 0 -10px;
+
+	    .img-wrap {
+			height: 240px;
+			background-size: cover;
+	    }
+	}
+
+	h4 {
+		color: #333;
+		margin: 7px 2px 35px;
+		line-height: 1.35;
+		font-weight: 400;
+		font-size: 0.9em;
+		letter-spacing: -0.333px;
+	}
+}
+
+
+@if $isAMP == 'true' {
+body.interior {
+	.comment-count-block {
+		background-image: url('https://#{$staticServer}.techspot.com/images/icon-comments-lg.svg');
+		background-repeat: no-repeat;
+		background-position: left 5px;
+		height: 42px;
+		overflow: visible;
+		letter-spacing: -.333px;
+		font-family: $f-primary;
+		filter: grayscale(90%);
+
+		@if $isAMP == 'true' {
+			margin: 0 0 40px 0;
+		} @else {
+			float: left;
+
+			&:hover {
+				filter: grayscale(40%);
+			}
+			
+			@include break(mobile) {
+				margin: 0 0 30px 0;
+			}
+		}
+
+		&.article {
+			margin-top: 20px;
+		}
+
+		&.features {
+			font-size: 0.8em;
+			font-weight: 400;
+
+			@if $isAMP == 'true' {
+				line-height: 2;
+
+				height: 42px;
+				margin-bottom: 15px;
+
+			} @else {
+				line-height: 2 !important;
+				height: 100px;
+
+				@include break(mobile) {
+					height: 42px;
+					margin-bottom: 15px;
+				}
+			}	
+			
+			.count {
+				font-size: 1.2em;
+				font-weight: 500;
+			}
+
+			a {
+				display: inline;
+				padding-left: 0;
+			}
+
+			ul {
+				li {
+					padding-left: 60px;
+				}
+			}
+		}
+
+		a {
+			display: block;
+			line-height: 140%;
+			padding-left: 60px;
+
+			@if $isAMP == 'true' {
+				box-shadow: none;
+			} @else {
+				box-shadow: none !important;
+			}
+			
+			span {
+				display: block;
+				font-size: 1em;
+				
+				&.comment-count {
+					color: $red;
+
+					@if $isAMP != 'true' {
+						&:hover {
+							font-weight: 500;
+						}
+					}
+				}
+				&.interactions-count {
+					color: #39579D;
+					font-size: .86em;
+					line-height: 1.75;
+				}
+			}
+		}
+	}
+}
+}//amp
