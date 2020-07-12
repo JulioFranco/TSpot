@@ -1,69 +1,5 @@
 body.interior {
 	@if $isAMP != 'true' {
-	
-		/*
-		&.category {
-			article {
-				h2 {
-					font-size: 20px;
-					font-weight: bold;
-				}
-				.byline {
-					font-size: 12px;
-				}
-				p {
-					font-size: 14px;
-				}
-			}
-
-			#content-header {
-				.wrapper {
-
-					@include break(mobile) {
-						padding: 25px 0 18px;
-					}
-				}
-				
-				.title-group {
-					margin-top: 20px;
-
-					figure {
-						float: left !important;
-						padding-right: 10px;
-
-						@include break(mobile) {
-							padding-right: 6px;					
-
-							img {
-								width: 50px;
-								height: 39px;
-								margin-top: -2px;
-							}
-						}
-					}
-					
-					h1.large {
-						font-size: 2.4em; 
-						line-height: 1.2;
-						padding-bottom: 10px;
-
-						@include break(mobile) {
-							font-size: 1.6em;
-						}
-					}
-
-					h2 {
-						font-size: 0.85em;
-						color: #555;
-
-						@include break(mobile) {
-							font-size: 0.8em;
-						}
-					}
-				}
-			}
-		}
-		*/
 		
 		&.news {
 			.sidebar {
@@ -96,89 +32,6 @@ body.interior {
 				}
 				*/
 				
-				/*
-				// OLD SOCIAL COL AND TAGS STYLE
-
-				.social-column {
-					.social:hover {
-						.SocialHover {
-							right: -100px;
-							@include break(mobile){
-								right: 0 !important;
-								top:auto !important;
-							}
-						}
-					}
-
-					.tags {
-						width: 60px;
-						margin: 25px 0 60px;
-						font-size: .7em;
-						line-height: 184%;
-						overflow: hidden;
-
-						@include break(mobile){
-							display: none;
-						}
-
-						strong {
-							font-weight: 500;
-						}
-						
-						li {
-							overflow: visible;
-							display: none;
-							a {
-								color: #AAAAAA;
-								font-weight: 400;
-							}
-							&:nth-child(2) {
-								a {
-									color: darken(#AAAAAA,30%);
-								}
-								display: block;
-							}
-							
-							&:nth-child(3) {
-								a {
-									color: darken(#AAAAAA,15%);
-								}
-								display: block;
-							}
-							&:nth-child(4) {
-								a {
-									color: darken(#AAAAAA,5%);
-								}
-								display: block;
-							}
-						}
-
-						&:hover {
-							overflow: visible;
-							border-radius: 0px 0px 8px 0px;
-							background: #f5f5f5;
-							width: 150px;
-							padding: 0px 5px 15px 0px;
-							box-shadow: 3px 5px 5px #bbb;
-							color: #000;
-
-							li {
-								display: block;
-
-								a {
-									color: $blue;
-
-									&:hover {
-										font-weight: 500;									
-									}
-								}
-							}
-						}
-
-					}
-				}
-				*/
-				
 			}
 			.col-1-3-last {
 				@include break(v-tablet){
@@ -199,6 +52,50 @@ body.interior {
 	// -----------------------
 	// For Both: Normal & AMP
 	// -----------------------
+
+	#content {
+		@if $isAMP == 'true' {
+			.intro-video {
+				margin-top: -50px;
+				margin-bottom: -20px;
+			}
+		}
+
+		.intro-image {
+			@if $isAMP == 'true' {
+				height: auto;
+				border: none;
+				margin: -30px 0 0;
+			}
+			@else {
+				margin-top: -52px;
+				width: 100%;
+				height: auto;
+				margin-bottom: 30px;
+
+				@include break(mobile){
+					border: none;
+					margin-bottom: 25px;
+					min-height: 240px;
+				}
+
+				&.modgrey {
+					padding-top: 40px;
+					margin-top: -26px;
+				}
+
+				&.img-white {
+					border-top: 4px solid #eee;
+					border-bottom: 4px solid #eee;
+					
+					&.full {
+						border: 4px solid #eee;
+					}
+				}
+
+			}
+		}
+	}
 
 	&.news {
 		#content-header {
@@ -277,6 +174,229 @@ body.interior {
 		}
 	}
 
+	@if $isDesk == 'true' {
+	.related-products {
+		margin: -5px 0 35px;
+
+		&.related-stories {
+			margin: 0 0 30px;
+			display: block !important;
+
+			@include break(v-tablet){
+				margin: 0;
+			}
+
+			ul.teaser-list {
+				height: 250px;
+
+				li {
+					height: 250px;
+
+					span.img-wrap {
+						height: 215px;
+						padding: 20px;
+					}
+
+					.feat {
+						position: relative;
+						top: 10px;
+						font-size: 1.4em;
+						font-weight: 500;
+						text-shadow: 1px 1px 3px #444;
+						line-height: 1.5;
+						display: inline;
+						padding: 4px 4px 6px 0px;
+						background: rgba(40, 51, 60, 0.6);
+						box-shadow: 0.45em 0 0 0 rgba(40, 51, 60, 0.6), -20px 0 0 0 rgba(40, 51, 60, 0.6);
+					}
+				}
+
+			}
+
+		}
+
+		&.related-query {
+			margin: 5px 0 20px;
+
+			@include break(mobile){
+				margin: 0 0 20px;
+			}
+
+			ul {
+				font-family: $f-paragraph;
+				font-size: .90em;
+				line-height: 1.5;
+				
+				li {
+					padding-bottom: 10px;
+				}
+			}
+		}
+
+		& > h3 {
+			line-height: 2.7;
+			font-size: 1em;
+			font-weight: 400;
+			letter-spacing: -0.333px;
+
+			a {
+				color: #1e2833;
+			}
+			strong {
+				font-weight: 500;
+			}
+		}
+
+		ul.teaser-list {
+			width: 100%;
+			height: 140px;
+
+			li {
+				font-size: .7em;
+				height: 140px;
+				background-position: center center;
+				background-repeat: no-repeat;
+				overflow: hidden;
+				background-size: cover;
+				@include border-radius(2px);
+
+				&.one {
+					@include col(1,1,0);
+				}
+
+				&.two {
+				@include col(1,2,2);
+					&:nth-child(2) {
+						@include col-last(1,2,2);
+					}
+				}
+
+				&.three {
+					@include col(1,3,1.5);
+
+					&:nth-child(3) {
+						@include col-last(1,3,1.5);
+					}
+
+					/*
+					@include break(mobile){
+						@include col(1,1,0);
+
+						&:nth-child(3) {
+							@include col-last(1,1,0);
+						}
+					}
+					*/
+				}
+
+				&.four {
+					@include col(1,4,1.5);
+					&:nth-child(4) {
+						@include col-last(1,4,1.5);
+					}
+
+					/*
+					@include break(mobile){
+						@include col(1,2,2);
+						width: 47%;
+
+						&:nth-child(4) {
+							@include col-last(1,2,2);
+							width: 47%;
+							margin-right: 4%;
+						}
+					}
+
+					@include break(v-mobile){
+						@include col(1,1,0);
+
+						&:nth-child(4) {
+							@include col-last(1,1,0);
+						}
+					}
+					*/
+
+				}
+
+				a {
+					display: block;
+					padding: 0;
+				}
+
+				span.img-wrap {
+					display: block;
+					position: relative;
+					height: 140px;
+					padding-bottom: 0;
+					margin-bottom: 10px;
+					//background: linear-gradient(200deg, rgba(19,25,31,0) 15%, rgba(19,25,31,0.77) 90%);
+					//background: linear-gradient(305deg, rgba(19,25,31,0) 10%, rgba(13,72,142,0.6) 45%);
+					background: linear-gradient(305deg, rgba(19, 25, 31, 0.05) 10%, rgba(13, 72, 142, 0.35) 45%);
+
+					&:hover {
+						//background: linear-gradient(200deg, rgba(255,127,0,0.35) 25%, rgba(31,41,51,0.67) 70%);
+						background: linear-gradient(305deg, rgba(19, 25, 31, 0.05) 10%, rgba(13, 72, 142, 0.5) 45%);
+					}
+
+					img {
+						width: 100%;
+						height: auto;
+					}
+				
+					.rating {
+						font-family: $f-helvetica;
+						font-weight: 500;
+						color: white;
+						font-size: 1.9em;
+						position: absolute;
+						display: inline-block;
+						padding: 0 13px;
+						line-height: 160%;
+						top: 10px;
+						right: 10px;
+						border-radius: 2px;
+
+						&.excellent {
+							@include trans-bg($c-excellent,.8);
+						}
+						&.good {
+							@include trans-bg($c-good,.8);
+						}
+						&.average {
+							@include trans-bg($c-average,.8);
+						}
+						&.bad {
+							@include trans-bg($c-bad,.8);
+						}
+						&.none {
+							display: none;
+						}
+					}
+				}
+
+				.feat {
+					font-size: 1.25em;
+					font-weight: 500;
+					letter-spacing: -0.25px;
+					line-height: 1.4em;
+					text-shadow: 1px 1px 4px #444;
+					color: white !important;
+					padding: 0px 20px;
+					position: absolute;
+					bottom: 15px;
+				}
+
+				.reviews {
+					color: #333;
+					font-size: 0.9em;
+					font-weight: 400;
+					padding: 2px 8px;
+				}
+			}
+		}
+	}
+	} // end isDesk
+
 	.related-query {
 		margin: -10px 0 20px;
 
@@ -315,6 +435,245 @@ body.interior {
 	}
 
 	@if $isAMP != 'true' {
+
+		.social-widget {
+			width: 60px;
+			margin: 0 auto;
+			background: white;
+			border-bottom: 5px solid $orange;
+
+			@include break(mobile){
+				width: 98%;
+				height: 35px;
+				border-bottom: 0px solid $orange;
+
+				&.zero {
+					border-right: 7px solid $orange;
+					li {
+						&.social {
+							&.facebook {
+								margin-left: 12.5%;
+							}
+							&.twitter {
+								margin-left: 12.5%+17*1;
+							}
+							&.reddit {
+								margin-left: 12.5%+17*2;
+							}
+							&.rss {
+								margin-left: 12.5%+17*3;
+							}
+							&.whatsapp {
+								margin-left: 12.5%+17*3; 
+							}
+							&.comments {
+								margin-left: 12.5%+17*4;
+							}
+						}
+					}
+				}
+			}
+
+			li {	
+				&.social-count {
+					background-color: $orange;
+					color: white;
+					text-align: center;
+					font-size: 0.7em;
+					line-height: 25px;
+					font-weight: 500;
+
+					@include break(mobile) {
+						display: inline-block;
+						height: inherit;
+						width: 25%;
+						margin-bottom: 0px;
+						font-size: 1em;
+						line-height: 33px;
+					}
+
+					&.zero {
+						border-top: 5px solid $orange;
+						@include break(mobile) {
+							border-top: none;
+							display: block;
+							width: 7px;
+						}
+					}
+				}
+				
+				&.social {
+				
+					background-image: url('https://#{$staticServer}.techspot.com/images/btnShare.svg?v=#{$social-icons-version}');
+					background-repeat: no-repeat;
+					background-color: white;
+					line-height: 16px;
+					position: relative;
+
+					.SocialHover{
+						display: none;
+
+						.WidgetArea {
+							padding: 7px 0 0 7px;
+							z-index: 999;
+						}
+					}
+
+					&.facebook {
+						background-position: left 0;
+
+						@if $isDesk == 'true' {
+							&:hover{
+								background-color: #3b5998;
+								background-position: right 0;
+							}
+						}
+					}
+					
+					&.twitter {
+						background-position: left -35px;
+
+						@if $isDesk == 'true' {
+							&:hover{
+								background-color: #00aced;
+								background-position: right -35px;
+							}
+						}
+					}
+
+
+					&.reddit {
+						background-position: left -175px;
+
+						@if $isDesk == 'true' {
+							&:hover{
+								background-color: #ff5700;
+								background-position: right -175px;
+							}
+						}
+					}
+					
+					&.rss {
+						background-position: left -105px;
+
+						@if $isDesk == 'true' {
+							&:hover {
+								background-color: #f07422;
+								background-position: right -105px;
+							}
+						}
+					}
+
+					&.whatsapp {
+						background-position: left -175px;
+
+						@if $isDesk == 'true' {
+							&:hover {
+								background-color: #f07422;
+								background-position: right -175px;
+							}
+						}
+					}
+					
+					&.comments {
+						background-position: left -140px;
+
+						@if $isDesk == 'true' {
+							&:hover {
+								background-color: #4b75b7;
+								background-position: right -140px;
+							}
+						}
+					}
+					
+					a {
+						display: block;
+						text-indent: -9999px;
+						line-height: 35px;
+					}
+
+					@if $isDesk == 'true' {
+					&:hover {
+						.SocialHover {
+							width: 100px;
+							height: 100%;
+							position: absolute;
+							z-index: 99999999;
+							background-color: white;
+							right: 60px;
+							top: 0;
+							display: block;
+
+							/*
+							@include break(mobile){
+								right: 0 !important;
+								top: auto !important;
+							}
+							*/
+						}
+					}
+					}//desk
+
+					@include break(mobile){
+						background-image: url('https://#{$staticServer}.techspot.com/images/social-widget-bg-90.svg?v=#{$social-icons-version}');
+						margin-left: 30%;
+						margin-top: -30px;
+						width: 32px;
+
+						/*
+						&:hover {
+							background: none;
+							border-radius: 40px;
+							height: 25px;
+							width: 26px !important;
+						}
+						*/
+
+						&.facebook {
+							width: 32px;
+							margin-left: 30%;
+							background-position: 0px 1px;
+						}
+
+						&.twitter {
+							width: 32px;
+							margin-left: 30%+13.5*1;
+							background-position: -32px 1px;
+						}
+
+						&.reddit {
+							width: 32px;
+							margin-left: 30%+13.5*2;
+							background-position: -189px 1px;
+						}
+						
+						&.rss {
+							width: 30px;
+							margin-left: 30%+13.5*3;
+							background-position: -97px 1px;
+						}
+
+						&.whatsapp {
+							width: 30px;
+							margin-left: 30%+13.5*3;
+							background-position: -158px 1px;
+						}
+						
+						&.comments {
+							width: 32px;
+							margin-left: 30%+13.5*4;
+							background-position: -125px 2px;
+						}
+						
+						a {
+							display: block;
+							text-indent: -9999px;
+							line-height: 30px;
+						}
+					}
+				}
+			} 
+		}
 
 		#mobComBut {
 			display: none;

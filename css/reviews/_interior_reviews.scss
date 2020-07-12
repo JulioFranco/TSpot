@@ -234,7 +234,6 @@ body.interior {
 	}
 
 
-
 	&.article {
 		#content {
 			.index-mobile {
@@ -757,5 +756,248 @@ body.interior {
 				}
 			}
 		}
+	}
+}
+
+
+@if $isAMP != 'true' {
+
+	.social-widget {
+		width: 60px;
+		margin: 0 auto;
+		background: white;
+		border-bottom: 5px solid $orange;
+
+		@include break(mobile){
+			width: 98%;
+			height: 35px;
+			border-bottom: 0px solid $orange;
+
+			&.zero {
+				border-right: 7px solid $orange;
+				li {
+					&.social {
+						&.facebook {
+							margin-left: 12.5%;
+						}
+						&.twitter {
+							margin-left: 12.5%+17*1;
+						}
+						&.reddit {
+							margin-left: 12.5%+17*2;
+						}
+						&.rss {
+							margin-left: 12.5%+17*3;
+						}
+						&.whatsapp {
+							margin-left: 12.5%+17*3; 
+						}
+						&.comments {
+							margin-left: 12.5%+17*4;
+						}
+					}
+				}
+			}
+		}
+
+		li {	
+			&.social-count {
+				background-color: $orange;
+				color: white;
+				text-align: center;
+				font-size: 0.7em;
+				line-height: 25px;
+				font-weight: 500;
+
+				@include break(mobile) {
+					display: inline-block;
+					height: inherit;
+					width: 25%;
+					margin-bottom: 0px;
+					font-size: 1em;
+					line-height: 33px;
+				}
+
+				&.zero {
+					border-top: 5px solid $orange;
+					@include break(mobile) {
+						border-top: none;
+						display: block;
+						width: 7px;
+					}
+				}
+			}
+			
+			&.social {
+			
+				background-image: url('https://#{$staticServer}.techspot.com/images/btnShare.svg?v=#{$social-icons-version}');
+				background-repeat: no-repeat;
+				background-color: white;
+				line-height: 16px;
+				position: relative;
+
+				.SocialHover{
+					display: none;
+
+					.WidgetArea {
+						padding: 7px 0 0 7px;
+						z-index: 999;
+					}
+				}
+
+				&.facebook {
+					background-position: left 0;
+
+					@if $isDesk == 'true' {
+						&:hover{
+							background-color: #3b5998;
+							background-position: right 0;
+						}
+					}
+				}
+				
+				&.twitter {
+					background-position: left -35px;
+
+					@if $isDesk == 'true' {
+						&:hover{
+							background-color: #00aced;
+							background-position: right -35px;
+						}
+					}
+				}
+
+
+				&.reddit {
+					background-position: left -175px;
+
+					@if $isDesk == 'true' {
+						&:hover{
+							background-color: #ff5700;
+							background-position: right -175px;
+						}
+					}
+				}
+				
+				&.rss {
+					background-position: left -105px;
+
+					@if $isDesk == 'true' {
+						&:hover {
+							background-color: #f07422;
+							background-position: right -105px;
+						}
+					}
+				}
+
+				&.whatsapp {
+					background-position: left -175px;
+
+					@if $isDesk == 'true' {
+						&:hover {
+							background-color: #f07422;
+							background-position: right -175px;
+						}
+					}
+				}
+				
+				&.comments {
+					background-position: left -140px;
+
+					@if $isDesk == 'true' {
+						&:hover {
+							background-color: #4b75b7;
+							background-position: right -140px;
+						}
+					}
+				}
+				
+				a {
+					display: block;
+					text-indent: -9999px;
+					line-height: 35px;
+				}
+
+				@if $isDesk == 'true' {
+				&:hover {
+					.SocialHover {
+						width: 100px;
+						height: 100%;
+						position: absolute;
+						z-index: 99999999;
+						background-color: white;
+						right: 60px;
+						top: 0;
+						display: block;
+
+						/*
+						@include break(mobile){
+							right: 0 !important;
+							top: auto !important;
+						}
+						*/
+					}
+				}
+				}//desk
+
+				@include break(mobile){
+					background-image: url('https://#{$staticServer}.techspot.com/images/social-widget-bg-90.svg?v=#{$social-icons-version}');
+					margin-left: 30%;
+					margin-top: -30px;
+					width: 32px;
+
+					/*
+					&:hover {
+						background: none;
+						border-radius: 40px;
+						height: 25px;
+						width: 26px !important;
+					}
+					*/
+
+					&.facebook {
+						width: 32px;
+						margin-left: 30%;
+						background-position: 0px 1px;
+					}
+
+					&.twitter {
+						width: 32px;
+						margin-left: 30%+13.5*1;
+						background-position: -32px 1px;
+					}
+
+					&.reddit {
+						width: 32px;
+						margin-left: 30%+13.5*2;
+						background-position: -189px 1px;
+					}
+					
+					&.rss {
+						width: 30px;
+						margin-left: 30%+13.5*3;
+						background-position: -97px 1px;
+					}
+
+					&.whatsapp {
+						width: 30px;
+						margin-left: 30%+13.5*3;
+						background-position: -158px 1px;
+					}
+					
+					&.comments {
+						width: 32px;
+						margin-left: 30%+13.5*4;
+						background-position: -125px 2px;
+					}
+					
+					a {
+						display: block;
+						text-indent: -9999px;
+						line-height: 30px;
+					}
+				}
+			}
+		} 
 	}
 }
