@@ -1,0 +1,16 @@
+@import
+"1structure/_variables.scss",
+"1structure/_mixin.scss",
+"1structure/_base-grid.scss";
+
+$isAMP: 'false';
+$isDesk: 'true';
+
+@import
+//"2components/_comments.scss",
+
+// base
+//"_header.scss",
+"_footer.scss",
+
+"2components/_vacio.scss";
