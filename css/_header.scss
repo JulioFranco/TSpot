@@ -58,13 +58,16 @@
 							background-repeat: no-repeat;
 							background-position: 8px center;
 							background-size: 26px;
-							padding-right: 10px;
+							padding-right: 14px;
+							margin-right: 10px;
 							position: relative;
+
 							@include break(mobile) {
-									width: 40px;
-									padding-right: 0px;
-									background-position: center center;
-								}
+								width: 40px;
+								padding-right: 0px;
+								margin-right: 3px;
+								background-position: center center;
+							}
 							
 							&.hover {
 								background-color: $orange;
@@ -76,6 +79,8 @@
 								padding-left: 38px;
 								text-transform: uppercase;
 								font-weight: 400;
+								letter-spacing: 0.2px;
+
 								@include break(mobile) {
 									padding-left: 0px;
 									text-indent: -9999px;
@@ -372,145 +377,6 @@
 							}
 							
 						}
-
-						@if $isDesk == 'true' {
-						&.social {
-							background-image: url('https://#{$staticServer}.techspot.com/images/social-sprite.svg');
-							background-repeat: no-repeat;
-							background-position: left center;
-							text-indent: -9999px;
-							width: 17px;
-							
-							a {
-								display: block;
-							} 
-							
-							&.group {
-								background-position: center center;
-								width: 80px;
-								margin-right: 20px;
-								position: relative;
-
-								@include break(mobile){
-									display: none;
-								}
-
-								&.hover {
-									background-color: $orange;
-									.dropdown {
-										//display: block;
-									}
-									.loginEspBlock{display: block;}
-								}
-								
-								.social-dropdown {
-									display: none;
-									position: absolute;
-									width: 250px;
-									left: 50%;
-									margin-left: -125px;
-									background: #f5f5f5;
-									text-indent: 0;
-									line-height: 25px;
-									z-index: 100;
-									border-bottom: 4px solid #105AB2;
-									box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
-									
-									.pad {
-										display: block;
-										padding: 12px 20px;
-									}
-									
-									.social {
-										.padtitle {
-											font-weight: 400;
-											font-size: .85em;
-											display: inline-block;
-										}
-										a {
-											font-size: 0.8em;
-											font-weight: 400;
-											font-family: $f-primary;
-											letter-spacing: -0.1px;
-										}
-										.WidgetArea{
-											width: 70px;
-											float: right;
-											display: inline;
-											margin: 5px 80px 0 0;
-										}
-									}
-									.fb a, .in a {
-										color: #0059B2;
-									}
-									.tw a, .hub a {
-										color: #4ca6c3;
-									}
-									.yt a {
-										color: #c00;
-									}
-									.ig a{
-										color: #f56040;
-									}
-									.socialrow {
-										padding: 0px 0px 5px 20px;
-										font-family: $f-condensed;
-
-										&.fb { padding-top: 10px; }
-
-										/*
-										&.tw {
-											#twFollowBtn {
-												width: 68px;
-												overflow: hidden;
-												float: left;
-											}
-										}
-										*/
-
-										&.yt, &.hub { padding: 0 0 3px 20px; }
-
-										&.in { padding: 0 0 12px 20px; }
-
-									}
-									
-									.rss {
-										background-color: #eee;
-										border-top: 1px solid #e8e8e8;								
-										a {
-											background-image: url('https://#{$staticServer}.techspot.com/images/rss-icon.svg');
-											background-repeat: no-repeat;
-											background-position: 5px center;
-											background-size: 23px;
-											padding-left: 35px;
-											color: $dark-grey;
-											font-weight: 400;
-										}
-										
-									}
-									.newsletter {
-										background-color: #ffffff;
-										text-align: center;
-										font-size: .65em;
-										line-height: 1.6em;
-										border-bottom: 1px solid #e8e8e8;
-									}
-								}
-								
-							}
-							
-							&.twitter {
-								background-position: -40px center;
-							}
-							
-							&.rss {
-								background-position: -83px center;
-								margin-right: 20px;
-							}
-							
-						}
-						} // close isDesk
-
 
 						&.search {
 							background-image: url('https://#{$staticServer}.techspot.com/images/search-icon.svg');
