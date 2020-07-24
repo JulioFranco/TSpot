@@ -40,13 +40,19 @@
 				float: right;
 				line-height: $header-top-line-height;
 
+				@include break(mobile){
+				    line-height: $header-interior-line-height-mobile;
+				}
+
 				ul {
 					li {
 						display: inline-block;
 						line-height: $header-top-line-height;
+
 						@include break(mobile){
-							line-height: $header-top-line-height-mobile;
+							line-height: $header-interior-line-height-mobile;
 						}
+
 						a {
 							font-size: .7em;
 							font-weight: 300;
@@ -64,8 +70,8 @@
 
 							@include break(mobile) {
 								width: 40px;
-								padding-right: 0px;
-								margin-right: 3px;
+								padding-right: 0;
+								margin-right: 0;
 								background-position: center center;
 							}
 							
@@ -416,6 +422,10 @@
 									padding: 0 15px;
 									font-size: .81em;
 									line-height: 25px;
+
+									@include break(mobile){
+										width: 90%;
+									}
 									
 									@include border-radius(0);
 									&::-webkit-input-placeholder { /* WebKit browsers */
@@ -452,7 +462,7 @@
 
 
 	/**** INTERIOR ****/
-	&.interior{
+	&.interior {
 		@if $isAMP == 'true' { //Only Amp
 			line-height: $header-mobile-height;
 			height: $header-mobile-height;
@@ -491,13 +501,12 @@
 						li {
 							line-height: $header-interior-line-height;
 							@include break(mobile){
-								line-height: $header-top-line-height-mobile;
+								line-height: $header-interior-line-height-mobile;
 							}
 							&.login {
 								@include break(mobile) {
 									padding-right: 0px;
 									background-position: center center;
-									line-height: $header-top-line-height-mobile;
 									width: 40px;
 								}
 							}
@@ -505,7 +514,6 @@
 								&.search {
 									@include break(mobile){
 										background-position: center center;
-										line-height: $header-top-line-height-mobile + 6;
 									}
 									form {
 										top: $header-interior-line-height;
@@ -541,8 +549,8 @@
 
 			@include break(mobile) {
 				margin-left: 2px;
-				height: 45px;
-				background-position: -7px -1px;
+				height: $header-interior-line-height-mobile;
+				background-position: -7px -2px;
 			}
 		}
 
@@ -1006,8 +1014,8 @@
 			width: 166px;
 
 			margin-left: 2px;
-			height: 45px;
-			background-position: -7px -1px;
+			height: $header-interior-line-height-mobile;
+			background-position: -7px -2px;
 		}
 
 		a {
