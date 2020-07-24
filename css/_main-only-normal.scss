@@ -217,7 +217,7 @@ img.b-lazy.b-loaded {
 			padding: 26px 0 0;
 
 			&:first-child {
-				padding: 16px 0 0;
+				padding: 12px 0 0;
 			}
 
 			.comm {
@@ -251,21 +251,21 @@ img.b-lazy.b-loaded {
 				.img-wrap {
 					display: block;
 					position: relative;
-					width: 92%;
-					height: 185px;
+					width: 90%;
+					height: 175px;
 					background-size: cover;
 					background-position: center;
 					margin: 0 auto;
 				}
 
 				.trend {
-					font-size: .75em;
-					font-weight: 500;
+					font-size: .8em;
+					font-weight: 400;
 					width: 90%;
 					display: block;
 					list-style-type: none;
 					position: relative;
-					padding-top: 5px;
+					padding-top: 10px;
 					margin: 0 auto 5px;
 				}
 			}
