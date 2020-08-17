@@ -691,12 +691,12 @@ body.interior {
 			}
 		}
 		.ComBut {
-			font-size: 0.9em;
+			font-size: 1em;
 			display: block;
 			padding-top: 5px;
-			height: 35px;
-			line-height: 30px;
-			font-weight: 600;
+			height: 45px;
+			line-height: 42px;
+			font-weight: 500;
 			border: solid 1px #aaa;
 			@include border-radius(3px);
 			@include gradient-trans($start_color:#1E2933,$start_alpha:0,$end_color:#1E2933,$end_alpha:0.1);
@@ -716,6 +716,7 @@ body.interior {
 				padding-right: 5px;
 				line-height: 24px;
 				margin-left: 5px;
+			    font-size: 0.95em;
 
 				&.many {
 					background: #c00;
@@ -734,12 +735,12 @@ body.interior {
 			}
 		}
 		.ComBut {
-			font-size: 0.9em;
+			font-size: 1em;
 			display: block;
 			padding-top: 5px;
-			height: 35px;
-			line-height: 30px;
-			font-weight: 600;
+			height: 45px;
+			line-height: 42px;
+			font-weight: 500;
 			border: solid 1px #aaa;
 			@include border-radius(3px);
 			@include gradient-trans($start_color:#1E2933,$start_alpha:0,$end_color:#1E2933,$end_alpha:0.1);
@@ -759,6 +760,7 @@ body.interior {
 				padding-right: 5px;
 				line-height: 24px;
 				margin-left: 5px;
+			    font-size: 0.95em;
 
 				&.many {
 					background: #c00;
