@@ -372,6 +372,11 @@
 			margin: 14px 10px 0 0;
 			background-size: contain;
 		}
+
+		button.bbCodeSpoiler-button.button--longText.button {
+			background: #aaa;
+			border-radius: 0;
+		}
 	}
 }
 
