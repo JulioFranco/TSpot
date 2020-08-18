@@ -57,41 +57,45 @@ footer {
 		}
 	}
 
-	@if $isAMP != 'true' {
-		form {
-			font-size: .8em;
-			
-			.footitle {
-				margin: 0 0 10px 0;
+	form {
+		font-size: .8em;
+		
+		.footitle {
+			margin: 0 0 10px 0;
+		}
+		.form-email {
+			@include col(2,3,1);
+			input {
+				width: 90%;
+				line-height: 30px;
+				margin-top: 0;
+				border: 1px solid $grey;
+				padding: 0 4%;
+				font-size: 0.85em;
+				-webkit-appearance: none;
+				border-radius: 0;
 			}
-			.form-email {
-				@include col(2,3,1);
-				input {
-					width: 90%;
-					line-height: 30px;
-					margin-top: 0;
-					border: 1px solid $grey;
-					padding: 0 4%;
-					font-size: 0.85em;
-					-webkit-appearance: none;
-					border-radius: 0;
-				}
-			}
-			.form-submit {
-				@include col-last(1,3,1);
-				input {
-					line-height: 30px;
-					display: block;
-					background: $blue;
-					color: white;
-					width: 100%;
-					padding: 0 5%;
-					border: 1px solid #105ab2;
-					font-size: 0.8em;
-					cursor: pointer;
-					-webkit-appearance: none;
-					border-radius: 0;
+		}
+		.form-submit {
+			@include col-last(1,3,1);
+			input {
+				line-height: 30px;
+				display: block;
+				background: $blue;
+				color: white;
+				width: 100%;
+				padding: 0 5%;
+				border: 1px solid #105ab2;
+				font-size: 0.8em;
+				cursor: pointer;
+				-webkit-appearance: none;
+				border-radius: 0;
 
+				@if $isAMP == 'true' {
+					text-transform: uppercase;
+				}
+
+				@if $isDesk == 'true' {
 					&:hover {
 						background: lighten($blue,6%);
 					}
@@ -156,7 +160,9 @@ footer {
 		@include col-last(4.3,14,5);
 		.menu {
 			width: 100%;
-			margin-top: 25px;
+
+			@if $isAMP == 'true' { margin-top: 60px; }
+			@else { margin-top: 25px; }
 			
 			ul {
 				li {
