@@ -664,11 +664,12 @@ body.interior {
 				@if $isAMP == 'true' {
 					padding-top: 10px;
 					margin-right: 0px;
-				} @else {
+				}
+				@else {
 					padding-top: 15px;
 					margin-right: 350px;
 
-					@include break(mobile){
+					@include break(v-tablet){
 						padding-top: 10px;
 						margin-right: 0px;
 					}
@@ -733,7 +734,7 @@ body.interior {
 						height: 350px;
 						margin-bottom: 50px;
 
-						@include break(mobile){
+						@include break(v-tablet){
 							margin-right: 0;
 							height: 350px;
 							margin-bottom: 0px;
@@ -746,7 +747,7 @@ body.interior {
 						padding-top: 15px;
 						width: 345px;
 
-						@include break(mobile){
+						@include break(v-tablet){
 							float: none;
 							padding-top: 5px;
 							width: 100%;

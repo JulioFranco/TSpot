@@ -134,6 +134,10 @@ body.interior {
 			width: 63%;
 			position: relative;
 
+			@include break(v-tablet){
+				width: 50%;
+			}
+
  			@include break(mobile){
  				float: none;
 				width: 100%;
@@ -264,10 +268,7 @@ body.interior {
 					height: auto;
 				}
 			}
-
-			@include break(v-tablet) {
-				@include col(1,2,5);
-			}
+			
 			@include break(mobile) {
 				width: 100%;
 				height: 300px;
