@@ -139,11 +139,26 @@ body.interior {
 			}
 
  			@include break(mobile){
- 				float: none;
-				width: 100%;
 				display: block;
 				height: 335px;
+				width: 100%;
+ 				float: none;
 				overflow: hidden;
+ 			}
+
+ 			&.games {
+
+	 			@include break(mobile){
+					height: 260px;
+				}
+
+				figure {
+					height: 395px;
+
+		 			@include break(mobile){
+						height: 230px;
+					}
+	 			}
  			}
 		}
 
@@ -286,6 +301,19 @@ body.interior {
 
 			.imgwrap .flex-viewport {
 				overflow: hidden;
+				height: 435px;
+
+				@include break(mobile) {
+					height: 300px;
+				}
+			}
+
+			.imgwrap.games .flex-viewport {
+				height: 395px;
+
+				@include break(mobile) {
+					height: 230px;
+				}
 			}
 
 			.imgwrap .flex-viewport ul li {
@@ -334,13 +362,14 @@ body.interior {
 
 			.flex-control-nav {
 				width: 100%;
-				position: absolute;
-				bottom: -45px;
 				text-align: center;
 				cursor: pointer;
+				padding-top: 15px;
+
 				@include break(mobile) {
-					bottom: -35px;
+					padding-top: 10px;
 				}
+
 				li {
 					margin: 0 3px;
 					display: inline-block;
@@ -348,6 +377,7 @@ body.interior {
 					cursor: pointer;
 				}
 			}
+
 			.flex-control-paging li a {
 				width: 5px;
 				height: 5px;
