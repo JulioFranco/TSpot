@@ -3,7 +3,7 @@ body.home {
 	@if $isAMP == 'true' {
 		#content {
 			.wrapper {
-					padding: 15px 0;			
+					padding: 15px 0;
 			}
 		}
 
@@ -141,6 +141,10 @@ body.home {
 					&.secondary {
 					    padding: 0;
 					    background: none;
+
+					    @include break(mobile){
+					    	height: 290px;
+					    }
 
 						.masthead {
 							background: none;
