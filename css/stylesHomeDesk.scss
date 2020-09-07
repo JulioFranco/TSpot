@@ -4,7 +4,7 @@
 "1structure/_base-grid.scss";
 
 $isAMP: 'false';
-$isDesk: 'false';
+$isDesk: 'true';
 
 @import
 // interior components
@@ -12,10 +12,17 @@ $isDesk: 'false';
 //"2components/_slider.scss",
 //"2components/_comments.scss",
 //"2components/_page-nav.scss",
-"2components/_tabbar.scss",
+//"2components/_tabbar.scss",
 
-"_interior-included-amp.scss",
-"_interior-only-normal.scss",
+"2components/_grid-posts.scss",
+
+//"_interior-included-amp.scss",
+//"_interior-only-normal.scss",
+
+// homepage
+"news/_news-list.scss",
+"_home.scss",
+"news/_masthead.scss", // home masthead
 
 // news
 //"news/_interior-news.scss",
@@ -34,8 +41,8 @@ $isDesk: 'false';
 //"products/_widget.scss",
 
 // downloads
-"downloads/_interior_download.scss",
-"downloads/_download.scss",
+//"downloads/_interior_download.scss",
+//"downloads/_download.scss",
 
 // trivia
 //"2components/_trivia.scss",

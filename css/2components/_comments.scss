@@ -75,7 +75,6 @@
 			img.user-avatar {
 				background: #eaeaea;
 				width: 28px; height: 28px;
-				//border: 1px solid #ddd;
 				@include box-shadow($x:2,$y:2,$blur:0,$color:#ddd);
 				margin: 0 10px 5px 0px;
 			}
@@ -364,7 +363,7 @@
 		}
 		.elite {
 			display: inline-block;
-			background: url('https://#{$staticServer}.techspot.com/images/staff_elite2c.png') no-repeat;
+			background: url('https://#{$staticServer}.techspot.com/images/elite/staff_elite2c.png') no-repeat;
 			width: 95px;
 			height: 22px;
 			overflow: hidden;
@@ -373,9 +372,13 @@
 			margin: 14px 10px 0 0;
 			background-size: contain;
 		}
+
+		button.bbCodeSpoiler-button.button--longText.button {
+			background: #aaa;
+			border-radius: 0;
+		}
 	}
 }
-
 
 
 body.interior {

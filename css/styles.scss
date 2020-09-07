@@ -11,8 +11,8 @@ $isDesk: 'false';
 // components
 "2components/_articleBody-news-article.scss",
 "2components/_input-n-button.scss",
-"2components/_grid-posts.scss",
-"2components/_search-box.scss",
+//"2components/_grid-posts.scss",
+//"2components/_search-box.scss",
 "2components/_slide-sort-selector.scss",
 
 // interior components
@@ -22,17 +22,19 @@ $isDesk: 'false';
 //"2components/_slider.scss",
 //"2components/_tabbar.scss",
 
-// base + homepage
+// base
 "_header.scss",
-"_footer.scss",
-"news/_news-list.scss",
-"_home.scss",
-"news/_masthead.scss", // home masthead
+//"_footer.scss",
 
 "_main-included-amp.scss",
 "_main-only-normal.scss",
 //"_interior-included-amp.scss",
 //"_interior-only-normal.scss",
+
+// homepage
+//"news/_news-list.scss",
+//"_home.scss",
+//"news/_masthead.scss", // home masthead
 
 // news
 //"news/_interior-news.scss",

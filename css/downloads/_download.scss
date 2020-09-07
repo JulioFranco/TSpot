@@ -408,11 +408,13 @@ body.interior.download {
 				width: 46%;
 				padding: 5px 10px 15px 0;
 
-				@if $isDesk == 'true' {
-				@include break(v-tablet){
-					padding: 5px 0 0 35px;
-					width: 43%;
-				}}
+				/*
+					@if $isDesk == 'true' {
+					@include break(v-tablet){
+						padding: 5px 0 0 35px;
+						width: 43%;
+					}}
+				*/
 
 				@include break(mobile){
 					@include col(1,1,0);

@@ -157,7 +157,7 @@
 						display: inline;
 						p {
 							padding: 7px 0;
-							//font-size: 0;
+							font-size: 0.75em;
 						}
 					} @else {
 						@include break(mobile){

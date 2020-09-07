@@ -13,6 +13,7 @@
 			height: 58px;
 		}
 
+		/*
 		#main-menu #dk_menu{
 			.SpecialHeight {
 				.nav-submenu {
@@ -20,6 +21,8 @@
 				}
 			}
 		}
+		*/
+
 	}
 
 
@@ -40,13 +43,19 @@
 				float: right;
 				line-height: $header-top-line-height;
 
+				@include break(mobile){
+				    line-height: $header-interior-line-height-mobile;
+				}
+
 				ul {
 					li {
 						display: inline-block;
 						line-height: $header-top-line-height;
+
 						@include break(mobile){
-							line-height: $header-top-line-height-mobile;
+							line-height: $header-interior-line-height-mobile;
 						}
+
 						a {
 							font-size: .7em;
 							font-weight: 300;
@@ -58,13 +67,16 @@
 							background-repeat: no-repeat;
 							background-position: 8px center;
 							background-size: 26px;
-							padding-right: 10px;
+							padding-right: 14px;
+							margin-right: 10px;
 							position: relative;
+
 							@include break(mobile) {
-									width: 40px;
-									padding-right: 0px;
-									background-position: center center;
-								}
+								width: 40px;
+								padding-right: 0;
+								margin-right: 0;
+								background-position: center center;
+							}
 							
 							&.hover {
 								background-color: $orange;
@@ -76,6 +88,8 @@
 								padding-left: 38px;
 								text-transform: uppercase;
 								font-weight: 400;
+								letter-spacing: 0.2px;
+
 								@include break(mobile) {
 									padding-left: 0px;
 									text-indent: -9999px;
@@ -373,145 +387,6 @@
 							
 						}
 
-						@if $isDesk == 'true' {
-						&.social {
-							background-image: url('https://#{$staticServer}.techspot.com/images/social-sprite.svg');
-							background-repeat: no-repeat;
-							background-position: left center;
-							text-indent: -9999px;
-							width: 17px;
-							
-							a {
-								display: block;
-							} 
-							
-							&.group {
-								background-position: center center;
-								width: 80px;
-								margin-right: 20px;
-								position: relative;
-
-								@include break(mobile){
-									display: none;
-								}
-
-								&.hover {
-									background-color: $orange;
-									.dropdown {
-										//display: block;
-									}
-									.loginEspBlock{display: block;}
-								}
-								
-								.social-dropdown {
-									display: none;
-									position: absolute;
-									width: 250px;
-									left: 50%;
-									margin-left: -125px;
-									background: #f5f5f5;
-									text-indent: 0;
-									line-height: 25px;
-									z-index: 100;
-									border-bottom: 4px solid #105AB2;
-									box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
-									
-									.pad {
-										display: block;
-										padding: 12px 20px;
-									}
-									
-									.social {
-										.padtitle {
-											font-weight: 400;
-											font-size: .85em;
-											display: inline-block;
-										}
-										a {
-											font-size: 0.8em;
-											font-weight: 400;
-											font-family: $f-primary;
-											letter-spacing: -0.1px;
-										}
-										.WidgetArea{
-											width: 70px;
-											float: right;
-											display: inline;
-											margin: 5px 80px 0 0;
-										}
-									}
-									.fb a, .in a {
-										color: #0059B2;
-									}
-									.tw a, .hub a {
-										color: #4ca6c3;
-									}
-									.yt a {
-										color: #c00;
-									}
-									.ig a{
-										color: #f56040;
-									}
-									.socialrow {
-										padding: 0px 0px 5px 20px;
-										font-family: $f-condensed;
-
-										&.fb { padding-top: 10px; }
-
-										/*
-										&.tw {
-											#twFollowBtn {
-												width: 68px;
-												overflow: hidden;
-												float: left;
-											}
-										}
-										*/
-
-										&.yt, &.hub { padding: 0 0 3px 20px; }
-
-										&.in { padding: 0 0 12px 20px; }
-
-									}
-									
-									.rss {
-										background-color: #eee;
-										border-top: 1px solid #e8e8e8;								
-										a {
-											background-image: url('https://#{$staticServer}.techspot.com/images/rss-icon.svg');
-											background-repeat: no-repeat;
-											background-position: 5px center;
-											background-size: 23px;
-											padding-left: 35px;
-											color: $dark-grey;
-											font-weight: 400;
-										}
-										
-									}
-									.newsletter {
-										background-color: #ffffff;
-										text-align: center;
-										font-size: .65em;
-										line-height: 1.6em;
-										border-bottom: 1px solid #e8e8e8;
-									}
-								}
-								
-							}
-							
-							&.twitter {
-								background-position: -40px center;
-							}
-							
-							&.rss {
-								background-position: -83px center;
-								margin-right: 20px;
-							}
-							
-						}
-						} // close isDesk
-
-
 						&.search {
 							background-image: url('https://#{$staticServer}.techspot.com/images/search-icon.svg');
 							background-position: center center;
@@ -550,6 +425,10 @@
 									padding: 0 15px;
 									font-size: .81em;
 									line-height: 25px;
+
+									@include break(mobile){
+										width: 90%;
+									}
 									
 									@include border-radius(0);
 									&::-webkit-input-placeholder { /* WebKit browsers */
@@ -586,7 +465,7 @@
 
 
 	/**** INTERIOR ****/
-	&.interior{
+	&.interior {
 		@if $isAMP == 'true' { //Only Amp
 			line-height: $header-mobile-height;
 			height: $header-mobile-height;
@@ -625,13 +504,12 @@
 						li {
 							line-height: $header-interior-line-height;
 							@include break(mobile){
-								line-height: $header-top-line-height-mobile;
+								line-height: $header-interior-line-height-mobile;
 							}
 							&.login {
 								@include break(mobile) {
 									padding-right: 0px;
 									background-position: center center;
-									line-height: $header-top-line-height-mobile;
 									width: 40px;
 								}
 							}
@@ -639,7 +517,6 @@
 								&.search {
 									@include break(mobile){
 										background-position: center center;
-										line-height: $header-top-line-height-mobile + 6;
 									}
 									form {
 										top: $header-interior-line-height;
@@ -675,8 +552,8 @@
 
 			@include break(mobile) {
 				margin-left: 2px;
-				height: 45px;
-				background-position: -7px -1px;
+				height: $header-interior-line-height-mobile;
+				background-position: -7px -2px;
 			}
 		}
 
@@ -692,11 +569,6 @@
 							}
 						}
 					}
-				}
-			
-				@include break(mobile) {
-					line-height: 35px;
-					height: 35px;
 				}
 				
 			}
@@ -719,6 +591,8 @@
 
 			@include break(mobile){
 				font-size: .735em;
+				line-height: 35px;
+				height: 35px;
 			}
 
 			#dk_menu {
@@ -858,7 +732,7 @@
 							margin-left: -5%;
 							
 							background: #888d91;
-							height: 275px;
+							height: 285px;
 							box-shadow: 0 3px 0px rgba(34,25,25,0.10),inset 0px 3px 0px 0px rgba(0,0,0,0.15);
 
 							@include break(tablet){
@@ -866,7 +740,7 @@
 							}
 							
 							.wrapper {
-								padding: 17px 0;
+								padding: 15px 0;
 
 								@include break(tablet){
 									width: 85%;
@@ -1027,16 +901,16 @@
 											h3 {
 												font-family: $f-paragraph;
 												font-weight: 400;
-												font-size: 0.98em;
+												font-size: 1.025em;
 												line-height: 1.45;
 												padding: 6px 8px 7px;
 												background: rgba(30, 41, 51, 0.1);
 												bottom: 20px;
-												width: 183px;
-												height: 59px;
+												width: 239px;
+												height: 65px;
 												overflow: hidden;
 												border-radius: 2px;
-												text-shadow: 1px 1px 1px rgba(30, 41, 51, 0.4);
+												text-shadow: 1px 0px 1px rgba(30, 41, 51, 0.4);
 											}
 
 											&:hover {
@@ -1111,7 +985,12 @@
 
 										li {
 											@include col(1,5,2);
-											width: 18% !important;
+											margin-right: 2.5%;
+											width: 23% !important;
+
+											&:last-child {
+											    margin-right: 0;
+											}
 										}
 									}
 								}
@@ -1136,10 +1015,15 @@
 		background-size: 218px;
 
 		@include break(mobile){
+			background-size: 181px;
+			line-height: $header-interior-line-height;
+			height: $header-interior-line-height;
+			padding-bottom: 3px;
+			width: 166px;
+
 			margin-left: 2px;
-		    width: 172px;
-		    background-size: 185px;
-		    background-position: -7px 0;
+			height: $header-interior-line-height-mobile;
+			background-position: -7px -2px;
 		}
 
 		a {

@@ -76,8 +76,8 @@ body.interior {
 
 					@if $isAMP == 'true' {
 						font-weight: 400;
-						color:#888;
-						padding-bottom:15px;
+						color: #888;
+						padding-bottom: 15px;
 						font-size: .8em;
 						letter-spacing: -.333px;
 					}
@@ -87,7 +87,7 @@ body.interior {
 						&.hasfigure {
 							padding: 2px 300px 12px 106px;
 
-							@include break(mobile){
+							@include break(v-tablet){
 								padding: 0px;
 							}
 						}
