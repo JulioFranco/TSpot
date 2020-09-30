@@ -12,7 +12,7 @@ body.home {
 		@if $isDesk == 'true' {
 
 			// Fixed header home
-			padding-top: 85px;
+			padding-top: $header-height;
 			@include break(mobile){
 				padding-top: 72px;
 			}
@@ -141,6 +141,7 @@ body.home {
 					&.secondary {
 					    padding: 0;
 					    background: none;
+					    width: 100%;
 
 					    @include break(mobile){
 					    	height: 290px;
@@ -151,6 +152,10 @@ body.home {
 
 							.wrapper {
 								padding: 0;
+							}
+
+							ul.featured-posts li {
+								width: 33%;
 							}
 
 							ul.featured-posts li a hgroup h2 {
