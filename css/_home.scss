@@ -71,6 +71,7 @@ body.home {
 
 							.wrapper {
 								padding: 0;
+								width: 100%;
 							}
 
 							ul.featured-posts li a hgroup h2 {
@@ -141,7 +142,6 @@ body.home {
 					&.secondary {
 					    padding: 0;
 					    background: none;
-					    width: 100%;
 
 					    @include break(mobile){
 					    	height: 290px;
@@ -156,6 +156,10 @@ body.home {
 
 							ul.featured-posts li {
 								width: 33%;
+
+							    @include break(mobile){
+							    	width: 82%;
+							    }
 							}
 
 							ul.featured-posts li a hgroup h2 {
