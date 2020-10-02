@@ -120,7 +120,7 @@
 				&:nth-child(1) {
 					top: 0; left: 0;
 					height: $tall-tile-height - $tile-padding;
-					width: calc($tile-width-percent*2 + 5px);
+					width: calc(66% + 5px);
 					a {
 						height: $tall-tile-height - 30px;
 						hgroup { h2 { font-size: $tall-tile-font-size; } }
@@ -271,7 +271,7 @@
 				&:nth-child(1) {
 					top: 0; left: 0;
 					height: $tall-tile-height - $tile-padding;
-					width: calc($tile-width-percent*2 + 5px);
+					width: calc(66% + 5px);
 					a { height: $tall-tile-height - 30px; hgroup { h2 { font-size: $tall-tile-font-size; } } }
 				}//nth
 				&:nth-child(2) {
