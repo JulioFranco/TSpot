@@ -111,24 +111,6 @@ body.interior {
 		}
 
 		@if $isAMP != 'true' {
-
-			@if $isDesk == 'true' {
-			img.big {
-				max-width: none;
-				width: 1020px;
-
-				@include break(big-desk){
-					width: $desk;
-				}
-				
-				@include break(v-tablet){
-					margin-left: 0 !important;
-					max-width: 100%;
-					width: 100%;
-				}
-			}
-			}//desk
-
 			img.dark-image {
 				filter: invert(0.9) hue-rotate(180deg);
 			}
