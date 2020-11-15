@@ -634,7 +634,7 @@ body.interior.download {
 @if $isAMP != 'true' {
 
 	.google-ads {
-		margin: 14px 0 10px -6px;
+		margin: 14px 0 10px -30px;
 		text-align: center;
 
 		&:before {
@@ -648,7 +648,7 @@ body.interior.download {
 		}
 
 		&.single {
-			margin: 24px 0 10px -6px;
+			margin: 24px 0 10px -30px;
 		}
 	}
 
