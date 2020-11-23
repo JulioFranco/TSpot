@@ -1303,6 +1303,108 @@ ul.pills {
 	}
 }
 
+
+@if $isAMP != 'true' {
+	.price_alert {
+		background: #ffe6ad;
+		margin: -5px 0 15px;
+		padding: 15px 10px 13px 15px;
+		min-height: 30px;
+		transition: all 0.25s linear;
+
+		&.soft {
+			background: #ced5de;
+			margin: -5px 0 40px;
+			text-align: center;
+		}
+		&.mob {
+			margin: 30px 0 5px;
+			padding: 6px 13px;
+		}
+
+		.pa-text {
+			display: inline-block;
+			font-size: 0.8em;
+			b {
+				font-weight: 500;
+				text-transform: uppercase;
+				font-size: 0.9em;
+			}
+			.doll {
+				font-weight: 500;
+				font-size: 1em;
+				padding-left: 2px;
+			}
+		}
+		.pa-text.mob {
+			line-height: 25px;
+			display: block;
+		}
+		.doubleh {
+			line-height: 40px;
+			text-align: center;
+			font-size: 1.1em;
+			input {
+				font-size: 0.8em;
+			}
+		}
+		.pa-new {
+			color: #339933;
+			font-size: 0.9em;
+			font-weight: 500;
+			padding: 0 5px 0 0;
+			text-transform: uppercase;
+		}
+		.pa-new.red {
+			color: #c00;
+		}
+		.message-text {
+			transition: all 0.25s linear;
+		}
+		.messageOutput {
+			font-size: 0.8em;
+			padding: 15px 0 8px 0;
+			text-align: center;
+			color: #05408f;
+		}
+	}
+
+	.price_notification {
+		.mob {
+			text-align: center;
+		}
+		input {
+			width: 100px;
+			margin: -5px 10px 0 10px;
+		}
+		input.uno {
+			width: 60px;
+			margin-left: 5px;
+		}
+		input.dos {
+			width: 140px;
+		}
+		button {
+			width: 100px;
+			height: 30px;
+			margin: -5px 10px 0 0;
+			cursor: pointer;
+		}
+		button.mob {
+			margin: 8px 0 5px 0;
+		}
+		.loading {
+			display: inline-block;
+			background-color: transparent;
+			height: 20px;
+			width: 20px;
+			margin: 0 0 0 10px;
+			background-size: contain;
+		}
+	}
+
+}
+
 .expert-reviews-and-ratings {
 	@extend %var_looked-at_expert-reviews;
 
