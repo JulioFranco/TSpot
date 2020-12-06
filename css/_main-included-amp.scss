@@ -1,6 +1,9 @@
 // ! Basic/Generic Styles ===========================================
 
 // For Both: AMP and Normal
+html {
+    scroll-behavior: smooth;
+}
 body {
 	background-color: $light-grey;
 	font-family: $f-primary;
@@ -42,6 +45,7 @@ a {
 	}
 }
 
+/*
 a.offset {
 	display: block; position: relative; top: -90px; visibility: hidden;
 	
@@ -51,6 +55,14 @@ a.offset {
 		}
 	}
 }
+
+.jumpFix {
+	display: block;
+	height: 140px;
+	margin: -140px 0 0;
+	visibility: hidden;
+}
+*/
 
 ul,ol {
 	margin: 0; padding: 0;
@@ -87,13 +99,6 @@ h2, h3, h4, h5 {
 .clearfix {
 	@include clearfix(before);
 	@include clearfix(after);
-}
-
-.jumpFix {
-	display: block;
-	height: 140px;
-	margin: -140px 0 0;
-	visibility: hidden;
 }
 
 .wrapper {
