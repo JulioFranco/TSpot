@@ -46,11 +46,22 @@
 					float: left;
 					margin: 5px 7px 0 -6px;
 				}
+				.svgcert {
+				    width: 19px; height: 19px;
+				    float: right;
+				    margin: 7px -6px 0 7px;
+				}
+
 			} @else {
 				.svgbars {
 				    width: 20px; height: 20px;
 				    float: left;
 				    margin: 6px 4px 0px -3px;
+				}
+				.svgcert {
+				    width: 18px; height: 18px;
+				    float: right;
+				    margin: 7px -4px 0 5px;
 				}
 			}
 
@@ -79,13 +90,13 @@
 			}
 
 			span.number {
-				background: #0557B5;
-				border-radius: 14px;
+				background: #4885DA;
+				border-radius: 20px;
 				text-align: center;
 				line-height: 18px;
 				color: #fff;
 				display: inline-block;
-				width: 18px;
+				width: 17px;
 				height: 17px;
 				font-size: 0.85em;
 				margin-left: 2px;
@@ -95,7 +106,8 @@
 
 			span.number.large {
 				line-height: 20px;
-				width: 22px;
+				padding-left: 1px;
+				width: 20px;
 				height: 20px;
 			}
 		}
