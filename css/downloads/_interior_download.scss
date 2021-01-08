@@ -62,6 +62,7 @@ body.interior {
 						@include break(v-mobile){
 							float: right;
 							margin: 0 0 0 10px;
+							padding-right: 0;
 						}
 
 						img {
@@ -89,7 +90,7 @@ body.interior {
 							padding: 2px 300px 12px 106px;
 
 							@include break(v-tablet){
-								padding: 0px;
+								padding: 0 110px 0 0;
 							}
 						}
 
