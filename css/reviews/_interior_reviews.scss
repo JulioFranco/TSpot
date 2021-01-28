@@ -247,6 +247,7 @@ body.interior {
 					} @else {
 						margin: 30px 0 0;
 						width: 94%;
+						border: none;
 
 						@include break(big-desk){
 							width: 100%;
@@ -260,7 +261,7 @@ body.interior {
 
 					strong {
 						line-height: 25px;
-						padding-bottom: 5px;
+						padding: 5px 0;
 						background: #ff7f00;
 						font-size: 0.9em;
 						color: white;
@@ -368,6 +369,7 @@ body.interior {
 				text-align: center;
 				font-size: .7em;
 				cursor: pointer;
+				font-weight: 500;
 			}
 			
 			section {
