@@ -15,15 +15,6 @@ img.responsive {
 	}
 }
 
-// 76px desktop, 88px mobile 
-:target {
-	scroll-margin-top: 91px;
-
-	@include break(mobile){
-		scroll-margin-top: 103px;
-	}
-}
-
 img.b-lazy {
 	-webkit-transition: ease .4s;
 	transition: ease .4s;

@@ -15,7 +15,8 @@ body.interior {
 				}
 
 				@if $isAMP == 'true' {
-				
+					margin: 15px 0 10px;
+					
 				} @else {
 
 					margin: 25px 0 5px;
@@ -40,7 +41,7 @@ body.interior {
 						margin: 0 10px 0 10px;
 
 						amp-img {
-							width: 65px;
+							width: 100px;
 						}
 					}
 					@else {
