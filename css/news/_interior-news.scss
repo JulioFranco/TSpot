@@ -21,16 +21,6 @@ body.interior {
 						margin-bottom: 25px;
 					}
 				}
-
-				/*
-				.connatix {
-					margin-top: 30px;
-
-					@include break(mobile) {
-						margin-top: 0;
-					}
-				}
-				*/
 				
 			}
 			.col-1-3-last {
@@ -91,13 +81,6 @@ body.interior {
 			.intro-image {
 				width: 100%;
 				height: auto;
-
-				/*
-					&.modgrey {
-						padding-top: 40px;
-						margin-top: -26px;
-					}
-				*/
 			}
 
 		}
@@ -728,12 +711,13 @@ body.interior {
 
 		#mobComBut {
 			text-align: center;
-			padding: 0 0 40px;
+			padding: 15px 0 40px;
 
 			&.solo {
 				padding: 15px 0;
 			}
 		}
+
 		.ComBut {
 			font-size: 1em;
 			display: block;
@@ -793,105 +777,122 @@ body.interior {
 	}
 }
 
-
+// more AMP fixes
+// --------------
 @if $isAMP == 'true' {
-body.interior {
-	.comment-count-block {
-		background-image: url('https://#{$staticServer}.techspot.com/images/icon-comments-lg.svg');
-		background-repeat: no-repeat;
-		background-position: left 5px;
-		height: 42px;
-		overflow: visible;
-		letter-spacing: -.333px;
-		font-family: $f-primary;
-		filter: grayscale(90%);
 
-		@if $isAMP == 'true' {
-			margin: 0 0 40px 0;
-		} @else {
-			float: left;
+// SERIES CSS
+	.clicktoplay {
+		display: none;
+	}
+	.triangleLogo {
+	    max-width: 80px;
+	    width: 80px;
+	    margin: 0 10px 10px 0;
+	    float: left;
+	}
 
-			&:hover {
-				filter: grayscale(40%);
-			}
-			
-			@include break(mobile) {
-				margin: 0 0 30px 0;
-			}
-		}
-
-		&.article {
-			margin-top: 20px;
-		}
-
-		&.features {
-			font-size: 0.8em;
-			font-weight: 400;
+	/*
+	//removed this, in favor of mobile button
+	body.interior {
+		.comment-count-block {
+			background-image: url('https://#{$staticServer}.techspot.com/images/icon-comments-lg.svg');
+			background-repeat: no-repeat;
+			background-position: left 5px;
+			height: 42px;
+			overflow: visible;
+			letter-spacing: -.333px;
+			font-family: $f-primary;
+			filter: grayscale(90%);
 
 			@if $isAMP == 'true' {
-				line-height: 2;
-
-				height: 42px;
-				margin-bottom: 15px;
-
+				margin: 0 0 40px 0;
 			} @else {
-				line-height: 2 !important;
-				height: 100px;
+				float: left;
 
+				&:hover {
+					filter: grayscale(40%);
+				}
+				
 				@include break(mobile) {
+					margin: 0 0 30px 0;
+				}
+			}
+
+			&.article {
+				margin-top: 20px;
+			}
+
+			&.features {
+				font-size: 0.8em;
+				font-weight: 400;
+
+				@if $isAMP == 'true' {
+					line-height: 2;
+
 					height: 42px;
 					margin-bottom: 15px;
+
+				} @else {
+					line-height: 2 !important;
+					height: 100px;
+
+					@include break(mobile) {
+						height: 42px;
+						margin-bottom: 15px;
+					}
+				}	
+				
+				.count {
+					font-size: 1.2em;
+					font-weight: 500;
 				}
-			}	
-			
-			.count {
-				font-size: 1.2em;
-				font-weight: 500;
+
+				a {
+					display: inline;
+					padding-left: 0;
+				}
+
+				ul {
+					li {
+						padding-left: 60px;
+					}
+				}
 			}
 
 			a {
-				display: inline;
-				padding-left: 0;
-			}
-
-			ul {
-				li {
-					padding-left: 60px;
-				}
-			}
-		}
-
-		a {
-			display: block;
-			line-height: 140%;
-			padding-left: 60px;
-
-			@if $isAMP == 'true' {
-				box-shadow: none;
-			} @else {
-				box-shadow: none !important;
-			}
-			
-			span {
 				display: block;
-				font-size: 1em;
-				
-				&.comment-count {
-					color: $red;
+				line-height: 140%;
+				padding-left: 60px;
 
-					@if $isAMP != 'true' {
-						&:hover {
-							font-weight: 500;
+				@if $isAMP == 'true' {
+					box-shadow: none;
+				} @else {
+					box-shadow: none !important;
+				}
+				
+				span {
+					display: block;
+					font-size: 1em;
+					
+					&.comment-count {
+						color: $red;
+
+						@if $isAMP != 'true' {
+							&:hover {
+								font-weight: 500;
+							}
 						}
 					}
-				}
-				&.interactions-count {
-					color: #39579D;
-					font-size: .86em;
-					line-height: 1.75;
+					&.interactions-count {
+						color: #39579D;
+						font-size: .86em;
+						line-height: 1.75;
+					}
 				}
 			}
 		}
 	}
-}
-}//amp
+	*/
+
+} //amp
