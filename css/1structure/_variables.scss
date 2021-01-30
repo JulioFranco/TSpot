@@ -15,8 +15,8 @@ $isAMP: 'false';
 
 // !GLOBAL RESPONSIVE VARIABLES
 $big-desk: 1250px;
-$desk: 1108px;
-$tablet: 1108px; // This needs to be the same as $desk to prevent a "no-mans-land" in breakpoints
+$desk: 1150px;
+$tablet: 1150px; // This needs to be the same as $desk to prevent a "no-mans-land" in breakpoints
 $v-tablet: 960px;
 $mobile: 760px;
 $v-mobile: 500px;
@@ -70,9 +70,8 @@ $b-radius: 6px;
 
 $speed: 1500ms;
 
-
 $header-height: 88px;
-$header-top-line-height: 50px;
+$header-top-line-height: 52px;
 
 $header-menu-height: 36px;
 $header-menu-line-height: 37px;
@@ -87,9 +86,10 @@ $header-interior-line-height-mobile: 45px;
 
 
 // !MASTHEAD
-$tile-height: 205px;
+$tile-height: 210px;
 $tall-tile-height: ($tile-height * 2) + 1;
 $tile-width: 371px;
+$tile-width-percent: 33%;
 
 $tile-height-sec: 185px;
 $tile-width-sec: 370px;
@@ -98,6 +98,7 @@ $tall-tile-font-size: 1.4em;
 $tile-font-size: 1.05em;
 
 $tile-padding: 5;
+$tile-padding-pct: 5px; 
 
 $mast-border-width: 1px;
 $mast-border-col: #fff;

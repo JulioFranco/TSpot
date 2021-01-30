@@ -155,6 +155,11 @@ body.interior.download {
 					@include break(mobile){
 						font-size: 1.4em !important;
 						line-height: 1.3;
+
+						&.driver {
+							font-size: 1.2em !important;
+							line-height: 1.25;
+						}
 					}
 				}
 			}
@@ -200,7 +205,6 @@ body.interior.download {
 
 		.product-details, .specs {
 			div {
-				line-height: 180%;
 
 				&.alt {
 					background-color: #F2F4F8;
@@ -208,8 +212,18 @@ body.interior.download {
 
 				@if $isAMP == 'true' {
 					padding-left: 8px;
+					line-height: 200%;
+
+					label {
+						font-weight: 500;
+						width: 100px;
+						display: inline-block;
+					}
+
 				}
 				@else {
+
+					line-height: 180%;
 
 					@include break(mobile){
 						line-height: 200%;
@@ -280,7 +294,9 @@ body.interior.download {
 		@if $isAMP == 'true' {
 			.product-details {
 				font-size: 1.1em;
+			    padding: 5px 10px 0;
 			}
+
 		} @else {
 			.product-details {
 				@include col(1,2,0);
@@ -408,14 +424,6 @@ body.interior.download {
 				width: 46%;
 				padding: 5px 10px 15px 0;
 
-				/*
-					@if $isDesk == 'true' {
-					@include break(v-tablet){
-						padding: 5px 0 0 35px;
-						width: 43%;
-					}}
-				*/
-
 				@include break(mobile){
 					@include col(1,1,0);
 					border: 0;
@@ -426,11 +434,13 @@ body.interior.download {
 				}
 			}
 			@else {
-				h2 {
-					font-size: 1.5em;
-				    color: #333;
-				    line-height: 2.5;
-				}
+				/*
+					h2 {
+						font-size: 1.5em;
+					    color: #333;
+					    line-height: 2.5;
+					}
+				*/
 			}
 
 			.download_options, .specs {
@@ -441,7 +451,7 @@ body.interior.download {
 					margin: 0 0 0 -10px;
 				}
 				@else {
-					padding: 10px 0 30px;
+					padding: 10px 0 20px;
 				}
 			}
 			.download_options {
@@ -450,16 +460,15 @@ body.interior.download {
 
 			.download_certified {
 				margin: 20px auto;
+				@if $isAMP == 'true' {
+					max-width: 330px;
+				}
 			}
 
 			.editors_pick {
 				@if $isAMP == 'true' {
-					margin: 12px 0;
-
-					amp-img {
-						width: 260px;
-						height: 78px;
-					}
+					margin: 20px 0 35px;
+					max-width: 330px;
 				}
 				@else {
 					margin: 20px auto 10px;
@@ -487,7 +496,7 @@ body.interior.download {
 					display: inline-block;
 					width: 200px;
 					height: 41px;
-					background: url('https://#{$staticServer}.techspot.com/images/download_button_3h.png') no-repeat;
+					background: url('https://#{$staticServer}.techspot.com/images/download_button_4j.png') no-repeat;
 					position: relative;
 					background-size: 200px 82px;
 					span {
@@ -495,11 +504,11 @@ body.interior.download {
 						overflow: hidden;
 						position: absolute;
 						width: 38px;
-						left: 10px;
+						left: 9px;
 						height: 41px;
 						background: url('https://#{$staticServer}.techspot.com/images/download_button_arrow3.png') 0 0;
 						background-size: contain;
-						transition: all 0.15s linear;
+						transition: all 0.17s linear;
 					}
 					@if $isAMP != 'true' {
 						&:hover {
@@ -621,7 +630,6 @@ body.interior.download {
 						}
 					}
 				}
-
 			}
 		}
 	}
@@ -633,8 +641,22 @@ body.interior.download {
 
 @if $isAMP != 'true' {
 
+	.downloadav {
+	   background-image: url('https://static.techspot.com/images/downloads/buttons/avira-download-2020-11b.png');
+		height: 118px;
+		width: 268px;
+		background-size: 268px 118px;
+		margin: 15px 0 12px;
+		transition: all 0.15s linear;
+		overflow: hidden;
+	}
+
+	.downloadav:hover {
+	   background-image: url('https://static.techspot.com/images/downloads/buttons/avira-download-2020-11bh.png');
+	}
+
 	.google-ads {
-		margin: 14px 0 10px -6px;
+		margin: 14px 0 10px -30px;
 		text-align: center;
 
 		&:before {
@@ -648,7 +670,7 @@ body.interior.download {
 		}
 
 		&.single {
-			margin: 24px 0 10px -6px;
+			margin: 24px 0 10px -30px;
 		}
 	}
 
@@ -689,7 +711,7 @@ body.interior.download {
 		}
 	}
 	.tabs.description {
-		padding: 45px 0 0;
+		padding: 25px 0 0;
 	}
 
 

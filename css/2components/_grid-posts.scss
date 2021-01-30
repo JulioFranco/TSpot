@@ -188,18 +188,18 @@
 					}
 
 					&:nth-child(3) {
-						left: $tile-width;
+						left: calc(#{$tile-width-percent} + #{$tile-padding-pct});
 
 					}
 
 					&:nth-child(4) {
 						top: 0;
-						left: $tile-width*2;
+						left: calc(#{$tile-width-percent*2} + #{$tile-padding-pct*2});
 
 					}
 
 					&:nth-child(5) {
-						left: $tile-width*2;
+						left: calc(#{$tile-width-percent*2} + #{$tile-padding-pct*2});
 						top: ($tile-height-sec + 1);
 					}
 				}
@@ -218,23 +218,22 @@
 					}
 
 					&:nth-child(3) {
-						left: $tile-width;
-
+						left: calc(#{$tile-width-percent} + #{$tile-padding-pct});
 					}
 
 					&:nth-child(4) {
-						left: $tile-width;
+						left: calc(#{$tile-width-percent} + #{$tile-padding-pct});
 						top: ($tile-height-sec + 1);
 
 					}
 
 					&:nth-child(5) {
 						top: 0;
-						left: $tile-width*2;
+						left: calc(#{$tile-width-percent*2} + #{$tile-padding-pct*2});
 					}
 
 					&:nth-child(6) {
-						left: $tile-width*2;
+						left: calc(#{$tile-width-percent*2} + #{$tile-padding-pct*2});
 						top: ($tile-height-sec + 1);
 					}
 				}
