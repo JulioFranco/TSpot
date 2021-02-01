@@ -60,23 +60,6 @@ body.interior {
 		}
 
 		#content {
-			.social-column {
-				position: relative;
-				z-index: 1;
-				width: 90px;
-				display: inline-block;
-				float: left;
-				list-style-type: none;
-
-				.social-widget {
-					margin: 0;
-				}
-
-				@include break(mobile){
-					@include col(1,1,0);
-					margin-bottom: 25px;
-				}
-			}
 			
 			.articleBody {
 				margin-bottom: 30px;

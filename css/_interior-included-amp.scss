@@ -165,6 +165,47 @@ body.interior {
 		}
 	}
 
+	.social-column {
+		@if $isAMP != 'true' {
+			display: inline-block;
+			float: left;
+			position: relative;
+			z-index: 1;
+			width: 90px;
+			list-style-type: none;
+
+			.social-widget {
+				margin: 0;
+			}
+
+			@include break(mobile){
+				//@include col(1,1,0);
+				width: 100%;
+				margin-bottom: 25px;
+			}
+
+		} @else {
+
+			display: inline-block;
+			float: left;
+			position: relative;
+			list-style-type: none;
+			width: 100%;
+			margin-bottom: 25px;
+
+			.social-widget {
+				margin: 0;
+			}
+
+			&.feature {
+				margin: 0 2% 25px;
+			}
+
+		}
+
+
+	}
+
 	&.news,
 	&.product,
 	&.category,

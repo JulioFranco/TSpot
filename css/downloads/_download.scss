@@ -444,14 +444,14 @@ body.interior.download {
 			}
 
 			.download_options, .specs {
-				
+				border-radius: 3px;
+				margin: 0 0 0 -10px;
+
 				@if $isAMP != 'true' {
 					padding: 10px;
-					border-radius: 3px;
-					margin: 0 0 0 -10px;
 				}
 				@else {
-					padding: 10px 0 20px;
+					padding: 10px 10px 20px 10px;
 				}
 			}
 			.download_options {
@@ -460,6 +460,7 @@ body.interior.download {
 
 			.download_certified {
 				margin: 20px auto;
+				
 				@if $isAMP == 'true' {
 					max-width: 330px;
 				}
