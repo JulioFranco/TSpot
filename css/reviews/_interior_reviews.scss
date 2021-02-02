@@ -785,15 +785,17 @@ body.interior {
 						&.twitter {
 							margin-left: 12.5%+17*1;
 						}
-						&.reddit {
-							margin-left: 12.5%+17*2;
+						&.whatsapp {
+							margin-left: 12.5%+17*2; 
 						}
+						&.reddit {
+							margin-left: 12.5%+17*3;
+						}
+						/*
 						&.rss {
 							margin-left: 12.5%+17*3;
 						}
-						&.whatsapp {
-							margin-left: 12.5%+17*3; 
-						}
+						*/
 						&.comments {
 							margin-left: 12.5%+17*4;
 						}
@@ -875,7 +877,7 @@ body.interior {
 
 					@if $isDesk == 'true' {
 						&:hover{
-							background-color: #ff5700;
+							background-color: #E18C4B;
 							background-position: right -175px;
 						}
 					}
@@ -943,7 +945,7 @@ body.interior {
 				}//desk
 
 				@include break(mobile){
-					background-image: url('https://#{$staticServer}.techspot.com/images/social-widget-bg-90.svg?v=#{$social-icons-version}');
+					background-image: url('https://#{$staticServer}.techspot.com/images/social-widget-bg-91.svg?v=#{$social-icons-version}');
 					margin-left: 30%;
 					margin-top: -30px;
 					width: 32px;
@@ -971,19 +973,21 @@ body.interior {
 
 					&.reddit {
 						width: 32px;
-						margin-left: 30%+13.5*2;
+						margin-left: 30%+13.5*3;
 						background-position: -189px 1px;
 					}
 					
+					/*
 					&.rss {
 						width: 30px;
 						margin-left: 30%+13.5*3;
 						background-position: -97px 1px;
 					}
+					*/
 
 					&.whatsapp {
 						width: 30px;
-						margin-left: 30%+13.5*3;
+						margin-left: 30%+13.5*2;
 						background-position: -158px 1px;
 					}
 					
