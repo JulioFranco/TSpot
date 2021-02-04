@@ -203,12 +203,38 @@ body.interior {
 				padding-bottom: 1px;
 				border-bottom: 1px solid #c00;
 			}
+			.ad_home_driver {
+				padding: 10px 0 40px;
+			}
+			.browse_all{
+				margin: -20px 0 40px 0;
+			}
+
+			@include break(mobile) {
+				.similar-software {
+					font-size: 0.9em;
+
+					.title a {
+					    font-size: 1.4em;
+					}
+				}
+				.browse_all{
+					margin: -20px 0 60px 0;
+				}
+			}
 		}
-		.ad_home_driver {
-			padding: 10px 0 40px;
-		}
-		.browse_all{
-			margin: -20px 0 10px 0;
+		@else {
+			.downloads-list.similar-software ul li {
+				.title a {
+					font-size: 1.3em;
+				}
+				li.left {
+					padding-left: 8px;
+				}
+			}
+			.browse_all{
+				margin: -20px 0 30px 10px;
+			}
 		}
 		//End
 
