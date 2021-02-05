@@ -53,21 +53,36 @@
 						}
 						
 						&.login {
+							/*
 							background-image: url('https://#{$staticServer}.techspot.com/images/user-account.svg');
 							background-repeat: no-repeat;
 							background-position: 8px center;
 							background-size: 26px;
-							padding-right: 14px;
 							margin-right: 10px;
+							*/
+
+							margin-right: 5px;
+							padding-right: 14px;
 							position: relative;
 
 							@include break(mobile) {
+								/*
+								background-position: center center;
+								margin-right: 0;
+								*/
 								width: 40px;
 								padding-right: 0;
-								margin-right: 0;
-								background-position: center center;
 							}
 							
+							svg {
+							    float: left;
+							    transform: translate(-4px, 12px);
+
+								@include break(mobile) {
+									transform: translate(0px, 9px);
+								}
+							} 
+
 							&.hover {
 								background-color: $orange;
 								.loginEspBlock {display: block;}
@@ -75,13 +90,14 @@
 
 							a {
 								display: block;
-								padding-left: 38px;
+								//padding-left: 38px;
 								text-transform: uppercase;
 								font-weight: 400;
 								letter-spacing: 0.2px;
+								padding-left: 12px;
 
 								@include break(mobile) {
-									padding-left: 0px;
+									//padding-left: 0px;
 									text-indent: -9999px;
 								}
 							}
@@ -378,22 +394,37 @@
 						}
 
 						&.search {
+							/*
 							background-image: url('https://#{$staticServer}.techspot.com/images/search-icon.svg');
 							background-position: center center;
-							width: 32px;
 							background-color: black;
-							position: relative;
-							text-indent: -9999px;
 							background-repeat: no-repeat;
+							text-indent: -9999px;
+							*/
+
+							width: 32px;
+							position: relative;
+							line-height: 52px;
+
+							@include break(mobile){
+								line-height: 45px;
+							}
+
+							svg {
+								transform: translate(6px, 5px);
+
+								@include break(mobile){
+									transform: translate(6px, 4px)
+								}
+							}
 							
 							&.active,
 							&.hover {
 								background-color: $orange;
-								
+
 								form {
 									display: block;
 								}
-								
 							}
 							
 							form {
@@ -404,6 +435,7 @@
 								width: 220px;
 								height: $header-top-line-height;
 								z-index: 90;
+
 								input {
 									display: block;
 									width: 100%;
@@ -441,6 +473,7 @@
 					}
 				}
 			}
+
 			.elite {
 				float: left;
 				color: #cccccc;
@@ -975,24 +1008,42 @@
 					}
 					ul {
 						li {
+							
 							line-height: $header-interior-line-height;
+							
 							@include break(mobile){
 								line-height: $header-interior-line-height-mobile;
 							}
+
 							&.login {
+								svg {
+								    transform: translate(-4px, 4px);
+
+									@include break(mobile) {
+										transform: translate(0px, 9px);
+									}
+								}
+
 								@include break(mobile) {
 									padding-right: 0px;
-									background-position: center center;
 									width: 40px;
 								}
+
 							}
+
 							&.social {
 								&.search {
+									line-height: 38px;
+	
+									/*
 									@include break(mobile){
 										background-position: center center;
 									}
+									*/
+								
 									form {
 										top: $header-interior-line-height;
+									
 										@include break(mobile){
 											top: $header-interior-line-height-mobile;
 										}
