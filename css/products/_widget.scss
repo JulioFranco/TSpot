@@ -193,21 +193,11 @@
 			}
 			.price, .meta, .user_score {
 				width: 28%;
-				padding: 5px 5px 0;
+				padding: 5px 5px 8px;
 				display: inline-block;
 			}
 
-			.price_history_mob {
-			    display: block;
-			    background-color: #ddd;
-			    line-height: 2;
-			    color: #666;
-			    text-transform: uppercase;
-			    margin: 5px 0 0;
-			    font-family: $f-condensed;
-			}
-
-			.price_history {
+			.price_history_mob, .price_history, .mobilehide {
 			    display: none
 			}
 		}

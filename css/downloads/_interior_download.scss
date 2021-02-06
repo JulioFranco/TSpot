@@ -625,6 +625,10 @@ body.interior {
 
 		@if $isAMP == 'true' {
 
+			.download_container {
+			    margin-left: -6px;
+			}
+
 			.title {
 		    	font-weight: 500;
 		    	padding: 4px 8px;
