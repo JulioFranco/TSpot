@@ -296,20 +296,25 @@ footer {
 	}
 	
 	a.back-to-top {
+		/*
+		background-image: url('https://#{$staticServer}.techspot.com/images/glyph-back-to-top.svg');
+		background-repeat: no-repeat;
+		*/
+
 		position: absolute;
 		margin-top: -22px;
 		left: 50%;
 		width: 50px;
 		height: 50px;
 		margin-left: -25px;
-		background-image: url('https://#{$staticServer}.techspot.com/images/glyph-back-to-top.svg');
-		background-repeat: no-repeat;
 		z-index: 5;
 		
 		@if $isAMP != 'true' {
 		@if $isDesk == 'true' {
 			&:hover {
-				background-position: right top;
+				#ts-triangle{
+				    fill: #EF8632;
+				}
 			}
 		}
 		}
