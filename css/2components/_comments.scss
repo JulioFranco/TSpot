@@ -28,15 +28,23 @@
 		}
 
 		a.post-new-comment {
-			display: inline-block;
-			font-family: $f-condensed;
+			/*
 			background-image: url('https://#{$staticServer}.techspot.com/images/glyph-orange.svg');
 			background-position: left 10px;
 			background-repeat: no-repeat;
+			*/
+
+			display: inline-block;
+			font-family: $f-condensed;
 			font-size: .80em;
 			color: $dark-grey;
 			margin-bottom: 10px;
-			padding: 10px 0 15px 28px;
+			padding: 12px 0 15px 0px;
+
+			svg {
+			    float: left;
+			    margin: -2px 6px 0 0;
+			}
 		}
 
 		.comment {
