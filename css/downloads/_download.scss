@@ -461,16 +461,11 @@ body.interior.download {
 
 			.download_certified {
 				margin: 20px auto;
-				
-				@if $isAMP == 'true' {
-					max-width: 330px;
-				}
 			}
 
 			.editors_pick {
 				@if $isAMP == 'true' {
-					margin: 20px 0 35px;
-					max-width: 330px;
+					margin: 20px auto 35px;
 				}
 				@else {
 					margin: 20px auto 10px;
