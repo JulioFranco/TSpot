@@ -68,8 +68,8 @@
 							@include break(mobile) {
 								/*
 								background-position: center center;
-								margin-right: 0;
 								*/
+								margin: 0;
 								width: 40px;
 								padding-right: 0;
 							}
@@ -79,7 +79,7 @@
 							    transform: translate(-4px, 12px);
 
 								@include break(mobile) {
-									transform: translate(0px, 9px);
+									transform: translate(7px, 9px);
 								}
 							} 
 
@@ -90,14 +90,13 @@
 
 							a {
 								display: block;
-								//padding-left: 38px;
 								text-transform: uppercase;
 								font-weight: 400;
 								letter-spacing: 0.2px;
 								padding-left: 12px;
 
 								@include break(mobile) {
-									//padding-left: 0px;
+									padding-left: 0px;
 									text-indent: -9999px;
 								}
 							}
@@ -1020,7 +1019,7 @@
 								    transform: translate(-4px, 4px);
 
 									@include break(mobile) {
-										transform: translate(0px, 9px);
+										transform: translate(7px, 9px);
 									}
 								}
 
