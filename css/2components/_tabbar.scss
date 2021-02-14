@@ -50,6 +50,27 @@
 			height: 20px;
 		}
 
+		&.pricetab {
+			background-color: #59a059;
+			color: white;
+		
+			@if $isAMP != 'true' {
+				&:hover {
+					background-color: #339933;
+				}
+			}
+		}
+		&.pricehistorytab {
+			background-color: #598ca0d4;
+			color: white;
+		
+			@if $isAMP != 'true' {
+				&:hover {
+					background-color: #529cb9d4;
+				}
+			}
+		}
+
 		@if $isAMP != 'true' {
 			&:hover {
 				background-color: #d3dce6;
@@ -92,22 +113,6 @@
 				
 				&:hover {
 					color: #1e2933;
-				}
-			}
-			&.pricetab {
-				background-color: #59a059;
-				color: white;
-			
-				&:hover {
-					background-color: #339933;
-				}
-			}
-			&.pricehistorytab {
-				background-color: #598ca0d4;
-				color: white;
-			
-				&:hover {
-					background-color: #529cb9d4;
 				}
 			}
 		}

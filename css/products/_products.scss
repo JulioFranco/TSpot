@@ -162,40 +162,6 @@ body.interior {
  			}
 		}
 
-		.product_description {
-			font-size: 1.1em;
-			line-height: 1.4;
-			color: #888;
-		    float: left;
-		    font-family: $f-paragraph;
-		    margin-right: 15px;
-
-	    	&.smaller {
-	    		font-size: 1em;
-	    		line-height: 1.5;
-	    	}
-
-		    p {
-			    padding: 0;
-		    }
-
-		    @include break(mobile){
-		    	font-size: 1em;
-		    	margin: 5px 0 12px;
-
-		    	&.smaller {
-		    		font-size: 0.85em;
-		    	}
-		    }
-		}
-
-		.reviewed_by {
-			display: inline-block;
-		    text-align: left;
-		    font-size: 0.7em;
-		    color: #555;
-		}
-
 		.newver {
 		  margin-bottom: 22px;
 		  padding-bottom: 20px;
@@ -435,6 +401,40 @@ body.interior {
 
 
 		}
+	}// cierro amp?
+
+	.product_description {
+		font-size: 1.1em;
+		line-height: 1.4;
+		color: #888;
+	    float: left;
+	    font-family: $f-paragraph;
+	    margin-right: 15px;
+
+    	&.smaller {
+    		font-size: 1em;
+    		line-height: 1.5;
+    	}
+
+	    p {
+		    padding: 0;
+	    }
+
+	    @include break(mobile){
+	    	font-size: 1em;
+	    	margin: 5px 0 12px;
+
+	    	&.smaller {
+	    		font-size: 0.85em;
+	    	}
+	    }
+	}
+
+	.reviewed_by {
+		display: inline-block;
+	    text-align: left;
+	    font-size: 0.7em;
+	    color: #555;
 	}
 
 	.product-desc {
