@@ -1,124 +1,126 @@
 body.interior {
 
-	&.products-cat {
-		.filter_bar {
-			background: #fff;
-			padding: 8px 12px;
-			border: 1px solid #e5e5e5;
-			border-top: 0;
-			font-size: 11px;
+	@if $isAMP != 'true' {
+		&.products-cat {
+			.filter_bar {
+				background: #fff;
+				padding: 8px 12px;
+				border: 1px solid #e5e5e5;
+				border-top: 0;
+				font-size: 11px;
 
-			.pills {
-				display: inline;
-				padding-left: 2px;
-			}
-
-			.sorter {
-				float: right;
-				font-size: 12px;
-				position: relative;
-				color: #555;
-				text-align: right;
-				z-index: 999;
-
-				@include break(v-mobile){
-					display: none !important;
+				.pills {
+					display: inline;
+					padding-left: 2px;
 				}
 
-				#sorted_by {
-					font-weight: 500;
-					text-transform: lowercase;
-				}
+				.sorter {
+					float: right;
+					font-size: 12px;
+					position: relative;
+					color: #555;
+					text-align: right;
+					z-index: 999;
 
-				ul {
-					position: absolute;
-					display: none;
-					right: 0;
-					top: 18px;
-					width: 120px;
-					background: #F4F5F7;
-					text-align: left;
-					border: 1px solid #ccc;
-					border-radius: 2px;
-					box-shadow: 0 1px 2px rgba(0,0,0,0.25);
-				}
+					@include break(v-mobile){
+						display: none !important;
+					}
 
-				a {
-					color: #333;
-					background: none !important;
-					padding: 0;
-					text-shadow: none !important;
-				}
+					#sorted_by {
+						font-weight: 500;
+						text-transform: lowercase;
+					}
 
-				li {
-					background: none;
-					display: block;
-					border: 0;
-					height: 25px;
-					line-height: 25px;
-					margin: 0;
-					padding: 0;
-
-					.smaller {
-						font-size: 11px;
+					ul {
+						position: absolute;
+						display: none;
+						right: 0;
+						top: 18px;
+						width: 120px;
+						background: #F4F5F7;
+						text-align: left;
+						border: 1px solid #ccc;
+						border-radius: 2px;
+						box-shadow: 0 1px 2px rgba(0,0,0,0.25);
 					}
 
 					a {
-						display: block;
-						padding: 0 5px;
-						transition: none;
+						color: #333;
+						background: none !important;
+						padding: 0;
+						text-shadow: none !important;
+					}
 
-						&:hover {
-							background: #32404D !important;
-							color: #fff;
-							text-decoration: none;
+					li {
+						background: none;
+						display: block;
+						border: 0;
+						height: 25px;
+						line-height: 25px;
+						margin: 0;
+						padding: 0;
+
+						.smaller {
+							font-size: 11px;
+						}
+
+						a {
+							display: block;
+							padding: 0 5px;
+							transition: none;
+
+							&:hover {
+								background: #32404D !important;
+								color: #fff;
+								text-decoration: none;
+							}
 						}
 					}
 				}
-			}
 
-			.filter {
-				border-top: 1px solid #e5e5e5;
-				margin: 5px -10px -5px;
-				height: 30px;
-				padding: 0 10px;
-				line-height: 30px;
-				font-size: 12px;
-				background: #f0f0f0;
-				position: relative;
-				display: none;
-				background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.4), rgba(255,255,255,0));
-				background-image: linear-gradient(top, rgba(255,255,255,0.4), rgba(255,255,255,0));
+				.filter {
+					border-top: 1px solid #e5e5e5;
+					margin: 5px -10px -5px;
+					height: 30px;
+					padding: 0 10px;
+					line-height: 30px;
+					font-size: 12px;
+					background: #f0f0f0;
+					position: relative;
+					display: none;
+					background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.4), rgba(255,255,255,0));
+					background-image: linear-gradient(top, rgba(255,255,255,0.4), rgba(255,255,255,0));
 
-				.remove {
-					position: absolute;
-					right: 10px;
-					opacity: 0.75;
+					.remove {
+						position: absolute;
+						right: 10px;
+						opacity: 0.75;
 
-					&:hover {
-						opacity: 1;
+						&:hover {
+							opacity: 1;
+						}
+					}
+
+					b {
+						color: #27333D;
+					}
+
+					input, select {
+						font-size: 12px;
+						font-family: Arial, Helvetica, sans-serif;
+					}
+
+					input[type="number"] {
+						width: 60px;
+						border: 1px solid #9f9fa1;
+						text-align: right;
+						border-radius: 2px;
 					}
 				}
 
-				b {
-					color: #27333D;
+				div.active {
+					display: block !important;
 				}
-
-				input, select {
-					font-size: 12px;
-					font-family: Arial, Helvetica, sans-serif;
-				}
-
-				input[type="number"] {
-					width: 60px;
-					border: 1px solid #9f9fa1;
-					text-align: right;
-					border-radius: 2px;
-				}
-			}
-
-			div.active {
-				display: block !important;
 			}
 		}
 	}
@@ -1061,92 +1063,96 @@ body.interior {
 	}
 }
 
-#CategoryList {
-	.SideProdContent {
-		padding: 17px;
-		background-color:#324455;
+@if $isAMP != 'true' {
+	#CategoryList {
+		.SideProdContent {
+			padding: 17px;
+			background-color:#324455;
 
-		@include break(v-tablet){
-			padding: 10px 0px 10px 10px;
-		}
+			@include break(v-tablet){
+				padding: 10px 0px 10px 10px;
+			}
 
-		li {
-			line-height: 10px;
-			margin-bottom: 14px;
-			a {
-				.arrow {
+			li {
+				line-height: 10px;
+				margin-bottom: 14px;
+				a {
+					.arrow {
+						margin: 0 !important;
+						opacity: 0;
+						position: absolute;
+						left: -10px;
+						width: 6px; height: 4px;
+						@include triangle(right,$orange,4,6);
+					}
+				}
+				a:hover,
+				a.active {
+					.arrow {
 					margin: 0 !important;
-					opacity: 0;
-					position: absolute;
+					opacity: 1;
 					left: -10px;
 					width: 6px; height: 4px;
 					@include triangle(right,$orange,4,6);
-				}
-			}
-			a:hover,
-			a.active {
-				.arrow {
-				margin: 0 !important;
-				opacity: 1;
-				left: -10px;
-				width: 6px; height: 4px;
-				@include triangle(right,$orange,4,6);
+					}
 				}
 			}
 		}
-	}
-	.computer-hardware {
-		height: 135px;
-	}
-	.pcs-devices {
-		height: 40px;
-	}
-	.electronics {
-		height: 85px;
-	}
-}
-
-.products-cat time{
-	display: block !important;
-}
-
-ul.pills {
-	li {
-		display: inline-block;
-		padding: 2px 5px;
-		font-weight: 500;
-		font-size: 1em;
-		line-height: 1.5em;
-		@include border-radius(2px);
-	
-		a {
-			color: white;
-			text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+		.computer-hardware {
+			height: 135px;
 		}
-	
-		&.checked {
-			padding-right: 0px;
-			a {
-				padding-right: 17px;
-				background: url('https://#{$staticServer}.techspot.com/images/pf_filter_remove_small.png') right center no-repeat;
-			}
+		.pcs-devices {
+			height: 40px;
 		}
+		.electronics {
+			height: 85px;
+		}
+	}
+
+
+	.products-cat time{
+		display: block !important;
+	}
+
+	ul.pills {
+		li {
+			display: inline-block;
+			padding: 2px 5px;
+			font-weight: 500;
+			font-size: 1em;
+			line-height: 1.5em;
+			@include border-radius(2px);
 		
-		&.blue {
-			background: $blue;
-			&:hover {
-				background: #05408f;
+			a {
+				color: white;
+				text-shadow: 0 1px 1px rgba(0,0,0,0.5);
 			}
-		}
-	
-		&.grey {
-			background: #888;
-			&:hover {
-				background: #27333D;
+		
+			&.checked {
+				padding-right: 0px;
+				a {
+					padding-right: 17px;
+					background: url('https://#{$staticServer}.techspot.com/images/pf_filter_remove_small.png') right center no-repeat;
+				}
+			}
+			
+			&.blue {
+				background: $blue;
+				&:hover {
+					background: #05408f;
+				}
+			}
+		
+			&.grey {
+				background: #888;
+				&:hover {
+					background: #27333D;
+				}
 			}
 		}
 	}
 }
+
 
 %var_looked-at_expert-reviews {
 	@if $isAMP == 'true' {
