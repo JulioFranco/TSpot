@@ -308,6 +308,7 @@ footer {
 		height: 50px;
 		margin-left: -25px;
 		z-index: 5;
+		overflow: hidden;
 		
 		@if $isAMP != 'true' {
 		@if $isDesk == 'true' {

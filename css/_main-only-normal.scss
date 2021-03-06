@@ -680,22 +680,32 @@ table {
 		margin: 0 auto;
 		text-align: center;
 		min-height: 90px;
+		height: 90px;
+		min-width: 728px;
+		width: 728px;
+		overflow: hidden;
 	}
 
 	.billboard_placeholder {
+		position: relative;
 		padding: 17px 0 15px;
 		margin: 0 auto;
 		text-align: center;
+		min-width: 970px;
+		width: 970px;
 		min-height: 250px;
-		position: relative;
+		height: 250px;
+		overflow: hidden;
 
+		/*
 		#nsgpt-billboard-1 {
 			margin: 0;
 		    position: absolute;
 		    top: 50%;
 		    left: 50%;
 		    transform: translate(-50%, -50%);
-		}		
+		}
+		*/
 	}
 
 }//desk
