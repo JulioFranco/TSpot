@@ -29,7 +29,7 @@ body.interior {
 			}
 
 			&.subtitleMob {
-				color: #888;
+				color: $light-grey2;
 				font-weight: 400;
 			}
 		}
@@ -290,7 +290,7 @@ body.interior {
 				}
 
 				h2 {
-					color: #888;
+					color: $light-grey2;
 					font-size: 1.1em;
 					font-weight: 400;
 					font-family: Roboto;

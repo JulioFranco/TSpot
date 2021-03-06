@@ -63,10 +63,10 @@
 				display: inline-block;
 				float: right;
 				font-size: .9em;
-				color: #888;
+				color: $light-grey2;
 
 				a {
-					color: #888;
+					color: $light-grey2;
 				}
 			}
 
@@ -74,10 +74,10 @@
 				float: left;
 				display: inline-block;
 				font-size: 0.9em;
-				color: #888;
+				color: $light-grey2;
 				margin-right: 5px;
 
-				a { color:#888; }
+				a { color:$light-grey2; }
 			}
 
 			img.user-avatar {
@@ -167,7 +167,7 @@
 					display: block;
 					text-align: center;
 					font-weight: 400;
-					color: #888;
+					color: $light-grey2;
 					background-color: #fafafa;
 
 					&:hover{

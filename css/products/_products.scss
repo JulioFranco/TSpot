@@ -228,7 +228,7 @@ body.interior {
 		  margin: 10px 10px 20px 10px;
 
 		  a {
-		    color: #888;
+		    color: $light-grey2;
 
 		    &:hover {
 		      color: #c00;
@@ -408,7 +408,7 @@ body.interior {
 	.product_description {
 		font-size: 1.1em;
 		line-height: 1.4;
-		color: #888;
+		color: $light-grey2;
 	    float: left;
 	    font-family: $f-paragraph;
 	    margin-right: 15px;
@@ -1144,7 +1144,7 @@ body.interior {
 			}
 		
 			&.grey {
-				background: #888;
+				background: $light-grey2;
 				&:hover {
 					background: #27333D;
 				}
@@ -1489,7 +1489,7 @@ body.interior {
 					display: block;
 					margin-top: -10px;
 					font-size: 0.8em;
-					color: #888;
+					color: $light-grey2;
 				}
 			}
 

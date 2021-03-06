@@ -23,6 +23,7 @@ ul.category-chicklets {
 			line-height: 21px;
 
 			&.black { color: #000; }
+			
 		}
 
 		&.blue, &.reviews, &.techspot																						{ background-color: $blue;		@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten($blue,8%); } } } }
@@ -35,7 +36,7 @@ ul.category-chicklets {
 		&.green, &.hardware, &.drivers																						{ background-color: $green;		@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten($green,4%); } } } }	
 		&.green2, &.science																									{ background-color: $dark-green;@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten($dark-green,8%); } } } }
 		&.green3, &.features, &.monitors, &.google																			{ background-color: #237A3C;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#237A3C,6%); } } } }
-		&.green4, &.mobile, &.smartphones																					{ background-color: #24a887;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#24a887,6%); } } } }
+		&.green4, &.mobile, &.smartphones																					{ background-color: #3a927c;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#3a927c,6%); } } } }
 
 		&.purple, &.software, &.culture, &.tech-culture																		{ background-color: $purple;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten($purple,6%); } } } }
 		&.purple2, &.electronics, &.audio, &.cpu, &.motherboards, &.input-devices, &.cases									{ background-color: #5353ac;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#5353ac,5%); } } } }
@@ -47,7 +48,7 @@ ul.category-chicklets {
 		&.red4, &.crimson, &.tag2																							{ background-color: #8f1515;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#8f1515,5%); } } } }
 
 		&.dotw, &.car-tech, &.yellow2																						{ background-color: #DD9C08;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#DD9C08,4%); } } } }
-		&.grey, &.natw																										{ background-color: #888888;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#888888,8%); } } } }
+		&.grey, &.natw																										{ background-color: $light-grey2;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten($light-grey2,8%); } } } }
 		&.deals 																											{ background-color: #779954;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#779954,8%); } } } }
 		&.wof	 																											{ background-color: #85B200;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#85B200,4%); } } } }
 
