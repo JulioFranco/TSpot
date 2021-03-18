@@ -559,15 +559,15 @@
 						}
 						
 						&:hover {
-							background-color: #6D7075;
-							transition: 0.1s ease-in-out;
+							background-color: #787D81;
+							transition: 0.2s ease-in-out;
 						}
 
 						.SubHeader {
 							background: #777D82; 
 							text-align: center;
-							box-shadow: inset 0px 3px 0px 0px rgba(0,0,0,0.10);
-							height: 37px;
+							//box-shadow: inset 0px 3px 0px 0px rgba(0,0,0,0.10);
+							height: 39px;
 							padding-top: 1px;
 
 							li {
@@ -577,35 +577,46 @@
 								display: inline-block;
 								text-transform: none;
 								color: white;
-								line-height: 20px;
+								line-height: 5px;
+								border-left: 5px solid #9c9c9c;
+								padding-left: 7px;
 
 								a {
 			    					color: #fff;
 									position: relative;
 									display: block;
 									letter-spacing: -0.1px;
-									font-size: 0.97em;
+									font-size: .925em;
+									text-transform: uppercase;
+									font-weight: 500;
+
+									&:hover {
+										text-decoration: none;
+										color: #ddd;
+									}
 								}
 							}
+							/*
 							li:hover {
 								border-bottom: 1px solid white;
 							}
+							*/
 
 						}
 
 						#trending {
 							li:first-child {
-								margin-left: -536px;
+								margin-left: -400px;
 							}
 						}
 						#features {
 							li:first-child {
-								margin-left: -470px;
+								margin-left: -570px;
 							}
 						}
 						#reviews {
 							li:first-child {
-								margin-left: -526px;
+								margin-left: -590px;
 							}
 						}
 						#bestof {
@@ -641,7 +652,7 @@
 							margin-left: -5%;
 							
 							background: #888d91;
-							height: 285px;
+							//height: 285px;
 							box-shadow: 0 3px 0px rgba(34,25,25,0.10),inset 0px 3px 0px 0px rgba(0,0,0,0.15);
 
 							@include break(tablet){
@@ -657,6 +668,7 @@
 							}
 						}
 
+						/*
 						.submenu-mini{
 							position: relative;
 							margin-top: -10px;
@@ -904,8 +916,15 @@
 									}
 								}
 							}
-						}
+						} */
+
 						}// NO AMP submenu
+						@else {
+							.nav-submenu {
+								display: none;
+							}
+						}
+
 					}
 				}
 			}	
