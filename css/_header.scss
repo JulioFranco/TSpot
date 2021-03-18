@@ -666,6 +666,27 @@
 									width: 85%;
 								}
 							}
+
+							.pfmenusearch {
+								background: #797D81;
+							    text-align: center;
+							    padding: 15px 0;
+
+								input {
+									display: inline-block;
+									max-width: 600px;
+									margin: 0 0px 0px 8px;
+									font-size: 1.3em;
+									box-shadow: none;
+									background: #bfc2c5;
+									padding: 6px 10px;
+								}
+							}
+							.pfmenuSideTitle {
+								display: inline-block;
+								color: #fff;
+								font-family: Roboto Condensed;
+							}
 						}
 
 						/*
