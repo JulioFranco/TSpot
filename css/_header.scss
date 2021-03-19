@@ -12,9 +12,7 @@
 		@include break(mobile) {
 			height: 58px;
 		}
-
 	}
-
 
 	.header-top {
 		//AMP and Normal
@@ -572,7 +570,7 @@
 
 							li {
 								text-align: center;
-								margin: 0px 12px;
+								margin: 0 10px;
 								padding-bottom: 0 !important;
 								display: inline-block;
 								text-transform: none;
@@ -603,41 +601,41 @@
 
 						#trending {
 							li:first-child {
-								margin-left: -400px;
+								margin-left: -420px;
 							}
 						}
 						#features {
 							li:first-child {
-								margin-left: -570px;
+								margin-left: -535px;
 							}
 						}
 						#reviews {
 							li:first-child {
-								margin-left: -590px;
+								margin-left: -500px;
 							}
 						}
 						#bestof {
 							li:first-child {
-								margin-left: -430px;
+								margin-left: -230px;
 							}
 						}
 						#downloads {
 							li:first-child {
-								margin-left: -260px;
+								margin-left: -300px;
 							}
 						}
 						#forums {
 							li:first-child {
 								margin-left: 212px;
+								
+								/*
 								@include break(tablet){
 									margin-left: 325px;
 								}
 								@include break(v-tablet){
 									margin-left: 190px;
 								}
-							}
-							@include break (tablet){
-								text-align: left;
+								*/
 							}
 						}
 						
