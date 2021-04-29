@@ -342,6 +342,18 @@ body.interior {
 						border-left: 3px solid #ccc;
 					}
 
+					.twitter-tweet, .twitter-tweet-rendered {
+						margin: 7px auto !important;
+						margin-bottom: 25px !important;
+					}
+
+					iframe {
+						&.twitter-tweet, &.instagram-media {
+							margin: 7px auto !important;
+							margin-bottom: 25px !important;
+						}
+					}
+
 					.blue-quote {
 						color: #105ab2;
 						font-size: 1.7em;
