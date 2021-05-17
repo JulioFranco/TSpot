@@ -14,8 +14,9 @@ body.interior {
 
 			#content {
 				.articleBody {
-					margin-bottom: 15px;
 					min-height: 300px;
+					max-width: 680px;
+					margin: 0 auto 15px;
 					
 					@include break(mobile) {
 						margin-bottom: 25px;
