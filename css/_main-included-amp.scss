@@ -526,13 +526,13 @@ h2, h3, h4, h5 {
 					}
 				}
 				&.alt {
-					background-color: white;
+					background-color: #f5f5f5;
 				}
 			}
 			&.alt {
 				tr {
 					&:nth-child(even) {
-						background: white;
+						background: #f5f5f5;
 					}
 				}
 			}

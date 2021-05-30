@@ -67,7 +67,7 @@ body.interior {
 				list-style-type: none;
 
 				&:nth-child(even) {
-					background: white;
+					background: #f5f5f5;
 				}
 
 				@include break(v-mobile){

@@ -3,7 +3,7 @@ body.interior {
 	@if $isAMP != 'true' {
 		&.products-cat {
 			.filter_bar {
-				background: #fff;
+				background: #f5f5f5;
 				padding: 8px 12px;
 				border: 1px solid #e5e5e5;
 				border-top: 0;

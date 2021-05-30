@@ -1,6 +1,8 @@
 @if $isAMP != 'true' {
 	#comments {
-		background: white;
+		/* background: white; */
+	    border-top: 10px solid #eee;
+	    padding-top: 10px;
 
 		& > .wrapper {
 			padding: 30px 0 10px 8px;
