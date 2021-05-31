@@ -627,8 +627,8 @@ body.interior {
 
 		@if $isAMP == 'true' {
 			.wrapperMobileOnly {
-				width: 96%;
-				padding: 0 2%;
+				width: $mobwrapwidth;
+				padding: $mobwrappadding;
 			}
 
 			#content {

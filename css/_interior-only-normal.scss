@@ -43,16 +43,16 @@ body.interior {
 				@include break(mobile) {
 					width: 100%;
 					.wrapperMobileOnly {
-						width: 94%;
-						padding: 0 3%;
+						width: $mobwrapwidth;
+						padding: $mobwrappadding;
 					}
 				}
 			}
 			@else {
 				width: 100%;
 				.wrapperMobileOnly {
-					width: 94%;
-					padding: 0 3%;
+					width: $mobwrapwidth;
+					padding: $mobwrappadding;
 				}
 			}
 

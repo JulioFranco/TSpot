@@ -47,8 +47,8 @@ body.home {
 						@include break(mobile) {
 							width: 100%;
 							.wrapperMobileOnly {
-								width: 94%;
-								padding: 0 3%;
+								width: $mobwrapwidth;
+								padding: $mobwrappadding;
 							}
 						}
 					}
@@ -133,8 +133,8 @@ body.home {
 
 						width: 100%;
 						.wrapperMobileOnly {
-							width: 94%;
-							padding: 0 3%;
+							width: $mobwrapwidth;
+							padding: $mobwrappadding;
 						}
 
 					}

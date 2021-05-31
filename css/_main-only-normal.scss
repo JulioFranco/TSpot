@@ -421,22 +421,22 @@ span._bar {
 		@include break(v-tablet){
 			width: 100% !important;
 			.wrapperMobileOnly {
-				width: 94%;
+				width: $mobwrappadding;
 			}
 		}
 		@include break(mobile){
 			width: 100%;
 			.wrapperMobileOnly {
-				width: 94%;
-				padding: 0 3%;
+				width: $mobwrapwidth;
+				padding: $mobwrappadding;
 			}
 		}
 	}
 	@else {
 		width: 100%;
 		.wrapperMobileOnly {
-			width: 94%;
-			padding: 0 3%;
+			width: $mobwrapwidth;
+			padding: $mobwrappadding;
 		}
 	}
 }
@@ -452,7 +452,7 @@ span._bar {
 		&.special{
 			width: 100% !important;
 			.articleBody {
-				width: 85% !important;
+				width: 82% !important;
 				max-width: none !important;
 				margin: 0 auto;
 			}
@@ -466,8 +466,8 @@ span._bar {
 			width: 100%;
 
 			.wrapperMobileOnly {
-				width: 94%;
-				padding: 0 3%;
+				width: $mobwrapwidth;
+				padding: $mobwrappadding;
 			}
 		}
 	}
@@ -475,8 +475,8 @@ span._bar {
 		width: 100%;
 
 		.wrapperMobileOnly {
-			width: 94%;
-			padding: 0 3%;
+			width: $mobwrapwidth;
+			padding: $mobwrappadding;
 		}
 	}
 }
@@ -489,8 +489,8 @@ span._bar {
 .article #content {
 	@include break(mobile){
 		.wrapperMobileOnly {
-			width: 94%;
-			padding: 0 3%;
+			width: $mobwrapwidth;
+			padding: $mobwrappadding;
 		}
 	}
 }

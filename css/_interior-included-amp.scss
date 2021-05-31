@@ -220,10 +220,10 @@ body.interior {
 			.wrapper {
 
 				@if $isAMP == 'true' {
-					width: 96%;
+					width: 94%;
 				} @else {
 					@include break(mobile) {
-						width: 96%;
+						width: 94%;
 					}
 				}
 			}
