@@ -384,27 +384,13 @@ body.interior.download {
 					border: 1px solid #d3d3d3;
 					transition: all 0.1s linear;
 					background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.05));
-					/* background-color: #fafafa; */
+					background-color: #fff;
 
-					@if $isDesk == 'true' {
-					@if $isAMP != 'true' {
-						&:hover {
-							text-decoration: none !important;
-							background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.03));
-							background-color: #fff;
-							border-color: #80ace0;
-						}
-					}}
-
-					&:active {
-						@if $isAMP == 'true' {
-							color: #05408F;
-						} @else {
-							color: #05408F !important;
-						}
-						top: 1px;
-						transition: none;
-						box-shadow: none;
+					&:hover, &:active {
+						text-decoration: none;
+						background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.03));
+						background-color: #fff;
+						border-color: #5783D4;
 					}
 
 					span {
