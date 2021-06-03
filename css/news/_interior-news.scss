@@ -392,6 +392,9 @@ body.interior {
 
 		@include break(mobile) {
 			margin: -10px 0 0;
+
+			content-visibility: auto;
+			contain-intrinsic-size: 138px;
 		}
 
 		h3 {
@@ -771,6 +774,9 @@ body.interior {
 }
 
 .grid-posts-lineal {
+
+	content-visibility: auto;
+	contain-intrinsic-size: 1580px;
 	
 	@if $isAMP != 'true' {
 	    margin: 25px 0 -10px;

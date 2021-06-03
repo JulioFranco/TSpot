@@ -147,6 +147,8 @@ body.home {
 
 					    @include break(mobile){
 					    	height: 290px;
+							content-visibility: auto;
+							contain-intrinsic-size: 290px;
 					    }
 
 						.masthead {

@@ -323,6 +323,9 @@ body.interior.download {
 					width: 100%;
 					border: none;
 					padding: 0;
+
+					content-visibility: auto;
+					contain-intrinsic-size: 800px;
 				}
 
 				.long_description {
@@ -685,14 +688,23 @@ body.interior.download {
 
 	.tabs.similars {
 		padding: 25px 0 10px;
+
+		@include break(mobile){
+			content-visibility: auto;
+			contain-intrinsic-size: 660px;
+		}
 	}
+
 	.tabs.recommended {
 		padding: 20px 0 30px;
 
 		@include break(mobile){
 			padding: 20px 0 50px;
+			content-visibility: auto;
+			contain-intrinsic-size: 470px;
 		}
 	}
+
 	.tabs.description {
 		padding: 25px 0 0;
 	}

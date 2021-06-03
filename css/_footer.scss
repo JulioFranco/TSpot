@@ -5,12 +5,18 @@ footer {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
+	content-visibility: auto;
+	contain-intrinsic-size: 514px;
+
+	@include break(mobile) {
+		contain-intrinsic-size: 1146px;
+	}
 
 	@if $isDesk == 'true' {
 		.wrapper {
-			padding: 50px 0 35px;
+			padding: 40px 0 35px;
 			@include break(v-mobile){
-				padding: 30px 0px 10px 0px; 
+				padding: 10px 0px 10px 0px; 
 			}
 		}
 	}
