@@ -59,15 +59,39 @@
 					color: white;
 					height: $tile-height - 30px;
 
+					background: linear-gradient(195deg,rgba(21,76,143,.1) 40%,rgba(30,41,51,.85) 70%);
+					z-index: 100;
+
+					&:before {
+						background: linear-gradient(195deg,rgba(34,34,34,.14) 40%,rgba(34,34,34,.85) 90%);
+						content: '';
+						display: block;
+						height: 100%;
+						position: absolute;
+						top: 0;
+						left: 0;
+						opacity: 0.65;
+						width: 100%;
+						z-index: -100;
+						transition: opacity 0.2s;
+					}
+
+					&:hover {
+						&:before {
+							opacity: 0;
+						}
+					}
+
+					/* version anterior
 					background: linear-gradient(195deg,rgba(21,76,143,.1) 30%,rgba(30,41,51,.85) 65%);
 
 					@if $isAMP != 'true' {
 					@if $isDesk == 'true' {
 						&:hover {
-							// top	
 							background: linear-gradient(195deg,rgba(21,76,143,.1) 40%,rgba(30,41,51,.85) 70%);
 						}
 					}}
+					*/
 					
 					hgroup {
 						width: 90%;
