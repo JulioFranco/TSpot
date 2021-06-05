@@ -9,6 +9,17 @@ body.home {
 
 	} @else {
 
+		.optblock {
+
+			content-visibility: auto;
+			contain-intrinsic-size: 2300px;
+
+			@include break(mobile){
+				contain-intrinsic-size: 2000px;
+			}
+
+		}
+
 		@if $isDesk == 'true' {
 
 			// Fixed header home

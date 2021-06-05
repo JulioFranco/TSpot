@@ -186,6 +186,7 @@
 		text-align: center;
 		@include trans-bg(#16b029,.8);
 		@include border-radius(3px);
+		cursor: crosshair;
 
 		@if $isAMP == 'true' {
 			width: initial;
