@@ -50,9 +50,9 @@ body.dark {
 // Safari fix
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-#header-ts.interior { 
-top: -1px; 
-}
+	@include break(mobile){
+		#header-ts, #content { top: -1px; }
+	}
 }}
 
 article, aside, section {
