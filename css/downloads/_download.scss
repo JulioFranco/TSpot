@@ -5,7 +5,19 @@ body.interior.download {
 				width: 100%;
 				float: none;
 			}
-			
+
+			.asfeaturedin {
+				margin: 25px 0 20px;
+
+				ul {
+					li {
+						font-size: 1.15em;
+						list-style: square inside;
+						padding-bottom: 6px;
+					}
+				}
+			}
+
 			.publisher-description {
 				p {
 					line-height: 1.45;
