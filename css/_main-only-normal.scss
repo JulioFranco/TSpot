@@ -878,6 +878,8 @@ table {
 			transition: 0.2s;
 		}
 	}
+
+	@include break(mobile) { display: none; }
 }
 
 /* Quantcast */
