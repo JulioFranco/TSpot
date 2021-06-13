@@ -20,6 +20,60 @@
 		}
 	}
 
+	@if $isAMP != 'true' {
+		&.grid-video {
+			background-color: #232a32b8;
+
+			@include break(mobile){
+			    margin-bottom: 15px;
+			}
+
+			h3 {
+				color: #fff;
+				font-size: 1.4em;
+				letter-spacing: -.2px;
+				margin: 0 10px;
+
+				@include break(mobile){
+				    font-size: 1.2em;
+				}
+
+				span {
+					color: #92bdf3;
+					text-transform: uppercase;
+					font-family: 'Roboto Condensed';
+					font-weight: 600;
+					font-size: 0.7em;
+					float: left;
+					margin-top: 7px;
+					margin-right: 9px;
+
+					@include break(mobile){
+						float: none;
+						display: block;
+						margin-bottom: 5px;
+					}
+				}
+			}
+
+			.video-caption {
+				color: #fff;
+				margin: 10px 10px 0 10px;
+				font-size: 0.8em;
+
+				@include break(mobile){
+				    font-size: 0.75em;
+				}
+			}
+
+			.videowrapper {
+				max-width: 780px;
+				margin: 0 auto;
+				padding: 0;
+			}
+		}
+	}
+
 	@if $isAMP == 'true' {
 		padding: 1px 0;
 	} @else {
