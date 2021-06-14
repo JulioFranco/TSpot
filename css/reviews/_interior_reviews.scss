@@ -522,9 +522,9 @@ body.interior {
 		@if $isAMP != 'true' {
 			#content-header {
 				&.featured-image {
+
+					/*
 					.wrapper {
-						//max-width: 1100px;
-						//width: 94%;
 						padding: 0;
 						overflow: auto;
 						@include break(mobile){
@@ -569,8 +569,8 @@ body.interior {
 								}
 							}
 						}
-					
 					}
+					*/
 
 					&.second-page {
 						min-height: 400px;
@@ -599,6 +599,7 @@ body.interior {
 							}
 						}
 
+						/*
 						.title-group {
 							bottom: 55px;
 
@@ -646,6 +647,7 @@ body.interior {
 								}
 							}
 						}
+						*/
 
 						.rating { display: none; }
 					}
@@ -664,6 +666,7 @@ body.interior {
 						}
 					}
 
+					/*
 					&.best-of {
 						min-height: 55vh;
 						max-height: 400px;
@@ -680,6 +683,7 @@ body.interior {
 						}
 						.rating { display: none; }
 					}
+					*/
 
 				}
 			}
