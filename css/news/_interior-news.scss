@@ -682,7 +682,7 @@ body.interior {
 		#mobComBut {
 			display: none;
 			text-align: center;
-			padding: 40px 0 60px;
+			padding: 30px 0 60px;
 			background-color: $light-grey;
 			@include break(mobile){
 				display: block;
@@ -777,7 +777,7 @@ body.interior {
 	contain-intrinsic-size: 1580px;
 	
 	@if $isAMP != 'true' {
-	    margin: 30px 0 -10px;
+	    margin: 30px 0 0px;
 
 	    .img-wrap {
 			height: 240px;
