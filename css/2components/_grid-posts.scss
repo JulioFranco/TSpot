@@ -1,16 +1,19 @@
 .grid-posts{
+	
+	/*
 	content-visibility: auto;
 	contain-intrinsic-size: 419px;
 
 	@include break(mobile){
 		contain-intrinsic-size: 272px;
 	}
+	*/
 
 	&.grid-section {
 		background: #eee;
 
 		@if $isAMP != 'true' {
-			padding: 25px 0 25px;
+			padding: 15px 0 5px;
 		}
 	}
 
@@ -23,6 +26,7 @@
 	@if $isAMP != 'true' {
 		&.grid-video {
 			background-color: #232a32b8;
+			padding: 0 0 5px;
 
 			@include break(mobile){
 			    margin-bottom: 15px;
@@ -72,14 +76,6 @@
 				padding: 0;
 			}
 		}
-	}
-
-	@if $isAMP == 'true' {
-		padding: 1px 0;
-	} @else {
-		@include break(v-tablet){
-			padding: 1px 0 !important;
-		}	
 	}
 
 	.masthead {
