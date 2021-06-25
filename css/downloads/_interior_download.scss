@@ -272,10 +272,11 @@ body.interior {
 				padding: 0;
 
 				li {
-					margin-bottom: 30px;
-					line-height: 22px;
+					margin-bottom: 40px;
+					line-height: 25px;
 					list-style: none;
-
+					font-size: 1.1em;
+					
 					.figure {
 						display: block;
 						float: left;
@@ -379,20 +380,10 @@ body.interior {
 						line-height: 1.6;
 						padding: 3px 0;
 						font-weight: 400;
-						color: #333;
+						color: #555;
 
-						@if $isAMP == 'true' {
-							p { padding: 0; }
-
-							@include break(mobile){
-								width: 100%;
-							}
-						} @else {
-							p { padding: 0 !important; }
-
-							@include break(mobile){
-								width: 100% !important;
-							}
+						@include break(mobile){
+							width: 100%;
 						}
 					}
 

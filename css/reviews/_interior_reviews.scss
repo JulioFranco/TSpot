@@ -78,11 +78,10 @@ body.interior {
 					}
 					@if $isAMP != 'true' {
 						.desc {
-							font-size: .7em;
+							font-size: .75em;
 							font-weight: 400;
 							padding: 7px 0 5px;
-							color: #333;
-							font-family: $f-paragraph;
+							color: #757575;
 							line-height: 1.4;
 								
 							@include break(mobile){
