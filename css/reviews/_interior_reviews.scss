@@ -35,8 +35,9 @@ body.interior {
 
 						a {
 							color: #333;
-							font-size: 1.15em;
+							font-size: 1.2em;
 							font-weight: 500;
+							line-height: 1.4;
 
 							&:hover {
 								color: $red;
@@ -81,7 +82,7 @@ body.interior {
 							font-size: .75em;
 							font-weight: 400;
 							padding: 7px 0 5px;
-							color: #757575;
+							color: #555;
 							line-height: 1.4;
 								
 							@include break(mobile){

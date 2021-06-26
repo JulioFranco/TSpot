@@ -52,14 +52,14 @@ body.interior {
 				.ProdListInfo {
 					h4 {
 						margin-top: 12px;
-						margin-bottom: 5px;
+						margin-bottom: 2px;
 					}
 				}
 			}
 
 			li {
 				padding: 0px 2%;
-				height: 75px;
+				height: 80px;
 				font-size: 0.9em;
 				font-weight: normal;
 				border-bottom: 1px solid #F1F1F1;
@@ -75,14 +75,14 @@ body.interior {
 				}
 			}
 			.product-img {
-				margin-top: 8px;
+				margin-top: 12px;
 				float: right;
 				width: 65px;
 				border: 1px solid #DCDCDC;
 				overflow: hidden;
 				text-align: center;
-				height: 50px;
-				line-height: 50px;
+				height: 55px;
+				line-height: 55px;
 				background: #fff;
 
 				@include break(v-mobile) {
@@ -127,8 +127,9 @@ body.interior {
 						margin-top: 8px;
 
 					} @else {
-						font-size: 1.1em;
+						font-size: 1.15em;
 						margin-top: 16px;
+						line-height: 1.5;
 
 						@include break(mobile){
 							font-size: 1em;
@@ -218,9 +219,7 @@ body.interior {
 				float: left;
 				display: inline-block;
 				height: 70px;
-
-				@include break(v-mobile){
-				}
+			    margin-top: 4px;
 
 				.review_score {
 					width: 60px;
@@ -285,7 +284,7 @@ body.interior {
 					font-weight: 500;
 					font-size: 0.8em;
 					float: left;
-					line-height: 70px;
+					line-height: 80px;
 					padding-right: 10px;
 					text-align: left;
 
