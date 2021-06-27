@@ -308,21 +308,7 @@ body.interior {
 					@include break(mobile){
 						position: relative;
 						top: 0;
-						margin-bottom: 25px;
-
-						.article-index {
-							position: absolute;
-							right: 0;
-
-							strong {
-								line-height: 28px;
-								font-weight: 500;
-							}
-							
-							@include break(mobile){
-								display: none;
-							}
-						}					
+						margin-bottom: 25px;				
 					}
 				}
 			
@@ -384,6 +370,31 @@ body.interior {
 			background: white;
 			margin-bottom: 50px;
 			position: relative;
+
+			@include break(mobile){
+				display: none;
+				width: 100%;
+				margin-bottom: 20px;
+				border-top: none;
+
+				span.arrow {
+					width: 0;
+					height: 0;
+					border-left: 4px solid transparent;
+					border-right: 4px solid transparent;
+					border-top: 6px solid #ffffff;
+					float: left;
+					margin: 15px 0 0 13px;
+					opacity: 1;
+				}
+
+				.sharethis {
+					float: right;
+					width: 20px;
+					height: 20px;
+					margin: -27px 18px 0 0;
+				}
+			}
 			
 			strong {
 				display: block;
@@ -392,6 +403,14 @@ body.interior {
 				font-size: .7em;
 				cursor: pointer;
 				font-weight: 500;
+
+				@include break(mobile) {
+				    text-align: left;
+				    font-size: .8em;
+				    padding: 0 0 0 13px;
+					border-left: 35px solid #ff7f00;
+					border-right: 5px solid #ff7f00;
+				}
 			}
 			
 			section {
@@ -406,20 +425,39 @@ body.interior {
 					border-top: 5px solid $orange;
 					z-index: 10;
 				}
+
+				@include break(mobile) {
+					width: 100%;
+					position: relative;
+					left: 0;
+					top: 0;
+					background: #fff;
+					border-top: none; 
+				}
 				
 				.pad {
 					padding: 10px 20px 20px 20px;
+
+					@include break(mobile) {
+						padding: 5px 10px 10px 12px;
+						border-bottom: 5px solid #eee;
+					}
 				}
 				
 				h3 {
 					font-size: 1.5em;
 					line-height: 180%;
 					font-weight: 400;
+
+					@include break(mobile) {
+						display: none;
+					}
 				}
 				
 				ol {
 					margin: 10px 10px 0 12%;
 					line-height: 200%;
+
 					li {
 						list-style-type: decimal-leading-zero;
 						font-family: $f-paragraph;
@@ -427,6 +465,10 @@ body.interior {
 						font-size: 1.1em;
 						line-height: 1.6;
 						padding-bottom: 5px;
+
+						@include break(mobile) {
+							padding-bottom: 8px
+						}
 
 						@if $isAMP != 'true' {
 							a {
