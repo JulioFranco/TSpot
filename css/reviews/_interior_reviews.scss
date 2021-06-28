@@ -268,11 +268,11 @@ body.interior {
 					}
 
 					section {
-						display: block;
 						width: 100%;
-						position:relative;
+						position: relative;
 						left: 0;
 						z-index: 0;
+
 						h3 {
 							display: none;
 						}
@@ -308,7 +308,7 @@ body.interior {
 					@include break(mobile){
 						position: relative;
 						top: 0;
-						margin-bottom: 25px;				
+						margin-bottom: 0;				
 					}
 				}
 			
@@ -372,7 +372,6 @@ body.interior {
 			position: relative;
 
 			@include break(mobile){
-				display: none;
 				width: 100%;
 				margin-bottom: 20px;
 				border-top: none;
@@ -441,6 +440,15 @@ body.interior {
 					@include break(mobile) {
 						padding: 5px 10px 10px 12px;
 						border-bottom: 5px solid #eee;
+					}
+				}
+
+				.dropcomments {
+					margin: 5px 0 5px 31px;
+					font-weight: 500;
+
+					@include break(mobile) {
+						margin: 5px 0 5px 36px;
 					}
 				}
 				
@@ -834,17 +842,18 @@ body.interior {
 
 	.social-widget {
 		width: 60px;
-		margin: 0 auto;
 		background: white;
 		border-bottom: 5px solid $orange;
 
 		@include break(mobile){
 			width: 98%;
 			height: 35px;
+			margin-bottom: 25px;
 			border-bottom: 0px solid $orange;
 
 			&.zero {
 				border-right: 7px solid $orange;
+
 				li {
 					&.social {
 						&.facebook {
@@ -869,6 +878,10 @@ body.interior {
 						}
 					}
 				}
+			}
+
+			&.featfirst {
+				border-right: 5px solid #ff7f00;
 			}
 		}
 
