@@ -236,6 +236,7 @@ body.interior {
 
 	&.article {
 		#content {
+
 			.index-mobile {
 				.article-index {
 					display: block;
@@ -248,10 +249,6 @@ body.interior {
 						margin: 30px 0 0;
 						width: 94%;
 						border: none;
-
-						@include break(big-desk){
-							width: 100%;
-						}
 
 						@include break(mobile){
 							margin: 20px 0 15px;
@@ -272,10 +269,7 @@ body.interior {
 						position: relative;
 						left: 0;
 						z-index: 0;
-
-						h3 {
-							display: none;
-						}
+						display: block;
 					}
 				}
 			}
