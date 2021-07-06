@@ -85,9 +85,10 @@
 
 			@if $isDesk == 'true' {
 				.svgbars {
-					width: 22px; height: 22px;
+					width: 18px;
+					height: 18px;
 					float: left;
-					margin: 5px 7px 0 -6px;
+					margin: 7px 7px 0 -6px;
 				}
 				.svgcert {
 				    width: 19px; height: 19px;
@@ -97,7 +98,8 @@
 
 			} @else {
 				.svgbars {
-				    width: 20px; height: 20px;
+					width: 18px;
+					height: 18px;
 				    float: left;
 				    margin: 6px 4px 0px -3px;
 				}
