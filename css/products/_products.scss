@@ -439,7 +439,7 @@ body.interior {
 
 			@include break(mobile) {
 				width: 100%;
-				margin-top: 40px;
+				margin-top: 30px;
 
 				content-visibility: auto;
 				contain-intrinsic-size: 370px;
@@ -505,8 +505,12 @@ body.interior {
 		}
 		.price-widget {
 			width: 98%;
-			margin: 20px 0 0 3px;
+			margin: 40px 0 0 3px;
 			border-bottom: 0px solid #339933;
+
+			@include break(mobile) {
+				margin: 30px 0 0 0;
+			}
 
 			.price-count {
 				display: inline-block;
@@ -520,55 +524,33 @@ body.interior {
 				float: left;
 				text-align: center;
 				text-transform: uppercase;
+			    border-radius: 2px;
+				width: 22%;
+				height: 34px;
 
-				@if $isAMP == 'true' {
-					width: 30%;
-					height: 17px;
-				
-				} @else {
-					width: 24%;
-					height: 34px;
-					@include break(mobile) {
-						width: 30%;
-						height: 17px;
-					}
-				}
-
-				@include break(v-mobile) {
-					width: 23%;
-					height: inherit;
+				@include break(mobile) {
+					width: 86px;
 				}
 			}
+
 			.price-int {
 				float: left;
 				display: inline;
 				background-color: #f5f5f5;
-				font-family: $f-condensed;
+				font-family: $f-helvetica;
+			    letter-spacing: -0.333px;
 				line-height: 50px;
-
-				@if $isAMP == 'true' {
-					height: 33px;
-					width: 68%;
-				
-				} @else {
-					height: 50px;
-					width: 71%;
-
-					@include break(mobile) {
-						height: 33px;
-						width: 68%;
-					}
-				}
-
-				@include break(v-mobile) {
-					height: 50px;
-					width: 71%;
-				}
+				height: 50px;
+				width: 71%;
 
 				a {
-					padding-left: 18px;
+					padding-left: 25px;
 					font-size: 1.4em;
 					color: #075BC0;
+
+					@include break(mobile) {
+						padding-left: 18px;
+					}
 
 					@if $isAMP != 'true' {
 						&:hover {
@@ -577,31 +559,24 @@ body.interior {
 					}
 				}
 
+				span.sign {
+					font-size: 0.9em;
+			    	padding-right: 1px;
+				}
+
 				span.onamazon {
 					font-size: 0.75em;
 					position: absolute;
 					padding: 3px 0px 0px 5px;
 				}
 			}
+
 			#artificialBorder {
-				width: 2%;
+				width: 3%;
 				display: inline-block;
-				float: left;
+				border-radius: 2px;
 				background: #339933;
-
-				@if $isAMP == 'true' {
-					height: 33px;
-				
-				} @else {
-					height: 50px;
-
-					@include break(mobile) {
-						height: 33px;
-					}
-				}
-				@include break(v-mobile) {
-					height: 50px;
-				}
+				height: 50px;
 			}
 		}
 
@@ -613,30 +588,13 @@ body.interior {
 		}
 
 		nav {
-			font-family: $f-condensed;
-			font-size: .9em;
+			font-size: .75em;
+			text-align: left;
+		    margin-left: 110px;
 
-			@if $isAMP == 'true' {
-				width: 100%;
-				text-align: center;
-				padding: 18px 0px;
-
-			} @else {
-				text-align: left;
-				padding: 10px 0;
-			    margin-left: 110px;
-
-			    &.left {
-			    	margin: 0;
-			    }
-
-				@include break(mobile) {
-					width: 100%;
-					text-align: center;
-					padding: 18px 0px;
-					margin: 0;
-				}
-			}
+		    &.left {
+		    	margin: 0;
+		    }
 
 			ul {
 				li {
@@ -644,8 +602,8 @@ body.interior {
 					line-height: 100%;
 					&:first-child {
 						border-right: 1px solid black;
-						padding-right: 15px;
-						margin-right: 10px;
+						padding-right: 10px;
+						margin-right: 5px;
 					}
 
 					a {
@@ -953,7 +911,8 @@ body.interior {
 			border-radius: 2px;
 
 			@include break(v-mobile) {
-				margin: 0 0 0 4px;
+				margin: 0;
+				width: 86px;
 			}
 
 			a {
@@ -970,18 +929,12 @@ body.interior {
 		.breakdown {
 			font-size: 13px;
 			line-height: 1.4em;
+			margin-left: 110px;
 
-			@if $isAMP == 'true' {
+			@include break(mobile) {
 				width: 65%;
 				float: left;
-				margin-left: 7%;
-			} @else {
-				margin-left: 110px;
-				@include break(mobile) {
-					width: 65%;
-					float: left;
-					margin-left: 7%;
-				}
+				margin-left: 5%;
 			}
 
 			a {
@@ -1315,14 +1268,15 @@ body.interior {
 		transition: all 0.25s linear;
 
 		&.below {
-			/* gris ... background: #ced5de; */
 			background: #ffe6ad;
 			margin: -5px 0 40px;
 			text-align: center;
 		}
 		&.mob {
-			margin: 30px 0 5px;
-			padding: 6px 13px;
+			margin: 10px 0 5px;
+			padding: 6px 12px 20px;
+			background: #fff;
+			border-bottom: 4px solid #eee;
 		}
 
 		.pa-text {
@@ -1358,6 +1312,10 @@ body.interior {
 			font-weight: 500;
 			padding: 0 5px 0 0;
 			text-transform: uppercase;
+
+			@include break(mobile){
+				text-transform: none;
+			}
 		}
 		.pa-new.red {
 			color: #c00;
