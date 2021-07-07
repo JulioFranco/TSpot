@@ -764,11 +764,11 @@ body.interior {
 				font-size: 15px;
 				line-height: 2em;
 			}
-			h5, .count, .bar {
+			.score_level, .count, .bar {
 				float: left;
 				height: 20px;
 			}
-			h5 {
+			.score_level {
 				font-size: 11px;
 				margin: 0;
 				font-weight: 500;
@@ -781,7 +781,6 @@ body.interior {
 						width: 20%;
 					}
 				}
-
 				@include break(v-mobile) {
 					width: 23%;
 					min-width: 54px;
