@@ -352,6 +352,10 @@
 	&.second-page {
 		h1 {
 			font-size: 1.9em;
+
+			@include break(mobile){
+				font-size: 1.25em;
+			}
 		}
 	}
 }
