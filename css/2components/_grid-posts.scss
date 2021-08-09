@@ -1,13 +1,4 @@
 .grid-posts{
-	
-	/*
-	content-visibility: auto;
-	contain-intrinsic-size: 419px;
-
-	@include break(mobile){
-		contain-intrinsic-size: 272px;
-	}
-	*/
 
 	&.grid-section {
 		background: #eee;
@@ -121,7 +112,7 @@
 						a {
 							height: ($tile-height-sec * 2) - 40px - $tile-padding + 1 !important;
 							hgroup {
-								h2 {
+								h2, .gr-title {
 									font-size: $tall-tile-font-size;
 
 									@include break(v-tablet) {
@@ -188,15 +179,17 @@
 							bottom: 15px !important;
 						}
 						
-						h3 {
+						h3, .gr-orange {
 							text-transform: uppercase;
 							font-size: .60em;
+						    font-weight: 500;
 							text-shadow: 0 0 2px #000;
 							color: #FF9B37;
 							padding-bottom: 2px;
 							letter-spacing: .25px;
 						}
-						h2 {
+
+						h2, .gr-title {
 							font-size: $tile-font-size;
 							font-weight: 500;
 							text-shadow: 1px 1px 3px #444;
@@ -204,21 +197,15 @@
 							line-height: 1.45;
 							padding-right: 10px;
 							display: inline;
-							/*
-							padding: 4px 4px 7px 0px;
-							background: rgba(40,51,60,0.7);
-							box-shadow: 0.45em 0 0 0 rgba(40,51,60,0.7), -20px 0 0 0 rgba(40,51,60,0.7);
-							*/
 
 							@include break(tablet) {
 								font-size: 0.95em;
-								/* box-shadow: 0.45em 0 0 0 rgba(40,51,60,0.8), -10px 0 0 0 rgba(40,51,60,0.8); */
 							}
 							@include break(v-tablet) {
 								font-size: 1.1em;
-								/* background: rgba(40,51,60,0.8); */
 							}
 						}
+
 					}	
 				}
 			}
@@ -422,7 +409,7 @@
 								height: 270px - 30px !important;
 
 								hgroup {
-									h2 {
+									h2, .gr-title {
 										font-size: 1.1em;
 									}
 								}

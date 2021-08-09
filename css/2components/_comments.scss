@@ -1,6 +1,6 @@
 @if $isAMP != 'true' {
 	#comments {
-		/* background: white; */
+
 	    border-top: 10px solid #eee;
 	    padding-top: 10px;
 
@@ -23,9 +23,11 @@
 			}
 		}
 
-		h3.title {
+		.title {
 			color: #4484D0;
 			font-size: 1.3em;
+			font-weight: 500;
+			line-height: 2;
 
 			span.small {
 				font-size: 0.55em;
@@ -33,18 +35,13 @@
 		}
 
 		a.post-new-comment {
-			/*
-			background-image: url('https://#{$staticServer}.techspot.com/images/glyph-orange.svg');
-			background-position: left 10px;
-			background-repeat: no-repeat;
-			*/
 
 			display: inline-block;
 			font-family: $f-condensed;
 			font-size: .80em;
 			color: $dark-grey;
 			margin-bottom: 10px;
-			padding: 12px 0 15px 0px;
+			padding: 0 0 15px 0px;
 
 			svg {
 			    float: left;
@@ -287,7 +284,7 @@
 		#add-new-comment {
 			background-color: #F5F5F5;
 
-			h3 {
+			.add-title {
 				line-height: 200%;
 				font-weight: 500;
 			}
