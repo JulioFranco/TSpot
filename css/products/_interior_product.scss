@@ -662,24 +662,9 @@ body.interior {
 				} @else {
 					@include break(mobile){
 						padding-top: 0px !important;
-
-						content-visibility: auto;
-						contain-intrinsic-size: 660px;
 					}
 				}
 			}
-
-			.pfadmob {
-				margin: 20px 0 30px;
-				content-visibility: auto;
-				contain-intrinsic-size: 250px;
-			}
-				
-			/*
-			#pros_cons.collapsed li:nth-child(n+6){
-				display: none;
-			}
-			*/
 
 			.articleBody {
 				@if $isAMP == 'true' {

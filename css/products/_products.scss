@@ -440,11 +440,6 @@ body.interior {
 			@include break(mobile) {
 				width: 100%;
 				margin-top: 30px;
-
-				/*
-				content-visibility: auto;
-				contain-intrinsic-size: 370px;
-				*/
 			}
 		}
 	
@@ -1146,13 +1141,6 @@ body.interior {
 
 	margin-bottom: 25px;
 
-	/*
-	@include break(mobile){
-		content-visibility: auto;
-		contain-intrinsic-size: 1500px;
-	}
-	*/
-
 	ul.teaser-list {
 		padding: 20px 0;
 		
@@ -1191,6 +1179,7 @@ body.interior {
 				display: block;
 				height: 150px;
 				position: relative;
+				overflow: hidden;
 			
 				.rating {
 					font-family: $f-helvetica;
@@ -1375,13 +1364,6 @@ body.interior {
 	@extend %var_looked-at_expert-reviews;
 
 	margin-bottom: 45px;
-
-	/*
-	@include break(mobile){
-		content-visibility: auto;
-		contain-intrinsic-size: 3000px;
-	}
-	*/
 
 	.comment {
 		position: relative;
