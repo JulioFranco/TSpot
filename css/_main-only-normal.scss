@@ -581,7 +581,9 @@ table {
 	margin: 10px 0px 0px 20px;
 
 	@include break(mobile){
-		display: none;
+		margin: 20px 0 20px 10px !important;
+		max-width: 110px !important;
+		height: 21px !important;
 	}
 }
 
