@@ -559,8 +559,9 @@ h2, h3, h4, h5 {
 		background: #eee;
 		padding: 15px;
 
-		p.ad {
+		.ad {
 			font-size: 0.6em;
+			padding: 0 0 15px;
 			text-align: center;
 			text-transform: uppercase;
 		}
@@ -575,7 +576,7 @@ h2, h3, h4, h5 {
 			font-size: 1.1em;
 
 			a {
-				color: #fd2c54;
+				color: #c00;
 			}
 		}
 	}
