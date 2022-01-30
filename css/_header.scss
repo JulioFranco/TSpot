@@ -460,13 +460,16 @@
 									&:focus {
 										outline: none;
 									}
-									
 								}
-								
 							}
-							
 						}
-						
+
+						&.dark_mode {
+							&.active,
+							&.hover {
+								background-color: $orange;
+							}
+						}
 					}
 				}
 			}
