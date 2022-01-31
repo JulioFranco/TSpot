@@ -59,14 +59,11 @@
 							margin-right: 10px;
 							*/
 
-							margin-right: 5px;
-							padding-right: 14px;
+							padding-right: 10px;
 							position: relative;
 
 							@include break(mobile) {
-								/*
-								background-position: center center;
-								*/
+								/* background-position: center center; */
 								margin: 0;
 								width: 40px;
 								padding-right: 0;
@@ -220,7 +217,6 @@
 										}
 
 										&.alerts {
-
 											padding: 0 8px 5px 13px;
 
 											@include break(v-mobile){
@@ -402,6 +398,7 @@
 							width: 32px;
 							position: relative;
 							line-height: 52px;
+							margin-left: 3px;
 
 							@include break(mobile){
 								line-height: 45px;

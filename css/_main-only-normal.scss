@@ -785,13 +785,22 @@ table {
 	.switcher {
 		z-index: 50;
 		cursor: pointer;
-		display: inline-block;
-		//height: 54px;
 		width: 26px;
 		padding: 0;
 		position: relative;
 		user-select: none;
-		//margin: -2px 5px 0 5px;
+		display: block;
+		margin: -2px 8px 0;
+		height: 39px;
+
+		@include break(mobile){
+			margin: -2px 1px 0;
+			line-height: 45px;
+		}
+
+		&.home {
+			height: 54px;
+		}
 
 		svg {
 			transform: translate(5px,2px) !important;
@@ -804,15 +813,6 @@ table {
 
 	label {
 		color: #1e2933;
-	}
-
-	&.guest {
-		.switcher {
-			display: block;
-			height: 54px;
-			//width: 26px;
-			margin: -2px 5px 0 5px;
-		}
 	}
 }
 
@@ -892,7 +892,8 @@ table {
 	label {
 		color: #1e2933;
 	}
-}*/
+}
+*/
 
 .adContinue {
     top: 30px;
