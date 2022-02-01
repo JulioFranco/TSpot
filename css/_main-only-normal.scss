@@ -790,11 +790,12 @@ table {
 		position: relative;
 		user-select: none;
 		display: block;
-		margin: -2px 8px 0;
+		margin: -2px 0 0;
+		padding: 0 8px 0;
 		height: 39px;
 
 		@include break(mobile){
-			margin: -2px 1px 0;
+			padding: 0 1px 0;
 			line-height: 45px;
 		}
 
