@@ -31,7 +31,7 @@ ul.category-chicklets {
 		&.blue3, &.microsoft, &.windows, &.tips-tricks																		{ background-color: #00A2F2;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#00A2F2,8%); } } } }
 		&.blue4, &.tag1																										{ background-color: #05408f;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#05408f,8%); } } } }
 		&.navy, &.products, &.downloads																						{ background-color: #00366F;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#00366F,8%); } } } }
-		&.navy2, &.industry																									{ background-color: #2A288A;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#2A288A,8%); } } } }
+		&.navy2, &.industry																									{ background-color: #4745a3;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#4745a3,8%); } } } }
 
 		&.green, &.hardware, &.drivers																						{ background-color: $green;		@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten($green,4%); } } } }	
 		&.green2, &.science																									{ background-color: $dark-green;@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten($dark-green,8%); } } } }
