@@ -454,11 +454,9 @@
 
 			.elite {
 				float: left;
-				color: #cccccc;
-				font-size: 0.6em;
-				left: 25.5%;
-				position: absolute;
-				top: 12px;
+				color: #ccc;
+				font-size: .6em;
+				margin: 10px 0px -10px 0;
 			}
 		}
 	}
@@ -955,6 +953,10 @@
 		width: 225px;
 	    height: 55px;
 
+	    &.logoelite {
+			float: left;
+		}
+
 		@include break(mobile){
 			/*
 			background-size: 181px;
@@ -1065,8 +1067,7 @@
 				}
 				.elite {
 					font-size: 0.575em;
-					left: 23%;
-					top: 9px;
+					margin: 9px 0px -9px -18px;
 				}
 			}
 		}
