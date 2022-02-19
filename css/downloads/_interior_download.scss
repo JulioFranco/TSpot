@@ -38,7 +38,7 @@ body.interior {
 				figure {
 					@if $isAMP == 'true' {
 						float: right;
-						margin: 0 10px 0 10px;
+						margin: 0 0 0 10px;
 
 						amp-img {
 							width: 95px;

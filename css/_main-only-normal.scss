@@ -527,8 +527,8 @@ table {
 
 	&.article-table {
 		margin: 15px 0 30px;
-		font-size: 0.9em;
-		font-family: $f-primary;
+		font-size: 0.85em;
+		letter-spacing: -0.333px;
 		
 		td, th {
 			padding: inherit;
@@ -541,6 +541,8 @@ table {
 			&.title {
 				background-color: #105ab2;
 				color: #ffffff;
+				font-family: $f-primary;
+
 				a {
 					color: #ffffff;
 				}
