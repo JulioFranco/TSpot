@@ -3,7 +3,7 @@
 	top:0px;
 	left:0px;
 	background-color: $light-grey;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 }
 
 img.responsive {
@@ -193,6 +193,7 @@ img.b-lazy.b-loaded {
 .sidebar {
 	width: 305px;
 	float: right;
+
 	@include break(tablet){
 		width: 29%;
 		img {
