@@ -249,7 +249,6 @@
 
 	@if $isAMP == 'true' {
 		.wrapper-amp {
-			width: 94%;
 			padding: 20px 0 5px;
 			margin: 0 auto;
 		}
@@ -259,7 +258,7 @@
 		margin: 10px 10px -5px 0;
 
 		@include break(mobile){
-			margin: 10px 0 15px;
+			margin: 10px 3% 15px;
 		}
 	}
 

@@ -274,11 +274,13 @@ body.interior {
 				}
 			}
 
+			/*
 			@if $isAMP == 'true' {
 				.articleBody {
 					margin: 0 2%;
 				}
 			}
+			*/
 
 			@if $isAMP != 'true' {
 				position: relative;
@@ -288,7 +290,6 @@ body.interior {
 					padding: 15px 0 40px;
 
 					@include break(mobile) {
-						width: 94%;
 						padding: 25px 0 5px;
 					}
 				}
@@ -308,11 +309,11 @@ body.interior {
 			
 				.articleBody {
 					width: 100%;
-					max-width: 680px;
+					max-width: 700px;
 					margin: 0 auto;
 					
 					@include break(v-tablet){
-						max-width: 680px;
+						max-width: 700px;
 						margin: 0 auto;
 						width: 90%
 					}

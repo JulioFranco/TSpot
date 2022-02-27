@@ -192,19 +192,10 @@ h2, h3, h4, h5 {
 	padding: 0;
 
 	/*
-	@if $isAMP == 'true' { //Only Amp
-		transition: left 0.3s ease-in-out 0s;
-
-	} @else { //Only Normal (Not Amp)
-		@include break(mobile) {
-			transition: left 0.3s ease-in-out 0s;
-		}
-	}
-	*/
-
 	&.white {
 		background-color: white;
 	}
+	*/
 
 	.wrapper {
 		@if $isAMP == 'true' { //Only Amp
