@@ -385,13 +385,12 @@ h2, h3, h4, h5 {
     height: 60px;
 
     &.twoline {
-	    height: 120px;
-	    margin: 35px 10px 20px;
+	    height: 110px;
     
     	ol {
     		li {
 				margin-right: 8px;
-				margin-bottom: 8px;
+				margin-bottom: 12px;
     		}
     	}
     }

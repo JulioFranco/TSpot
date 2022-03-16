@@ -1,43 +1,10 @@
 .post-list {
-	@if $isAMP != 'true' {
-		.group-left {
-			margin: 50px 0 0 0;
-		}
-
-		overflow: hidden;
-	}
-
-	.ad_to_list {
-		padding-bottom: 26px;
-		margin-bottom: 23px;
-		border-bottom: 2px solid #F2F4F8;
-		z-index: 1;
-
-		&.two {
-			padding-bottom: 5px;
-		}
-
-		center {
-			width: 90%;
-			margin: 0 auto;
-		}
-	}
 
 	article {
 		padding-bottom: 20px;
 		margin-bottom: 17px;
 		border-bottom: 2px solid #F2F4F8;
 		z-index: 1;
-
-		// Fix native ads, ziff/str vale verg
-		/*
-		@if $isAMP != 'true' {
-			&.str-adunit {
-				padding-bottom: 20px !important;
-				margin-bottom: 17px !important;
-			}
-		}
-		*/
 		
 		.article-img {
 			@include col(2,5,0);
@@ -350,6 +317,28 @@
 		border-bottom: none;
 		padding: 0;
 		margin-bottom: 5px;
+	}
+
+	.ad_to_list {
+		padding-bottom: 26px;
+		margin-bottom: 23px;
+		border-bottom: 2px solid #F2F4F8;
+		z-index: 1;
+
+		&.two {
+			padding-bottom: 5px;
+		}
+
+		center {
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+
+	@if $isAMP != 'true' {
+		.group-left {
+			margin: 50px 0 0 0;
+		}
 	}
 
 	@if $isAMP != 'true' {
