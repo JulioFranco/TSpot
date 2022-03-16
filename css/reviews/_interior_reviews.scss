@@ -92,7 +92,7 @@ body.interior {
 						.more_info {
 							float: left;
 							left: 155px;
-							bottom: 25px;
+							bottom: 32px;
 							position: absolute;
 
 							@include break(mobile){
@@ -157,18 +157,11 @@ body.interior {
 					line-height: 120px;
 					text-align: center;
 					overflow: hidden;
+					width: 200px;
+					height: 150px;
 
-					@if $isAMP != 'true' {
-						width: 200px;
-						height: 150px;
-
-					} @else {
-						width: 180px;
-						height: 120px;
-						@include break(v-mobile){
-							width: 150px;
-							height: 100px;
-						}
+					@include break(v-mobile){
+						width: 165px;
 					}
 				}
 			}
@@ -178,13 +171,13 @@ body.interior {
 				li {
 					@if $isAMP == 'true' {
 						//Default for AMP
-						padding: 12px 15px 12px 210px;
+						padding: 12px 8px 17px 180px;
 					
 					} @else {
 						padding: 25px 30px 25px 230px; 
 
 						@include break(v-mobile) {
-							padding: 12px 15px 12px 210px;
+							padding: 12px 8px 17px 180px;
 						}
 					}
 
@@ -199,13 +192,13 @@ body.interior {
 				li {
 					@if $isAMP == 'true' {
 						//Default for AMP
-						padding: 12px 15px 12px 210px;
+						padding: 12px 8px 17px 180px;
 					
 					} @else {
 						padding: 25px 30px 25px 230px; 
 
 						@include break(v-mobile) {
-							padding: 12px 15px 12px 210px;
+							padding: 12px 8px 17px 180px;
 						}
 					}
 
@@ -228,6 +221,21 @@ body.interior {
 
 				@if $isAMP != 'true' {
 					display: block !important;
+				}
+			}
+		}
+	}
+
+	&.reviews-cat, &.features-cat {
+
+		@if $isAMP != 'true' {
+			.col-2-3 {
+				
+				@include break(mobile){
+
+					.wrapperMobileOnly {
+						padding: 0 3%;
+					}
 				}
 			}
 		}

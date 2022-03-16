@@ -282,7 +282,7 @@ body.interior {
 						float: left;
 						width: 65px;
 						height: 65px;
-						margin-top 5px;
+						margin-top: 5px;
 						background-repeat: no-repeat;
 						background-size: contain;
 
@@ -313,13 +313,13 @@ body.interior {
 
 					.title {
 						a {
-							color: #05408f;
+							color: #1e2833;
 							font-weight: 500;
-							font-size: 1.65em;
+							font-size: 1.55em;
 							line-height: 1.45;
 
 							@include break(mobile){
-								font-size: 1.6em;
+								font-size: 1.5em;
 							}
 
 							@if $isDesk == 'true' {
@@ -330,18 +330,17 @@ body.interior {
 									color: #075bc0;
 								}
 							}}
-
 						}
 
 						em {
 							display: inline-block;
-							margin-left: 10px;
-							font-family: $f-helvetica-roboto;
-							font-size: .55em;
+							margin-left: 6px;
+							font-size: .5em;
 							font-style: normal;
-							padding: 0px 6px;
-							color: white;
-							text-transform: lowercase;
+							font-weight: 500;
+							padding: 0 6px;
+							color: #fff;
+							text-transform: uppercase;
 
 							@if $isDesk == 'true' {
 							@if $isAMP != 'true' {
