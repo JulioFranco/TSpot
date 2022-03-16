@@ -3,10 +3,6 @@
 	top:0px;
 	left:0px;
 	background-color: $light-grey;
-
-	@include break(mobile) {
-		overflow-x: hidden;
-	}
 }
 
 img.responsive {

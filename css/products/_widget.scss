@@ -144,9 +144,12 @@
 			font-family: $f-condensed;
 			letter-spacing: -0.4px;
 			border-bottom: none;
+			overflow: hidden;
+
 			a.withTooltip {
 				color: #333;
 			}
+
 			.label {
 				text-transform: uppercase;
 				color: #666;

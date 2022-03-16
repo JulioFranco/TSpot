@@ -172,12 +172,8 @@ body.interior {
 				float: left;
 				position: relative;
 				z-index: 1;
-				width: 90px;
+				width: 60px;
 				list-style-type: none;
-
-				@if $isDesk == 'true' {
-					right: -30px !important;
-				}
 
 				@include break(mobile){
 					width: 100%;
