@@ -169,25 +169,28 @@ body.interior {
 		.social-column {
 			@if $isAMP != 'true' {
 				display: inline-block;
-				float: left;
 				position: relative;
 				z-index: 1;
 				width: 60px;
 				list-style-type: none;
 
 				@include break(mobile){
+					display: block;
 					width: 100%;
 					margin-bottom: 25px;
 				}
 
 			} @else {
 
-				display: inline-block;
-				float: left;
+				display: block;
 				position: relative;
 				list-style-type: none;
 				width: 100%;
-				margin-bottom: 25px;
+				margin: 5px 0 25px;
+
+				&.bot {
+				    margin: 20px 0 35px;
+				}
 
 				&.feature {
 					margin: 0 2% 25px;

@@ -47,7 +47,7 @@ body.interior {
 	#content {
 		@if $isAMP == 'true' {
 			.intro-video {
-				margin-top: -50px;
+				margin-top: -20px;
 				margin-bottom: -20px;
 			}
 			.intro-image {
@@ -399,10 +399,16 @@ body.interior {
 
 
 	.related-query {
-		margin: 25px auto 20px;
 
-		@include break(mobile) {
-			margin: 0 auto 30px;
+		@if $isAMP == 'true' {
+			margin: -5px 0 0;
+		}
+		@else {
+			margin: 25px auto 20px;
+
+			@include break(mobile) {
+				margin: 0 auto 30px;
+			}	
 		}
 
 		&.videofeat {
@@ -438,7 +444,7 @@ body.interior {
 					font-family: $f-paragraph;
 					margin-bottom: 14px;
 					letter-spacing: -0.25px;
-					font-size: 0.85em;
+					font-size: 0.9em;
 					line-height: 1.4em;
 				}
 				@else {
@@ -757,7 +763,7 @@ body.interior {
 
 		#mobComBut {
 			text-align: center;
-			padding: 15px 0 40px;
+			padding: 15px 0 10px;
 
 			&.solo {
 				padding: 15px 0;
@@ -814,6 +820,9 @@ body.interior {
 			height: 240px;
 			background-size: cover;
 	    }
+	}
+	@else {
+		margin: 0 1% 0;
 	}
 
 	h4, .gr-title {

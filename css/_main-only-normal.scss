@@ -378,32 +378,20 @@ h3.longtype {
 	}
 }
 
-/*
-span._bar {
-	display: block;
-	width: 100%;
-	line-height: 7px;
-	height: 7px;
-	
-	&.green {
-		background: #00b400;
-	}
-	&.blue {
-		background: #1157ad;
-	}
-	&.purple {
-		background: $purple;
-	}			
-}
-*/
 
 .mobile-only-social {
 	display: block !important;
+
 	&.social-column{
-		display: none!important; height: auto!important;
+		display: none !important;
+		height: auto !important;
 	}
+
 	@include break(v-mobile){
-		&.social-column{display: block!important; min-height: 25px!important;}
+		&.social-column {
+			display: block !important;
+			min-height: 25px !important;
+		}
 	}
 }
 
