@@ -19,7 +19,7 @@ body.interior {
 					min-height: 300px;
 					
 					@include break(mobile) {
-						margin-bottom: 10px;
+						margin-bottom: 0;
 					}
 				}
 				
@@ -217,7 +217,7 @@ body.interior {
 
 			ul {
 				font-family: $f-paragraph;
-				font-size: .90em;
+				font-size: .9em;
 				line-height: 1.5;
 				
 				li {
@@ -401,6 +401,19 @@ body.interior {
 	.related-query {
 		margin: 25px auto 20px;
 
+		@include break(mobile) {
+			margin: 0 auto 30px;
+		}
+
+		&.videofeat {
+			@include break(mobile) {
+				margin: 20px auto 0;
+			}
+			.video-container {
+				margin: 0;
+			}
+		}
+
 		h3 {
 			font-weight: 400;
 			padding: 10px 0 15px;
@@ -427,11 +440,16 @@ body.interior {
 					letter-spacing: -0.25px;
 					font-size: 0.85em;
 					line-height: 1.4em;
-				} @else {
+				}
+				@else {
 					margin-bottom: 14px;
 					list-style-type: none;
 					letter-spacing: -0.25px;
 					font-size: 0.85em;
+
+					@include break(mobile) {
+						font-size: 0.95em;
+					}
 				}
 
 			}
@@ -790,7 +808,7 @@ body.interior {
 	contain-intrinsic-size: 1580px;
 	
 	@if $isAMP != 'true' {
-	    margin: 30px 0 0px;
+	    margin: 10px 1% 0;
 
 	    .img-wrap {
 			height: 240px;
@@ -803,7 +821,7 @@ body.interior {
 		margin: 7px 2px 35px;
 		line-height: 1.35;
 		font-weight: 400;
-		font-size: 0.9em;
+		font-size: 0.95em;
 		letter-spacing: -0.333px;
 	}
 }
@@ -846,7 +864,7 @@ body.interior {
 				}
 				
 				@include break(mobile) {
-					margin: 0 0 30px 0;
+					margin: 0 0 15px 0;
 				}
 			}
 
