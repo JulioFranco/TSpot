@@ -262,18 +262,14 @@ footer {
 	
 	.copyright {
 		font-size: .66em;
-		color: #555;
+		color: #bbb;
 		letter-spacing: -0.333px;
-		background: #d1d1d1;
-
-		@include break(v-mobile){
-			background: #e0e0e0;
-		}
+		background: #282e36;
 
 		.wrapper {
 			padding: 18px 0 20px;
 			@include break(v-mobile){
-				padding: 10px 0;
+				padding: 10px 0; 
 			}
 		}
 		
@@ -283,7 +279,7 @@ footer {
 
 		a {
 			display: inline-block;
-			color: #555;
+			color: #999;
 			letter-spacing: 0.1px;
 
 			&.pad {
