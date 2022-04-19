@@ -474,11 +474,11 @@ body.interior.download {
 				.download_button {
 					float: left;
 					display: inline-block;
-					width: 200px;
-					height: 41px;
-					background: url('https://#{$staticServer}.techspot.com/images/download_button_4j.png') no-repeat;
+					width: 229px;
+					height: 47px;
+					background: url('https://#{$staticServer}.techspot.com/images/download_button_5j.jpg') no-repeat;
 					position: relative;
-					background-size: 200px 82px;
+					background-size: 229px 94px;
 
 					@if $isAMP != 'true' {
 
@@ -487,7 +487,7 @@ body.interior.download {
 						&:hover {
 							background-position: left bottom;
 							span {
-								background-position: 0 41px;
+								background-position: 0 47px;
 							}
 						}
 					}
@@ -499,10 +499,10 @@ body.interior.download {
 						text-indent: -1000px;
 						overflow: hidden;
 						position: absolute;
-						width: 38px;
-						left: 9px;
-						height: 41px;
-						background: url('https://#{$staticServer}.techspot.com/images/download_button_arrow3.png') 0 0;
+						width: 43px;
+						left: 10px;
+						height: 47px;
+						background: url('https://#{$staticServer}.techspot.com/images/download_button_arrow5.png') 0 0;
 						background-size: contain;
 						transition: all 0.17s linear;
 					}
