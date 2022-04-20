@@ -324,14 +324,37 @@ body.interior.download {
 					width: 100%;
 					border: none;
 					padding: 0;
-
-					content-visibility: auto;
-					contain-intrinsic-size: 800px;
 				}
 
 				.long_description {
-					max-height: 750px;
-						overflow: hidden;
+					max-height: 1250px;
+					overflow: hidden;
+				}
+
+				#dw_description {
+					h2 {
+						padding: 0 0 10px;
+						font-size: 1.4em;
+					}
+					h3 {
+						padding: 0 0 10px;
+						font-size: 1.3em;
+					}
+					h4 {
+						padding: 0 0 10px;
+						font-size: 1.2em;
+						line-height: 1.4;
+					}
+
+					.asfeaturedin {
+						ul {
+							margin-left: 4%;
+							margin-bottom: 20px;
+						}
+						ul li {
+					    	margin-left: -2px;
+					    }
+					}
 				}
 			}
 
