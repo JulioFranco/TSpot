@@ -475,7 +475,7 @@
 			height: $header-menu-height;
 			line-height: $header-menu-line-height;
 
-			@include break(mobile){
+			@include break(v-tablet){
 				font-size: .735em;
 				line-height: 35px;
 				height: 35px;
@@ -485,7 +485,7 @@
 				height: $header-menu-line-height;
 				margin-left: -5px;	//alinear con logo
 
-				@include break(mobile){
+				@include break(v-tablet){
 				    height: 35px;
 
 					overflow-x: auto;
