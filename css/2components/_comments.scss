@@ -178,6 +178,22 @@
 					}
 				}
 
+				.bbMediaWrapper {
+					position: relative;
+					padding-bottom: 56.25%;
+					height: 0;
+					overflow: hidden;
+					margin: 25px 0;
+
+					iframe {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+					}
+				}
+
 				.bbCodeBlock--unfurl  {
 					.contentRow-figure, .js-unfurl-desc, .contentRow-minor {
 						display: none;
