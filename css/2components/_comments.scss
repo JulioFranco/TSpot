@@ -249,21 +249,26 @@
 			position: relative;
 			height: 100px;
 			color: #444;
+
 			.ontheleft {
 				float: left;
 				display: inline-block;
-				line-height: 30px;
+				line-height: 22px;
+				padding: 5px 0;
 
 				@include break(mobile){
-					display: none;
+					padding: 5px 0 18px;
 				}	
 			}
+
 			.ontheright {
 				float: right;
 				display: inline-block;
 				line-height: 30px;
+				padding: 5px 0;
+
 				@include break(mobile){
-					line-height: 25px;
+					padding: 0;
 					float: none;
 				}	
 			}
@@ -277,7 +282,6 @@
 				text-shadow: 0 1px 0 rgba(255,255,255,0.9);
 				cursor: pointer;
 
-				padding-top: 5px;
 				height: 30px;
 				line-height: 25px;
 				font-weight: 500;
@@ -286,11 +290,17 @@
 				@include border-radius(5px);
 				@include gradient-trans($start_color:#1E2933,$start_alpha:0,$end_color:#1E2933,$end_alpha:0.1);
 
+				@include break(mobile){
+					padding-top: 5px;
+				}
+
 				&.post {
-					height: 36px;
+					height: 40px;
+
 					@include break(mobile){
-						margin-top: 14px;
+						margin-top: 15px;
 						width: 100%;
+						height: 44px;
 					}
 				}
 			}
