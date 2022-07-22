@@ -58,7 +58,7 @@ img.b-lazy.b-loaded {
 	font-size: 14px;
 	text-align: center;
 	padding: 15px 3%;
-	margin: -10px auto 5px;
+	margin: 5px auto 10px;
 
 	a {
 		color: inherit;
@@ -71,9 +71,19 @@ img.b-lazy.b-loaded {
 	}
 
 	@include break(mobile){
-		padding: 15px 3%;
+		padding: 15px 3% 3px;
 		margin: 0 auto;
 	    line-height: 1.3;
+	}
+
+	&.news {
+	    max-width: 680px;
+	    padding: 5px 3% 30px;
+	    margin: -20px auto 10px;
+
+		@include break(mobile){
+	        margin: 0;
+	    }
 	}
 }
 
@@ -715,16 +725,6 @@ table {
 		min-height: 250px;
 		height: 250px;
 		overflow: hidden;
-
-		/*
-		#nsgpt-billboard-1 {
-			margin: 0;
-		    position: absolute;
-		    top: 50%;
-		    left: 50%;
-		    transform: translate(-50%, -50%);
-		}
-		*/
 	}
 
 }//desk

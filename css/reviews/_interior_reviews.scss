@@ -243,6 +243,11 @@ body.interior {
 
 
 	&.article {
+
+		.billboard_placeholder {
+			padding: 0;
+		}
+
 		#content {
 
 			.index-mobile {
@@ -282,14 +287,6 @@ body.interior {
 				}
 			}
 
-			/*
-			@if $isAMP == 'true' {
-				.articleBody {
-					margin: 0 2%;
-				}
-			}
-			*/
-
 			@if $isAMP != 'true' {
 				position: relative;
 
@@ -311,7 +308,8 @@ body.interior {
 					@include break(mobile){
 						position: relative;
 						top: 0;
-						margin-bottom: 0;				
+						margin-bottom: 0;
+						padding-bottom: 7px;
 					}
 				}
 			
