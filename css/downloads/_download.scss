@@ -236,7 +236,10 @@ body.interior.download {
 						margin-right: 10px;
 						text-align: left;
 						width: 105px;
-						padding-left: 10px;
+
+						@include break(mobile) {
+							padding-left: 10px;
+						}
 					}
 
 					.item {
@@ -468,19 +471,18 @@ body.interior.download {
 			}
 
 			.download_certified {
-				margin: 10px auto 25px;
+				margin: 10px auto 30px;
+
+				@include break(mobile){
+					margin: 10px auto 25px; 
+				}
 			}
 
 			.editors_pick {
-				@if $isAMP == 'true' {
-					margin: 20px auto 35px;
-				}
-				@else {
-					margin: 20px auto 10px;
+				margin: 20px auto 15px;
 
-					@include break(mobile){
-						margin: 25px 0; 
-					}
+				@include break(mobile){
+					margin: 20px 0 25px; 
 				}
 			}
 
