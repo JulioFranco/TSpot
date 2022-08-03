@@ -150,6 +150,12 @@ body.interior {
 					color: #555;
 					line-height: 2em;
 					padding-top: 10px;
+
+					@include break(mobile){
+						font-size: 1.2em;
+						line-height: 1.3em;
+					}
+
 				}
 
 				#trivia-options {
@@ -202,12 +208,12 @@ body.interior {
 
 				#next_question {
 
-					margin: 10px 0;
+					margin: 10px 4% 10px 0;
 
 					> div {
-						width: 70%;
+						width: 50%;
 						float: right;
-						margin: 20px 0;
+						margin: 15px 0;
 					}
 
 					@include break(mobile){
@@ -273,6 +279,10 @@ body.interior {
 
 				#explanation {
 
+					@include break(mobile){
+						margin: 0 3%;
+					}
+
 					&.trans {
    						transition: all 1.2s 0.3s;
 					}
@@ -307,12 +317,13 @@ body.interior {
 							background: rgba(33, 162, 64, 0.8);
 							padding: 5px 9px;
 							color: white;
+							margin-right: 5px;
 						}
 
 						span.ans {
 							@include break(v-mobile){
 								display: block;
-								margin-top: 10px;
+								margin-top: 15px;
 							}
 						}
 					}
@@ -325,6 +336,12 @@ body.interior {
 							max-width: 400px;
 							margin: 10px 0px 30px 30px;
 							border-radius: 6px;
+
+							@include break(mobile) {
+								margin: 15px 0;
+								float: none;
+								max-width: 98%;
+							}
 						}
 
 						p:first-child {
@@ -338,19 +355,6 @@ body.interior {
 					    @include break(mobile){
 						    margin: 30px 0 20px;
 					    }
-					}
-
-					@include break(mobile){
-						margin: 0 3%;
-
-						.content {
-							img {
-								margin: 10px 0px;
-								border-radius: 6px;
-								float: none;
-							}
-						}
-
 					}
 
 				}
@@ -448,8 +452,8 @@ body.interior {
 				
 				.title-group {
 					h1 {
-					    padding: 22px 10px 22px 21px;
-					    margin: 20px 300px 10px -5px;
+						padding: 22px 20px 22px 21px;
+						margin: 20px 100px 10px -5px;
 					    color: #fff;
 					    font-size: 1.5em;
 					    font-weight: 500;
@@ -461,24 +465,12 @@ body.interior {
 					    	color: #333;
 					    }
 
-						@if $isAMP == 'true' {
-							margin: 0 0 5px 0;
+						@include break(mobile) {
+							margin: 15px 0 5px 0;
 							font-size: 1.25em;
 							padding: 10px 10px 12px 12px;
-							width: 95%;
+							width: 93%;
 							line-height: 1.4;
-						}
-						@else {
-							@include break(v-tablet) {
-								width: 95%;
-							}
-							@include break(mobile) {
-								margin: 0 0 5px 0;
-								font-size: 1.25em;
-								padding: 10px 10px 12px 12px;
-								width: 95%;
-								line-height: 1.4;
-							}
 						}
 
 					}
