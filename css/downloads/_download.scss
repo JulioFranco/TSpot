@@ -306,13 +306,12 @@ body.interior.download {
 			.product-details {
 				@include col(1,2,0);
 				width: 54%;
-				padding: 5px 0 0 30px;
-				border-left: 2px solid #dddddd;
+				padding: 0px 25px 0 0px;
 				font-size: 1.15em;
 				margin-bottom: 0px;
 
 				&.drivers {
-					font-size: 1em;
+					font-size: 1.05em;
 				}
 
 				@if $isDesk == 'true' {
@@ -437,32 +436,27 @@ body.interior.download {
 		}
 
 		.download-product {
-			@if $isAMP != 'true' {
-				@include col(1,2,0);
-				width: 46%;
-				padding: 5px 10px 15px 0;
 
-				@include break(mobile){
-					@include col(1,1,0);
-					border: 0;
-					padding: 0;
-					margin-top: 22px;
-					width: 100%;
-					float: none;
-				}
+			@include col(1,2,0);
+			width: 46%;
+			padding: 5px 0 0 30px;
+			border-left: 2px solid #ddd;
+
+			@include break(mobile){
+				@include col(1,1,0);
+				border: 0;
+				padding: 0;
+				margin-top: 22px;
+				width: 100%;
+				float: none;
 			}
 
 			.download_options, .specs {
 				border-radius: 3px;
 				margin: 0 0 0 -10px;
-
-				@if $isAMP != 'true' {
-					padding: 10px;
-				}
-				@else {
-					padding: 10px 10px 20px 10px;
-				}
+				padding: 10px;
 			}
+
 			.download_options {
 				width: 95%;
 			}
@@ -484,13 +478,11 @@ body.interior.download {
 			}
 
 			.download-wrapper {
-				@if $isAMP != 'true' {
-					margin-bottom: 5px;
-					margin-top: 0px;
+				margin-bottom: 5px;
+				margin-top: 0px;
 
-					@include break(v-mobile){
-						position: relative;
-					}
+				@include break(v-mobile){
+					position: relative;
 				}
 
 				.download_button {
@@ -501,20 +493,13 @@ body.interior.download {
 					background: url('https://#{$staticServer}.techspot.com/images/download_button_5j.jpg') no-repeat;
 					position: relative;
 					background-size: 229px 94px;
+					margin-bottom: 10px; 
 
-					@if $isAMP != 'true' {
-
-						margin-bottom: 10px; 
-
-						&:hover {
-							background-position: left bottom;
-							span {
-								background-position: 0 47px;
-							}
+					&:hover {
+						background-position: left bottom;
+						span {
+							background-position: 0 47px;
 						}
-					}
-					@else {
-						margin: 5px 0 2px -10px;
 					}
 
 					span {
@@ -652,20 +637,6 @@ body.interior.download {
 
 @if $isAMP != 'true' {
 
-	.downloadav {
-	   background-image: url('https://static.techspot.com/images/downloads/buttons/avira-download-2020-11b.png');
-		height: 118px;
-		width: 268px;
-		background-size: 268px 118px;
-		margin: 15px 0 12px;
-		transition: all 0.15s linear;
-		overflow: hidden;
-	}
-
-	.downloadav:hover {
-	   background-image: url('https://static.techspot.com/images/downloads/buttons/avira-download-2020-11bh.png');
-	}
-
 	.google-ads {
 		margin: 14px 0 10px -30px;
 		text-align: center;
@@ -684,28 +655,6 @@ body.interior.download {
 			margin: 24px 0 10px -30px;
 		}
 	}
-
-	/*
-	.facebook-like {
-		margin-right: 0%;
-		display: block;
-		float: left;
-		list-style-type: none;
-		position: relative;
-		box-sizing: border-box;
-		padding: 8px 0 0 15px;
-			
-		@include break(mobile){
-			width: 35%;
-		}
-
-		a {
-			display: block;
-			width: 77px;
-			height: 20px;
-		}
-	}
-	*/
 
 	#dw_vote {
 		font-size: 11px;
@@ -854,185 +803,14 @@ body.interior.download {
 	background-color: #F8F8F8;
 	color: #555;
 
-	@if $isAMP != 'true' {
 		&:hover {
 			background-color: #eee;
 			color: #05408f;
 		}
-	}
 }
 
-@if $isAMP != 'true' {
 	.more_similars_app {
 		&:hover	{
 			color: #bd0707;
 		}
 	}
-}
-
-
-/**** Download index - Categories AMP (New) ****/
-@if $isAMP == 'true' {
-	// Total of Alternatives
-	span.number {
-		background: #0557B5;
-		border-radius: 19px;
-		text-align: center;
-		line-height: 19px;
-		color: #fff;
-		display: inline-block;
-		width: 19px;
-		height: 19px;
-		font-size: 0.85em;
-		margin-left: 2px;
-		font-weight: 500;
-		font-family: Roboto;
-	}
-
-	// Don't show rating Value, just for bots
-	.ratingValue {
-		display: none;
-	}
-
-	body.interior.download.dw-home {
-		.mobilecats {
-			color: white;
-			background-color: #8393a7;
-			margin: 10px 0 0 0;
-			line-height: 32px;
-			padding: 0px 14px;
-			text-transform: uppercase;
-			font-size: 0.7em;
-			font-weight: bold;
-		}
-
-		.downloads-index-cats {
-			float: right;
-			width: 400px;
-			margin: 25px 0;
-			background: #f5f5f5;
-			ul.cats {
-				border-top: 2px solid #ddd;
-			}
-		}
-
-		.content-dwcategories {
-			background: #f5f5f5;
-		}
-
-		li.maincat {
-			font-weight: 500;
-			display: inline-block;
-			width: 100%;
-			padding: 25px 0 0;
-			&:nth-child(odd) {
-				background: #fff;
-			}
-			a {
-				color: #333;
-				&:hover {
-					border-bottom: 1px dotted #075bc0;
-					padding-bottom: 1px;
-					color: #075bc0;
-				}
-			}
-			amp-img {
-				float: left;
-				margin: 0px 20px 25px 20px;
-			}
-		}
-
-		ul.subcats {
-			font-weight: 400;
-			font-size: .7em;
-			padding: 3px 10px 20px 0;
-		}
-
-		li.subcat {
-			display: inline-block;
-			padding-right: 5px;
-			a {
-				color: #555;
-				&:hover {
-					color: #c00;
-					border: none;
-				}
-			}
-		}
-
-		body.interior.download {
-			.subtitle {
-				font-size: 22px;
-				color: #105ab2;
-				margin: 15px 0 0;
-				a {
-					font-size: 22px;
-					color: #105ab2;
-					margin: 15px 0 0;
-				}
-			}
-			.downloads-list {
-				padding: 25px 0 0;
-				margin-right: 440px;
-			}
-		}
-
-		.search-box {
-			margin: 6px 0 5px 15px;
-			background-color: #f5f5f5;
-			padding: 5px 15px 12px;
-			border: none;
-			line-height: 45px;
-			font-weight: 400;
-			h4 {
-				padding-top: 10px;
-				color: #0a5499;
-				font-size: 0.9em;
-				padding: 14px 13px 0 0;
-				font-weight: 500;
-				line-height: 1.4;
-			}
-		}
-
-		#content .wrapper {
-			width: 96%;
-		}
-		.downloads-index-cats {
-			float: none;
-			width: 95%;
-			margin: 0;
-		}
-		#mobilecats {
-			display: none;
-		}
-		body.interior.download .downloads-list {
-			margin-right: 0;
-		}
-
-		.collapse-title {
-			cursor: pointer;
-			display: block;
-			+ input {
-				display: none;
-				~ .content-dwcategories {
-					display: none;
-				}
-				&:checked ~ .content-dwcategories {
-					display: block;
-				}
-			}
-		}
-
-		//Extra for bio padding (interior doesn't work)
-		#content .bio p {
-			padding: 0;
-		}
-	}
-
-	.amp-download-options {
-		background-color: rgb(219, 230, 244);
-		transition: 2s;
-	}
-}
-
-/* END - AMP*/
