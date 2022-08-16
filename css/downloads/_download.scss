@@ -224,11 +224,7 @@ body.interior.download {
 				}
 				@else {
 
-					line-height: 180%;
-
-					@include break(mobile){
-						line-height: 200%;
-					}
+					line-height: 200%;
 
 					.items {
 						float: left;
@@ -274,7 +270,6 @@ body.interior.download {
 							margin-bottom: -2px;
 
 							@if $isDesk == 'true' {
-							@if $isAMP != 'true' {
 								&:hover {
 									text-overflow: inherit;
 									overflow: visible;
@@ -283,7 +278,7 @@ body.interior.download {
 									line-height: 1.4;
 									margin-top: 4px;
 								}
-							}}
+							}
 
 						}
 					}
@@ -462,7 +457,7 @@ body.interior.download {
 			}
 
 			.download_certified {
-				margin: 10px auto 30px;
+				margin: 20px auto 30px;
 
 				@include break(mobile){
 					margin: 10px auto 25px; 
@@ -631,95 +626,89 @@ body.interior.download {
 	}
 }
 
-//-------------------------------------------------------------------
-//	NOT AMP
-//-------------------------------------------------------------------
 
-@if $isAMP != 'true' {
+.google-ads {
+	margin: 14px 0 10px -10px;
+	text-align: center;
 
-	.google-ads {
-		margin: 14px 0 10px -30px;
+	&:before {
+		display: block;
+		content: 'Advertisement';
+		height: 15px;
+		line-height: 8px;
+		font-size: 12px;
+		color: #999;
 		text-align: center;
-
-		&:before {
-			display: block;
-			content: 'Advertisement';
-			height: 15px;
-			line-height: 8px;
-			font-size: 12px;
-			color: #999;
-			text-align: center;
-		}
-
-		&.single {
-			margin: 24px 0 10px -30px;
-		}
 	}
 
-	#dw_vote {
-		font-size: 11px;
-	}
-
-	.tabs.similars {
-		padding: 25px 0 10px;
-
-		@include break(mobile){
-			content-visibility: auto;
-			contain-intrinsic-size: 660px;
-		}
-	}
-
-	.tabs.recommended {
-		padding: 20px 0 30px;
-
-		@include break(mobile){
-			padding: 20px 0 50px;
-			content-visibility: auto;
-			contain-intrinsic-size: 470px;
-		}
-	}
-
-	.tabs.description {
-		padding: 25px 0 0;
-	}
-
-
-	@if $isDesk == 'true' {
-	body.interior.download .sidebar {
-		@include break(v-tablet){
-			display: none;
-		}
-		@include break(mobile){
-			display: none;
-		}
-	}}
-
-
-	body.interior.download .col-2-3{
-
-		@if $isDesk == 'true' {
-		@include break(v-tablet){
-			@include col(3,3,0);
-		}}
-
-		@include break(mobile){
-			width: 100%;
-		}
-	}
-
-	body.interior.download #pub-description, #similar-soft {
-		@include break(v-mobile){
-			font-size: 14px;
-		}
-	}
-	body.interior.download article .col-1-2.wide-gut{
-		@include break(v-mobile){
-			width: 100%;
-		}
+	&.single {
+		margin: 24px 0 10px -30px;
 	}
 }
 
-//BOTH WEBPAGE AND AMP
+#dw_vote {
+	font-size: 11px;
+}
+
+.tabs.similars {
+	padding: 25px 0 10px;
+
+	@include break(mobile){
+		content-visibility: auto;
+		contain-intrinsic-size: 660px;
+	}
+}
+
+.tabs.recommended {
+	padding: 20px 0 30px;
+
+	@include break(mobile){
+		padding: 20px 0 50px;
+		content-visibility: auto;
+		contain-intrinsic-size: 470px;
+	}
+}
+
+.tabs.description {
+	padding: 25px 0 0;
+}
+
+
+@if $isDesk == 'true' {
+body.interior.download .sidebar {
+	@include break(v-tablet){
+		display: none;
+	}
+	@include break(mobile){
+		display: none;
+	}
+}}
+
+
+body.interior.download .col-2-3{
+
+	@if $isDesk == 'true' {
+	@include break(v-tablet){
+		@include col(3,3,0);
+	}}
+
+	@include break(mobile){
+		width: 100%;
+	}
+}
+
+body.interior.download #pub-description, #similar-soft {
+	@include break(v-mobile){
+		font-size: 14px;
+	}
+}
+body.interior.download article .col-1-2.wide-gut{
+	@include break(v-mobile){
+		width: 100%;
+	}
+}
+
+
 .downGrid {
 	display: flex;
 	flex-wrap: wrap;

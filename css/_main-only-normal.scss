@@ -652,20 +652,20 @@ table {
 
 //Button for show more
 .more_description_dw {
-	margin: 15px 5px 15px 0;
-	display: block;
-	border: 1px solid #eee;
-	text-align: center;
-	font-weight: 400;
-	color: $light-grey2;
-	background-color: #fff;
-	line-height: 27px;
+    margin: 15px 5px 15px 0;
+    display: block;
+    border: 1px solid #92b8e5;
+    text-align: center;
+    font-weight: 400;
+    color: #05408f;
+    background-color: #fff;
+    line-height: 35px;
 
 	@if $isDesk == 'true' {
-	&:hover{
-		color: #05408f;
-		background-color: #eee;
-	}
+		&:hover{
+		    color: #fff;
+		    background-color: #105ab2;
+		}
 	}
 
 	@include break(mobile){
