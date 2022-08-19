@@ -8,55 +8,41 @@
 		
 		.article-img {
 			@include col(2,5,0);
-			width: 30%;
+			width: 32%;
 			margin-top: 3px;
 
 			img {
 				max-width: 100%;
 				height: auto;
-				width: 230px;
-
-				@if $isAMP == 'true' {
-					min-height: initial;
-					margin: 0;
-				}
+				width: 250px;
 			}
 		}
 		
 		.article-content {
 			@include col-last(3,5,2);
-			width: 67.2%;
+			width: 65.2%;
 
-			@if $isAMP == 'true' {
+			@include break(v-mobile) {
 				padding-left: 5px;
-			} @else {
-				@include break(v-mobile) {
-					padding-left: 5px;
-				}
 			}
 
 			h2 {
 				padding: 8px 0 2px;
+
 				a {
 					font-family: $f-helvetica-roboto;
 					line-height: 1.4;
 					color: #1e2833;
 					font-weight: 500;
 
-					@if $isAMP == 'true' {
-						font-size: 100%;
+					@if $isDesk == 'true' {
+						font-size: 110%;
+							&:hover {
+								color: #105ab2;
+							}
 					}
 					@else {
-
-						@if $isDesk == 'true' {
-							font-size: 110%;
-								&:hover {
-									color: #105ab2;
-								}
-						}
-						@else {
-							font-size: 100%;
-						}
+						font-size: 100%;
 					}
 
 				}
@@ -64,13 +50,15 @@
 
 
 			&.featured {
+				@include break(mobile) {
+					h2 {
+				    	padding: 10px 0 4px;
+					}
+				}
+
 				.post-meta {
-					@if $isAMP == 'true' {
-						margin-top: -30px;
-					} @else {
-						@include break(mobile){
-							margin-top: -5px;
-						}
+					@include break(mobile) {
+						margin-top: -2px;
 					}
 				}
 			}
@@ -88,14 +76,10 @@
 			.article-category {
 				font-size: .7em;
 				letter-spacing: -.333px;
-				margin-top: 10px;
+				margin-top: 5px;
 
-				@if $isAMP == 'true' {
+				@include break(mobile){
 					margin-top: 2px;
-				} @else {
-					@include break(mobile){
-						margin-top: 2px;
-					}
 				}
 
 				a {
@@ -106,75 +90,62 @@
 			}
 			
 			.intro {
-				@if $isAMP == 'true' {
-					display: none;
-				} @else {
-					font-size: .825em !important;
-					font-weight: 400;
-					line-height: 1.5;
-					padding: 7px 0 3px !important;
-					color: #757575 !important;
-					letter-spacing: -.333px;
+				font-size: .8em !important;
+				font-weight: 400;
+				line-height: 1.5;
+				padding: 7px 0 3px !important;
+				color: #757575 !important;
+				letter-spacing: -.333px;
 
-					@include break(mobile){
-						display: none;
-					}
+				@include break(mobile){
+					display: none;
 				}
 
-				&.feat {
-					@if $isAMP == 'true' {
+				&.feat-top {
+					@include break(mobile){
 						display: inline;
+
 						p {
-							padding: 7px 0;
-							font-size: 0.75em;
+							display: none;
 						}
-					} @else {
-						@include break(mobile){
-							display: inline;
-							p {
-								padding: 7px 0 !important;
-							}
+						p:last-child {
+							display: block;
+						}
+						img {
+							padding: 0 0 5px;
+						}
+					}
+				}
+				&.feat {
+					@include break(mobile){
+						display: inline;
+						
+						p {
+							padding: 7px 0 !important;
+						}
+						p:last-child {
+							display: none;
 						}
 					}
 				}
 
 				img {
 					max-width: 100%;
-					padding: 6px 0;
+					height: auto !important;
+				}
 
-					@if $isAMP == 'true' {
-						height: auto;
-						padding: 0 0 15px;
-					} @else {
-						height: auto !important;
-						
-						@include break(mobile){
-							padding: 0 0 15px;
-						}
+				&.trendload {
+					img {
+						display: none;
 					}
 				}
 
-				@if $isAMP == 'true' {
-					p {
-						padding: 0 0 15px;
-						line-height: 1.5;
-					}
-					p:last-child {
-						padding: 0;
-					}
-				} @else {
-					&.trendload {
-						img {
-							display: none;
-						}
-					}
+				p {
+					padding: 0 0 15px !important;
+				}
 
-					p {
-						padding: 0 0 15px !important;
-					}
-					p:last-child {
-						padding: 0 !important;
-					}
+				p:last-child {
+					padding: 0 !important;
 				}
 			}
 
@@ -183,14 +154,10 @@
 				font-weight: 400;
 				letter-spacing: -0.333px;
 				line-height: 2.5;
-
-				@if $isAMP == 'true' {
+				font-size: .7em;
+				
+				@include break(v-mobile){
 					font-size: .6em;
-				} @else {
-					font-size: .7em;
-					@include break(v-mobile){
-						font-size: .6em;
-					}
 				}
 
 				a.author {
