@@ -153,52 +153,40 @@ footer {
 			}
 		}
 	}
-	@include break(v-tablet){
+	@include break(mobile){
+
 		#Main {
 			display: none;
-		}
-		#Usef {
-			margin: 20px 0 10px;
 		}
 		.menu{
 			width: 95%;
 
 			&.wide {
 				width: 95%;
+				margin: 10px 0 10px;
 			}
 		}
 	}
 
 	.follow-subscribe {
+
 		@include col-last(4.3,14,5);
+
 		.menu {
 			width: 100%;
+			margin-top: 45px;
 
-			@if $isAMP == 'true' { margin-top: 25px; }
-			@else {
-				margin-top: 45px;
-
-				@include break(mobile) {
-					margin-top: 25px;
-				}
+			@include break(mobile) {
+				margin-top: 25px;
 			}
 			
 			ul {
 				li {
 
-				@if $isAMP != 'true' {
 					display: inline-block;
 					width: 40px; height: 40px;
 					padding: 0;
 					margin: 0px 12.5px 12.5px 0px;
-				}
-				@else {
-					display: inline-block;
-					width: 35px;
-					height: 35px;
-					margin: 0px 10px 10px 0px;
-					padding: 7px 0px 0px 8px;
-				}
 
 					a {
 						display: block;
@@ -210,9 +198,7 @@ footer {
 						width: 25px;
 						height: 25px;
 						letter-spacing: unset;
-
-						@if $isAMP != 'true' { margin-left: 8px; }
-						@else {margin-left: 2px;}
+						margin-left: 8px;
 					}
 
 					&.facebook {
