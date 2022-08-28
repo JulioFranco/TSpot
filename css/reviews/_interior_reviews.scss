@@ -292,7 +292,7 @@ body.interior {
 
 				.wrapper {
 					overflow: visible;
-					padding: 15px 0;
+					padding: 15px 0 35px;
 
 					@include break(mobile) {
 						padding: 25px 0 5px;

@@ -784,18 +784,20 @@ body.interior.download article .col-1-2.wide-gut{
 }
 
 .more_similars_dw {
-	margin: 0 35px 0 82px;
-	border: 1px solid #ddd;
-	line-height: 25px;
-	text-align: center;
-	font-weight: 400;
-	background-color: #F8F8F8;
-	color: #555;
+    margin: 0 auto;
+    width: 90%;
+    line-height: 40px;
+    font-family: $f-paragraph;
+    font-size: 1.1em;
+    text-align: center;
+    color: #05408f;
+    background-color: #fff;
+    border: 1px solid #92b8e5;
 
-		&:hover {
-			background-color: #eee;
-			color: #05408f;
-		}
+	&:hover {
+		color: #fff;
+    	background-color: #105ab2;
+	}
 }
 
 	.more_similars_app {
