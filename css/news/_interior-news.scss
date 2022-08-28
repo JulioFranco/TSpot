@@ -400,15 +400,10 @@ body.interior {
 
 	.related-query {
 
-		@if $isAMP == 'true' {
-			margin: -5px 0 0;
-		}
-		@else {
-			margin: 25px auto 20px;
+		margin: 25px auto 20px;
 
-			@include break(mobile) {
-				margin: 0 auto 30px;
-			}	
+		@include break(mobile) {
+			margin: 0 auto 30px;
 		}
 
 		&.videofeat {
@@ -440,24 +435,18 @@ body.interior {
 			}
 			
 			li {
-				@if $isAMP == 'true' {
+				list-style-type: none;
+				margin-bottom: 14px;
+				font-size: 0.9em;
+			    letter-spacing: -0.2px;
+
+				@include break(mobile) {
+					margin-bottom: 18px;
+					font-size: 0.95em;
+					letter-spacing: normal;
+					line-height: 1.4;
 					font-family: $f-paragraph;
-					margin-bottom: 14px;
-					letter-spacing: -0.25px;
-					font-size: 0.9em;
-					line-height: 1.4em;
 				}
-				@else {
-					margin-bottom: 14px;
-					list-style-type: none;
-					letter-spacing: -0.25px;
-					font-size: 0.85em;
-
-					@include break(mobile) {
-						font-size: 0.95em;
-					}
-				}
-
 			}
 		}
 	}

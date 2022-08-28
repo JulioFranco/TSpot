@@ -66,6 +66,7 @@
 				float: right;
 				font-size: .9em;
 				color: $light-grey2;
+				margin-right: 5px;
 
 				a {
 					color: $light-grey2;
@@ -80,11 +81,17 @@
 				margin-right: 5px;
 
 				a { color:$light-grey2; }
+
+				&.userlikes {
+					float: none;
+					padding-left: 10px;
+				}
 			}
 
 			img.user-avatar {
 				background: #eaeaea;
-				width: 28px; height: 28px;
+				width: 24px;
+				height: 24px;
 				@include box-shadow($x:2,$y:2,$blur:0,$color:#ddd);
 				margin: 0 10px 5px 0px;
 			}
@@ -200,6 +207,53 @@
 					}
 				}
 
+			}
+
+			&.eliteUser {
+
+				img.user-avatar {
+					width: 38px;
+					height: 38px;
+					margin: 10px 14px 5px 0px;
+				}
+
+				a.user {
+					position: absolute;
+					margin: -6px 0 0 0;
+				}
+
+				.commentText {
+					margin-top: 22px;
+				}
+
+				.elite {
+					display: block;
+					background: url('https://#{$staticServer}.techspot.com/images/elite/staff_elite2c.png') no-repeat;
+					width: 95px;
+					height: 22px;
+					overflow: hidden;
+					text-indent: -1000px;
+					position: absolute;
+					margin: -20px 0px 0 52px;
+					background-size: contain;
+				}
+
+				&.noAva {
+					a.user {
+						position: relative;
+						margin: 0;
+					}
+
+					.commentText {
+						margin-top: 5px;
+					}
+
+					.elite {
+						display: inline-block;
+					    position: relative;
+						margin: 0 0 -7px 15px;
+					}
+				}
 			}
 
 			ul.action-links {
@@ -394,17 +448,6 @@
 			overflow: hidden;
 			text-indent: -1000px;
 			float: right;
-			background-size: contain;
-		}
-		.elite {
-			display: inline-block;
-			background: url('https://#{$staticServer}.techspot.com/images/elite/staff_elite2c.png') no-repeat;
-			width: 95px;
-			height: 22px;
-			overflow: hidden;
-			text-indent: -1000px;
-			float: right;
-			margin: 14px 10px 0 0;
 			background-size: contain;
 		}
 

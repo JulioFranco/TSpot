@@ -533,6 +533,10 @@ h3.longtype {
 	font-weight: 400;
 	background-color: #fff;
     border: 1px solid #92b8e5;
+
+	@include break(mobile){
+		width: 93%;
+	}
 }
 .post-load-more:hover {
 	color: #fff;
