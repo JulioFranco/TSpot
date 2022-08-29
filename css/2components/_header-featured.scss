@@ -245,14 +245,7 @@
 }
 
 .feature-title {
-	background-color: #1e2933e6;
-
-	@if $isAMP == 'true' {
-		.wrapper-amp {
-			padding: 20px 0 5px;
-			margin: 0 auto;
-		}
-	}
+	background-color: rgba(30,41,51,0.9);
 
 	.title-group {
 		margin: 10px 10px -5px 0;
