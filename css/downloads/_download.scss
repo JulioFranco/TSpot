@@ -324,7 +324,7 @@ body.interior.download {
 				}
 
 				.long_description {
-					max-height: 1650px;
+					max-height: 1400px;
 					overflow: hidden;
 				}
 
@@ -800,8 +800,8 @@ body.interior.download article .col-1-2.wide-gut{
 	}
 }
 
-	.more_similars_app {
-		&:hover	{
-			color: #bd0707;
-		}
+.more_similars_app {
+	&:hover	{
+		color: #bd0707;
 	}
+}

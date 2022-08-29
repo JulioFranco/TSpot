@@ -416,7 +416,7 @@ body.interior {
 	.reviewed_by {
 		display: inline-block;
 	    text-align: left;
-	    font-size: 0.7em;
+	    font-size: 0.75em;
 	    color: #555;
 	}
 
@@ -1243,6 +1243,11 @@ body.interior {
 	}
 }
 
+.section-byline {
+    font-size: 0.85em;
+    color: #444;
+    margin: 20px 5px 10px;
+}
 
 @if $isAMP != 'true' {
 	.price_alert {
