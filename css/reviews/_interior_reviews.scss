@@ -792,13 +792,14 @@ body.interior {
 			.col-2-3-last{
 				float: left !important;
 				width: 65%;
-				padding-bottom: 20px;
+				padding-bottom: 0px;
 
 				@include break(tablet) {
 					width: 64%;
 				}
 				@include break(v-tablet) {
 					width: 100%;
+					padding-bottom: 20px;
 				}
 			}
 

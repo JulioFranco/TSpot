@@ -32,20 +32,14 @@ body.dark {
 }
 
 // Scroll sticky header fix
-// 76px desktop, 88px mobile
-@if $isAMP != 'true' {
-	:target {
-		scroll-margin-top: 91px;
+:target {
+	scroll-margin-top: 91px;
 
-		@include break(mobile){
-			scroll-margin-top: 103px;
-		}
-	}
-} @else {
-	:target {
+	@include break(mobile){
 		scroll-margin-top: 103px;
 	}
 }
+
 
 // Safari fix
 @media not all and (min-resolution:.001dpcm)
