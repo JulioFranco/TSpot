@@ -44,7 +44,7 @@
 								
 								@if $isDesk == 'true' {
 								@include break(v-tablet) {
-									font-size: 1.2em;
+									font-size: $mobile-tile-font-size;
 								}}
 							}
 						}
@@ -130,7 +130,7 @@
 							}
 
 							@include break(mobile) {
-								font-size: 1.2em;
+								font-size: $mobile-tile-font-size;
 								/*
 								background: rgba(40,51,60,0.8);
 								*/
@@ -850,7 +850,7 @@
 							height: $tile-height-mobile - 30px;
 							hgroup {
 								h2 {
-									font-size: 1.2em;
+									font-size: $mobile-tile-font-size;
 								}
 							}
 						}
@@ -885,7 +885,7 @@
 							height: $tile-height-mobile - 30px;
 							hgroup {
 								h2 {
-									font-size: 1.2em;
+									font-size: $mobile-tile-font-size;
 								}
 							}
 						}
