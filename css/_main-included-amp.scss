@@ -45,7 +45,7 @@ body.dark {
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
 	@include break(mobile){
-		#header-ts, #content { top: -1px; }
+		#header-ts, #content { top: -2px; }
 	}
 }}
 

@@ -522,6 +522,7 @@
 							position: relative;
 							display: block;
 							padding: 0 16px 0 16px;
+							letter-spacing: 0.25px;
 
 							@include break(mobile) {
 								padding: 0 11px 0 14px;

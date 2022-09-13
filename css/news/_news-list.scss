@@ -36,13 +36,13 @@
 					font-weight: 500;
 
 					@if $isDesk == 'true' {
-						font-size: 110%;
+						font-size: 1.15em;
 							&:hover {
 								color: #105ab2;
 							}
 					}
 					@else {
-						font-size: 100%;
+						font-size: 1em;
 					}
 
 				}
