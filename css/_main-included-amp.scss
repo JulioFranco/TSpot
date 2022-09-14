@@ -368,6 +368,22 @@ h2, h3, h4, h5 {
 				box-shadow: inset 0 -2px 0 #ffc082;
 			}
 		}
+
+		@if $isDesk == 'true' {
+			&.introhome {
+				font-size: 16px;
+				font-weight: 400;
+				padding: 5px 0 5px;
+				font-family: $f-paragraph;
+				color: #444;
+
+				strong {
+					font-family: $f-primary;
+					font-weight: 500;
+				}
+
+			}
+		}
 	}
 
 }
