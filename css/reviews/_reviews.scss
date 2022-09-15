@@ -7,24 +7,15 @@ body.reviews {
 		background-repeat: no-repeat;
 
 		.wrapper {
-			@if $isAMP == 'true' {
-				padding: 0;
-
-			} @else {
-				padding: 0 !important;
-			}
+			padding: 0 !important;
 		}
 	}
 	#content {
 		.wrapper {
-			@if $isAMP == 'true' {
-				padding: 10px 0;
+			padding: 40px 0;
 			
-			} @else {
-				padding: 40px 0;
-				@include break(mobile) {
-					padding: 10px 0;
-				}
+			@include break(mobile) {
+				padding: 10px 0;
 			}
 		}
 	}
@@ -37,17 +28,16 @@ body.features {
 		background-repeat: no-repeat;
 
 		.wrapper {
-			@if $isAMP == 'true' {
-				padding: 0;
-			
-			} @else {
-				padding: 0 !important;
-			}
+			padding: 0 !important;
 		}
 	}
 	#content {
 		.wrapper {
-			padding: 20px 0;
+			padding: 40px 0;
+			
+			@include break(mobile) {
+				padding: 10px 0;
+			}
 		}
 	}
 }
