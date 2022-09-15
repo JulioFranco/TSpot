@@ -8,13 +8,14 @@ html {
 body {
 	background-color: $light-grey;
 	font-family: $f-primary;
-	font-size: 120%; 
+	font-size: 1.2em;
 	-webkit-font-smoothing: antialiased;
 
 	// Fixed header home
 	padding-top: 74px;
 	
 	@include break(mobile){
+		font-size: 1.22em;
 		padding-top: 56px;
 	}
 }
