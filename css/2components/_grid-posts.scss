@@ -99,37 +99,28 @@
 		
 			li {
 				width: $tile-width - 1 - $tile-padding;
-				
 				top: 0;
 				left: 0;
 				position: absolute;
 				background-size: cover;
 				background-position: center center;
 			    overflow: hidden;
+				height: $tile-height-sec - $tile-padding !important;
 
-				@if $isAMP == 'true' {
-					height: $tile-height-sec - $tile-padding;
-				} @else {
-					height: $tile-height-sec - $tile-padding !important;
-				}
+				&.tall {
+					height: ($tile-height-sec * 2) - $tile-padding + 1 !important;
 
-				@if $isAMP != 'true' {
-					&.tall {
-						height: ($tile-height-sec * 2) - $tile-padding + 1 !important;
+					a {
+						height: ($tile-height-sec * 2) - 40px - $tile-padding + 1 !important;
+						hgroup {
+							h2, .gr-title {
+								font-size: $tall-tile-font-size;
 
-						a {
-							height: ($tile-height-sec * 2) - 40px - $tile-padding + 1 !important;
-							hgroup {
-								h2, .gr-title {
-									font-size: $tall-tile-font-size;
-
-									@include break(v-tablet) {
-										font-size: 1.1em;
-									}
+								@include break(v-tablet) {
+									font-size: 1.1em;
 								}
 							}
 						}
-
 					}
 				}
 

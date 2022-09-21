@@ -88,18 +88,18 @@ body.home {
 							}
 
 							ul.featured-posts li a hgroup h2 {
-								font-size: 1em;
+								font-size: 1.05em;
 
 								@include break(mobile) {
-									font-size: 1.05em;
+									font-size: 1.1em;
 								}
 							}
 
 							ul.featured-posts li.tall a hgroup h2 {
-								font-size: 1.2em;
+								font-size: 1.25em;
 							
 								@include break(mobile) {
-									font-size: 1.05em;
+									font-size: 1.1em;
 								}
 							}					
 						}
