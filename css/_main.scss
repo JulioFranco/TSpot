@@ -48,14 +48,11 @@ body.dark {
 }
 
 // Safari fix
-/*
-@media not all and (min-resolution:.001dpcm)
-{ @supports (-webkit-appearance:none) {
+@supports (-webkit-hyphens:none) {
 	@include break(mobile){
 		#header-ts, #content { top: -2px; }
 	}
-}}
-*/
+}
 
 article, aside, section {
 	display: block;
