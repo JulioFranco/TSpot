@@ -933,20 +933,28 @@ table {
     width: 200px;
     border: 1px solid #fff;
     position: fixed;
-    background: black;
+    background: #075bc0;
     font-family: Arial, sans-serif;
     padding: 18px 27px;
     cursor: pointer;
     transition: 0.2s;
     z-index: 10000000000;
 
+	&:hover {
+		background: #1a65c3;
+		transition: 0.2s;
+		padding: 18px 21px 18px 33px;
+	}
+
 	a {
 		color: #fff;
 
+		/*
 		&:hover {
 			padding-left: 6px;
 			transition: 0.2s;
 		}
+		*/
 	}
 
 	@include break(mobile) { display: none; }
