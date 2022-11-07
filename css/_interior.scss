@@ -337,7 +337,7 @@ body.interior {
 	&.trivia, &.trivias {
 		.col-2-3{
 			@if $isDesk == 'true' {
-				width: 68%;
+				width: 70%;
 
 				@include break(v-tablet) {
 					width: 100%;

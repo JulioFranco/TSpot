@@ -59,7 +59,7 @@ body.interior {
 
 			li {
 				padding: 0px 2%;
-				height: 80px;
+				height: 85px;
 				font-size: 0.9em;
 				font-weight: normal;
 				border-bottom: 1px solid #F1F1F1;
@@ -121,20 +121,13 @@ body.interior {
 					font-family: $f-primary;
 					font-weight: 500;
 					letter-spacing: -0.333px;
+					font-size: 1.15em;
+					margin-top: 16px;
+					line-height: 1.5;
 
-					@if $isAMP == 'true' {
-						font-size: 1em;
-						margin-top: 8px;
-
-					} @else {
-						font-size: 1.15em;
-						margin-top: 16px;
-						line-height: 1.5;
-
-						@include break(mobile){
-							font-size: 1em;
-							margin-top: 12px;
-						}
+					@include break(mobile){
+						font-size: 1.1em;
+						margin-top: 12px;
 					}
 
 					a {

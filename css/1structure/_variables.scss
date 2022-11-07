@@ -14,9 +14,9 @@ $social-icons-version: 4.4;
 $isAMP: 'false';
 
 // !GLOBAL RESPONSIVE VARIABLES
-$big-desk: 1250px;
-$desk: 1100px;
-$tablet: 1100px; // This needs to be the same as $desk to prevent a "no-mans-land" in breakpoints
+$big-desk: 1300px;
+$desk: 1200px;
+$tablet: 1200px; // This needs to be the same as $desk to prevent a "no-mans-land" in breakpoints
 $v-tablet: 960px;
 $mobile: 760px;
 $v-mobile: 500px;
@@ -89,16 +89,16 @@ $header-interior-line-height-mobile: 45px;
 
 
 // !MASTHEAD
-$tile-height: 210px;
+$tile-height: 240px;
 $tall-tile-height: ($tile-height * 2) + 1;
-$tile-width: 371px;
+$tile-width: 400px;
 $tile-width-percent: 33%;
 
-$tile-height-sec: 205px;
+$tile-height-sec: 235px;
 $tile-width-sec: 370px;
 
-$tall-tile-font-size: 1.45em;
-$tile-font-size: 1.1em;
+$tall-tile-font-size: 1.5em;
+$tile-font-size: 1.15em;
 $mobile-tile-font-size: 1.25em;
 
 $tile-padding: 6;
@@ -108,6 +108,6 @@ $mast-border-width: 1px;
 $mast-border-col: #fff;
 
 $tile-height-mobile: 365px;
-$tile-width-mobile: 82%;
+$tile-width-mobile: 80%;
 
 // !END MASTHEAD
