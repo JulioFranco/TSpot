@@ -28,16 +28,6 @@ body.home {
 				padding-top: 72px;
 			}
 
-			/*
-			#dk_menu {
-				height: 38px !important;
-			}
-			#header-ts .menu .SubHeader {
-				height: 38px !important;
-				padding-top: 3px !important;
-			}
-			*/
-
 			#content {
 				.wrapper {
 					@include break(v-mobile) {
