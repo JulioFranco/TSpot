@@ -1,107 +1,59 @@
 .products {
 	.featured-posts-title {
 		margin: 0 auto;
+		width: $desk;
 
-		@if $isAMP == 'true' {
-			width: 94%;
+		@include break(mobile){
 			margin-top: 25px;
-			padding: 0px 3%;
-
-		} @else {
-			width: $desk;
-
-			@include break(tablet){
-				width: 94%; 
-				padding: 0px 3%;
-			}
-
-			@include break(mobile){
-				margin-top: 25px;
-			}
 		}
 
 		h1 {
 			font-weight: 500;
 			color: white;
+			font-size: 1.4em;
+			line-height: 80px;
 
-			@if $isAMP == 'true' {
+			@include break(mobile){
 				font-size: 1.1em;
 				line-height: 60px;
 				width: 320px;
 				white-space: nowrap;
 				overflow: hidden;
 				text-overflow: ellipsis;
-
-			} @else {
-				font-size: 1.4em;
-				line-height: 80px;
-
-				@include break(mobile){
-					font-size: 1.1em;
-					line-height: 60px;
-					width: 320px;
-					white-space: nowrap;
-					overflow: hidden;
-					text-overflow: ellipsis;
-				}
 			}
 		}
 
-		@if $isAMP != 'true' {
+		h4 {
+		    font-weight: 400;
+		    color: #eee;
+		    font-size: 0.75em;
+		    line-height: 1.5;
+		    letter-spacing: -.333px;
+		    margin: -15px 0 15px 0;
 
-			h4 {
-			    font-weight: 400;
-			    color: #eee;
-			    font-size: 0.75em;
-			    line-height: 1.5;
-			    letter-spacing: -.333px;
-			    margin: -15px 0 15px 0;
-
-				@include break(mobile){
-					line-height: 1.3;
-					margin: -5px 0 16px 0;
-				}
+			@include break(mobile){
+				line-height: 1.3;
+				margin: -5px 0 16px 0;
 			}
-
-		}
-
-	}
-
-	@if $isAMP == 'true' {
-		.carousel {
-			margin: 0;
 		}
 	}
 
 	.masthead {
 		position: relative;
 		background: #707c8a;
-
-		@if $isAMP == 'true' {
+		min-height: 325px;
+		
+		@include break(mobile) {
 			min-height: 200px;
-
-		} @else {
-			min-height: 310px;
-			@include break(mobile) {
-				min-height: 200px;
-			}
 		}
 
 		.wrapper {
 			position: relative;
-
-			@if $isAMP == 'true' {
-				padding: 0;
-			} @else {
-				padding: 0 !important;
-			}
+			padding: 0 !important;
 		}
 
 		.featured-posts {
-			@if $isAMP != 'true' {
-				position: absolute;
-			}
-			
+
 			.rating {
 				font-family: $f-helvetica;
 				position: absolute;
@@ -110,32 +62,25 @@
 				font-weight: 500;
 				color: white;
 				text-shadow: 1px 1px 5px rgba(0,0,0,.5);
+				padding: 0 16px;
+				line-height: 66px;
+				font-size: 1.8em;
+				border-radius: 4px 0 0 0;
 
-				@if $isAMP == 'true' {
+				@if $isDesk == 'true' {
+				@include break(tablet){
 					padding: 0 17px;
 					line-height: 60px;
 					font-size: $tall-tile-font-size;
-
-				} @else {
-					padding: 0 16px;
-					line-height: 66px;
-					font-size: 1.8em;
-					border-radius: 4px 0 0 0;
-
-					@if $isDesk == 'true' {
-					@include break(tablet){
-						padding: 0 17px;
-						line-height: 60px;
-						font-size: $tall-tile-font-size;
-					}}
-					
-					@include break(mobile){
-						padding: 0 18px;
-						line-height: 60px;
-						font-size: $tall-tile-font-size;
-					}
+				}}
+				
+				@include break(mobile){
+					padding: 0 18px;
+					line-height: 60px;
+					font-size: $tall-tile-font-size;
 				}
 			}
+
 			.excellent {
 				background-color: rgba(0,191,23,0.65);
 			}
@@ -152,369 +97,149 @@
 				background-color: rgba(153,153,153,0.65);
 			}
 
-			@if $isAMP == 'true' {
-				.slide {
-					a {
-						.caption-on-top {
-							width: 60%;
-							position: absolute;
-							display: block;
-							top: initial;
+
+			li {
+				width: $tile-width-percent;
+				height: $tile-height-sec - $tile-padding - 10;
+				top: 0;
+				left: 0;
+				position: absolute;
+				background-size: cover;
+				background-position: center center !important;
+
+				a {
+					position: relative;
+					display: block;
+					padding: 15px;
+					color: white;
+					height: $tile-height-sec - 40px - $tile-padding;
+					z-index: 100;
+
+					background: linear-gradient(195deg,rgba(21,76,143,.1) 40%,rgba(30,41,51,.85) 70%);
+
+					&:before {
+						background: linear-gradient(195deg,rgba(34,34,34,.14) 40%,rgba(34,34,34,.85) 90%);
+						content: '';
+						display: block;
+						height: 100%;
+						position: absolute;
+						top: 0;
+						left: 0;
+						opacity: 0.65;
+						width: 100%;
+						z-index: -100;
+						transition: opacity 0.2s;
+					}
+
+					&:hover {
+						&:before {
+							opacity: 0;
 						}
 					}
+					
+					hgroup {
+						width: 70%;
+						position: absolute;
+						bottom: 15px;
+						display: block;
+						
+						h3 {
+							text-transform: uppercase;
+							font-size: .6em;
+							text-shadow: 0 0 2px #000;
+							color: $grid-orange;
+							padding-bottom: 5px;
+							letter-spacing: .25px;
+						}
+						h2 {
+							font-size: 1.2em;
+							font-weight: 500;
+							text-shadow: 1px 1px 3px #444;
+							letter-spacing: -.2px;
+							max-height: 100px;
+							overflow: hidden;
+						}
+					}	
 				}
-			} @else {
-				li {
-					width: $tile-width-sec;
-					height: 196px;
+				
+				&:nth-child(1) {
 					top: 0;
 					left: 0;
-					position: absolute;
-					background-size: cover;
-					background-position: center center !important;
-
-					a {
-						position: relative;
-						display: block;
-						padding: 15px;
-						color: white;
-						height: 196px - 30px;
-						z-index: 100;
-
-						background: linear-gradient(195deg,rgba(21,76,143,.1) 40%,rgba(30,41,51,.85) 70%);
-
-						&:before {
-							background: linear-gradient(195deg,rgba(34,34,34,.14) 40%,rgba(34,34,34,.85) 90%);
-							content: '';
-							display: block;
-							height: 100%;
-							position: absolute;
-							top: 0;
-							left: 0;
-							opacity: 0.65;
-							width: 100%;
-							z-index: -100;
-							transition: opacity 0.2s;
-						}
-
-						&:hover {
-							&:before {
-								opacity: 0;
-							}
-						}
-
-						/* version anterior
-							@include gradient-trans-percent($start_color:#1E2933,$start_cent:40%,$start_alpha:0.3,$end_color:#1E2933,$end_cent:90%,$end_alpha:0.95);
-						
-							@if $isDesk == 'true' {
-							&:hover {
-								@include gradient-trans-percent($start_color:#1E2933,$start_cent:40%,$start_alpha:0.15,$end_color:#1E2933,$end_cent:90%,$end_alpha:0.95);
-							}}
-						*/
-						
-						hgroup {
-							width: 70%;
-							position: absolute;
-							bottom: 15px;
-							display: block;
-							
-							h3 {
-								text-transform: uppercase;
-								font-size: .6em;
-								text-shadow: 0 0 2px #000;
-								color: $grid-orange;
-								padding-bottom: 5px;
-								letter-spacing: .25px;
-							}
-							h2 {
-								font-size: 1.2em;
-								font-weight: 500;
-								text-shadow: 1px 1px 3px #444;
-								letter-spacing: -.2px;
-								max-height: 100px;
-								overflow: hidden;
-							}
-						}	
-					}
-					
-					&:nth-child(1) {
-						top: 0;
-						left: 0;
-					}
-					
-					&:nth-child(2) {
-						/*top: 168px;*/
-						left: $tile-width;
-					}
-					
-					&:nth-child(3) {
-						left: $tile-width*2;
-					}
-					
-					&:nth-child(4) {
-						top: 168px;
-						left: 0;
-					}
-					
-					&:nth-child(5) {
-						left: $tile-width;
-						top: 168px;
-					}
-					
-					&:nth-child(6) {
-						left: $tile-width*2;
-						top: 168px;
-					}
+				}
+				
+				&:nth-child(2) {
+					left: calc(#{$tile-width-percent} + #{$tile-padding-pct});
+				}
+				
+				&:nth-child(3) {
+					left: calc(#{$tile-width-percent*2} + #{$tile-padding-pct*2});
+				}
+				
+				&:nth-child(4) {
+					top: ($tile-height-sec + 1);
+					left: 0;
+				}
+				
+				&:nth-child(5) {
+					left: calc(#{$tile-width-percent} + #{$tile-padding-pct});
+					top: ($tile-height-sec + 1);
+				}
+				
+				&:nth-child(6) {
+					left: calc(#{$tile-width-percent*2} + #{$tile-padding-pct*2});
+					top: ($tile-height-sec + 1);
 				}
 			}
 		}
 
-
-		@if $isDesk == 'true' {
-		@if $isAMP != 'true' {
-			@include break(tablet) {
-				.wrapper {
-					position: relative;
-					width: 100%;
-				}
-				.featured-posts {
-					width: inherit;
-					li {
-						width: 1/3*100%;
-						height: 196px;
-						top: 0;
-						left: 0;
-						position: absolute;
-						background-size: cover;
-						background-position: center center;
-						
-						background: $dark-blue2;
-						
-						a {
-							position: relative;
-							display: block;
-							padding: 15px;
-							color: white;
-							height: 196px - 30px;
-							z-index: 100;
-
-							background: linear-gradient(195deg,rgba(21,76,143,.1) 40%,rgba(30,41,51,.85) 70%);
-
-							&:before {
-								background: linear-gradient(195deg,rgba(34,34,34,.14) 40%,rgba(34,34,34,.85) 90%);
-								content: '';
-								display: block;
-								height: 100%;
-								position: absolute;
-								top: 0;
-								left: 0;
-								opacity: 0.65;
-								width: 100%;
-								z-index: -100;
-								transition: opacity 0.2s;
-							}
-
-							&:hover {
-								&:before {
-									opacity: 0;
-								}
-							}
-
-							/* version anterior
-							@include gradient-trans-percent($start_color:#1E2933,$start_cent:0%,$start_alpha:0,$end_color:#1E2933,$end_cent:30%,$end_alpha:0.6);
-							
-							&:hover {
-								@include gradient-trans($start_color:#1E2933,$start_alpha:.2,$end_color:#1E2933,$end_alpha:.4);
-							}
-							*/
-							
-							hgroup {
-								width: 60%;
-								position: absolute;
-								bottom: 15px;
-								display: block;
-								
-								h3 {
-									text-transform: uppercase;
-									font-size: .6em;
-									text-shadow: 0 0 2px #000;
-									color: #FF9B37;
-									padding-bottom: 5px;
-									letter-spacing: .25px;
-									@include break(v-tablet){
-										font-size: 0.6em;
-									}
-								}
-								h2 {
-									font-size: 1.2em;
-									font-weight: 500;
-									text-shadow: 1px 1px 3px #444;
-									letter-spacing: -.2px;
-									@include break(v-tablet){
-										font-size: 1.0em;
-									}
-									@include break(mobile){
-										font-size: 1.2em;
-									}
-									@include break(v-mobile){
-										font-size: 1.1em;
-									}
-								}
-							}
-						}
-
-						&:nth-child(1) {
-							top: 0;
-							left: 0;
-						}
-
-						&:nth-child(2) {
-							left: 1/3*100%;
-						}
-
-						&:nth-child(3) {
-							left: 2/3*100%;
-						}
-
-						&:nth-child(4) {
-							top: 168px;
-							left: 0;
-						}
-
-						&:nth-child(5) {
-							top: 168px;
-							left: 1/3*100%;
-						}
-
-						&:nth-child(6) {
-							top: 168px;
-							left: 2/3*100%;
-						}
-					}
-				}	
-			}
-		}
-		}//desk
-
-
-		@if $isAMP != 'true' {
-			@include break(mobile) {
-				.wrapper {
-					position: relative;
-					width: 100%;
-					overflow: scroll;
-					-webkit-overflow-scrolling: touch;
-
-					@if $isAMP == 'true' {
-						height: 270px;
-					} @else {
-						height: 200px;
-					}
-				}
-				.featured-posts {
-					@if $isAMP == 'true' {
-						width: inherit;
-					}
-
-					li {
-						//width: 80%;
-						height: 200px;
-						top: 0;
-						left: 0;
-						position: absolute;
-						background-size: cover;
-						background-position: center center;
-											
-						a {
-							position: relative;
-							display: block;
-							padding: 15px 10px;
-							color: white;
-							height: 200px - 30px;
-
-							@if $isAMP == 'true' {
-								@include gradient-trans-percent($start_color:#1E2933,$start_cent:40%,$start_alpha:0.3,$end_color:#1E2933,$end_cent:90%,$end_alpha:0.95);
-							}
-
-							hgroup {
-								width: 75%;
-								@include break(v-mobile){
-									width: 60%;
-								}
-								position: absolute;
-								bottom: 15px;
-								display: block;
-
-								@if $isAMP == 'true' {
-									padding: 15px 10px;
-								}
-							}
-						}
-						
-						/*
-						&:nth-child(1) {
-							top: 0;
-							left: 0;
-							border-bottom: 0px;
-							border-left: 0px ;
-						}
-						
-						&:nth-child(2) {
-							top: 0;
-							left: 80%;
-						}
-						
-						&:nth-child(3) {
-							top: 0;
-							left: 80%*2;
-						}
-						
-						&:nth-child(4) {
-							left: 80%*3;
-							top: 0;
-						}
-						
-						&:nth-child(5) {
-							left: 80%*4;
-							top: 0;
-						}
-						
-						&:nth-child(6) {
-							left: 80%*5;
-							top: 0;
-							margin: 0;
-						}
-						*/
-					}
-				}
-			}
-		}
-	}
-}
-
-.product {
-	@if $isAMP == 'true' {
-		.carousel {
-			margin: 0;
-		}
-	}
-}
-
-@if $isAMP != 'true' {
-	.products-cat .masthead {
-		@include break(tablet) {
-			.wrapper {
-				position: relative;
-				width: 100%;
-				height: 0;
-			}
-		}
 		@include break(mobile) {
 			.wrapper {
 				position: relative;
 				width: 100%;
+				overflow: scroll;
+				-webkit-overflow-scrolling: touch;
 				height: 200px;
 			}
+
+			.featured-posts {
+				li {
+					height: 200px;
+					top: 0;
+					left: 0;
+					position: absolute;
+					background-size: cover;
+					background-position: center center;
+										
+					a {
+						position: relative;
+						display: block;
+						padding: 15px 10px;
+						color: white;
+						height: 200px - 30px;
+
+						hgroup {
+							width: 75%;
+							@include break(v-mobile){
+								width: 60%;
+							}
+							position: absolute;
+							bottom: 15px;
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.products-cat .masthead {
+
+	@include break(mobile) {
+		.wrapper {
+			position: relative;
+			width: 100%;
+			height: 200px;
 		}
 	}
 }

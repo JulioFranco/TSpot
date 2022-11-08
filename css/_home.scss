@@ -170,10 +170,10 @@ body.home {
 							}
 
 							ul.featured-posts li {
-								width: 33%;
+								width: $tile-width-percent;
 
 							    @include break(mobile){
-							    	width: 82%;
+							    	width: $tile-width-mobile;
 							    }
 							}
 

@@ -1,62 +1,44 @@
-
-
 .features, .reviews, .trivias, .slide-article {
 	.featured-posts-title {
-		@if $isAMP == 'true' {
-			padding: 0px 3%;
-			margin-top: 25px;
+		width: $desk;
+		margin: 0 auto;
 
-			h1 {
+		@include break(tablet){
+			width: 94%;
+			padding: 0px 3%;
+		}
+
+		@include break(mobile){
+			margin-top: 25px;
+		}
+
+		h1 {
+			font-size: 1.4em;
+			font-weight: 500;
+			color: white;
+			line-height: 80px;
+
+			@include break(mobile){
 				font-size: 1.1em;
-				color: white;
 				line-height: 60px;
 				width: 320px;
 				white-space: nowrap;
 				overflow: hidden;
 				text-overflow: ellipsis;
 			}
-		
-		} @else {
-			width: $desk;
-			margin: 0 auto;
+		}
 
-			@include break(tablet){
-				width: 94%;
-				padding: 0px 3%;
-			}
+		h4 {
+		    font-weight: 400;
+		    color: #eee;
+		    font-size: 0.75em;
+		    line-height: 1.5;
+		    letter-spacing: -.333px;
+		    margin: -15px 0 15px 0;
 
 			@include break(mobile){
-				margin-top: 25px;
-			}
-
-			h1 {
-				font-size: 1.4em;
-				font-weight: 500;
-				color: white;
-				line-height: 80px;
-
-				@include break(mobile){
-					font-size: 1.1em;
-					line-height: 60px;
-					width: 320px;
-					white-space: nowrap;
-					overflow: hidden;
-					text-overflow: ellipsis;
-				}
-			}
-
-			h4 {
-			    font-weight: 400;
-			    color: #eee;
-			    font-size: 0.75em;
-			    line-height: 1.5;
-			    letter-spacing: -.333px;
-			    margin: -15px 0 15px 0;
-
-				@include break(mobile){
-					line-height: 1.3;
-					margin: -5px 0 16px 0;
-				}
+				line-height: 1.3;
+				margin: -5px 0 16px 0;
 			}
 		}
 	}
@@ -94,16 +76,6 @@
 	.reviews-cat .grid-posts.catDef, .features-cat .grid-posts.catDef {
 		.masthead {
 			min-height: 365px;
-
-			@if $isDesk == 'true' {
-			@include break(tablet){
-				.wrapper {
-					position: relative;
-					width: 100%;
-					height: 0;
-				}
-			}
-			}//desk
 			
 			@include break(mobile){
 				min-height: 270px;
@@ -117,6 +89,7 @@
 			
 			li {
 				height: 266px !important;
+
 				@include break(mobile){
 					height: 270px !important;
 				}
@@ -129,7 +102,7 @@
 				}
 
 				&:nth-child(3) {
-					left: $tile-width*2 !important;
+					left: calc(#{$tile-width-percent*2} + #{$tile-padding-pct*2}) !important;
 					top: 0 !important;
 
 				}
@@ -145,24 +118,13 @@
 						display: none;
 				}
 
-				@if $isDesk == 'true' {
-				@include break(tablet){
-					&:nth-child(2) {
-					}
-					&:nth-child(3) {
-						left: 2/3*100% !important;
-						top: 0 !important;
-					}
-				}
-				}//desk
-
 				@include break(mobile){
 					&:nth-child(3) {
 						left: 160% !important;
 						top: 0 !important;
 					}
-
 				}
+
 			}
 		}
 	}
