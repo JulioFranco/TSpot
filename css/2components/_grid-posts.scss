@@ -224,9 +224,7 @@
 
 		ul.variation-5c {
 			li {
-				/*&.tall {
-					height: $tile-height - $tile-padding;
-				}*/
+				height: $tile-height - $tile-padding * 2 !important;
 
 				&:nth-child(1) {
 					top: 0;
@@ -256,6 +254,9 @@
 
 		ul.variation-6c {
 			li {
+
+				height: $tile-height - $tile-padding * 2 !important;
+
 				&:nth-child(1) {
 					top: 0;
 					left: 0;
