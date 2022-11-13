@@ -1246,7 +1246,12 @@ body.interior {
 .section-byline {
     font-size: 0.85em;
     color: #444;
+    line-height: 1.4;
     margin: 20px 5px 10px;
+
+    @include break(mobile) {
+    	font-size: 0.8em;
+    }
 }
 
 @if $isAMP != 'true' {
@@ -1374,13 +1379,8 @@ body.interior {
 		position: relative;
 		padding: 15px 100px 0px 10px;
 		min-height: 100px;
+		border-bottom: 1px solid #eee !important;
 
-		@if $isAMP == 'true' {
-			border-bottom: 1px solid #eee;
-		} @else {
-			border-bottom: 1px solid #eee !important;
-		}
-	
 		&:nth-child(even) {
 			background: #f5f5f5;
 		}
@@ -1394,8 +1394,13 @@ body.interior {
 			display: inline-block;
 			padding: 0 15px;
 			line-height: 180%;
-			top: 30px; right: 15px;
+			top: 35px; right: 40px;
 			@include border-radius(2px);
+
+			@include break(mobile) {
+			    top: 30px;
+			    right: 15px;
+			}
 
 			&.excellent {
 				@include trans-bg($c-excellent,.9);
@@ -1410,13 +1415,8 @@ body.interior {
 				@include trans-bg($c-bad,.9);
 			}
 			&.perfect {
-				@if $isAMP == 'true' {
-					padding: 0 7px;
-				} @else {
-					padding: 0 7px !important;
-				}
+				padding: 0 7px !important;
 			}
-
 		}
 	
 		cite {
@@ -1436,20 +1436,18 @@ body.interior {
 					color: $light-grey2;
 				}
 			}
-
-			@if $isAMP == 'true' {
-				amp-img {
-					width: 15px;
-					display: inline-block;
-				}
-			}
 		}
 	
 		p {
 			padding: 5px 0 15px;
 			line-height: 1.5;
-			font-size: .7em;
+			font-size: .8em;
+			margin: 8px 5% 0 20px;
 			font-weight: 400;
+
+			@include break(mobile) {
+				margin: 0;
+			}
 		}
 	}
 }
