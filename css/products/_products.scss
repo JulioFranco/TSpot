@@ -998,6 +998,11 @@ body.interior {
 
 @if $isAMP != 'true' {
 	#CategoryList {
+
+	@include break(mobile) {
+		margin: 0 3% 20px;
+	}
+
 		.SideProdContent {
 			padding: 17px;
 			background-color:#324455;
@@ -1088,12 +1093,8 @@ body.interior {
 
 
 %var_looked-at_expert-reviews {
-	@if $isAMP == 'true' {
+	@include break(mobile) {
 		margin-bottom: 35px;
-	} @else {
-		@include break(mobile){
-			margin-bottom: 35px;
-		}
 	}
 
 	& > h3 {
