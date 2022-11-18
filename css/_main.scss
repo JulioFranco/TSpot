@@ -860,6 +860,52 @@ table {
 	}
 }//desk
 
+// for interstitials
+.acontinue {
+	top: 30px;
+	right: -5px;
+	width: 220px;
+	border: 1px solid #fff;
+	position: fixed;
+	background: #075bc0;
+	font-family: Arial,sans-serif;
+	padding: 18px 27px;
+	color: #fff;
+	transition: all 0.5s;
+	cursor: pointer;
+	text-align:center;
+	z-index: 10000000000;
+
+	@include break(mobile) { display: none; }
+
+	span {
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+		transition: 0.5s;
+
+		&:after {
+			content: '\00bb\00bb';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			right: -20px;
+			transition: 0.5s;
+		}
+	}
+
+	&:hover {
+		span {
+			padding-right: 19px;
+
+			&:after {
+				opacity: 1;
+				right: 0;
+			}
+		}
+	}
+}
+
 .adContainerNews {
 	margin-left: 813px;
 	position: absolute;
@@ -924,40 +970,6 @@ table {
 	label {
 		color: #1e2933;
 	}
-}
-
-// for interstitials
-.adContinue {
-    top: 30px;
-    right: -5px;
-    width: 200px;
-    border: 1px solid #fff;
-    position: fixed;
-    background: #075bc0;
-    font-family: Arial, sans-serif;
-    padding: 18px 27px;
-    cursor: pointer;
-    transition: 0.2s;
-    z-index: 10000000000;
-
-	&:hover {
-		background: #1a65c3;
-		transition: 0.2s;
-		padding: 18px 21px 18px 33px;
-	}
-
-	a {
-		color: #fff;
-
-		/*
-		&:hover {
-			padding-left: 6px;
-			transition: 0.2s;
-		}
-		*/
-	}
-
-	@include break(mobile) { display: none; }
 }
 
 // for bottom d-ads
