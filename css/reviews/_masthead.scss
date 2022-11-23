@@ -46,13 +46,12 @@
 
 
 @if $isAMP != 'true' {
-
 	@if $isDesk == 'true' {
 		.reviews.big-grid,
 		.features.big-grid {
 			.grid-posts {
 				.masthead {
-					min-height: ($tile-height-sec * 2) + 105px;
+					min-height: ($tile-height-sec * 2) + 115px;
 
 					@include break(mobile){
 						min-height: 270px;
@@ -62,6 +61,9 @@
 		}
 	}
 	@else {
+		.masthead {
+			height: auto !important;
+		}
 
 		.reviews.big-grid,
 		.features.big-grid {
@@ -69,62 +71,6 @@
 				.masthead {
 					min-height: 270px;
 				}
-			}
-		}
-	}
-
-	.reviews-cat .grid-posts.catDef, .features-cat .grid-posts.catDef {
-		.masthead {
-			min-height: 365px;
-			
-			@include break(mobile){
-				min-height: 270px;
-
-				.wrapper {
-					position: relative;
-					width: 100%;
-					height: 270px;
-				}
-			}
-			
-			li {
-				height: 266px !important;
-
-				@include break(mobile){
-					height: 270px !important;
-				}
-
-				a {
-					height: 226px !important;
-					@include break(mobile){
-						height: 240px !important;
-					}
-				}
-
-				&:nth-child(3) {
-					left: calc(#{$tile-width-percent*2} + #{$tile-padding-pct*2}) !important;
-					top: 0 !important;
-
-				}
-				&:nth-child(4) {
-						display: none;
-				}
-					
-				&:nth-child(5) {
-						display: none;
-				}
-					
-				&:nth-child(6) {
-						display: none;
-				}
-
-				@include break(mobile){
-					&:nth-child(3) {
-						left: 160% !important;
-						top: 0 !important;
-					}
-				}
-
 			}
 		}
 	}
