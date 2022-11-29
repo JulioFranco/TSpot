@@ -47,14 +47,20 @@
 
 @if $isAMP != 'true' {
 	@if $isDesk == 'true' {
-		.reviews.big-grid,
-		.features.big-grid {
+		.reviews, .features
+		{
 			.grid-posts {
 				.masthead {
-					min-height: ($tile-height-sec * 2) + 115px;
-
 					@include break(mobile){
 						min-height: 270px;
+					}
+
+					&.SmallHead {
+						min-height: ($tile-height-sec * 2) + 115px;
+					}
+
+					&.OneRow {
+						min-height: ($tile-height-sec) + 85px;
 					}
 				}
 			}
@@ -65,8 +71,8 @@
 			height: auto !important;
 		}
 
-		.reviews.big-grid,
-		.features.big-grid {
+		.reviews, .features
+		{
 			.grid-posts {
 				.masthead {
 					min-height: 270px;
