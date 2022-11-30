@@ -1,7 +1,3 @@
-.download .masthead {
-	background: none;
-}
-
 .grid-posts {
 	&.grid-section {
 		background: #eee;
@@ -199,7 +195,7 @@
 
 	// Mobile no usa VARIATIONS
 	@if $isDesk == 'true' {
-		ul.variation-3pf {
+		ul.variation-3 {
 			li{
 				height: $tile-height-sec - $tile-padding - 10;
 
