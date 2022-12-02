@@ -10,18 +10,19 @@
 			background: none !important;
 		}
 
+
 		.masthead {
 			background: none;
 
 			@include break(mobile) {
-				height: 290px !important;
+				height: $tile-height-mobile-sec !important;
 			}
 
 			.wrapper {
 				padding: 0 !important;
 
 				@include break(mobile) {
-					height: 290px;
+					height: $tile-height-mobile-sec;
 				}
 			}
 
@@ -30,13 +31,33 @@
 					width: $tile-width-percent;
 
 					@include break(mobile){
-						height: 290px;
+						height: $tile-height-mobile-sec;
 						width: $tile-width-mobile;
 					}
 
 					a {
 						@include break(mobile) {
-							height: 265px;
+							height: $tile-height-mobile-sec - 25;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.home {
+		@include break(mobile) {
+			margin-bottom: 10px;
+		}
+
+		ul.featured-posts {
+			li {
+				a {
+					hgroup {
+						bottom: 40px;
+
+						@include break(mobile) {
+							bottom: 20px;
 						}
 					}
 				}
@@ -132,17 +153,6 @@
 					}
 				}
 
-				/* version anterior
-				background: linear-gradient(195deg,rgba(21,76,143,.1) 30%,rgba(30,41,51,.85) 65%);
-
-				@if $isAMP != 'true' {
-				@if $isDesk == 'true' {
-					&:hover {
-						background: linear-gradient(195deg,rgba(21,76,143,.1) 40%,rgba(30,41,51,.85) 70%);
-					}
-				}}
-				*/
-
 				hgroup {
 					width: 90%;
 					position: absolute;
@@ -166,24 +176,13 @@
 						line-height: 1.45;
 						padding-right: 10px;
 						display: inline;
-						/*
-						padding: 4px 4px 7px 0px;
-						background: rgba(40,51,60,0.7);
-						box-shadow: 0.45em 0 0 0 rgba(40,51,60,0.7), -20px 0 0 0 rgba(40,51,60,0.7);
-						*/
 
 						@include break(tablet) {
 							font-size: 0.95em;
-							/*
-							box-shadow: 0.45em 0 0 0 rgba(40,51,60,0.8), -15px 0 0 0 rgba(40,51,60,0.8);
-							*/
 						}
 
 						@include break(mobile) {
 							font-size: $mobile-tile-font-size;
-							/*
-							background: rgba(40,51,60,0.8);
-							*/
 						}
 					}
 				}
@@ -196,7 +195,7 @@
 	// Mobile no usa VARIATIONS
 	@if $isDesk == 'true' {
 		ul.variation-3 {
-			li{
+			li {
 				height: $tile-height-sec - $tile-padding - 10;
 
 				a {
@@ -205,7 +204,7 @@
 
 					hgroup {
 						width: 70%;
-						bottom: 15px;
+						bottom: 16px;
 
 						h3 {
 							font-size: .6em;
@@ -216,7 +215,7 @@
 							font-size: 1.2em;
 							max-height: 100px;
 							overflow: hidden;
-							line-height: normal;
+							line-height: 1.35;
 						}
 					}
 				}
@@ -247,6 +246,16 @@
 				&:nth-child(6) {
 					left: calc(#{$tile-width-percent*2} + #{$tile-padding-pct*2});
 					top: ($tile-height-sec + 1);
+				}
+			}
+
+			&.feat {
+				li {
+					a {
+						hgroup {
+							width: 90%;
+						}
+					}
 				}
 			}
 		}//variation-3
@@ -1041,7 +1050,7 @@
 					hgroup {
 						width: 90%;
 						position: absolute;
-						bottom: 15px;
+						bottom: 16px;
 						display: block;
 
 					}
