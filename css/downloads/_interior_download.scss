@@ -256,6 +256,15 @@ body.interior {
 						margin-bottom: 5px;
 					}
 				}
+
+				@include break(mobile) {
+					padding: 0 0 30px 2px;
+
+					ul {
+					    height: 30px;
+					}
+				}
+
 			}
 
 			ul {
