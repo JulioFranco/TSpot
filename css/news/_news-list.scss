@@ -105,6 +105,10 @@
 				color: #757575 !important;
 				letter-spacing: -.333px;
 
+				strong {
+					font-weight: 500;
+				}
+
 				@include break(mobile){
 					padding: 4px 0 0px;
 				}

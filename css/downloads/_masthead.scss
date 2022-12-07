@@ -32,15 +32,15 @@
     }
 
     li {
+        width: 10%;
+        padding: 5px 1% 0 5px;
+        margin-left: 1%;
         line-height: 240%;
-        font-weight: 500;
-        width: 135px;
+        font-weight: 500;       
         height: 155px;
         float: left;
         text-align: center;
         display: inline-block;
-        padding: 5px 10px 0px 5px;
-        margin-left: 8px;
 
         &:hover span {
             border: #ff7f00 solid 3px;
@@ -51,6 +51,9 @@
             display: inline-block;
             vertical-align: top;
             float: none;
+            width: 135px;
+            padding: 5px 8px 0px 5px;
+            margin-left: 8px;
         }
 
         a {
@@ -81,10 +84,11 @@
 
             h3 {
                 display: block;
+                width: 126px;
                 line-height: 1.25em;
-                margin: 8px 0 0 -5px;
+                margin: 7px 0 0 0;
                 font-weight: 400;
-                font-size: .8em;
+                font-size: .78em;
                 letter-spacing: -.3px;
                 color: #333;
 
