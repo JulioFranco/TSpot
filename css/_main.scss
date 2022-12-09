@@ -972,6 +972,41 @@ table {
 	}
 }
 
+body.home {
+	.jobbioapp {
+		min-height: 459px;
+		.list {
+			padding: 0 0 25px;
+			margin-top: 10px;
+		}
+	}
+}
+
+body.news {
+	.jobbioapp {
+		min-height: 252px;
+
+		@include break(mobile) {
+			min-height: 369px;
+		}
+
+		.list {
+	        padding: 0;
+	        margin: -5px 0 0 -10px;
+		}
+	}
+}
+
+body.article {
+	.jobbioapp {
+		min-height: 580px;
+		.list {
+	        padding: 0 0 25px;
+	        margin-top: 15px;
+		}
+	}
+}
+
 // for bottom d-ads
 .mobile-leaderboard-320-50 {
     box-shadow: none !important;
