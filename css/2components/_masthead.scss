@@ -441,23 +441,32 @@
 		}//variation-6a
 
 		ul.variation-6b {
-			li{
+			li {
+				// Columna fina
+				$tile-width-percent: 32%;
+				// Columna gruesa
+				$tile-width-percent-wide: 35%;
+				width: $tile-width-percent-wide;
+
 				&.tall {
 					height: $tile-height - $tile-padding;
 					a { height: $tile-height - 30px; hgroup { h2 { font-size: 1em; } } } }
+
 				&:nth-child(1) {
 					top: 0; left: 0;
 					height: $tall-tile-height - $tile-padding;
-					width: calc(66% + 5px);
+					width: calc($tile-width-percent*2 + 5px);
 					a { height: $tall-tile-height - 30px; hgroup { h2 { font-size: $tall-tile-font-size; } } }
 				}//nth
 				&:nth-child(2) {
 					top: ($tile-height + 1)*2;
 					left: 0;
+					width: $tile-width-percent;
 				}//nth
 				&:nth-child(3) {
 					top: ($tile-height + 1)*2;
 					left: $tile-width-percent;
+					width: $tile-width-percent;
 					margin-left: $tile-padding-pct;
 				}//nth
 				&:nth-child(4) {
