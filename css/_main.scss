@@ -984,7 +984,7 @@ body.home {
 
 body.news {
 	.jobbioapp {
-		min-height: 252px;
+		min-height: 200px;
 
 		@include break(mobile) {
 			min-height: 369px;
