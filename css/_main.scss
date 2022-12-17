@@ -984,10 +984,10 @@ body.home {
 
 body.news {
 	.jobbioapp {
-		min-height: 200px;
+		min-height: 190px;
 
 		@include break(mobile) {
-			min-height: 369px;
+			min-height: 351px;
 		}
 
 		.list {
