@@ -221,28 +221,19 @@ body.interior {
 				h1.large {
 					font-weight: 500;
 					letter-spacing: -0.333px;
+					margin: 17px 0 5px;
+					font-size: 2.3em;
+					line-height: 1.3;
 
-					@if $isAMP == 'true' {
+					@include break(mobile) {
 						margin: 0;
-						font-size: 1.4em;
-						line-height: 1.25;
-						letter-spacing: -.5px;
+						font-size: 1.7em;
 					}
-					@else {
-						margin: 17px 0 5px;
-						font-size: 2.3em;
+
+					@include break(v-mobile) {
+						font-size: 1.4em;
 						line-height: 1.3;
-
-						@include break(mobile) {
-							margin: 0;
-							font-size: 1.7em;
-						}
-
-						@include break(v-mobile) {
-							font-size: 1.4em;
-							line-height: 1.25;
-							letter-spacing: -0.5px;
-						}
+						letter-spacing: -0.5px;
 					}
 
 					&.upper {
@@ -258,18 +249,11 @@ body.interior {
 					font-weight: 500;
 					line-height: 1.4;
 					letter-spacing: -0.333px;
+					font-size: 1.9em;
 
-					@if $isAMP == 'true' {
+					@include break(mobile) {
 						margin-top: 0;
 						font-size: 1.65em;
-
-					} @else {
-						font-size: 1.9em;
-
-						@include break(mobile) {
-							margin-top: 0;
-							font-size: 1.65em;
-						}
 					}
 
 					@include break(v-mobile) {
@@ -284,6 +268,7 @@ body.interior {
 					font-family: $f-paragraph;
 					letter-spacing: -0.25px;
 					padding: 5px 0px 5px 0px;
+					line-height: 1.25em;
 				}
 			}
 		}

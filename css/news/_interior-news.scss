@@ -116,44 +116,16 @@ body.interior {
 					    padding-left: 3px;
 					}
 
-					@if $isAMP != 'true' {
-						span.numCom {
-							padding-left: 12px;
-							margin-left: 10px;
-							border-left: 2px solid #ccc;
+					span.numCom {
+						padding-left: 12px;
+						margin-left: 10px;
+						border-left: 2px solid #ccc;
 
-							a {
-								font-weight: 400;
-								color: #5a6169;
+						a {
+							font-weight: 400;
+							color: #5a6169;
 
-								@include break(mobile) {
-									background: url(https://#{$staticServer}.techspot.com/images/icon-comments-lg.svg) no-repeat;
-									background-size: 22px;
-									padding-left: 27px;
-									background-blend-mode: luminosity;
-									border: none;
-								}
-							}
-						}
-
-						span.sponsored {
-							background-color: #495693;
-							margin: 0 4px 0 0;
-							padding: 4px 10px;
-							text-align: center;
-							color: white;
-							font-weight: 600 !important;
-						}
-					}
-					@else {
-						span.numCom {
-							padding-left: 12px;
-							margin-left: 10px;
-							border-left: 2px solid #ccc;
-
-							a {
-								font-weight: 400;
-								color: #5a6169;
+							@include break(mobile) {
 								background: url(https://#{$staticServer}.techspot.com/images/icon-comments-lg.svg) no-repeat;
 								background-size: 22px;
 								padding-left: 27px;
@@ -162,6 +134,16 @@ body.interior {
 							}
 						}
 					}
+
+					span.sponsored {
+						background-color: #495693;
+						margin: 0 4px 0 0;
+						padding: 4px 10px;
+						text-align: center;
+						color: white;
+						font-weight: 600 !important;
+					}
+
 				}
 			}
 		}
@@ -399,8 +381,7 @@ body.interior {
 
 
 	.related-query {
-
-		margin: 25px auto 20px;
+		margin: 20px auto;
 
 		@include break(mobile) {
 			margin: 0 auto 20px;
@@ -442,7 +423,7 @@ body.interior {
 
 				@include break(mobile) {
 					margin-bottom: 18px;
-					font-size: 0.95em;
+					font-size: 0.85em;
 					letter-spacing: normal;
 					line-height: 1.4;
 					font-family: $f-paragraph;
@@ -823,123 +804,3 @@ body.interior {
 		letter-spacing: -0.333px;
 	}
 }
-
-// more AMP fixes
-// --------------
-@if $isAMP == 'true' {
-
-// SERIES CSS
-	.clicktoplay {
-		display: none;
-	}
-	.triangleLogo {
-	    max-width: 80px;
-	    width: 80px;
-	    margin: 0 10px 10px 0;
-	    float: left;
-	}
-
-	/*
-	//removed this, in favor of mobile button
-	body.interior {
-		.comment-count-block {
-			background-image: url('https://#{$staticServer}.techspot.com/images/icon-comments-lg.svg');
-			background-repeat: no-repeat;
-			background-position: left 5px;
-			height: 42px;
-			overflow: visible;
-			letter-spacing: -.333px;
-			font-family: $f-primary;
-			filter: grayscale(90%);
-
-			@if $isAMP == 'true' {
-				margin: 0 0 40px 0;
-			} @else {
-				float: left;
-
-				&:hover {
-					filter: grayscale(40%);
-				}
-				
-				@include break(mobile) {
-					margin: 0 0 15px 0;
-				}
-			}
-
-			&.article {
-				margin-top: 20px;
-			}
-
-			&.features {
-				font-size: 0.8em;
-				font-weight: 400;
-
-				@if $isAMP == 'true' {
-					line-height: 2;
-
-					height: 42px;
-					margin-bottom: 15px;
-
-				} @else {
-					line-height: 2 !important;
-					height: 100px;
-
-					@include break(mobile) {
-						height: 42px;
-						margin-bottom: 15px;
-					}
-				}	
-				
-				.count {
-					font-size: 1.2em;
-					font-weight: 500;
-				}
-
-				a {
-					display: inline;
-					padding-left: 0;
-				}
-
-				ul {
-					li {
-						padding-left: 60px;
-					}
-				}
-			}
-
-			a {
-				display: block;
-				line-height: 140%;
-				padding-left: 60px;
-
-				@if $isAMP == 'true' {
-					box-shadow: none;
-				} @else {
-					box-shadow: none !important;
-				}
-				
-				span {
-					display: block;
-					font-size: 1em;
-					
-					&.comment-count {
-						color: $red;
-
-						@if $isAMP != 'true' {
-							&:hover {
-								font-weight: 500;
-							}
-						}
-					}
-					&.interactions-count {
-						color: #39579D;
-						font-size: .86em;
-						line-height: 1.75;
-					}
-				}
-			}
-		}
-	}
-	*/
-
-} //amp
