@@ -581,6 +581,7 @@ body.interior {
 						margin: 0 auto;
 						align-items: center;
 						display: flex;
+						border-radius: 3px;
 					}
 
 					@include break(mobile){

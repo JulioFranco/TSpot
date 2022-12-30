@@ -16,7 +16,7 @@ ul.category-chicklets {
 		-ms-overflow-style: -ms-autohiding-scrollbar;
 		white-space: nowrap;
 		width: 98%;
-		height: 25px;
+		height: 26px;
 
 		&::-webkit-scrollbar {
 		    display: none;
@@ -25,6 +25,8 @@ ul.category-chicklets {
 
 	li {
 		display: inline-block;
+		border-radius: 2px;
+
 		a {
 			display: block;
 			padding: 0 7px;
@@ -34,7 +36,7 @@ ul.category-chicklets {
 			font-size: .58em;
 			font-weight: 500;
 			letter-spacing: 0.50px;
-			line-height: 21px;
+			line-height: 22px;
 
 			&.black { color: #000; }
 			
