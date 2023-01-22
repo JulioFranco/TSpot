@@ -179,7 +179,8 @@ img.b-lazy.b-loaded {
 
 .trust-feat {
 	color: #333;
-	font-size: 14px;
+	font-size: 15px;
+    line-height: 1.5;
 	text-align: center;
 	padding: 15px 3%;
 	margin: 5px auto 10px;
@@ -187,7 +188,7 @@ img.b-lazy.b-loaded {
 	a {
 		color: inherit;
 		padding-bottom: 3px;
-		border-bottom: 1px solid #ccc;
+		border-bottom: 2px solid #ff7f00;
 
 		&:hover {
 			color: #2A59AC;
@@ -197,12 +198,16 @@ img.b-lazy.b-loaded {
 	@include break(mobile){
 		padding: 15px 3% 3px;
 		margin: 0 auto;
-	    line-height: 1.3;
+		
+		a {
+			padding-bottom: 1px;
+			border-bottom: 2px solid #ff7f00;
+		}
 	}
 
 	&.news {
-	    max-width: 680px;
-	    padding: 5px 3% 30px;
+	    max-width: 740px;
+	    padding: 15px 3% 30px;
 	    margin: -20px auto 10px;
 
 		@include break(mobile){
