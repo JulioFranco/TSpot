@@ -211,13 +211,15 @@ img.b-lazy.b-loaded {
 	    margin: -20px auto 10px;
 
 		@include break(mobile){
-	        margin: 0;
+			padding: 20px 0% 30px;
+			margin: -20px auto 0px;
 	    }
 	}
 }
 
 .trust-soft {
 	color: #333;
+    font-size: 1.05em;
     margin: 10px 0 10px;
     line-height: 1.3;
     width: 300px;
