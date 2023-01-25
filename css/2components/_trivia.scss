@@ -452,21 +452,20 @@ body.interior {
 				
 				.title-group {
 					h1 {
-						padding: 22px 20px 22px 21px;
-						margin: 20px 100px 10px -5px;
-					    color: #fff;
-					    font-size: 1.5em;
-					    font-weight: 500;
-					    line-height: 1.5;
-					    letter-spacing: -0.333px;
-					    border-radius: 0 0 9px 0;
+						padding: 30px 25px 30px 25px;
+						margin: 10px 0px 0px 0px;
+						color: #fff;
+						font-size: 1.5em;
+						font-weight: 500;
+						line-height: 1.5;
+						border-radius: 0 12px 12px 12px;
 
 					    &.yellow {
 					    	color: #333;
 					    }
 
 						@include break(mobile) {
-							margin: 15px 0 5px 0;
+							margin: 5px 0 0px 0;
 							font-size: 1.25em;
 							padding: 10px 10px 12px 12px;
 							width: 93%;
