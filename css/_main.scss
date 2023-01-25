@@ -180,7 +180,7 @@ img.b-lazy.b-loaded {
 .trust-feat {
 	color: #333;
 	font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
 	text-align: center;
 	padding: 15px 3%;
 	margin: 5px auto 10px;
@@ -189,6 +189,11 @@ img.b-lazy.b-loaded {
 		color: inherit;
 		padding-bottom: 3px;
 		border-bottom: 2px solid #ff7f00;
+
+		&.other {
+			padding-bottom: 2px;
+			border-bottom: 1px solid #ccc;
+		}
 
 		&:hover {
 			color: #2A59AC;
@@ -202,6 +207,11 @@ img.b-lazy.b-loaded {
 		a {
 			padding-bottom: 1px;
 			border-bottom: 2px solid #ff7f00;
+
+			&.other {
+				padding-bottom: 1px;
+				border-bottom: 1px solid #ccc;
+			}
 		}
 	}
 
