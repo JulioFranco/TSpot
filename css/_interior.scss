@@ -1,7 +1,13 @@
 body.interior {
 	.ListHeader {
-		background: $dark-blue;
-		padding: 0px 2%;
+		background: #2C343D;
+		padding: 3px 2%;
+
+		@include break(mobile){
+	    	margin: 25px -3px 0 -5px;
+	    	padding: 3px 3%;
+	    }
+
 		h3 {
 			color: white;
 			line-height: 35px;
