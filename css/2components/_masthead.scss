@@ -46,7 +46,7 @@
 
 	&.home {
 		@include break(mobile) {
-			margin-bottom: 10px;
+			margin: -5px auto 15px;
 		}
 
 		ul.featured-posts {
@@ -736,8 +736,6 @@
 				width: inherit;
 
 				li {
-					//width: 1/3*100%;
-					//height: $tile-height;
 					top: 0;
 					left: 0;
 					position: absolute;
@@ -745,17 +743,13 @@
 					background-position: center center;
 
 					&.tall {
-						//height: $tall-tile-height;
-
 						a {
-							//height: $tall-tile-height - 30px;
 							hgroup {
 								h2 {
 									font-size: $tall-tile-font-size;
 								}
 							}
 						}
-
 					}
 
 					a {
@@ -1067,7 +1061,7 @@
 					height: $tile-height-mobile;
 
 					a {
-						height: $tile-height-mobile - 40px;
+						height: $tile-height-mobile - 39px;
 
 						hgroup {
 							h2 {
@@ -1083,7 +1077,7 @@
 					display: block;
 					padding: 15px;
 					color: white;
-					height: $tile-height-mobile - 30px;
+					height: $tile-height-mobile - 39px;
 
 					hgroup {
 						width: 90%;

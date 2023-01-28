@@ -20,11 +20,12 @@
 
 			@include break(mobile){
 				font-size: 1.1em;
-				line-height: 60px;
+				line-height: 3;
 				width: 320px;
 				white-space: nowrap;
 				overflow: hidden;
 				text-overflow: ellipsis;
+				margin-bottom: -12px;
 			}
 		}
 
@@ -65,7 +66,7 @@
 				border-radius: 4px 0 0 0;
 
 				@if $isDesk == 'true' {
-				@include break(tablet){
+					@include break(tablet){
 					padding: 0 17px;
 					line-height: 60px;
 					font-size: $tall-tile-font-size;
@@ -99,13 +100,13 @@
 				position: relative;
 				width: 100%;
 				overflow: scroll;
-				-webkit-overflow-scrolling: touch;
-				height: 200px;
+				height: 220px;
 				padding: 0 !important;
 			}
+
 			.featured-posts {
 				li {
-					width: 85%;
+					width: 84%;
 					height: 200px;
 					top: 0;
 					left: 0;
@@ -125,9 +126,15 @@
 							@include break(v-mobile) {
 								width: 60%;
 							}
+
 							position: absolute;
 							bottom: 15px;
 							display: block;
+
+							h2 {
+								line-height: 1.35;
+								font-size: 1.2em;
+							}
 						}
 					}
 			
@@ -177,7 +184,7 @@
 		min-height: 260px;
 
 		.wrapper {
-			height: 200px;
+			height: 220px;
 		}
 	}
 }
