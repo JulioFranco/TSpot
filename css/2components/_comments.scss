@@ -456,7 +456,9 @@
 
 .commoff {
 	display: block;
-	height: 5px;
+	height: 2px;
+
+	&:focus { outline: none; }
 }
 
 body.interior {
