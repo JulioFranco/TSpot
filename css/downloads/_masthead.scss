@@ -1,6 +1,11 @@
 .download .masthead {
     background: none;
 
+    @include break(mobile){
+        margin: -1% 0 0 -2.5%;
+        width: 102.5%;
+    }
+
     .wrapper {
         width: 100% !important;
         margin: 10px 0;

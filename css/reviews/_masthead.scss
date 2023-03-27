@@ -20,11 +20,12 @@
 
 			@include break(mobile){
 				font-size: 1.1em;
-				line-height: 60px;
+				line-height: 3;
 				width: 320px;
 				white-space: nowrap;
 				overflow: hidden;
 				text-overflow: ellipsis;
+			    margin-bottom: -12px;
 			}
 		}
 
@@ -37,8 +38,8 @@
 		    margin: -15px 0 15px 0;
 
 			@include break(mobile){
-				line-height: 1.3;
-				margin: -5px 0 16px 0;
+			    line-height: 1.5;
+			    margin: 0 0 6px 0;
 			}
 		}
 	}
@@ -69,6 +70,7 @@
 	@else {
 		.masthead {
 			height: auto !important;
+			padding-bottom: 10px;
 		}
 
 		.reviews, .features

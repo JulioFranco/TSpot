@@ -999,9 +999,9 @@ body.interior {
 @if $isAMP != 'true' {
 	#CategoryList {
 
-	@include break(mobile) {
-		margin: 0 3% 20px;
-	}
+		@include break(mobile) {
+			margin: 0 3% 10px !important;
+		}
 
 		.SideProdContent {
 			padding: 17px;
