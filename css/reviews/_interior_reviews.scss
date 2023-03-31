@@ -154,56 +154,42 @@ body.interior {
 
 				}
 				.img{
-					line-height: 120px;
+					line-height: 115px;
 					text-align: center;
 					overflow: hidden;
 					width: 200px;
 					height: 150px;
 
 					@include break(v-mobile){
-						width: 165px;
+						width: 140px;
+
+						a {
+							display: inline-block;
+							height: 110px;
+							width: 100%;
+							background: #f3f3f3;
+
+							img {
+								height: 100%;
+								width: 100%;
+								object-fit: cover;
+							}
+						}
 					}
 				}
 			}
 		}
-		#review {
+		#review, #features {
 			ul {
 				li {
-					@if $isAMP == 'true' {
-						//Default for AMP
-						padding: 12px 8px 17px 180px;
-					
-					} @else {
-						padding: 25px 30px 25px 230px; 
-
-						@include break(v-mobile) {
-							padding: 12px 8px 17px 180px;
-						}
-					}
+					padding: 25px 30px 25px 230px; 
 
 					&:nth-child(even) {
 						background: #f5f5f5;
 					}
-				}
-			}
-		}
-		#features {
-			ul {
-				li {
-					@if $isAMP == 'true' {
-						//Default for AMP
-						padding: 12px 8px 17px 180px;
-					
-					} @else {
-						padding: 25px 30px 25px 230px; 
 
-						@include break(v-mobile) {
-							padding: 12px 8px 17px 180px;
-						}
-					}
-
-					&:nth-child(even) {
-						background: #f5f5f5;
+					@include break(v-mobile) {
+						padding: 12px 8px 17px 155px;
 					}
 				}
 			}

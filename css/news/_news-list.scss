@@ -9,12 +9,27 @@
 		.article-img {
 			@include col(2,5,0);
 			width: 30%;
-			margin-top: 3px;
+			margin-top: 4px;
 
 			img {
 				max-width: 100%;
 				height: auto;
 				width: 250px;
+			}
+
+			@include break(v-mobile) {
+				a {
+					display: inline-block;
+					height: 106px;
+					width: 100%;
+					background: #f3f3f3;
+
+					img {
+						height: 100%;
+						width: 100%;
+						object-fit: cover;
+					}
+				}
 			}
 		}
 		
