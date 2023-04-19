@@ -233,6 +233,10 @@ body.interior {
 
 					&.pad {
 						margin: 17px 150px 5px 0;
+
+						@include break(mobile) {
+							margin: 0;
+						}
 					}
 
 					@include break(mobile) {
@@ -248,10 +252,7 @@ body.interior {
 
 					&.upper {
 						text-transform: uppercase;
-
-						@if $isAMP != 'true' {
-							font-family: Roboto Condensed;
-						}
+						font-family: Roboto Condensed;
 					}
 				}
 
