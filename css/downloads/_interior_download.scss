@@ -71,29 +71,19 @@ body.interior {
 				h2 {
 					font-family: $f-primary;
 					line-height: 1.4;
+					font-size: .95em;
 
-					@if $isAMP == 'true' {
-						font-weight: 400;
-						color: $light-grey2;
-						padding-bottom: 15px;
-						font-size: .8em;
-						letter-spacing: -.333px;
-					}
-					@else {
-						font-size: .9em;
+					&.hasfigure {
+						padding: 2px 300px 12px 108px;
 
-						&.hasfigure {
-							padding: 2px 300px 12px 106px;
-
-							@include break(v-tablet){
-								padding: 0 110px 0 0;
-							}
+						@include break(v-tablet){
+							padding: 0 110px 0 0;
 						}
+					}
 
-						p {
-							@include break(mobile){
-								padding: 0px;
-							}
+					p {
+						@include break(mobile){
+							padding: 0px;
 						}
 					}
 				}

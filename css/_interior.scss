@@ -274,12 +274,16 @@ body.interior {
 
 				h2 {
 					color: $light-grey2;
-					font-size: 1.1em;
+					font-size: 1.25em;
 					font-weight: 400;
 					font-family: $f-paragraph;
 					letter-spacing: -0.25px;
 					padding: 5px 0px 5px 0px;
-					line-height: 1.25em;
+					line-height: 1.3em;
+
+					@include break(mobile) {
+						font-size: 1.1em;
+					}
 				}
 			}
 		}
