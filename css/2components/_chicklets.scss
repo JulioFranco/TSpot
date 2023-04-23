@@ -44,8 +44,8 @@ ul.category-chicklets {
 
 		&.blue, &.reviews, &.techspot																						{ background-color: $blue;		@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten($blue,8%); } } } }
 		&.blue2, &.microsoft, &.windows, &.tips-tricks																		{ background-color: #0088CC;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#0088CC,7%); } } } }
-		&.blue3, &.apple, &.ai, &.storage, &.laptops																				{ background-color: #3e96c2;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#3e96c2,8%); } } } }
-		&.blue4, &.tag1																										{ background-color: #05408f;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#05408f,8%); } } } }
+		&.blue3, &.apple, &.ai, &.storage, &.laptops																		{ background-color: #3e96c2;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#3e96c2,8%); } } } }
+		&.blue4, &.explainer, &.tag1																						{ background-color: #05408f;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#05408f,8%); } } } }
 		&.navy, &.products, &.downloads																						{ background-color: #00366F;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#00366F,8%); } } } }
 		&.navy2, &.industry																									{ background-color: #4745a3;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#4745a3,8%); } } } }
 
