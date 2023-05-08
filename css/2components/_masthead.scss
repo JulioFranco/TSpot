@@ -622,7 +622,7 @@
 				// Columna fina
 				$tile-width-percent: 31%;
 				// Columna gruesa
-				$tile-width-percent-wide: 38%;
+				$tile-width-percent-wide: 37%;
 				width: $tile-width-percent;
 
 				&.tall { height: $tile-height - $tile-padding; a { height: $tile-height - 30px; hgroup { h2 { font-size: 1em; } } } }
