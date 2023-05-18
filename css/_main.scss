@@ -1001,27 +1001,64 @@ table {
 	}
 }
 
+
 body.home {
 	.jobbioapp {
-		min-height: 360px;
-		.list {
-			padding: 0 0 25px;
-			margin-top: 10px;
+		min-height: 380px;
+	  	padding-top: 0px !important;
+
+		* {
+			font-family: Roboto !important;
+		}
+
+		.v1_6 {
+			&.type-2 .item {
+			  padding: 12px 30px 12px 106px !important;
+			}
+			.item .arrow {
+			  right: 15px !important;
+			}
+			.top-s, .more {
+			  display: none !important;
+			}
 		}
 	}
 }
 
 body.news {
 	.jobbioapp {
-		min-height: 185px;
-
+		padding: 0px !important;
+		min-height: 270px;
+		
 		@include break(mobile) {
-			min-height: 351px;
+			min-height: 600px;
 		}
 
-		.list {
-	        padding: 0;
-	        margin: -5px 0 0 -10px;
+		* {
+			font-family: Roboto !important;
+		}
+
+		.v1_6 {
+			.list {
+			    padding: 0;
+			    margin: 0 0 0 -5px;
+
+				.h-item {
+				    padding: 10px 5px !important;
+				}
+			}
+
+			.mt2 {
+	    		font-size: 15px;
+
+				@include break(mobile) {
+					font-size: 16px;
+				}
+	    	}
+
+		    .top-s, .more {
+		      display: none !important;
+		    }
 		}
 	}
 }
@@ -1029,12 +1066,26 @@ body.news {
 body.article {
 	.jobbioapp {
 		min-height: 480px;
-		.list {
-	        padding: 0 0 25px;
-	        margin-top: 15px;
+	  	padding-top: 0px !important;
+
+		* {
+			font-family: Roboto !important;
+		}
+
+		.v1_6 {
+			&.type-2 .item {
+			  padding: 12px 35px 12px 60px !important;
+			}
+			.item .arrow {
+			  right: 15px !important;
+			}
+			.top-s, .more {
+			  display: none !important;
+			}
 		}
 	}
 }
+
 
 // for bottom d-ads
 .mobile-leaderboard-320-50 {
