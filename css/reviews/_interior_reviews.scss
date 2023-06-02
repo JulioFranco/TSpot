@@ -283,6 +283,16 @@ body.interior {
 					@include break(mobile) {
 						padding: 25px 0 5px;
 					}
+
+					&.headpic {
+						padding: 0 0 30px;
+
+						@include break(mobile) {
+						    padding: 0 0 18px;
+						    margin: 0 3%;
+						    width: 94%;
+						}
+					}
 				}
 
 				.social-column {
@@ -563,11 +573,13 @@ body.interior {
 						width: 100%;
 						object-fit: cover;
 						height: 655px;
-						max-width: $desk;
+						max-width: $desk - 30;
 						margin: 0 auto;
+						/*
 						align-items: center;
 						display: flex;
-						border-radius: 3px;
+						*/
+						border-radius: 4px;
 					}
 
 					@include break(mobile){
