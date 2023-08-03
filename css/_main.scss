@@ -826,13 +826,14 @@ table {
 	}
 
 	.billboard_placeholder_home, .billboard_placeholder_min {
+		position: relative;
 		padding: 17px 0 15px;
 		margin: 0 auto;
 		text-align: center;
 		min-height: 90px;
 		height: 90px;
-		min-width: 728px;
-		width: 728px;
+		min-width: 970px;
+		width: 970px;
 		overflow: hidden;
 	}
 
@@ -841,11 +842,16 @@ table {
 		padding: 17px 0 15px;
 		margin: 0 auto;
 		text-align: center;
-		min-width: 970px;
-		width: 970px;
 		min-height: 250px;
 		height: 250px;
+		min-width: 970px;
+		width: 970px;
 		overflow: hidden;
+
+		&.min {
+			min-height: 90px;
+			height: 90px;
+		}
 	}
 
 }//desk
