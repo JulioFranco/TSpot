@@ -455,6 +455,11 @@ body.interior.download {
 
 			.download_options {
 				width: 95%;
+				border: 2px solid #fff;
+
+				&.select {
+					border: 2px solid #ffd6ae;
+				}
 			}
 
 			.download_certified {
