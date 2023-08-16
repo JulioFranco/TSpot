@@ -16,9 +16,10 @@
 .download-index h4 {
     line-height: 2;
 
-    &.first {
-        margin-top: 20px;
-    }
+     @include break(mobile){
+        margin-top: 10px;
+        font-size: 0.9em;
+     }
 }
 
 .downloads-picks {
