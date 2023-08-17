@@ -50,7 +50,7 @@
 
         &:hover span {
             border: #ff7f00 solid 3px;
-            background: linear-gradient(45deg, #2498b5 0%,#50a9c0 51%,#2498b5 100%);
+            background: linear-gradient(45deg, #518ebe 0%,#66a8db 51%,#518ebe 100%);
         }
 
         @include break(tablet) {
@@ -73,8 +73,13 @@
                 border-radius: 4px 4px 4px 4px;
                 width: 126px;
                 height: 95px;
+                background: #518ebe;
+                border: #518ebe solid 3px;
+
+                /*
                 background: #2498b5;
                 border: #2498b5 solid 3px;
+                */
 
                 @include break(mobile) {
                     width: 100%;
