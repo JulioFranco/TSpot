@@ -98,7 +98,7 @@
 
 			.article-category {
 				font-size: .7em;
-				letter-spacing: -.333px;
+				letter-spacing: -.25px;
 				margin-top: 5px;
 
 				@include break(mobile){
@@ -118,7 +118,7 @@
 				line-height: 1.5;
 				padding: 7px 0 3px;
 				color: #757575 !important;
-				letter-spacing: -.333px;
+				letter-spacing: -.2px;
 
 				strong {
 					font-weight: 500;
@@ -185,6 +185,7 @@
 
 				p {
 					padding: 0 0 15px !important;
+					font-family: $f-primary !important;
 				}
 
 				p:last-child {
@@ -195,7 +196,7 @@
 			.byline {
 				color: #666666;
 				font-weight: 400;
-				letter-spacing: -0.333px;
+				letter-spacing: -0.25px;
 				line-height: 2.5;
 				font-size: .7em;
 				
