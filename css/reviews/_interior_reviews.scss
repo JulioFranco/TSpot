@@ -312,11 +312,11 @@ body.interior {
 				.articleBody {
 					width: 100%;
 					max-width: 700px;
-					margin: 0 auto;
+					margin: -12px auto 0;
 					
 					@include break(v-tablet){
 						max-width: 700px;
-						margin: 0 auto;
+						margin: -12px auto 0;
 						width: 90%
 					}
 					@include break(mobile){

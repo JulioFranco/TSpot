@@ -8,25 +8,19 @@ body.interior {
 					color: #777;
 				}
 
-				@if $isAMP == 'true' {
-					margin: 15px 0 10px;
-					
-				} @else {
+				margin: 25px 0 30px;
 
-					margin: 25px 0 5px;
-
-					@if $isDesk == 'true' {
+				@if $isDesk == 'true' {
 					@include break(tablet){
 						margin-right: 0;
-					}}
+				}}
 
-					@include break(mobile){
-						margin: 15px 0 10px;
-					}
+				@include break(mobile){
+					margin: 15px 0 10px;
+				}
 
-					.wrapper {
-						padding: 25px 0 35px;
-					}
+				.wrapper {
+					padding: 25px 0 35px;
 				}
 
 				figure {
