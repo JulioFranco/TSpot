@@ -433,8 +433,8 @@ body.interior {
 				
 				.pad {
 					padding: 10px 20px 20px 20px;
-					overflow: scroll;
-					max-height: 450px;
+					overflow-y: auto;
+					max-height: 470px;
 
 					@include break(mobile) {
 						padding: 5px 10px 10px 12px;
