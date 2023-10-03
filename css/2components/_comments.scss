@@ -480,7 +480,7 @@ body.interior {
 		}
 		
 		@include break(mobile) {
-			margin: -5px 0 25px 0;
+			margin: 10px 0 25px 0;
 			background-position: left 9px;
 			background-size: 30px;
 		}

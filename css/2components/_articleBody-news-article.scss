@@ -19,10 +19,10 @@
 			}
 		}
 		h2 {
-			padding: 10px 0 20px;
+			padding: 25px 0 5px;
 
 			&.subtitle {
-				padding: 0 0 20px;
+				padding: 10px 0 10px;
 
 				@if $isAMP == 'true' {
 				    color: #555;
@@ -41,7 +41,7 @@
 		}
 
 		h3 {
-			padding: 10px 0 20px;
+			padding: 25px 0 5px;
 
 			@if $isAMP == 'true' {
 				font-size: 1.2em;
@@ -54,7 +54,7 @@
 		}
 
 		h4 {
-			padding: 6px 0 12px;
+			padding: 15px 0 5px;
 
 			@if $isAMP == 'true' {
 				font-size: 1.1em;
