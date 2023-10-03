@@ -326,20 +326,19 @@ body.interior.download {
 				.long_description {
 					max-height: 1400px;
 					overflow: hidden;
-					margin-top: -12px;
 				}
 
 				#dw_description {
 					h2 {
-						padding: 0 0 10px;
+						padding: 10px 0 0;
 						font-size: 1.35em;
 					}
 					h3 {
-						padding: 0 0 10px;
+						padding: 10px 0 0;
 						font-size: 1.15em;
 					}
 					h4 {
-						padding: 0 0 10px;
+						padding: 10px 0 0;
 						font-size: 1.07em;
 						line-height: 1.4;
 					}
@@ -722,26 +721,21 @@ body.interior.download article .col-1-2.wide-gut{
 	justify-content: space-between;
 	margin: auto;
 	width: 100%;
-	height: 160px;
+	height: 360px;
 	overflow: hidden;
 
 	.downItem {
-		@if $isAMP == 'true' {
-			display: block;
-		} @else {
-			display: flex;
-		}
-
-		height: 130px;
-		min-width: 130px;
-		max-width: 130px;
+		display: flex;
+		height: 150px;
+		min-width: 150px;
+		max-width: 200px;
 		margin: 15px 1% 15px;
-		background-size: 130%;
+		background-size: 120%;
 		background-position: center;
 		background-repeat: no-repeat;
 
 		@include break(mobile){
-			width: 130px;
+			width: 150px;
 			margin: 15px 2% 15px;
 		}
 
@@ -753,34 +747,30 @@ body.interior.download article .col-1-2.wide-gut{
 			&.img-wrap {
 				display: block;
 				position: relative;
-				height: 130px;
+				height: 150px;
 				background: linear-gradient(35deg, rgba(21, 76, 143, 0.17) 0%, rgba(21, 76, 143, 0.75) 75%);
-				border-radius: 3px;
+				border-radius: 5px;
 
 				@if $isDesk == 'true' {
-				@if $isAMP != 'true' {
 					&:hover {
 						background: linear-gradient(25deg, rgba(255, 127, 0, 0.55) 0%, rgba(21, 76, 143, 0.8) 75%);
 					}
-				}}
+				}
 				
 			}
 
 			&.title {
-				@if $isAMP == 'true' {
-					color: white;
-				} @else {
-					color: white !important;
-				}
+				color: #fff;
 				font-size: .9em;
-				letter-spacing: -0.25px;
-				text-shadow: 1px 1px 4px #444;
-				padding: 15px 20px 0;
-				display: block;
+				letter-spacing: -.25px;
+				text-shadow: 1px 1px 2px #666;
 				text-align: center;
 				font-weight: 500;
-				top: 10%;
+				display: block;
 				position: relative;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);
 			}
 		}
 	}
