@@ -74,6 +74,16 @@
 				display: block;
 			}	
 		}
+
+		.twitter-tweet, .twitter-tweet-rendered {
+			margin: 15px auto !important;
+		}
+
+		iframe {
+			&.twitter-tweet, &.instagram-media {
+				margin: 15px auto !important;
+			}
+		}
 		
 	}
 }

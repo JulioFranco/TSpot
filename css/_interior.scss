@@ -379,18 +379,6 @@ body.interior {
 					font-size: 0.96em;
 					border-left: 3px solid #ccc;
 				}
-
-				.twitter-tweet, .twitter-tweet-rendered {
-					margin: 7px auto !important;
-					margin-bottom: 25px !important;
-				}
-
-				iframe {
-					&.twitter-tweet, &.instagram-media {
-					margin: 7px auto !important;
-					margin-bottom: 25px !important;
-					}
-				}
 			}
 			
 		}
