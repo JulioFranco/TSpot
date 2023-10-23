@@ -1010,7 +1010,7 @@ table {
 
 body.home {
 	.jobbioapp {
-		min-height: 380px;
+		min-height: 430px;
 	  	padding-top: 0px !important;
 
 		* {
@@ -1024,8 +1024,14 @@ body.home {
 			.item .arrow {
 			  right: 15px !important;
 			}
-			.top-s, .more {
+			.top-s {
 			  display: none !important;
+			}
+			.more {
+				display: block;
+				font-weight: 500 !important;
+				font-size: 1.1em !important;
+				margin: -15px 0 10px !important;
 			}
 		}
 	}
