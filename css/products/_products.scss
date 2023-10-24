@@ -424,23 +424,17 @@ body.interior {
 		@include col-last(3.7,10,5);
 		margin-top: 15px;
 		
-		@if $isAMP == 'true' {
+		@include break(tablet) {
+			width: 40%;
+		}
+
+		@include break(v-tablet) {
+			@include col-last(1,2,5);
+		}
+
+		@include break(mobile) {
 			width: 100%;
-			margin-top: 40px;
-
-		} @else {
-			@include break(tablet) {
-				width: 40%;
-			}
-
-			@include break(v-tablet) {
-				@include col-last(1,2,5);
-			}
-
-			@include break(mobile) {
-				width: 100%;
-				margin-top: 30px;
-			}
+			margin-top: 30px;
 		}
 	
 		.Prodcomment {
@@ -459,11 +453,7 @@ body.interior {
 				}
 			}
 			.pros h3, .cons h3 {
-				@if $isAMP == 'true' {
-					padding-left: 0;
-				} @else {
-					padding-left: 0 !important;
-				}
+				padding-left: 0 !important;
 			}
 			p {
 				font-family: $f-paragraph;
@@ -549,10 +539,8 @@ body.interior {
 						padding-left: 18px;
 					}
 
-					@if $isAMP != 'true' {
-						&:hover {
-							color: #c00;
-						}
+					&:hover {
+						color: #c00;
 					}
 				}
 
@@ -624,13 +612,8 @@ body.interior {
 	.score {
 		margin: 0 0 15px;
 
-		@if $isAMP == 'true' {
+		@include break(mobile) {
 			min-height: 125px;
-
-		} @else {
-			@include break(mobile) {
-				min-height: 125px;
-			}
 		}
 
 		.number {
@@ -1255,121 +1238,112 @@ body.interior {
     }
 }
 
-@if $isAMP != 'true' {
-	.price_alert {
-	    background: #F2F3F7;
-	    margin: -15px 0 15px;
-	    padding: 17px 10px 16px 15px;
+.price_alert {
+    background: #fffaf2;
+    margin: -15px 0 15px;
+    padding: 17px 10px 16px 15px;
 
-	    /*
-	    //yellow
-		background: #ffe6ad;
-		margin: -5px 0 15px;
-		padding: 15px 10px 13px 15px;
-		*/
+	min-height: 30px;
+	transition: all 0.25s linear;
 
-		min-height: 30px;
-		transition: all 0.25s linear;
+	&.below {
+		background: #fff6e1;
+		margin: -5px 0 40px;
+		text-align: center;
+	}
+	&.mob {
+		margin: 10px 0 5px;
+		padding: 6px 12px 20px;
+		background: #fff;
+		border-bottom: 4px solid #eee;
+	}
 
-		&.below {
-			background: #ffe6ad;
-			margin: -5px 0 40px;
-			text-align: center;
-		}
-		&.mob {
-			margin: 10px 0 5px;
-			padding: 6px 12px 20px;
-			background: #fff;
-			border-bottom: 4px solid #eee;
-		}
-
-		.pa-text {
-			display: inline-block;
-			font-size: 0.8em;
-			b {
-				font-weight: 500;
-				text-transform: uppercase;
-				font-size: 0.9em;
-				color: #333f4a;
-			}
-			.doll {
-				font-weight: 500;
-				font-size: 1em;
-				padding-left: 2px;
-			}
-		}
-		.pa-text.mob {
-			line-height: 25px;
-			display: block;
-		}
-		.doubleh {
-			line-height: 40px;
-			text-align: center;
-			font-size: 1.1em;
-			input {
-				font-size: 0.8em;
-			}
-		}
-		.pa-new {
-			color: #339933;
-			font-size: 0.9em;
+	.pa-text {
+		display: inline-block;
+		font-size: 0.8em;
+		b {
 			font-weight: 500;
-			padding: 0 5px 0 0;
 			text-transform: uppercase;
-
-			@include break(mobile){
-				text-transform: none;
-			}
+			font-size: 0.9em;
+			color: #333f4a;
 		}
-		.pa-new.red {
-			color: #c00;
-		}
-		.message-text {
-			transition: all 0.25s linear;
-		}
-		.messageOutput {
-			font-size: 0.8em;
-			padding: 15px 0 8px 0;
-			text-align: center;
-			color: #05408f;
+		.doll {
+			font-weight: 500;
+			font-size: 1em;
+			padding-left: 2px;
 		}
 	}
-
-	.price_notification {
-		.mob {
-			text-align: center;
-		}
+	.pa-text.mob {
+		line-height: 25px;
+		display: block;
+	}
+	.doubleh {
+		line-height: 40px;
+		text-align: center;
+		font-size: 1.1em;
 		input {
-			width: 100px;
-			margin: -5px 10px 0 10px;
-		}
-		input.uno {
-			width: 60px;
-			margin-left: 5px;
-		}
-		input.dos {
-			width: 140px;
-		}
-		button {
-			width: 100px;
-			height: 30px;
-			margin: -5px 10px 0 0;
-			cursor: pointer;
-		}
-		button.mob {
-			margin: 8px 0 5px 0;
-		}
-		.loading {
-			display: inline-block;
-			background-color: transparent;
-			height: 20px;
-			width: 20px;
-			margin: 0 0 0 10px;
-			background-size: contain;
+			font-size: 0.8em;
 		}
 	}
+	.pa-new {
+		color: #339933;
+		font-size: 0.9em;
+		font-weight: 500;
+		padding: 0 5px 0 0;
+		text-transform: uppercase;
 
+		@include break(mobile){
+			text-transform: none;
+		}
+	}
+	.pa-new.red {
+		color: #c00;
+	}
+	.message-text {
+		transition: all 0.25s linear;
+	}
+	.messageOutput {
+		font-size: 0.8em;
+		padding: 15px 0 8px 0;
+		text-align: center;
+		color: #05408f;
+	}
 }
+
+.price_notification {
+	.mob {
+		text-align: center;
+	}
+	input {
+		width: 100px;
+		margin: -5px 10px 0 10px;
+	}
+	input.uno {
+		width: 60px;
+		margin-left: 5px;
+	}
+	input.dos {
+		width: 140px;
+	}
+	button {
+		width: 100px;
+		height: 30px;
+		margin: -5px 10px 0 0;
+		cursor: pointer;
+	}
+	button.mob {
+		margin: 8px 0 5px 0;
+	}
+	.loading {
+		display: inline-block;
+		background-color: transparent;
+		height: 20px;
+		width: 20px;
+		margin: 0 0 0 10px;
+		background-size: contain;
+	}
+}
+
 
 .expert-reviews-and-ratings {
 	@extend %var_looked-at_expert-reviews;
