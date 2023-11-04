@@ -1037,6 +1037,16 @@ body.home {
 	}
 }
 
+body.home.dark {
+	.jobbioapp {
+		.v1_6 {
+			.more {
+				color: #ddd;
+			}
+		}
+	}
+}
+
 body.news {
 	.jobbioapp {
 		padding: 0px !important;
@@ -1114,6 +1124,10 @@ body.article {
     box-shadow: none !important;
     cursor: pointer !important;
     border-radius: 12px 0 0 12px !important;
+
+	@include break(mobile) {
+		display: none !important;
+	}
 }
 
 /*
