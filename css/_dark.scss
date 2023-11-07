@@ -12,13 +12,11 @@ body.dark {
 
 	.post-list article .article-content .article-category a,
 	.post-list article .article-content .byline em a,
+	.post-list article .article-content .intro p a,
 	.comments-pager ol li a,
 	.bbCodeBlock-sourceJump,
 	.recently-commented-stories a,
-	.CommentOpt a,
-	#product_info .product-details div .item a,
-	#product_info .specs div .item a,
-	#product_info .product-details a {
+	.CommentOpt a {
 		color: #73a0d4;
 		&:hover { color: #83b0e8; }
 	}
@@ -172,7 +170,9 @@ body.dark {
 
 	.downloads-list ul li .title a:hover,
 	.download-index .downloads-table h2 a:hover {
-		border-bottom: 1px dotted #ffaf5f !important;
+		/* border-bottom: 1px dotted #ffaf5f !important; */
+		border-bottom: none!important;
+		color: #ffaf5f!important;
 	}
 
 	h3.subtitle, h3.subtitle a {
@@ -219,10 +219,10 @@ body.dark {
 	}
 
 	.download-list li>a, .forum-list li>a {
-		color: #bbb;
+		color: #ccc;
 	}
 	.download-list li>a:hover, .forum-list li>a:hover {
-		color: #ccc;
+		color: #eee;
 	}
 	.download-list li span, .forum-list li span {
 		color: #7d7d7d;
@@ -311,18 +311,6 @@ body.dark {
 		}
 	}
 
-	&.interior.features .category ul li, &.interior.reviews .category ul li, &.interior.reviews-cat .category ul li, &.interior.features-cat .category ul li,
-	&.interior.features #review ul li:nth-child(odd), &.interior.reviews #review ul li:nth-child(odd), &.interior.reviews-cat #review ul li:nth-child(odd), &.interior.features-cat #review ul li:nth-child(odd),
-	&.interior.trivias #trivias-list ul li {
-		background: #ccc;
-	}
-	&.interior.features #features ul li:nth-child(even), &.interior.reviews #features ul li:nth-child(even), &.interior.reviews-cat #features ul li:nth-child(even), &.interior.features-cat #features ul li:nth-child(even),
-	&.interior.features #review ul li:nth-child(even), &.interior.reviews #review ul li:nth-child(even), &.interior.reviews-cat #review ul li:nth-child(even), &.interior.features-cat #review ul li:nth-child(even),
-	&.interior.trivias #trivias-list ul li:nth-child(even) {
-		background: #eee;
-	}
-
-
 	.article {
 		nav {
 			&.page-nav {
@@ -388,11 +376,6 @@ body.dark {
 		}
 	}
 
-	&.interior.download .downloads-list ul li .download_rating span img,
-	&.interior.download #product_info .product-details div .item img, &.interior.download #product_info .specs div .item img {
-		filter: invert(1) hue-rotate(180deg);
-	}
-
 	.section-header {
 		&.purple {
 			border-top: 5px solid #654b7e;
@@ -430,7 +413,7 @@ body.dark {
 		}
 	}
 	input[type=text], input[type=password] {
-		background: #2c3742;
+		background: #3f4850;
 		color: #fff !important;
 	}
 	input {
@@ -507,7 +490,6 @@ body.dark {
 		.v1_6 {
 			.item {
 				background-color: #e7e7e7;
-				color: inherit;
 			}
 		}
 	}

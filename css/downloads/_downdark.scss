@@ -9,7 +9,7 @@ body.dark {
 		#content-header {
 			.title-group {
 				.subver {
-					color: #aaa;
+					color: #bbb;
 				}
 			}
 		}
@@ -80,6 +80,12 @@ body.dark {
 		h4 {
 			color: #ddd;
 		}
+	}
+
+	&.interior.download .downloads-list ul li .download_rating span img,
+	&.interior.download #product_info .product-details div .item img,
+	&.interior.download #product_info .specs div .item img {
+		filter: invert(1) hue-rotate(180deg);
 	}
 
 	&.interior.download #product_info .download-product,

@@ -1,4 +1,27 @@
 body.dark {
+
+	&.interior.features .category ul li,
+	&.interior.reviews .category ul li,
+	&.interior.reviews-cat .category ul li,
+	&.interior.features-cat .category ul li,
+	&.interior.features #review ul li:nth-child(odd),
+	&.interior.reviews #review ul li:nth-child(odd),
+	&.interior.reviews-cat #review ul li:nth-child(odd),
+	&.interior.features-cat #review ul li:nth-child(odd),
+	&.interior.trivias #trivias-list ul li {
+		background: #ccc;
+	}
+	&.interior.features #features ul li:nth-child(even),
+	&.interior.reviews #features ul li:nth-child(even),
+	&.interior.reviews-cat #features ul li:nth-child(even),
+	&.interior.features-cat #features ul li:nth-child(even),
+	&.interior.features #review ul li:nth-child(even),
+	&.interior.reviews #review ul li:nth-child(even),
+	&.interior.reviews-cat #review ul li:nth-child(even),
+	&.interior.features-cat #review ul li:nth-child(even),
+	&.interior.trivias #trivias-list ul li:nth-child(even) {
+		background: #ddd;
+	}
 	
 	.comment-count-block {
 		filter: grayscale(50%);

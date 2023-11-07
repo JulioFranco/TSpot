@@ -1,5 +1,17 @@
 body.dark {
 
+	#product_info .product-details div .item a,
+	#product_info .specs div .item a,
+	#product_info .product-details a,
+	#product_info .reviewed_by a,
+	#product_info .score_users .breakdown a,
+	#product_info .product-desc .last-updated a,
+	.expert-reviews-and-ratings .comment cite a,
+	#product_info .score .breakdown a {
+		color: #73a0d4;
+		&:hover { color: #83b0e8; }
+	}
+
 	&.products {
 		.post-list-product {
 			.ProdListInfo {
@@ -119,7 +131,7 @@ body.dark {
 				}
 			}
 			.last-updated {
-				color: #777;
+				color: #999;
 			}
 		}
 		.score_users {
@@ -136,6 +148,9 @@ body.dark {
 	#product_info .product-desc nav ul li a span.blue,
 	#product_info .reviewed_by {
 		color: #aeaeae;
+	}
+	.also-looked-at ul.teaser-list li {
+		background: #404b5a;
 	}
 	.also-looked-at>h3, .expert-reviews-and-ratings>h3 {
 		border-bottom: 2px solid #535E69;
@@ -173,6 +188,12 @@ body.dark {
 	&.interior.products-cat .filter_bar .sorter,
 	&.interior.products-cat .filter_bar .sorter a {
 		color: #888;
+	}
+
+	.best-logo img, #product_info .score.bestof a .awardlogo img,
+	.best-logo2 img, #product_info .score.bestof a .awardlogo2 img {
+		filter: invert(1) hue-rotate(180deg) opacity(0.7);
+		background: transparent !important; 
 	}
 
 	.price-history {
