@@ -1,0 +1,116 @@
+body.dark {
+
+	&.download {
+		.download-index {
+			h1 {
+				color: #eee;
+			}
+		}
+		#content-header {
+			.title-group {
+				.subver {
+					color: #aaa;
+				}
+			}
+		}
+		.downloads-list {
+			.subdown {
+				color: #9ea4aa;
+				&.drivers {
+					background-color: #3C444F;
+				}
+			}
+		}
+
+		.downloads-list ul li .title a,
+		.download-index .downloads-table h2 a,
+		.downloads-picks li a h3 {
+			color: #eee !important;
+		}
+
+		.downloads-list ul li .title a:hover,
+		.download-index .downloads-table h2 a:hover {
+			border-bottom: 1px dotted #ffaf5f;
+			color: #ffaf5f;
+		}
+
+		h3.subtitle, h3.subtitle a {
+			color: #5e8bc1 !important;
+		}
+
+		#product_info {
+			.download-product {
+				border-left: 2px solid #535e69;
+				.download_options {
+					border: 2px solid transparent;
+				}
+				.download-wrapper {
+					.download_button {
+						filter: invert(1) hue-rotate(180deg) saturate(0.75);
+						border-radius: 6px;
+					}
+				}
+			}
+			.product-details {
+				border-color: #535E69;
+				p {
+					color: #e2e2e2;
+				}
+			}
+			.mirror-wrapper {
+				li {
+					a {
+						color: #9cadc3 !important;
+						border: 1px solid #494949;
+						background-color: #212121;
+						&:hover {
+							background-color: #111;
+							border-color: #ffaf5f;
+							color: #ddd !important;
+						}
+					}
+				}
+			}
+			.specs {
+				div {
+					&.alt {
+						background-color: #32373d;
+					}
+				}
+			}
+		}
+	}
+
+	li {
+		&.maincat {
+			background: #ddd;
+		}
+	}
+
+	.downloads-index-cats, li.maincat:nth-child(odd) {
+		background: #ccc !important;
+	}
+	.search-box {
+		background: #2b323a !important;
+		border: none;
+		h4 {
+			color: #ddd;
+		}
+	}
+
+	&.interior.download #product_info .download-product,
+	&.interior.download #product_info .product-details.drivers {
+		color: #ccc;
+	}
+
+	&.interior.download #product_info .download-product { 
+		border-left: none;
+	}
+	
+	.download_certified {
+		img {
+			filter: invert(.92) hue-rotate(170deg) saturate(1.2);
+		}
+	}
+
+}

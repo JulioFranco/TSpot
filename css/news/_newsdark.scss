@@ -1,0 +1,86 @@
+body.dark {
+
+	&.interior {
+
+		&.news {
+			#content-header {
+				.title-group {
+					em {
+						span {
+							&.numCom {
+								a {
+									color: #c9c9c9;
+								}
+							}
+						}
+					}
+				}
+			}
+			#mobComBut {
+				background: #242931;
+			}
+		}
+
+		.comment-count-block {
+			filter: grayscale(50%);
+			&:hover {
+				filter: grayscale(30%);
+			}
+			a {
+				span {
+					&.comment-count {
+						color: #ffaf5f;
+					}
+					&.interactions-count {
+						color: #ccc;
+					}
+				}
+			}
+		}
+
+		.related-query {
+			a {
+				color: #fff;
+			}
+			ul {
+				li {
+					a {
+						color: #ccc;
+	
+						&:hover {
+							color: #5992d5;
+						}
+					}
+				}
+			}
+		}
+
+		.related-products {
+			& > h3 {
+				span {
+					&.video {
+						color: #ccc;
+					}
+				}
+			}
+		}
+		.ComBut {
+			border: solid 1px #5e7394;
+			background: #1b1f24;
+		}
+		nav {
+			&.page-nav {
+				a {
+					span {
+						color: #bbb;
+					}
+					strong {
+						color: #fff;
+					}
+				}
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,127 @@
+body.dark {
+	
+	.comment-count-block {
+		filter: grayscale(50%);
+		&:hover {
+			filter: grayscale(30%);
+		}
+		a {
+			span {
+				&.comment-count {
+					color: #ffaf5f;
+				}
+				&.interactions-count {
+					color: #ccc;
+				}
+			}
+		}
+	}
+
+	&.article {
+		.article-index {
+			background: transparent;
+			.sharethis {
+				filter: invert(1);
+			}
+			section {
+				background: #000;
+			}
+		}
+	}
+
+	.articleBody {
+		.bestof_product {
+			.numbers {
+				background-color: transparent;
+				border: none;
+				a {
+					&.withTooltip {
+						color: #fff;
+					}
+				}
+			}
+		}
+		ul {
+			li {
+				color: #ddd;
+			}
+		}
+	}
+
+	.bestof_product {
+		.image {
+			border: 2px solid #3170bb;
+		}
+		h2 {
+			a {
+				color: #94b6df !important;
+				&:hover {
+					color: #ffaf5f !important;
+				}
+			}
+		}
+	}
+	.best-categories {
+		li {
+			opacity: 0.9;
+		}
+	}
+	.best-logo img, #product_info .score.bestof a .awardlogo img,
+	.best-logo2 img, #product_info .score.bestof a .awardlogo2 img {
+		filter: invert(1) hue-rotate(180deg) opacity(0.7);
+		background: transparent !important;
+	}
+	.best-categories li, .best-category li a.category-name {
+		color: #eee !important;
+		border: 2px solid #eee !important;
+	}
+	.best-category {
+		li {
+			a {
+				&.category-name {
+					&:hover {
+						border: 2px solid #3170bb !important;
+					}
+				}
+			}
+		}
+	}
+
+	@include break(mobile) {
+		.best-categories li, .best-category li a.category-name {
+		    border: none !important;
+		}
+	}
+
+	.review_box {
+		background: transparent;
+		border: none;
+		&.outstanding {
+			border-top: 80px solid #212a33;
+		}
+		.others_said {
+			a {
+				color: #888 !important;
+			}
+		}
+	}
+
+	.article-index {
+		background: transparent;
+		section {
+			background: #535e69;
+			ol {
+				color: #99adc4;
+			}
+			a {
+				&:hover {
+					color: #ffaf5f !important;
+				}
+			}
+		}
+	}
+	.article-index section a, .article-index section h3 {
+		color: #fff;
+	}
+
+}

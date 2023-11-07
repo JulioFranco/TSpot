@@ -1,0 +1,37 @@
+body.dark {
+	
+		&.trivia {
+			#content {
+				#content-header {
+					background-color: #212a33;
+					.title-group {
+						h1 {
+							&.yellow {
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+			.articleBody {
+				#trivia-options {
+					.option_box {
+						.option {
+							background-color: #484e53;
+							&:hover {
+								background-color: #93683c;
+							}
+						}
+					}
+				}
+				#explanation {
+					&.rotate {
+						.choosefirst {
+							color: #d5ac84;
+						}
+					}
+				}
+			}
+		}
+
+}

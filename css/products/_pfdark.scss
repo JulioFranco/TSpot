@@ -1,0 +1,224 @@
+body.dark {
+
+	&.products {
+		.post-list-product {
+			.ProdListInfo {
+				.ProdListCat {
+					a {
+						background-color: #415f7d;
+						&:hover {
+							background-color: #535e69;
+						}
+					}
+				}
+				h4 {
+					a {
+						color: #c4c4c4;
+						&:hover {
+							color: #ffaf5f;
+						}
+					}
+				}
+			}
+			li {
+				border-bottom: 1px solid #535E69;
+				border-top: 0px solid #535E69;
+				padding: 4px 2%;
+			}
+			.prod-meta {
+				.price {
+					a {
+						color: #91a5be;
+						&:hover {
+							color: #a3b6ce;
+						}
+					}
+				}
+			}
+			.product-img {
+				border-radius: 4px;
+			}
+		}
+	}
+	&.products-cat {
+		.filter_bar {
+			background: #3f4b56;
+			border: 1px solid #212a33;
+		}
+	}
+	&.product {
+		#content {
+			.price-history {
+				.sorter {
+					margin: 7px 0 12px;
+				}
+			}
+		}
+	}
+
+
+	#product_info {
+		background: transparent;
+		img {
+			border-radius: 4px;
+		}
+		.score {
+			&.bestof {
+				a {
+					.awardtext {
+						text-shadow: none;
+						color: white;
+						position: relative;
+						&:hover {
+							color: white;
+						}
+					}
+				}
+			}
+		}
+		figure {
+			border-radius: 4px;
+			background: transparent;
+			.flex-control-paging {
+				li {
+					a {
+						border: 2px solid transparent;
+					}
+				}
+			}
+		}
+		.newverPrice {
+			a {
+				color: #ffd5ac;
+				font-weight: 500;
+				&:hover {
+					color: #fbac5f;
+				}
+			}
+		}
+		.product-desc {
+			nav {
+				ul {
+					li {
+						&:first-child {
+							border-right: 1px solid #535E69;
+						}
+					}
+				}
+			}
+			.price-widget {
+				.price-int {
+					background-color: #394048;
+					color: #b7b7b7;
+					a {
+						color: #9dc19d;
+						&:hover {
+							color: #fff;
+						}
+					}
+				}
+			}
+			.last-updated {
+				color: #777;
+			}
+		}
+		.score_users {
+			border-top: 2px solid #535e69;
+		}
+	}
+
+	.expert-reviews-and-ratings .comment:nth-child(even),
+	&.interior.products .post-list-product li:nth-child(even) {
+		background: transparent;
+	}
+	#product_info .product-desc nav ul li a,
+	#product_info .product-desc nav ul li a span.red,
+	#product_info .product-desc nav ul li a span.blue,
+	#product_info .reviewed_by {
+		color: #aeaeae;
+	}
+	.also-looked-at>h3, .expert-reviews-and-ratings>h3 {
+		border-bottom: 2px solid #535E69;
+	}
+	.also-looked-at>h3:after, .expert-reviews-and-ratings>h3:after {
+		border-top: 6px solid #535E69;
+	}
+	.also-looked-at>h3, .expert-reviews-and-ratings>h3,
+	#product_info .newverCheck a {
+		color: #f5f5f5;
+	}
+	#product_info .newver,
+	#product_info .score.bestof {
+		border-bottom: 4px solid #535E69;
+	}
+	#product_info .product-desc .price-widget .price-count, #product_info .product-desc .price-widget #artificialBorder {
+		background-color: #339933a3;
+	}
+	.expert-reviews-and-ratings {
+		.comment {
+			border-bottom: 1px solid #535E69 !important;
+		}
+	}
+	#product_info .product_description, .section-byline {
+		color: #eee;
+	}
+	&.interior.product #content .articleBody ul.pros li:before, &.interior.product #content .articleBody ul.cons li:before {
+		border-radius: 10px;
+	}
+	&.interior.products .post-list-product .prod-score,
+	#product_info .score .number, #product_info .score_users .number,
+	.expert-reviews-and-ratings .comment .rating {
+		opacity: 0.86;
+	}
+	&.interior.products-cat .filter_bar .sorter,
+	&.interior.products-cat .filter_bar .sorter a {
+		color: #888;
+	}
+
+	.price-history {
+		.sidePrice {
+			width: 300px !important;
+		}
+		.priceTable {
+			background: #bbb;
+			border-radius: 4px;
+		}
+		.sorter {
+			a {
+				color: #83b0e8;
+				&:hover {
+					color: #f5f5f5;
+				}
+			}
+			li {
+				a {
+					&.filter {
+						color: #555;
+						&:hover {
+							color: #f5f5f5;
+						}
+					}
+				}
+			}
+		}
+	}
+	.price-history h4,
+	.price-history .stat {
+		color: #ccc !important;
+	}
+	.chartjs-render-monitor {
+		background-color: #ccc;
+		border-radius: 4px;
+		padding: 7px;
+	}
+	.price_alert {
+		background: #535e6985;
+		&.below {
+			background: #535e69;
+		}
+	}
+	.price_alert .pa-text b, .price_alert .pa-new {
+		color: #88a788;
+	}
+
+}
