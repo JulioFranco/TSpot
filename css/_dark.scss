@@ -6,378 +6,46 @@ body.dark {
 		background-color: #242931;
 	}
 
-	a, #content p.side-quote {
+	#content p.side-quote {
 		color: #73a0d4;
 	}
 
-	a {
-		&:hover {
-			color: #83b0e8;
-		}
+	.post-list article .article-content .article-category a,
+	.post-list article .article-content .byline em a,
+	.comments-pager ol li a,
+	.bbCodeBlock-sourceJump,
+	.recently-commented-stories a,
+	.CommentOpt a,
+	#product_info .product-details div .item,
+	&.download #product_info .specs div .item {
+		color: #73a0d4;
+		&:hover { color: #83b0e8; }
 	}
 
-	#content, #content.white, body.interior.white #content {
+	&.article .articleBody p a, &.news .articleBody p a {
+		box-shadow: inset 0 -2px 0 #ffaf5f;
+	}
+
+	&.article .articleBody p a:hover,
+	&.news .articleBody p a:hover {
+		color: #ffaf5f;
+		box-shadow: none;
+	}
+
+	#content, #content.white, &.interior.white #content {
 		background-color: #242931;
-	}
-
-	&.interior {
-		&.category {
-			#content-header {
-				background: #30363e !important;
-			}
-		}
-
-		.comment-count-block {
-			filter: grayscale(50%);
-			&:hover {
-				filter: grayscale(30%);
-			}
-			a {
-				span {
-					&.comment-count {
-						color: #ffaf5f;
-					}
-					&.interactions-count {
-						color: #ccc;
-					}
-				}
-			}
-		}
-
-		&.news {
-			#content-header {
-				.title-group {
-					em {
-						span {
-							&.numCom {
-								a {
-									color: #c9c9c9;
-								}
-							}
-						}
-					}
-				}
-			}
-			#mobComBut {
-				background: #242931;
-			}
-		}
-		.articleBody {
-			.bestof_product {
-				.numbers {
-					background-color: transparent;
-					border: none;
-					a {
-						&.withTooltip {
-							color: #fff;
-						}
-					}
-				}
-			}
-			ul {
-				li {
-					color: #ddd;
-				}
-			}
-		}
-		.related-query {
-			ul {
-				li {
-					a {
-						&:hover {
-							color: #5992d5;
-						}
-					}
-				}
-			}
-		}
-		.related-products {
-			& > h3 {
-				span {
-					&.video {
-						color: #ccc;
-					}
-				}
-			}
-		}
-		.ComBut {
-			border: solid 1px #5e7394;
-			background: #1b1f24;
-		}
-		nav {
-			&.page-nav {
-				a {
-					span {
-						color: #bbb;
-					}
-					strong {
-						color: #fff;
-					}
-				}
-			}
-		}
-		&.article {
-			.article-index {
-				background: transparent;
-				.sharethis {
-					filter: invert(1);
-				}
-				section {
-					background: #000;
-				}
-			}
-		}
-		&.download {
-			.download-index {
-				h1 {
-					color: #eee;
-				}
-			}
-			#content-header {
-				.title-group {
-					.subver {
-						color: #aaa;
-					}
-				}
-			}
-			.downloads-list {
-				.subdown {
-					color: #9ea4aa;
-					&.drivers {
-						background-color: #3C444F;
-					}
-				}
-			}
-			#product_info {
-				.download-product {
-					border-left: 2px solid #535e69;
-					.download_options {
-						border: 2px solid transparent;
-					}
-					.download-wrapper {
-						.download_button {
-							filter: invert(1) hue-rotate(180deg) saturate(0.75);
-							border-radius: 6px;
-						}
-					}
-				}
-				.product-details {
-					border-color: #535E69;
-					p {
-						color: #e2e2e2;
-					}
-				}
-				.mirror-wrapper {
-					li {
-						a {
-							color: #9cadc3 !important;
-							border: 1px solid #494949;
-							background-color: #212121;
-							&:hover {
-								background-color: #111;
-								border-color: #ffaf5f;
-								color: #ddd !important;
-							}
-						}
-					}
-				}
-				.specs {
-					div {
-						&.alt {
-							background-color: #32373d;
-						}
-					}
-				}
-			}
-		}
-		&.products {
-			.post-list-product {
-				.ProdListInfo {
-					.ProdListCat {
-						a {
-							background-color: #415f7d;
-							&:hover {
-								background-color: #535e69;
-							}
-						}
-					}
-					h4 {
-						a {
-							color: #c4c4c4;
-							&:hover {
-								color: #ffaf5f;
-							}
-						}
-					}
-				}
-				li {
-					border-bottom: 1px solid #535E69;
-					border-top: 0px solid #535E69;
-					padding: 4px 2%;
-				}
-				.prod-meta {
-					.price {
-						a {
-							color: #91a5be;
-							&:hover {
-								color: #a3b6ce;
-							}
-						}
-					}
-				}
-				.product-img {
-					border-radius: 4px;
-				}
-			}
-		}
-		&.products-cat {
-			.filter_bar {
-				background: #3f4b56;
-				border: 1px solid #212a33;
-			}
-		}
-		&.product {
-			#content {
-				.price-history {
-					.sorter {
-						margin: 7px 0 12px;
-					}
-				}
-			}
-		}
-		&.trivia {
-			#content {
-				#content-header {
-					background-color: #212a33;
-					.title-group {
-						h1 {
-							&.yellow {
-								color: #fff;
-							}
-						}
-					}
-				}
-			}
-			.articleBody {
-				#trivia-options {
-					.option_box {
-						.option {
-							background-color: #484e53;
-							&:hover {
-								background-color: #93683c;
-							}
-						}
-					}
-				}
-				#explanation {
-					&.rotate {
-						.choosefirst {
-							color: #d5ac84;
-						}
-					}
-				}
-			}
-		}
-	}
-	&.about {
-		h4 {
-			color: #aaa;
-		}
-		.intro {
-			a {
-				box-shadow: inset 0 -1px 0 #ffaf5f;
-			}
-		}
-	}
-	&.features {
-		.masthead {
-			background-color: #255a44;
-		}
-	}
-	&.products {
-		.masthead {
-			background-color: #5f6872;
-		}
-	}
-
-
-	#product_info {
-		background: transparent;
-		img {
-			border-radius: 4px;
-		}
-		.score {
-			&.bestof {
-				a {
-					.awardtext {
-						text-shadow: none;
-						color: white;
-						position: relative;
-						&:hover {
-							color: white;
-						}
-					}
-				}
-			}
-		}
-		figure {
-			border-radius: 4px;
-			background: transparent;
-			.flex-control-paging {
-				li {
-					a {
-						border: 2px solid transparent;
-					}
-				}
-			}
-		}
-		.newverPrice {
-			a {
-				color: #ffd5ac;
-				font-weight: 500;
-				&:hover {
-					color: #fbac5f;
-				}
-			}
-		}
-		.product-desc {
-			nav {
-				ul {
-					li {
-						&:first-child {
-							border-right: 1px solid #535E69;
-						}
-					}
-				}
-			}
-			.price-widget {
-				.price-int {
-					background-color: #394048;
-					color: #b7b7b7;
-					a {
-						color: #9dc19d;
-						&:hover {
-							color: #fff;
-						}
-					}
-				}
-			}
-			.last-updated {
-				color: #777;
-			}
-		}
-		.score_users {
-			border-top: 2px solid #535e69;
-		}
 	}
 
 	.cta, .adContainerNews {
 		background-color: #242931 !important;
 	}
+
 	.post-list {
+
 		.ad_to_list {
 			border-color: #3e464e;
 		}
+
 		article {
 			border-bottom: 2px solid #3e464e;
 			.article-content {
@@ -403,18 +71,73 @@ body.dark {
 			}
 		}
 	}
-	h1, h2, h3, h4 {
+
+	h1, h2, h3, h4, h5 {
 		color: #eee;
 	}
+
+	&.interior {
+		h1, h2, h3, h4, h5 {
+			color: #eee;
+		}
+
+		&.category {
+			#content-header {
+				background: #30363e !important;
+			}
+		}
+
+		.articleBody {
+			ul {
+				li {
+					color: #ddd;
+
+					a {
+						color: #73a0d4;
+						&:hover { color: #83b0e8; }
+					}
+				}
+			}
+		}
+
+	}
+
+	&.about {
+		h4 {
+			color: #aaa;
+		}
+		.intro {
+			a {
+				box-shadow: inset 0 -1px 0 #ffaf5f;
+			}
+		}
+		.article-index section {
+		    background: #3b4753 !important;
+		}
+	}
+
+	&.features {
+		.masthead {
+			background-color: #255a44;
+		}
+	}
+	&.products {
+		.masthead {
+			background-color: #5f6872;
+		}
+	}
+
 	#content p.grey, #content p.grey a,
 	#content p.byline, #content p.byline a {
 		color: #888;
 		border: none;
 		box-shadow: none;
 	}
-	body.interior.article #content .articleBody p.byline, body.interior.article #content .articleBody p.grey {
+
+	&.interior.article #content .articleBody p.byline, &.interior.article #content .articleBody p.grey {
 		color: #d5b28e;
 	}
+
 	#content {
 		p {
 			&.grey {
@@ -430,13 +153,20 @@ body.dark {
 			}
 		}
 	}
-	body.interior.news #content-header, body.interior.product #content-header, body.interior.download #content-header,
+
+	/*
+	&.news #content-header,
+	&.product #content-header,
+	&.download #content-header,
 	.home .masthead {
-		background: #242931;
+		background: #242931 !important;
 	}
-	body.interior.news .cta, body.interior.download .cta, body.interior.category .cta, body.interior.product .cta {
+	*/
+
+	&.news .cta, &.download .cta, &.category .cta, &.product .cta {
 		background: #30363e !important;
 	}
+
 	.grid-posts {
 		&.grid-section {
 			background: #212a33;
@@ -451,6 +181,7 @@ body.dark {
 	#content #why-it-matters a:hover, #content h5 a:hover {
 		color: #eee;
 	}
+
 	ul {
 		&.category-chicklets {
 			li {
@@ -464,11 +195,23 @@ body.dark {
 			opacity: 0.9;
 		}
 	}
+
 	#content p,
 	.sidebar ul.teaser-list li a,
 	.section-header a {
 		color: #e0e0e0;
 	}
+
+	.download-list li>a, .forum-list li>a {
+		color: #bbb;
+	}
+	.download-list li>a:hover, .forum-list li>a:hover {
+		color: #ccc;
+	}
+	.download-list li span, .forum-list li span {
+		color: #7d7d7d;
+	}
+
 	.slide-sort-selector {
 		border-bottom: 2px solid #535E69 !important;
 		.post-type-selector {
@@ -501,191 +244,45 @@ body.dark {
 			}
 		}
 	}
+
 	.post-list article .article-content .intro,
-	body.interior.download .downloads-list ul li .bio {
+	&.interior.download .downloads-list ul li .bio {
 		color: #c9c9c9 !important;
 	}
-	body.interior.news #content-header .title-group h2, body.interior.product #content-header .title-group h2, body.interior.category #content-header .title-group h2, body.interior.download #content-header .title-group h2 {
-		color: #eee;
-	}
-	body.interior.news #content-header .title-group em,
-	body.interior.news #content-header .title-group em a,
-	body.interior .social-share-svg .social-share-text {
-		color: #c9c9c9;
-	}
-	.bestof_product {
-		.image {
-			border: 2px solid #3170bb;
-		}
-		h2 {
-			a {
-				color: #94b6df !important;
-				&:hover {
-					color: #ffaf5f !important;
-				}
-			}
-		}
-	}
-	.best-categories {
-		li {
-			opacity: 0.9;
-		}
-	}
-	.best-logo img, #product_info .score.bestof a .awardlogo img,
-	.best-logo2 img, #product_info .score.bestof a .awardlogo2 img {
-		filter: invert(1) hue-rotate(180deg) opacity(0.7);
-		background: transparent !important;
-	}
-	.best-categories li, .best-category li a.category-name {
+	&.interior.news #content-header .title-group h2, &.interior.product #content-header .title-group h2, &.interior.category #content-header .title-group h2, &.interior.download #content-header .title-group h2 {
 		color: #eee !important;
-		border: 2px solid #eee !important;
 	}
-	.best-category {
-		li {
-			a {
-				&.category-name {
-					&:hover {
-						border: 2px solid #3170bb !important;
-					}
-				}
-			}
-		}
+	&.interior.news #content-header .title-group em,
+	&.interior.news #content-header .title-group em a,
+	&.interior .social-share-svg .social-share-text {
+		color: #c9c9c9 !important;
 	}
-	@media {
-		only {
-			screen {
-				and {
-					(max-width {
-						&: {
-							760px) {
-								.best-categories li, .best-category li a.category-name {
-	        border: none !important;
-								body.interior.download #product_info .download-product {
-		    border-left: none;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	} {
-		body {
-			&.interior {
-				.related-query {
-					ul {
-						li {
-							a {
-								color: #ccc;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+
+
 	.grid-posts-lineal h4, .grid-posts-lineal .gr-title, .grid-posts-lineal h4 {
 		color: #ebebeb;
 	}
-	#comments {
-		border-top: 10px solid #343c48;
-		h3 {
-			&.title {
-				color: #7194bd;
-			}
-		}
-		#add-new-comment {
-			margin: 20px 0 -10px;
-		}
-		a {
-			&.post-new-comment {
-				opacity: 0.8;
-			}
-		}
-		.comment {
-			border-top: 1px solid #3e4851 !important;
-			.commentText {
-				.morecommentquotes {
-					&:hover {
-						background: #363C42;
-						color: #ffaf5f;
-					}
-				}
-			}
-			span {
-				&.user_title {
-					color: #c7c7c7;
-				}
-			}
-			img {
-				&.user-avatar {
-					box-shadow: 2px 2px 0px #535e69;
-				}
-			}
-		}
-		.CommentOpt {
-			.ComBut {
-				background: #ccc;
-				text-shadow: none;
-				&:hover {
-					background: #a7bbc9;
-				}
-			}
-		}
-		.staff {
-			filter: invert(1);
-		}
-		.elite {
-			border-radius: 4px;
-		}
-	}
-	#comments,
-	#comments .recently-commented-stories {
-		background: #21262d;
-	}
+
+
 	.post-load-more,
 	.comments-pager ol li,
 	.post-list article .article-content .post-meta a.comment-count span.highlight,
 	#comments #add-new-comment,
-	body.interior.product #content a.wide-button,
-	body.interior.product #content a.wide-button:hover,
+	&.interior.product #content a.wide-button,
+	&.interior.product #content a.wide-button:hover,
 	.more_description_dw, .more_similars_dw {
 		background-color: #2a323d;
 		border: 1px solid transparent;
 		color: #f5f5f5;
 	}
+
 	.post-load-more {
 		&:hover {
 			background-color: #3b4652;
 			border: 1px solid transparent;
 		}
 	}
-	#comments a.post-new-comment,
-	#comments .comment .commentText,
-	#comments .CommentOpt {
-		color: #f5f5f5;
-	}
-	#comments .comment a.user,
-	#comments .comment ul.action-links li a {
-		color: #93b7e5;
-	}
-	#comments .comment a.user:hover,
-	#comments .comment ul.action-links li a:hover {
-		color: #ffaf5f;
-	}
-	#comments .comment .commentText .quote, #comments .comment .commentText blockquote,
-	#comments .comment .commentText .morecommentquotes {
-		background: #4f545a;
-		color: #ccc;
-		border-left: 5px solid rgba(30, 41, 51, 0.55);
-	}
-	.article .articleBody p a, .news .articleBody p a {
-		box-shadow: inset 0 -2px 0 #ffaf5f;
-	}
-	.article .articleBody p a:hover, .news .articleBody p a:hover {
-		color: #ffaf5f;
-		box-shadow: none;
-	}
+
 	table {
 		&.article-table {
 			&.alt {
@@ -697,28 +294,19 @@ body.dark {
 			}
 		}
 	}
-	body.interior.features .category ul li, body.interior.reviews .category ul li, body.interior.reviews-cat .category ul li, body.interior.features-cat .category ul li,
-	body.interior.features #review ul li:nth-child(odd), body.interior.reviews #review ul li:nth-child(odd), body.interior.reviews-cat #review ul li:nth-child(odd), body.interior.features-cat #review ul li:nth-child(odd),
-	body.interior.trivias #trivias-list ul li {
+
+	&.interior.features .category ul li, &.interior.reviews .category ul li, &.interior.reviews-cat .category ul li, &.interior.features-cat .category ul li,
+	&.interior.features #review ul li:nth-child(odd), &.interior.reviews #review ul li:nth-child(odd), &.interior.reviews-cat #review ul li:nth-child(odd), &.interior.features-cat #review ul li:nth-child(odd),
+	&.interior.trivias #trivias-list ul li {
 		background: #ccc;
 	}
-	body.interior.features #features ul li:nth-child(even), body.interior.reviews #features ul li:nth-child(even), body.interior.reviews-cat #features ul li:nth-child(even), body.interior.features-cat #features ul li:nth-child(even),
-	body.interior.features #review ul li:nth-child(even), body.interior.reviews #review ul li:nth-child(even), body.interior.reviews-cat #review ul li:nth-child(even), body.interior.features-cat #review ul li:nth-child(even),
-	body.interior.trivias #trivias-list ul li:nth-child(even) {
+	&.interior.features #features ul li:nth-child(even), &.interior.reviews #features ul li:nth-child(even), &.interior.reviews-cat #features ul li:nth-child(even), &.interior.features-cat #features ul li:nth-child(even),
+	&.interior.features #review ul li:nth-child(even), &.interior.reviews #review ul li:nth-child(even), &.interior.reviews-cat #review ul li:nth-child(even), &.interior.features-cat #review ul li:nth-child(even),
+	&.interior.trivias #trivias-list ul li:nth-child(even) {
 		background: #eee;
 	}
-	.review_box {
-		background: transparent;
-		border: none;
-		&.outstanding {
-			border-top: 80px solid #212a33;
-		}
-		.others_said {
-			a {
-				color: #888 !important;
-			}
-		}
-	}
+
+
 	.article {
 		nav {
 			&.page-nav {
@@ -732,23 +320,7 @@ body.dark {
 			}
 		}
 	}
-	.article-index {
-		background: transparent;
-		section {
-			background: #535e69;
-			ol {
-				color: #99adc4;
-			}
-			a {
-				&:hover {
-					color: #ffaf5f !important;
-				}
-			}
-		}
-	}
-	.article-index section a, .article-index section h3 {
-		color: #fff;
-	}
+
 	img {
 		&.repartner {
 			filter: invert(0.84) hue-rotate(175deg) saturate(1);
@@ -770,70 +342,41 @@ body.dark {
 		color: #f5f5f5;
 		border-bottom: 1px solid #73a0d4;
 	}
-	li {
-		&.maincat {
-			background: #ddd;
-		}
-	}
-	.downloads-index-cats, li.maincat:nth-child(odd) {
-		background: #ccc !important;
-	}
-	.search-box {
-		background: #2b323a !important;
-		border: none;
-		h4 {
-			color: #ddd;
-		}
-	}
-	body.interior.download .downloads-list ul li .title a,
-	body.interior.download .download-index .downloads-table h2 a,
-	body.interior.download .downloads-picks li a h3 {
-		color: #eee !important;
-	}
-	body.interior.download .downloads-list ul li .title a:hover,
-	body.interior.download .download-index .downloads-table h2 a:hover {
-		border-bottom: 1px dotted #ffaf5f;
-		color: #ffaf5f;
-	}
-	body.interior.download .subtitle, body.interior.download .subtitle a {
-		color: #5e8bc1 !important;
-	}
-	body.interior.download #product_info .download-product,
-	body.interior.download #product_info .product-details.drivers {
-		color: #ccc;
-	}
-	}
-	.tabbar .active,
-	.tabbar:after {
-		background: #535E69;
-		color: #f5f5f5;
-	}
+
 	.tabbar {
 		h3 {
 			background: #acaeb0;
+			color: #000;
+			
 			&:hover {
 				background-color: #92a1b2;
 			}
+
+			&.active, &:after {
+				background: #535E69;
+				color: #f5f5f5;
+
+				&:hover {
+					background-color: #535E69 !important;
+				}
+			}
+
+			&.pricetab {
+			    background-color: #59a059;
+			    color: #fff;
+			}
+		}
+
+		&:after {
+			background: #535E69;
 		}
 	}
-	body.interior.download .downloads-list ul li .download_rating span img,
-	body.interior.download #product_info .product-details div .item img, body.interior.download #product_info .specs div .item img {
+
+	&.interior.download .downloads-list ul li .download_rating span img,
+	&.interior.download #product_info .product-details div .item img, &.interior.download #product_info .specs div .item img {
 		filter: invert(1) hue-rotate(180deg);
 	}
-	.download_certified {
-		img {
-			filter: invert(.92) hue-rotate(170deg) saturate(1.2);
-		}
-	}
-	.download-list li>a, .forum-list li>a {
-		color: #bbb;
-	}
-	.download-list li>a:hover, .forum-list li>a:hover {
-		color: #ccc;
-	}
-	.download-list li span, .forum-list li span {
-		color: #7d7d7d;
-	}
+
 	.section-header {
 		&.purple {
 			border-top: 5px solid #654b7e;
@@ -848,107 +391,17 @@ body.dark {
 	.download-list li em.popular-topic, .forum-list li em.popular-topic {
 		background-color: #ab6e32;
 	}
+
 	.sidebar ul.teaser-list li a:hover,
 	.download-list li span a:hover,
 	.forum-list li span a:hover {
 		color: #ffaf5f;
 	}
-	.expert-reviews-and-ratings .comment:nth-child(even),
-	body.interior.products .post-list-product li:nth-child(even) {
-		background: transparent;
-	}
-	#product_info .product-desc nav ul li a,
-	#product_info .product-desc nav ul li a span.red,
-	#product_info .product-desc nav ul li a span.blue,
-	#product_info .reviewed_by {
-		color: #aeaeae;
-	}
-	.also-looked-at>h3, .expert-reviews-and-ratings>h3 {
-		border-bottom: 2px solid #535E69;
-	}
-	.also-looked-at>h3:after, .expert-reviews-and-ratings>h3:after {
-		border-top: 6px solid #535E69;
-	}
-	.also-looked-at>h3, .expert-reviews-and-ratings>h3,
-	#product_info .newverCheck a {
-		color: #f5f5f5;
-	}
-	#product_info .newver,
-	#product_info .score.bestof {
-		border-bottom: 4px solid #535E69;
-	}
-	#product_info .product-desc .price-widget .price-count, #product_info .product-desc .price-widget #artificialBorder {
-		background-color: #339933a3;
-	}
-	.expert-reviews-and-ratings {
-		.comment {
-			border-bottom: 1px solid #535E69 !important;
-		}
-	}
-	#product_info .product_description, .section-byline {
-		color: #eee;
-	}
-	body.interior.product #content .articleBody ul.pros li:before, body.interior.product #content .articleBody ul.cons li:before {
-		border-radius: 10px;
-	}
-	body.interior.products .post-list-product .prod-score,
-	#product_info .score .number, #product_info .score_users .number,
-	.expert-reviews-and-ratings .comment .rating {
-		opacity: 0.86;
-	}
-	body.interior.products-cat .filter_bar .sorter,
-	body.interior.products-cat .filter_bar .sorter a {
-		color: #888;
-	}
-	
-	.price-history {
-		.sidePrice {
-			width: 300px !important;
-		}
-		.priceTable {
-			background: #bbb;
-			border-radius: 4px;
-		}
-		.sorter {
-			a {
-				color: #83b0e8;
-				&:hover {
-					color: #f5f5f5;
-				}
-			}
-			li {
-				a {
-					&.filter {
-						color: #555;
-						&:hover {
-							color: #f5f5f5;
-						}
-					}
-				}
-			}
-		}
-	}
-	.price-history h4,
-	.price-history .stat {
-		color: #ccc !important;
-	}
-	.chartjs-render-monitor {
-		background-color: #ccc;
-		border-radius: 4px;
-		padding: 7px;
-	}
-	.price_alert {
-		background: #535e6985;
-		&.below {
-			background: #535e69;
-		}
-	}
-	.price_alert .pa-text b, .price_alert .pa-new {
-		color: #88a788;
-	}
+
 	textarea {
 		background: #bdbdbd;
 	}
+
 	.home {
 		.masthead {
 			ul {
@@ -1038,6 +491,7 @@ body.dark {
 		.v1_6 {
 			.item {
 				background-color: #e7e7e7;
+				color: inherit;
 			}
 		}
 	}
@@ -1051,6 +505,5 @@ body.dark {
 			border-top: 2px solid #24303c;
 		}
 	}
-
 
 }

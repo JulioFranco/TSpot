@@ -198,6 +198,10 @@ body.interior {
 				margin: 0 0 20px;
 			}
 
+			a {
+				color: #000;
+			}
+
 			ul {
 				font-family: $f-paragraph;
 				font-size: .9em;
@@ -384,6 +388,10 @@ body.interior {
 	.related-query {
 		margin: 20px auto;
 
+		a {
+			color: #000;
+		}
+
 		@include break(mobile) {
 			margin: 0 auto 20px;
 		}
@@ -428,6 +436,14 @@ body.interior {
 					letter-spacing: normal;
 					line-height: 1.4;
 					font-family: $f-paragraph;
+				}
+
+				a {
+					color: #105ab2;
+
+					&:hover {
+						color: #db8128;
+					}
 				}
 			}
 		}
