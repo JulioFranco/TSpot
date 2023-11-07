@@ -16,8 +16,9 @@ body.dark {
 	.bbCodeBlock-sourceJump,
 	.recently-commented-stories a,
 	.CommentOpt a,
-	#product_info .product-details div .item,
-	&.download #product_info .specs div .item {
+	#product_info .product-details div .item a,
+	#product_info .specs div .item a,
+	#product_info .product-details a {
 		color: #73a0d4;
 		&:hover { color: #83b0e8; }
 	}
@@ -162,6 +163,21 @@ body.dark {
 		background: #242931 !important;
 	}
 	*/
+
+	.downloads-list ul li .title a,
+	.download-index .downloads-table h2 a,
+	.downloads-picks li a h3 {
+		color: #eee !important;
+	}
+
+	.downloads-list ul li .title a:hover,
+	.download-index .downloads-table h2 a:hover {
+		border-bottom: 1px dotted #ffaf5f !important;
+	}
+
+	h3.subtitle, h3.subtitle a {
+		color: #5e8bc1 !important;
+	}
 
 	&.news .cta, &.download .cta, &.category .cta, &.product .cta {
 		background: #30363e !important;
