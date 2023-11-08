@@ -53,7 +53,7 @@ ul.category-chicklets {
 		&.purple, &.software, &.culture, &.tech-culture																		{ background-color: $purple;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten($purple,6%); } } } }
 		&.purple2, &.electronics, &.audio, &.cpu, &.motherboards, &.input-devices, &.cases									{ background-color: #5353ac;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#5353ac,5%); } } } }
 
-		&.orange, &.guides, &.web, &.home, &.blog, &.desktop-pcs															{ background-color: #d9781a;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: $orange; } } } }
+		&.orange, &.guides, &.web, &.home, &.blog, &.desktop-pcs															{ background-color: #d26c0a;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#d26c0a,5%); } } } }
 		&.red, &.gaming, &.graphics-cards, &.must-reads, &.games															{ background-color: $red;		@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover 	{ background-color: lighten($red,5%); } } } }
 		&.red2, &.buying-guides, &.bestof, &.video																			{ background-color: #CC3333;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#CC3333,5%); } } } }
 		&.red3, &.security, &.tablets																						{ background-color: #ac5353;	@if $isAMP != 'true' { @if $isDesk == 'true'  { &:hover { background-color: lighten(#ac5353,5%); } } } }

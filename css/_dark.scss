@@ -274,11 +274,9 @@ body.dark {
 		color: #c9c9c9 !important;
 	}
 
-
 	.grid-posts-lineal h4, .grid-posts-lineal .gr-title, .grid-posts-lineal h4 {
 		color: #ebebeb;
 	}
-
 
 	.post-load-more,
 	.comments-pager ol li,
@@ -286,13 +284,12 @@ body.dark {
 	#comments #add-new-comment,
 	&.interior.product #content a.wide-button,
 	&.interior.product #content a.wide-button:hover,
-	.more_description_dw, .more_similars_dw {
+	.more_description_dw,
+	.more_similars_dw {
 		background-color: #2a323d;
 		border: 1px solid transparent;
 		color: #f5f5f5;
-	}
 
-	.post-load-more {
 		&:hover {
 			background-color: #3b4652;
 			border: 1px solid transparent;
