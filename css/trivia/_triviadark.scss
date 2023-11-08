@@ -28,6 +28,14 @@ body.dark {
 				}
 			}
 			#explanation {
+
+				.content {
+					a {
+						color: #73a0d4;
+						&:hover { color: #83b0e8; }
+					}
+				}
+
 				&.rotate {
 					.choosefirst {
 						color: #d5ac84;
