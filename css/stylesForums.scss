@@ -5,6 +5,20 @@ html {
 
 body.dark {
 
+	.p-breadcrumbs {
+		opacity: 0.87;
+    }
+
+	.block-minorHeader a,
+	.block-header a {
+		color: #d1d1d1;
+
+		&:hover {
+			color: #ffaf5f;
+			text-decoration: none;
+		}
+	}
+
 	.block--messages .message,
 	.block--messages .block-row {
 	    color: #fff;
@@ -14,10 +28,18 @@ body.dark {
 	    border-color: #516579;
 	}
 
-	.message-cell.message-cell--user,
-	.message-cell.message-cell--action {
-	    background: #2d343e;
+	.message-cell {
+	    background: #2d343e !important;
 	    border-right: 1px solid #516579;
+
+	    @media only screen and (max-width: 760px) {
+	    	border-bottom: 1px solid #516579;
+	    }
+	}
+
+	.structItem.structItem--note,
+	.messageNotice.messageNotice--highlighted {
+	    filter: invert(1) hue-rotate(165deg);
 	}
 
 	.message-userArrow {
@@ -26,6 +48,25 @@ body.dark {
 		&:after {
 		    border-right-color: #516579;
 		}
+
+		@media only screen and (max-width: 760px) {
+			border-bottom-color: #516579;
+
+			&:after {
+			    border-bottom-color: #516579;
+			}
+		}
+	}
+
+	.memberHeader-main,
+	.memberTooltip-header {
+		background: #2E343D;
+ 		border-bottom: 1px solid #556477;
+    }
+
+	.memberHeader-separator,
+	.memberTooltip-separator {
+	    border-top: 1px solid #556477;
 	}
 
 	.bbCodeBlock-title {
@@ -63,28 +104,25 @@ body.dark {
 			color: #ccc;
 		}
 	}
-	a.u-concealed:hover .fa,.u-concealed a:hover .fa {
-		color: #83b0e8;
-	}
+	a.u-concealed:hover .fa,.u-concealed a:hover .fa,
 	a.u-concealed--icon:hover .fa,.u-concealed--icon a:hover .fa {
 		color: #83b0e8;
 	}
+
 	.u-textColor {
 		color: #f5f5f5;
 	}
 	.u-dimmed {
 		color: #e1e1e1;
 	}
-	.u-muted {
+	.u-muted,
+	.categoryList-itemDesc {
 		color: #ccc;
 	}
 	.pairs {
 		& > dt {
 			color: #ccc;
 		}
-	}
-	.categoryList-itemDesc {
-		color: #ccc;
 	}
 	.categoryList-header {
 		&.categoryList-header--muted {
