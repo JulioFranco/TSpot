@@ -547,20 +547,23 @@ body.interior {
 body.dark {
 	
 	#comments {
+
 		border-top: 10px solid #343c48;
-		h3 {
-			&.title {
-				color: #7194bd;
-			}
+
+		.title {
+			color: #7194bd;
 		}
+
 		#add-new-comment {
 			margin: 20px 0 -10px;
 		}
+
 		a {
 			&.post-new-comment {
 				opacity: 0.8;
 			}
 		}
+
 		.comment {
 			border-top: 1px solid #3e4851 !important;
 			.commentText {
@@ -582,6 +585,7 @@ body.dark {
 				}
 			}
 		}
+		
 		.CommentOpt {
 			.ComBut {
 				background: #ccc;

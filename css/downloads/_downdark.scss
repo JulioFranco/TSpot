@@ -1,5 +1,12 @@
 body.dark {
 
+	#product_info .product-details div .item a,
+	#product_info .specs div .item a,
+	#product_info .product-details a {
+		color: #73a0d4;
+		&:hover { color: #83b0e8; }
+	}
+
 	&.download {
 		.download-index {
 			h1 {

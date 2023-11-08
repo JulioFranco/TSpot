@@ -11,8 +11,9 @@ body.dark {
 	}
 
 	.post-list article .article-content .article-category a,
-	.post-list article .article-content .byline em a,
+	.post-list article .article-content .byline a,
 	.post-list article .article-content .intro p a,
+	.post-list article .article-content .intro a,
 	.comments-pager ol li a,
 	.bbCodeBlock-sourceJump,
 	.recently-commented-stories a,
@@ -115,6 +116,11 @@ body.dark {
 		}
 	}
 
+	&.reviews {
+		.masthead {
+			background-color: #242931;
+		}
+	}
 	&.features {
 		.masthead {
 			background-color: #255a44;
@@ -278,10 +284,15 @@ body.dark {
 		color: #ebebeb;
 	}
 
+	#comments #add-new-comment {
+		background-color: #2a323d;
+		border: 1px solid transparent;
+		color: #f5f5f5;
+	}
+
 	.post-load-more,
 	.comments-pager ol li,
 	.post-list article .article-content .post-meta a.comment-count span.highlight,
-	#comments #add-new-comment,
 	&.interior.product #content a.wide-button,
 	&.interior.product #content a.wide-button:hover,
 	.more_description_dw,
