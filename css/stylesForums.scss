@@ -33,7 +33,7 @@ body.dark {
 	    border-right: 1px solid #516579;
 
 	    @media only screen and (max-width: 760px) {
-	    	border-bottom: 1px solid #516579;
+	    	border-bottom: 1px solid #516579 !important;
 	    }
 	}
 
@@ -50,10 +50,10 @@ body.dark {
 		}
 
 		@media only screen and (max-width: 760px) {
-			border-bottom-color: #516579;
+			border-bottom-color: #516579 !important;
 
 			&:after {
-			    border-bottom-color: #516579;
+			    border-bottom-color: #516579 !important;
 			}
 		}
 	}
