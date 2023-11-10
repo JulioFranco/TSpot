@@ -9,7 +9,6 @@
 		height: 0; 
 		border-left: #{$width}px solid transparent;
 		border-right: #{$width}px solid transparent;
-		
 		border-bottom: #{$height}px solid $color; // determines height
 	
 	} @else if $direction == 'down' {

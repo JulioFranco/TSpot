@@ -102,18 +102,9 @@ body.dark {
 
 	}
 
-	&.about {
-		h4 {
-			color: #aaa;
-		}
-		.intro {
-			a {
-				box-shadow: inset 0 -1px 0 #ffaf5f;
-			}
-		}
-		.article-index section {
-		    background: #3b4753 !important;
-		}
+	.masthead {
+		background-color: #1D2127;
+		padding-bottom: 5px;
 	}
 
 	&.reviews {
@@ -132,6 +123,41 @@ body.dark {
 		}
 	}
 
+	.home {
+		.masthead {
+			ul {
+				&.featured-posts {
+					li {
+						overflow: hidden;
+					}
+				}
+			}
+		}
+	}
+
+	/*
+	&.news #content-header,
+	&.product #content-header,
+	&.download #content-header,
+	.home .masthead {
+		background: #242931 !important;
+	}
+	*/
+
+	&.about {
+		h4 {
+			color: #aaa;
+		}
+		.intro {
+			a {
+				box-shadow: inset 0 -1px 0 #ffaf5f;
+			}
+		}
+		.article-index section {
+		    background: #3b4753 !important;
+		}
+	}
+
 	#content p.grey, #content p.grey a,
 	#content p.byline, #content p.byline a {
 		color: #888;
@@ -139,7 +165,8 @@ body.dark {
 		box-shadow: none;
 	}
 
-	&.interior.article #content .articleBody p.byline, &.interior.article #content .articleBody p.grey {
+	&.interior.article #content .articleBody p.byline,
+	&.interior.article #content .articleBody p.grey {
 		color: #d5b28e;
 	}
 
@@ -158,15 +185,6 @@ body.dark {
 			}
 		}
 	}
-
-	/*
-	&.news #content-header,
-	&.product #content-header,
-	&.download #content-header,
-	.home .masthead {
-		background: #242931 !important;
-	}
-	*/
 
 	.downloads-list ul li .title a,
 	.download-index .downloads-table h2 a,
@@ -191,17 +209,16 @@ body.dark {
 
 	.grid-posts {
 		&.grid-section {
-			background: #212a33;
+			background: #242931;
 		}
 	}
-	#content #why-it-matters, #content h5, #content h5.introhome {
+
+	#content #why-it-matters, #content h5, #content h5.introhome,
+	#content #why-it-matters a:hover, #content h5 a:hover {
 		color: #eee;
 	}
 	#content #why-it-matters strong, #content h5 strong {
 		color: #81ade2;
-	}
-	#content #why-it-matters a:hover, #content h5 a:hover {
-		color: #eee;
 	}
 
 	ul {
@@ -407,18 +424,6 @@ body.dark {
 
 	textarea {
 		background: #bdbdbd;
-	}
-
-	.home {
-		.masthead {
-			ul {
-				&.featured-posts {
-					li {
-						overflow: hidden;
-					}
-				}
-			}
-		}
 	}
 	input[type=text], input[type=password] {
 		background: #3f4850;

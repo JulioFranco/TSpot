@@ -1,9 +1,29 @@
 body.dark {
 
+	#trivias-list {
+		ul {
+			li {
+				border-bottom: none;
+
+				&:nth-child(even) {
+					background: #535e69;
+				}
+
+				h3 { a {
+					color: #fff;
+
+					&:hover {
+					    color: #ffaf5f;
+					}
+				} }
+			}
+		}
+	}
+
 	&.trivia {
 		#content {
 			#content-header {
-				background-color: #212a33;
+				background-color: #242931;
 				.title-group {
 					h1 {
 						&.yellow {
