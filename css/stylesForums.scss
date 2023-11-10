@@ -9,6 +9,14 @@ body.dark {
 		opacity: 0.87;
     }
 
+    .message-body p {
+		a {
+			color: #a3bfe2;
+			border-bottom: 1px solid #a3bfe2;
+			padding-bottom: 1px;
+		}
+    }
+
 	.block-minorHeader a,
 	.block-header a {
 		color: #d1d1d1;
