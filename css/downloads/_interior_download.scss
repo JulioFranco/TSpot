@@ -3,9 +3,29 @@ body.interior {
 		#content-header {
 
 			.title-group {
+
+				h1.large {
+					display: inline-block;
+					margin: 0 0 5px 0;
+
+					@include break(mobile){
+						display: block;
+					}
+				}
+
 				.subver {
-					font-size: 0.75em;
+					display: inline-block;
+					font-size: 1.5em;
+					font-weight: 500;
 					color: #777;
+					margin-left: 6px;
+
+					@include break(mobile){
+						font-size: 0.8em;
+						margin-left: 0;
+						display: block;
+						line-height: 1.5;
+					}
 				}
 
 				margin: 25px 0 30px;
@@ -177,45 +197,29 @@ body.interior {
 		}
 
 		//For Drivers
-		@if $isAMP != 'true' {
-			.subtitle a:hover {
-				padding-bottom: 1px;
-				border-bottom: 1px solid #c00;
-			}
-			.ad_home_driver {
-				padding: 10px 0 40px;
-			}
-			.browse_all{
-				margin: -20px 0 40px 0;
-			}
-
-			@include break(mobile) {
-				.similar-software {
-					font-size: 0.9em;
-
-					.title a {
-					    font-size: 1.4em;
-					}
-				}
-				.browse_all{
-					margin: -20px 0 60px 0;
-				}
-			}
+		.subtitle a:hover {
+			padding-bottom: 1px;
+			border-bottom: 1px solid #c00;
 		}
-		@else {
-			.downloads-list.similar-software ul li {
+		.ad_home_driver {
+			padding: 10px 0 40px;
+		}
+		.browse_all{
+			margin: -20px 0 40px 0;
+		}
+
+		@include break(mobile) {
+			.similar-software {
+				font-size: 0.9em;
+
 				.title a {
-					font-size: 1.3em;
-				}
-				li.left {
-					padding-left: 8px;
+				    font-size: 1.4em;
 				}
 			}
 			.browse_all{
-				margin: -20px 0 30px 10px;
+				margin: -20px 0 60px 0;
 			}
 		}
-		//End
 
 		.downloads-list {
 			padding: 35px 0 0;
@@ -327,14 +331,19 @@ body.interior {
 								font-size: 1.5em;
 							}
 
+							.subver {
+								color: #888;
+								margin-left: 6px;
+								font-size: 0.85em;
+							}
+
 							@if $isDesk == 'true' {
-							@if $isAMP != 'true' {
 								&:hover {
 									border-bottom: 1px dotted #075bc0;
 									padding-bottom: 1px;
 									color: #075bc0;
 								}
-							}}
+							}
 						}
 
 						em {

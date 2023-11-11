@@ -155,13 +155,16 @@ body.interior.download {
 		.title-group{
 
 			h1.driver {
-			    font-size: 1.7em;
+			    font-size: 1.85em;
 			    line-height: 1.4;
     			letter-spacing: -.333px;
+				display: inline-block;
+				margin: 0 0 5px 0;
 
 				@include break(mobile){
 					font-size: 1.2em;
 					line-height: 1.25;
+					display: block;
 				}
 			}
 
