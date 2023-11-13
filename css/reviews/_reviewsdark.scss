@@ -42,7 +42,10 @@ body.dark {
 
 	&.article {
 		.article-index {
-			background: transparent;
+			background: rgb(80 80 80 / 20%);
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+			backdrop-filter: blur(5px);
+
 			.sharethis {
 				filter: invert(1);
 			}
@@ -130,7 +133,10 @@ body.dark {
 	}
 
 	.article-index {
-		background: transparent;
+	    background: rgb(80 80 80 / 20%);
+	    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	    backdrop-filter: blur(5px);
+
 		section {
 			background: #535e69;
 			ol {

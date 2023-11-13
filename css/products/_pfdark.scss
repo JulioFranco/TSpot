@@ -5,7 +5,8 @@ body.dark {
 	#product_info .score_users .breakdown a,
 	#product_info .product-desc .last-updated a,
 	.expert-reviews-and-ratings .comment cite a,
-	#product_info .score .breakdown a {
+	#product_info .score .breakdown a,
+	.newverTitle a {
 		color: #73a0d4;
 		&:hover { color: #83b0e8; }
 	}
