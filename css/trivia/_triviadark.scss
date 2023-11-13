@@ -33,7 +33,7 @@ body.dark {
 				}
 			}
 			.articleBody h2 {
-			    color: #73a0d4;
+			    color: $dark-link;
 			}
 		}
 		.articleBody {
@@ -51,8 +51,8 @@ body.dark {
 
 				.content {
 					a {
-						color: #73a0d4;
-						&:hover { color: #83b0e8; }
+						color: $dark-link;
+						&:hover { color: $dark-link-hov; }
 					}
 				}
 

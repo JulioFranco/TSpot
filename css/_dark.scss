@@ -7,7 +7,7 @@ body.dark {
 	}
 
 	#content p.side-quote {
-		color: #73a0d4;
+		color: $dark-link;
 	}
 
 	.post-list article .article-content .article-category a,
@@ -18,10 +18,10 @@ body.dark {
 	.bbCodeBlock-sourceJump,
 	.recently-commented-stories a,
 	.CommentOpt a,
-	&.about a,
+	&.about article a,
 	table.article-table a {
-		color: #73a0d4;
-		&:hover { color: #83b0e8; }
+		color: $dark-link;
+		&:hover { color: $dark-link-hov; }
 	}
 
 	&.article .articleBody p a, &.news .articleBody p a {
@@ -103,8 +103,8 @@ body.dark {
 					color: #ddd;
 
 					a {
-						color: #73a0d4;
-						&:hover { color: #83b0e8; }
+						color: $dark-link;
+						&:hover { color: $dark-link-hov; }
 					}
 				}
 			}
@@ -374,7 +374,7 @@ body.dark {
 	}
 	.trust-feat a:hover, .trust-soft a:hover {
 		color: #f5f5f5;
-		border-bottom: 1px solid #73a0d4;
+		border-bottom: 1px solid $dark-link;
 	}
 
 	.tabbar {

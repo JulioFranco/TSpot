@@ -7,8 +7,8 @@ body.dark {
 	.expert-reviews-and-ratings .comment cite a,
 	#product_info .score .breakdown a,
 	.newverTitle a {
-		color: #73a0d4;
-		&:hover { color: #83b0e8; }
+		color: $dark-link;
+		&:hover { color: $dark-link-hov; }
 	}
 
 	&.products {
@@ -205,7 +205,7 @@ body.dark {
 		}
 		.sorter {
 			a {
-				color: #83b0e8;
+				color: $dark-link-hov;
 				&:hover {
 					color: #f5f5f5;
 				}
