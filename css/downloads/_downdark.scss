@@ -32,9 +32,11 @@ body.dark {
 		#product_info {
 			.download-product {
 				border-left: 2px solid #535e69;
+
 				.download_options {
 					border: 2px solid transparent;
 				}
+
 				.download-wrapper {
 					.download_button {
 						filter: invert(1) hue-rotate(180deg) saturate(0.75);
@@ -51,7 +53,7 @@ body.dark {
 			.mirror-wrapper {
 				li {
 					a {
-						color: #9cadc3 !important;
+						color: #a9b6c6 !important;
 						border: 1px solid #494949;
 						background-color: #0b0b0b;
 						
@@ -98,11 +100,7 @@ body.dark {
 
 	&.interior.download #product_info .download-product,
 	&.interior.download #product_info .product-details.drivers {
-		color: #ccc;
-	}
-
-	&.interior.download #product_info .download-product { 
-		border-left: none;
+		color: #ddd;
 	}
 	
 	.download_certified {
