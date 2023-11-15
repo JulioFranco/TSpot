@@ -430,15 +430,13 @@ body.interior {
 
 
 	.social-widget {
-		//width: 60px;
-		//border-bottom: 5px solid $orange;
 		margin: 0 auto;
 		background: white;
 
 		@include break(mobile){
 			width: 98%;
 			height: 35px;
-			border-bottom: 0px solid $orange;
+			background: transparent;
 
 			&.zero {
 				border-right: 7px solid $orange;
@@ -474,8 +472,6 @@ body.interior {
 				background-color: $orange;
 				color: white;
 				text-align: center;
-				//font-size: 0.7em;
-				//line-height: 25px;
 				font-weight: 500;
 
 				@include break(mobile) {
@@ -488,7 +484,6 @@ body.interior {
 				}
 
 				&.zero {
-					//border-top: 5px solid $orange;
 					@include break(mobile) {
 						border-top: none;
 						display: block;

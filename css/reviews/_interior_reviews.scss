@@ -868,7 +868,6 @@ body.interior {
 
 	.social-widget {
 		width: 60px;
-		background: white;
 		border-bottom: 5px solid $orange;
 
 		@include break(mobile){
@@ -894,11 +893,6 @@ body.interior {
 						&.reddit {
 							margin-left: 12.5%+17*3;
 						}
-						/*
-						&.rss {
-							margin-left: 12.5%+17*3;
-						}
-						*/
 						&.comments {
 							margin-left: 12.5%+17*4;
 						}
