@@ -75,9 +75,6 @@ body.dark {
 	}
 
 	.bestof_product {
-		.image {
-			border: 2px solid #3170bb;
-		}
 		h2 {
 			a {
 				color: #94b6df !important;
@@ -92,15 +89,7 @@ body.dark {
 			opacity: 0.9;
 		}
 	}
-	.best-logo img, #product_info .score.bestof a .awardlogo img,
-	.best-logo2 img, #product_info .score.bestof a .awardlogo2 img {
-		filter: invert(1) hue-rotate(180deg) opacity(0.7);
-		background: transparent !important;
-	}
-	.best-categories li, .best-category li a.category-name {
-		color: #eee !important;
-		border: 2px solid #eee !important;
-	}
+
 	.best-category {
 		li {
 			a {
@@ -110,12 +99,6 @@ body.dark {
 					}
 				}
 			}
-		}
-	}
-
-	@include break(mobile) {
-		.best-categories li, .best-category li a.category-name {
-		    border: none !important;
 		}
 	}
 
