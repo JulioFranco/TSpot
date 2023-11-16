@@ -2,7 +2,8 @@ body.dark {
 
 	#product_info .product-details div .item a,
 	#product_info .specs div .item a,
-	#product_info .product-details a {
+	#product_info .product-details a,
+	.publisher-description a {
 		color: $dark-link;
 		&:hover { color: $dark-link-hov; }
 	}
@@ -59,7 +60,7 @@ body.dark {
 						
 						&:hover {
 							background-color: #111;
-							border-color: #ffaf5f;
+							border-color: $dark-link-hov-orange;
 							color: #ddd !important;
 						}
 					}
@@ -75,15 +76,65 @@ body.dark {
 		}
 	}
 
-	li {
-		&.maincat {
-			background: #ddd;
+
+	// DOWNLOAD INDEX 
+	.downloads-index-cats {
+		background: #242931;
+		border: none;
+	}
+	.downloads-index-cats ul.cats {
+	    border-top: 2px solid #535e69;
+	}
+	.specialcats {
+	    background: #505965;
+	    border: none;
+
+		a {
+			color: #fff;
+		
+			&:hover {
+				color: $dark-link-hov-orange;
+			}
 		}
 	}
 
-	.downloads-index-cats, li.maincat:nth-child(odd) {
-		background: #ccc !important;
+	.adContainerSide {
+	    background: #282e36;
 	}
+
+	.search-box-index {
+	    margin: 0;
+	    background: #282e36;
+
+	    h4 {
+	        color: #fff;
+	    }
+	}
+
+
+	li {
+		&.maincat {
+			background: $dark-back;
+			border-bottom: 1px solid #535e69;
+
+			&:nth-child(odd) {
+				background: #37414b;
+			}
+
+			a {
+			    color: #e1e1e1;
+
+				&:hover {
+					color: $dark-link-hov-orange;
+				}
+			}
+
+			&.subcat a {
+			    color: #c5c5c5;
+			}
+		}
+	}
+
 	.search-box {
 		background: #2b323a !important;
 		border: none;

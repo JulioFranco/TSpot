@@ -26,7 +26,7 @@ body.dark {
 					a {
 						color: #c4c4c4;
 						&:hover {
-							color: #ffaf5f;
+							color: $dark-link-hov-orange;
 						}
 					}
 				}
@@ -157,14 +157,24 @@ body.dark {
 	.also-looked-at>h3:after, .expert-reviews-and-ratings>h3:after {
 		border-top: 6px solid #535E69;
 	}
+
 	.also-looked-at>h3, .expert-reviews-and-ratings>h3,
 	#product_info .newverCheck a {
 		color: #f5f5f5;
 	}
-	#product_info .newver,
+
 	#product_info .score.bestof {
 		border-bottom: 4px solid #535E69;
 	}
+
+	#product_info .newver {
+		border-bottom: 4px solid #535E69;
+
+		@include break(v-mobile) {
+			border: 7px solid #535E69;
+		}
+	}
+
 	#product_info .product-desc .price-widget .price-count, #product_info .product-desc .price-widget #artificialBorder {
 		background-color: #339933a3;
 	}
@@ -176,16 +186,20 @@ body.dark {
 	#product_info .product_description, .section-byline {
 		color: #eee;
 	}
+
 	&.interior.product #content .articleBody ul.pros li:before, &.interior.product #content .articleBody ul.cons li:before {
 		border-radius: 10px;
 	}
+
 	&.interior.products .post-list-product .prod-score,
 	#product_info .score .number, #product_info .score_users .number,
 	.expert-reviews-and-ratings .comment .rating {
 		opacity: 0.86;
 	}
+
 	&.interior.products-cat .filter_bar .sorter,
-	&.interior.products-cat .filter_bar .sorter a {
+	&.interior.products-cat .filter_bar .sorter a,
+	.expert-reviews-and-ratings .comment cite time {
 		color: #888;
 	}
 

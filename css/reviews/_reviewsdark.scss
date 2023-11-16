@@ -1,27 +1,31 @@
 body.dark {
 
-	&.interior.features .category ul li,
-	&.interior.reviews .category ul li,
-	&.interior.reviews-cat .category ul li,
-	&.interior.features-cat .category ul li,
-	&.interior.features #review ul li:nth-child(odd),
-	&.interior.reviews #review ul li:nth-child(odd),
-	&.interior.reviews-cat #review ul li:nth-child(odd),
-	&.interior.features-cat #review ul li:nth-child(odd),
-	&.interior.trivias #trivias-list ul li {
-		background: #ccc;
+	// Indexes
+	&.interior .categoryindex ul li {
+		background: $dark-back; // #2a2f36
+		border-bottom: 1px solid #535e69;
 	}
-	&.interior.features #features ul li:nth-child(even),
-	&.interior.reviews #features ul li:nth-child(even),
-	&.interior.reviews-cat #features ul li:nth-child(even),
-	&.interior.features-cat #features ul li:nth-child(even),
-	&.interior.features #review ul li:nth-child(even),
-	&.interior.reviews #review ul li:nth-child(even),
-	&.interior.reviews-cat #review ul li:nth-child(even),
-	&.interior.features-cat #review ul li:nth-child(even),
-	&.interior.trivias #trivias-list ul li:nth-child(even) {
-		background: #ddd;
+	&.interior .categoryindex ul li:nth-child(odd) {
+		background: #37414b;
 	}
+	&.interior .categoryindex ul li h3 a {
+	    color: #e1e1e1;
+
+		&:hover {
+			color: $dark-link-hov-orange;
+		}
+	}
+	&.interior .categoryindex ul li .desc {
+	    color: #c5c5c5;
+	}
+	&.interior .categoryindex ul li .fbyline {
+	    color: #bbb;
+	    a {
+			color: $dark-link;
+			&:hover { color: $dark-link-hov; }
+		}
+	}
+
 	
 	.comment-count-block {
 		filter: grayscale(50%);
@@ -31,7 +35,7 @@ body.dark {
 		a {
 			span {
 				&.comment-count {
-					color: #ffaf5f;
+					color: $dark-link-hov-orange;
 				}
 				&.interactions-count {
 					color: #ccc;
@@ -79,7 +83,7 @@ body.dark {
 			a {
 				color: #94b6df !important;
 				&:hover {
-					color: #ffaf5f !important;
+					color: $dark-link-hov-orange !important;
 				}
 			}
 		}
@@ -127,7 +131,7 @@ body.dark {
 			}
 			a {
 				&:hover {
-					color: #ffaf5f !important;
+					color: $dark-link-hov-orange !important;
 				}
 			}
 		}

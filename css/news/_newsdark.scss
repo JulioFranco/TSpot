@@ -17,7 +17,7 @@ body.dark {
 				}
 			}
 			#mobComBut {
-				background: #242931;
+				background: $dark-back;
 			}
 		}
 
@@ -29,7 +29,7 @@ body.dark {
 			a {
 				span {
 					&.comment-count {
-						color: #ffaf5f;
+						color: $dark-link-hov-orange;
 					}
 					&.interactions-count {
 						color: #ccc;
