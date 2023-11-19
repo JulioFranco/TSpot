@@ -26,6 +26,14 @@ body.dark {
 		}
 	}
 
+	&.interior #content-header.featured-image {
+		background-color: #212932;
+		
+		&:before {
+			background: linear-gradient(200deg,rgba(30, 41, 51, 0%) 45%, #22242B 100%);
+		}
+	}
+
 	
 	.comment-count-block {
 		filter: grayscale(50%);
