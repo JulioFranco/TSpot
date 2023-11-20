@@ -38,6 +38,16 @@ body.dark {
 			}
 		}
 
+		.polls .slide-holder {
+		    filter: invert(1) hue-rotate(180deg) saturate(0.3) contrast(2);
+
+		    .poll-answers .answer.complete {
+			    &:before {
+				    color: #000;
+			    }
+			}
+		}
+
 		.related-query {
 			h3 {
 				a {
