@@ -14,7 +14,7 @@
 }
 
 .pf_excellent {
-	background-color: #00be15;
+	background-color: #28a035;
 }
 
 .pf_good {
@@ -34,183 +34,44 @@
 }
 
 
-@if $isAMP != 'true' {
-	.pf_widget_small a, .pf_widget_normal a {
-		text-decoration: none !important;
-	}
+.pf_widget_small a, .pf_widget_normal a {
+	text-decoration: none !important;
+}
 
-	.pf_widget_small {
+.pf_widget_small {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	.pf_score {
+		float: none;
+		padding: 0px 5px;
 		display: inline-block;
 		zoom: 1;
-		*display: inline;
-		.pf_score {
-			-moz-box-shadow: 0 -1px 0 white;
-			-webkit-box-shadow: 0 -1px 0 white;
-			box-shadow: 0 -1px 0 white;
-			float: none;
-			padding: 0 5px;
-			display: inline-block;
-			zoom: 1;
-			*display: inline;
-			font-size: 13px;
-		}
-	}
-
-	.pf_widget_normal {
-		font-size: 26px;
-		display: block;
-		overflow: auto;
-		.pf_score {
-			height: 50px;
-			width: 65px;
-			line-height: 37px;
-			position: relative;
-			line-height: 37px;
-		}
-		.pf_reviews {
-			font-size: 9px;
-			position: absolute;
-			left: 0;
-			width: 65px;
-			bottom: 3px;
-			line-height: 15px;
-			display: block;
-			text-transform: lowercase;
-		}
+		font-size: 16px;
+		line-height: 26px;
+		border-radius: 2px;
 	}
 }
 
-@if $isAMP == 'true' {
-
-	.best-category {
-	    margin-bottom: 50px;
-	    
-		a.category-name {
-		    color: #444;
-		}
-		.price {
-			margin:	-6px 0 25px 0;
-			a {
-				color: #257925;
-			}
-		}
+.pf_widget_normal {
+	font-size: 26px;
+	display: block;
+	overflow: auto;
+	.pf_score {
+		height: 50px;
+		width: 65px;
+		line-height: 37px;
+		position: relative;
+		line-height: 37px;
 	}
-
-	ul.best-categories.haslogo {
-		margin: -12px 0 65px 0;
-	}
-
-	// OLDER BEST OFS CATS?
-	.best-categories li {
-		display: inline-block;
-		list-style: none;
-		background-color: #f5f5f5;
-		border: 1px solid #105ab2;
-		margin-right: 3px;
-		
-		a {
-			display: block;
-			padding: 6px 14px;
-			color: #105ab2;
-			text-decoration: none;
-			font-size: .95em;
-			font-weight: 400;
-		}
-	}
-
-	.bestof_product {
-		h2 {
-			margin-top: -50px;
-			color: #105ab2;
-			font-size: 1.7em;
-		}
-		.description {
-			padding-left: 0;
-			min-height: 500px;
-			.key strong {
-				font-weight: 500;
-			}
-		}
-		.image {
-			display: none;
-		}
-		.numbers {
-			float: none;
-			text-align: center;
-			width: 100%;
-			margin: 20px 0 30px;
-			font-size: .75em;
-			background-color: white;
-			font-family: $f-condensed;
-			letter-spacing: -0.4px;
-			border-bottom: none;
-			overflow: hidden;
-
-			a.withTooltip {
-				color: #333;
-			}
-
-			.label {
-				text-transform: uppercase;
-				color: #666;
-				background: #ddd;
-				padding: 5px;
-				font-size: 90%;
-			}
-			.price .price_tag {
-				padding: 3px 0 3px;
-				margin-top: 2px;
-				font-size: 2.7em;
-				background-color: green;
-				cursor: pointer;
-				line-height: 1.6em;
-				a {
-					color: white;
-
-					span.onamazon {
-						display: none;
-					}
-				}
-			}
-			.meta .score {
-				text-align: center;
-				margin: 2px auto 0;
-				background-color: #105ab2;
-				.number {
-					color: white;
-					line-height: 1.8em;
-					font-size: 2.6em;
-					font-weight: 500;
-				}
-			}
-			.user_score .score {
-				text-align: center;
-				margin: 2px auto 5px;
-				background-color: #d57700;
-				.number {
-					color: white;
-					line-height: 1.8em;
-					font-size: 2.6em;
-					font-weight: 500;
-				}
-			}
-			.price, .meta, .user_score {
-				width: 28%;
-				padding: 5px 5px 8px;
-				display: inline-block;
-			}
-
-			.price_history_mob, .price_history, .mobilehide {
-			    display: none
-			}
-		}
-		.arrowback {
-		    margin: -5px 0 20px 0;
-
-		    a {
-			    font-size: 0.85em;
-		    	color: #2f4d79;
-			}
-		}
+	.pf_reviews {
+		font-size: 9px;
+		position: absolute;
+		left: 0;
+		width: 65px;
+		bottom: 3px;
+		line-height: 15px;
+		display: block;
+		text-transform: lowercase;
 	}
 }
