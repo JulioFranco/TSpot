@@ -818,23 +818,20 @@ body.interior {
 
 				.award {
 					float: left;
+
 					img {
-						@if $isAMP == 'true' {
+						width: 95px;
+					    margin: 0;
+
+						@include break(mobile) {
 							width: 88px;
-						} @else {
-							width: 95px;
-							@include break(mobile) {
-								width: 88px;
-							}
 						}
 					}
 				}
 
-				@if $isAMP != 'true' {
-					&:hover {
-						h3 {
-							color: #c00;
-						}
+				&:hover {
+					h3 {
+						color: #c00;
 					}
 				}
 
@@ -843,20 +840,8 @@ body.interior {
 					color: #000;
 					font-weight: 400;
 
-					@if $isAMP != 'true' {
-						&:hover {
-							color: #000;
-						}
-					}
-
 					h3 {
 						font-weight: 500;
-
-						@if $isAMP != 'true' {
-							&:hover {
-								color: #c00;
-							}
-						}
 					}
 				}
 			}

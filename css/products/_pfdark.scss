@@ -4,9 +4,13 @@ body.dark {
 	#product_info .reviewed_by a,
 	#product_info .score_users .breakdown a,
 	#product_info .product-desc .last-updated a,
-	.expert-reviews-and-ratings .comment cite a,
+	.expert-reviews-and-ratings .comment a,
 	#product_info .score .breakdown a,
-	.newverTitle a {
+	.newverTitle a,
+	.product_description a,
+	.price-history .legend a,
+	#product_info .score.bestof a .breakdown h3
+	{
 		color: $dark-link;
 		&:hover { color: $dark-link-hov; }
 	}
@@ -80,9 +84,14 @@ body.dark {
 						text-shadow: none;
 						color: white;
 						position: relative;
+
 						&:hover {
 							color: white;
 						}
+					}
+
+					.breakdown {
+						color: #fff;
 					}
 				}
 			}
@@ -210,13 +219,16 @@ body.dark {
 	}
 
 	.price-history {
-		.sidePrice {
-			width: 300px !important;
-		}
 		.priceTable {
-			background: #bbb;
-			border-radius: 4px;
+			background: $dark-back;
+			color: #fff !important;
 		}
+		table.priceTable {
+			tr:nth-child(even) {
+				background: #37414b !important;
+			}
+		}
+
 		.sorter {
 			a {
 				color: $dark-link-hov;
@@ -241,9 +253,7 @@ body.dark {
 		color: #ccc !important;
 	}
 	.chartjs-render-monitor {
-		background-color: #ccc;
-		border-radius: 4px;
-		padding: 7px;
+		filter: invert(1) hue-rotate(180deg);
 	}
 	.price_alert {
 		background: #535e6985;

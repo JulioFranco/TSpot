@@ -554,18 +554,13 @@ body.interior {
 					a {
 						display: block;
 						padding: 0 5px;
-						-webkit-transition: none;
-						-moz-transition: none;
-						-ms-transition: none;
-						-o-transition: none;
 						transition: none;
-						@if $isAMP != 'true' {
+						
 							&:hover {
 								background: #32404D !important;
 								color: #fff;
 								text-decoration: none;
 							}
-						}
 					}
 				}
 			}
@@ -585,17 +580,11 @@ body.interior {
 					color: #444;
 					text-align: center;
 					min-width: 100px;
+					line-height: 31px !important;
 
-					@if $isAMP == 'true' {
-						line-height: 31px;
-					
-					} @else {
-						line-height: 31px !important;
-
-						&:hover {
-							color: #fff;
-							background-color: $blue;
-						}
+					&:hover {
+						color: #fff;
+						background-color: $blue;
 					}
 				}
 			}
@@ -628,19 +617,6 @@ body.interior {
 					margin: 25px 0 25px;
 				}
 			}
-		}
-
-		@if $isAMP == 'true' {
-
-			.download_container {
-			    margin-left: -6px;
-			}
-
-			.title {
-		    	font-weight: 500;
-		    	padding: 4px 8px;
-		    }
-
 		}
 	}
 }

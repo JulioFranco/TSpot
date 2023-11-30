@@ -3,7 +3,10 @@ body.dark {
 	#product_info .product-details div .item a,
 	#product_info .specs div .item a,
 	#product_info .product-details a,
-	.publisher-description a {
+	.publisher-description a,
+	.short-desc a,
+	.altlink
+	{
 		color: $dark-link;
 		&:hover { color: $dark-link-hov; }
 	}
@@ -144,6 +147,10 @@ body.dark {
 		h4 {
 			color: #ddd;
 		}
+	}
+
+	.shortcuts a li {
+	    filter: invert(1) hue-rotate(180deg);
 	}
 
 	&.interior.download .downloads-list ul li .download_rating span img,

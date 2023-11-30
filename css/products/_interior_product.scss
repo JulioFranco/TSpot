@@ -725,7 +725,7 @@ body.interior {
 				.sidePrice {
 					float: right;
 					padding-top: 15px;
-					width: 345px;
+					width: 325px;
 
 					@include break(v-tablet){
 						float: none;
@@ -762,12 +762,12 @@ body.interior {
 				}
 
 				table.priceTable {
-					&.alt tr:nth-child(even) {
+					tr:nth-child(even) {
 						background: #f5f5f5;
 					}
 
 					tr.current {
-						background: bisque !important;
+						background: bisque;
 					}
 
 					td {
@@ -777,10 +777,6 @@ body.interior {
 						&.date {
 							font-size: 0.85em;
 							vertical-align: inherit;
-						}
-
-						&.priceNum {
-							color: #111;
 						}
 
 						&.currentPrice a {
