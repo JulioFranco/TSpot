@@ -217,7 +217,7 @@ img.b-lazy.b-loaded {
 
 	&.news {
 	    max-width: 740px;
-	    padding: 15px 3% 30px;
+	    padding: 15px 3% 20px;
 	    margin: -20px auto 10px;
 
 		@include break(mobile){
@@ -1355,7 +1355,7 @@ body.article {
 		font-family: $f-primary;
 		font-weight: 500;
 		line-height: 1.5;
-		padding: 0 0 8px;
+		padding: 8px 0 8px;
 		color: #333;
 		font-size: 20px;
 		letter-spacing: -0.15px;
