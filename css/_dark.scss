@@ -19,7 +19,8 @@ body.dark {
 	.recently-commented-stories a,
 	.CommentOpt a,
 	&.about article a,
-	table.article-table a {
+	table.article-table a,
+	#comments .signin_text a {
 		color: $dark-link;
 		&:hover { color: $dark-link-hov; }
 	}
