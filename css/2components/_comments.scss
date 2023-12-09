@@ -619,6 +619,11 @@ body.dark {
 	#comments .comment .commentText,
 	#comments .CommentOpt {
 		color: #f5f5f5;
+
+		a {
+			color: $dark-link;
+			&:hover { color: $dark-link-hov; }
+		}
 	}
 	#comments .comment a.user,
 	#comments .comment ul.action-links li a {
