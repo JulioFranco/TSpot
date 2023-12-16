@@ -669,16 +669,12 @@ body.interior {
 			
 			ul.pros,
 			ul.cons {
-				padding: 15px 15px 15px 10px;
+				padding: 10px 15px 15px 10px;
 				margin-bottom: 0;
-				font-size: 0.85em;
+				font-size: 0.9em;
 
 				@include break(v-mobile){
-					@if $isAMP == 'true' {
-						height: inherit;
-					} @else {
-						height: inherit !important;
-					}
+					height: inherit !important;
 				}
 				
 				li {

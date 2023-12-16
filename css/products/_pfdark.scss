@@ -147,7 +147,7 @@ body.dark {
 		}
 	}
 
-	.expert-reviews-and-ratings .comment:nth-child(even),
+	.expert-reviews-and-ratings .comment:nth-child(odd),
 	&.interior.products .post-list-product li:nth-child(even) {
 		background: transparent;
 	}
