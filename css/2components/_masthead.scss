@@ -125,7 +125,7 @@
 			a {
 				position: relative;
 				display: block;
-				padding: 20px;
+				padding: 18px;
 				color: white;
 				height: $tile-height - 30px;
 
@@ -155,7 +155,7 @@
 				hgroup {
 					width: 90%;
 					position: absolute;
-					bottom: 33px;
+					bottom: 27px;
 					display: block;
 					text-wrap: balance;
 
@@ -172,9 +172,9 @@
 						font-size: $tile-font-size;
 						font-weight: 500;
 						text-shadow: 1px 1px 3px #444;
-						letter-spacing: -.2px;
-						line-height: 1.45;
-						padding-right: 10px;
+						letter-spacing: -.25px;
+						line-height: 1.42;
+						padding-right: 8px;
 						display: inline;
 
 						@include break(tablet) {
