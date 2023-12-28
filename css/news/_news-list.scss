@@ -5,6 +5,10 @@
 		margin-bottom: 17px;
 		border-bottom: 2px solid #F2F4F8;
 		z-index: 1;
+
+		.futuregreen {
+			color: #008000;
+		}		
 		
 		.article-img {
 			@include col(2,5,0);
