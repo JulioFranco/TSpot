@@ -297,9 +297,14 @@ body.dark {
 	&.interior.download .downloads-list ul li .bio {
 		color: #c9c9c9 !important;
 	}
-	&.interior.news #content-header .title-group h2, &.interior.product #content-header .title-group h2, &.interior.category #content-header .title-group h2, &.interior.download #content-header .title-group h2 {
-		color: #eee !important;
+	
+	&.interior.news #content-header .title-group h2,
+	&.interior.product #content-header .title-group h2,
+	&.interior.category #content-header .title-group h2,
+	&.interior.download #content-header .title-group h2 {
+		color: #ddd !important;
 	}
+
 	&.interior.news #content-header .title-group em,
 	&.interior.news #content-header .title-group em a,
 	&.interior .social-share-svg .social-share-text {
