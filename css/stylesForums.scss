@@ -1601,7 +1601,8 @@ body.dark {
 	.username--invisible {
 		color: #ccc;
 	}
-	.userBanner.userBanner--staff,.userBanner.userBanner--primary {
+	.userBanner.userBanner--staff,
+	.userBanner.userBanner--primary {
 		color: #91a5be !important;
 		background: #364451;
 		border-color: #4a5e70;
@@ -1609,6 +1610,9 @@ body.dark {
 	}
 	.userBanner {
 		color: #333 !important;
+	}
+	.userBanner.userBanner--elite {
+		color: #fff !important;
 	}
 	.contentVote {
 		color: #ccc;
