@@ -137,8 +137,22 @@ body.dark {
 		}
 	}
 
-	.home {
+	&.news .cta,
+	&.download .cta,
+	&.category .cta,
+	&.product .cta {
+		background: #30363e !important;
+	}
+
+	.grid-posts {
+		&.grid-section {
+			background: $dark-back;
+		}
+	}
+
+	&.home {
 		.masthead {
+			background-color: #29333D;
 			ul {
 				&.featured-posts {
 					li {
@@ -147,16 +161,15 @@ body.dark {
 				}
 			}
 		}
+		.grid-posts {
+			&.grid-section {
+				background: #29333D;
+			}
+		}
+		.cta {
+			background: #29333D !important;
+		}
 	}
-
-	/*
-	&.news #content-header,
-	&.product #content-header,
-	&.download #content-header,
-	.home .masthead {
-		background: $dark-back !important;
-	}
-	*/
 
 	&.about {
 		h4 {
@@ -203,23 +216,12 @@ body.dark {
 
 	.downloads-list ul li .title a:hover,
 	.download-index .downloads-table h2 a:hover {
-		/* border-bottom: 1px dotted $dark-link-hov-orange !important; */
 		border-bottom: none!important;
 		color: $dark-link-hov-orange!important;
 	}
 
 	h3.subtitle, h3.subtitle a {
 		color: #5e8bc1 !important;
-	}
-
-	&.news .cta, &.download .cta, &.category .cta, &.product .cta {
-		background: #30363e !important;
-	}
-
-	.grid-posts {
-		&.grid-section {
-			background: $dark-back;
-		}
 	}
 
 	#content #why-it-matters, #content h5, #content h5.introhome,
