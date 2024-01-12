@@ -6,7 +6,7 @@ html {
 body.dark {
 
 	.p-breadcrumbs {
-		opacity: 0.87;
+		opacity: 0.87; 
     }
 
     .message-body p {
@@ -198,7 +198,7 @@ body.dark {
 	}
 	.block-tabHeader {
 		color: #105ab2;
-		background: #91a5be;
+		background: #7a8ba0;
 		border-bottom: 1px solid #47586a;
 		.tabs-tab {
 			&:not(.is-readonly):hover {
@@ -212,12 +212,12 @@ body.dark {
 				color: #364451;
 			}
 			&.hScroller-action--start {
-				background: #91a5be;
-				background: linear-gradient(to right, #91a5be 66%, rgba(145,165,190,0) 100%);
+				background: #7a8ba0;
+				background: linear-gradient(to right, #7a8ba0 66%, rgba(145,165,190,0) 100%);
 			}
 			&.hScroller-action--end {
-				background: #91a5be;
-				background: linear-gradient(to right, rgba(145,165,190,0) 0%, #91a5be 33%);
+				background: #7a8ba0;
+				background: linear-gradient(to right, rgba(145,165,190,0) 0%, #7a8ba0 33%);
 			}
 		}
 	}
@@ -377,7 +377,7 @@ body.dark {
 	}
 	.button,a.button {
 		color: #364451;
-		background: #91a5be;
+		background: #7a8ba0;
 		border-color: #8198b5 #a1b2c7 #a1b2c7 #8198b5;
 	}
 	.button.button--splitTrigger>.button-text,a.button.button--splitTrigger>.button-text {
