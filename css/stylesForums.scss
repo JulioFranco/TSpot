@@ -45,6 +45,10 @@ body.dark {
 	    }
 	}
 
+	.message-expandLink {
+		background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, #2d343e 70%);
+	}
+
 	.structItem.structItem--note,
 	.messageNotice.messageNotice--highlighted {
 	    filter: invert(1) hue-rotate(165deg);
