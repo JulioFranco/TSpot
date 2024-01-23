@@ -338,7 +338,7 @@ body.interior {
 							}
 
 							@if $isDesk == 'true' {
-								&:hover {
+								&:hover, &.hover {
 									border-bottom: 1px dotted #075bc0;
 									padding-bottom: 1px;
 									color: #075bc0;
