@@ -355,6 +355,13 @@ body.dark {
 		}
 	}
 
+	.waiting {
+		.post-load-more {
+			background-color: #c3c9d0 !important;
+			filter: invert(1) hue-rotate(180deg) saturate(1.4);
+		}
+	}
+
 	table {
 		&.article-table {
 			&.alt {

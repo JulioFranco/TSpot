@@ -735,8 +735,9 @@ table {
 }
 
 .loading {
-	background: #fff url('https://#{$staticServer}.techspot.com/images/loading_blue2.gif') no-repeat center top;
-	height: 50px;
+	background: #fff url('https://#{$staticServer}.techspot.com/images/loading_blue2.gif') no-repeat center;
+    background-size: 20px;
+	height: 48px;
 	text-indent: -10000px;
 	overflow: hidden;
 	margin: 10px 0;
