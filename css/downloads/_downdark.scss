@@ -158,7 +158,8 @@ body.dark {
 
 	&.interior.download .downloads-list ul li .download_rating span img,
 	&.interior.download #product_info .product-details div .item img,
-	&.interior.download #product_info .specs div .item img {
+	&.interior.download #product_info .specs div .item img,
+	&.interior.download .articleBody img.infoicon {
 		filter: invert(1) hue-rotate(180deg);
 	}
 
