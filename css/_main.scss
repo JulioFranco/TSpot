@@ -973,23 +973,28 @@ table {
 }
 
 .dark_mode {
-	width :	32px;
 
+	@include break(mobile){
+		width: 32px;
+	}
+	
 	.switcher {
 		z-index: 50;
 		cursor: pointer;
-		width: 32px;
-		padding: 0;
+		width: 26px;
+		height: 39px;
 		position: relative;
 		user-select: none;
 		display: block;
-		//margin: -2px 0 0;
+		margin: -2px 0 0;
 		padding: 0 8px 0;
-		height: 45px;
 
 		@include break(mobile){
 			padding: 0 1px 0;
+			margin: 0;
 			line-height: 45px;
+			width: 32px;
+			height: 45px;
 		}
 
 		&.home {
