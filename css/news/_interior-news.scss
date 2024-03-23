@@ -717,21 +717,31 @@ body.interior {
 .grid-posts-lineal {
 
 	content-visibility: auto;
-	contain-intrinsic-size: 1580px;
-	
-    margin: 10px 1% 0;
+	contain-intrinsic-size: 1680px;
+	background: #3b4657;
+	margin: 15px 0;
+    padding: 25px 0;
+
+    h3 {
+		margin: 0 0 35px;
+		font-weight: 400;
+		color: #eee;
+    }
 
     .img-wrap {
 		height: 240px;
 		background-size: cover;
+	    margin: 10px;
+    	box-shadow: -10px -14px 0px 0px rgb(0 0 0 / 15%);
     }
 
 	h4, .gr-title {
-		color: #333;
-		margin: 7px 2px 35px;
-		line-height: 1.35;
-		font-weight: 400;
+		color: #ebebeb;
+		margin: 7px auto 45px;
+		line-height: 1.45;
+		font-weight: 500;
 		font-size: 0.95em;
-		letter-spacing: -0.333px;
+	    text-align: center;
+    	width: 80%;
 	}
 }
