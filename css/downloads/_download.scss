@@ -291,6 +291,10 @@ body.interior.download {
 					li {
 						max-width: 95%;
 						width: 100%;
+
+						@include break(v-mobile){
+							max-width: 100%;
+						}
 					}
 				}
 			}
@@ -374,7 +378,8 @@ body.interior.download {
 				margin: 15px auto 25px;
 
 				@include break(mobile){
-					margin: 10px auto 25px; 
+					margin: 10px auto 25px;
+				    text-align: center;
 				}
 			}
 
@@ -382,7 +387,8 @@ body.interior.download {
 				margin: 20px auto 15px;
 
 				@include break(mobile){
-					margin: 20px 0 25px; 
+					margin: 20px 0 25px;
+				    text-align: center;
 				}
 			}
 

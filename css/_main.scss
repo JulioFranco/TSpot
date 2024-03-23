@@ -231,12 +231,12 @@ img.b-lazy.b-loaded {
 	color: #333;
 	font-size: 1.1em;
     margin: 0 0 30px;
-    line-height: 1.5;
+    line-height: 1.6;
     width: 300px;
 
 	a {
 		color: inherit;
-		padding-bottom: 3px;
+		padding-bottom: 2px;
 		border-bottom: 2px solid #ff7f00;
 
 		&:hover {
@@ -247,6 +247,7 @@ img.b-lazy.b-loaded {
 	@include break(mobile){
 		margin: 10px 0 30px;
 		width: auto;
+	    text-align: center;
     }
 }
 
