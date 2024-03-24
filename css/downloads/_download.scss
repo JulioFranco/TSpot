@@ -570,8 +570,13 @@ body.interior.download {
 	}
 }
 
+select#vote {
+    padding: 2px;
+}
+
 #dw_vote {
-	font-size: 11px;
+	font-size: 1em;
+	padding-left: 5px;
 }
 
 .tabs.similars {
