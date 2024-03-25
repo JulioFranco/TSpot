@@ -14,7 +14,7 @@
 			background: none;
 
 			@include break(mobile) {
-				height: $tile-height-mobile-sec + 10 !important;
+				height: $tile-height-mobile-sec + 11 !important;
 			}
 
 			.wrapper {
@@ -100,7 +100,6 @@
 			position: absolute;
 			background-size: cover;
 			background-position: center center;
-			overflow: hidden;
 
 			&.tall {
 				height: $tall-tile-height - $tile-padding;

@@ -355,6 +355,10 @@ body.dark {
 		}
 	}
 
+	.comments-pager ol li.active {
+		background-color: #3b4652;
+	}
+
 	.waiting {
 		.post-load-more {
 			background-color: #c3c9d0 !important;

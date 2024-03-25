@@ -271,19 +271,19 @@ body.interior.download {
 		.options {
 			font-size: 1.1em;
 			font-weight: 400;
-			margin: 5px 0 0px;
 		}
+
 		.mirror-wrapper {
 			margin: 0 0 5px;
-			@if $isAMP != 'true' {
-				@include break(v-mobile){
-					margin: 0;
-				}
+
+			@include break(v-mobile){
+				margin: 0;
 			}
+
 			.inline {
 				li {
 					margin-right: 8px;
-					margin-top: 9px;
+					margin-top: 11px;
 					display: inline-block;
 				}
 
@@ -291,27 +291,27 @@ body.interior.download {
 					li {
 						max-width: 95%;
 						width: 100%;
+
+						@include break(v-mobile){
+							max-width: 100%;
+						}
 					}
 				}
 			}
 			li {
 				list-style: none;
 				text-indent: 22px;
-				margin-top: 5px;
+				margin-top: 8px;
 
 				a {
-					@if $isAMP == 'true' {
-						color: #0851AD;
-					} @else {
-						color: #0851AD !important;
-					}
+					color: #0851AD !important;
 					position: relative;
 					display: block;
 					font-weight: 500;
-					padding: 0px 10px 1px 5px;
-					height: 32px;
-					line-height: 34px;
-					font-size: 16px;
+					padding: 0px 10px 1px 6px;
+					height: 36px;
+					line-height: 38px;
+					font-size: 17px;
 					text-decoration: none;
 					border: 1px solid #d3d3d3;
 					transition: all 0.1s linear;
@@ -319,7 +319,7 @@ body.interior.download {
 					background-color: #fff;
 
 					&.driver {
-						font-size: 15px;
+						font-size: 16px;
 					}
 
 					&:hover, &:active {
@@ -333,9 +333,10 @@ body.interior.download {
 						background: url('https://#{$staticServer}.techspot.com/images/download-arrow-mirror.svg') no-repeat center center;
 						position: absolute;
 						display: block;
-						width: 10px;
 						height: inherit;
-						left: 10px;
+						width: 10px;
+						left: 11px;
+						top: 2px;
 					}
 				}
 			}
@@ -377,7 +378,8 @@ body.interior.download {
 				margin: 15px auto 25px;
 
 				@include break(mobile){
-					margin: 10px auto 25px; 
+					margin: 10px auto 25px;
+				    text-align: center;
 				}
 			}
 
@@ -385,7 +387,8 @@ body.interior.download {
 				margin: 20px auto 15px;
 
 				@include break(mobile){
-					margin: 20px 0 25px; 
+					margin: 20px 0 25px;
+				    text-align: center;
 				}
 			}
 
@@ -567,8 +570,13 @@ body.interior.download {
 	}
 }
 
+select#vote {
+    padding: 2px;
+}
+
 #dw_vote {
-	font-size: 11px;
+	font-size: 1em; 
+	margin-left: 6px;
 }
 
 .tabs.similars {

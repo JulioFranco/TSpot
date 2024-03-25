@@ -491,7 +491,7 @@ body.interior {
 			}
 		}
 		.price-widget {
-			width: 98%;
+			width: 100%;
 			margin: 40px 0 0 3px;
 			border-bottom: 0px solid #339933;
 
@@ -570,6 +570,10 @@ body.interior {
 			text-align: right;
 			color: #555;
 			font-size: .7em;
+
+			@include break(mobile) {
+				text-align: center;
+			}
 		}
 
 		nav {
@@ -666,24 +670,13 @@ body.interior {
 		}
 
 		.breakdown {
-			font-size: 13px;
+			font-size: 14px;
+			margin-left: 110px;
 
-			@if $isAMP == 'true' {
-				width: 65%;
+			@include break(mobile) {
+				width: 68%;
 				float: left;
 				margin-left: 5%;
-			
-			} @else {
-				margin-left: 110px;
-
-				@include break(v-tablet) {
-					//margin-left: 90px;
-				}
-				@include break(mobile) {
-					width: 65%;
-					float: left;
-					margin-left: 5%;
-				}
 			}
 
 			a {
@@ -693,6 +686,10 @@ body.interior {
 				list-style: none;
 				margin: 0;
 				padding: 10px 20px 0 0;
+
+				@include break(mobile) {
+					width: 100%;
+				}
 			}
 			li {
 				height: 16px;
@@ -708,56 +705,45 @@ body.interior {
 				height: 20px;
 			}
 			.score_level {
-				font-size: 11px;
+				font-size: 12.5px;
 				margin: 0;
 				font-weight: 500;
+				width: 70px;
 
-				@if $isAMP == 'true' {
+				@include break(mobile) {
 					width: 20%;
-				} @else {
-					width: 60px;
-					@include break(mobile) {
-						width: 20%;
-					}
 				}
+
 				@include break(v-mobile) {
-					width: 23%;
+					width: 28%;
 					min-width: 54px;
 				}
 			}
 			.count {
-				font-size: 11px;
+				font-size: 12.5px;
 				text-align: right;
 				float: right;
+				margin-left: 5px;
 
-				@if $isAMP == 'true' {
+				@include break(mobile) {
 					margin-left: 0;
 					width: none;
-				} @else {
-					margin-left: 5px;
-					@include break(mobile) {
-						margin-left: 0;
-						width: none;
-					}
 				}
 			}
 			.bar {
-				@if $isAMP == 'true' {
-					width: 70%;
-				} @else {
-					width: 150px;
+				width: 170px;
 
-					@include break(mobile) {
-						width: 70%;
-					}
+				@include break(mobile) {
+					width: 70%;
 				}
 
 				@include break(v-mobile) {
-					width: 60%;
+					width: 65%;
 				}
+
 				div {
 					background: $c-good;
-					height: 8px;
+					height: 9px;
 					margin-top: 4px;
 				}
 				.excellent {
