@@ -14,7 +14,6 @@
 		background-image: linear-gradient(to top, #F2F4F8, #e7e9ee 50%, #e7e9ee);
 	}
 	h3 {
-		cursor: pointer;
 		background-color: #dfe3e8;
 		color: #1e2933;
 		font-weight: 500;
@@ -26,13 +25,7 @@
 		bottom: 3px;
 		position: relative;
 		height: 33px;
-
-		@if $isAMP != 'true' {
-			padding: 0 16px;
-		}
-		@else {
-			padding: 0 3%;
-		}
+		padding: 0 16px;
 
 		span.number {
 			background: #4885DA;
@@ -60,21 +53,17 @@
 			background-color: #59a059;
 			color: white;
 		
-			@if $isAMP != 'true' {
 				&:hover {
 					background-color: #339933;
 				}
-			}
 		}
 		&.pricehistorytab {
 			background-color: #598ca0d4;
 			color: white;
 		
-			@if $isAMP != 'true' {
 				&:hover {
 					background-color: #529cb9d4;
 				}
-			}
 		}
 
 		@if $isAMP != 'true' {
