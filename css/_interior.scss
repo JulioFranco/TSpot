@@ -222,16 +222,18 @@ body.interior {
 
 				h2 {
 					color: $light-grey2;
-					font-size: 1.25em;
+					font-size: 1.3em;
 					font-weight: 400;
 					font-family: $f-paragraph;
 					letter-spacing: -0.25px;
-					padding: 5px 0px 5px 0px;
-					line-height: 1.3em;
+					padding: 5px 0px;
+					line-height: 1.35em;
 					text-wrap: balance;
 
 					@include break(mobile) {
-						font-size: 1.05em;
+						font-size: 1.1em;
+						padding: 9px 0 7px 0;
+
 					}
 				}
 			}
