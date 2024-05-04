@@ -38,11 +38,6 @@ body.interior {
 		}
 	}
 
-
-	// -----------------------
-	// For Both: Normal & AMP
-	// -----------------------
-
 	#content {
 
 		.intro-pic {
@@ -363,6 +358,18 @@ body.interior {
 	}
 	} // end isDesk
 
+	.related-news {
+		font-size: 0.95em;
+		font-weight: 500;
+	    margin: 5px 0;
+
+	    h4 {
+			font-size: 0.85em !important;
+			color: #555;
+			text-transform: uppercase;
+	    	letter-spacing: .6px;
+		}
+	}
 
 	.related-query {
 		margin: 20px auto;

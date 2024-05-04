@@ -38,6 +38,24 @@ body.dark {
 			}
 		}
 
+		.related-news {
+		    h4 {
+				color: #fff;
+			}
+
+			ul {
+				li {
+					a {
+						color: #afc8e5;
+
+						&:hover {
+							color: #F3B26D;
+						}
+					}
+				}
+			}
+		}
+
 		.related-query {
 			h3 {
 				a {
