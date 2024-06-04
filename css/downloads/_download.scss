@@ -80,7 +80,7 @@ body.interior.download {
 						font-size: 0.9em;
 
 						a {
-							color: #aaaaaa;
+							color: #555555;
 							height: 27px;
 							font-size: 1.4em;
 
@@ -89,8 +89,8 @@ body.interior.download {
 							}
 						}
 
-						a.active {
-							color: #333333;
+						a.active, &.active a {
+							color: #222222 !important;
 						}
 
 					}
