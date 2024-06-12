@@ -1,0 +1,45 @@
+.rating-svg {
+    display: block;
+    height: 12px;
+    margin: 8px 0;
+    width: 60px;
+}
+.rating-svg use {
+    &:nth-child(3) {
+        transform: translate(12px);
+    }
+    &:nth-child(4) {
+        transform: translate(24px);
+    }
+    &:nth-child(5) {
+        transform: translate(36px);
+    }
+    &:nth-child(6) {
+        transform: translate(48px);
+    }
+}
+#stars #stars-empty-star {
+    fill: #999999;
+}
+#stars #stars-full-star {
+    fill: #cc0000;
+}
+#stars #stars-half-star {
+    fill: #cc0000;
+}
+
+body.dark {
+    #stars #stars-empty-star {
+        fill: #666666;
+    }
+    #stars #stars-full-star {
+        fill: #ffa8a8;
+    }
+    #stars #stars-half-star {
+        fill: #ffa8a8;
+    }
+}
+
+#userRating .rating-svg {
+    float: left;
+}
