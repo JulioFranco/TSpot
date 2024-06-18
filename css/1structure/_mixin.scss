@@ -4,7 +4,7 @@
 // options: @include trans-bg($color, $alpha); color can be a variable
 
 @mixin triangle($direction:'up', $color:'white', $width:100, $height:$width) {
-	@if $direction == 'up' {
+	@if $direction == 'up' { 
 		width: 0; 
 		height: 0; 
 		border-left: #{$width}px solid transparent;
