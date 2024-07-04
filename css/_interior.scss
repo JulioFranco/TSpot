@@ -54,6 +54,7 @@ body.interior {
 			margin-left: 5%;
 			margin: 5px 0 15px 5%;
 			line-height: 1.5em;
+
 			li {
 				list-style-type: square;
 				margin-bottom: 10px;
@@ -61,9 +62,13 @@ body.interior {
 		}
 
 		ol {
-			margin-left: 5%;
 			margin: 5px 0 15px 5%;
 			line-height: 1.5em;
+
+			@include break(mobile){
+				margin-left: 8%;
+			}
+
 			li {
 				list-style-type: decimal-leading-zero;
 				margin-bottom: 10px;
@@ -229,12 +234,12 @@ body.interior {
 
 				h2 {
 					color: $light-grey2;
-					font-size: 1.3em;
+					font-size: 1.35em;
 					font-weight: 400;
 					font-family: $f-paragraph;
 					letter-spacing: -0.25px;
 					padding: 5px 0px;
-					line-height: 1.35em;
+					line-height: 1.4em;
 					text-wrap: balance;
 
 					@include break(mobile) {
