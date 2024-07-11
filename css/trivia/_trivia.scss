@@ -1,6 +1,6 @@
 .trivias .masthead {
 	min-height: 465px;
-	 background: #29333D;
+	 background: #29333D !important;
 
 	@include break(mobile) {
 		height: 350px;
