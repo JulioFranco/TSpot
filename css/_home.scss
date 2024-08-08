@@ -19,6 +19,12 @@ body.home {
 
 	@if $isDesk == 'true' {
 
+		.cta {
+			&.darkb {
+				background-color: rgba(30,41,51,0.95);
+			}
+		}
+		
 		#content {
 			.wrapper {
 				@include break(v-mobile) {
