@@ -1305,20 +1305,16 @@ body.article {
 		&.side-quote {
 			font-size: 1.45em;
 			line-height: 1.4em;
-			margin: 5px auto 25px;
+			margin: 15px auto 15px;
 			padding: 10px;
 			text-align: center;
 			color: #105ab2;
-
-			@include break(v-mobile) {
-				margin: -5px auto 25px;
-			}
 		}
 
 		&.side-quote-right {
 			float: right;
 			width: 270px;
-			margin: 5px 0 10px 10px;
+			margin: 10px 0 10px 10px;
 			font-size: 1.45em;
 			line-height: 1.4em;
 			padding: 10px;
@@ -1328,14 +1324,14 @@ body.article {
 				width: auto;
 				float: none;
 				text-align: center;
-				margin: -5px auto 25px;
+				margin: 15px auto 15px;
 			}
 		}
 
 		&.side-quote-left {
 			float: left;
 			width: 270px;
-			margin: 5px 13px 10px 0;
+			margin: 10px 13px 10px 0;
 			font-size: 1.45em;
 			line-height: 1.4em;
 			padding: 10px;
@@ -1346,13 +1342,13 @@ body.article {
 				width: auto;
 				float: none;
 				text-align: center;
-				margin: -5px auto 25px;
+				margin: 15px auto 15px;
 			}
 		}
 
 		&.side-guest {
 			width: 220px;
-			margin: 5px 0 10px 15px;
+			margin: 15px 0 15px 15px;
 			float: right;
 			background-color: #eee;
 			padding: 15px;
