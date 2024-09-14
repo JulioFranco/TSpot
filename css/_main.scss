@@ -1401,20 +1401,23 @@ body.article {
 			}
 		}
 
-		@if $isDesk == 'true' {
-			&.introhome {
-				font-size: 16px;
-				font-weight: 400;
-				padding: 5px 0 5px;
-				font-family: $f-paragraph;
-				color: #444;
+		&.introhome {
+			font-size: 16px;
+			font-weight: 400;
+			padding: 5px 0 5px;
+			font-family: $f-paragraph;
+			color: #444;
 
-				strong {
-					font-family: $f-primary;
-					font-weight: 500;
-				}
-
+			strong {
+				font-family: $f-primary;
+				font-weight: 500;
 			}
+
+			@include break(mobile) {
+				font-size: 0.85em !important;
+				font-weight: 400;
+			}
+
 		}
 	}
 }

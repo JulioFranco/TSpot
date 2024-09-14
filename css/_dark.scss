@@ -246,12 +246,21 @@ body.dark {
 		color: #5e8bc1 !important;
 	}
 
-	#content #why-it-matters, #content h5, #content h5.introhome,
-	#content #why-it-matters a:hover, #content h5 a:hover {
+	#content #why-it-matters, #content h5,
+	#content #why-it-matters a:hover,
+	#content h5 a:hover {
 		color: #eee;
 	}
 	#content #why-it-matters strong, #content h5 strong {
 		color: #81ade2;
+	}
+
+	#content h5.introhome{
+		color: #e3e3e3;
+
+		@include break(mobile) {
+			color: #C9C9C9;
+		}
 	}
 
 	ul {
