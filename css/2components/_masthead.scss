@@ -165,15 +165,15 @@
 						text-shadow: 0 0 2px #000;
 						color: $grid-orange;
 						padding-bottom: 5px;
-						letter-spacing: .25px;
+					    letter-spacing: .1px;
+						font-weight: 600;
 					}
 
 					h2 {
 						font-size: $tile-font-size;
-						font-weight: 500;
-						text-shadow: 1px 1px 3px #444;
-						letter-spacing: -.25px;
-						line-height: 1.42;
+						font-weight: 575;
+						letter-spacing: -.45px;
+						line-height: 1.5;
 						padding-right: 8px;
 						display: inline;
 

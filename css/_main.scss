@@ -12,8 +12,10 @@ img.responsive {
 }
 
 body {
-	background-color: $light-grey;
 	font-family: $f-primary;
+	font-optical-sizing: auto;
+	letter-spacing: -.2px;
+	background-color: $light-grey;
 	font-size: 1.2em;
 	-webkit-font-smoothing: antialiased;
 
@@ -361,7 +363,6 @@ img.b-lazy.b-loaded {
 		min-height: 45px;
 
 		& > a {
-			font-family: Arial;
     		font-size: 0.9em;
     		padding: 3px 0 2px;
 		}
@@ -457,6 +458,7 @@ img.b-lazy.b-loaded {
 					position: relative;
 					padding-top: 8px;
 					margin: 0 auto 5px;
+					line-height: 1.3;
 				}
 
 				&:hover {
@@ -497,8 +499,9 @@ img.b-lazy.b-loaded {
 	white-space: nowrap;
 	line-height: 42px;
 	padding-left: 13px;
-	font-weight: 600 !important;
-	font-size: 1.25em;
+    font-weight: 700 !important;
+    font-size: 1.16em;
+    letter-spacing: -.333px;
 
 	a {
 		color: #333;
@@ -688,7 +691,6 @@ table {
 			&.title {
 				background-color: #105ab2;
 				color: #ffffff;
-				font-family: $f-primary;
 
 				a {
 					color: #ffffff;
@@ -911,7 +913,6 @@ table {
 	border: 1px solid #fff;
 	position: fixed;
 	background: #075bc0;
-	font-family: Arial,sans-serif;
 	padding: 18px 27px;
 	color: #fff;
 	transition: all 0.5s;
@@ -1022,7 +1023,7 @@ table {
 	}
 }
 
-
+/*
 body.home {
 	.jobbioapp {
 		min-height: 430px;
@@ -1122,6 +1123,7 @@ body.article {
 		}
 	}
 }
+*/
 
 
 // for bottom d-ads
@@ -1370,13 +1372,12 @@ body.article {
 
 	// For "why it matters" (global: home & story templates)
 	h5, #why-it-matters {
-		font-family: $f-primary;
 		font-weight: 500;
 		line-height: 1.5;
 		padding: 8px 0 8px;
 		color: #333;
-		font-size: 20px;
-		letter-spacing: -0.1px;
+		font-size: 19px;
+		letter-spacing: 0;
 
 		strong {
 			color: #075bc0;
@@ -1405,13 +1406,7 @@ body.article {
 			font-size: 16px;
 			font-weight: 400;
 			padding: 5px 0 5px;
-			font-family: $f-paragraph;
 			color: #444;
-
-			strong {
-				font-family: $f-primary;
-				font-weight: 500;
-			}
 
 			@include break(mobile) {
 				font-size: 0.85em !important;

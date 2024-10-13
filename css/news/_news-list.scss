@@ -52,17 +52,16 @@
 			}
 
 			h2 {
-				padding: 8px 0 2px;
+				padding: 10px 0 2px;
 
 				@include break(mobile) {
 					padding: 6px 0 2px;
 				}
 
 				a {
-					font-family: $f-helvetica-roboto;
 					line-height: 1.4;
 					color: #1e2833;
-					font-weight: 500;
+					font-weight: 550;
 
 					@if $isDesk == 'true' {
 						font-size: 1.15em;

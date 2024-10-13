@@ -24,12 +24,10 @@ body.interior {
 		}
 
 		b, strong {
-			font-family: $f-primary;
 			font-weight: 500;
 		}
 
 		h2 {
-			font-family: $f-primary;
 			line-height: 1.4;
 			font-size: 1.65em;
 
@@ -40,13 +38,11 @@ body.interior {
 		}
 	
 		h3 {
-			font-family: $f-primary;
 			line-height: 1.4;
 			font-size: 1.5em;
 		}
 		
 		h4 {
-			font-family: $f-primary;
 			font-size: 1.35em;
 		}
 
@@ -187,7 +183,7 @@ body.interior {
 			.title-group {
 
 				h1.large {
-					font-weight: 500;
+					font-weight: 550;
 					letter-spacing: -0.333px;
 					margin: 17px 0 5px;
 					font-size: 2.3em;
@@ -215,7 +211,6 @@ body.interior {
 
 					&.upper {
 						text-transform: uppercase;
-						font-family: Roboto Condensed;
 					}
 				}
 
@@ -240,7 +235,6 @@ body.interior {
 					color: $light-grey2;
 					font-size: 1.35em;
 					font-weight: 400;
-					font-family: $f-paragraph;
 					letter-spacing: -0.25px;
 					padding: 5px 0px;
 					line-height: 1.4em;
@@ -270,7 +264,7 @@ body.interior {
 	}
 
 	.score {
-		font-family: $f-helvetica-roboto !important;
+		letter-spacing: 0;
 	}
 	
 	.ShowOnly {
@@ -358,7 +352,6 @@ body.interior {
 	#CategoryList {
 		margin-bottom: 21px;
 		text-transform: uppercase;
-		font-family: $f-condensed;
 		font-size: 0.7em;
 
 		a {
@@ -411,7 +404,6 @@ body.interior {
 	.social-share-svg {
 		margin-left: 120px;
 		float: right;
-		font-family: Roboto;
 		letter-spacing: -.333px;
 
 		&.article {

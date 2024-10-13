@@ -24,7 +24,7 @@
 	.title {
 		color: #4484D0;
 		font-size: 1.4em;
-		font-weight: 500;
+		font-weight: 600;
 		line-height: 2;
 
 		span.small {
@@ -107,7 +107,6 @@
 
 		.commentText {
 			display: block;
-			font-family: $f-paragraph;
 			font-size: 16px;
 			line-height: 1.5;
 			margin: 5px 25px 5px 0;
@@ -132,7 +131,6 @@
 			}
 
 			b {
-				font-family: Roboto;
 				font-weight: 500;
 			}
 
@@ -159,10 +157,6 @@
 						height: 15px;
 					}
 				}
-			}
-
-			blockquote div:first-child {
-				font-family: Roboto;
 			}
 
 			.morecommentquotes {
@@ -335,7 +329,6 @@
 			height: 30px;
 			line-height: 25px;
 			font-weight: 500;
-			font-family: $f-primary;
 			border: solid 1px #ccc;
 			@include border-radius(5px);
 			@include gradient-trans($start_color:#1E2933,$start_alpha:0,$end_color:#1E2933,$end_alpha:0.1);
@@ -424,7 +417,6 @@
 			padding: 8px;
 			line-height: 1.3;
 			font-size: 0.85em;
-			font-family: $f-paragraph;
 			border: 1px solid #aaa;
 			@include border-radius(5px);
 			box-shadow: 0 0 6px rgba(0,0,0,0.2) inset;
@@ -469,7 +461,6 @@ body.interior {
 		height: 43px;
 		overflow: visible;
 		letter-spacing: -.333px;
-		font-family: $f-primary;
 		filter: grayscale(90%);
 		float: left;
 		background-position: 0 10px;
