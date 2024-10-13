@@ -148,7 +148,6 @@
 	*/
 	
 	.rating {
-		font-family: $f-helvetica;
 		position: absolute;
 		font-weight: 500;
 		color: white;
@@ -222,7 +221,6 @@
 
 		.label {
 			display: block;
-			font-family: Roboto;
 			font-size: 0.24em;
 			text-transform: uppercase;
 			font-weight: 500;
@@ -250,7 +248,7 @@
 	}
 
 	h1 {
-		font-weight: 500;
+		font-weight: 550;
 		padding: 19px 0 11px;
 		color: #fff;
 		font-size: 2.2em;
@@ -273,7 +271,7 @@
 
 	h2, h4 {
 		color: #eee;
-		font-weight: 400;
+		font-weight: 450;
 		padding: 0 0 5px 3px;
 		line-height: 1.3;
 

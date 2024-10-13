@@ -150,9 +150,6 @@ img.b-lazy.b-loaded {
 	-webkit-transform: translateZ(0); 
 	transform: translateZ(0);
 }
-.rating {
-	font-family: $f-helvetica;
-}
 
 .hidden {
 	display: none !important;
@@ -508,7 +505,7 @@ img.b-lazy.b-loaded {
 	}
 	
 	span {
-		font-weight: 100;
+		font-weight: 300;
 	}
 	
 	&.green {
@@ -679,6 +676,7 @@ table {
 		margin: 15px 0 30px;
 		font-size: 0.85em;
 		letter-spacing: -0.333px;
+		line-height: 1.45;
 		
 		td, th {
 			padding: inherit;
@@ -1373,7 +1371,6 @@ body.article {
 	// For "why it matters" (global: home & story templates)
 	h5, #why-it-matters {
 		font-weight: 500;
-		line-height: 1.5;
 		padding: 8px 0 8px;
 		color: #333;
 		font-size: 19px;
@@ -1381,6 +1378,7 @@ body.article {
 
 		strong {
 			color: #075bc0;
+			font-weight: 600;
 			font-size: 0.85em;
     		text-transform: uppercase;
 			letter-spacing: 0.6px;
