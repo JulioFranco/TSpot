@@ -117,19 +117,14 @@ body.interior {
 		.download-index {
 			h1 {
 				color: #1e2833;
-				font-weight: 500;
+				font-weight: 550;
 				line-height: 1.4;
 				margin-top: 15px;
 				letter-spacing: -0.333px;
-
-				@if $isAMP == 'true' {
-					font-size: 1.5em;
+				font-size: 2em;
 				
-				} @else {
-					font-size: 2em;
-					@include break(mobile) {
-						font-size: 1.4em;
-					}
+				@include break(mobile) {
+					font-size: 1.4em;
 				}
 			}
 

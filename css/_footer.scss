@@ -67,6 +67,8 @@ footer {
 				font-size: 0.85em;
 				-webkit-appearance: none;
 				border-radius: 0;
+				font-weight: 500;
+				font-family: $f-primary;
 
 				@include break(mobile) {
 					font-size: 16px;

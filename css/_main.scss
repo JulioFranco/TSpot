@@ -86,7 +86,7 @@ h1 {
 }
 
 h2, h3, h4, h5 {
-	font-weight: 500;
+	font-weight: 550;
 }
 
 .mobile-hide {
@@ -269,7 +269,7 @@ img.b-lazy.b-loaded {
 		& > a {
 			display: block;
 			color: #444;
-			line-height: 1.2;
+			line-height: 1.4;
 			font-weight: 400;
 			padding-bottom: 2px;
 
@@ -1381,7 +1381,7 @@ body.article {
 			font-weight: 600;
 			font-size: 0.85em;
     		text-transform: uppercase;
-			letter-spacing: 0.6px;
+			letter-spacing: 0.4px;
 		}
 
 		sup {
@@ -1402,9 +1402,15 @@ body.article {
 
 		&.introhome {
 			font-size: 16px;
-			font-weight: 400;
+			font-weight: 380;
 			padding: 5px 0 5px;
 			color: #444;
+			line-height: 1.55;
+			letter-spacing: -.2px;
+
+			strong {
+				font-size: 0.8em;
+			}
 
 			@include break(mobile) {
 				font-size: 0.85em !important;
