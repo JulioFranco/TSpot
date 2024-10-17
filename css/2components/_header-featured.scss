@@ -98,28 +98,18 @@
 			font-size: 2.4em;
 			line-height: 1.3;
 
-			@if $isAMP == 'true' {
-				@include break(mobile){
-					font-size: 1.5em;
-				}
-				@include break(v-mobile){
-					font-size: 1.3em;
-				}
-				padding: 0 0 8px;
+			&.xlarge {
+				font-size: 2.6em;
 			}
-			@else {
-				&.xlarge {
-					font-size: 2.6em;
-				}
 
-				&.medium {
-					font-size: 2.2em;
-				}
-
-				&.small {
-					font-size: 2.1em;
-				}
+			&.medium {
+				font-size: 2.2em;
 			}
+
+			&.small {
+				font-size: 2.1em;
+			}
+
 		}
 		
 		em {
@@ -248,7 +238,7 @@
 	}
 
 	h1 {
-		font-weight: 550;
+		font-weight: 625;
 		padding: 19px 0 11px;
 		color: #fff;
 		font-size: 2.2em;
