@@ -621,9 +621,9 @@
 		ul.variation-8{
 			li {
 				// Columna fina
-				$tile-width-percent: 31%;
+				$tile-width-percent: 32%;
 				// Columna gruesa
-				$tile-width-percent-wide: 37%;
+				$tile-width-percent-wide: 35%;
 				width: $tile-width-percent;
 
 				&.tall { height: $tile-height - $tile-padding; a { height: $tile-height - 30px; hgroup { h2 { font-size: 1em; } } } }
