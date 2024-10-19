@@ -48,7 +48,7 @@
 	.masthead {
 		position: relative;
 		background: #707c8a;
-		min-height: 335px;
+		min-height: $tile-height + 90px;
 		height: auto !important;
 
 		.featured-posts {
