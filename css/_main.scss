@@ -917,6 +917,7 @@ table {
 	cursor: pointer;
 	text-align:center;
 	z-index: 10000000000;
+	font-family: $f-primary;
 
 	@include break(mobile) { display: none; }
 
