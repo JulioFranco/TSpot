@@ -1284,7 +1284,8 @@ body.article {
 		}
 
 		&.small, &.byline {
-			font-size: 0.75em;
+			font-size: 0.82em;
+			padding: 8px 0;
 		}
 
 		sup {
@@ -1292,7 +1293,7 @@ body.article {
 		}
 
 		&.grey {
-			font-size: 0.75em;
+			font-size: 0.82em;
 			color: #555;
 
 			a {
