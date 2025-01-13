@@ -7,15 +7,11 @@
 	top: 0;
 	left: 0;
 
-	// Not AMP
-	@if $isAMP != 'true' {
-		@include break(mobile) {
-			height: 58px;
-		}
+	@include break(mobile) {
+		height: 58px;
 	}
 
 	.header-top {
-		//AMP and Normal
 		background: $dark-blue;
 		position: relative;
 		z-index: 2;
@@ -25,9 +21,8 @@
 			line-height: $header-top-line-height;
 		}
 
-		// Only Normal
-		@if $isAMP != 'true' {
-			.right-links {
+
+		.right-links {
 				float: right;
 				line-height: $header-top-line-height;
 
@@ -59,7 +54,8 @@
 							
 							svg {
 							    float: left;
-							    transform: translate(-4px, 12px);
+
+							    transform: translate(-5px,17px);
 
 								@include break(mobile) {
 									transform: translate(7px, 9px);
@@ -375,7 +371,7 @@
 						&.search {
 							width: 32px;
 							position: relative;
-							line-height: 52px;
+							line-height: $header-top-line-height;
 							margin-left: 3px;
 							cursor: pointer;
 
@@ -448,7 +444,7 @@
 						}
 					}
 				}
-			}
+		}
 
 			.elite {
 				float: left;
@@ -456,7 +452,7 @@
 				font-size: .6em;
 				margin: 10px 0px -10px 0;
 			}
-		}
+
 	}
 	/**** END HEADER-TOP ****/
 
@@ -615,7 +611,7 @@
 							}
 						}
 
-						}// NO AMP submenu
+						}// NO submenu on mobile
 						@else {
 							.nav-submenu {
 								display: none;
@@ -628,49 +624,15 @@
 		}
 
 
-	@if $isAMP == 'true' {
-		#logo {
-		    width: 205px;
-		    height: 47px;
-			a {
-				display:block;
-			    width: 205px;
-			    height: 47px;
-			}
-		}
-	} @else {
 	#logo {
-		/*
-		text-indent: -9999px;
-		background-image: url('https://#{$staticServer}.techspot.com/images/logo-techspot.svg');
-		background-repeat: no-repeat;
-		background-position: center;
-		width: 205px;
-		height: $header-top-line-height + 3;
-		line-height: $header-top-line-height + 3;
-		margin-left: 8px;
-		background-size: 220px;
-		*/
-
 		width: 225px;
-	    height: 55px;
+	    height: 62px;
 
 	    &.logoelite {
 			float: left;
 		}
 
 		@include break(mobile){
-			/*
-			background-size: 181px;
-			line-height: $header-interior-line-height;
-			height: $header-interior-line-height;
-			padding-bottom: 3px;
-			width: 166px;
-			
-			margin-left: 2px;
-			height: $header-interior-line-height-mobile;
-			background-position: -7px -2px;
-			*/
 		    width: 205px;
 		    height: 45px;
 		}
@@ -678,13 +640,10 @@
 		a {
 			display: block;
 			width: 205px;
-			height: 55px;
-
-			//width: 202px; height: $header-top-line-height;
-			//line-height: $header-top-line-height;
+			height: 62px;
 		}
-	}//logo
-	}//amp
+
+	} //logo
 
 
 
@@ -712,6 +671,7 @@
 
 				.right-links {
 					line-height: $header-interior-line-height;
+
 					@include break(mobile){
 						line-height: $header-interior-line-height-mobile;
 					}
