@@ -125,10 +125,9 @@ body.interior {
 
 	@if $isDesk == 'true' {
 	.related-products {
-		margin: -5px 0 35px;
 
 		&.related-stories {
-			margin: 0 0 30px;
+			margin: 20px 0 30px;
 			display: block !important;
 
 			@include break(v-tablet){
@@ -304,6 +303,7 @@ body.interior {
 						height: auto;
 					}
 				
+					/*
 					.rating {
 						font-family: $f-helvetica;
 						font-weight: 500;
@@ -333,6 +333,8 @@ body.interior {
 							display: none;
 						}
 					}
+					*/
+					
 				}
 
 				.feat {
@@ -361,7 +363,7 @@ body.interior {
 	.related-news {
 		font-size: 0.95em;
 		font-weight: 500;
-	    margin: 5px 0;
+		padding: 5px 0 10px;
 
 	    h4 {
 			font-size: 0.85em !important;

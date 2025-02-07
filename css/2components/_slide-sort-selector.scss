@@ -10,31 +10,24 @@
 		display: inline-block;
 		line-height: 45px;
 		
-		//@if $isAMP != 'true' {
-			&.indicator {
-				@if $isAMP == 'true' {
-				  margin: 0;
-				}@else{
-				  margin: 0 !important;
-				}
-				display: block;
-				position: absolute;
-				left: 0;
-			  	bottom: 0;
-				width: 5px; height: 7px;
-				@include triangle(up,$blue,5,7);
-			}
-		//}
+		&.indicator {
+			margin: 0 !important;
+			display: block;
+			position: absolute;
+			left: 0;
+		  	bottom: 0;
+			width: 5px; height: 7px;
+			@include triangle(up,$blue,5,7);
+		}
 	}
 	
 	.post-type-selector {
 		float: left;
-		//@if $isAMP != 'true' {
 			ul {
 				li {
 					font-family: $f-condensed;
-					font-weight: 600;
-					font-size: 0.95em;
+					font-weight: 700;
+					font-size: 0.85em;
 					text-transform: uppercase;
 					margin-right: 30px;
 					text-shadow: 0 1px 0 #fff;
@@ -57,15 +50,14 @@
 					}
 				}
 			}
-		//}
 	}
 	
-	@if $isAMP != 'true' {
+
 		.layout-selector {
 			float: right;
 			li {
-				font-size: .55em;
-				font-weight: 500;
+				font-size: .6em;
+				font-weight: 600;
 				text-transform: uppercase;
 				letter-spacing: -0.333px;
 				
@@ -76,20 +68,9 @@
 					a {
 						display: block;
 						position: relative;
-						//padding-left: 15px;
+
 						color: $light-grey2;
 
-						/*
-						&:before {
-							content:"";
-							display: block;
-							position: absolute;
-							left: 0px; top: 50%;
-							margin-top: -3px;
-							width: 10px; height: 7px;
-							background-image: url('https://#{$staticServer}.techspot.com/images/icons-layout.png');
-						}
-						*/
 					}
 				}
 				&.active {
@@ -103,15 +84,6 @@
 				}
 				
 				&.full {
-					a {
-						
-						/*
-						&:before {
-							background-position: right center;
-						}
-						*/
-
-					}
 					margin-right: 10px;
 				}
 				
@@ -123,5 +95,4 @@
 				display: none !important;
 			}
 		}
-	}
 }

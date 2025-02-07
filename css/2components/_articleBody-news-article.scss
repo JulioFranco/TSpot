@@ -19,50 +19,30 @@
 			}
 		}
 		h2 {
-			padding: 25px 0 5px;
+			padding: 25px 0 10px;
 
 			&.subtitle {
 				padding: 10px 0 10px;
-
-				@if $isAMP == 'true' {
-				    color: #555;
-				    font-size: 1.3em;
-				}
 			}
 
-			@if $isAMP == 'true' {
-				font-size: 1.3em;
-
-			} @else {
-				@include break(mobile) {
-					font-size: 1.3em !important;
-				}
+			@include break(mobile) {
+				font-size: 1.3em !important;
 			}
 		}
 
 		h3 {
-			padding: 25px 0 5px;
+			padding: 25px 0 10px;
 
-			@if $isAMP == 'true' {
-				font-size: 1.2em;
-
-			} @else {
-				@include break(mobile) {
-					font-size: 1.2em !important;
-				}
+			@include break(mobile) {
+				font-size: 1.2em !important;
 			}
 		}
 
 		h4 {
-			padding: 15px 0 5px;
+			padding: 15px 0 10px;
 
-			@if $isAMP == 'true' {
-				font-size: 1.1em;
-
-			} @else {
-				@include break(mobile) {
-					font-size: 1.1em !important;
-				}
+			@include break(mobile) {
+				font-size: 1.1em !important;
 			}
 		}
 

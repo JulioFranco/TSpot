@@ -53,7 +53,7 @@
 			li {
 				a {
 					hgroup {
-						bottom: 40px;
+						bottom: 32px;
 						text-wrap: balance;
 
 						@include break(mobile) {
@@ -79,7 +79,7 @@
 	}
 
 	&.SmallHead {
-		height: 480px;
+		height: ($tile-height * 2) - 5;
 	}
 
 	.FGheadCom {
@@ -164,16 +164,17 @@
 						font-size: .625em;
 						text-shadow: 0 0 2px #000;
 						color: $grid-orange;
-						padding-bottom: 5px;
-						letter-spacing: .25px;
+						padding-bottom: 3px;
+					    letter-spacing: .1px;
+						font-weight: 600;
+						line-height: 1.4;
 					}
 
 					h2 {
 						font-size: $tile-font-size;
-						font-weight: 500;
-						text-shadow: 1px 1px 3px #444;
-						letter-spacing: -.25px;
-						line-height: 1.42;
+						font-weight: 625;
+						letter-spacing: -.45px;
+						line-height: 1.5;
 						padding-right: 8px;
 						display: inline;
 
@@ -621,9 +622,9 @@
 		ul.variation-8{
 			li {
 				// Columna fina
-				$tile-width-percent: 31%;
+				$tile-width-percent: 32%;
 				// Columna gruesa
-				$tile-width-percent-wide: 37%;
+				$tile-width-percent-wide: 35%;
 				width: $tile-width-percent;
 
 				&.tall { height: $tile-height - $tile-padding; a { height: $tile-height - 30px; hgroup { h2 { font-size: 1em; } } } }

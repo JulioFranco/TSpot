@@ -1,6 +1,6 @@
 .trivias .masthead {
 	min-height: 465px;
-	 background: #29333D;
+	 background: #29333D !important;
 
 	@include break(mobile) {
 		height: 350px;
@@ -152,8 +152,8 @@ ul.featured-trivias {
 			padding-top: 10px;
 
 			@include break(mobile){
-				font-size: 1.2em;
-				line-height: 1.3em;
+				font-size: 1.2em !important;
+				padding-top: 30px;
 			}
 
 		}
@@ -216,11 +216,15 @@ ul.featured-trivias {
 				margin: 15px 0;
 			}
 
-			@include break(mobile){
+			@include break(mobile) {
+
+		        float: right;
+		        margin: -80px 0 0 0;
 
 				> div.question {
-					width: 80%;
+					width: 100px;
 				}
+
 				/*
 				> div.next {
 					width: 40%;
@@ -237,12 +241,11 @@ ul.featured-trivias {
 				padding: 12px;
 				background: #798798;
 				cursor: pointer;
-				font-family: Roboto;
 				letter-spacing: -.333px;
 				transition: linear 0.15s;
 
 				@include break(mobile){
-					width: 92%;
+					width: 88%;
 				}
 
 				a {
@@ -253,6 +256,16 @@ ul.featured-trivias {
 					.nextq {
 						font-size: 0.8em;
 						margin-bottom: 5px;
+
+						@include break(mobile){
+							margin: 5px;
+						}
+					}
+
+					span {
+						@include break(mobile){
+							display: none;
+						}
 					}
 				}
 
@@ -272,7 +285,6 @@ ul.featured-trivias {
 				font-weight: 700;
 				cursor: pointer;
 				color: #105ab2;
-				font-family: Roboto Condensed;
 			}
 			*/
 		}
@@ -310,7 +322,6 @@ ul.featured-trivias {
 
 			.answer {
 				font-weight: 500;
-				font-family: Roboto;
 				margin-top: 10px;
 
 				span.label {
@@ -334,7 +345,7 @@ ul.featured-trivias {
 				img {
 					float: right;
 					max-width: 400px;
-					margin: 10px 0px 30px 30px;
+					margin: 30px 0 30px 30px;
 					border-radius: 6px;
 
 					@include break(mobile) {
@@ -353,7 +364,7 @@ ul.featured-trivias {
 			    margin: 30px 0 60px;
 
 			    @include break(mobile){
-				    margin: 30px 0 20px;
+				    margin: 50px 0 20px;
 			    }
 			}
 

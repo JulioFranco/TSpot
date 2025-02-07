@@ -389,7 +389,7 @@ body.interior {
 	.product_description {
 		font-size: 1.1em;
 		line-height: 1.4;
-		color: $light-grey2;
+		color: $dark-grey2;
 	    float: left;
 	    font-family: $f-paragraph;
 	    margin-right: 15px;
@@ -414,10 +414,9 @@ body.interior {
 	}
 
 	.reviewed_by {
-		display: inline-block;
-	    text-align: left;
 	    font-size: 0.75em;
 	    color: #555;
+	    line-height: 2.5;
 	}
 
 	.product-desc {

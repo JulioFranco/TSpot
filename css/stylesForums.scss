@@ -29,7 +29,6 @@ body.dark {
 				border-bottom: none;
 				color: #fff;
 				font-weight: 500;
-				font-family: Roboto, Arial, sans-serif;
 
 				&:hover {
 					color: #ffaf5f;
@@ -121,6 +120,7 @@ body.dark {
 	.bbCodeBlock {
 	    border: 1px solid #516579;
 	    border-left: 3px solid #4e5963;
+	    background: #3B414D;
 	}
 	.bbCodeBlock.bbCodeBlock--quote .bbCodeBlock-content {
 	    background: #2d343e;

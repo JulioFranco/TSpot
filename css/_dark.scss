@@ -27,7 +27,7 @@ body.dark {
 	}
 
 	&.article .articleBody p a, &.news .articleBody p a {
-		box-shadow: inset 0 -2px 0 $dark-link-hov-orange;
+		box-shadow: inset 0 -2px 0 #ffaf5fcc;
 	}
 
 	&.article .articleBody p a:hover,
@@ -41,6 +41,14 @@ body.dark {
 
 	.cta, .adContainerNews {
 		background-color: $dark-back !important;
+	}
+
+	@if $isDesk == 'true' {
+		.cta {
+			&.darkb {
+				background-color: rgba(30,41,51,0.95);
+			}
+		}
 	}
 
 	.post-list {
@@ -103,7 +111,7 @@ body.dark {
 		}
 
 		.articleBody {
-			ul {
+			ul, ol {
 				li {
 					color: #ddd;
 
@@ -238,12 +246,21 @@ body.dark {
 		color: #5e8bc1 !important;
 	}
 
-	#content #why-it-matters, #content h5, #content h5.introhome,
-	#content #why-it-matters a:hover, #content h5 a:hover {
+	#content #why-it-matters, #content h5,
+	#content #why-it-matters a:hover,
+	#content h5 a:hover {
 		color: #eee;
 	}
 	#content #why-it-matters strong, #content h5 strong {
 		color: #81ade2;
+	}
+
+	#content h5.introhome{
+		color: #e3e3e3;
+
+		@include break(mobile) {
+			color: #C9C9C9;
+		}
 	}
 
 	ul {
@@ -260,11 +277,15 @@ body.dark {
 		}
 	}
 
-	#content p,
+	#content p {
+		color: #f0f0f0;
+	}
+
 	.sidebar ul.teaser-list li a,
 	.section-header a {
 		color: #e0e0e0;
 	}
+
 
 	.download-list li>a, .forum-list li>a {
 		color: #ccc;
