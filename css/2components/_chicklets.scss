@@ -50,6 +50,9 @@ ul.category-chicklets {
 		&.green3, &.features, &.monitors, &.google																			{ background-color: #237A3C;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#237A3C,6%); } } }
 		&.green4, &.mobile, &.smartphones																					{ background-color: #3a927c;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#3a927c,6%); } } }
 
+		&.green5, &.deals																									{ background-color: #779954;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#779954,8%); } } }
+		&.green6, &.wof																										{ background-color: #85B200;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#85B200,4%); } } }
+
 		&.purple, &.software																								{ background-color: $purple;	@if $isDesk == 'true'  { &:hover { background-color: lighten($purple,6%); } } }
 		&.purple2, &.electronics, &.audio, &.cpu, &.motherboards, &.input-devices, &.cases									{ background-color: #5353ac;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#5353ac,5%); } } }
 
@@ -59,14 +62,11 @@ ul.category-chicklets {
 		&.red3, &.security, &.tablets																						{ background-color: #ac5353;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#ac5353,5%); } } }
 		&.red4, &.crimson, &.tag2																							{ background-color: #8f1515;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#8f1515,5%); } } }
 
-		&.dotw, &.car-tech, &.yellow2																						{ background-color: #DD9C08;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#DD9C08,4%); } } }
 		&.grey, &.natw, &.culture, &.tech-culture																			{ background-color: $light-grey2;	@if $isDesk == 'true'  { &:hover { background-color: lighten($light-grey2,8%); } } }
 		&.grey2, &.space  																									{ background-color: #3a3a3a;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#3a3a3a,6%); } } }
-		&.deals 																											{ background-color: #779954;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#779954,8%); } } }
-		&.wof	 																											{ background-color: #85B200;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#85B200,4%); } } }
-
 
 		&.yellow, &.wearables, &.desktop-pcs																				{ background-color: #f9d236;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#f9d236,6%); } } }
+		&.yellow2, &.dotw, &.car-tech																						{ background-color: #DD9C08;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#DD9C08,4%); } } }
 
 		// Texto negro
 		&.yellow, &.wearables, &.desktop-pcs {
