@@ -1129,6 +1129,7 @@ body.article {
 .mobile-leaderboard-320-50, .bordeaux-anchored-container {
     box-shadow: none !important;
     background: transparent !important;
+	border: none !important;
 	/*
 	background: rgba(0, 0, 0, 20%) !important;
 	backdrop-filter: blur(5px);
@@ -1136,20 +1137,23 @@ body.article {
 	*/
 }
 .bordeaux-anchored-close {
+	/*
     background: rgba(255,255,255,0.2)!important;
     cursor: pointer !important;
     border-radius: 12px 0 0 12px !important;
     width: 22px !important;
     height: 22px !important;
+    */
 
 	@include break(mobile) {
 		display: none !important;
 	}
 
 	svg {
-    	width: 12px;
-    	height: 12px;
-    	margin: 0px 0px 0px 3px;
+    	width: 11px;
+    	height: 11px;
+    	margin: 0px 0px 0px -3px;
+    	cursor: pointer;
 	}
 }
 
