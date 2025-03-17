@@ -196,27 +196,25 @@ footer {
 					}
 
 					&.facebook {
-						//background-image: url('https://#{$staticServer}.techspot.com/images/social/06-facebook.svg');
 						background-color: #39559F;
 					}
 					&.twitter {
-						//background-image: url('https://#{$staticServer}.techspot.com/images/social/03-twitter.svg');
-						background-color: #1DA0D7;
+						background-color: #0D3E53;
 					}
 					&.youtube {
-						//background-image: url('https://#{$staticServer}.techspot.com/images/social/18-youtube.svg');
 						background-color: #E63D28;
-						//background-size: 28px 28px;
 					}
 					&.rss {
-						//background-image: url('https://#{$staticServer}.techspot.com/images/social/20-rss.svg');
 						background-color: #FF7F00;
 					}
+					&.steam {
+						background-color: #000;
+					}
+					/*
 					&.instagram {
-						//background-image: url('https://#{$staticServer}.techspot.com/images/social/38-instagram.svg');
 						background-color: #f56040;
 					}
-					
+					*/
 				}
 			}
 		}
