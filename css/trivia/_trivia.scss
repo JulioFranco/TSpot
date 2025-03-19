@@ -44,42 +44,42 @@ ul.featured-trivias {
 	$opacity1: 0.6;
 	$opacity2: 0.8;
 
-	.blue {
+	.tc-blue {
 		background-color: rgba(16, 90, 178, $opacity1);
 		border-bottom: 4px solid rgb(23, 82, 148);
 
 		&:hover { background-color: rgba(16, 90, 178, $opacity2); }
 	}
 
-	.red {
+	.tc-red {
 		background-color: rgba(204, 0, 0, $opacity1);
 		border-bottom: 4px solid rgb(134, 29, 35);
 
 		&:hover { background-color: rgba(204, 0, 0, $opacity2); }
 	}
 
-	.yellow {
+	.tc-yellow {
 		background-color: rgba(255, 193, 7, $opacity1);
 		border-bottom: 4px solid rgb(171, 144, 46);
 
 		&:hover { background-color: rgba(255, 193, 7, $opacity2); }
 	}
 
-	.purple {
+	.tc-purple {
 		background-color: rgba(103, 58, 183, $opacity1);
 		border-bottom: 4px solid rgb(84, 62, 158);
 
 		&:hover { background-color: rgba(103, 58, 183, $opacity2); }
 	}
 
-	.green {
+	.tc-green {
 		background-color: rgba(76, 175, 80, $opacity1);
 		border-bottom: 4px solid rgb(61, 128, 78);
 
 		&:hover { background-color: rgba(76, 175, 80, $opacity2); }
 	}
 
-	.orange {
+	.tc-orange {
 		background-color: rgba(255, 127, 0, $opacity1);
 		border-bottom: 4px solid rgb(167, 100, 33);
 
@@ -219,19 +219,11 @@ ul.featured-trivias {
 			@include break(mobile) {
 
 		        float: right;
-		        margin: -80px 0 0 0;
+		        margin: -82px 0 0 0;
 
 				> div.question {
-					width: 100px;
+					width: 165px;
 				}
-
-				/*
-				> div.next {
-					width: 40%;
-
-					div { width: 80%; }
-				}
-				*/
 			}
 
 			.question > div {
@@ -243,10 +235,6 @@ ul.featured-trivias {
 				cursor: pointer;
 				letter-spacing: -.333px;
 				transition: linear 0.15s;
-
-				@include break(mobile){
-					width: 88%;
-				}
 
 				a {
 					color: white;
@@ -361,11 +349,7 @@ ul.featured-trivias {
 			}
 
 			.social-share-svg {
-			    margin: 30px 0 60px;
-
-			    @include break(mobile){
-				    margin: 50px 0 20px;
-			    }
+			    margin: 40px 0 60px;
 			}
 
 		}
@@ -378,6 +362,12 @@ ul.featured-trivias {
 		}
 
 		.statistics_answers {
+
+			@include break(v-mobile){
+				width: 94%;
+				margin: 10px auto;
+			}
+
 			.percentage {
 				font-size: 2.5em;
 				padding: 15px 0px 0px 20px;
@@ -391,6 +381,7 @@ ul.featured-trivias {
 				background-color: #154c8f;
 				color: #fff;
 				margin-bottom: 15px;
+				border-radius: 3px;
 
 				@include break(v-tablet){
 					float: left;
@@ -410,6 +401,7 @@ ul.featured-trivias {
 				background-color: #dfdfd0;
 				color: #555;
 				margin-bottom: 15px;
+				border-radius: 3px;
 
 				@include break(v-tablet){
 					float: left;
@@ -430,6 +422,7 @@ ul.featured-trivias {
 				background-color: #777;
 				color: #fff;
 				margin-bottom: 15px;
+				border-radius: 3px;
 			}
 		}
 	}
@@ -476,11 +469,12 @@ ul.featured-trivias {
 			    }
 
 				@include break(mobile) {
-					margin: 5px 0 0px 0;
+					margin: 5px 0 -10px 0;
 					font-size: 1.25em;
-					padding: 10px 10px 12px 12px;
+					padding: 13px;
 					width: 93%;
 					line-height: 1.4;
+					border-radius: 8px;
 				}
 
 			}
