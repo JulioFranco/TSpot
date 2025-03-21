@@ -43,14 +43,6 @@ body.dark {
 		background-color: $dark-back !important;
 	}
 
-	@if $isDesk == 'true' {
-		.cta {
-			&.darkb {
-				background-color: rgba(30,41,51,0.95);
-			}
-		}
-	}
-
 	.post-list {
 
 		.futuregreen {
@@ -189,6 +181,10 @@ body.dark {
 		}
 		.cta {
 			background: #29333D !important;
+
+			&.darkb {
+				background-color: rgba(30,41,51,0.95);
+			}
 		}
 	}
 
