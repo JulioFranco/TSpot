@@ -384,6 +384,7 @@ body.interior.download {
 
 				@include break(mobile){
 				    text-align: center;
+				    margin: 0;
 				}
 
 				&.select {
