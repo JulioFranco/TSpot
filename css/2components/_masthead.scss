@@ -1038,7 +1038,7 @@
 	}//desk
 
 	@include break(mobile){
-		height: $tile-height-mobile + 10 !important;
+		height: $tile-height-mobile + 15 !important;
 
 		.wrapper {
 			position: relative;

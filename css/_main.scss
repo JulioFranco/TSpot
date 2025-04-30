@@ -77,7 +77,7 @@ ul,ol {
 
 h1 {
 	color: #1e2833;
-	font-weight: 580;
+	font-weight: 625;
 	font-size: 1.3em;
 	
 	&.lined {
@@ -86,7 +86,7 @@ h1 {
 }
 
 h2, h3, h4, h5 {
-	font-weight: 550;
+	font-weight: 580;
 }
 
 .mobile-hide {
@@ -1376,11 +1376,11 @@ body.article {
 
 	// For "why it matters" (global: home & story templates)
 	h5, #why-it-matters {
-		font-weight: 500;
+		font-weight: 550;
 		padding: 8px 0 8px;
 		color: #333;
 		font-size: 19px;
-		letter-spacing: 0;
+		letter-spacing: -0.15px;
 
 		strong {
 			color: #075bc0;
@@ -1408,7 +1408,7 @@ body.article {
 
 		&.introhome {
 			font-size: 16px;
-			font-weight: 380;
+			font-weight: 400;
 			padding: 5px 0 5px;
 			color: #444;
 			line-height: 1.55;
