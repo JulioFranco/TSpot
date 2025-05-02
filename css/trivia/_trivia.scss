@@ -147,7 +147,7 @@ ul.featured-trivias {
 
 		h2 {
 			font-size: 1.35em;
-			color: #555;
+			color: #fff;
 			line-height: 2em;
 			padding-top: 10px;
 
@@ -163,6 +163,7 @@ ul.featured-trivias {
 				width: 49%;
 				float: left;
 				margin-bottom: 12px;
+				font-size: 0.95em;
 
 				@include break(mobile){
 					width: 42%;
@@ -240,9 +241,10 @@ ul.featured-trivias {
 					color: white;
 					font-size: 1em;
 					cursor: pointer;
+				    font-size: 0.9em;
 
 					.nextq {
-						font-size: 0.8em;
+						font-size: 0.85em;
 						margin-bottom: 5px;
 
 						@include break(mobile){
@@ -311,6 +313,7 @@ ul.featured-trivias {
 			.answer {
 				font-weight: 500;
 				margin-top: 10px;
+				font-size: 0.95em;
 
 				span.label {
 					background: rgba(33, 162, 64, 0.8);
