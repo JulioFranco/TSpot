@@ -432,15 +432,32 @@ body.dark {
 	}
 
 	.tabbar {
-		h3 {
-			background: #acaeb0;
-			color: #000;
-			
+		border-bottom: 5px solid #525e69;
+
+		&.active {
+			background: #535E69;
+			color: #f5f5f5;
+		}
+
+		a {
+			background-color: #acaeb0;
+
+			h3 {
+				color: #000;
+			}
+
+			&.active{
+				h3 {
+					background: #535E69;
+					color: #f5f5f5;
+				}
+			}
+
 			&:hover {
 				background-color: #92a1b2;
 			}
 
-			&.active, &:after {
+			&.active {
 				background: #535E69;
 				color: #f5f5f5;
 
@@ -448,15 +465,25 @@ body.dark {
 					background-color: #535E69 !important;
 				}
 			}
-
+ 
 			&.pricetab {
 			    background-color: #59a059;
-			    color: #fff;
+
+				&:hover {
+					background-color: #339933;
+				}
+
+			    h3 {
+				    color: #fff;
+				}
 			}
 		}
 
-		&:after {
-			background: #535E69;
+		&.single {
+			h3 {
+				background: #535E69;
+				color: #f5f5f5;
+			}
 		}
 	}
 

@@ -1,31 +1,75 @@
 .tabbar {
-	height: 33px;
-	line-height: 33px;
-	position: relative;
+	display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 7px;
+    height: 36px;
+    line-height: 33px;
+    position: relative;
+    overflow-y: hidden;
+    border-bottom: 5px solid #F2F4F8;
 
-	@if $isAMP == 'true' {
-		margin: 0 1% 10px;
-	}
-
-	.active {
-		bottom: 3px;
-		line-height: 33px;
-		height: 36px;
+	&.active {
 		background-image: linear-gradient(to top, #F2F4F8, #e7e9ee 50%, #e7e9ee);
 	}
+
+	a {
+		flex: 0 0 auto;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    height: 36px;
+	    padding: 0 14px;
+	    background-color: #dfe3e8;
+	    text-decoration: none;
+
+		&.active {
+			background-image: linear-gradient(to top, #F2F4F8, #e7e9ee 50%, #e7e9ee);
+		}
+
+		&:hover {
+			background-color: #d3dce6;
+		}
+
+		&.pricetab {
+			background-color: #59a059; 
+		
+			&:hover {
+				background-color: #339933;
+			}
+
+			h3 {
+				color: #fff;
+			}
+		}
+		
+		&.pricehistorytab {
+			background-color: #598ca0d4;
+
+			&:hover {
+				background-color: #529cb9d4;
+			}
+
+			h3 {
+				color: #fff;
+			}
+		}
+	}
+
 	h3 {
-		background-color: #dfe3e8;
-		color: #1e2933;
 		font-weight: 550;
-		margin-right: 3px;
 		text-transform: uppercase;
-		float: left;
 		font-size: 13.5px;
-		text-align: center;
-		bottom: 3px;
-		position: relative;
-		height: 33px;
-		padding: 0 16px;
+		white-space: nowrap;
+		color: #1e2933;
+
+		a {
+			color: #1e2933;
+			
+			&:hover {
+				color: #1e2933;
+			}
+		}
 
 		span.number {
 			background: #4885DA;
@@ -48,98 +92,54 @@
 			height: 20px;
 		}
 
-		&.pricetab {
-			background-color: #59a059;
-			color: white;
-		
-				&:hover {
-					background-color: #339933;
-				}
-		}
-		&.pricehistorytab {
-			background-color: #598ca0d4;
-			color: white;
-		
-				&:hover {
-					background-color: #529cb9d4;
-				}
-		}
 
-		@if $isAMP != 'true' {
-			&:hover {
-				background-color: #d3dce6;
+		@if $isDesk == 'true' {
+			.svgbars {
+				width: 18px;
+				height: 18px;
+				float: left;
+				margin: 7px 7px 0 -6px;
+			}
+			.svgcert {
+			    width: 19px; height: 19px;
+			    margin: -1px -4px 0 3px;
 			}
 
-			@include break(v-mobile){
-				padding: 0 3.5%;
+		} @else {
+			.svgbars {
+				width: 18px;
+				height: 18px;
+			    float: left;
+			    margin: 6px 4px 0px -3px;
 			}
-			@include break(sm-mobile){
-				padding: 0 2%;
-			}
-
-			@if $isDesk == 'true' {
-				.svgbars {
-					width: 18px;
-					height: 18px;
-					float: left;
-					margin: 7px 7px 0 -6px;
-				}
-				.svgcert {
-				    width: 19px; height: 19px;
-				    float: right;
-				    margin: 7px -6px 0 7px;
-				}
-
-			} @else {
-				.svgbars {
-					width: 18px;
-					height: 18px;
-				    float: left;
-				    margin: 6px 4px 0px -3px;
-				}
-				.svgcert {
-				    width: 18px; height: 18px;
-				    float: right;
-				    margin: 7px -4px 0 5px;
-				}
-			}
-
-			a {
-				color: #1e2933;
-				
-				&:hover {
-					color: #1e2933;
-				}
+			.svgcert {
+			    width: 18px; height: 18px;
 			}
 		}
 	}
 
 	&.single {
 		h3 {
+			background-image: linear-gradient(to top, #F2F4F8, #e7e9ee 50%, #e7e9ee);
+			padding: 4px 15px 0;
+			color: #1e2933;
 			text-transform: none;
 			font-weight: 400;
 			font-size: 15px;
-			padding-top: 4px;
 			text-overflow: ellipsis;
 			white-space: nowrap;
 			overflow: hidden;
-			max-width: 85%;
 		}
-	}
 
-	&:after {
-		height: 28px;
-		width: 100%;
-		position: absolute;
-		bottom: -28px;
-		left: 0;
-		display: block;
-		content: '';
-		background-image: linear-gradient(to top, #fff, #e7e9ee);
-		background-image: none;
-		bottom: -5px;
-		height: 5px;
-		background-color: #F2F4F8;
+		@include break(mobile) {
+			a {
+				justify-content: left;
+
+				h3 {
+					padding: 4px 0 0;
+				}
+			}
+		}
 	}
 }
 
@@ -149,30 +149,13 @@
 	}
 	@else {
 		margin: 20px 0 20px 0;
-
-		.tabbar h3 {
-			padding: 0 10px 0;
-			font-size: 13px;
-		}
 	}
-
 }
 
 .dl-tabs {
-	
-	@if $isAMP == 'true' {
-		margin: 3px 8px 0px;
+	margin: -30px 0 20px 0;
 
-		&.left {
-			margin:	0 0 0 -5px;
-		}
-	}
-	@else {
-
-		margin: -30px 0 20px 0;
-
-		@include break(mobile){
-			margin: -15px 0 0px -5px;
-		}
-	}
+	@include break(mobile) {
+		margin: -15px 0 0px -9px;
+	}	
 }
