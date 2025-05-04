@@ -462,7 +462,7 @@ body.interior {
 		height: 43px;
 		overflow: visible;
 		letter-spacing: -.333px;
-		filter: grayscale(90%);
+		filter: grayscale(70%);
 		float: left;
 		background-position: 0 10px;
 
@@ -519,7 +519,8 @@ body.interior {
 			
 			span {
 				display: block;
-				font-size: 0.85em;
+				font-size: 0.88em;
+				font-weight: 550;
 				
 				&.comment-count {
 					color: $red;
@@ -529,6 +530,7 @@ body.interior {
 					color: #39579D;
 					font-size: .8em;
 					line-height: 1.5;
+					font-weight: 500;
 				}
 			}
 		}

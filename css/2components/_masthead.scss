@@ -7,7 +7,6 @@
 	&.secondary {
 		@include break(mobile) {
 			padding: 0 !important;
-			background: none !important;
 		}
 
 		.masthead {
@@ -1038,7 +1037,7 @@
 	}//desk
 
 	@include break(mobile){
-		height: $tile-height-mobile + 15 !important;
+		height: $tile-height-mobile + 14 !important;
 
 		.wrapper {
 			position: relative;

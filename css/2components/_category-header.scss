@@ -59,7 +59,7 @@ body.interior {
 			padding: 0px 15px;
 
 			@include break(v-tablet){
-				padding: 0px 10px;
+				line-height: 30px;
 			}
 
 			a {
@@ -83,6 +83,10 @@ body.interior {
 					float: right;
 					margin-top: 15px;
 					opacity: 1;
+
+					@include break(mobile){
+					    margin-top: 12px;
+					}
 				}
 			}
 		}
@@ -139,5 +143,10 @@ body.interior {
 		}
 		.sub{
 			display: block;
+
+			@include break(mobile){
+				columns: 2;
+			    padding: 6px 0;
+			}
 		}
 	}

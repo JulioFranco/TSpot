@@ -4,13 +4,13 @@ body.home {
 	padding-top: $header-height;
 
 	@include break(mobile){
-		padding-top: 81px;
+		padding-top: 80px;
 		background: rgba(30, 41, 51, 0.95);
 	}
 
 	.optblock {
 		content-visibility: auto;
-		contain-intrinsic-size: 2300px;
+		contain-intrinsic-size: 2500px;
 
 		@include break(mobile){
 			contain-intrinsic-size: 2000px;
