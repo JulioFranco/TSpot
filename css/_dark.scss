@@ -205,7 +205,7 @@ body.dark {
 
 	#content p.grey, #content p.grey a,
 	#content p.byline, #content p.byline a {
-		color: #aaa;
+		color: #ccc;
 		border: none;
 	}
 
@@ -432,7 +432,7 @@ body.dark {
 	}
 
 	.tabbar {
-		border-bottom: 5px solid #525e69;
+		border-color: #525e69;
 
 		&.active {
 			background: #535E69;
