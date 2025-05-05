@@ -23,8 +23,8 @@ ul.category-chicklets {
 		border-radius: 2px;
 		margin-right: 2px;
 
-		background-color: #0043ff;
-		@if $isDesk == 'true'  { &:hover { background-color: lighten(#0043ff,8%); } }
+		background-color: #2656da;
+		@if $isDesk == 'true'  { &:hover { background-color: lighten(#2656da,8%); } }
 
 		a {
 			display: block;
