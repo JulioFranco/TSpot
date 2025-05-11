@@ -54,38 +54,34 @@ body.interior {
 	#CategoryListOne{
 		background: #304456;
 
-		li {
-			line-height: 40px;
-			padding: 0px 15px;
+		a {
+			color: white;
+			display: block;
+			width: 100%;
+			text-decoration: none;
 
-			@include break(v-tablet){
-				line-height: 30px;
-			}
+			li {
+				line-height: 1.6em;
+				padding: 9px 15px;
+				font-weight: 500;
 
-			a {
-				color: white;
-				display: block;
-				width: 100%;
-				text-decoration: none;
-			}
-
-			.arrow {
-				opacity: 0;
-			}
-
-			&:hover, &.active {
-				background: white;
-				a {
-					color: black;
+				@include break(v-tablet){
+					padding: 6px 15px;
 				}
-				.arrow{
-					@include triangle(right,$orange,4,6);
-					float: right;
-					margin-top: 15px;
-					opacity: 1;
 
-					@include break(mobile){
-					    margin-top: 12px;
+				.arrow {
+					opacity: 0;
+				}
+
+				&:hover, &.active {
+					background: white;
+					color: black;
+
+					.arrow{
+						@include triangle(right,$orange,4,6);
+						float: right;
+						margin-top: 6px;
+						opacity: 1;
 					}
 				}
 			}
