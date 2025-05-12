@@ -3,8 +3,8 @@
 	 background: #29333D !important;
 
 	@include break(mobile) {
-		height: 350px;
-		min-height: 350px;
+		height: 550px;
+		min-height: 550px;
 		overflow-y: scroll;
 	}
 }	
@@ -22,8 +22,7 @@ ul.featured-trivias {
 	}
 
 	@include break(mobile){
-		margin-top: -10px;
-		
+
 		li {
 			margin: 15px 10px 0 5px;
 			font-size: 0.85em;
@@ -146,10 +145,9 @@ ul.featured-trivias {
 	.articleBody {
 
 		h2 {
-			font-size: 1.35em;
 			color: #fff;
-			line-height: 2em;
 			padding-top: 10px;
+			text-shadow: 1px 1px 2px #402107;
 
 			@include break(mobile){
 				font-size: 1.2em !important;
@@ -159,26 +157,35 @@ ul.featured-trivias {
 		}
 
 		#trivia-options {
-			.option_box {
-				width: 49%;
-				float: left;
-				margin-bottom: 12px;
-				font-size: 0.95em;
 
-				@include break(mobile){
-					width: 42%;
-					margin: 2% 3%;
-				}
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1rem;
+			margin-left: -1rem;
+
+			@include break(mobile) {
+				width: 96%;
+				margin-left: 0;
+			}
+
+			.option_box {
+				font-size: .95em;
+				flex: 1 1 calc(50% - 1rem);
+				display: flex;
+				align-items: stretch;
 
 				.option {
-					width: 88%;
 					border: 2px solid #dedede;
 					border-radius: 2px;
 					min-height: 40px;
-					padding: 16px 15px 15px 15px;
-					background-color: #eee;
 					font-size: 0.95em;
 					cursor: pointer;
+					padding: 1rem;
+					flex: 1;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					text-align: center;
 
 					&:hover {
 						background-color: #dadada;
@@ -209,7 +216,7 @@ ul.featured-trivias {
 
 		#next_question {
 
-			margin: 10px 4% 10px 0;
+			margin: 10px 0;
 
 			> div {
 				width: 50%;
@@ -331,7 +338,7 @@ ul.featured-trivias {
 			}
 
 			.content {
-			    margin-bottom: -30px;
+			    margin: 5px 0 -30px 0;
 
 				img {
 					float: right;
@@ -340,7 +347,7 @@ ul.featured-trivias {
 					border-radius: 6px;
 
 					@include break(mobile) {
-						margin: 15px 0;
+						margin: 20px 0 0;
 						float: none;
 						max-width: 98%;
 					}
