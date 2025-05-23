@@ -113,10 +113,6 @@ ul.featured-trivias {
 						color: rgba(255,255,255,0.9);
 						text-align: center;
 						border-radius: 4px;
-						
-						&:hover {
-
-						}
 					}
 
 					a {
@@ -230,19 +226,31 @@ ul.featured-trivias {
 		        margin: -82px 0 0 0;
 
 				> div.question {
-					width: 165px;
+					width: 161px;
+					position: relative;
+					z-index: 101;
+					margin: 15px 8px;
 				}
 			}
 
 			.question > div {
 				width: 95%;
-				border-radius: 3px;
+				border-radius: 0 6px 6px 6px;
 				min-height: 30px;
 				padding: 12px;
-				background: #798798;
+				background: #105ab2;
 				cursor: pointer;
 				letter-spacing: -.333px;
 				transition: linear 0.15s;
+
+				@include break(mobile){
+					width: 90%;
+				}
+
+				&:hover {
+					transition: linear 0.15s;
+					background: #106cd9;
+				}
 
 				a {
 					color: white;
@@ -264,11 +272,6 @@ ul.featured-trivias {
 							display: none;
 						}
 					}
-				}
-
-				&:hover {
-					transition: linear 0.15s;
-					background: #105ab2;
 				}
 			}
 
@@ -452,16 +455,11 @@ ul.featured-trivias {
 		
 		.wrapper {
 
-			@if $isAMP == 'true' {
-				width: 96%;
+			@include break(mobile) {
+				width: 95%;
+				padding: 25px 0px 15px;
 			}
-			@else {
-			
-				@include break(mobile) {
-					width: 96%;
-					padding: 25px 0px 15px;
-				}
-			}
+
 		}
 		
 		.title-group {
@@ -479,7 +477,7 @@ ul.featured-trivias {
 			    }
 
 				@include break(mobile) {
-					margin: 5px 0 -10px 0;
+					margin: 5px 0 -5px 0;
 					font-size: 1.25em;
 					padding: 13px;
 					width: 93%;
