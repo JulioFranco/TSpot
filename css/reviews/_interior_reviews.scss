@@ -10,22 +10,22 @@ body.interior {
 				min-height: 130px;
 				border-bottom: 1px solid #E5E5E5;
 				position: relative;
-				padding: 25px 30px 25px 230px;
+				padding: 30px 30px 30px 230px;
 
 				&:nth-child(odd) {
 					background: #f5f5f5;
 				}
 
 				@include break(v-mobile) {
-					padding: 12px 8px 17px 155px;
+					padding: 15px 8px 20px 160px;
 				}
 
 				h3 {
 					a {
 						color: #333;
-						font-size: 1.2em;
+						font-size: 1.25em;
 						font-weight: 500;
-						line-height: 1.4;
+						line-height: 1.5;
 
 						&:hover {
 							color: $red;

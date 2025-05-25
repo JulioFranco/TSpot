@@ -1,19 +1,20 @@
 .post-list {
 
 	article {
-		padding-bottom: 20px;
-		margin-bottom: 17px;
+		padding-bottom: 24px;
+		margin-bottom: 21px;
 		border-bottom: 2px solid #F2F4F8;
-		z-index: 1;
+		display: flex;
+	    justify-content: space-between;
+    	gap: 0.5rem;
 
 		.futuregreen {
 			color: #008000;
-		}		
+		}
 		
 		.article-img {
-			@include col(2,5,0);
-			width: 30%;
-			margin-top: 4px;
+			flex: 1;
+			text-align: center;
 
 			img {
 				max-width: 100%;
@@ -21,12 +22,7 @@
 				width: 250px;
 			}
 
-			@include break(desk) {
-				min-height: 175px;
-			}
-
 			@include break(v-mobile) {
-				min-height: 106px;
 
 				a {
 					display: inline-block;
@@ -44,12 +40,8 @@
 		}
 		
 		.article-content {
-			@include col-last(3,5,2);
-			width: 67%;
-
-			@include break(v-mobile) {
-				padding-left: 3px;
-			}
+			flex: 2;
+			padding-left: 15px;
 
 			h2 {
 				padding: 10px 0 2px;
@@ -59,18 +51,20 @@
 				}
 
 				a {
-					line-height: 1.4;
+					line-height: 1.5;
 					color: #1e2833;
 					font-weight: 580;
+					width: 100%;
+				    display: block;
 
 					@if $isDesk == 'true' {
-						font-size: 1.15em;
+						font-size: 1.25em;
 							&:hover {
 								color: #105ab2;
 							}
 					}
 					@else {
-						font-size: 1em;
+						font-size: 1.05em;
 					}
 
 					&.hover {
