@@ -23,6 +23,7 @@
 			}
 
 			@include break(v-mobile) {
+			    margin-top: 30px;
 
 				a {
 					display: inline-block;
