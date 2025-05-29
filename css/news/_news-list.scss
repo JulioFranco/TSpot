@@ -25,6 +25,10 @@
 			@include break(v-mobile) {
 			    margin-top: 30px;
 
+			    &.headonly {
+			    	margin-top: 0;
+			    }
+
 				a {
 					display: inline-block;
 					height: 106px;
