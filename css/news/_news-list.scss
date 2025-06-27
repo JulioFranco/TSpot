@@ -1,8 +1,8 @@
 .post-list {
 
 	article {
-		padding-bottom: 24px;
-		margin-bottom: 21px;
+		padding-bottom: 27px;
+		margin-bottom: 24px;
 		border-bottom: 2px solid #F2F4F8;
 		display: flex;
 	    justify-content: space-between;
@@ -21,6 +21,10 @@
 				height: auto;
 				width: 250px;
 			}
+
+				&.imgpad {
+			    	margin-top: 36px;
+			    }
 
 			@include break(v-mobile) {
 			    margin-top: 30px;
@@ -56,7 +60,7 @@
 				}
 
 				a {
-					line-height: 1.45;
+					line-height: 1.5;
 					color: #1e2833;
 					font-weight: 580;
 					width: 100%;
