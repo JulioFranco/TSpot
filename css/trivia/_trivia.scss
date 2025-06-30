@@ -299,7 +299,9 @@ ul.featured-trivias {
 					transition: all 1.2s 0.3s;
 			}
 			&.rotate {
-				//transform: rotate(180deg) scale(1);
+				.answer {
+					display: none;
+				}
 
 				.choosefirst {
 					display: block;
