@@ -54,8 +54,12 @@
 		}
 		
 		.article-content {
-			flex: 2.1;
+			flex: 2;
 			padding-left: 14px;
+
+			@include break(mobile) {
+				flex: 2.1;
+			}
 
 			h2 {
 				padding: 10px 0 2px;
