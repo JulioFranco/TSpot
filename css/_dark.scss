@@ -522,9 +522,13 @@ body.dark {
 	}
 	.social-widget {
 		background: rgb(80 80 80 / 20%);
+		border-color: #ff7f00b8 !important;
+
+		/*
 		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 		backdrop-filter: blur(5px);
-		border-color: #ff7f00b8 !important;
+		*/
+
 		li {
 			&.social {
 				background-color: transparent !important;
