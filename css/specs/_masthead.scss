@@ -1,0 +1,190 @@
+.products {
+	.featured-posts-title {
+		margin: 0 auto;
+		width: $desk;
+
+		@include break(tablet){
+			width: 94%; 
+			padding: 0px 3%;
+		}
+
+		@include break(mobile){
+			margin-top: 25px;
+		}
+
+		h1 {
+			font-weight: 600;
+			color: white;
+			font-size: 1.4em;
+			line-height: 80px;
+
+			@include break(mobile){
+				font-size: 1.1em;
+				line-height: 3;
+				width: 320px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				margin-bottom: -12px;
+			}
+		}
+
+		h4 {
+		    font-weight: 400;
+		    color: #eee;
+		    font-size: 0.75em;
+		    line-height: 1.5;
+		    letter-spacing: -.333px;
+		    margin: -15px 0 15px 0;
+
+			@include break(mobile){
+				line-height: 1.3;
+				margin: -5px 0 16px 0;
+			}
+		}
+
+	}
+
+	.masthead {
+		position: relative;
+		background: #707c8a;
+		min-height: $tile-height + 90px;
+		height: auto !important;
+
+		.featured-posts {
+			.rating {
+				font-family: $f-helvetica;
+				position: absolute;
+				bottom: 0px;
+				right: 0;
+				font-weight: 500;
+				color: white;
+				text-shadow: 1px 1px 5px rgba(0,0,0,.5);
+				padding: 0 16px;
+				line-height: 66px;
+				font-size: 1.8em;
+				border-radius: 4px 0 0 0;
+
+				@if $isDesk == 'true' {
+					@include break(tablet){
+					padding: 0 17px;
+					line-height: 60px;
+					font-size: $tall-tile-font-size;
+				}}
+				
+				@include break(mobile){
+					padding: 0 18px;
+					line-height: 60px;
+					font-size: $tall-tile-font-size;
+				}
+			}
+			.excellent {
+				background-color: rgba(0,191,23,0.65);
+			}
+			.good {
+				background-color: rgba(7,91,192,0.65);
+			}
+			.average {
+				background-color: rgba(112,33,161,0.65);
+			}
+			.bad {
+				background-color: rgba(204,0,0,0.65);
+			}
+			.none {
+				background-color: rgba(153,153,153,0.65);
+			}
+		}
+
+		@include break(mobile) {
+			.wrapper {
+				position: relative;
+				width: 100%;
+				overflow: scroll;
+				height: 220px;
+				padding: 0 !important;
+			}
+
+			.featured-posts {
+				li {
+					width: 84%;
+					height: 200px;
+					top: 0;
+					left: 0;
+					position: absolute;
+					background-size: cover;
+					background-position: center center;
+										
+					a {
+						position: relative;
+						display: block;
+						padding: 15px 10px;
+						color: white;
+						height: 200px - 30px;
+
+						hgroup {
+							width: 75%;
+							@include break(v-mobile) {
+								width: 60%;
+							}
+
+							position: absolute;
+							bottom: 15px;
+							display: block;
+
+							h2 {
+								line-height: 1.35;
+								font-size: 1.2em;
+							}
+						}
+					}
+			
+					&:nth-child(1) {
+						top: 0;
+						left: 0;
+					}
+					
+					&:nth-child(2) {
+						top: 0;
+						left: 85% + 1%;
+					}
+					
+					&:nth-child(3) {
+						top: 0;
+						left: 85%*2 + 1%*2;
+					}
+					
+					&:nth-child(4) {
+						left: 85%*3 + 1%*3;
+						top: 0;
+					}
+					
+					&:nth-child(5) {
+						left: 85%*4 + 1%*4;
+						top: 0;
+					}
+					
+					&:nth-child(6) {
+						left: 85%*5 + 1%*5;
+						top: 0;
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.products-cat .masthead {
+	@include break(tablet) {
+		.wrapper {
+			height: 0;
+		}
+	}
+	@include break(mobile) {
+		min-height: 260px;
+
+		.wrapper {
+			height: 220px;
+		}
+	}
+}
