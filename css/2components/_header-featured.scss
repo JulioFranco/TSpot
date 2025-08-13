@@ -6,46 +6,23 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 
-	@if $isAMP == 'true' {
-		@include break(mobile){
-			min-height: 260px;
-		}
-		@include break(v-mobile){
-			min-height: 350px;
-		}
-		
-		.wrapper {
-			position: relative;
-			min-height: 600px;
-
-			@include break(mobile){
-				width: 100%;
-				min-height: 260px;
-			}
-			@include break(v-mobile){
-				min-height: 300px;
-			}
-		}
+	@include break(mobile){
+		min-height: 260px;
 	}
-	@else {
+	@include break(v-mobile){
+		min-height: 355px;
+	}
+	
+	.wrapper {
+		position: relative;
+		min-height: 600px;
+
 		@include break(mobile){
+			width: 100%;
 			min-height: 260px;
 		}
 		@include break(v-mobile){
 			min-height: 355px;
-		}
-		
-		.wrapper {
-			position: relative;
-			min-height: 600px;
-
-			@include break(mobile){
-				width: 100%;
-				min-height: 260px;
-			}
-			@include break(v-mobile){
-				min-height: 355px;
-			}
 		}
 	}
 	
@@ -57,85 +34,6 @@
 		/* background: linear-gradient(200deg,rgba(30,41,51,.3) 25%,#1e2933 85%); */
 		background: linear-gradient(200deg,rgba(30,41,51,.3) 45%,#1e2933 100%);
 	}
-	
-	/*
-	.title-group {
-		@if $isAMP != 'true' {
-			position: absolute;
-			bottom: 80px;
-			width: 90%;
-
-			&.centered {
-				text-align: center;
-				width: 100%;
-				bottom: 150px;
-			
-				@include break(tablet){
-					width: 90%;
-					text-align: left;
-					bottom: 100px;
-				}
-			
-			}
-
-			@include break(mobile){
-				width: 90%;
-				margin-left: 5%;
-				bottom: 55px;
-			}
-		}
-		@else {
-			width: 90%;
-			margin-left: 5%;
-			bottom: 25px;
-			position: absolute;
-		}
-
-		
-		h1.large {
-			color: white;
-			text-shadow: 1px 1px 2px #333;
-			font-size: 2.4em;
-			line-height: 1.3;
-
-			&.xlarge {
-				font-size: 2.6em;
-			}
-
-			&.medium {
-				font-size: 2.2em;
-			}
-
-			&.small {
-				font-size: 2.1em;
-			}
-
-		}
-		
-		em {
-			color: white;
-			text-shadow: 1px 1px 5px black;
-			font-size: .7em;
-			font-style: normal;
-			padding-left: 3px;
-
-			.author {
-				a {
-					color: #eee;
-					border-bottom: 1px solid #ccc;
-					padding-bottom: 3px;
-
-					@if $isAMP != 'true' {
-						&:hover {
-							border-bottom: 1px solid $orange;
-							padding-bottom: 3px;
-						}
-					}
-				}
-			}
-		}		
-	}
-	*/
 	
 	.rating {
 		position: absolute;

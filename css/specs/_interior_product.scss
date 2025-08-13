@@ -619,11 +619,9 @@ body.interior {
 
 			.articleBody {
 				padding-top: 15px;
-				margin-right: 350px;
 
 				@include break(v-tablet){
 					padding-top: 10px;
-					margin-right: 0px;
 				}
 			}
 

@@ -1,390 +1,112 @@
-body.interior {
-
-	@if $isAMP != 'true' {
-		&.products-cat {
-			.filter_bar {
-				background: #f5f5f5;
-				padding: 8px 12px;
-				border: 1px solid #e5e5e5;
-				border-top: 0;
-				font-size: 11px;
-
-				.pills {
-					display: inline;
-					padding-left: 2px;
-				}
-
-				.sorter {
-					float: right;
-					font-size: 12px;
-					position: relative;
-					color: #555;
-					text-align: right;
-					z-index: 999;
-
-					@include break(v-mobile){
-						display: none !important;
-					}
-
-					#sorted_by {
-						font-weight: 500;
-						text-transform: lowercase;
-					}
-
-					ul {
-						position: absolute;
-						display: none;
-						right: 0;
-						top: 18px;
-						width: 120px;
-						background: #F4F5F7;
-						text-align: left;
-						border: 1px solid #ccc;
-						border-radius: 2px;
-						box-shadow: 0 1px 2px rgba(0,0,0,0.25);
-					}
-
-					a {
-						color: #333;
-						background: none !important;
-						padding: 0;
-						text-shadow: none !important;
-					}
-
-					li {
-						background: none;
-						display: block;
-						border: 0;
-						height: 25px;
-						line-height: 25px;
-						margin: 0;
-						padding: 0;
-
-						.smaller {
-							font-size: 11px;
-						}
-
-						a {
-							display: block;
-							padding: 0 5px;
-							transition: none;
-
-							&:hover {
-								background: #32404D !important;
-								color: #fff;
-								text-decoration: none;
-							}
-						}
-					}
-				}
-
-				.filter {
-					border-top: 1px solid #e5e5e5;
-					margin: 5px -10px -5px;
-					height: 30px;
-					padding: 0 10px;
-					line-height: 30px;
-					font-size: 12px;
-					background: #f0f0f0;
-					position: relative;
-					display: none;
-					background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.4), rgba(255,255,255,0));
-					background-image: linear-gradient(top, rgba(255,255,255,0.4), rgba(255,255,255,0));
-
-					.remove {
-						position: absolute;
-						right: 10px;
-						opacity: 0.75;
-
-						&:hover {
-							opacity: 1;
-						}
-					}
-
-					b {
-						color: #27333D;
-					}
-
-					input, select {
-						font-size: 12px;
-						font-family: Arial, Helvetica, sans-serif;
-					}
-
-					input[type="number"] {
-						width: 60px;
-						border: 1px solid #9f9fa1;
-						text-align: right;
-						border-radius: 2px;
-					}
-				}
-
-				div.active {
-					display: block !important;
-				}
-			}
-		}
-	}
-}
-
 #product_info {
 
-	@if $isAMP != 'true' {
+	display: flex;
+	gap: 40px;
 
-		.prodData {
-			float: left;
-			width: 63%;
-			position: relative;
+	.prodLeft {
+		
+		flex: 3;
 
-			@include break(v-tablet){
-				width: 50%;
-			}
-
- 			@include break(mobile){
-				display: block;
-				width: 100%;
- 				float: none;
-				overflow: hidden;
- 			}
+		@include break(mobile){
+			display: block;
+			width: 100%;
+			float: none;
+			overflow: hidden;
 		}
 
-		.newver {
-		  margin-bottom: 22px;
-		  padding-bottom: 20px;
-		  border-bottom: 4px solid #ff7f00;
-
-			@include break(mobile) {
-				margin-bottom: 35px;
-				border: 7px solid #eee;
-				padding: 12px 12px 25px 12px;
-				margin-left: -15px;
-				margin-right: -15px;
-			}
-		}
-
-		.newverbyline {
-		  font-size: 0.8em;
-		  font-weight: 500;
-		}
-
-		h3.newverTitle {
-		  font-size: 0.9em;
-		  padding: 7px 0 0px;
-		}
-
-		.newverImage {
-		  float: left;
-		  width: 125px;
-		  margin: 10px 10px 10px 0px;
-
-		  img {
+		.picZoom {
+		    height: 500px;
+		    width: 100%;
+		    overflow: hidden;
 		    position: relative;
-		    max-height: 85px;
-		    margin: 0;
-		  }
-		}
-
-		.score.newversion {
-		  float: left;
-		  margin: 4px 0 0 93px !important;
-		  z-index: 10;
-		  position: absolute;
-
-		  span {
-		    padding: 2px 4px;
-		    border-radius: 3px;
-		    color: #fff;
-		    font-size: 0.9em;
-		  }
-		}
-
-		.newverCheck {
-		  margin: 7px 0 0 0;
-		  font-size: 14px;
-		  line-height: 1.35em;
-
-		  a {
-		    color: #222;
-		  }
-		}
-
-		.newverPrice {
-		  font-size: 0.75em;
-		  margin: 10px 10px 20px 10px;
-
-		  a {
-		    color: $light-grey2;
-
-		    &:hover {
-		      color: #c00;
-		    }
-		  }
 		}
 
 		img {
-			max-width: 100%;
-		    height: auto;
-		    margin: 20px 0 0;
+		    height: 100%;
+		    width: 100%;
+		    object-fit: cover;
+		    object-position: center;
+		    margin: 10px 0 0;
 
 			@include break(mobile) {
 			    margin: 0 0 10px;
-			}		    
-		} 
-
-	/*
-		figure {
-			height: 435px;
-			background: white;
-			@include col(6.3,10,5);
-			width: 100%;
-			margin-top: 20px;
-
-			@include break(tablet) {
-				margin-right: 2%;
-				margin-top: 0;
-				img {
-					width: 96%;
-					height: auto;
-				}
 			}
-			
-			@include break(mobile) {
-				width: 100%;
-				height: 300px;
-			}
-
-			.imgwrap ul li {
-				img {
-					max-width: 100%;
-					max-height: 100%;
-					width: auto;
-					margin: 0 auto;
-					display: block;
-				}
-			}
-
-			.imgwrap .flex-viewport {
-				overflow: hidden;
-				height: 435px;
-
-				@include break(mobile) {
-					height: 300px;
-				}
-			}
-
-			.imgwrap.games .flex-viewport {
-				height: 395px;
-
-				@include break(mobile) {
-					height: 230px;
-				}
-			}
-
-			.imgwrap .flex-viewport ul li {
-				display: block;
-				position: relative;
-				height: 435px;
-				padding: 0;
-				text-align: center;
-				vertical-align: middle;
-				overflow: hidden;
-
-				@include break(mobile) {
-					height: 300px;
-				}
-			}
-
-			.imgwrap .flex-direction-nav a {
-				opacity: 0;
-				@include transitions(0.1s);
-			}
-			.imgwrap:hover .flex-direction-nav a {
-				opacity: 0.1;
-				@include transitions(0.1s);
-
-				&:hover {
-					opacity: 0.9;
-					@include transitions(0.1s);
-				}
-			}
-
-			.flex-control-nav {
-				width: 100%;
-				text-align: center;
-				cursor: pointer;
-				padding-top: 15px;
-
-				@include break(mobile) {
-					padding-top: 10px;
-				}
-
-				li {
-					margin: 0 3px;
-					display: inline-block;
-					zoom: 1;
-					cursor: pointer;
-				}
-			}
-
-			.flex-control-paging li a {
-				width: 5px;
-				height: 5px;
-				display: block;
-				background: #AAA;
-				cursor: pointer;
-				text-indent: -9999px;
-				border: 4px solid #fff;
-			}
-			.flex-active{
-				background: $orange !important;
-			}
-			
-			.flex-direction-nav {
-				margin: 0;
-				padding: 0;
-				list-style: none;
-				display: block;
-				position: absolute;
-				top: 0;
-				width: 100%;
-				height: 100%;
-				@include break (v-mobile) {
-					display: none;
-				}
-				li {
-					box-shadow: none;
-					-webkit-box-shadow: none;
-					&:before {
-						box-shadow: none;
-					}
-				}
-				a {
-					text-indent: -9999px;
-					position: absolute;
-					display: block;
-					background: url('https://#{$staticServer}.techspot.com/images/photoarrow.svg') no-repeat right center;
-					background-size: 30px;
-					height: 100%;
-					
-				}
-			
-				.flex-prev{
-					transform: rotate(180deg);
-					-webkit-transform: rotate(180deg);
-					display: block;	
-					width: 18%;
-					left: 2%;
-				}
-				.flex-next{
-					width: 78%;
-					right: 2%;
-				}
-			}
-
-
 		}
-	*/
-	
-	}// cierro amp?
+
+	}
+
+	.newver {
+	  margin-bottom: 22px;
+	  padding-bottom: 20px;
+	  border-bottom: 4px solid #ff7f00;
+
+		@include break(mobile) {
+			margin-bottom: 35px;
+			border: 7px solid #eee;
+			padding: 12px 12px 25px 12px;
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+	}
+
+	.newverbyline {
+	  font-size: 0.8em;
+	  font-weight: 500;
+	}
+
+	h3.newverTitle {
+	  font-size: 0.9em;
+	  padding: 7px 0 0px;
+	}
+
+	.newverImage {
+	  float: left;
+	  width: 125px;
+	  margin: 10px 10px 10px 0px;
+
+	  img {
+	    position: relative;
+	    max-height: 85px;
+	    margin: 0;
+	  }
+	}
+
+	.score.newversion {
+	  float: left;
+	  margin: 4px 0 0 93px !important;
+	  z-index: 10;
+	  position: absolute;
+
+	  span {
+	    padding: 2px 4px;
+	    border-radius: 3px;
+	    color: #fff;
+	    font-size: 0.9em;
+	  }
+	}
+
+	.newverCheck {
+	  margin: 7px 0 0 0;
+	  font-size: 14px;
+	  line-height: 1.35em;
+
+	  a {
+	    color: #222;
+	  }
+	}
+
+	.newverPrice {
+	  font-size: 0.75em;
+	  margin: 10px 10px 20px 10px;
+
+	  a {
+	    color: $light-grey2;
+
+	    &:hover {
+	      color: #c00;
+	    }
+	  }
+	}
 
 	.product_description {
 		font-size: 1.1em;
@@ -419,17 +141,8 @@ body.interior {
 	    line-height: 2.5;
 	}
 
-	.product-desc {
-		@include col-last(3.7,10,5);
-		margin-top: 15px;
-		
-		@include break(tablet) {
-			width: 40%;
-		}
-
-		@include break(v-tablet) {
-			@include col-last(1,2,5);
-		}
+	.prodRight {
+		flex: 4;
 
 		@include break(mobile) {
 			width: 100%;
@@ -574,41 +287,64 @@ body.interior {
 				text-align: center;
 			}
 		}
+	}
 
-		nav {
-			font-size: .75em;
-			text-align: left;
-		    margin-left: 110px;
+	.spec {
+		font-weight: 500;
+		color: white;
+		text-shadow: 1px 1px 5px rgba(0,0,0,.5);
+		text-align: center;
+		@include border-radius(3px);
+		cursor: crosshair;
 
-		    &.left {
-		    	margin: 0;
-		    }
+		@include trans-bg($c-good,.7);
+		&:hover {
+			@include trans-bg($c-good,.9);
+		}
 
-			ul {
-				li {
-					display: inline-block;
-					line-height: 100%;
-					&:first-child {
-						border-right: 1px solid black;
-						padding-right: 10px;
-						margin-right: 5px;
-					}
+		width: 85px;
+		font-size: 2.5em;
+		line-height: 56px;
+		padding: 3px;
 
-					a {
-						color: black;
+		@include break(mobile){
+			width: 46px;
+			font-size: 1.8em;
+			line-height: 42px;
+			padding: 3px 12px 2px;
+		}
+	
+		&.green {
+			@include trans-bg($c-excellent,.7);
 			
-						span {
-			
-							&.red {
-								color: $red;
-							}
-							&.blue {
-								color: $blue;
-							}
-						}
-					}
-				}
+			&:hover {
+				@include trans-bg($c-excellent,.9);
 			}
+		}
+		&.purple {
+			@include trans-bg($c-average,.7);
+
+			&:hover {
+				@include trans-bg($c-average,.9);
+			}
+		}
+		&.red {
+			@include trans-bg($c-bad,.7);
+
+			&:hover {
+				@include trans-bg($c-bad,.9);
+			}
+		}
+
+		.label {
+			display: block;
+			font-size: 0.24em;
+			text-transform: uppercase;
+			font-weight: 500;
+			color: #fff;
+			text-align: center;
+			line-height: 1.3;
+			padding: 2px 0 4px;
 		}
 	}
 
@@ -630,21 +366,14 @@ body.interior {
 			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 			@include border-radius(2px);
 
-			@if $isAMP == 'true' {
+			width: 80px;
+			line-height: 76px;
+			height: 76px;
+
+			@include break(mobile) {
 				width: 86px;
 				line-height: 78px;
 				height: 78px;
-
-			} @else {
-				width: 80px;
-				line-height: 76px;
-				height: 76px;
-
-				@include break(mobile) {
-					width: 86px;
-					line-height: 78px;
-					height: 78px;
-				}
 			}
 
 			@include break(v-mobile) {
@@ -668,94 +397,6 @@ body.interior {
 			background-color: #999;
 		}
 
-		.breakdown {
-			font-size: 14px;
-			margin-left: 110px;
-
-			@include break(mobile) {
-				width: 68%;
-				float: left;
-				margin-left: 5%;
-			}
-
-			a {
-				font-weight: 500;
-			}
-			ul {
-				list-style: none;
-				margin: 0;
-				padding: 10px 20px 0 0;
-
-				@include break(mobile) {
-					width: 100%;
-				}
-			}
-			li {
-				height: 16px;
-				overflow: hidden;
-			}
-			h3 {
-				font-weight: 500;
-				font-size: 15px;
-				line-height: 2em;
-			}
-			.score_level, .count, .bar {
-				float: left;
-				height: 20px;
-			}
-			.score_level {
-				font-size: 12.5px;
-				margin: 0;
-				font-weight: 500;
-				width: 70px;
-
-				@include break(mobile) {
-					width: 20%;
-				}
-
-				@include break(v-mobile) {
-					width: 28%;
-					min-width: 54px;
-				}
-			}
-			.count {
-				font-size: 12.5px;
-				text-align: right;
-				float: right;
-				margin-left: 5px;
-
-				@include break(mobile) {
-					margin-left: 0;
-					width: none;
-				}
-			}
-			.bar {
-				width: 170px;
-
-				@include break(mobile) {
-					width: 70%;
-				}
-
-				@include break(v-mobile) {
-					width: 65%;
-				}
-
-				div {
-					background: $c-good;
-					height: 9px;
-					margin-top: 4px;
-				}
-				.excellent {
-					background: $c-excellent;
-				}
-				.average {
-					background: $c-average;
-				}
-				.bad {
-					background: $c-bad;
-				}
-			}
-		}
 
 		&.bestof {
 			border-bottom: 2px solid #eee;
@@ -837,12 +478,8 @@ body.interior {
 		padding-top: 16px;
 		border-top: 2px solid #eee;
 
-		@if $isAMP == 'true' {
+		@include break(mobile) {
 			height: 60px;
-		} @else {
-			@include break(mobile) {
-				height: 60px;
-			}
 		}
 
 		.number {
@@ -876,27 +513,6 @@ body.interior {
 			}
 		}
 
-		.breakdown {
-			font-size: 13px;
-			line-height: 1.4em;
-			margin-left: 110px;
-
-			@include break(mobile) {
-				width: 65%;
-				float: left;
-				margin-left: 5%;
-			}
-
-			a {
-				font-weight: 500;
-			}
-
-			h3 {
-				font-weight: 500;
-				font-size: 15px;
-				line-height: 2em;
-			}
-		}
 	}
 
 	.pros,
@@ -921,12 +537,8 @@ body.interior {
 		}
 	}
 	.pros {
-		@if $isAMP == 'true' {
+		@include break(mobile) {
 			@include col(1,2,5);
-		} @else {
-			@include break(mobile) {
-				@include col(1,2,5);
-			}
 		}
 
 		@include break(v-mobile) {
@@ -935,12 +547,8 @@ body.interior {
 		}
 	}
 	.cons {
-		@if $isAMP == 'true' {
+		@include break(mobile) {
 			@include col-last(1,2,5);
-		} @else {
-			@include break(mobile) {
-				@include col-last(1,2,5);
-			}
 		}
 
 		@include break(v-mobile) {
