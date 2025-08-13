@@ -297,9 +297,9 @@
 		@include border-radius(3px);
 		cursor: crosshair;
 
-		@include trans-bg($c-good,.7);
+		@include trans-bg($c-good,.9);
 		&:hover {
-			@include trans-bg($c-good,.9);
+			@include trans-bg($c-good,1);
 		}
 
 		width: 85px;
@@ -655,48 +655,7 @@
 
 
 %var_looked-at_expert-reviews {
-	@include break(mobile) {
-		margin-bottom: 35px;
-	}
 
-	& > h3 {
-		border-bottom: 2px solid $blue;
-		line-height: 220%;
-		position: relative;
-		margin-bottom: 10px;
-	    letter-spacing: -0.333px;
-    	color: #444;
-    	font-size: 1.1em;
-
-		&:after {
-			position: absolute;
-			content:"";
-			display: block;
-			left: 60px; bottom: -8px;
-			width: 5px; height: 7px;
-			margin-left: -5px;
-			@include triangle(down,$blue,4,6);
-		}
-
-		span {
-			position: relative;
-			display: inline-block;
-
-			&:after {
-				position: absolute;
-				content:"";
-				display: block;
-				left: 50%; bottom: 0;
-				width: 5px; height: 7px;
-				margin-left: -5px;
-				@include triangle(up,$blue,4,6);
-				@include break (v-mobile){
-					display: none;
-				}
-			
-			}
-		}
-	} 
 }
 
 .also-looked-at {
@@ -899,7 +858,7 @@
 		margin: -5px 10px 0 10px;
 	}
 	input.uno {
-		width: 60px;
+		width: 60px; 
 		margin-left: 5px;
 	}
 	input.dos {
