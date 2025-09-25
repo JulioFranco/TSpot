@@ -14,7 +14,6 @@ img.responsive {
 body {
 	font-family: $f-primary;
 	font-optical-sizing: auto;
-	letter-spacing: -.2px;
 	background-color: $light-grey;
 	font-size: 1.2em;
 	-webkit-font-smoothing: antialiased;
@@ -79,6 +78,7 @@ h1 {
 	color: #1e2833;
 	font-weight: 625;
 	font-size: 1.3em;
+	letter-spacing: -.2px;
 	
 	&.lined {
 		border-bottom: 2px solid #c3c3c3;
@@ -86,6 +86,7 @@ h1 {
 }
 
 h2, h3, h4, h5 {
+	letter-spacing: -.2px;
 	font-weight: 625;
     text-wrap: balance;
 }
@@ -187,6 +188,7 @@ img.b-lazy.b-loaded {
 	text-align: center;
 	padding: 15px 3%;
 	margin: 5px auto 10px;
+	letter-spacing: -.2px;
 
 	a {
 		color: inherit;
@@ -236,6 +238,7 @@ img.b-lazy.b-loaded {
     margin: 0 0 30px;
     line-height: 1.6;
     width: 300px;
+    letter-spacing: -.2px;
 
 	a {
 		color: inherit;
@@ -459,7 +462,6 @@ img.b-lazy.b-loaded {
 					padding-top: 8px;
 					margin: 0 auto 5px;
 					line-height: 1.6;
-					letter-spacing: 0;
 				}
 
 				&:hover {
@@ -1285,11 +1287,9 @@ body.article {
 		font-family: $f-paragraph;
 		line-height: 1.6;
 		padding: 13px 0;
-		letter-spacing: 0;
 
 		em {
 			font-family: $f-helvetica;
-			letter-spacing: -.25px;
 		}
 
 		&.small, &.byline {
@@ -1385,7 +1385,6 @@ body.article {
 		padding: 8px 0 8px;
 		color: #333;
 		font-size: 19px;
-		// letter-spacing: -0.15px;
 
 		strong {
 			color: #075bc0;
