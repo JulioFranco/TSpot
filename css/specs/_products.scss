@@ -4,8 +4,8 @@
 	gap: 40px;
 
 	.prodLeft {
-		
-		flex: 3;
+		flex: 3.5 1 0;         /* ratio part */
+		min-width: 380px;    /* never go smaller than this */
 
 		@include break(mobile){
 			display: block;
@@ -26,7 +26,7 @@
 		    width: 100%;
 		    object-fit: cover;
 		    object-position: center;
-		    margin: 10px 0 0;
+		    margin: 0;
 
 			@include break(mobile) {
 			    margin: 0 0 10px;
@@ -109,12 +109,13 @@
 	}
 
 	.product_description {
-		font-size: 1.1em;
+		font-size: 0.9em;
+		margin: 0;
+		padding: 15px 10px 5px;
 		line-height: 1.4;
 		color: $dark-grey2;
 	    float: left;
 	    font-family: $f-paragraph;
-	    margin-right: 15px;
 
     	&.smaller {
     		font-size: 1em;
@@ -139,10 +140,12 @@
 	    font-size: 0.75em;
 	    color: #555;
 	    line-height: 2.5;
+	    padding-left: 10px;
 	}
 
 	.prodRight {
-		flex: 4;
+		flex: 5 1 0;         /* ratio part */
+		min-width: 0;        /* important to allow flexing when content is long */
 
 		@include break(mobile) {
 			width: 100%;
