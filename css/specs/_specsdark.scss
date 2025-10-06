@@ -71,12 +71,26 @@ body.dark {
 		}
 	}
 
-
 	#product_info {
 		background: transparent;
 		img {
 			border-radius: 4px;
 		}
+
+		.spec {
+			background-color: rgb(44 84 132 / 90%);
+
+			&.purple {
+			    background-color: rgb(84 62 98 / 70%);
+			}
+			&.green {
+			    background-color: rgb(61 131 61 / 70%);
+			}
+			&.red {
+			    background-color: rgb(132 49 49 / 70%);
+			}
+		}
+
 		.score {
 			&.bestof {
 				a {
@@ -174,14 +188,6 @@ body.dark {
 		border-bottom: 4px solid #535E69;
 	}
 
-	#product_info .newver {
-		border-bottom: 4px solid #535E69;
-
-		@include break(v-mobile) {
-			border: 7px solid #535E69;
-		}
-	}
-
 	#product_info .product-desc .price-widget .price-count, #product_info .product-desc .price-widget #artificialBorder {
 		background-color: #339933a3;
 	}
@@ -194,7 +200,8 @@ body.dark {
 		color: #eee;
 	}
 
-	&.interior.product #content .articleBody ul.pros li:before, &.interior.product #content .articleBody ul.cons li:before {
+	&.interior.product #content ul.pros li:before,
+	&.interior.product #content ul.cons li:before {
 		border-radius: 10px;
 	}
 
