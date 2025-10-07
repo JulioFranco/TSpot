@@ -8,10 +8,15 @@ body.interior {
 				margin-top: 0px !important;
 			}
 
+			section.space {
+				margin-bottom: 45px;
+			}
+
 		    .splitcontainer {
 		      display: flex;
 		      gap: 20px;
 		    }
+
 		    .column {
 		      flex: 1;
 		      padding: 10px;
@@ -29,6 +34,9 @@ body.interior {
 			}
 
 			#pros_cons {
+			    width: 90%;
+    			margin-left: 10px;
+
 				@include break(mobile){
 					padding-top: 0px !important;
 				}
@@ -83,7 +91,7 @@ body.interior {
 				.priceGraph {
 					margin-right: 350px;
 					height: 350px;
-					margin-bottom: 50px;
+					margin-bottom: 70px;
 					padding: 15px;
 
 					@include break(v-tablet){
@@ -557,16 +565,19 @@ h3.newverTitle {
 
 table.article-table {
 	font-size: .8em;
-	table-layout: fixed;
+	width: 100%;
+	table-layout: auto;
+	border-collapse: collapse;
+	line-height: 1.55;
 
 	strong {
 		font-weight: 550;
 	}
 
 	td {
-		white-space: normal;        /* allow wrapping */
-		overflow-wrap: anywhere;    /* safe fallback for long words */
-		text-wrap: balance;         /* ask browser to balance line breaks */
+		white-space: normal;
+		overflow-wrap: anywhere;
+		text-wrap: balance;
 
 		&.tright {
 			text-align: right;
@@ -678,19 +689,16 @@ table.article-table {
 
 
 .two-scores {
-	padding: 10px;
-
-    &.splitcontainer {
-      gap: 10px;
-    }
-
-    .column {
-      flex: 1;
-      padding: 10px;
-    }
+	padding: 20px 0 35px;
+	display: flex;              /* Enables flex layout */
+	justify-content: center;    /* Centers children horizontally */
+	align-items: center;        /* Centers children vertically (optional) */
+	gap: 40px;                  /* Adds space between the two score boxes */
 }
 
 .score {
+	display: flex;
+	align-items: center;
 
 	.number {
 		float: left;
@@ -706,27 +714,31 @@ table.article-table {
 		line-height: 60px;
 		height: 60px;
 
-		@include break(mobile) {
-			width: 86px;
-			line-height: 78px;
-			height: 78px;
-		}
-
-		@include break(v-mobile) {
-			font-size: 42px;
-			margin: 15px 0 0;
-		}
-
 		&.useryellow {
 			background-color: #d57700;
 		}
+
+		@include break(mobile) {
+			font-size: 42px;
+			margin: 15px 0 0;
+		}
 	}
 
+	.scoretext {
+		display: inline-block;
+		width: 200px;
+		font-size: 0.8em;
+		padding-top: 5px;
+		font-weight: 475;
 
+		p {
+			padding: 0 !important;
+			line-height: 1.45em !important;
+		}
+	}
 }
 
-.pros,
-.cons {
+.pros, .cons {
 	padding-left: 10px;
 	margin-bottom: 20px;
 	margin-top: 10px;
@@ -741,6 +753,7 @@ table.article-table {
 		font-size: .7em;
 	}
 }
+
 .pros {
 	@include break(mobile) {
 		@include col(1,2,5);
@@ -998,20 +1011,14 @@ ul.pills {
 
 .expert-reviews-and-ratings {
 
-	margin-bottom: 45px;
-
 	.comment {
 		position: relative;
-		padding: 20px 15px 25px 10px;
+		padding: 20px 15px 25px 20px;
 		min-height: 100px;
 		border-bottom: 1px solid #eee !important;
 
 		&:nth-child(odd) {
 			background: #f5f5f5;
-		}
-
-		@include break(mobile) {
-			padding: 15px 10px 15px 10px;
 		}
 	
 		.rating {
@@ -1021,7 +1028,7 @@ ul.pills {
 			font-size: 1.3em;
 			padding: 0 10px;
 			line-height: 165%;
-			left: 12px;
+			left: 22px;
 			position: absolute;
 			display: inline-block;
 			top: 35px;
