@@ -79,6 +79,16 @@ body.dark {
 		}
 
 		.spec {
+			&.blue {
+				background-color: #255692;
+					&:hover {
+						background-color: #075bc0;
+					}
+			}
+		}
+		
+		/*
+		.spec {
 			background-color: rgb(44 84 132 / 90%);
 
 			&.purple {
@@ -91,6 +101,7 @@ body.dark {
 			    background-color: rgb(132 49 49 / 70%);
 			}
 		}
+		*/
 
 		.bestof {
 			a {
