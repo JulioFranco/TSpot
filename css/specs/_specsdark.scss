@@ -10,7 +10,8 @@ body.dark {
 	.product_description a,
 	.price-history .legend a,
 	#product_info .bestof a .breakdown h3,
-	.scoretext p a
+	.scoretext p a,
+	.benchmark-disclaimer a
 	{
 		color: $dark-link;
 		&:hover { color: $dark-link-hov; }
@@ -247,11 +248,19 @@ body.dark {
 			tr:nth-child(even) {
 				background: #37414b !important;
 			}
+
+				td {
+					&.currentPrice a {
+						color: #8dbc83;
+					}
+				}
+
 		}
 
 		.sorter {
 			a {
-				color: $dark-link-hov;
+				color: #c7ad91;
+
 				&:hover {
 					color: #f5f5f5;
 				}

@@ -32,10 +32,10 @@ body.interior {
 		      flex: 1;
 		      padding: 10px;
 
-			  @include break(mobile) {
-			    flex: 0 0 auto;
-			    width: 100%;
-			  }
+				@include break(mobile) {
+					flex: 0 0 auto;
+					padding: 0;
+				}
 		    }
 
 			.section-header.green {
@@ -48,6 +48,11 @@ body.interior {
 				line-height: 1.7;
 				font-size: 1.6em;
 			    white-space: normal;
+
+				@include break(mobile) {
+					font-size: 1.45em;
+				}
+
 			}
 
 			#pros_cons {
@@ -104,10 +109,9 @@ body.interior {
 					padding: 15px;
 
 					@include break(v-tablet){
-						margin-right: 0;
-						height: 350px;
-						margin-bottom: 0px;
-						width: 100%;
+						width: 96%;
+						padding: 0;
+						margin: 0 auto;
 					}
 				}
 
@@ -118,7 +122,7 @@ body.interior {
 
 					@include break(v-tablet){
 						float: none;
-						padding-top: 5px;
+						padding: 0 0 10px;
 						width: 100%;
 					}
 				}
@@ -130,6 +134,7 @@ body.interior {
 					@include break(mobile){
 						text-align: center;
 						font-size: 0.85em;
+						margin-top: 15px;
 					}
 				}
 
@@ -226,6 +231,14 @@ body.interior {
 		gap: 16px;
 	}
 
+}
+
+.tabbar h3 .svgbars {
+    float: right;
+	width: 16px;
+    height: 16px;
+    margin: 8px -5px 0 7px;
+    opacity: 0.8;
 }
 
 .prodLeft {
@@ -497,7 +510,7 @@ h3.newverTitle {
     }
 
     @include break(mobile){
-    	font-size: 0.8em;
+    	font-size: 0.85em;
     	margin: 5px 0 12px;
         padding: 10px 5px 0px;
     }
@@ -688,7 +701,7 @@ table.article-table {
 
 
 .two-scores {
-	padding: 20px 0 35px;
+	padding: 20px 0 45px;
 	display: flex;          
 	justify-content: center;
 	align-items: center;    
@@ -731,7 +744,6 @@ table.article-table {
 		}
 
 		@include break(mobile) {
-		  font-size: 42px;
 		  margin: 0 0 10px 0; // space below the number
 		}
 	}
@@ -750,7 +762,6 @@ table.article-table {
 
 		@include break(mobile) {
 		  width: 100%;        // take full width on mobile
-		  font-size: 0.9em;   // slightly larger for readability
 		}
 
 	}
@@ -770,26 +781,9 @@ table.article-table {
 	ul {
 		font-size: .7em;
 	}
-}
 
-.pros {
 	@include break(mobile) {
-		@include col(1,2,5);
-	}
-
-	@include break(v-mobile) {
-		@include col(1,1,0);
-		margin-bottom: 0px;
-	}
-}
-.cons {
-	@include break(mobile) {
-		@include col-last(1,2,5);
-	}
-
-	@include break(v-mobile) {
-		@include col(1,1,0);
-		margin-bottom: 20px;
+		float: none;
 	}
 }
 
@@ -833,6 +827,17 @@ ul.pills {
 
 
 /* ---------- Benchmark NAV ---------- */
+
+.benchmark-disclaimer {
+	font-size: 0.8em;
+    width: 98%;
+    margin: 0 auto;
+
+    @include break(mobile) {
+		margin: -45px auto 40px;
+		font-size: 0.75em;
+    }
+}
 
 .benchmarks-nav {
 	display: flex;
@@ -921,6 +926,11 @@ ul.pills {
 
 	margin-bottom: 25px;
 
+	@include break(mobile){
+		margin: 0 !important;
+    	padding: 20px 20px 0 20px;
+	}
+
 	ul.teaser-list {
 		padding: 20px 0;
 		
@@ -939,17 +949,16 @@ ul.pills {
 				color: white;
 			}
 
-			//Related products or Product.php
 			@include break(v-mobile){
 				@include col(1,1,0);
-				margin-bottom: 35px;
+				margin-bottom: 30px;
 			}
 			&:nth-child(4), &:nth-child(8){
 				@include break(v-mobile){
 					@include col(1,1,0);
+					margin-bottom: 0;
 				}
 			}
-			//END - Related products or Product.php
 
 			.img-wrap {
 				background-size: 110%;
@@ -1113,9 +1122,13 @@ ul.pills {
 
 .expert-reviews-and-ratings {
 
+	.reviews_list {
+		margin-top: -30px;
+	}
+
 	.comment {
 		position: relative;
-		padding: 20px 15px 25px 20px;
+		padding: 25px 15px 25px 20px;
 		min-height: 100px;
 		border-bottom: 1px solid #eee !important;
 
@@ -1142,7 +1155,7 @@ ul.pills {
 				left: 0;
 				float: right;
 				position: relative;
-				margin: 0 0 10px 10px;
+				margin: 0 0 10px 20px;
 			}
 		}
 	
