@@ -42,17 +42,17 @@ body.interior {
 			    border-top: 5px solid #7fa87f;
 			}
 
+			.section-header {
+				font-weight: 600 !important;
+				text-transform: none;
+				line-height: 1.7;
+				font-size: 1.6em;
+			    white-space: normal;
+			}
+
 			#pros_cons {
 			    width: 90%;
     			margin-left: 10px;
-
-				.section-header {
-					font-weight: 600 !important;
-					text-transform: none;
-					line-height: 1.7;
-					font-size: 1.6em;
-				    white-space: normal;
-				}
 			}
 
 			.articleBody {
@@ -829,6 +829,90 @@ ul.pills {
 			}
 		}
 	}
+}
+
+
+/* ---------- Benchmark NAV ---------- */
+
+.benchmarks-nav {
+	display: flex;
+	gap: 0.75rem;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+    margin: 25px auto 35px;
+    width: 90%;
+
+	@include break(mobile) {
+	    display: grid;
+	    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	    gap: 0.6rem;
+	}
+
+	/* Make the row compress elegantly on narrow viewports */
+	.bn-btn {
+		flex: 1 1 240px; // tries to keep them on one line; wraps when needed
+		max-width: 420px; // prevents giant buttons on ultra-wide screens
+	}
+}
+
+/* ---------- BUTTON ---------- */
+
+.bn-btn {
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  text-align: center;
+
+  color: var(--btn-fg);
+  background: var(--btn-bg);
+  border: 1px solid var(--btn-border);
+  border-radius: 5px;
+
+  padding: clamp(0.6rem, 1.2vw, 0.8rem) clamp(1rem, 2.2vw, 1.25rem);
+  font-weight: 550;
+  letter-spacing: 0.01em;
+  font-size: 0.85em;
+
+  box-shadow: var(--btn-shadow);
+  transition:
+    transform 160ms cubic-bezier(.2,.6,.3,1),
+    box-shadow 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease;
+
+  /* Subtle gradient sheen for a premium feel (very light) */
+  background-image:
+    linear-gradient(to bottom, rgba(255,255,255,.06), rgba(0,0,0,.03));
+  background-blend-mode: overlay;
+
+  &:hover {
+    background-color: var(--btn-bg-hover);
+    transform: translateY(-1px);
+    box-shadow: var(--btn-shadow-hover);
+    color: var(--btn-a-hover);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: var(--btn-shadow-active);
+  }
+
+  /* Keyboard focus ring (accessible + visible on dark) */
+  &:focus-visible {
+    outline: none;
+    box-shadow:
+      0 0 0 2px color-mix(in oklab, var(--btn-bg), transparent 0%),
+      0 0 0 4px color-mix(in oklab, #4f46e5, white 35%);
+  }
+
+	@include break(mobile) {
+	    /* Make them easier to tap */
+	    padding: 0.85rem 1rem;
+	    font-size: 1rem;
+	}
+
 }
 
 
