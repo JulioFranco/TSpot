@@ -420,68 +420,35 @@ body.interior {
 // NEW VERSION
 
 .newver {
-  margin-bottom: 22px;
-  padding-bottom: 20px;
+	max-width: 400px;
+	padding: 1.2rem;
+	font-size: 0.85em;
+	margin: 0 auto;
+	line-height: 1.6;
+	font-weight: 500;
 }
 
-.newverbyline {
-  font-size: 0.8em;
-  font-weight: 500;
+.newver > a {
+	display: grid;
+	grid-template-columns: 140px 1fr;
+	gap: 1rem;
+	align-items: center;
+	color: #333;
+
+	&:hover {
+		color: #105ab2;
+	}
 }
 
-h3.newverTitle {
-  font-size: 0.9em;
-  padding: 7px 0 0px;
+.newver img {
+  width: 140px;
+  border-radius: 8px;
+  display: block;
+  aspect-ratio: 4/3;
+  object-fit: cover;
 }
 
-.newverImage {
-  float: left;
-  width: 125px;
-  margin: 10px 10px 10px 0px;
-
-  img {
-    position: relative;
-    max-height: 85px;
-    margin: 0;
-  }
-}
-
-.newversion {
-  float: left;
-  margin: 4px 0 0 93px !important;
-  z-index: 10;
-  position: absolute;
-
-  span {
-    padding: 2px 4px;
-    border-radius: 3px;
-    color: #fff;
-    font-size: 0.9em;
-  }
-}
-
-.newverCheck {
-  margin: 7px 0 0 0;
-  font-size: 14px;
-  line-height: 1.35em;
-
-  a {
-    color: #222;
-  }
-}
-
-.newverPrice {
-  font-size: 0.75em;
-  margin: 10px 10px 20px 10px;
-
-  a {
-    color: $light-grey2;
-
-    &:hover {
-      color: #c00;
-    }
-  }
-}
+.newver .newvercontent .label { opacity: .8; font-size: 0.85em; }
 
 // END ---- NEW VERSION
 
@@ -652,7 +619,10 @@ table.article-table {
 
 
 .bestof {
-	border-bottom: 2px solid #eee;
+	
+	&.withBorder {
+		border-bottom: 2px solid #eee;
+	}
 
 	a {
 		.awardlogo {

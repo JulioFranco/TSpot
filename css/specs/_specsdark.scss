@@ -6,9 +6,9 @@ body.dark {
 	#product_info .product-desc .last-updated a,
 	.expert-reviews-and-ratings .comment a,
 	#product_info .score .breakdown a,
-	.newverTitle a,
 	.product_description a,
 	.price-history .legend a,
+	.newver > a,
 	#product_info .bestof a .breakdown h3,
 	.scoretext p a,
 	.benchmark-disclaimer a
@@ -133,15 +133,7 @@ body.dark {
 				}
 			}
 		}
-		.newverPrice {
-			a {
-				color: #ffd5ac;
-				font-weight: 500;
-				&:hover {
-					color: #fbac5f;
-				}
-			}
-		}
+
 		.product-desc {
 			nav {
 				ul {
@@ -195,12 +187,7 @@ body.dark {
 		border-top: 6px solid #535E69;
 	}
 
-	.also-looked-at>h3, .expert-reviews-and-ratings>h3,
-	#product_info .newverCheck a {
-		color: #f5f5f5;
-	}
-
-	#product_info .bestof {
+	#product_info .bestof.withBorder {
 		border-bottom: 4px solid #535E69;
 	}
 
