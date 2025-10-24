@@ -133,11 +133,12 @@ body.interior {
 
 					@include break(mobile){
 						text-align: center;
-						font-size: 0.85em;
+						font-size: 0.9em;
 						margin-top: 15px;
 					}
 				}
 
+				/*
 				.stat {
 					color: #05408f;
 					font-size: 0.65em;
@@ -147,10 +148,10 @@ body.interior {
 						text-align: center;
 					}
 				}
+				*/
 
 				.priceTable {
 					font-size: 0.7em;
-					font-family: Arial, sans-serif;
 					margin-top: 20px;
 					color: #444;
 				}
@@ -194,8 +195,14 @@ body.interior {
 			.sorter {
 				float: left;
 				border: 1px solid #ccc;
-				padding: 3px 7px;
-				margin: 7px 0 2px;
+				padding: 6px;
+				margin: 12px auto 10px;
+				text-align: center;
+				width: 100px;
+
+				@include break(mobile){
+					float: none;
+				}
 			}
 
 			a.wide-button {
@@ -796,7 +803,7 @@ ul.pills {
     margin: 0 auto;
 
     @include break(mobile) {
-		margin: -45px auto 40px;
+		margin: -5px auto 50px;
 		font-size: 0.75em;
     }
 }

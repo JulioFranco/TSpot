@@ -63,15 +63,6 @@ body.dark {
 			border: 1px solid #212a33;
 		}
 	}
-	&.product {
-		#content {
-			.price-history {
-				.sorter {
-					margin: 7px 0 12px;
-				}
-			}
-		}
-	}
 
 	#product_info {
 		background: transparent;
@@ -214,12 +205,6 @@ body.dark {
 		opacity: 0.86;
 	}
 
-	&.interior.products-cat .filter_bar .sorter,
-	&.interior.products-cat .filter_bar .sorter a,
-	.expert-reviews-and-ratings .comment cite time {
-		color: #888;
-	}
-
 	.best-logo img, #product_info .bestof a .awardlogo img,
 	.best-logo2 img, #product_info .bestof a .awardlogo2 img {
 		filter: invert(1) hue-rotate(180deg) opacity(0.7);
@@ -238,15 +223,17 @@ body.dark {
 
 				td {
 					&.currentPrice a {
-						color: #8dbc83;
+						color: #8dbc83 !important;
 					}
 				}
 
 		}
 
 		.sorter {
+			border: 1px solid #f3b26d !important;
+
 			a {
-				color: #c7ad91;
+				color: #da9c59;
 
 				&:hover {
 					color: #f5f5f5;
