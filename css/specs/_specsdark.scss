@@ -30,7 +30,7 @@ body.dark {
 				}
 				h4 {
 					a {
-						color: #c4c4c4;
+						color: #d8d8d8;
 						&:hover {
 							color: $dark-link-hov-orange;
 						}
@@ -40,7 +40,6 @@ body.dark {
 			li {
 				border-bottom: 1px solid #535E69;
 				border-top: 0px solid #535E69;
-				padding: 4px 2%;
 			}
 			.prod-meta {
 				.price {
