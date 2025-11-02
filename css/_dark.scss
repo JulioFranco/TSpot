@@ -563,6 +563,7 @@ body.dark {
 								form {
 									.text {
 										color: #333 !important;
+										background: #fff !important;
 									}
 								}
 							}
@@ -583,14 +584,6 @@ body.dark {
 		li {
 			&:nth-last-child(2) {
 				border-right: none;
-			}
-		}
-	}
-
-	.jobbioapp {
-		.v1_6 {
-			.item {
-				background-color: #e7e7e7;
 			}
 		}
 	}

@@ -284,253 +284,47 @@ body.interior {
 			}
 		}
 
-		@if $isAMP != 'true' {
-			#LookUpTop {
-				margin-bottom:20px;
-				text-decoration: none;
+	#LookUpTop {
+		margin-bottom:20px;
+		text-decoration: none;
 
-				.SideTitle{
-					background-color: $blue;
-					padding: 0px 2%;
-				}
-
-				.form_search {
-					overflow: hidden;
-				}
-
-				h3 {
-					color: white;
-					line-height: 34px;
-					font-size: 0.95em;
-				}
-
-				input[type=text] {
-					border: none;
-					height: 48px;
-					width: 96%;
-					border-radius: 0;
-					border: none;
-					box-shadow: none;
-					font-family: $f-condensed;
-					line-height: 30px;
-					font-weight: 500;
-					color: #333;
-					font-size: 1.1em !important;
-					padding: 0px 2% !important;
-				}
-
-				input#productsearch {
-					box-sizing: border-box;
-				}
-			}
+		.form_search {
+			overflow: hidden;
 		}
 
-/*
-		#CategoryListMobile {
-			background: #304456;
-			margin-bottom: 20px;
-			width: 100%;
-			text-transform: uppercase;
-			font-family: $f-condensed;
+		h3 {
 			color: white;
-			
-			@if $isAMP == 'true' {
-				font-size: 0.65em;
-				display: block;
-			
-			} @else {
-				font-size: 0.7em;
-				display: none;
-
-				@include break(v-tablet) {
-					font-size: 0.65em;
-				}
-				
-				@include break(mobile) {
-					display: block;
-				}
-			}
-			
-			#CategoryList {
-				background: #304456;
-			}
-			
-			li, section { // section tag is used for AMP
-				padding: 0px 0px;
-
-				@if $isAMP == 'true' {
-					line-height: 20px;
-				} @else {
-					line-height: 40px;
-				}
-
-				a {
-					color: white;
-					display: block;
-					width: 100%;
-					text-decoration: none;
-				}
-				@if $isAMP != 'true' {
-					.arrow {
-						opacity: 0;
-					}
-				}				
-			}
-
-
-			@if $isAMP != 'true' {
-				.SideTitle{
-					line-height: 31px;
-					background-color: #7d8895;
-					padding: 0px 15px;
-					
-					@include break(v-tablet) {
-						padding: 0px 10px;
-					}
-					
-					.arrow {
-						@include triangle(down,white,4,6);
-						float: right;
-						margin-top: 12px;
-						opacity: 1;
-						margin-right: 4px;
-					}
-				}
-			}
-
-			@if $isAMP == 'true' {
-				amp-accordion section {
-					> h3 {
-						border: 0px;
-					}
-				}
-			}
-
-			@if $isAMP != 'true' {
-				.has_more{
-					.SideTitle {
-						.arrow {
-							@include triangle(left,white,4,6);
-							float: right;
-							margin-top: -18px;
-						}
-					}
-					.SideProdContent{
-						display: none;
-					}
-				}
-				.open{
-					.SideTitle {
-						.arrow {
-							@include triangle(down,white,4,6);
-							float: right;
-							margin-top: -18px;
-						}
-					}
-					.SideProdContent {
-						display: block;
-					}
-				}
-			}
-
-			.col-1-2 {
-				width: 45%;
-
-				@if $isAMP == 'true' {
-					float: left;
-				}
-			}
-			.col-1-2-last{
-				width: 45%;
-
-				@if $isAMP == 'true' {
-					float: right;
-				}
-			}
-
-			.SideProdContent {
-				@if $isAMP == 'true' {
-					padding: 10px 0px 10px 10px;
-				} @else {
-					padding: 17px;
-					background-color:#324455;
-
-					@include break(v-tablet) {
-						padding: 10px 0px 10px 10px;
-					}
-				}
-				
-				@if $isAMP != 'true' {
-					li {
-						line-height: 10px;
-						margin-bottom: 14px;
-						border: none;
-						a {
-							.arrow {
-								opacity: 0;
-								position: absolute;
-								left: -10px;
-								width: 6px; height: 4px;
-								@include triangle(right,$orange,4,6);
-
-								@if $isAMP == 'true' {
-									margin: 0;
-								} @else {
-									margin: 0 !important;
-								}
-							}
-						}
-						a:hover, a.active {
-							.arrow {
-								opacity: 1;
-								left: -10px;
-								width: 6px; height: 4px;
-								@include triangle(right,$orange,4,6);
-
-								@if $isAMP == 'true' {
-									margin: 0;
-								} @else {
-									margin: 0 !important;
-								}
-							}
-						}
-					}
-				}
-			}
-
-			@if $isAMP != 'true' {
-				.computer-hardware {
-					height: 160px;
-				}
-				.pcs-devices {
-					height: 40px;
-				}
-				.electronics {
-					height: 65px;
-				}
-			}
-		}
-*/
-
-
-		@if $isAMP == 'true' {
-			.takeshortcut {
-				background-color: #E87502;
-				margin-bottom: 25px;
-			}
-
-			.imgtakeshortcut {
-				float: left;
-				margin-top: -8px;
-				margin-right: 10px;
-			}
+			line-height: 34px;
+			font-size: 0.95em;
 		}
 
-		@if $isAMP != 'true' {
+		input[type=text] {
+			border: none;
+			height: 48px;
+			width: 96%;
+			border-radius: 0;
+			border: none;
+			box-shadow: none;
+			font-family: $f-condensed;
+			line-height: 30px;
+			font-weight: 500;
+			color: #333;
+			font-size: 0.9em;
+			padding: 0px 2%;
+			background-color: #e9e9e9;
+			border-radius: 0px 0px 3px 3px;
+
+			@include break(mobile) {
+				padding: 0px 1% 0 3%;
+			}			
+		}
+
+		input#productsearch {
+			box-sizing: border-box;
+		}
+	}
+
 			.sidebar {
-				//@include col-last(1,3,0);
-				//width: 27%;
-
 				@include break(mobile){
 					display: none;
 				}
@@ -551,48 +345,9 @@ body.interior {
 					
 				}
 
-				/*
-				#LookUp {
-					text-transform: uppercase;
-					font-family: $f-condensed;
-					font-size: 0.7em;
-					@include break(v-tablet){
-						font-size: 0.6em;
-					}
-					a {
-						color: white;
-						text-decoration: none;
-					}
-
-					input[type=text] {
-						border: none;
-						height: 64px;
-						border-radius: 0;
-						border: none;
-						box-shadow: none;
-						font-family: $f-condensed;
-						line-height: 64px;
-						font-size: 2em;
-						font-weight: 500;
-						padding: 0px 15px;
-						color: #333;
-						
-						&::-webkit-input-placeholder {
-							color: #DFDFD0;
-						}
-						
-						@include break(v-tablet){
-							padding: 0px 10px;
-						}
-					}
-					margin-bottom: 21px;
-					
-				}
-				*/
-
-
 			}
-		}
+
+
 	}
 
 	&.product {
@@ -668,95 +423,6 @@ body.interior {
 							background-position: center right;
 						}
 					} 
-				}
-			}
-
-			.price-history {
-				.priceGraph {
-					margin-right: 350px;
-					height: 350px;
-					margin-bottom: 50px;
-
-					@include break(v-tablet){
-						margin-right: 0;
-						height: 350px;
-						margin-bottom: 0px;
-						width: 100%;
-					}
-				}
-
-				.sidePrice {
-					float: right;
-					padding-top: 15px;
-					width: 325px;
-
-					@include break(v-tablet){
-						float: none;
-						padding-top: 5px;
-						width: 100%;
-					}
-				}
-
-				h4 {
-					color: rgba(30, 41, 51, 0.95);
-					font-size: 1em;
-
-					@include break(mobile){
-						text-align: center;
-						font-size: 0.85em;
-					}
-				}
-
-				.stat {
-					color: #05408f;
-					font-size: 0.65em;
-					line-height: 2;
-
-					@include break(mobile){
-						text-align: center;
-					}
-				}
-
-				.priceTable {
-					font-size: 0.7em;
-					font-family: Arial, sans-serif;
-					margin-top: 20px;
-					color: #444;
-				}
-
-				table.priceTable {
-					tr:nth-child(even) {
-						background: #f5f5f5;
-					}
-
-					tr.current {
-						background: bisque;
-					}
-
-					td {
-						padding: 5px 3px 5px 8px;
-						line-height: 2;
-
-						&.date {
-							font-size: 0.85em;
-							vertical-align: inherit;
-						}
-
-						&.currentPrice a {
-							color: #43a92f;
-							font-weight: bold;
-							font-size: 1.05em;
-
-							&:hover {
-								color: rgb(85, 177, 18);
-							}
-						}
-					}
-				}
-
-				.legend {
-					font-size: 0.65em;
-					margin-top: 20px;
 				}
 			}
 

@@ -1,4 +1,5 @@
 body.interior {
+
 	&.products {
 
 		#content {
@@ -112,7 +113,7 @@ body.interior {
 				}
 			}
 
-			.scoress {
+			.speccy {
 				display: grid;
 				justify-items: center;
 
@@ -133,11 +134,20 @@ body.interior {
 					text-shadow: 1px 1px 5px rgb(0 0 0 / .5);
 					opacity: 0.9;
 
-					.score {
-						font-size: 1.3em;
+					.specone {
+						font-size: 1.2em;
 						font-weight: 500;
 						line-height: 1;
 						margin-top: 3px;
+						display: inline-flex;
+						align-items: flex-start;
+						white-space: nowrap;
+
+						.smaller {
+							font-size: 0.8em !important;
+							margin-left: 1px;
+							transform: translateY(0.2em);
+						}
 					}
 
 					.label {
@@ -192,7 +202,13 @@ body.interior {
 						height: 47px;
 
 						.score {
-							font-size: 1em  !important;
+							font-size: 1em !important;
+
+							.smaller {
+								font-size: 0.8em !important;
+								margin-left: 1px;
+								transform: translateY(0.2em);
+							}
 						}
 
 						.label {
@@ -216,5 +232,45 @@ body.interior {
 
 		}
 
+	}
+
+	#LookUpTop {
+		margin-bottom:20px;
+		text-decoration: none;
+
+		.form_search {
+			overflow: hidden;
+		}
+
+		h3 {
+			color: white;
+			line-height: 34px;
+			font-size: 0.95em;
+		}
+
+		input[type=text] {
+			border: none;
+			height: 48px;
+			width: 96%;
+			border-radius: 0;
+			border: none;
+			box-shadow: none;
+			font-family: $f-condensed;
+			line-height: 30px;
+			font-weight: 500;
+			color: #333;
+			font-size: 0.9em;
+			padding: 0px 2%;
+			background-color: #e9e9e9;
+			border-radius: 0px 0px 3px 3px;
+
+			@include break(mobile) {
+				padding: 0px 1% 0 3%;
+			}			
+		}
+
+		input#productsearch {
+			box-sizing: border-box;
+		}
 	}
 }

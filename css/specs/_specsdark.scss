@@ -267,4 +267,11 @@ body.dark {
 		color: #88a788;
 	}
 
+	#LookUpTop {
+		input[type=text], input[type=password] {
+			background: #3f4850 !important;
+			color: #fff !important;
+		}
+	}
+
 }

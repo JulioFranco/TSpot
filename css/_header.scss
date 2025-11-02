@@ -423,13 +423,9 @@
 									}
 									
 									@include border-radius(0);
-									&::-webkit-input-placeholder { /* WebKit browsers */
+									&::-webkit-input-placeholder { 
 										color: #DFDFD0;
-									}
-									&:-ms-input-placeholder { /* Internet Explorer 10+ */
-										color: #DFDFD0;
-									}
-																		
+									}							
 									&:focus {
 										outline: none;
 									}

@@ -336,6 +336,7 @@ body.interior {
 			}
 		}
 	}
+
 	.price-widget {
 		width: 100%;
 		margin: 40px 0 0 3px;
@@ -688,9 +689,9 @@ table.article-table {
 	align-items: center;
 
 	@include break(mobile) {
-		flex-direction: column;   // Stack number above text
-		align-items: center;      // Center elements
-		text-align: center;       // Align text nicely
+		flex-direction: column;
+		align-items: center;   
+		text-align: center;    
 	}
 
 	.number {
