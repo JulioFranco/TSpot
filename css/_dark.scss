@@ -1,5 +1,5 @@
 body.dark {
-	color: #f5f5f5;
+	color: $darkmode-text;
 	background-color: $dark-back;
 
 	#GlobalWrapper {
@@ -63,7 +63,7 @@ body.dark {
 			.article-content {
 				h2 {
 					a {
-						color: #eee;
+						color: $darkmode-heads;
 						&:hover {
 							color: $dark-link-hov-orange;
 						}
@@ -85,10 +85,10 @@ body.dark {
 	}
 
 	h1, h2, h3, h4, h5 {
-		color: #eee;
+		color: $darkmode-heads;
 
 		a {
-			color: #eee;
+			color: $darkmode-heads;
 
 			&:hover {
 				color: $dark-link-hov-orange;
@@ -98,7 +98,7 @@ body.dark {
 
 	&.interior {
 		h1, h2, h3, h4, h5 {
-			color: #eee;
+			color: $darkmode-heads;
 		}
 
 		&.category {
@@ -233,7 +233,7 @@ body.dark {
 	.downloads-list ul li .title a,
 	.download-index .downloads-table h2 a,
 	.downloads-picks li a h3 {
-		color: #eee !important;
+		color: $darkmode-heads !important;
 	}
 
 	.downloads-list ul li .title a:hover,
@@ -250,7 +250,7 @@ body.dark {
 	#content #why-it-matters, #content h5,
 	#content #why-it-matters a:hover,
 	#content h5 a:hover {
-		color: #eee;
+		color: $darkmode-heads;
 	}
 	#content #why-it-matters strong, #content h5 strong {
 		color: #81ade2;
@@ -293,7 +293,7 @@ body.dark {
 		color: #ccc;
 	}
 	.download-list li>a:hover, .forum-list li>a:hover {
-		color: #eee;
+		color: $darkmode-heads;
 	}
 	.download-list li span, .forum-list li span {
 		color: #7d7d7d;
@@ -357,7 +357,7 @@ body.dark {
 	#comments #add-new-comment {
 		background-color: #2a323d;
 		border: 1px solid transparent;
-		color: #f5f5f5;
+		color: $darkmode-text;
 	}
 
 	.post-load-more,
@@ -369,7 +369,7 @@ body.dark {
 	.more_similars_dw {
 		background-color: #2a323d;
 		border: 1px solid transparent;
-		color: #f5f5f5;
+		color: $darkmode-text;
 
 		&:hover {
 			background-color: #3b4652;
@@ -429,10 +429,10 @@ body.dark {
 		box-shadow: inset 0 -3px 0 #75519c !important;
 	}
 	.trust-feat, .trust-soft {
-		color: #f5f5f5;
+		color: $darkmode-text;
 	}
 	.trust-feat a:hover, .trust-soft a:hover {
-		color: #f5f5f5;
+		color: $darkmode-text;
 		border-bottom: 1px solid $dark-link;
 	}
 
@@ -441,7 +441,7 @@ body.dark {
 
 		&.active {
 			background: #535E69;
-			color: #f5f5f5;
+			color: $darkmode-text;
 		}
 
 		a {
@@ -454,7 +454,7 @@ body.dark {
 			&.active{
 				h3 {
 					background: #535E69;
-					color: #f5f5f5;
+					color: $darkmode-text;
 				}
 			}
 
@@ -464,7 +464,7 @@ body.dark {
 
 			&.active {
 				background: #535E69;
-				color: #f5f5f5;
+				color: $darkmode-text;
 
 				&:hover {
 					background-color: #535E69 !important;
@@ -487,7 +487,7 @@ body.dark {
 		&.single {
 			h3 {
 				background: #535E69;
-				color: #f5f5f5;
+				color: $darkmode-text;
 			}
 		}
 	}
