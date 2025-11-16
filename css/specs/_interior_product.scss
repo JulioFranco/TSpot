@@ -3,12 +3,6 @@ body.interior {
 	&.product {
 
 		#content {
-			.wrapper {
-				padding: 25px 0 25px;
-			}
-		}
-
-		#content {
 
 			@include break(mobile){
 				margin-top: 0px !important;
@@ -16,6 +10,10 @@ body.interior {
 
 			section.space {
 				margin-bottom: 30px;
+			}
+
+			section.space2x {
+				margin-bottom: 70px;
 			}
 
 		    .splitcontainer {
@@ -893,8 +891,6 @@ ul.pills {
 
 
 .also-looked-at {
-
-	margin-bottom: 25px;
 
 	@include break(mobile){
 		margin: 0 !important;
