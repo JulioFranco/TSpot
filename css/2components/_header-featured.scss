@@ -186,14 +186,12 @@
 
 		a {
 			color: #eee;
-			border-bottom: 1px solid #ccc;
+			border-bottom: 2px solid #686868;
 			padding-bottom: 3px;
 
-			@if $isAMP != 'true' {
-				&:hover {
-					border-bottom: 1px solid $orange;
-					padding-bottom: 3px;
-				}
+			&:hover {
+				border-bottom: 2px solid $orange;
+				padding-bottom: 3px;
 			}
 
 		}
@@ -203,6 +201,22 @@
 		padding-left: 5px;
 		a {
 			border: none;
+		}
+	}
+
+	span.numCom {
+		padding-left: 12px;
+		margin-left: 10px;
+		border-left: 2px solid #ccc;
+
+		a {
+			@include break(mobile) {
+				background: url(https://#{$staticServer}.techspot.com/images/icon-comments-lg.svg) no-repeat;
+				background-size: 22px;
+				padding-left: 27px;
+				background-blend-mode: luminosity;
+				border: none;
+			}
 		}
 	}
 
