@@ -1,4 +1,126 @@
 body.interior {
+    &.products-cat {
+        .filter_bar {
+            background: #f5f5f5;
+            padding: 8px 12px;
+            border: 1px solid #e5e5e5;
+            border-bottom: 0;
+            font-size: 11px;
+
+            .pills {
+              display: inline;
+              padding-left: 2px;
+            }
+
+            .sorter {
+                float: right;
+                font-size: 12px;
+                position: relative;
+                color: #555;
+                text-align: right;
+                z-index: 999;
+
+                @include break(v-mobile){
+                    display: none !important;
+                }
+
+                #sorted_by {
+                    font-weight: 500;
+                    text-transform: lowercase;
+                }
+
+                ul {
+                    position: absolute;
+                    display: none;
+                    right: 0;
+                    top: 18px;
+                    width: 120px;
+                    background: #F4F5F7;
+                    text-align: left;
+                    border: 1px solid #ccc;
+                    border-radius: 2px;
+                    box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+                }
+
+                a {
+                    color: #333;
+                    background: none !important;
+                    padding: 0;
+                    text-shadow: none !important;
+                }
+
+                li {
+                    background: none;
+                    display: block;
+                    border: 0;
+                    height: 25px;
+                    line-height: 25px;
+                    margin: 0;
+                    padding: 0;
+
+                    .smaller {
+                        font-size: 11px;
+                    }
+
+                    a {
+                        display: block;
+                        padding: 0 5px;
+                        transition: none;
+
+                        &:hover {
+                            background: #32404D !important;
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            .filter {
+                border-top: 1px solid #e5e5e5;
+                margin: 5px -10px -5px;
+                height: 30px;
+                padding: 0 10px;
+                line-height: 30px;
+                font-size: 12px;
+                background: #f0f0f0;
+                position: relative;
+                display: none;
+                background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.4), rgba(255,255,255,0));
+                background-image: linear-gradient(top, rgba(255,255,255,0.4), rgba(255,255,255,0));
+
+                .remove {
+                    position: absolute;
+                    right: 10px;
+                    opacity: 0.75;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+
+                b {
+                    color: #27333D;
+                }
+
+                input, select {
+                    font-size: 12px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+                input[type="number"] {
+                    width: 60px;
+                    border: 1px solid #9f9fa1;
+                    text-align: right;
+                    border-radius: 2px;
+                }
+            }
+
+            div.active {
+                display: block !important;
+            }
+        }
+    }
 
 	&.products {
 
