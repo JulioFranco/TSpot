@@ -60,6 +60,11 @@ body.dark {
 		.filter_bar {
 			background: #3f4b56;
 			border: 1px solid #212a33;
+
+			.filter {
+				border-top: 2px solid #242931;
+				background: #404b56;
+			}
 		}
 	}
 
