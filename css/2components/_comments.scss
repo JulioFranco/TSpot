@@ -115,6 +115,7 @@
 			font-size: 16px;
 			line-height: 1.5;
 			margin: 5px 25px 5px 0;
+			font-weight: 425;
 
 			@include break(mobile){
 				padding-right: 0;
@@ -467,12 +468,12 @@ body.interior {
 		height: 43px;
 		overflow: visible;
 		letter-spacing: -.333px;
-		filter: grayscale(70%);
+		filter: grayscale(50%);
 		float: left;
 		background-position: 0 10px;
 
 		&:hover {
-			filter: grayscale(40%);
+			filter: grayscale(10%);
 		}
 		
 		@include break(mobile) {

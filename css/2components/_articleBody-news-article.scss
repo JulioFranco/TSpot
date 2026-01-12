@@ -21,10 +21,6 @@
 		h2 {
 			padding: 25px 0 10px;
 
-			&.subtitle {
-				padding: 10px 0 10px;
-			}
-
 			@include break(mobile) {
 				font-size: 1.5em !important;
 			}

@@ -1180,6 +1180,7 @@ table {
 		font-family: $f-paragraph;
 		line-height: 1.6;
 		padding: 13px 0;
+		letter-spacing: -0.1px;
 
 		em {
 			font-family: $f-helvetica;
@@ -1281,8 +1282,8 @@ table {
 
 		strong {
 			color: #075bc0;
-			font-weight: 600;
-			font-size: 0.85em;
+			font-weight: 650;
+			font-size: 0.86em;
     		text-transform: uppercase;
 			letter-spacing: 0.4px;
 		}
@@ -1310,10 +1311,6 @@ table {
 			color: #444;
 			line-height: 1.55;
 			letter-spacing: -.2px;
-
-			strong {
-				font-size: 0.8em;
-			}
 
 			@include break(mobile) {
 				font-size: 0.85em !important;
