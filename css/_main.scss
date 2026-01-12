@@ -72,7 +72,7 @@ ul,ol {
 
 h1 {
 	color: #1e2833;
-	font-weight: 625;
+	font-weight: 645;
 	font-size: 1.3em;
 	letter-spacing: -.2px;
 	
@@ -83,7 +83,7 @@ h1 {
 
 h2, h3, h4, h5 {
 	letter-spacing: -.2px;
-	font-weight: 625;
+	font-weight: 645;
     text-wrap: balance;
 }
 
@@ -406,8 +406,9 @@ img.b-lazy.b-loaded {
 	
 	ul.teaser-list {
 		padding: 0 0 28px;
+		
 		li {
-			padding: 26px 0 0;
+			padding: 30px 0 0;
 
 			&:first-child {
 				padding: 12px 0 0;

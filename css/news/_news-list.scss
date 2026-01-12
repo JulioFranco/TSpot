@@ -71,7 +71,7 @@
 				a {
 					line-height: 1.5;
 					color: #1e2833;
-					font-weight: 580;
+					font-weight: 600;
 					width: 100%;
 				    display: block;
 
@@ -147,6 +147,10 @@
 				color: #444 !important;
 				letter-spacing: -.2px;
 				text-wrap-style: balance;
+
+				&.plug {
+					font-size: .82em !important;
+				}
 
 				strong {
 					font-weight: 500;

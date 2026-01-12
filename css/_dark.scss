@@ -250,7 +250,7 @@ body.dark {
 	#content #why-it-matters, #content h5,
 	#content #why-it-matters a:hover,
 	#content h5 a:hover {
-		color: $darkmode-heads;
+		color: $darkmode-p;
 	}
 	#content #why-it-matters strong, #content h5 strong {
 		color: #81ade2;
@@ -279,7 +279,8 @@ body.dark {
 	}
 
 	#content p {
-		color: #f0f0f0;
+		/* color: #f0f0f0; */
+		color: $darkmode-p;
 	}
 
 	.sidebar ul.teaser-list li a,
