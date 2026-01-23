@@ -593,6 +593,13 @@ table.article-table {
 			background-color: #459f45;
 		}
 	}
+	&.greenbleu {
+	    background-color: #116587;
+
+		&:hover {
+			background-color: #0b5b7b;
+		}
+	}
 	&.red {
 	    background-color: #923c3c;
 
@@ -604,6 +611,11 @@ table.article-table {
 	&.wide {
 		div {
 			font-size: 26px !important;
+		}
+	}
+	&.wider {
+		div {
+			font-size: 24px !important;
 		}
 	}
 
