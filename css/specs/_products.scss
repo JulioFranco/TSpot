@@ -171,6 +171,13 @@ body.interior {
 				background-color: #aa4646;
 			}
 		}
+		.greenbleu {
+		    background-color: #116587;
+
+			&:hover {
+				background-color: #0b5b7b;
+			}
+		}
 
 		.SideTitle, .SideProdContent li a {
 			color: white;
@@ -273,6 +280,10 @@ body.interior {
 						align-items: flex-start;
 						white-space: nowrap;
 
+						&.smaller {
+							font-size: 1em !important;
+						}
+
 						.smaller {
 							font-size: 0.8em !important;
 							margin-left: 1px;
@@ -287,12 +298,24 @@ body.interior {
 						margin-top: -4px;
 					}
 
+					&.wid {
+						width: 80px;
+					}
+
 					&.wide {
 						width: 90px;
 					}
 
 					&.wider {
 						width: 100px;
+					}
+
+					&.widerr {
+						width: 110px;
+					}
+
+					&.widerrr {
+						width: 120px;
 					}
 
 					&.wide, &.wider {
