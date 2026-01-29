@@ -215,6 +215,12 @@ body.dark {
 		background: transparent !important; 
 	}
 
+	table.article-table {
+		tr.spec-section {
+	    	background: #2d4f78 !important;
+		}
+	}
+
 	.price-history {
 		.priceTable {
 			background: $dark-back;
