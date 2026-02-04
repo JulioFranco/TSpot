@@ -1,43 +1,39 @@
 .rating-svg {
     display: block;
-    height: 12px;
+    height: 13px;
     margin: 8px 0;
-    width: 60px;
+    width: 66px;
 }
+
+$star: 12px;
+$gap: 1px;
+
 .rating-svg use {
-    &:nth-child(3) {
-        transform: translate(12px);
+  @for $i from 1 through 5 {
+    &:nth-child(#{$i + 1}) {
+      transform: translate(($i - 1) * ($star + $gap));
     }
-    &:nth-child(4) {
-        transform: translate(24px);
-    }
-    &:nth-child(5) {
-        transform: translate(36px);
-    }
-    &:nth-child(6) {
-        transform: translate(48px);
-    }
+  }
 }
-#stars #stars-empty-star {
-    fill: #999999;
+
+.rating-svg use.full,
+.rating-svg use.half {
+  fill: #cc0000;
 }
-#stars #stars-full-star {
-    fill: #cc0000;
-}
-#stars #stars-half-star {
-    fill: #cc0000;
+
+.rating-svg use.empty {
+  fill: #999999;
 }
 
 body.dark {
-    #stars #stars-empty-star {
-        fill: #666666;
-    }
-    #stars #stars-full-star {
-        fill: #ffaf5f;
-    }
-    #stars #stars-half-star {
-        fill: #ffaf5f;
-    }
+  .rating-svg use.full,
+  .rating-svg use.half {
+    fill: #ffaf5f;
+  }
+
+  .rating-svg use.empty {
+    fill: #666666;
+  }
 }
 
 #userRating .rating-svg {
