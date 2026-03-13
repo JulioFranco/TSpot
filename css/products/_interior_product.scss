@@ -62,8 +62,7 @@ body.interior {
 				height: 85px;
 				font-size: 0.9em;
 				font-weight: normal;
-				border-bottom: 1px solid #F1F1F1;
-				border-top: 1px solid #EAEAEA;
+				border-bottom: 2px solid #f1f1f1;
 				list-style-type: none;
 
 				&:nth-child(even) {
@@ -74,6 +73,7 @@ body.interior {
 					padding: 5px 0
 				}
 			}
+
 			.product-img {
 				margin-top: 12px;
 				float: right;
@@ -128,6 +128,11 @@ body.interior {
 						overflow: hidden;
 						text-overflow: ellipsis;
 						display: block;
+						color: #222;
+
+						  &:hover {
+	                        color: $red;
+	                      }
 					}
 				}
 
@@ -238,20 +243,18 @@ body.interior {
 					display: none;
 				}
 
-				@if $isAMP != 'true' {
-					.intRank {
-						color: $purple;
-						font-weight: 500;
-						font-size: 0.7em;
-						float: left;
-						width: 50px;
-						text-align: right;
-						margin-right: 18px;
-						line-height: 70px;
-						
-						@include break(v-tablet) {
-							display: none;				
-						}
+				.intRank {
+					color: $purple;
+					font-weight: 500;
+					font-size: 0.7em;
+					float: left;
+					width: 50px;
+					text-align: right;
+					margin-right: 18px;
+					line-height: 70px;
+					
+					@include break(v-tablet) {
+						display: none;				
 					}
 				}
 				.award {
@@ -268,12 +271,10 @@ body.interior {
 					text-align: left;
 
 					a {
-						color: #2c9e41;
+						color: #3d834a;
 
-						@if $isAMP != 'true' {
-							&:hover {
-								color: darken(#2c9e41,10%);
-							}
+						&:hover {
+							color: #369848;
 						}
 					}
 
