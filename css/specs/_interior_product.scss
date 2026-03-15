@@ -825,8 +825,9 @@ ul.pills {
     margin: 0 auto;
 
     @include break(mobile) {
-		margin: -5px 10px -10px 13px;
-		font-size: 0.75em;
+		margin: -5px 13px -10px;
+		font-size: .75em;
+		width: inherit;
     }
 }
 
