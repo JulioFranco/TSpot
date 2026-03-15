@@ -32,14 +32,13 @@
 		h4 {
 		    font-weight: 400;
 		    color: #eee;
-		    font-size: 0.75em;
+		    font-size: 0.8em;
 		    line-height: 1.5;
 		    letter-spacing: -.333px;
 		    margin: -15px 0 15px 0;
 
 			@include break(mobile){
-				line-height: 1.3;
-				margin: -5px 0 16px 0;
+				margin: 2px 0 5px 0;
 			}
 		}
 

@@ -16,6 +16,10 @@ body.interior {
 					padding: 2px 7px;
 					font-weight: 500;
 					margin: 0 1px;
+
+					@include break(v-mobile){
+						margin: 4px 1px;
+					}
 				}
             }
 

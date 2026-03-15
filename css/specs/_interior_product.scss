@@ -806,6 +806,13 @@ ul.pills {
 				background: #27333D;
 			}
 		}
+
+		&.darkorange {
+			background: #8e6a29;
+			&:hover {
+				background: #c18e31;
+			}
+		}
 	}
 }
 
@@ -818,7 +825,7 @@ ul.pills {
     margin: 0 auto;
 
     @include break(mobile) {
-		margin: -5px auto 50px;
+		margin: -5px 10px -10px 13px;
 		font-size: 0.75em;
     }
 }
