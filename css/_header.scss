@@ -495,7 +495,7 @@
 						
 			.wrapper {
 				@include break(v-tablet){
-					width: 94%;
+					width: $mobwrapper;
 				}
 				& > ul {
 					& > li {

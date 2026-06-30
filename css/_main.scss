@@ -104,7 +104,7 @@ h2, h3, h4, h5 {
 	width: 92%;
 
 	@include break(tablet) {
-		width: 94%;
+		width: $mobwrapper;
 	}
 }
 

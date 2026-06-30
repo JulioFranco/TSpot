@@ -168,7 +168,7 @@ body.interior {
 			
 			.wrapper {
 				@include break(mobile) {
-					width: 94%;
+					width: $mobwrapper;
 				}
 			}
 			

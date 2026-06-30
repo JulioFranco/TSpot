@@ -206,7 +206,7 @@ body.interior {
 				.article-index {
 					display: block;	
 					margin: 30px 0 0;
-					width: 94%;
+					width: $mobwrapper;
 					border: none;
 
 					@include break(mobile){
@@ -249,7 +249,7 @@ body.interior {
 						@include break(mobile) {
 						    padding: 0 0 18px;
 						    margin: 0 3%;
-						    width: 94%;
+						    width: $mobwrapper;
 						}
 					}
 				}
@@ -270,11 +270,11 @@ body.interior {
 			
 				.articleBody {
 					width: 100%;
-					max-width: 680px;
+					max-width: 620px;
 					margin: -12px auto 0;
 					
 					@include break(v-tablet){
-						max-width: 680px;
+						max-width: 620px;
 						margin: -12px auto 0;
 						width: 90%
 					}
