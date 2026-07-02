@@ -117,11 +117,6 @@ body.interior {
 				opacity: 1;
 				margin-top: 5px;
 				left: 15px;
-
-				@include break(mobile){
-					left: 0;
-				}
-
 			}
 
 			.img{
@@ -132,7 +127,7 @@ body.interior {
 				height: 150px;
 
 				@include break(v-mobile){
-					width: 140px;
+					width: 125px;
 
 					a {
 						display: inline-block;
@@ -175,7 +170,7 @@ body.interior {
 
 			@include break(mobile){
 				width: 100%;
-				padding: 15px 3% 0px 3%;
+				padding: 15px 6% 0;
 				display: block;
 			}
 		}
@@ -187,7 +182,7 @@ body.interior {
 			
 			@include break(mobile){
 				.wrapperMobileOnly {
-					padding: 0 3%;
+					padding: 0 4%;
 				}
 			}
 		}
@@ -248,7 +243,7 @@ body.interior {
 
 						@include break(mobile) {
 						    padding: 0 0 18px;
-						    margin: 0 3%;
+						    margin: 0 4%;
 						    width: $mobwrapper;
 						}
 					}

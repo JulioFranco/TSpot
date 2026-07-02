@@ -366,6 +366,14 @@ body.interior.download {
 				font-size: 1.05em;
 			}
 
+			.specs {
+				padding-left: 15px;
+
+				@include break(mobile){
+					padding: 13px;
+				}
+			}
+
 			.download_options {
 				width: 95%;
 				border: 2px solid transparent;
