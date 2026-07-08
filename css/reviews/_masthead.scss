@@ -44,40 +44,37 @@
 	}
 }
 
+@if $isDesk == 'true' {
+	.reviews, .features
+	{
+		.grid-posts {
+			.masthead {
+				@include break(mobile){
+					min-height: 270px;
+				}
 
-@if $isAMP != 'true' {
-	@if $isDesk == 'true' {
-		.reviews, .features
-		{
-			.grid-posts {
-				.masthead {
-					@include break(mobile){
-						min-height: 270px;
-					}
+				&.SmallHead {
+					min-height: ($tile-height-sec * 2) + 115px;
+				}
 
-					&.SmallHead {
-						min-height: ($tile-height-sec * 2) + 115px;
-					}
-
-					&.OneRow {
-						min-height: ($tile-height-sec) + 85px;
-					}
+				&.OneRow {
+					min-height: ($tile-height-sec) + 85px;
 				}
 			}
 		}
 	}
-	@else {
-		.masthead {
-			height: auto !important;
-			padding-bottom: 10px;
-		}
+}
+@else {
+	.masthead {
+		height: auto !important;
+		padding-bottom: 10px;
+	}
 
-		.reviews, .features
-		{
-			.grid-posts {
-				.masthead {
-					min-height: 270px;
-				}
+	.reviews, .features
+	{
+		.grid-posts {
+			.masthead {
+				min-height: 270px;
 			}
 		}
 	}

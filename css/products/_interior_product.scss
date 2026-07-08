@@ -1,11 +1,9 @@
 body.interior {
 	&.products {
 
-		@if $isAMP != 'true' {
-			#content {
-				.wrapper {
-					padding: 20px 0;
-				}
+		#content {
+			.wrapper {
+				padding: 20px 0;
 			}
 		}
 
@@ -29,20 +27,14 @@ body.interior {
 		}
 
 		.col-2-3 {
-			@if $isAMP == 'true' {
+			width: 70%;
+			@include break(mobile) {
 				width: 100%;
-			} @else {
-				width: 70%;
-				@include break(mobile) {
-					width: 100%;
-				}
-			}		
+			}
 		}
 
-		@if $isAMP != 'true' {
-			.SideTitle, .SideProdContent li a{
-				color: white;
-			}
+		.SideTitle, .SideProdContent li a{
+			color: white;
 		}
 		
 		.post-list-product {
@@ -182,15 +174,10 @@ body.interior {
 					display: inline-block;
 					float: left;
 
-					@if $isAMP == 'true' {
+					font-size: 0.65em;
+
+					@include break(v-tablet){
 						font-size: 0.6em;
-
-					} @else {
-						font-size: 0.65em;
-
-						@include break(v-tablet){
-							font-size: 0.6em;
-						}
 					}
 
 					@include break(v-mobile){
@@ -348,7 +335,6 @@ body.interior {
 
 			}
 
-
 	}
 
 	&.product {
@@ -455,6 +441,5 @@ body.interior {
 
 		}
 	}
-
 
 }

@@ -466,13 +466,12 @@ body.interior.download {
 						border-bottom: 1px dotted #9f6000;
 
 						@if $isDesk == 'true' {
-						@if $isAMP != 'true' {
-							&:hover {
-								color: #105ab2;
-								border-bottom: 1px dotted #105ab2;
-								transition: linear .2s;
-							}
-						}}
+						&:hover {
+							color: #105ab2;
+							border-bottom: 1px dotted #105ab2;
+							transition: linear .2s;
+						}
+						}
 
 					}
 
@@ -489,20 +488,16 @@ body.interior.download {
 							label {
 								background: white;
 
-								@if $isAMP != 'true' {
-									&:hover {
-										color: white;
-									}
+								&:hover {
+									color: white;
 								}
 
 								a {
 									border: none;
 
-									@if $isAMP != 'true' {
-										&:hover {
-											color: white;
-											border: none;
-										}
+									&:hover {
+										color: white;
+										border: none;
 									}
 								}
 							}
@@ -519,18 +514,17 @@ body.interior.download {
 							}
 
 							@if $isDesk == 'true' {
-							@if $isAMP != 'true' {
-								&:hover {
-									color: #fff !important;
-									cursor: pointer;
-									text-decoration: none;
-									transition: linear .2s;
-									background-color: #FF7F00;
-									border: 1px dotted #FF7F00;
-									padding: 6px;
-									border-radius: 4px;
-								}
-							}}
+							&:hover {
+								color: #fff !important;
+								cursor: pointer;
+								text-decoration: none;
+								transition: linear .2s;
+								background-color: #FF7F00;
+								border: 1px dotted #FF7F00;
+								padding: 6px;
+								border-radius: 4px;
+							}
+							}
 
 						}
 					}
@@ -540,21 +534,15 @@ body.interior.download {
 						border: 1px dotted #9f6000;
 
 						label {
-							@if $isAMP == 'true' {
-								color: #fff;
-							} @else {
-								color: #fff !important;
-							}
+							color: #fff !important;
 							transition: linear .3s;
 							background-color: #FF7F00;
 							border: 1px dotted #FF7F00;
 							padding: 6px;
 							border-radius: 4px;
 
-							@if $isAMP != 'true' {
-								&:hover {
-									cursor: pointer;
-								}
+							&:hover {
+								cursor: pointer;
 							}
 						}
 					}
@@ -619,7 +607,6 @@ select#vote {
 	padding: 25px 0 0;
 }
 
-
 @if $isDesk == 'true' {
 body.interior.download .sidebar {
 	@include break(v-tablet){
@@ -629,7 +616,6 @@ body.interior.download .sidebar {
 		display: none;
 	}
 }}
-
 
 body.interior.download .col-2-3{
 
@@ -653,7 +639,6 @@ body.interior.download article .col-1-2.wide-gut{
 		width: 100%;
 	}
 }
-
 
 .downGrid {
 	display: flex;

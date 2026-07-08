@@ -47,12 +47,7 @@ body.trivias {
 		background-color: rgba(30, 41, 51, 0.95);
 
 		.wrapper {
-			@if $isAMP == 'true' {
-				padding: 0;
-			
-			} @else {
-				padding: 0 !important;
-			}
+			padding: 0 !important;
 		}
 	}
 	#content {

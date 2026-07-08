@@ -97,7 +97,6 @@
 				}
 			}
 
-
 			&.featured {
 				@include break(mobile) {
 					h2 {
@@ -284,19 +283,13 @@
 					padding-left: 15px;
 					margin-right: 10px;
 
-					@if $isAMP == 'true' {
+					font-size: .7em;
+					@include break(mobile){
 						font-size: .6em;
-					} @else {
-						font-size: .7em;
-						@include break(mobile){
-							font-size: .6em;
-						}
 					}
 					
-					@if $isAMP != 'true' {
-						&:hover {
-							color: $red;
-						}
+					&:hover {
+						color: $red;
 					}
 					
 					&.comment-count {
@@ -318,32 +311,17 @@
 								color: white;
 								-webkit-font-smoothing: subpixel-antialiased;
 								
-								@if $isAMP == 'true' {
-									&.no {
-										display: none;
-									}
-									&.big {
-										background: #0a5499;
-									}
-									&.bigger {
-										background: #075bc0;
-									}
-									&.biggest {
-										background: $red;
-									}
-								} @else {
-									&.no {
-										display: none;
-									}
-									&.big {
-										background: #0a5499 !important;
-									}
-									&.bigger {
-										background: #075bc0 !important;
-									}
-									&.biggest {
-										background: $red !important;
-									}
+								&.no {
+									display: none;
+								}
+								&.big {
+									background: #0a5499 !important;
+								}
+								&.bigger {
+									background: #075bc0 !important;
+								}
+								&.biggest {
+									background: $red !important;
 								}
 							}							
 						}
@@ -382,87 +360,74 @@
 		}
 	}
 
-	@if $isAMP != 'true' {
-		.group-left {
-			margin: 50px 0 0 0;
-		}
+	.group-left {
+		margin: 50px 0 0 0;
 	}
 
-	@if $isAMP != 'true' {
 	@if $isDesk == 'true' {
-		&.fullview {
+	&.fullview {
 
-			max-width: 98%;
+		max-width: 98%;
 
-			h5 {
-				padding: 7px 0 0 0 !important;
-				font-size: 17px !important;
-				font-weight: 500 !important;
-			    line-height: 1.5;
+		h5 {
+			padding: 7px 0 0 0 !important;
+			font-size: 17px !important;
+			font-weight: 500 !important;
+		    line-height: 1.5;
 
-				strong {
-					font-weight: 500;
-				}
-			}
-			time {
-				font-size: 13px;
-			}
-			p {
-				font-size: 17px;
-				padding: 0 0 20px !important;
-				font-weight: 400;
-			}
-			img {
-				max-width: 100% !important;
-				height: auto!important;
-				padding-top: 20px;
-			}
-
-			ul {
-				margin-left: 5%;
-				margin: 25px;
-				font-size: 0.85em;
-				font-family: $f-paragraph;
-				line-height: 1.5;
-
-				li {
-					list-style-type: square;
-					margin-bottom: 10px;
-				}
-			}
-
-			.video-container {
-				clear: both;
-			}
-
-			blockquote {
-				margin: 5px 20px 25px 0px;
-				padding: 15px 10px 0px 15px;
-				border-left: 3px solid #ccc;
-			}
-
-			blockquote.twitter-tweet, twitterwidget.twitter-tweet {
-				@if $isAMP == 'true' {
-					margin: 7px auto;
-					margin-bottom: 25px;
-				} @else {
-					margin: 7px auto !important;
-					margin-bottom: 25px !important;
-				}
-			}
-
-			iframe {
-				&.twitter-tweet {
-					@if $isAMP == 'true' {
-						margin: 7px auto;
-						margin-bottom: 25px;
-					} @else {
-						margin: 7px auto !important;
-						margin-bottom: 25px !important;
-					}
-				}
+			strong {
+				font-weight: 500;
 			}
 		}
+		time {
+			font-size: 13px;
+		}
+		p {
+			font-size: 17px;
+			padding: 0 0 20px !important;
+			font-weight: 400;
+		}
+		img {
+			max-width: 100% !important;
+			height: auto!important;
+			padding-top: 20px;
+		}
+
+		ul {
+			margin-left: 5%;
+			margin: 25px;
+			font-size: 0.85em;
+			font-family: $f-paragraph;
+			line-height: 1.5;
+
+			li {
+				list-style-type: square;
+				margin-bottom: 10px;
+			}
+		}
+
+		.video-container {
+			clear: both;
+		}
+
+		blockquote {
+			margin: 5px 20px 25px 0px;
+			padding: 15px 10px 0px 15px;
+			border-left: 3px solid #ccc;
+		}
+
+		blockquote.twitter-tweet, twitterwidget.twitter-tweet {
+			margin: 7px auto !important;
+			margin-bottom: 25px !important;
+		}
+
+		iframe {
+			&.twitter-tweet {
+				margin: 7px auto !important;
+				margin-bottom: 25px !important;
+			}
+		}
+	}
 	}//desk
-	}//amp
+	//amp
 }

@@ -64,46 +64,36 @@
 		&.award {
 			@include trans-bg(#ff7f00,.7);
 
-			@if $isAMP != 'true' {
-				&:hover {
-					@include trans-bg(#ff7f00,.9);
-				}
+			&:hover {
+				@include trans-bg(#ff7f00,.9);
 			}
 		}		
 		&.excellent {
 			@include trans-bg($c-excellent,.7);
 			
-			@if $isAMP != 'true' {
-				&:hover {
-					@include trans-bg($c-excellent,.9);
-				}
+			&:hover {
+				@include trans-bg($c-excellent,.9);
 			}
 		}
 		&.good {
 			@include trans-bg($c-good,.7);
 
-			@if $isAMP != 'true' {
-				&:hover {
-					@include trans-bg($c-good,.9);
-				}
+			&:hover {
+				@include trans-bg($c-good,.9);
 			}
 		}
 		&.average {
 			@include trans-bg($c-average,.7);
 
-			@if $isAMP != 'true' {
-				&:hover {
-					@include trans-bg($c-average,.9);
-				}
+			&:hover {
+				@include trans-bg($c-average,.9);
 			}
 		}
 		&.bad {
 			@include trans-bg($c-bad,.7);
 
-			@if $isAMP != 'true' {
-				&:hover {
-					@include trans-bg($c-bad,.9);
-				}
+			&:hover {
+				@include trans-bg($c-bad,.9);
 			}
 		}
 

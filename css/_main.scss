@@ -158,8 +158,6 @@ img.b-lazy.b-loaded {
 	cursor: not-allowed;
 }
 
-
-
 // YouTube, video embeds
 .video-container {
 	position: relative;
@@ -252,7 +250,6 @@ img.b-lazy.b-loaded {
 	    text-align: center;
     }
 }
-
 
 // SIDEBAR
 // ----------------------
@@ -381,7 +378,6 @@ img.b-lazy.b-loaded {
 }
 } // end isDesk
 
-
 @if $isDesk == 'true' {
 .sidebar {
 	width: 305px;
@@ -402,8 +398,7 @@ img.b-lazy.b-loaded {
 	@include break(mobile){
 		display: none;
 	}
-	
-	
+
 	ul.teaser-list {
 		padding: 0 0 28px;
 		
@@ -491,7 +486,6 @@ img.b-lazy.b-loaded {
 }
 } // end isDesk
 
-
 .section-header {
 	font-family: $f-condensed;
 	border-top: 5px solid $red;
@@ -532,14 +526,12 @@ img.b-lazy.b-loaded {
 	}
 }
 
-
 h3.longtype {
 	font-size: 1.3em;
 	@include break (v-tablet){
 		font-size: 1em;
 	}
 }
-
 
 .mobile-only-social {
 	display: block !important;
@@ -556,7 +548,6 @@ h3.longtype {
 		}
 	}
 }
-
 
 .col-2-3 {
 
@@ -800,7 +791,6 @@ table {
 		color: #105ab2;
 	}
 }
-
 
 // ! ads ===========================================
 
@@ -1368,25 +1358,16 @@ table {
 				display: block;
 			}
 
-			@if $isAMP == 'true' {
+			width: 34px;
+			height: 34px;
+			line-height: 35px;
+
+			@include break(mobile){
 				width: 38px;
 				height: 38px;
 				line-height: 38px;
 				margin-right: 6px;
 				border-right: 1px solid #bbb;
-			
-			} @else {
-				width: 34px;
-				height: 34px;
-				line-height: 35px;
-
-				@include break(mobile){
-					width: 38px;
-					height: 38px;
-					line-height: 38px;
-					margin-right: 6px;
-					border-right: 1px solid #bbb;
-				}
 			}
 		}
 	}
@@ -1403,11 +1384,9 @@ table {
 		border: 1px solid $grey;
 		text-align: left;
 
-		@if $isAMP != 'true' {
-			&:hover {
-				a{
-					color: white;
-				}
+		&:hover {
+			a{
+				color: white;
 			}
 		}
 		.triangle {
@@ -1416,14 +1395,9 @@ table {
 			position: absolute;
 			@include triangle(right,$orange,4,6);
 
-			@if $isAMP == 'true' {
+			margin-top: 13px;
+			@include break(mobile){
 				margin-top: 16px;
-
-			} @else {
-				margin-top: 13px;
-				@include break(mobile){
-					margin-top: 16px;
-				}
 			}
 		}
 	}
