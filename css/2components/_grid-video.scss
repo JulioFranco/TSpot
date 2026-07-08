@@ -1,3 +1,5 @@
+@use "../1structure/base-grid" as *;
+
 .grid-posts {
 	&.grid-video {
 		background-color: #232a32b8;

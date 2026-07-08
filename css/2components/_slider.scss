@@ -1,3 +1,8 @@
+@use "../1structure/variables" as *;
+@use "../1structure/mixin" as *;
+@use "../1structure/base-grid" as *;
+@use "sass:color";
+
 .slider {
 	margin: 0; padding: 0;
 	height: 350px;
@@ -39,7 +44,7 @@
 				color: white;
 				@include transitions($delay:.2s);
 				&:hover {
-					background: darken($green,10%);
+					background: color.adjust($green, $lightness: -10%);
 				}
 				
 				&.rounded {

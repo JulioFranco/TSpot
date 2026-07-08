@@ -1,43 +1,39 @@
-@import
-"1structure/_variables.scss",
-"1structure/_mixin.scss",
-"1structure/_base-grid.scss";
+@use "1structure/variables" as * with ($isDesk: 'true');
+@use "1structure/mixin" as *;
+@use "1structure/base-grid" as *;
 
-$isDesk: 'true';
-
-@import
 // interior components
-//"2components/_chicklets.scss",
-//"2components/_slider.scss",
-//"2components/_comments.scss",
-//"2components/_page-nav.scss",
-"2components/_tabbar.scss",
-"2components/_masthead.scss",
+// @use "2components/chicklets" as *;
+// @use "2components/slider" as *;
+// @use "2components/comments" as *;
+// @use "2components/page-nav" as *;
+@use "2components/tabbar" as *;
+@use "2components/masthead" as *;
 
-"_interior.scss",
+@use "interior" as *;
 
 // news
-//"news/_interior-news.scss",
+// @use "news/interior-news" as *;
 
 // reviews
-//"reviews/_masthead.scss",
-//"2components/_header-featured.scss", // also add to pages
-//"reviews/_interior_reviews.scss",
-//"reviews/_reviews.scss",
-//"reviews/_review_box.scss",
+// @use "reviews/masthead" as *;
+// @use "2components/header-featured" as *; // also add to pages
+// @use "reviews/interior_reviews" as *;
+// @use "reviews/reviews" as *;
+// @use "reviews/review_box" as *;
 
 // specs
-"specs/_masthead.scss",
-"specs/_products.scss",
-"specs/_interior_product.scss",
-"specs/_widget.scss",
-"specs/_specsdark.scss",
+@use "specs/masthead" as *;
+@use "specs/products" as *;
+@use "specs/interior_product" as *;
+@use "specs/widget" as *;
+@use "specs/specsdark" as *;
 
 // downloads
-//"downloads/_interior_download.scss",
-//"downloads/_download.scss",
+// @use "downloads/interior_download" as *;
+// @use "downloads/download" as *;
 
 // trivia
-//"2components/_trivia.scss",
+// @use "2components/trivia" as *;
 
-"2components/_vacio.scss";
+@use "2components/vacio" as *;

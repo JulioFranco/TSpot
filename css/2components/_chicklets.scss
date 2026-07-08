@@ -1,3 +1,7 @@
+@use "../1structure/variables" as *;
+@use "../1structure/base-grid" as *;
+@use "sass:color";
+
 ul.category-chicklets {
 
 	@include break(mobile){
@@ -21,7 +25,7 @@ ul.category-chicklets {
 		margin-right: 3px;
 
 		background-color: #2464bf;
-		@if $isDesk == 'true'  { &:hover { background-color: lighten(#2464bf,8%); transition: all .3s ease; } }
+		@if $isDesk == 'true'  { &:hover { background-color: color.adjust(#2464bf, $lightness: 8%); transition: all .3s ease; } }
 
 		a {
 			display: block;
@@ -42,35 +46,35 @@ ul.category-chicklets {
 			
 		}
 
-		&.blue, &.reviews, &.techspot																						{ background-color: $blue;		@if $isDesk == 'true'  { &:hover { background-color: lighten($blue,8%); } } }
-		&.blue2, &.microsoft, &.windows, &.tips-tricks																		{ background-color: #0088CC;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#0088CC,7%); } } }
-		&.blue3, &.apple, &.ai, &.storage, &.laptops																		{ background-color: #3a83a8;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#3e96c2,8%); } } }
-		&.blue4, &.explainers, &.tag1																						{ background-color: #05408f;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#05408f,8%); } } }
-		&.navy, &.products, &.downloads																						{ background-color: #00366F;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#00366F,8%); } } }
-		&.navy2, &.industry																									{ background-color: #4745a3;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#4745a3,8%); } } }
+		&.blue, &.reviews, &.techspot																						{ background-color: $blue;		@if $isDesk == 'true'  { &:hover { background-color: color.adjust($blue, $lightness: 8%); } } }
+		&.blue2, &.microsoft, &.windows, &.tips-tricks																		{ background-color: #0088CC;	@if $isDesk == 'true'  { &:hover { background-color: color.adjust(#0088CC, $lightness: 7%); } } }
+		&.blue3, &.apple, &.ai, &.storage, &.laptops																		{ background-color: #3a83a8;	@if $isDesk == 'true'  { &:hover { background-color: color.adjust(#3e96c2, $lightness: 8%); } } }
+		&.blue4, &.explainers, &.tag1																						{ background-color: #05408f;	@if $isDesk == 'true'  { &:hover { background-color: color.adjust(#05408f, $lightness: 8%); } } }
+		&.navy, &.products, &.downloads																						{ background-color: #00366F;	@if $isDesk == 'true'  { &:hover { background-color: color.adjust(#00366F, $lightness: 8%); } } }
+		&.navy2, &.industry																									{ background-color: #4745a3;	@if $isDesk == 'true'  { &:hover { background-color: color.adjust(#4745a3, $lightness: 8%); } } }
 
-		&.green, &.hardware, &.drivers																						{ background-color: $green;		@if $isDesk == 'true'  { &:hover { background-color: lighten($green,4%); } } }	
-		&.green2, &.science																									{ background-color: $dark-green;@if $isDesk == 'true'  { &:hover { background-color: lighten($dark-green,8%); } } }
-		&.green3, &.features, &.monitors, &.google																			{ background-color: #237A3C;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#237A3C,6%); } } }
-		&.green4, &.mobile, &.smartphones																					{ background-color: #3a927c;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#3a927c,6%); } } }
+		&.green, &.hardware, &.drivers																						{ background-color: $green;		@if $isDesk == 'true'  { &:hover { background-color: color.adjust($green, $lightness: 4%); } } }	
+		&.green2, &.science																									{ background-color: $dark-green;@if $isDesk == 'true'  { &:hover { background-color: color.adjust($dark-green, $lightness: 8%); } } }
+		&.green3, &.features, &.monitors, &.google																			{ background-color: #237A3C;	@if $isDesk == 'true'  { &:hover { background-color: color.adjust(#237A3C, $lightness: 6%); } } }
+		&.green4, &.mobile, &.smartphones																					{ background-color: #3a927c;	@if $isDesk == 'true'  { &:hover { background-color: color.adjust(#3a927c, $lightness: 6%); } } }
 
-		&.green5, &.deals																									{ background-color: #779954;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#779954,8%); } } }
-		&.green6, &.wof																										{ background-color: #85B200;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#85B200,4%); } } }
+		&.green5, &.deals																									{ background-color: #779954;	@if $isDesk == 'true'  { &:hover { background-color: color.adjust(#779954, $lightness: 8%); } } }
+		&.green6, &.wof																										{ background-color: #85B200;	@if $isDesk == 'true'  { &:hover { background-color: color.adjust(#85B200, $lightness: 4%); } } }
 
-		&.purple, &.software																								{ background-color: $purple;	@if $isDesk == 'true'  { &:hover { background-color: lighten($purple,6%); } } }
-		&.purple2, &.electronics, &.audio, &.cpu, &.motherboards, &.input-devices, &.cases									{ background-color: #5353ac;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#5353ac,5%); } } }
+		&.purple, &.software																								{ background-color: $purple;	@if $isDesk == 'true'  { &:hover { background-color: color.adjust($purple, $lightness: 6%); } } }
+		&.purple2, &.electronics, &.audio, &.cpu, &.motherboards, &.input-devices, &.cases									{ background-color: #5353ac;	@if $isDesk == 'true'  { &:hover { background-color: color.adjust(#5353ac, $lightness: 5%); } } }
 
-		&.orange, &.guides, &.web, &.home, &.blog, &.desktop-pcs															{ background-color: #d26c0a;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#d26c0a,5%); } } }
-		&.red, &.gaming, &.graphics-cards, &.must-reads, &.games															{ background-color: $red;		@if $isDesk == 'true'  { &:hover 	{ background-color: lighten($red,5%); } } }
-		&.red2, &.buying-guides, &.bestof, &.video																			{ background-color: #CC3333;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#CC3333,5%); } } }
-		&.red3, &.security, &.tablets																						{ background-color: #ac5353;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#ac5353,5%); } } }
-		&.red4, &.crimson, &.tag2																							{ background-color: #8f1515;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#8f1515,5%); } } }
+		&.orange, &.guides, &.web, &.home, &.blog, &.desktop-pcs															{ background-color: #d26c0a;	@if $isDesk == 'true'  { &:hover { background-color: color.adjust(#d26c0a, $lightness: 5%); } } }
+		&.red, &.gaming, &.graphics-cards, &.must-reads, &.games															{ background-color: $red;		@if $isDesk == 'true'  { &:hover 	{ background-color: color.adjust($red, $lightness: 5%); } } }
+		&.red2, &.buying-guides, &.bestof, &.video																			{ background-color: #CC3333;	@if $isDesk == 'true'  { &:hover { background-color: color.adjust(#CC3333, $lightness: 5%); } } }
+		&.red3, &.security, &.tablets																						{ background-color: #ac5353;	@if $isDesk == 'true'  { &:hover { background-color: color.adjust(#ac5353, $lightness: 5%); } } }
+		&.red4, &.crimson, &.tag2																							{ background-color: #8f1515;	@if $isDesk == 'true'  { &:hover { background-color: color.adjust(#8f1515, $lightness: 5%); } } }
 
-		&.grey, &.natw, &.culture, &.tech-culture																			{ background-color: $light-grey2;	@if $isDesk == 'true'  { &:hover { background-color: lighten($light-grey2,8%); } } }
-		&.grey2, &.space  																									{ background-color: #3a3a3a;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#3a3a3a,6%); } } }
+		&.grey, &.natw, &.culture, &.tech-culture																			{ background-color: $light-grey2;	@if $isDesk == 'true'  { &:hover { background-color: color.adjust($light-grey2, $lightness: 8%); } } }
+		&.grey2, &.space  																									{ background-color: #3a3a3a;	@if $isDesk == 'true'  { &:hover { background-color: color.adjust(#3a3a3a, $lightness: 6%); } } }
 
-		&.yellow, &.wearables, &.desktop-pcs																				{ background-color: #f9d236;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#f9d236,6%); } } }
-		&.yellow2, &.dotw, &.car-tech																						{ background-color: #DD9C08;	@if $isDesk == 'true'  { &:hover { background-color: lighten(#DD9C08,4%); } } }
+		&.yellow, &.wearables, &.desktop-pcs																				{ background-color: #f9d236;	@if $isDesk == 'true'  { &:hover { background-color: color.adjust(#f9d236, $lightness: 6%); } } }
+		&.yellow2, &.dotw, &.car-tech																						{ background-color: #DD9C08;	@if $isDesk == 'true'  { &:hover { background-color: color.adjust(#DD9C08, $lightness: 4%); } } }
 
 		// Texto negro
 		&.yellow, &.wearables, &.desktop-pcs {

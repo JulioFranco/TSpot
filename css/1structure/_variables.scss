@@ -1,117 +1,120 @@
+// Entry points configure this module via `@use ... with (...)`.
+$isDesk: 'false' !default;
+
 // !GLOBAL FONTS
 
-$staticServer: www;
+$staticServer: www !default;
 
-$f-primary: 'Inter', sans-serif;
-$f-condensed: 'Inter', sans-serif;
-$f-paragraph: 'Inter', Helvetica, Arial, sans-serif;
-$f-helvetica: Helvetica, Arial, sans-serif;
-$f-helvetica-roboto: 'Helvetica Neue', 'Roboto', sans-serif;
-$f-arial: Arial, Helvetica, sans-serif;
+$f-primary: 'Inter', sans-serif !default;
+$f-condensed: 'Inter', sans-serif !default;
+$f-paragraph: 'Inter', Helvetica, Arial, sans-serif !default;
+$f-helvetica: Helvetica, Arial, sans-serif !default;
+$f-helvetica-roboto: 'Helvetica Neue', 'Roboto', sans-serif !default;
+$f-arial: Arial, Helvetica, sans-serif !default;
 
 // !GLOBAL PATH
-$social-icons-version: 4.4;
+$social-icons-version: 4.4 !default;
 
 // !GLOBAL RESPONSIVE VARIABLES
-$big-desk: 1300px;
-$desk: 1200px;
-$tablet: 1200px; // This needs to be the same as $desk to prevent a "no-mans-land" in breakpoints
-$v-tablet: 960px;
-$mobile: 760px;
-$v-mobile: 500px;
-$sm-mobile: 400px;
+$big-desk: 1300px !default;
+$desk: 1200px !default;
+$tablet: 1200px !default; // This needs to be the same as $desk to prevent a "no-mans-land" in breakpoints
+$v-tablet: 960px !default;
+$mobile: 760px !default;
+$v-mobile: 500px !default;
+$sm-mobile: 400px !default;
 
 // !GLOBAL wrapperMobileOnly
-$mobwrapper: 92%;
-$mobwrapwidth: 88%;
-$mobwrappadding: 0 6%;
+$mobwrapper: 92% !default;
+$mobwrapwidth: 88% !default;
+$mobwrappadding: 0 6% !default;
 
 // !GLOBAL GUTTER VARIABLES
 //column gutter variables we now how four options if using gutter space
-$gut-no: 0;
-$gut-sm: .1;
-$gut-med: 3;
-$gut-lg: 20;
+$gut-no: 0 !default;
+$gut-sm: .1 !default;
+$gut-med: 3 !default;
+$gut-lg: 20 !default;
 
 // !DARK MODE
-$dark-back: #242931;
-$darkmode-heads: #f3f3f3;
-$darkmode-text: #f5f5f5;
-$darkmode-p: rgb(255 255 255 / .9);
-$dark-link: #a9cef9;
-$dark-link-hov: #F3B26D;
-$dark-link-hov-orange: #F3B26D;
+$dark-back: #242931 !default;
+$darkmode-heads: #f3f3f3 !default;
+$darkmode-text: #f5f5f5 !default;
+$darkmode-p: rgb(255 255 255 / .9) !default;
+$dark-link: #a9cef9 !default;
+$dark-link-hov: #F3B26D !default;
+$dark-link-hov-orange: #F3B26D !default;
 
 // !COLORS
-$black: #000;
-$blue: #105ab2;
-$dark-blue: #1e2933;
-$dark-blue2: #002040;
-$orange: #ff7f00;
-$grid-orange: #ffa64e;
-$red: #b61f1f;
-$yellow: #ffc925;
-$green: #1f8539;
-$dark-green: #576C2F;
-$purple: #69378c;
+$black: #000 !default;
+$blue: #105ab2 !default;
+$dark-blue: #1e2933 !default;
+$dark-blue2: #002040 !default;
+$orange: #ff7f00 !default;
+$grid-orange: #ffa64e !default;
+$red: #b61f1f !default;
+$yellow: #ffc925 !default;
+$green: #1f8539 !default;
+$dark-green: #576C2F !default;
+$purple: #69378c !default;
 
-$c-excellent: #2c8d2c;
-$c-good: #075BC0;
-$c-average: #6F22A0;
-$c-bad: #c00;
+$c-excellent: #2c8d2c !default;
+$c-good: #075BC0 !default;
+$c-average: #6F22A0 !default;
+$c-bad: #c00 !default;
 
-$grey: #bbbbbb;
-$dark-grey: #353535;
-$dark-grey2: #4b4b4b;
-$light-grey: #fff;
-$light-grey1: #444;
-$light-grey2: #666;
-$light-grey3: #999;
+$grey: #bbbbbb !default;
+$dark-grey: #353535 !default;
+$dark-grey2: #4b4b4b !default;
+$light-grey: #fff !default;
+$light-grey1: #444 !default;
+$light-grey2: #666 !default;
+$light-grey3: #999 !default;
 
 // !PADDING VARIABLES
-$wrap-pad: 6%; 
+$wrap-pad: 6% !default; 
 
 // !BORDER RADIUS
-$b-radius: 6px;
+$b-radius: 6px !default;
 
-$speed: 1500ms;
+$speed: 1500ms !default;
 
-$header-height: 98px;
-$header-top-line-height: 62px;
+$header-height: 98px !default;
+$header-top-line-height: 62px !default;
 
-$header-menu-height: 37px;
-$header-menu-line-height: 37px;
+$header-menu-height: 37px !default;
+$header-menu-line-height: 37px !default;
 
-$header-interior-height: 76px;
-$header-interior-line-height: 37px;
+$header-interior-height: 76px !default;
+$header-interior-line-height: 37px !default;
 
 // Mobile
-$header-mobile-height: 88px;
-$header-top-line-height-mobile: 50px;
-$header-interior-line-height-mobile: 45px;
+$header-mobile-height: 88px !default;
+$header-top-line-height-mobile: 50px !default;
+$header-interior-line-height-mobile: 45px !default;
 
 // !MASTHEAD
-$tile-height: 260px;
-$tall-tile-height: ($tile-height * 2) + 1;
-$tile-width: 400px;
-$tile-width-percent: 33%;
+$tile-height: 260px !default;
+$tall-tile-height: ($tile-height * 2) + 1 !default;
+$tile-width: 400px !default;
+$tile-width-percent: 33% !default;
 
-$tile-height-sec: 255px;
-$tile-width-sec: 370px;
+$tile-height-sec: 255px !default;
+$tile-width-sec: 370px !default;
 
-$tall-tile-font-size: 1.5em;
-$tile-font-size: 1.1em;
-$mobile-tile-font-size: 1.3em;
+$tall-tile-font-size: 1.5em !default;
+$tile-font-size: 1.1em !default;
+$mobile-tile-font-size: 1.3em !default;
 
-$tile-padding: 6;
-$tile-padding-pct: 6px;
+$tile-padding: 6 !default;
+$tile-padding-pct: 6px !default;
 
-$mast-border-width: 1px;
-$mast-border-col: #fff;
+$mast-border-width: 1px !default;
+$mast-border-col: #fff !default;
 
-$tile-height-mobile: 395px;
-$tile-width-mobile: 352px;
-$tile-margin-mobile: 11px;
-$tile-height-mobile-sec: 330px;
+$tile-height-mobile: 395px !default;
+$tile-width-mobile: 352px !default;
+$tile-margin-mobile: 11px !default;
+$tile-height-mobile-sec: 330px !default;
 
 // !END MASTHEAD

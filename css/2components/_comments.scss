@@ -1,3 +1,7 @@
+@use "../1structure/variables" as *;
+@use "../1structure/mixin" as *;
+@use "../1structure/base-grid" as *;
+
 #comments {
     padding-top: 10px;
     background: #f5f5f5;

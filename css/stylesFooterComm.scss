@@ -1,15 +1,11 @@
-@import
-"1structure/_variables.scss",
-"1structure/_mixin.scss",
-"1structure/_base-grid.scss";
+@use "1structure/variables" as * with ($isDesk: 'true');
+@use "1structure/mixin" as *;
+@use "1structure/base-grid" as *;
 
-$isDesk: 'true';
-
-@import
-"2components/_comments.scss",
+@use "2components/comments" as *;
 
 // base
-//"_header.scss",
-"_footer.scss",
+// @use "header" as *;
+@use "footer" as *;
 
-"2components/_vacio.scss";
+@use "2components/vacio" as *;

@@ -1,3 +1,6 @@
+@use "../1structure/variables" as *;
+@use "../1structure/base-grid" as *;
+
 .trivias .masthead {
 	min-height: 465px;
 	 background: #29333D !important;

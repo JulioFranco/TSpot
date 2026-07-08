@@ -1,3 +1,7 @@
+@use "../1structure/variables" as *;
+@use "../1structure/mixin" as *;
+@use "../1structure/base-grid" as *;
+
 body.interior {
 
 	.categoryindex {

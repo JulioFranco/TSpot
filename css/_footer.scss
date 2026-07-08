@@ -1,3 +1,7 @@
+@use "1structure/variables" as *;
+@use "1structure/base-grid" as *;
+@use "sass:color";
+
 footer {
 	background: #1e2933;
 	z-index: 2;
@@ -88,7 +92,7 @@ footer {
 
 				@if $isDesk == 'true' {
 					&:hover {
-						background: lighten($blue,6%);
+						background: color.adjust($blue, $lightness: 6%);
 					}
 				}
 			}

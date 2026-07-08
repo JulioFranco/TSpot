@@ -1,3 +1,8 @@
+@use "../1structure/variables" as *;
+@use "../1structure/mixin" as *;
+@use "../1structure/base-grid" as *;
+@use "sass:color";
+
 .post-list {
 
 	article {
@@ -298,7 +303,7 @@
 						
 						span {
 							display: inline-block;
-							background: darken(#f0f0f0,5%);
+							background: color.adjust(#f0f0f0, $lightness: -5%);
 							padding: 0 4px;
 							line-height: 18px;
 							margin-left: 2px;

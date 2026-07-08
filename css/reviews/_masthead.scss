@@ -1,3 +1,6 @@
+@use "../1structure/variables" as *;
+@use "../1structure/base-grid" as *;
+
 .features, .reviews, .trivias, .slide-article {
 	.featured-posts-title {
 		width: $desk;

@@ -1,3 +1,6 @@
+@use "../1structure/mixin" as *;
+@use "../1structure/base-grid" as *;
+
 @import
 "_variables.scss",
 "_base-grid.scss",
