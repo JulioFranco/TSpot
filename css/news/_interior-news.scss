@@ -122,7 +122,56 @@ body.interior {
 						font-weight: 600 !important;
 					}
 
+					span.google-preferred {
+						padding-left: 12px;
+						margin-left: 10px;
+						border-left: 2px solid #ccc;
+						white-space: nowrap;
+
+						svg {
+							width: 14px;
+							height: 14px;
+							vertical-align: -2px;
+							margin-right: 6px;
+						}
+					}
+
 				}
+			}
+		}
+
+		.google-preferred-cta {
+			clear: both;
+			margin: 0 0 25px;
+			letter-spacing: -.333px;
+
+			a {
+				display: inline-flex;
+				align-items: center;
+				gap: 12px;
+				background: #f4f5f7;
+				border: 1px solid #e4e6e9;
+				border-radius: 100px;
+				padding: 10px 20px;
+				color: #28333c;
+				font-size: .8em;
+				font-weight: 600;
+				transition: background-color .15s ease-out, border-color .15s ease-out;
+
+				&:hover {
+					background: #fff;
+					border-color: #ff7f00;
+				}
+
+				svg {
+					width: 20px;
+					height: 20px;
+					flex: none;
+				}
+			}
+
+			@include break(mobile) {
+				margin: 20px 0;
 			}
 		}
 	}

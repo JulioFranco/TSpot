@@ -21,6 +21,23 @@ body.dark {
 			#mobComBut {
 				background: $dark-back;
 			}
+
+			#content-header .title-group em span.google-preferred {
+				border-left-color: #4a5462;
+			}
+
+			.google-preferred-cta {
+				a {
+					background: #2a323d;
+					border-color: transparent;
+					color: #c9c9c9;
+
+					&:hover {
+						background: #3b4652;
+						border-color: transparent;
+					}
+				}
+			}
 		}
 
 		.comment-count-block {
