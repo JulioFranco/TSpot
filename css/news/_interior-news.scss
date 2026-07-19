@@ -22,7 +22,7 @@ body.interior {
 				min-height: 300px;
 				
 				@include break(mobile) {
-					margin-bottom: 0;
+					margin-bottom: 20px;
 				}
 			}
 			
@@ -99,6 +99,11 @@ body.interior {
 						margin-left: 10px;
 						border-left: 2px solid #ccc;
 
+						@include break(mobile) {
+							padding-left: 10px;
+							margin-left: 8px;
+						}
+
 						a {
 							font-weight: 400;
 							color: #5a6169;
@@ -128,6 +133,15 @@ body.interior {
 						border-left: 2px solid #ccc;
 						white-space: nowrap;
 
+						@include break(mobile) {
+							padding-left: 10px;
+							margin-left: 8px;
+						}
+
+						a {
+							border: none;
+						}
+
 						svg {
 							width: 14px;
 							height: 14px;
@@ -142,25 +156,52 @@ body.interior {
 
 		.google-preferred-cta {
 			clear: both;
-			margin: 0 0 25px;
+			margin: 30px 0 25px;
 			letter-spacing: -.333px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 24px;
+			background: #f4f5f7;
+			border: 1px solid #e4e6e9;
+			border-radius: 12px;
+			padding: 24px 28px;
+
+			&__text {
+				strong {
+					display: block;
+					font-size: 0.925em;
+					font-weight: 700;
+					color: #1c2126;
+					margin-bottom: 8px;
+				}
+				span {
+					display: block;
+					font-size: .85em;
+					color: #6b7280;
+				}
+			}
 
 			a {
 				display: inline-flex;
 				align-items: center;
 				gap: 12px;
-				background: #f4f5f7;
+				flex: none;
+				background: #fff;
 				border: 1px solid #e4e6e9;
 				border-radius: 100px;
-				padding: 10px 20px;
+				padding: 14px 24px;
 				color: #28333c;
 				font-size: .8em;
-				font-weight: 600;
-				transition: background-color .15s ease-out, border-color .15s ease-out;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: .5px;
+				white-space: nowrap;
+				transition: background-color .15s ease-out, border-color .15s ease-out, box-shadow .15s ease-out;
 
 				&:hover {
-					background: #fff;
 					border-color: #ff7f00;
+					box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
 				}
 
 				svg {
@@ -171,7 +212,26 @@ body.interior {
 			}
 
 			@include break(mobile) {
-				margin: 20px 0;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 16px;
+				margin: 0 0 20px;
+				padding: 20px 20px;
+
+				&__text {
+					strong {
+						margin-bottom: 8px;
+					}
+
+					span {
+						font-size: .8em;
+					}
+				}
+
+				a {
+					justify-content: center;
+					padding: 12px 20px;
+				}
 			}
 		}
 	}
@@ -427,6 +487,10 @@ body.interior {
 
 		ul {
 			margin: 5px 5px 5px 15px;
+
+			li {
+			    text-wrap-style: balance;
+			}
 		}
 	}
 
@@ -441,6 +505,7 @@ body.interior {
 			margin: 0 auto 20px;
 		}
 
+		/*
 		&.videofeat {
 			@include break(mobile) {
 				margin: 20px auto 0;
@@ -449,6 +514,7 @@ body.interior {
 				margin: 0;
 			}
 		}
+		*/
 
 		h3 {
 			font-weight: 400;

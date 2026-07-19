@@ -27,6 +27,18 @@ body.dark {
 			}
 
 			.google-preferred-cta {
+				background: #1c212682;
+				border-color: #2a323d;
+
+				&__text {
+					strong {
+						color: #e4e6e9;
+					}
+					span {
+						color: #9aa1a9;
+					}
+				}
+
 				a {
 					background: #2a323d;
 					border-color: transparent;
@@ -35,6 +47,7 @@ body.dark {
 					&:hover {
 						background: #3b4652;
 						border-color: transparent;
+						box-shadow: none;
 					}
 				}
 			}
