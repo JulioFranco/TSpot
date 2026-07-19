@@ -215,6 +215,29 @@
 		}
 	}
 
+	span.google-preferred {
+		padding-left: 12px;
+		margin-left: 10px;
+		border-left: 2px solid #ccc;
+		white-space: nowrap;
+
+		@include break(mobile) {
+			padding-left: 10px;
+			margin-left: 8px;
+		}
+
+		a {
+			border: none;
+		}
+
+		svg {
+			width: 14px;
+			height: 14px;
+			vertical-align: -2px;
+			margin-right: 6px;
+		}
+	}
+
 	&.second-page {
 		h1 {
 			font-size: 1.9em;
