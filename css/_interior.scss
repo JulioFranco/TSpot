@@ -463,6 +463,12 @@ body.interior {
 			fill: #fff;
 			stroke: none;
 		}
+		.resp-sharing-button--email {
+		  background-color: #6c7680;
+		  	&:hover {
+				background-color: #5a636c;
+			}
+		}
 		.resp-sharing-button--twitter {
 			background-color: #55acee;
 			&:hover {

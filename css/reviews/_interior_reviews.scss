@@ -317,30 +317,32 @@ body.interior {
 					border-right: 4px solid transparent;
 					border-top: 6px solid #ffffff;
 					float: left;
-					margin: 15px 0 0 13px;
+					margin: 18px 0 0 13px;
 					opacity: 1;
 				}
 
 				.sharethis {
 					float: right;
-					width: 20px;
-					height: 20px;
-					margin: -27px 18px 0 0;
+					width: 18px;
+					height: 18px;
+					margin: -31px 18px 0 0;
 				}
 			}
 			
 			strong {
 				display: block;
-				line-height: 35px;
+				line-height: 1.5em;
 				text-align: center;
 				font-size: .7em;
 				cursor: pointer;
 				font-weight: 500;
+				padding: 8px 0;
 
 				@include break(mobile) {
+					line-height: 42px;
 				    text-align: left;
 				    font-size: .8em;
-				    padding: 0 0 0 13px;
+				    padding: 0 0 0 15px;
 					border-left: 35px solid #ff7f00;
 					border-right: 5px solid #ff7f00;
 				}
