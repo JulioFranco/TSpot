@@ -142,7 +142,7 @@
 					position: absolute;
 					top: 0;
 					left: 0;
-					opacity: 0.65;
+					opacity: 1;
 					width: 100%;
 					z-index: -100;
 					transition: opacity 0.2s;
@@ -150,14 +150,14 @@
 
 				&:hover {
 					&:before {
-						opacity: 0.2;
+						opacity: 0.6;
 					}
 				}
 
 				hgroup {
 					width: 90%;
 					position: absolute;
-					bottom: 20px;
+					bottom: 22px;
 					display: block;
 					text-wrap: balance;
 
@@ -167,17 +167,18 @@
 						text-shadow: 0 0 2px #000;
 						color: $grid-orange;
 						padding-bottom: 3px;
-					    letter-spacing: .1px;
+					    letter-spacing: .25px;
 						font-weight: 600;
 						line-height: 1.4;
 					}
 
 					h2 {
 						font-size: $tile-font-size;
-						font-weight: 600;
-						letter-spacing: -.35px;
+						font-weight: 580;
+						letter-spacing: -.3px;
 						line-height: 1.5;
 						display: inline;
+						text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 
 						@include break(tablet) {
 							font-size: 0.95em;
@@ -701,7 +702,8 @@
 					a {
 						height: $tall-tile-height - 30px;
 						hgroup {
-						    padding: 3px 5px;
+						    padding: 0px 5px;
+						    bottom: 20px;
 							h2 { font-size: $tall-tile-font-size; }
 						}
 
