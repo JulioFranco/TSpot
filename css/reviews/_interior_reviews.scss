@@ -763,12 +763,12 @@ body.interior {
 			}
 
 			&.reddit {
-				background-position: left -175px;
+				background-position: left -174px;
 
 				@if $isDesk == 'true' {
 					&:hover{
 						background-color: #E18C4B;
-						background-position: right -175px;
+						background-position: right -174px;
 					}
 				}
 			}
@@ -796,12 +796,12 @@ body.interior {
 			}
 			
 			&.comments {
-				background-position: left -140px;
+				background-position: left -138px;
 
 				@if $isDesk == 'true' {
 					&:hover {
 						background-color: #4b75b7;
-						background-position: right -140px;
+						background-position: right -138px;
 					}
 				}
 			}
