@@ -162,7 +162,9 @@ img.b-lazy.b-loaded {
 	cursor: not-allowed;
 }
 
-.ts-nl-hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none}
+.ts-nl-hp {
+	position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none;
+}
 
 // YouTube, video embeds
 .video-container {
