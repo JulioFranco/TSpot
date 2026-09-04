@@ -129,7 +129,8 @@
 				color: white;
 				height: $tile-height - 27px;
 
-				background: linear-gradient(195deg,rgba(21,76,143,.1) 40%,rgba(30,41,51,.85) 70%);
+				// background: linear-gradient(195deg,rgba(21,76,143,.1) 40%,rgba(30,41,51,.85) 70%);
+				background: linear-gradient(195deg,rgb(21 76 143 / .0) 40%,rgb(30 41 51 / .75) 70%);
 				z-index: 100;
 
 				&:before {
@@ -769,7 +770,7 @@
 						}
 
 						&:before {
-							background: linear-gradient(195deg,rgba(34,34,34,.18) 40%,rgba(34,34,34,.85) 90%);
+							background: linear-gradient(195deg,rgb(34 34 34 / .1) 50%,rgb(34 34 34 / .85) 90%);
 						}
 					}
 
