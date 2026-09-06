@@ -31,15 +31,15 @@ footer {
 	}
 
 	.desktop {
-		display: block!important;
+		display: block !important;
 		@include break(v-mobile){
-			display: none!important;
+			display: none !important;
 		}
 	}
 	.mobile {
 		display: none !important;
 		@include break(v-mobile){
-			display: block!important;
+			display: block !important;
 			margin-bottom: 20px;
 		}
 	}
@@ -264,7 +264,7 @@ footer {
 
 		a {
 			display: inline-block;
-			color: #bbb;
+			color: #bbb !important;
 			letter-spacing: 0.1px;
 
 			&.pad {
@@ -279,7 +279,7 @@ footer {
 					text-decoration: none;
 					margin-bottom: -4px;
 				}
-			}//desk
+			} //desk
 		}
 	}
 	
