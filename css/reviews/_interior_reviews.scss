@@ -724,12 +724,12 @@ body.interior {
 		}
 		
 		&.social {
-		
 			background-image: url('https://#{$staticServer}.techspot.com/images/btnShare.svg?v=#{$social-icons-version}');
 			background-repeat: no-repeat;
 			background-color: white;
 			line-height: 16px;
 			position: relative;
+			margin: 3px 0;
 
 			.SocialHover{
 				display: none;
@@ -836,6 +836,7 @@ body.interior {
 
 			@include break(mobile){
 				background-image: url('https://#{$staticServer}.techspot.com/images/social-widget-bg-91.svg?v=#{$social-icons-version}');
+				margin: 0;
 				margin-left: 30%;
 				margin-top: -30px;
 				width: 32px;
