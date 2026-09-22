@@ -80,18 +80,19 @@
 		}
 
 		span.comment_likes {
-			float: left;
-			display: inline-block;
+			display: block;
 			font-size: 0.9em;
 			color: $light-grey2;
-			margin-right: 5px;
+			margin: 10px 0 0 7px;
 
 			a { color:$light-grey2; }
 
+			/*
 			&.userlikes {
 				float: none;
 				padding-left: 10px;
 			}
+			*/
 		}
 
 		img.user-avatar {
