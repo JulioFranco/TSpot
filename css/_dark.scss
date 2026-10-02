@@ -503,17 +503,27 @@ body.dark {
 			border-top: 5px solid $dark-link-hov-orange;
 		}
 	}
-	.download-list li em.popular, .forum-list li em.popular {
-		background-color: #654b7e;
-	}
-	.download-list li em.popular-topic, .forum-list li em.popular-topic {
-		background-color: #ab6e32;
+
+	.download-list li span a,
+	.forum-list li span a {
+		color: #aaaaaa;
 	}
 
 	.sidebar ul.teaser-list li a:hover,
 	.download-list li span a:hover,
 	.forum-list li span a:hover {
 		color: $dark-link-hov-orange;
+	}
+
+	.download-list li em.popular {
+		background-color: #654b7e;
+	}
+	.forum-list li em.popular-topic {
+		background-color: #ab6e32;
+
+		a {
+			color: #eee;
+		}
 	}
 
 	textarea {
