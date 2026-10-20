@@ -30,6 +30,7 @@
 
 		h3 {
 			padding: 35px 0 10px;
+			line-height: 1.5;
 
 			@include break(mobile) {
 				font-size: 1.35em !important;
@@ -38,6 +39,7 @@
 
 		h4 {
 			padding: 25px 0 10px;
+			line-height: 1.4;
 
 			@include break(mobile) {
 				font-size: 1.2em !important;
